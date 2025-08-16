@@ -199,3 +199,7 @@ export function accountCheckVip(vip) {
         return "No VIP"
     }
 }
+
+export function grToMlConvert(gr) {
+    return gr * 50
+}

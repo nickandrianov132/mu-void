@@ -7,7 +7,7 @@ import RankingsSortPanel from "./pagesComponents/RankingsComp/RankingsSortPanel"
 import { addCharacters } from "../store/slices/characterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { checkCharClass } from "../utils/functions";
+import { checkCharClass, grToMlConvert } from "../utils/functions";
 import Spinner from "../components/Spinner";
 
 
@@ -57,7 +57,7 @@ const Rankings = () => {
                                 <td><OnlineIndicator online={char.online} /></td>
                                 <td className="td_name">{char.name}</td>
                                 <td className="td_class">{checkCharClass(char.class)}</td>
-                                <td>{char.cLevel}<sup className="sup_mLevel">{char.mLevel}</sup></td>
+                                <td>{char.cLevel}<sup className="sup_mLevel">{grToMlConvert(char.gReset)}</sup></td>
                                 <td>{char.reset}<sup className="sup_mLevel">{char.gReset}</sup></td>
 
                             </tr>  
