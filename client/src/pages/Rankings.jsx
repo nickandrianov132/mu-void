@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router";
 import { useFetchAllCharQuery } from "../services/charApi";
 import { CHARACTER_CARD_ROUTE } from "../utils/constants";
-import OnlineIndicator from "../pagesComponents/RankingsComp/onlineIndicator";
+import OnlineIndicator from "/pagesComponents/RankingsComp/onlineIndicator";
 import { GiAxeSword, GiBarbute, GiRibbonMedal, GiStarsStack } from 'react-icons/gi';
-import RankingsSortPanel from "./pagesComponents/RankingsComp/RankingsSortPanel";
+import RankingsSortPanel from "/pagesComponents/RankingsComp/RankingsSortPanel";
 import { addCharacters } from "../store/slices/characterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
