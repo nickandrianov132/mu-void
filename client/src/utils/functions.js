@@ -56,8 +56,71 @@ export function checkLocation(id) {
     if(id === 8) {
         return location = 'Tarkan'
     } 
+    if(id === 11 || id === 12 || id === 13 || id === 14 || id === 15 || id === 16 || id === 17 || id === 52) {
+        return location = 'Blood Castle'
+    }
+    if(id === 18 || id === 19 || id === 20 || id === 21 || id === 22 || id === 23 || id === 53) {
+        return location = 'Chaos Castle'
+    }
+    if(id === 24 || id === 25 || id === 26 || id === 27 || id === 28 || id === 29 || id === 36) {
+        return location = 'Kalima'
+    }
+    if(id === 30) {
+        return location = 'Valley of Loren'
+    }
+    if(id === 31) {
+        return location = 'Land of Trial'
+    }
+    if(id === 32 || id === 9) {
+        return location = 'Devil Square'
+    }
     if(id === 33) {
         return location = 'Aida'
+    }
+    if(id === 34) {
+        return location = 'CryWolf'
+    }
+    if(id === 37) {
+        return location = 'Kanturu'
+    }
+    if(id === 38 || id === 39) {
+        return location = 'Kanturu Remain'
+    }
+    if(id === 41) {
+        return location = 'Barracks'
+    }
+    if(id === 42) {
+        return location = 'Barracks Refuge'
+    }
+    if(id === 56) {
+        return location = 'Swamp of Calmness'
+    }
+    if(id === 57 || id === 58) {
+        return location = 'Raclion'
+    }
+    if(id === 62) {
+        return location = 'Santa Village'
+    }
+    if(id === 63) {
+        return location = 'Vulcanus'
+    }
+    if(id === 64) {
+        return location = 'Duel Arena'
+    }
+    if(id === 65 || id === 66 || id === 67 || id === 68) {
+        return location = 'Doppelganger'
+    }
+    if(id === 69 || id === 70 || id === 71 || id === 72) {
+        return location = 'Imperial Fortress'
+    }
+    if(id === 79) {
+        return location = 'Loren Market'
+    }
+    if(id === 80) {
+        return location = 'Karutan 1'
+    }
+    if(id === 81) {
+        return location = 'Karutan 2'
     }
     return location = 'Hidden'
 }
@@ -150,7 +213,7 @@ function grandResCharGroupFn(charClass) {
 }
 
 export function grCheck3rdProff(charClass) {
-    if(charClass === 2 || charClass === 18 || charClass === 34 || charClass === 82 || charClass === 50 || charClass === 66 || charClass === 90) {
+    if(charClass === 2 || charClass === 18 || charClass === 34 || charClass === 82 || charClass === 50 || charClass === 66 || charClass === 98) {
         return true;
     } else {
         return false;

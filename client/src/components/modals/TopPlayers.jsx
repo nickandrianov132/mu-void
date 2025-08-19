@@ -1,5 +1,6 @@
 import { GiStarsStack, GiAxeSword } from "react-icons/gi";
 import { useFetchTop3CharQuery } from "../../services/charApi";
+import { grToMlConvert } from "../../utils/functions";
 
 const TopPlayers = () => {
     const {data: top3Players, isSuccess} = useFetchTop3CharQuery()
@@ -25,12 +26,12 @@ const TopPlayers = () => {
                                 : i === 2 ?
                                 <div className="rank_star_top5"><GiStarsStack className="top5_star_cooper" /> <p>{i + 1}</p></div>
                                 :
-                                <div className="rank_star_top5"><GiAxeSword size={'10'}/>{i + 1}</div>
+                                <div className="rank_star_top5"><GiAxeSword/>{i + 1}</div>
                             }
                             </td>
                         <td className="td_name">{char.name}</td>
                         <td>{char.reset}<sup className="sup_mLevel">{char.gReset}</sup></td>
-                        <td>{char.cLevel}<sup className="sup_mLevel">{char.mLevel}</sup></td>
+                        <td>{char.cLevel}<sup className="sup_mLevel">{grToMlConvert(char.gReset)}</sup></td>
                     </tr>
                 )}
                 </tbody>

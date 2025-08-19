@@ -104,7 +104,7 @@ const Login = () => {
                                 setPTipPass(state => true)
                             }}
                         />
-                        {pTipPass ? <p className="p_tip">*required 6-12 symbols</p> : <p className="p_tip_none">tip</p>}
+                        {pTipPass ? <p className="p_tip">*required 4-12 symbols</p> : <p className="p_tip_none">tip</p>}
                         {isError && <p className="login_warn_p">*{error.data.message}</p>}
                         <div className='form_btn_container'>
                             <a 

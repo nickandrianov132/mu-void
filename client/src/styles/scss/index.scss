@@ -8,7 +8,7 @@ $user-container-bg: #070326;
 $rank_bg: #d1bbbb;
 $ranking_fc: #070040;
 $rank_border: rgb(112, 83, 111);
-$rank-sort-btn-hover-bg: rgb(254, 84, 17);
+$rank-sort-btn-hover-bg: rgb(253, 55, 88);
 $rank-sort-btn-hover-fc: #090631;
 $font-hover-li: #d3dbff;
 $nav-list-item-color: #070326;
@@ -181,7 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 1680px;
+    width: 100vw;
 }
 .app_container{
     background-image: url('../assets/bg_img5.jpg');
@@ -194,7 +194,8 @@ body {
 .body_container{
     display: flex;
     flex-direction: row;
-    max-width: 100vw;
+    align-self: center;
+    max-width: 90vw;
     min-height: 700px;
     // margin: 10vh 5vw 5vh 5vw;
     @include app_margin(5em 3em 3em 3em);
@@ -289,7 +290,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    min-height: $foot-ht;
+    height: 3em;
     background-color: $footer-bg;
     .footer_content_p{
         color: whitesmoke;
@@ -664,6 +665,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: pointer;
     @include app_margin(0.6em 0em 0.4em 0);
     .ranking_sort_btn{
         @extend %rankingsBtn;
@@ -675,7 +677,7 @@ body {
             background: $rank-sort-btn-hover-bg;
             color: $rank-sort-btn-hover-fc;
             font-weight: 600;
-            // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.01em, rgb(43, 38, 81));
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, rgb(32, 20, 94));
             @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, rgb(65, 30, 92));
             transform: translateY(-0.2em);
         }
@@ -701,7 +703,7 @@ body {
     }
     .top_star_cooper{
         font-size: 1.3em;
-        color:#da6045;
+        color:hsl(23, 90%, 64%);
         @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.3em, black);
     }
     .top_star_silver{
@@ -857,6 +859,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
     background: #070326;
     color: whitesmoke;
     font-size: 0.7em;
@@ -2058,7 +2063,7 @@ body {
     margin-bottom: 0.4em;
     @include app_padding(1em);
     .event_name{
-        color: #fcd28e;
+        color: #fce08e;
         width: 60%;
         margin-right: 5px;
     }
@@ -2074,10 +2079,10 @@ body {
     height: 1px;
     width: 85%;
     bottom: 10%;    
-    background: rgb(182, 172, 172);
+    background: rgb(250, 221, 221);
     border: 1px transparent;
-    border-radius: 2px;
-    @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.15em, #789d38);
+    border-radius: 0.6em;
+    @include box-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.1em, #e0ffc9);
 }
 .grand_reset_container{
     display: flex;
@@ -2245,11 +2250,13 @@ body {
     flex-direction: column;
     width: 80%;
     background: $footer-bg;
+    border-radius: 0.4em;
     color: whitesmoke;
     @include app_padding(1em 0.3em 0.5em 1em);
     .vip_table{
         width: 80%;
         align-self: center;
+        font-size: 0.9em;
         thead{
             text-align: center;
             tr{
@@ -2283,9 +2290,12 @@ body {
             text-align: center;
             tr{
                 .vip_select{
+                    position: relative;
+                    display: inline-block;
                     cursor: pointer;
                     border: 1px solid transparent;
                     border-radius: 0.3em;
+                    font-size: 1em;
                     background: rgb(121, 246, 121);
                     @include app_padding(0.1em);
                     outline: none;  
@@ -2294,11 +2304,11 @@ body {
                     option{
                         background: rgb(102, 227, 102);
                     }
-
                 }
                 .vip_table_btn{
                     @extend %formBtn;
-                    padding: 0.2em 0.4em;
+                    font-size: 1em;
+                    padding: 0.2em 0.8em;
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, rgb(38, 38, 38));
                     &:hover{
                         // color: #fa3737;
@@ -2316,14 +2326,13 @@ body {
     }
 }
 
-
 .serverTime_container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 2em;
+    left: 20%;
     top: 4em;
     background: $footer-bg;
     color: whitesmoke;
@@ -2354,11 +2363,7 @@ body {
         font-size: 10px;
     }
 }
-// @media print and (max-width: 920px) {
-//     body{
-//         font-size: 8px;
-//     }
-// }
+
 @media print and (min-width: 410px) and (max-width: 938px) {
     body{
         font-size: 7px;
@@ -2376,24 +2381,29 @@ body {
     }
 }
 @media screen and (max-width: 560px) {
-        .right_sidebar_container, .left_sidebar_container{
+    .left_sidebar_container{
         display: none;
     }
+    .right_sidebar_container{
+        width: 16.6em;
+    }
     body{
-        font-size: 6px;
+        font-size: 5px;
     }
 }
 @media screen and (max-width: 380px) {
-
+    .right_sidebar_container{
+        width: 16.6em;
+    }
     body{
-        font-size: 5px;
+        font-size: 4px;
     }
 }
 @media print and (max-width: 360px) {
     body{
         font-size:  10px;
     }
-    .right_sidebar_container, .left_sidebar_container{
+    .left_sidebar_container{
         display: none;
     }
 }
