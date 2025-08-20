@@ -31,8 +31,8 @@ const HomeContent = () => {
                                 <div><p className="first-p home-content-p">Welcome on our <b>MU Online</b> server. Open-Beta test will be started on 10 August, we'll be apretiated to everyone who will participate in Open-Beta test of our server.<br/>
                                 </p>
                                 <div className='discord_container'>
-                                    <img className='discord_img' src={Images.discord2} width={25}></img>
-                                    <a className="a_discord" src="#">discord here!</a>
+                                    <img className='discord_img' src={Images.discord2}></img>
+                                    <a className="a_discord" href="https://discord.com/invite/MrYQamZc" target="_blank">discord here!</a>
                                 </div>
                                 </div>
                             </div>

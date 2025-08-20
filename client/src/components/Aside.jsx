@@ -1,3 +1,4 @@
+import DiscordWidget from './modals/discordWidget/DiscordWidget';
 import Online from './modals/Online';
 import TopPlayers from './modals/TopPlayers';
 
@@ -6,8 +7,7 @@ const Aside = () => {
         <aside className='right_sidebar_container'>
             <Online />
             <TopPlayers />
-            {/* <div className="aside_container_2">2</div>
-            <div className="aside_container_3">3</div> */}
+            <DiscordWidget />
         </aside>
     );
 }

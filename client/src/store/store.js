@@ -8,6 +8,7 @@ import charactersReducer from './slices/characterSlice';
 import serverInfoReducer from './slices/serverInfoSlice';
 import regainPasswordReducer from './slices/regainPassSlice';
 import regainPasswordInputReducer from './slices/regainPassInputSlice'
+import { discordApi } from '../services/discordApi';
 
 
 export const store = configureStore({
@@ -21,7 +22,8 @@ export const store = configureStore({
         regainPasswordInput: regainPasswordInputReducer,
         [api.reducerPath]: api.reducer,
         [publicApi.reducerPath]: publicApi.reducer,
+        [discordApi.reducerPath]: discordApi.reducer,
     },
     middleware: (getDefaultMiddleware) => 
-        getDefaultMiddleware().concat([api.middleware, publicApi.middleware])
+        getDefaultMiddleware().concat([api.middleware, publicApi.middleware, discordApi.middleware])
 })

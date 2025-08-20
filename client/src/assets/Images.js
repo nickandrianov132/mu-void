@@ -16,6 +16,8 @@ const Images = {
     all_classes: new URL('./all_classes.jpeg', import.meta.url).href,    
     discord: new URL('./discord.png', import.meta.url).href,    
     discord2: new URL('./discord2.png', import.meta.url).href,    
+    discord_logo: new URL('./discord_logo.png', import.meta.url).href,    
+    white_discord_logo: new URL('./white-discord-logo.png', import.meta.url).href,    
     rankingsBg1: new URL('./rankings-bg1.jpg', import.meta.url).href,    
     main_info_title: new URL('./main_info_title.jpg', import.meta.url).href,    
     orange_box: new URL('./orange_box.png', import.meta.url).href,    

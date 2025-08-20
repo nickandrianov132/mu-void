@@ -111,7 +111,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
+  min-width: 380px;
 }
 
 .app_container {
@@ -285,7 +286,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60vw;
+  width: 64%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -494,7 +495,10 @@ body {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  border-bottom: 2px solid #61389a;
+  border-bottom: 0.1em solid #61389a;
+}
+.home_content_container .home_content_body_introduction .discord_container .discord_img {
+  width: 2em;
 }
 .home_content_container .home_content_body_introduction .discord_container .a_discord {
   color: #61389a;
@@ -502,7 +506,7 @@ body {
   margin-right: 5px;
 }
 .home_content_container .home_content_body_introduction .discord_container .a_discord:hover {
-  text-shadow: 0.5px 0.5px 1.5px #693bb9, 0.4px 0.4px 1.5px #693bb9, 0.5px 0.4px 1.5px #693bb9, 0.4px 0.5px 1.5px #693bb9;
+  text-shadow: 0.01em 0.01em 0.1em #693bb9, -0.01em -0.01em 0.1em #693bb9, 0.01em -0.01em 0.1em #693bb9, -0.01em 0.01em 0.1em #693bb9;
 }
 .home_content_container .home_content_body_introduction .discord_container .discord_img:hover {
   -webkit-transform: translate(1px, 1px);
@@ -745,6 +749,173 @@ body {
 }
 .right_sidebar_container div {
   margin: 0.6em;
+}
+.right_sidebar_container .discord_widget_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 20em;
+  border-radius: 0.5em;
+  margin: 1em 0.6em 1em 0.6em;
+  padding: 0;
+}
+.right_sidebar_container .discord_widget_container .discord_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #7378dc;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.right_sidebar_container .discord_widget_container .discord_header .discord_logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+}
+.right_sidebar_container .discord_widget_container .discord_header .discord_logo_wrapper .discord_logo {
+  width: 5.5em;
+}
+.right_sidebar_container .discord_widget_container .discord_header .discord_online_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.right_sidebar_container .discord_widget_container .discord_header .discord_online_wrapper .p_online {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 0.65em;
+}
+.right_sidebar_container .discord_widget_container .discord_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #fffcfc;
+  margin: 0;
+  height: 70%;
+}
+.right_sidebar_container .discord_widget_container .discord_body .discord_user_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 2em;
+}
+.right_sidebar_container .discord_widget_container .discord_body .discord_user_container .discord_user_img {
+  width: 2em;
+  border: 0.2em solid rgb(99, 90, 202);
+  border-radius: 50%;
+}
+.right_sidebar_container .discord_widget_container .discord_body .discord_user_container .online {
+  position: absolute;
+  top: 1.5em;
+  right: 70%;
+  background-color: #30ef46;
+  border: 0.15em solid rgb(99, 90, 202);
+  border-radius: 50%;
+  width: 0.6em;
+  height: 0.6em;
+}
+.right_sidebar_container .discord_widget_container .discord_body .discord_user_container .idle {
+  position: absolute;
+  top: 1.5em;
+  left: 70%;
+  background-color: #f9cb16;
+  border-radius: 50%;
+  width: 0.6em;
+  height: 0.6em;
+}
+.right_sidebar_container .discord_widget_container .discord_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #7378dc;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0.4em 0 0.4em 0;
+}
+.right_sidebar_container .discord_widget_container .discord_footer .discord_name_span {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: rgb(32, 23, 94);
+  font-weight: 600;
+}
+.right_sidebar_container .discord_widget_container .discord_footer .discord_join_btn {
+  background: #38ccf1;
+  border: 0.15em solid #5d31d7;
+  border-radius: 0.4em;
+  color: #5529cd;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+}
+.right_sidebar_container .discord_widget_container .discord_footer .discord_join_btn:hover {
+  background: #3c7cf2;
+  color: whitesmoke;
+  border: 0.15em solid whitesmoke;
+}
+.right_sidebar_container .discord_widget_container .discord_footer .discord_join_btn:active {
+  -webkit-transform: translate(0.1em, 0.1em);
+          transform: translate(0.1em, 0.1em);
+  border: 0.15em solid rgb(94, 241, 172);
+  color: rgb(94, 241, 172);
+  -webkit-box-shadow: 0.05em 0.05em 0.1em rgb(83, 243, 214), -0.05em -0.05em 0.1em rgb(83, 243, 214), 0.05em -0.05em 0.1em rgb(83, 243, 214), -0.05em 0.05em 0.1em rgb(83, 243, 214);
+          box-shadow: 0.05em 0.05em 0.1em rgb(83, 243, 214), -0.05em -0.05em 0.1em rgb(83, 243, 214), 0.05em -0.05em 0.1em rgb(83, 243, 214), -0.05em 0.05em 0.1em rgb(83, 243, 214);
 }
 
 .aside_container_1 {
@@ -3065,10 +3236,13 @@ body {
 }
 @media screen and (max-width: 560px) {
   .left_sidebar_container {
-    display: none;
+    width: 16.6em;
   }
   .right_sidebar_container {
     width: 16.6em;
+  }
+  .body_container {
+    max-width: 100vw;
   }
   body {
     font-size: 5px;
