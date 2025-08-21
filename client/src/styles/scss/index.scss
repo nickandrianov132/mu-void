@@ -117,7 +117,7 @@ $aside-wd: 110px;
     // @include box-shadow(0.00em, 0.00em, -0.00em, -0.00em, 0.00em, rgb(0, 215, 75));
 }
 %charCardBtn-disabled{
-    border: 1px solid rgb(103, 103, 103);
+    border: 0.15em solid rgb(103, 103, 103);
     border-radius: 0.4em;
     color: rgb(63, 61, 61);
     font-size: 0.85em;
@@ -190,6 +190,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1 1 auto;
     width: 100%;
 }
@@ -204,7 +205,7 @@ body {
 }
 .nav_container{
     display: flex;
-    max-width: 100vw;
+    max-width: 100%;
     justify-content: center;
     height: $nav-ht;
     background-color: $nav-bg;
@@ -913,7 +914,7 @@ body {
 .online_indicator{
     height: 0.3em;
     width: 0.3em;
-    border: 1px solid stansparent;
+    border: 0.1em solid stansparent;
     border-radius: 50%;
     background-color: #1dc623;
     @include box-shadow(0.05em, 0.05em, -0.05em, -0.05em, 0.1em, #15b11a)
@@ -921,7 +922,7 @@ body {
 .offline_indicator{
     height: 0.3em;
     width: 0.3em;
-    border: 1px solid stansparent;
+    border: 0.05em solid stansparent;
     border-radius: 50%;
     background-color: #fa4e4e;
     @include box-shadow(0.05em, 0.05em, -0.05em, -0.05em, 0.1em,#ff0707 )
@@ -1038,7 +1039,7 @@ body {
     flex-direction: column;
 
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin-top: 1em;
     @include app_padding(.7em 0 .7em 0);
     background-color: $nav-bg;
@@ -1083,7 +1084,17 @@ body {
             flex-basis: 100%;
             justify-content: center;
             background: $vote-bg;
+            border: 0.1em solid transparent;
             border-radius: 0.3em;
+            &:hover{
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
+                color: whitesmoke;
+                background-color: rgb(5, 147, 255); 
+                border: 0.1em solid rgb(75, 129, 255);
+            }
+            &:active{
+                transform: translate(0.07em, 0.07em);
+            }
         }
         .link-vip{
             display: flex;
@@ -1146,27 +1157,31 @@ body {
 .online_indicator_div{
     display: flex;
     flex-direction: column;
+    .online_indicator_p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
     .online_indicator_bg{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: start;
-        margin: 0;
         padding: 0;
         height: .6em;
-        @include app_margin(0 0.5em 0 0.5em);
+        @include app_margin(0.4em 0.5em 0 0.5em);
         width: 90%;
-        border: 1px solid rgb(85, 84, 87);
-        border-radius: 5px;
+        border: 0.2em solid rgb(85, 84, 87);
+        border-radius: 0.5em;
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.3em, #28163a);
     }
     .online_indicator_bar{
-        height: 0.3em;
+        height: 0.4em;
         margin: 0;
         padding: 0;
         background: $online_indicator_bar;
-        border: 1px solid $online_indicator_bar;
-        border-radius: 3px;
+        border: 0.1em solid $online_indicator_bar;
+        border-radius: 0.25em;
         @include box-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.15em, $online_indicator_bar);
     }
 }
@@ -1462,11 +1477,11 @@ body {
 .user_char_card_container{
     display: flex;
     flex-direction: column;
-    width: 25em;
+    width: 26em;
     max-height: fit-content;
     background: $nav-bg;
-    border: 1px solid rgb(104, 94, 131);
-    border-radius: 4px;
+    border: 0.1em solid rgb(104, 94, 131);
+    border-radius: 0.5em;
     @include app_margin(0.2em);
     @include app_padding(0.5em);
     .user_char_card_img_div{
@@ -1483,8 +1498,9 @@ body {
     .user_char_wrapper_div{
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-bottom: 1em;
-        border-bottom: 2px solid rgb(130, 218, 255);
+        border-bottom: 0.1em solid rgb(49, 64, 129);
         .user_char_card_table_div{
             max-height: fit-content;
             .user_char_table{
@@ -1497,7 +1513,7 @@ body {
                     text-align: center;
                 }
                 tr>td{
-                    border-bottom: 1px solid rgb(130, 218, 255);
+                    border-bottom: 0.1em solid rgb(130, 218, 255);
                 }
             }
             table .user_th{
@@ -1545,7 +1561,7 @@ body {
                 animation-play-state: paused;
             }
             &:active{
-                transform: translate(2px, 2px);
+                transform: translate(0.1em, 0.1em);
             }
             }
             .user_char_btn_disabled{
@@ -1616,13 +1632,13 @@ body {
     &::after{
         content:'';
         position: absolute;
-        height: 2px;
+        height: 0.06em;
         width: 100%;
         background: rgb(196, 198, 184);
         bottom: 0%;
         right: 0%;
         border: 0.5px solid transparent;
-        border-radius: 2px;
+        border-radius: 0.1em;
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.15em, rgb(44, 37, 48));
     }
 }
@@ -2209,11 +2225,11 @@ body {
 .eventTimerItem_container::after{
     content: '';
     position: absolute;
-    height: 1px;
+    height: 0.06em;
     width: 85%;
     bottom: 10%;    
     background: rgb(250, 221, 221);
-    border: 1px transparent;
+    border: 0.05em transparent;
     border-radius: 0.6em;
     @include box-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.1em, #e0ffc9);
 }
@@ -2513,7 +2529,7 @@ body {
         font-size: 8px;
     }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 590px) {
     .left_sidebar_container{
         width: 16.6em;
     }
