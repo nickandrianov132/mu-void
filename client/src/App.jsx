@@ -20,7 +20,7 @@ const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
     )
   }
   return (
-    <div className='app_wrapper' >
+    <>
       <BrowserRouter>
           <NavBar/>
       <div className='app_container'>
@@ -28,7 +28,7 @@ const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
       </div>
           <Footer />
         </BrowserRouter>
-    </div>
+    </>
   )
 }
 
