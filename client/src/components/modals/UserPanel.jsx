@@ -4,6 +4,7 @@ import { GiAngelWings, GiAura, GiCancel, GiInfo, GiMinions, GiNewspaper } from "
 import SectionLinks from "./userPanel/SectionLinks";
 import { useNavigate } from "react-router";
 import { ACCOUNT_CHARACTERS_GR_ROUTE, ACCOUNT_CHARACTERS_ROUTE, ACCOUNT_INFO_ROUTE, HOME_ROUTE } from "../../utils/constants";
+import ServerTime from "../ServerTime";
 
 const UserPanel = () => {
     const dispatch = useDispatch()
@@ -15,6 +16,7 @@ const UserPanel = () => {
 
     return (
         <div className='user_panel'>
+            <ServerTime />
             <div className="user_panel_item_container">
                 <GiMinions className="user_panel_icon" />
                 <a className='user_panel_item'>Characters</a>

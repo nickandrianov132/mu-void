@@ -30,7 +30,7 @@ const Images = {
     green_box: new URL('./green_box.png', import.meta.url).href,    
     red_box: new URL('./red_box.png', import.meta.url).href,    
     purple_box: new URL('./purple_box.png', import.meta.url).href,    
-    gr_mastertree: new URL('./gr_mastertree.png', import.meta.url).href,    
+    gr_mastertree: new URL('./gr_mastertree.jpg', import.meta.url).href,    
     gr1: new URL('./gr1.png', import.meta.url).href,    
     bok1: new URL('./bok1.png', import.meta.url).href,    
     bok2: new URL('./bok2.png', import.meta.url).href,    

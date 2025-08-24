@@ -69,7 +69,6 @@ const Login = () => {
             {accessToken ? <UserPanel />
                 :
                 <form className='login_form'>
-                    <div className="login_form_container">
                         <input
                             className={checkLogin ? 'input' : 'input_error'} 
                             type="text"
@@ -121,7 +120,6 @@ const Login = () => {
                             </button>
                             }
                         </div>
-                    </div>
                 </form>
             }
         </div>

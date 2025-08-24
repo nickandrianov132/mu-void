@@ -14,7 +14,7 @@ $font-hover-li: #d3dbff;
 $nav-list-item-color: #070326;
 $online_indicator_bar: #20cd7a;
 $offline_status_col: rgb(255, 34, 34);
-$discord-bg: rgb(56, 35, 176);
+$discord-bg: rgb(90, 71, 202);
 $discord-a-col: #61389a;
 $vote-bg: #00b4eb;
 $donate-bg: #fa4226;
@@ -314,7 +314,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 14em;
-    border-left: 1px solid transparent;
+    border-left: 0.1em solid transparent;
     border-bottom-left-radius: 0.4em;
     border-top-left-radius: 0.4em;
     @include bd-filter(8px, 65%);
@@ -322,14 +322,16 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         @include app_margin(0 0 0.5em 0);
-        .login_form_container{
-            width: 12em;
+        .login_form{
+            display: flex;
+            width: 90%;
             background: $nav-bg;
             display: flex;
             flex-direction: column;
             align-items: center;
-            flex: 0 0 0;
+            // flex: 0 0 auto;
             border-radius: 0.3em;
             @include app_padding(0.5em);
             @include app_margin(1em);
@@ -636,9 +638,13 @@ body {
 }
 
 .right_sidebar_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 14em;
     // flex: 1 1 auto;
-    border-left: 1px solid transparent;
+    position: relative;
+    border-left: 0.1em solid transparent;
     border-bottom-right-radius: 0.4em;
     border-top-right-radius: 0.4em;
     @include bd-filter(8px, 65%);
@@ -849,11 +855,14 @@ body {
     }
     .th_name{
         text-align: left;
-        width: 10em;
+        width: 9em;
         padding-left: 1em;
     }
-    .th_reset{
+    .th_class{
         width: 9em;
+    }
+    .th_reset{
+        width: 6em;
         border: 0px;
         border-top-right-radius: 0.25em;
     }
@@ -1037,20 +1046,20 @@ body {
 .user_panel{
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    position: relative;
     width: 95%;
     margin-top: 1em;
     @include app_padding(.7em 0 .7em 0);
     background-color: $nav-bg;
-    border: 1px solid transparent;
-    border-radius: 5px;
+    border: 0.1em solid transparent;
+    border-radius: 0.4em;
     .user_panel_item_container{
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        width: 80%;
-        padding-bottom: 4px;
+        width: 90%;
+        padding-bottom: 0.15em;
         color: whitesmoke;
         transition: .2s linear;
         &:hover{
@@ -1073,14 +1082,13 @@ body {
         display: flex;
         flex-flow: row wrap;
         column-gap: 2%;
-        row-gap: 10px;
+        row-gap: 0.5em;
         color: whitesmoke;
         background: transparent;
-        padding: 2px 4px 2px 4px;
+        @include app_padding(0.3em);
         margin-bottom: 20px;
         .link-vote{
             display: flex;
-            /* width: 100%; */
             flex-basis: 100%;
             justify-content: center;
             background: $vote-bg;
@@ -1090,7 +1098,7 @@ body {
                 @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
                 color: whitesmoke;
                 background-color: rgb(5, 147, 255); 
-                border: 0.1em solid rgb(75, 129, 255);
+                border: 0.1em solid rgb(191, 208, 250);
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1120,7 +1128,17 @@ body {
             justify-content: center;
             flex-basis: 49%;
             background: $discord-bg;
+            border: 0.1em solid transparent;
             border-radius: 0.3em;
+            &:hover{
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
+                color: whitesmoke;
+                background-color: rgb(151, 88, 240); 
+                border: 0.1em solid rgb(54, 223, 235);
+            }
+            &:active{
+                transform: translate(0.07em, 0.07em);
+            }
         }
         .link-report{
             display: flex;
@@ -1153,10 +1171,16 @@ body {
         transform: translate(1.5px, 1.5px);
     }
 }
-
+.online_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
 .online_indicator_div{
     display: flex;
     flex-direction: column;
+    width: 100%;
     .online_indicator_p{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
         font-size: 0.9em;
@@ -1189,13 +1213,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // width: 90%;
+    width: 90%;
     font-size: 0.8em;
     & > div{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 0;
+        margin: 0;
     }
 
 }
@@ -1229,8 +1255,8 @@ body {
     justify-content: center;
     width: 28em;
     background-color: $reg-container-bg;
-    border: 1px transparent;
-    border-radius: 6px;
+    border: 0.1em transparent;
+    border-radius: 0.4em;
     @include app_margin(1.5em 2em);
     .reg_form{
         display: flex;
@@ -2481,8 +2507,8 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 10%;
-    top: 5em;
+    left: 0;
+    top: -4.5em;
     background: $footer-bg;
     color: whitesmoke;
     width: 7em;
@@ -2497,6 +2523,18 @@ body {
     }
 }
 
+.banner_mmotop{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    img{
+        width: 8em;
+    }
+}
 @media screen and (max-width: 1200px) {
     body{
         font-size: 14px;

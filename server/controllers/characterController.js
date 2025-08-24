@@ -94,14 +94,13 @@ class CharacterController {
         .query('SELECT * FROM dbo.vwCharacters vwC WHERE vwC.class = @charClass1 OR vwC.class = @charClass2 OR vwC.class = @charClass3')
         return res.json(data.recordset)
     }
-    // async getSortedCharacters(req, res) {
-    //     const pool = await poolPromise
-    //     const request = pool.request()
-    //     // const data = await request.query('SELECT TOP 100 id, cName, cLevel,	cReset,	connStatus FROM (SELECT AccountID as id, Name as cName,	cLevel,	RESETS as cReset FROM dbo.Character c INNER JOIN ( SELECT memb_id as id, connectStat as connStatus FROM dbo.MEMB_STAT) online_status ON c.id = online_status.id) rankings ORDER by rankings.cReset DESC')
-    //     const data = await request.query('SELECT AccountID AS id, Name AS cName, cLevel, RESETS AS cReset FROM dbo.Character c INNER JOIN dbo.MEMB_STAT s ON c.id = s.memb___id')
-    //     console.log(data)
-    //     return res.json(data)
-    // }
+    async getGuildsInfo(req, res) {
+        const pool = await poolPromise
+        const request = pool.request()
+        const data = await request.query('SELECT G_Name, G_Mark, G_Master, G_Count FROM dbo.Guild')
+        console.log(data.recordset)
+        return res.json(data.recordset)
+    }
     async createCharacter(req, res) {
         const { AccountID, Name, cLevel, LevelUpPoint, Class, Experience, Strength, Dexterity, Vitality, Energy, Life, MaxLife, Mana, MaxMana, MapNumber, MapPosX, MapPosY, MapDir, PkCount, PkLevel, PkTime } = req.body
         const pool = await poolPromise

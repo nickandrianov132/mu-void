@@ -7,7 +7,7 @@ import ServerTime from './ServerTime';
 const Body = () => {
     return (
         <div className='body_container'>
-            <ServerTime />
+            {/* <ServerTime /> */}
            <SideBar />
            <AppRouter /> 
            <Aside/>
