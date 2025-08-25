@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .buyVip_container .vip_table tbody tr .vip_table_btn, .registration_container .reg_form .reg_btn_div .reg_btn, .form_btn {
   border: 0.2em solid #fa3737;
   border-radius: 0.4em;
@@ -309,6 +310,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   width: 14em;
   border-left: 0.1em solid transparent;
   border-bottom-left-radius: 0.4em;
@@ -774,7 +776,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
-  height: 20em;
+  height: 17em;
   border-radius: 0.5em;
   margin: 1em 0.6em 1em 0.6em;
   padding: 0;
@@ -787,7 +789,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #7378dc;
+  background-color: #6f60dc;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
   width: 100%;
@@ -895,7 +897,7 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #7378dc;
+  background-color: #6f60dc;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   width: 100%;
@@ -913,9 +915,9 @@ body {
 }
 .right_sidebar_container .discord_widget_container .discord_footer .discord_join_btn {
   background: #38ccf1;
-  border: 0.15em solid #5d31d7;
+  border: 0.15em solid #461fb2;
   border-radius: 0.4em;
-  color: #5529cd;
+  color: #351199;
   font-size: 0.9em;
   padding: 0.2em 0.4em;
 }
@@ -1294,7 +1296,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   width: 95%;
   margin-top: 1em;
   padding: 0.7em 0 0.7em 0;
@@ -2633,15 +2634,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border: 0.2em solid grey;
-  border-radius: 0.15em;
 }
 .guide_bossKundun_info .bossKundun_img_wrapper img {
   width: 100%;
+  border: 0.1em solid rgb(10, 10, 54);
+  border-radius: 0.4em;
+  margin-bottom: 0.4em;
 }
 .guide_bossKundun_info .bossKundun_info_description {
   display: -webkit-box;
@@ -2651,7 +2657,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
+  width: 60%;
 }
 .guide_bossKundun_info .bossKundun_info_description .info_description_item {
   display: -webkit-box;
@@ -2748,11 +2754,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_img_wrapper img {
   width: 100%;
-  border: 1px solid rgb(60, 54, 71);
+  border: 0.1em solid rgb(60, 54, 71);
+  border-radius: 0.4em;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper {
   display: -webkit-box;
@@ -2768,13 +2775,13 @@ body {
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_remark {
   padding: 0;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #15efb5;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_remark_resp {
   padding: 0;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fd8134;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_item {
@@ -2791,10 +2798,12 @@ body {
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_item .drop_item_title {
   width: 20%;
   color: #f85a5a;
+  font-size: 0.9em;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_item .drop_item_content {
   width: 80%;
   color: rgb(10, 173, 67);
+  font-size: 0.9em;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .drop_img_wrapper {
   display: -webkit-box;
@@ -3299,7 +3308,120 @@ body {
   width: 100%;
 }
 .banner_mmotop img {
-  width: 8em;
+  width: 6em;
+}
+
+.carousel_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.carousel_container .imgDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carousel_container .imgDiv img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid rgb(10, 10, 54);
+  border-radius: 0.4em;
+}
+.carousel_container .imgDiv .button-right span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.carousel_container .imgDiv .button-right span::after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.carousel_container .imgDiv .button-right:hover span {
+  padding-right: 10px;
+}
+.carousel_container .imgDiv .button-right:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.carousel_container .imgDiv .button-left span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.carousel_container .imgDiv .button-left span::after {
+  content: "«";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.carousel_container .imgDiv .button-left:hover span {
+  padding-left: 10px;
+}
+.carousel_container .imgDiv .button-left:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+.carousel_container .buttonsDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.carousel_container .buttonsDiv button {
+  cursor: pointer;
+  width: 10%;
+  min-width: 0.5em;
+  height: 0.4em;
+  color: rgb(231, 243, 249);
+  margin: 0.1em;
+  background-color: #070326;
+  outline: none;
+  border: 0.03em solid #070326;
+  border-radius: 0.25em;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  padding: 0;
+}
+.carousel_container .buttonsDiv button:hover {
+  background-color: #00dc88;
+  border-color: #00ff0a;
+  -webkit-box-shadow: 0.01em 0.01em 0.1em rgb(0, 255, 145), -0.01em -0.01em 0.1em rgb(0, 255, 145), 0.01em -0.01em 0.1em rgb(0, 255, 145), -0.01em 0.01em 0.1em rgb(0, 255, 145);
+          box-shadow: 0.01em 0.01em 0.1em rgb(0, 255, 145), -0.01em -0.01em 0.1em rgb(0, 255, 145), 0.01em -0.01em 0.1em rgb(0, 255, 145), -0.01em 0.01em 0.1em rgb(0, 255, 145);
+}
+.carousel_container .buttonsDiv .button--active {
+  background: #00dc88;
+  border-color: #14ff1c;
 }
 
 @media screen and (max-width: 1200px) {

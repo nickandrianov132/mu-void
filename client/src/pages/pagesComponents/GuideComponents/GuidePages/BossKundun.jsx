@@ -1,4 +1,5 @@
 import Images from "../../../../assets/Images";
+import PictureCarusel from "../../PicturesCarousel/PictureCarusel";
 import GuideTitle from "./GuidePagesComponents/GuideTitle";
 
 const BossKundun = () => {
@@ -8,6 +9,9 @@ const BossKundun = () => {
             <div className="guide_bossKundun_info">
                 <div className="bossKundun_img_wrapper">
                     <img src={Images.kundun} />
+                    <PictureCarusel 
+                        images={[Images.kund_kill_1, Images.kund_kill_2, Images.kund_kill_3, Images.kund_kill_4, Images.kund_kill_5]}
+                    />
                 </div>
                 <div className="bossKundun_info_description">
                     <div className="info_description_item">
