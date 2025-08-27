@@ -8,7 +8,7 @@ const Online = () => {
     return (
         <div className='online_container'>
             <OnlineIndicator online={isSuccess ? online.online : 0}/>
-            <OnlineCountStatus online={isSuccess ? online.online : 0}/>
+            <OnlineCountStatus online={isSuccess ? online.online : null}/>
         </div>
     );
 }

@@ -3,6 +3,7 @@ $body-bg: #15b11a;
 $side-bg: #0135833d;
 $nav-bg: #070326;
 $footer-bg: #070326;
+$svg_logo_bg: #09052e;
 $nav-list-item-bg: #3fce97;
 $user-container-bg: #070326;
 $rank_bg: #d1bbbb;
@@ -193,6 +194,19 @@ body {
     align-items: center;
     flex: 1 1 auto;
     width: 100%;
+    position: relative;
+    .logo_svg{
+        position: absolute;
+        top: 1em;
+        path{
+            fill: transparent;
+            stroke: #1c0a50;
+            stroke-width: 1;
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+            animation: svgLogoAnimation 3s cubic-bezier(0.6, 0.15, 0.15, 0.1) 1 forwards;
+        }
+    }
 }
 .body_container{
     display: flex;
@@ -664,7 +678,7 @@ body {
         .discord_header{
             display: flex;
             flex-direction: row;
-            background-color: #6f60dc;
+            background-color: #5f50d0;
             border-top-left-radius: 0.5em;
             border-top-right-radius: 0.5em;
             width: 100%;
@@ -736,7 +750,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content:space-around;
-            background-color: #6f60dc;
+            background-color: #5f50d0;
             border-bottom-left-radius: 0.5em;
             border-bottom-right-radius: 0.5em;
             width: 100%;
@@ -998,7 +1012,7 @@ body {
     }
     
 }
-.top3_container{
+.top5_container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2523,10 +2537,54 @@ body {
     span{
         font-size: 0.85em;
     }
-    .serverTime_h3{
-        font-weight: 500;
-        font-size: 0.9em;
+}
+.serverTime_h3{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.time_grid_container{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    font-size: 0.8em;
+    .item_even{
+        justify-self: center;
+        align-self: baseline;   
     }
+    .item_odd{
+        justify-self: center;
+        align-self: baseline;
+    }
+    .item_divide{
+        justify-self: center;
+    }
+    .item_ampm1{
+        justify-self: end;
+    }
+    .item_ampm2{
+        justify-self: start;
+    }
+    // :nth-child(odd){
+    //     justify-self: end;
+    // }
+    // :nth-child(even){
+    //     justify-self: start;
+    //     position: relative;
+    // }
+    // :nth-child(2):after{
+    //     content: ":";
+    //     margin-left: 0.1em;
+    //     position: absolute;
+    //     bottom: 5%;
+    //     left: 0.7em;
+    // }
+    // :nth-child(4):after{
+    //     content: ":";
+    //     margin-left: 0.1em;
+    //     position: absolute;
+    //     bottom: 5%;
+    //     left: 0.7em;
+    // }
 }
 
 .banner_mmotop{
@@ -2901,5 +2959,50 @@ section .loader_2{
 @keyframes animationResBtn{
     50% {
         @include box-shadow(0.15em, 0.15em, -0.15em, -0.15em, 0.3em, rgb(0, 215, 75));
+    }
+}
+
+@keyframes svgLogoAnimation {
+    0% {
+        stroke-dashoffset: 200;
+    }
+    60% {
+        fill: transparent;
+    }
+    80%{
+        stroke-dashoffset: 0;
+        fill: $svg_logo_bg;
+    }
+    86%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    88%{
+        stroke-dashoffset: 0;
+        fill:  $svg_logo_bg;
+    }
+    90%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    92%{
+        stroke-dashoffset: 0;
+        fill:  $svg_logo_bg;
+    }
+    94%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    96%{
+        stroke-dashoffset: 0;
+        fill: #070040;
+    }
+    98%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        fill: $svg_logo_bg;
+        stroke-dashoffset: 0;
     }
 }

@@ -77,7 +77,8 @@ const Images = {
     mega_cloud: new URL('./Mega_cloud.png', import.meta.url).href,    
     mega_cloud1: new URL('./Mega_cloud1.png', import.meta.url).href,    
     google_drive: new URL('./google_drive.png', import.meta.url).href,    
-    opening_img: new URL('./opening.jpg', import.meta.url).href,    
+    opening_img: new URL('./opening.jpg', import.meta.url).href,  
+    mmotop_banner: new URL('./mmotop.png', import.meta.url).href,  
 }
 
 export default Images;
