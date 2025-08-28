@@ -3362,10 +3362,10 @@ body {
 .banners_board {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -3381,6 +3381,16 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
+
+.banners_board > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.banners_board > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
 .banners_board .banner_mmotop {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -3392,10 +3402,25 @@ body {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 .banners_board .banner_topg img {
+  width: 6em;
+}
+.banners_board .banner_top100arena {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: -2;
+  grid-column: 3/1;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+.banners_board .banner_top100arena img {
   width: 6em;
 }
 

@@ -80,6 +80,7 @@ const Images = {
     opening_img: new URL('./opening.jpg', import.meta.url).href,  
     mmotop_banner: new URL('./mmotop.png', import.meta.url).href,  
     topg_banner: new URL('./topg.gif', import.meta.url).href,  
+    top100arena_banner: new URL('./top100arena.png', import.meta.url).href,  
 }
 
 export default Images;

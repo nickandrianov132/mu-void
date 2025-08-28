@@ -2609,8 +2609,8 @@ body {
 }
 .banners_board{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -2623,7 +2623,16 @@ body {
     }
     .banner_topg{
         align-self: end;
-        justify-self: center;
+        justify-self: end;
+        img{
+            width: 6em;
+        }    
+    }
+    .banner_top100arena{
+        grid-row: 1 / 2;
+        grid-column: 3 / 1;
+        align-self: center;
+        justify-self: end;
         img{
             width: 6em;
         }    
