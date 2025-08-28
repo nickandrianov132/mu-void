@@ -32,7 +32,7 @@ const HomeContent = () => {
                                 </p>
                                 <div className='discord_container'>
                                     <img className='discord_img' src={Images.discord2}></img>
-                                    <a className="a_discord" href="https://discord.gg/PJHrhz7mWM" target="_blank">Discord here!</a>
+                                    <a className="a_discord" href="https://discord.gg/ANTqvCrQCk" target="_blank">Discord here!</a>
                                 </div>
                                 </div>
                             </div>

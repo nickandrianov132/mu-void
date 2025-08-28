@@ -17,7 +17,10 @@ const UserPanel = () => {
         <div className='user_panel'>
             <div className="user_panel_item_container">
                 <GiMinions className="user_panel_icon" />
-                <a className='user_panel_item'>Characters</a>
+                <a 
+                    className='user_panel_item'
+                    onClick={() => alert("Not available yet!")}
+                >Characters</a>
             </div>
             <div className="user_panel_item_container">
                 <GiAngelWings className="user_panel_icon"/>

@@ -772,14 +772,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 14em;
-  position: relative;
   border-left: 0.1em solid transparent;
   border-bottom-right-radius: 0.4em;
   border-top-right-radius: 0.4em;
   backdrop-filter: blur(8px) brightness(65%);
-}
-.right_sidebar_container div {
-  margin: 0.6em;
 }
 .right_sidebar_container .discord_widget_container {
   display: -webkit-box;
@@ -803,12 +799,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 16%;
+  width: 100%;
   background-color: #5f50d0;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 0.2em 0 0.2em 0;
 }
 .right_sidebar_container .discord_widget_container .discord_header .discord_logo_wrapper {
   display: -webkit-box;
@@ -821,6 +817,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60%;
 }
 .right_sidebar_container .discord_widget_container .discord_header .discord_logo_wrapper .discord_logo {
@@ -875,6 +874,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  margin: 0.2em 0.4em;
   width: 2em;
 }
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container .discord_user_img {
@@ -1253,7 +1253,9 @@ body {
   background: #070326;
   color: whitesmoke;
   font-size: 0.7em;
-  border-radius: 4px;
+  border-radius: 0.45em;
+  padding: 0.3em;
+  margin: 0.5em;
 }
 .top5_container tbody td {
   font-size: 1em;
@@ -1285,18 +1287,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.2em;
 }
 .top5_container .top5_star_cooper {
   font-size: 1.3em;
   color: hsl(23, 64%, 58%);
+  margin-bottom: 0.2em;
 }
 .top5_container .top5_star_silver {
   font-size: 1.3em;
   color: hsl(0, 0%, 72%);
+  margin-bottom: 0.2em;
 }
 .top5_container .top5_star_gold {
   font-size: 1.3em;
   color: hsl(49, 100%, 66%);
+  margin-bottom: 0.2em;
 }
 
 .user_panel {
@@ -1479,6 +1485,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
+  margin: 0.4em 0.2em;
 }
 
 .online_indicator_div {
@@ -1543,6 +1550,7 @@ body {
           justify-content: space-between;
   width: 90%;
   font-size: 0.8em;
+  margin: 0.5em;
 }
 .online_count_status_coutainer > div {
   display: -webkit-box;
@@ -1560,6 +1568,9 @@ body {
           justify-content: center;
   padding: 0;
   margin: 0;
+}
+.online_count_status_coutainer .total_online_div {
+  margin-left: 0.2em;
 }
 
 .online_status_div {
@@ -3348,23 +3359,43 @@ body {
       justify-self: start;
 }
 
-.banner_mmotop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.banners_board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 100%;
+  bottom: 0;
+  margin: 0;
 }
-.banner_mmotop img {
+
+.banners_board > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.banners_board > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.banners_board .banner_mmotop {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+.banners_board .banner_mmotop img {
+  width: 6em;
+}
+.banners_board .banner_topg {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.banners_board .banner_topg img {
   width: 6em;
 }
 

@@ -83,13 +83,22 @@ const VipTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <button className="vip_table_btn">Buy</button>
+                        <button 
+                        className="vip_table_btn"
+                        onClick={() => alert("Not available yet!")}
+                        >Buy</button>
                     </td>
                     <td>
-                        <button className="vip_table_btn">Buy</button>
+                        <button 
+                        className="vip_table_btn"
+                        onClick={() => alert("Not available yet!")}
+                        >Buy</button>
                     </td>
                     <td>
-                        <button className="vip_table_btn">Buy</button>
+                        <button 
+                        className="vip_table_btn"
+                        onClick={() => alert("Not available yet!")}
+                        >Buy</button>
                     </td>
                 </tr>
             </tbody>
