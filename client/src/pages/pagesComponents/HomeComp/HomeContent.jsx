@@ -28,7 +28,7 @@ const HomeContent = () => {
                                 <div className='news_image_wrapper'>
                                     <img src={Images.opening_img}/>
                                 </div>
-                                <div><p className="first-p home-content-p">Welcome on our <b>MU Online</b> server. Open-Beta test will be started on 10 September, we'll be apretiated to everyone who will participate in Open-Beta test of our server.<br/>
+                                <div><p className="first-p home-content-p">Welcome on our <b>MU Online</b> server. Open-Beta test will be started on <b>August 28<sup>th</sup></b>, we'll be appreciated to everyone who will participate in Open-Beta test of our server.<br/>
                                 </p>
                                 <div className='discord_container'>
                                     <img className='discord_img' src={Images.discord2}></img>

@@ -9,6 +9,8 @@ const CryWolfEvent = () => {
             <div className="maya_content_container">
                 <MayaContentItem 
                     title="Dark Elf Drop:"
+                    remark="✨All items with random Exelent options✨"
+                    quantity="1 item"
                     img={Images.crywolf_darkelf}
                     armors="Dark Phoenix, Great Dragon, Dark Soul, Hurricane, Red Spirit, Dark Master, Demonic, Piercing Grove"
                     weapons="Knight Blade, Dark Reign Blade, Daybreak, Sword Dancer, Piercing Glove, Shining Scepter, Great Reign Crossbow, Arrow Wiper Bow, Albatross Bow, Platina Staff, Storm Blitz Stick, Archangel Stick, Archangel Staff, Archangel Sword, Archangel Scepter, Archangel Crossbow"
@@ -19,6 +21,7 @@ const CryWolfEvent = () => {
                     respInfo="Respawn every 24 hours"
                     img={Images.crywolf_balgass}
                     remark="✨All weapons + Luck & Skill✨"
+                    quantity="5 items"
                     armors="Dragon Knight, Venom, Sylphid Rey, Storm Blitz, Volcano, Sunlight, Phoenix Soul"
                     weapons="Bone Blade, Grand Viper Staff, Sylphid Wind Bow, Raven Stick, Soley Scepter, Phoenix Glove"
                 />

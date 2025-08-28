@@ -38,10 +38,10 @@ const GuideSideBar = () => {
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_SELUPAN_INFO)}
                 >✧ Boss Selupan</li>
-                <li 
+                {/* <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_MEDUZA_INFO)}
-                >✧ Boss Meduza</li>
+                >✧ Boss Meduza</li> */}
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_CRYWOLF_INFO)}

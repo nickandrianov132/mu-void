@@ -63,10 +63,10 @@ const navigate = useNavigate()
                     inputAction={setInputPassword}
                 />
                 <RegInput 
-                    name='email' 
+                    name='E-mail' 
                     regExp={emailRegexp} 
-                    placeholder='email...'
-                    regTip={`- standart type email`}
+                    placeholder='e-mail...'
+                    regTip={`- standart type e-mail`}
                     userAction={setEmail}
                     inputAction={setInputEmail} 
                 />
@@ -104,8 +104,6 @@ const navigate = useNavigate()
                     >Registration</button>
                 </div>
             </RegForm>
-                
-            
         </div>
     );
 }

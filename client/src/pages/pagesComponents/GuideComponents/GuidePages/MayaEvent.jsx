@@ -17,6 +17,8 @@ const MayaEvent = () => {
                 <MayaContentItem 
                     title="Maya Event Boss - Nightmare"
                     respInfo="Respawn every 24 hours"
+                    remark="All items Exelent with 1-4 / 50% Luck & Skill"
+                    quantity="5 items"
                     img={Images.nightmare}
                     armors="Dragon Knight, Venom, Sylphid Rey, Storm Blitz, Volcano, Sunlight, Phoenix Soul"
                     weapons="Bone Blade, Grand Viper Staff, Sylph Wind Bow, Raven Stick, Soley Scepter, Phoenix Glove"

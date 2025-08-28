@@ -10,6 +10,7 @@ const BossSelupan = () => {
                 <MayaContentItem 
                     title="Selupan Boss Drop info:"
                     remark="All items with 2-4 sockets + Luck & Skill"
+                    quantity="5 items"
                     respInfo="Respawn every 24 hours"
                     images={[Images.selupan_kill_1, Images.selupan_kill_2, Images.selupan_kill_3, Images.selupan_kill_4, Images.selupan_kill_5]}
                     img={Images.selupan1}

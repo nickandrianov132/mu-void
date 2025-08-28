@@ -21,7 +21,7 @@ const MiniBosses = () => {
             <div className="maya_content_container">
                 <MayaContentItem 
                     title="Death King:"
-                    remark="Every Red Dragon Inovasion apears 3 Red Dragons"
+                    remark="Every Red Dragon Invasion apears 3 Red Dragons"
                     respInfo="Respawn every 1 hour"
                     img={Images.red_dragon}
                     dropImg1={Images.gold_silver_box}

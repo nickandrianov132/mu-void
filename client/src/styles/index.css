@@ -2267,7 +2267,10 @@ body {
   width: 30%;
 }
 .reset_info_div .grandreset_img_wrapper .gr_img2 {
-  width: 90%;
+  width: 48em;
+  height: 26em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .reset_info_div .reset_req_container {
   display: -webkit-box;
@@ -2790,6 +2793,12 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1em;
+  color: #15efb5;
+}
+.maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_quantity {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
   color: #15efb5;
 }
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_remark_resp {
@@ -3511,6 +3520,7 @@ body {
   }
   .body_container {
     max-width: 100vw;
+    min-width: 338px;
   }
   body {
     font-size: 5px;

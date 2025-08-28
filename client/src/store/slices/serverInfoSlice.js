@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const serverInfo = [
-    {title: 'Expirience:', content: {content: '35x', className: 'description_content_p'}},
+    {title: 'Experience:', content: {content: '35x', className: 'description_content_p'}},
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
     {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Fairy Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
@@ -23,13 +23,13 @@ const serverInfo = [
     {title: 'Grand Reset:', content: [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
-            {content: '= 2000 free stats', className: 'description_content_p_res_stats'},
-            {content: '+ 30 Master Level skill points', className: 'description_content_p_res_stats_gr'},
+            {content: '= 2400 free stats', className: 'description_content_p_res_stats'},
+            {content: '+ 50 Master skill points + 400 WCoins', className: 'description_content_p_res_stats_gr'},
         ], 
         [
             {content: 'MG, DL, RF', className: 'description_content_p_res_class'},
-            {content: '= 2500 free stats', className: 'description_content_p_res_stats'},
-            {content: '+ 30 Master Level skill points', className: 'description_content_p_res_stats_gr'},
+            {content: '= 3000 free stats', className: 'description_content_p_res_stats'},
+            {content: '+ 50 Master skill points + 400 WCoins', className: 'description_content_p_res_stats_gr'},
         ] 
     ]
 },
