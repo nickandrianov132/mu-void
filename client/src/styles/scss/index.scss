@@ -232,16 +232,6 @@ body {
     justify-content: center;
     flex: 1 1 auto;
 }
-// .nav_list_item_wraper::after{
-//     content: "";
-//     display: flex;
-//     width: 0.3px;
-//     margin-left: 3px;
-//     height: 1em;
-//     background: rgba(255, 255, 255, 0.737);
-//     box-shadow: 0.5px -0.5px 0.5px black;
-//     opacity: .6;
-// }
 .nav_list_span::after{
     content: "";
     display: flex;
@@ -249,18 +239,28 @@ body {
     height: 1.7em;
     border-radius: 60%;
     background-image: linear-gradient( #070326 10%, white 50%,  #070326 90% );
-
     opacity: .6;
 }
 .nav_list_item_wraper{
     cursor: pointer;
     display: flex;
-    height: 1em;
     align-items: center;
-    border: 1px solid transparent;
+    justify-content: center;
+    position: relative;
+    height: 1em;
+    width: fit-content;
+    align-items: center;
+    border: 0.1em solid transparent;
     border-radius: 0.3em;
     @include navListItem(#fcfcfc, 0.3em, 1.5em, 0.5em, 0.5em);
-    transition: 0.1s ease-in-out,;
+    transition: 0.1s ease-in-out;
+    .giSwordEmblem, .giSecretBook{
+        width: 1em;
+        height: 1em;
+    }
+    .nav_list_item{
+        width: auto;
+    }
     &:hover{
         color: whitesmoke;
         background-color: $nav-list-item-bg;
@@ -442,13 +442,33 @@ body {
                 display: flex;
                 width: fit-content;
                 height: fit-content;
-                width: 75%;
-                border: 2px solid rgb(96, 96, 96);
+                width: 80%;
+                // border: 0.1em solid rgb(21, 21, 21);
                 border-radius: 0.2em;
                 margin-right: 0.4em;
+                position: relative;
                 img{
+                    border-radius: 0.2em;
                     width: 100%;
                 }
+            }
+            .news_image_wrapper::after, .news_image_wrapper::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                padding: 0.1em;
+                translate: -50% -50%;
+                border-radius: 0.2em;
+                background-image: conic-gradient(from var(--angle), rgb(255, 0, 106), rgb(42, 42, 154), rgb(221, 24, 188), rgb(255, 0, 106));
+                animation: 3s borderSpin linear infinite;
+            }
+            .news_image_wrapper::before{
+                filter: blur(0.6em);
+                opacity: 0.6;
             }
         }
         .discord_container{
@@ -516,6 +536,7 @@ body {
     }
     
 }
+
 .home_content_info_header_wrapper{
     display: flex;
     align-items: center;
@@ -1024,7 +1045,7 @@ body {
     color: whitesmoke;
     font-size: 0.7em;
     border-radius: 0.45em;
-    @include app_padding(0.3em); 
+    @include app_padding(0.4em); 
     @include app_margin(0.5em);
     tbody  td{
         font-size: 1em;
@@ -1047,22 +1068,21 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 0.2em;
     }  
     .top5_star_cooper{
         font-size: 1.3em;
         color: hsl(23, 64%, 58%);
-        margin-bottom: 0.2em;
     }
     .top5_star_silver{
         font-size: 1.3em;
         color: hsl(0, 0%, 72%);
-        margin-bottom: 0.2em;
     }
     .top5_star_gold{
         font-size: 1.3em;
         color: hsl(49, 100%, 66%);
-        margin-bottom: 0.2em;
+    }
+    .top5_axe_sword{
+        font-size: 1.3em;
     }
 }
 .user_panel{
@@ -1208,17 +1228,37 @@ body {
         font-size: 0.9em;
         font-weight: 500;
     }
+    .online_indicator_bg::after, .online_indicator_bg::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-image: conic-gradient(from var(--angle), transparent 50%, rgb(68, 215, 112), $online_indicator_bar, transparent);
+        border-radius: 0.7em;
+        padding: 0.35em;
+        z-index: -1;
+        animation: 2.5s borderSpin linear infinite;
+    }
+    .online_indicator_bg::before{
+        opacity: 0.5;
+        filter: blur(0.7em);
+    }
     .online_indicator_bg{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: start;
+        position: relative;
         padding: 0;
         height: .6em;
         @include app_margin(0.4em 0.5em 0 0.5em);
         width: 90%;
         border: 0.2em solid rgb(85, 84, 87);
         border-radius: 0.5em;
+        background: #97989d;
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.3em, #28163a);
     }
     .online_indicator_bar{
@@ -2541,7 +2581,24 @@ body {
         }
     }
 }
-
+.serverTime_container::after, .serverTime_container::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4em;
+    padding: 0.1em;
+    background-image: conic-gradient(from var(--angle),transparent 30%,rgb(23, 23, 78), transparent);
+    z-index: -1;
+    animation: 2s borderSpin linear infinite;
+}
+.serverTime_container::before{
+    opacity: 0.7;
+    filter: blur(0.8em);
+}
 .serverTime_container{
     display: flex;
     flex-direction: column;
@@ -2610,13 +2667,25 @@ body {
 .banners_board{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3em);
     position: absolute;
     width: 100%;
     bottom: 0;
     margin: 0;
+    .banner_extremeTop{
+        justify-self: end;
+        align-self: end;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        img{
+            width: 4em;
+        }
+    }
     .banner_mmotop{
         justify-self: end;
+        align-self: end;
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
         img{
             width: 6em;
         }
@@ -2624,15 +2693,17 @@ body {
     .banner_topg{
         align-self: end;
         justify-self: end;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
         img{
             width: 6em;
         }    
     }
     .banner_top100arena{
-        grid-row: 1 / 2;
-        grid-column: 3 / 1;
-        align-self: center;
+        align-self: end;
         justify-self: end;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
         img{
             width: 6em;
         }    
@@ -3043,5 +3114,21 @@ section .loader_2{
     100% {
         fill: $svg_logo_bg;
         stroke-dashoffset: 0;
+    }
+}
+
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes borderSpin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
     }
 }

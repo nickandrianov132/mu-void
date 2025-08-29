@@ -27,13 +27,13 @@ const TopPlayers = () => {
                     top3Players?.map((char, i) => 
                     <tr key={char.name}>
                         <td>{i === 0 ?
-                                <div className="rank_star_top5"><GiStarsStack className="top5_star_gold" /> {i + 1}</div>
+                                <div className="rank_star_top5"><GiStarsStack className="top5_star_gold" /> <p>{i + 1}</p></div>
                                 : i === 1 ? 
                                 <div className="rank_star_top5"><GiStarsStack className="top5_star_silver" /> <p>{i + 1}</p></div>
                                 : i === 2 ?
                                 <div className="rank_star_top5"><GiStarsStack className="top5_star_cooper" /> <p>{i + 1}</p></div>
                                 :
-                                <div className="rank_star_top5"><GiAxeSword/>{i + 1}</div>
+                                <div className="rank_star_top5"><GiAxeSword className="top5_axe_sword"/> <p>{i + 1}</p></div>
                             }
                         </td>
                         <td className="td_name">{char.name}</td>
