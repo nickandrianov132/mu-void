@@ -287,7 +287,7 @@ body {
   font-size: 1em;
   color: whitesmoke;
 }
-.nav_list_item_wraper a {
+.nav_list_item_wraper a, .nav_list_item_wraper span {
   font-size: 0.7em;
 }
 
@@ -1270,10 +1270,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 26em;
+  width: 28em;
   background: #070326;
   border: 1px solid rgb(104, 94, 131);
-  border-radius: 4px;
+  border-radius: 0.4em;
   margin: 1.5em;
   padding: 1em;
 }
@@ -1281,6 +1281,7 @@ body {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  width: 50%;
 }
 .char_card_container .char_card_img_div {
   display: -webkit-box;
@@ -1290,20 +1291,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 67%;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  width: 50%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .char_card_container .char_img {
-  height: 15em;
+  height: 13em;
 }
 .char_card_container table {
-  width: 40%;
-  margin: 0 0 0 5px;
+  width: 100%;
+  margin: 0 0.3em 0 0.3em;
   border-collapse: collapse;
   color: lab(94.6% 6.77 2.44);
 }
@@ -1312,7 +1314,7 @@ body {
   text-align: center;
 }
 .char_card_container table tr > td {
-  border-bottom: 1px solid rgb(130, 218, 255);
+  border-bottom: 0.1em solid rgb(130, 218, 255);
 }
 .char_card_container table .th {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -3630,7 +3632,6 @@ body {
 .carousel_container .imgDiv img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100%;
   width: 100%;
   border: 0.1em solid rgb(10, 10, 54);
   border-radius: 0.4em;
