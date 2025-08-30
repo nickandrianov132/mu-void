@@ -807,9 +807,10 @@ body {
                 .idle{
                     position: absolute;
                     top: 1.5em;
-                    left: 70%;
+                    right: 70%;
                     background-color: #f9cb16;
                     border-radius: 50%;
+                    border: 0.15em solid rgb(99, 90, 202);
                     width: 0.6em;
                     height: 0.6em;
                 }
