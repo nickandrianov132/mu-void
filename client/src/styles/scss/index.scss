@@ -417,12 +417,15 @@ body {
             flex-direction: row;
             align-items: center;
             font-family: "Poppins", sans-serif;
-            font-size: 0.7em;
+            font-size: 0.75em;
             color: #070040;
             .home_content_header_date_icon{
                 color:#070040;
                 font-size: 1.5em;
                 @include app_margin(0 0.3em 0 0);
+            }
+            .home_header_title_date{
+                font-weight: 500;
             }
         }
     }
@@ -434,6 +437,7 @@ body {
     .home_content_body_introduction{
         display: flex;
         flex-direction: column;
+        min-height: 9em;
         @include app_margin(0 0 1.3em 0);
         .introduction_content_wrapper{
             display: flex;
@@ -443,13 +447,39 @@ body {
                 width: fit-content;
                 height: fit-content;
                 width: 80%;
-                // border: 0.1em solid rgb(21, 21, 21);
                 border-radius: 0.2em;
                 margin-right: 0.4em;
                 position: relative;
                 img{
                     border-radius: 0.2em;
                     width: 100%;
+                }
+            }
+            .news_imagesCarousel_wrapper{
+                display: flex;
+                height: fit-content;
+                width: 50%;
+                border-radius: 0.2em;
+                margin-right: 0.4em;
+                position: relative;
+                img{
+                    border-radius: 0.2em;
+                    width: 100%;
+                }
+            }
+            .description_list{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding-left: 0.3em;
+                .description_item_p{
+                    font-size: 0.9em;
+                    margin-bottom: 1em;
+                    font-weight: 500;
+                }
+                .description_item_h4{
+                    font-size: 1em;
+                    font-weight: 600;
                 }
             }
             .news_image_wrapper::after, .news_image_wrapper::before{
@@ -468,6 +498,24 @@ body {
             }
             .news_image_wrapper::before{
                 filter: blur(0.6em);
+                opacity: 0.6;
+            }
+            .imgDiv::after, .imgDiv::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                padding: 0.1em;
+                translate: -50% -50%;
+                border-radius: 0.2em;
+                background-image: conic-gradient(from var(--angle),  rgb(255, 0, 106), rgb(42, 42, 154), rgb(221, 24, 188), rgb(255, 0, 106));
+                animation: 3s borderSpin linear infinite;
+            }
+            .imgDiv::before{
+                filter: blur(0.7em);
                 opacity: 0.6;
             }
         }
@@ -640,7 +688,7 @@ body {
                 }
             }
         }
-    }
+ }
 
 .form_btn_container{
     width: 11em;
@@ -2104,11 +2152,16 @@ body {
         height: fit-content;
         // border: 0.2em solid grey;
         // border-radius: 0.15em;
-        img{
+        .boss_img{
             width: 100%;
             border: 0.1em solid rgb(10, 10, 54);
             border-radius: 0.4em;
             margin-bottom: 0.4em;
+        }
+        img{
+            width: 100%;
+            border: 0.1em solid rgb(10, 10, 54);
+            border-radius: 0.4em;
         }
     }
     .bossKundun_info_description{
@@ -2714,11 +2767,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
     .imgDiv{
         width: 100%;
         display: flex;
         align-items: center;
+        position: relative;
         img{
             box-sizing: border-box;
             height: 100%;
@@ -2780,6 +2833,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 0.3em;
         button{
             cursor:pointer;
             width: 10%;

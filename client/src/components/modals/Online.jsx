@@ -4,7 +4,7 @@ import OnlineIndicator from './online/OnlineIndicator';
 
 const Online = () => {
     const {data: online, isSuccess} = useFetchOnlineQuery()
-    console.log(online);
+    // console.log(online);
 
     return (
         <div className='online_container'>

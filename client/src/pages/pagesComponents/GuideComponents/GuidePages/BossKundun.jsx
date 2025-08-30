@@ -8,7 +8,7 @@ const BossKundun = () => {
             <GuideTitle title="Kalima 7 Boss Kundun info:" />
             <div className="guide_bossKundun_info">
                 <div className="bossKundun_img_wrapper">
-                    <img src={Images.kundun} />
+                    <img className="boss_img" src={Images.kundun} />
                     <PictureCarusel 
                         images={[Images.kund_kill_1, Images.kund_kill_2, Images.kund_kill_3, Images.kund_kill_4, Images.kund_kill_5]}
                     />

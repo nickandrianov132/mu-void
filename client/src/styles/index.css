@@ -465,13 +465,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Poppins", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: #070040;
 }
 .home_content_container .home_content_header .home_content_header_date .home_content_header_date_icon {
   color: #070040;
   font-size: 1.5em;
   margin: 0 0.3em 0 0;
+}
+.home_content_container .home_content_header .home_content_header_date .home_header_title_date {
+  font-weight: 500;
 }
 .home_content_container .home_header_underline {
   margin: 0 0 1rem 0;
@@ -487,6 +490,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 9em;
   margin: 0 0 1.3em 0;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper {
@@ -517,6 +521,42 @@ body {
   border-radius: 0.2em;
   width: 100%;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .news_imagesCarousel_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  border-radius: 0.2em;
+  margin-right: 0.4em;
+  position: relative;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .news_imagesCarousel_wrapper img {
+  border-radius: 0.2em;
+  width: 100%;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-left: 0.3em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .news_image_wrapper::after, .home_content_container .home_content_body_introduction .introduction_content_wrapper .news_image_wrapper::before {
   content: "";
   position: absolute;
@@ -535,6 +575,26 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .news_image_wrapper::before {
   -webkit-filter: blur(0.6em);
           filter: blur(0.6em);
+  opacity: 0.6;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .imgDiv::after, .home_content_container .home_content_body_introduction .introduction_content_wrapper .imgDiv::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  padding: 0.1em;
+  translate: -50% -50%;
+  border-radius: 0.2em;
+  background-image: conic-gradient(from var(--angle), rgb(255, 0, 106), rgb(42, 42, 154), rgb(221, 24, 188), rgb(255, 0, 106));
+  -webkit-animation: 3s borderSpin linear infinite;
+          animation: 3s borderSpin linear infinite;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .imgDiv::before {
+  -webkit-filter: blur(0.7em);
+          filter: blur(0.7em);
   opacity: 0.6;
 }
 .home_content_container .home_content_body_introduction .discord_container {
@@ -2728,11 +2788,16 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-.guide_bossKundun_info .bossKundun_img_wrapper img {
+.guide_bossKundun_info .bossKundun_img_wrapper .boss_img {
   width: 100%;
   border: 0.1em solid rgb(10, 10, 54);
   border-radius: 0.4em;
   margin-bottom: 0.4em;
+}
+.guide_bossKundun_info .bossKundun_img_wrapper img {
+  width: 100%;
+  border: 0.1em solid rgb(10, 10, 54);
+  border-radius: 0.4em;
 }
 .guide_bossKundun_info .bossKundun_info_description {
   display: -webkit-box;
@@ -3559,6 +3624,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .carousel_container .imgDiv img {
   -webkit-box-sizing: border-box;
@@ -3627,6 +3693,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 0.3em;
 }
 .carousel_container .buttonsDiv button {
   cursor: pointer;
