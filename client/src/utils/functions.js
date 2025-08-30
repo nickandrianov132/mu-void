@@ -266,3 +266,12 @@ export function accountCheckVip(vip) {
 export function grToMlConvert(gr) {
     return gr * 50
 }
+
+export function filterChars(id) {
+    if(id === "admin" || id === "admin1" || id === "admin2"){
+        return false
+    }
+    else{
+        return true
+    }
+}

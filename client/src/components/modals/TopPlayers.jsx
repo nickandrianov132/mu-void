@@ -1,6 +1,6 @@
 import { GiStarsStack, GiAxeSword } from "react-icons/gi";
 import { useFetchTop3CharQuery } from "../../services/charApi";
-import { grToMlConvert } from "../../utils/functions";
+import { filterChars, grToMlConvert } from "../../utils/functions";
 const emptyTop5Players = [
     {cLevel: '', gReset: '', mLevel: '', id: "0", name: '', reset: ''},
     {cLevel: '', gReset: '', mLevel: '', id: "1", name: '', reset: ''},
@@ -9,7 +9,14 @@ const emptyTop5Players = [
     {cLevel: '', gReset: '', mLevel: '', id: "4", name: '', reset: ''},
 ];
 const TopPlayers = () => {
-    const {data: top3Players, isSuccess} = useFetchTop3CharQuery()
+    const {data: top3Players, isSuccess} = useFetchTop3CharQuery(undefined, {
+            selectFromResult: ({ data, isSuccess, isError, isLoading }) => ({
+                data: data?.filter((e) => filterChars(e.id)),
+                isLoading: isLoading,
+                isSuccess: isSuccess,
+                isError: isError,
+            })
+        })
     console.log(top3Players);
     return (
         <div className="top5_container">

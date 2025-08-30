@@ -7,21 +7,30 @@ import RankingsSortPanel from "./pagesComponents/RankingsComp/RankingsSortPanel"
 import { addCharacters } from "../store/slices/characterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { checkCharClass, grToMlConvert } from "../utils/functions";
+import { checkCharClass, filterChars, grToMlConvert } from "../utils/functions";
 import Spinner from "../components/Spinner";
 
 
 const Rankings = () => {
-    const {data:chars, isSuccess, isLoading, isError} = useFetchAllCharQuery()
+    const {data: chars, isSuccess, isLoading, isError} = useFetchAllCharQuery(undefined, {
+        selectFromResult: ({ data, isSuccess, isError, isLoading }) => ({
+            data: data?.filter((e) => filterChars(e.id)),
+            isLoading: isLoading,
+            isSuccess: isSuccess,
+            isError: isError,
+        })
+    })
     const characters = useSelector(state => state.characters)
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
+    console.log(isError);
+    console.log(isSuccess);
+    console.log(chars);
     useEffect(()=> {
         if(isSuccess == true) {
         console.log(chars)
         dispatch(addCharacters(chars))
-        // console.log(characters);
     }
     }, [isSuccess])
     console.log(characters);
