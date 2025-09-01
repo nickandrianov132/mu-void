@@ -2240,7 +2240,7 @@ body {
 .guide_container .guide_sidebar_container .guide_ul .guide_li {
   display: block;
   position: relative;
-  font-size: 0.8em;
+  font-size: 0.75em;
   z-index: 1;
   background: transparent;
   padding: 0 0.2em 0.2em 0.5em;
@@ -2981,6 +2981,108 @@ body {
   border: 0.1em solid rgb(96, 88, 88);
   border-radius: 0.2em;
   width: 8em;
+}
+
+.events_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.events_container .events_header_container {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.events_container .events_header_container ::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.1em;
+  top: 100%;
+  right: 5%;
+  background: rgb(255, 255, 255);
+  -webkit-filter: blur(0.05em);
+          filter: blur(0.05em);
+  opacity: 0.7;
+}
+.events_container .events_header_container .header_title_h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0 0 0;
+}
+.events_container .events_body_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.6em 0 1em 0;
+}
+.events_container .events_body_container .body_description {
+  font-size: 0.75em;
+  padding: 0.3em;
+}
+.events_container .events_body_container .body_description p::first-letter {
+  margin-left: 1em;
+}
+.events_container .events_body_container .body_description table {
+  border-collapse: collapse;
+}
+.events_container .events_body_container .body_description table td {
+  text-align: center;
+  border: 0.1em solid whitesmoke;
+  padding: 0 0.5em 0 0.5em;
+}
+.events_container .events_body_container .body_description table .td_gold {
+  color: rgb(247, 174, 48);
+  text-shadow: 0.01em 0.01em 0.06em orangered, -0.01em -0.01em 0.06em orangered, 0.01em -0.01em 0.06em orangered, -0.01em 0.01em 0.06em orangered;
+}
+.events_container .events_body_container .body_description table .td_zen {
+  color: rgb(87, 210, 62);
+}
+.events_container .events_body_container .body_description table .td_bc {
+  color: rgb(233, 82, 133);
+  text-shadow: 0.01em 0.01em 0.02em #511600, -0.01em -0.01em 0.02em #511600, 0.01em -0.01em 0.02em #511600, -0.01em 0.01em 0.02em #511600;
+}
+.events_container .events_body_container .body_description table .th_gold {
+  color: #00dc88;
+}
+.events_container .events_body_container .body_description table .th_base {
+  color: #00b4eb;
+}
+.events_container .events_body_container .body_description table th {
+  border: 0.1em solid whitesmoke;
+  padding: 0.2em 0.7em;
+}
+.events_container .events_body_container .body_img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 60%;
+}
+.events_container .events_body_container .body_img1 img {
+  width: 100%;
 }
 
 .download_container {

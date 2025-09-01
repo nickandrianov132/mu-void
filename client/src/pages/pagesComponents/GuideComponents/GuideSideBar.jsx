@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUZA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_RESETS_INFO } from "../../../utils/constants";
+import { GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_RESETS_INFO } from "../../../utils/constants";
 
 const GuideSideBar = () => {
     const navigate = useNavigate()
@@ -38,18 +38,22 @@ const GuideSideBar = () => {
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_SELUPAN_INFO)}
                 >✧ Boss Selupan</li>
-                {/* <li 
-                    className="guide_li"
-                    onClick={() => navigate(GUIDE_DROP_BOSS_MEDUZA_INFO)}
-                >✧ Boss Meduza</li> */}
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_CRYWOLF_INFO)}
-                >✧ CryWolf Event</li>
+                    >✧ CryWolf Event</li>
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_MAYA_INFO)}
-                >✧ Kanturu Maya Event</li>
+                    >✧ Kanturu Maya Event</li>
+                <li 
+                    className="guide_li"
+                    onClick={() => navigate(GUIDE_DROP_DS_INFO)}
+                >✧ Devil Square</li>
+                <li 
+                    className="guide_li"
+                    onClick={() => navigate(GUIDE_DROP_BC_INFO)}
+                >✧ Blood Castle</li>
             </ul>
         </div>
     );

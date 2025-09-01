@@ -84,7 +84,11 @@ const Images = {
     xtremetop100_banner: new URL('./xtremetop100.jpg', import.meta.url).href,  
     easy_obt1: new URL('./easy_obt1.jpg', import.meta.url).href,  
     easy_obt2: new URL('./easy_obt2.jpg', import.meta.url).href,  
-    easy_obt3: new URL('./easy_obt3.jpg', import.meta.url).href,  
+    easy_obt3: new URL('./easy_obt3.jpg', import.meta.url).href,
+    ds_ticket_combine: new URL('./ds_ticket_combine.jpg', import.meta.url).href,  
+    ds_charon: new URL('./ds_charon.jpg', import.meta.url).href,  
+    bc_ticket_combine: new URL('./bc_ticket_combine.jpg', import.meta.url).href,  
+    archangel: new URL('./archangel.jpg', import.meta.url).href,  
 }
 
 export default Images;

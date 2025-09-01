@@ -1,6 +1,6 @@
 import {Routes, Route, Navigate} from "react-router-dom";
 import { authRoutes, publicRoutes } from '../routes';
-import { GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUZA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, HOME_ROUTE } from '../utils/constants';
+import { GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, HOME_ROUTE } from '../utils/constants';
 import ResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/ResetSystem";
 import GrandResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/GrandResetSystem";
 import Guide from "../pages/Guide";
@@ -11,9 +11,10 @@ import BoxOfKundun from "../pages/pagesComponents/GuideComponents/GuidePages/Box
 import BossKundun from "../pages/pagesComponents/GuideComponents/GuidePages/BossKundun";
 import DungeonEvent from "../pages/pagesComponents/GuideComponents/GuidePages/DungeonEvent";
 import BossSelupan from "../pages/pagesComponents/GuideComponents/GuidePages/BossSelupan";
-import BossMeduza from "../pages/pagesComponents/GuideComponents/GuidePages/BossMeduza";
 import CryWolfEvent from "../pages/pagesComponents/GuideComponents/GuidePages/CryWolfEvent";
 import MayaEvent from "../pages/pagesComponents/GuideComponents/GuidePages/MayaEvent";
+import DevilSquare from "../pages/pagesComponents/GuideComponents/GuidePages/DevilSquare";
+import BloodCastle from "../pages/pagesComponents/GuideComponents/GuidePages/BloodCastle";
 
 
 const AppRouter = () => {
@@ -38,7 +39,8 @@ const AppRouter = () => {
                     <Route path={GUIDE_DROP_MINI_BOSSES_INFO} element={<MiniBosses/>} />
                     <Route path={GUIDE_DROP_BOSS_KUNDUN_INFO} element={<BossKundun/>} />
                     <Route path={GUIDE_DROP_BOSS_SELUPAN_INFO} element={<BossSelupan/>} />
-                    <Route path={GUIDE_DROP_BOSS_MEDUZA_INFO} element={<BossMeduza/>} />
+                    <Route path={GUIDE_DROP_DS_INFO} element={<DevilSquare/>} />
+                    <Route path={GUIDE_DROP_BC_INFO} element={<BloodCastle/>} />
                     <Route path={GUIDE_DROP_BOSS_CRYWOLF_INFO} element={<CryWolfEvent/>} />
                     <Route path={GUIDE_DROP_BOSS_MAYA_INFO} element={<MayaEvent/>} />
                     <Route path={GUIDE_ROUTE + '/*'} element={<Navigate to={GUIDE_ROUTE}/> }/>
