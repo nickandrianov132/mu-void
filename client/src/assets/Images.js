@@ -89,6 +89,8 @@ const Images = {
     ds_charon: new URL('./ds_charon.jpg', import.meta.url).href,  
     bc_ticket_combine: new URL('./bc_ticket_combine.jpg', import.meta.url).href,  
     archangel: new URL('./archangel.jpg', import.meta.url).href,  
+    cc_vendors: new URL('./cc_vendors.jpg', import.meta.url).href,  
+    cc_ticket: new URL('./cc_ticket.png', import.meta.url).href,  
 }
 
 export default Images;

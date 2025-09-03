@@ -27,12 +27,12 @@ const DevilSquare = () => {
                     sec3desc1="There are Golden Monsters in each Devil Square appears at the 10 and 15 minutes after Devil Square start:"
                     thead2={[{className: "th_gold" ,title:"#Devil Square:"}, {className: "th_gold", title:"1st Golden Monster 1:"}, {className: "th_gold", title: "2nd Golden Monster:"}]}
                     tbody2={[
-                            {className: "td_gold", num: "1", monster1:"Golden Soldier", monster2: "Golden Titan"},
-                            {className: "td_gold", num: "2", monster1:"Golden Vepar", monster2: "Golden Lizard King"},
-                            {className: "td_gold", num: "3", monster1:"Golden Devil", monster2: "Golden Iron Wheel"},
-                            {className: "td_gold", num: "4", monster1:"Golden Golem", monster2: "Golden Tantolos"},
-                            {className: "td_gold", num: "5", monster1:"Golden Crust", monster2: "Golden Satyrus"},
-                            {className: "td_gold", num: "6", monster1:"Golden Napin", monster2: "Golden Iron Knight"},
+                            {className: "td_gold", num: "1", monster1:"Golden Goblin", monster2: "Golden Rabbit"},
+                            {className: "td_gold", num: "2", monster1:"Golden Soldier", monster2: "Golden Titan"},
+                            {className: "td_gold", num: "3", monster1:"Golden Vepar", monster2: "Golden Lizard King"},
+                            {className: "td_gold", num: "4", monster1:"Golden Devil", monster2: "Golden Dark Knight"},
+                            {className: "td_gold", num: "5", monster1:"Golden Iron Wheel", monster2: "Golden Tantolos"},
+                            {className: "td_gold", num: "6", monster1:"Golden Satyros", monster2: "Golden Twin Tale"},
                             {className: "td_gold", num: "7", monster1:"Golden Napin", monster2: "Golden Iron Knight"},
                            ]}
                     sec4desc1="Upon completion of the Devil Square four players will got Zen reward according to experience they got during Devil Square"

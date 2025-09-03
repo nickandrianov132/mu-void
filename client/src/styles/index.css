@@ -2392,16 +2392,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 26em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 28em;
 }
 .reset_info_div .grandreset_img_wrapper .gr_img1 {
   width: 30%;
 }
 .reset_info_div .grandreset_img_wrapper .gr_img2 {
-  width: 48em;
-  height: 26em;
   margin-left: 1em;
   margin-right: 1em;
+  width: 90%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.reset_info_div .grandreset_img_wrapper .gr_img2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .reset_info_div .reset_req_container {
   display: -webkit-box;
@@ -3057,6 +3068,10 @@ body {
   color: rgb(233, 82, 133);
   text-shadow: 0.01em 0.01em 0.02em #511600, -0.01em -0.01em 0.02em #511600, 0.01em -0.01em 0.02em #511600, -0.01em 0.01em 0.02em #511600;
 }
+.events_container .events_body_container .body_description table .td_cc {
+  color: rgb(47, 234, 187);
+  text-shadow: 0.01em 0.01em 0.02em #502dff, -0.01em -0.01em 0.02em #502dff, 0.01em -0.01em 0.02em #502dff, -0.01em 0.01em 0.02em #502dff;
+}
 .events_container .events_body_container .body_description table .th_gold {
   color: #00dc88;
 }
@@ -3083,6 +3098,35 @@ body {
 }
 .events_container .events_body_container .body_img1 img {
   width: 100%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.events_container .events_body_container .body_img1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.events_container .events_body_container .body_img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 60%;
+}
+.events_container .events_body_container .body_img2 img {
+  width: 65%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.events_container .events_body_container .body_img2 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .download_container {

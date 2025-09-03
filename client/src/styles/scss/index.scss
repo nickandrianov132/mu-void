@@ -1854,15 +1854,22 @@ body {
     }
     .grandreset_img_wrapper{
         display: flex;
-        height: 26em;
+        align-items: center;
+        justify-content: center;
+        height: 28em;
         .gr_img1{
             width: 30%;
         }
         .gr_img2{
-            width: 48em;
-            height: 26em;
+            // width: 48em;
+            // height: 26em;
             margin-left: 1em;
             margin-right: 1em;
+            width: 90%;
+            transition: 0.1s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     .reset_req_container{
@@ -2346,6 +2353,10 @@ body {
                     color: rgb(233, 82, 133);
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, #511600);
                 }
+                .td_cc{
+                    color: rgb(47, 234, 187);
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, #502dff);
+                }
                 .th_gold{
                     color:#00dc88;
                 }
@@ -2366,9 +2377,27 @@ body {
             width: 60%;
             img{
                 width: 100%;
+                transition: 0.1s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
-    }
+        .body_img2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            width: 60%;
+            img{
+                width: 65%;
+                transition: 0.1s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+}
 }
 
 .download_container{
