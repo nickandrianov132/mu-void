@@ -50,15 +50,15 @@
 /// Server Clock Time:
 export const currentDate = (timeOffset) => {
   const localTime = new Date()
-  // console.log(localTime);
+  // console.log(timeOffset);
   const realUTCTime = new Date(Date.parse(localTime) - timeOffset)
   // console.log(realUTCTime)
   return realUTCTime
 };
 const time = (d) => ({
-  hours: d.getHours(),
-  minutes: d.getMinutes(),
-  seconds: d.getSeconds()
+  hours: d.getUTCHours(),
+  minutes: d.getUTCMinutes(),
+  seconds: d.getUTCSeconds()
 })
 
 const toTwelveHours = (t) => {

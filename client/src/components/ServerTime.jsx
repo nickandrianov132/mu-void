@@ -13,10 +13,12 @@ const ServerTime = () => {
     let offset;
     useEffect(() => {
         offset = timeDifference(data)
+        // console.log(data);
     }, [isSuccess])
 
     function timeDifference(servTime) {
         const serverTime = Date.parse(servTime)
+        console.log(new Date(serverTime));
         const timeOffset = Date.parse(localTime) - serverTime
         // console.log(timeOffset);
         // console.log(`localTime: ${Date.parse(localTime)}`);
