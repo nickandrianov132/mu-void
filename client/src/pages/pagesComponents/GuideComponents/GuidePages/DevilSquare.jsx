@@ -16,13 +16,13 @@ const DevilSquare = () => {
                     sec1img2={Images.ds_charon}
                     thead1={[{className: "th_base", title:"#Devil Square:"}, {className: "th_base", title:"Required Level"}, {className: "th_base", title: "Required Level MG,DL,RF"}]}
                     tbody1={[
-                            {num: "1", regularLvL: "15~80", mgdlrfLvl: "15-60"},
-                            {num: "2", regularLvL: "81~130", mgdlrfLvl: "61-110"},
-                            {num: "3", regularLvL: "131~180", mgdlrfLvl: "111-160"},
-                            {num: "4", regularLvL: "181~230", mgdlrfLvl: "161-210"},
-                            {num: "5", regularLvL: "231~280", mgdlrfLvl: "211-250"},
-                            {num: "6", regularLvL: "281~330", mgdlrfLvl: "251-310"},
-                            {num: "7", regularLvL: "15-400", mgdlrfLvl: "15-400"},
+                            {num: "1", regularLvL: "15~130", mgdlrfLvl: "10-110"},
+                            {num: "2", regularLvL: "131~180", mgdlrfLvl: "111-160"},
+                            {num: "3", regularLvL: "181~230", mgdlrfLvl: "161-210"},
+                            {num: "4", regularLvL: "231~280", mgdlrfLvl: "211-260"},
+                            {num: "5", regularLvL: "281~330", mgdlrfLvl: "261-310"},
+                            {num: "6", regularLvL: "231~400", mgdlrfLvl: "311-400"},
+                            {num: "7", regularLvL: "15-400", mgdlrfLvl: "10-400"},
                            ]}
                     sec3desc1="There are Golden Monsters in each Devil Square appears at the 10 and 15 minutes after Devil Square start:"
                     thead2={[{className: "th_gold" ,title:"#Devil Square:"}, {className: "th_gold", title:"1st Golden Monster 1:"}, {className: "th_gold", title: "2nd Golden Monster:"}]}

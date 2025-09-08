@@ -1,5 +1,6 @@
 import { BsCalendar2Week } from 'react-icons/bs'
 import PictureCarusel from '../PicturesCarousel/PictureCarusel';
+import Carousel from '../PicturesCarousel/Carousel';
 const HomeContent = ({title, date, sideImage, sideImagesArr, children}) => {
 
     return (
@@ -29,11 +30,18 @@ const HomeContent = ({title, date, sideImage, sideImagesArr, children}) => {
                                 }
                                 {sideImagesArr &&
                                     <div className='news_imagesCarousel_wrapper'>
-                                        <PictureCarusel
+                                        <Carousel
                                             images={sideImagesArr}
                                         />
                                     </div>
                                 }
+                                {/* {sideImagesArr &&
+                                    <div className='news_imagesCarousel_wrapper'>
+                                        <PictureCarusel
+                                            images={sideImagesArr}
+                                        />
+                                    </div>
+                                } */}
                                 {children &&
                                     <>
                                     {children}

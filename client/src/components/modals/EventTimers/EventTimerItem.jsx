@@ -1,10 +1,34 @@
-import { useState } from "react";
-import { getTime } from "../../../utils/civilTimeFunc";
+import { useEffect, useState } from "react";
+import { currentDate, getTime } from "../../../utils/civilTimeFunc";
+import { useFetchServerTimeQuery } from "../../../services/serverTimeApi";
 
 const EventTimerItem = ({event, eventOffset, eventDelay}) => {
+    const {data, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState('00:00:00')
-    setTimeout(() =>{
-        setTime(getTime(eventOffset, eventDelay))
+    let localTime;
+    useEffect(() => {
+        localTime = new Date()
+        // console.log(localTime);
+    }, [isSuccess])
+    let offset;
+    useEffect(() => {
+        offset = timeDifference(data)
+    }, [isSuccess])
+
+    function timeDifference(servTime) {
+        const serverTime = Date.parse(servTime)
+        const timeOffset = serverTime - Date.parse(localTime)
+        // console.log(timeOffset);
+        // console.log(`localTime: ${Date.parse(localTime)}`);
+        // console.log(`serverTime: ${serverTime}`);
+        return timeOffset
+    }
+
+    
+    setInterval(() =>{
+        if(offset){
+            setTime(getTime(eventOffset, eventDelay, currentDate(offset)))
+        }
     }, 1000);
 
     return (

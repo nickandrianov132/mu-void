@@ -1,10 +1,33 @@
-import { useState } from "react";
-import { finalHours } from "../utils/civilTimeFunc";
+import { useEffect, useState } from "react";
+import { finalHours} from "../utils/civilTimeFunc";
+import { useFetchServerTimeQuery } from "../services/serverTimeApi";
 
 const ServerTime = () => {
+    const {data, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState('')
+    let localTime;
+    useEffect(() => {
+        localTime = new Date()
+        // console.log(localTime);
+    }, [isSuccess])
+    let offset;
+    useEffect(() => {
+        offset = timeDifference(data)
+    }, [isSuccess])
+
+    function timeDifference(servTime) {
+        const serverTime = Date.parse(servTime)
+        const timeOffset = serverTime - Date.parse(localTime)
+        // console.log(timeOffset);
+        // console.log(`localTime: ${Date.parse(localTime)}`);
+        // console.log(`serverTime: ${serverTime}`);
+        return timeOffset
+    }
+
     setInterval(() => {
-        setTime(finalHours)
+        if(offset){
+            setTime(finalHours(offset))
+        }
     }, 1000)
     return (
         <div className='serverTime_container'>

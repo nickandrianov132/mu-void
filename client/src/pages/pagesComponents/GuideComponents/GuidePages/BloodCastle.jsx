@@ -12,7 +12,7 @@ const BloodCastle = () => {
                     sec1desc1="Save the Archangel, One of the strongest warriors in the Continent of MU Online, help him and return Absolute Weapon of The Archangel.To do that you will need to create the Cloak of Invisibility using the Scroll of Archangel, the Blood Bone, and a chaos Jewel. Only items of the same level can be combined to create the Cloak of Invisibility for that specific Blood Castle."
                     sec1img1={Images.bc_ticket_combine}
                     sec1desc2="Then find NPC Messenger of The Archangel in Devias and Noria to enter Blood Castle:"
-                    sec1img2={Images.archangel}
+                    sec1img2={Images.bc_npc}
                     thead1={[{className: "th_base", title:"#Blood Castle"}, {className: "th_base", title:"Required Level"}, {className: "th_base", title: "Required Level MG,DL,RF"}]}
                     tbody1={[
                             {num: "1", regularLvL: "15~80", mgdlrfLvl: "10-60"},

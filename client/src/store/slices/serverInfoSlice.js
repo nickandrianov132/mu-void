@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const serverInfo = [
     {title: 'Experience:', content: {content: '35x', className: 'description_content_p'}},
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
+    {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
+    {title: 'Windows per PC:', content: {content: '5', className: 'description_content_p'}},
     {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Fairy Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
     {title: 'Reset:', content: [
         [
@@ -43,6 +45,7 @@ const serverInfo = [
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
 {title: 'BC, DS:', content: {content: '150% Exp🔥', className: 'description_content_p'}},
+{title: 'Happy Hour:', content: {content: 'Exp + 30% Drop + 20% twice a day', className: 'description_content_p'}},
 ]
 
 const serverInfoSlice = createSlice({

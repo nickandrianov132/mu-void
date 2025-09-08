@@ -20,8 +20,8 @@
         // return prependZero(hours % 60)
         return hours % 24
     }
-    export  function getTime(eventOffset, eventDelay){
-            const d = new Date()
+    export  function getTime(eventOffset, eventDelay, d){
+            // const d = new Date()
             let bcStartIn;
         const currTime = {
             total: (((d.getUTCHours()*60*60) + ((d.getUTCMinutes())*60) + d.getUTCSeconds()) + eventDelay) % eventOffset 
@@ -44,14 +44,21 @@
             minutes: d.getUTCMinutes(),
             seconds: d.getUTCSeconds(),
         } 
+        console.log(utcDateTime);
     }
 
 /// Server Clock Time:
-const currentDate = () => new Date();
+export const currentDate = (timeOffset) => {
+  const localTime = new Date()
+  // console.log(localTime);
+  const realUTCTime = new Date(Date.parse(localTime) - timeOffset)
+  // console.log(realUTCTime)
+  return realUTCTime
+};
 const time = (d) => ({
-  hours: d.getUTCHours(),
-  minutes: d.getUTCMinutes(),
-  seconds: d.getUTCSeconds()
+  hours: d.getHours(),
+  minutes: d.getMinutes(),
+  seconds: d.getSeconds()
 })
 
 const toTwelveHours = (t) => {
@@ -102,7 +109,7 @@ const logClear = () => console.clear();
 
 const compose = (...fns) => arg => fns.reduce((arg, fn) => fn(arg), arg)
 
-export const finalHours = () => compose(time, toTwelveHours, appendZeroToHours, appendZeroToMinutes, appendZeroToSeconds, timetoString)(currentDate());
+export const finalHours = (d) => compose(time, toTwelveHours, appendZeroToHours, appendZeroToMinutes, appendZeroToSeconds, timetoString)(currentDate(d));
 
 
 export const startTicking = () => setInterval(compose(logClear, finalHours, loging), 1000)
