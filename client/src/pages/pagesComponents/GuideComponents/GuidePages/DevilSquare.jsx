@@ -21,7 +21,7 @@ const DevilSquare = () => {
                             {num: "3", regularLvL: "181~230", mgdlrfLvl: "161-210"},
                             {num: "4", regularLvL: "231~280", mgdlrfLvl: "211-260"},
                             {num: "5", regularLvL: "281~330", mgdlrfLvl: "261-310"},
-                            {num: "6", regularLvL: "231~400", mgdlrfLvl: "311-400"},
+                            {num: "6", regularLvL: "331~400", mgdlrfLvl: "311-400"},
                             {num: "7", regularLvL: "15-400", mgdlrfLvl: "10-400"},
                            ]}
                     sec3desc1="There are Golden Monsters in each Devil Square appears at the 10 and 15 minutes after Devil Square start:"

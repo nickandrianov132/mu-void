@@ -8,7 +8,6 @@ const EventTimerItem = ({event, eventOffset, eventDelay}) => {
     let localTime;
     useEffect(() => {
         localTime = new Date()
-        // console.log(localTime);
     }, [isSuccess])
     let offset;
     useEffect(() => {
@@ -18,9 +17,6 @@ const EventTimerItem = ({event, eventOffset, eventDelay}) => {
     function timeDifference(servTime) {
         const serverTime = Date.parse(servTime)
         const timeOffset = serverTime - Date.parse(localTime)
-        // console.log(timeOffset);
-        // console.log(`localTime: ${Date.parse(localTime)}`);
-        // console.log(`serverTime: ${serverTime}`);
         return timeOffset
     }
 
