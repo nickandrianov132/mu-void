@@ -1,4 +1,4 @@
-import { HOME_ROUTE, ABOUT_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, LOGIN_ROUTE, USER_PANEL_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, CHARACTER_CARD_ROUTE, REGISTRATION_SUCCESS, ACCOUNT_CHARACTERS_ROUTE, GUIDE_ROUTER, ACCOUNT_CHARACTERS_GR_ROUTE, REGAIN_PASSWORD_ROUTE, REGAIN_PASSWORD_SUCCESS_ROUTE, ACCOUNT_INFO_ROUTE, ACCOUNT_VIP_ROUTE } from "./utils/constants";
+import { HOME_ROUTE, ABOUT_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, LOGIN_ROUTE, USER_PANEL_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, CHARACTER_CARD_ROUTE, REGISTRATION_SUCCESS, ACCOUNT_CHARACTERS_ROUTE, GUIDE_ROUTER, ACCOUNT_CHARACTERS_GR_ROUTE, REGAIN_PASSWORD_ROUTE, REGAIN_PASSWORD_SUCCESS_ROUTE, ACCOUNT_INFO_ROUTE, ACCOUNT_VIP_ROUTE, ACCOUNT_VOTE_ROUTE } from "./utils/constants";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Registration from "./pages/Registration";
@@ -13,6 +13,7 @@ import RegainPassword from "./components/RegainPassword";
 import RegainPassSuccess from "./components/RegainPassSuccess";
 import AccountInfo from "./pages/pagesComponents/AccountInfoComponent/AccountInfo";
 import BuyVip from "./components/modals/userPanel/Vip/BuyVip";
+import VoteContainer from "./components/modals/userPanel/Vote/VoteContainer";
 
 export const authRoutes = [
     {
@@ -26,6 +27,10 @@ export const authRoutes = [
     {
         path: ACCOUNT_INFO_ROUTE,
         Component: AccountInfo
+    },
+    {
+        path: ACCOUNT_VOTE_ROUTE,
+        Component: VoteContainer
     },
     {
         path: ACCOUNT_VIP_ROUTE,

@@ -20,7 +20,7 @@ const Login = () => {
     const [pTipPass, setPTipPass] = useState(false) 
     const dispatch = useDispatch()
     const navigate = useNavigate()
-
+    console.log(data);
     const loginCheck = (e) => {
         if(e.length > 0){
             setCheckLogin(loginRegexp.test(loginValue))
