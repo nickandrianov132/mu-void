@@ -13,7 +13,7 @@ const VoteContainer = () => {
             {isSuccess &&
                 <VoteItem
                     title="Vote on TOPG!"
-                    link={`https://topg.org/ru/mu-private-servers/server-675336-${userInfo.accName}#vote`}
+                    link={`https://topg.org/ru/mu-private-servers/server-675336-${userInfo.accName}`}
                     img={Images.topg_banner}
                 />
             
