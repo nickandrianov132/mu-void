@@ -13,8 +13,8 @@ router.get('/auth/accountcharacters', authMiddleware, userController.getAccountC
 router.get('/auth/accountinfo', authMiddleware, userController.getAccountInfo)
 router.post('/auth/accountcharacters/reset', authMiddleware, userController.makeAccountCharacterReset)
 router.post('/auth/accountcharacters/grandreset', authMiddleware, userController.makeAccountCharacterGrandReset)
-router.post('/voteTOPG', userController.userVoteTOPG)
-router.post('/voteExtremetop100', userController.userVoteExtremetop100)
+router.get('/voteTOPG', userController.userVoteTOPG)
+router.get('/voteExtremetop100', userController.userVoteExtremetop100)
 
 
 
