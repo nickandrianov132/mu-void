@@ -64,6 +64,18 @@ class UserController {
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
     }
+    async  userVoteTop100arena(req, res) {
+        const {postback} = req.query
+        const pool = await poolPromise
+        const request = pool.request()
+        const vote = await request
+        .input('AccountID', sql.VarChar(10), postback)
+        .input('Type', sql.Int(), 0)
+        .input('Coin', sql.Float(), 10)
+        .execute('dbo.WZ_IBS_AddCoin')
+        console.log(vote.recordset[0]);
+        return res.json(vote.recordset[0].RESULT)
+    }
     async createAccount(req, res, next) {
         const {login, password, name, email, date, regQuestion, regAnswer} = req.body
         if(!email || !password) {

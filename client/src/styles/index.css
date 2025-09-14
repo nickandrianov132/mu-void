@@ -3627,6 +3627,10 @@ body {
   color: whitesmoke;
   text-shadow: 0.01em 0.01em 0.1em rgb(19, 18, 21), -0.01em -0.01em 0.1em rgb(19, 18, 21), 0.01em -0.01em 0.1em rgb(19, 18, 21), -0.01em 0.01em 0.1em rgb(19, 18, 21);
 }
+.vote_container .vote_header_wrapper .vote_h4 .vote_em {
+  color: #35cb62;
+  text-shadow: 0.01em 0.01em 0.07em rgb(8, 96, 227), -0.01em -0.01em 0.07em rgb(8, 96, 227), 0.01em -0.01em 0.07em rgb(8, 96, 227), -0.01em 0.01em 0.07em rgb(8, 96, 227);
+}
 .vote_container .vote_item_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3634,6 +3638,19 @@ body {
   width: 100%;
 }
 .vote_container .vote_item_container .vote_img_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 20%;
 }
 .vote_container .vote_item_container .vote_img_wrapper .vote_img {
@@ -3657,7 +3674,7 @@ body {
   bottom: -15%;
   left: 0;
   width: 0px;
-  height: 0.1em;
+  height: 0.05em;
   background: #00dc88;
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
@@ -3677,7 +3694,7 @@ body {
 }
 .vote_container .vote_item_container .vote_link_wrapper .vote_link:hover::after {
   width: 90%;
-  border: 0.1em solid transparent;
+  border: 0.05em solid transparent;
   border-radius: 0.3em;
 }
 

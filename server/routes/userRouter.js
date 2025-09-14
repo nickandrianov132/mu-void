@@ -15,6 +15,7 @@ router.post('/auth/accountcharacters/reset', authMiddleware, userController.make
 router.post('/auth/accountcharacters/grandreset', authMiddleware, userController.makeAccountCharacterGrandReset)
 router.get('/voteTOPG', userController.userVoteTOPG)
 router.get('/voteExtremetop100', userController.userVoteExtremetop100)
+router.get('/voteTop100arena', userController.userVoteTop100arena)
 
 
 

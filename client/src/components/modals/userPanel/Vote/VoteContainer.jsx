@@ -8,7 +8,7 @@ const VoteContainer = () => {
     return (
         <div className="vote_container">
             <div className="vote_header_wrapper">
-                <h4 className="vote_h4">Vote for our Server and get reward <em>10 WC</em>!</h4>
+                <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em">10 WCoins</em>!</h4>
             </div>
             {isSuccess &&
             <>
@@ -18,9 +18,14 @@ const VoteContainer = () => {
                 img={Images.topg_banner}
             />
             <VoteItem
-                title="Vote on extremetop100!!"
+                title="Vote on extremetop100!"
                 link={`https://www.xtremetop100.com/in.php?site=1132377759&postback=${userInfo.accName}`}
                 img={Images.xtremetop100_banner}
+            />
+            <VoteItem
+                title="Vote on top100arena!"
+                link={`https://www.top100arena.com/listing/101647/vote?incentive=${userInfo.accName}`}
+                img={Images.top100arena_banner}
             />
             
             </>
