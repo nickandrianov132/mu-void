@@ -275,3 +275,137 @@ export function filterChars(id) {
         return true
     }
 }
+
+export function checkResLvl(lvl, res, grRes) {
+    if(grRes == 0) {
+        if(res == 0 && lvl >= 370) {
+            return true
+        }
+        else if(res == 1 && lvl >= 380) {
+            return true
+        }
+        else if(res == 2 && lvl >=390) {
+            return true
+        }
+        else if(res >= 3 && lvl >=400) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    else if(grRes > 0) {
+        if(lvl >=400) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+}
+export function tipResLvl(lvl, res, grRes) {
+    if(grRes == 0) {
+        if(res == 0 && lvl < 370) {
+            let tip = '⛔ Character should be 370lvl to make Reset!'
+            return tip
+        }
+        else if(res == 1 && lvl < 380) {
+            let tip = '⛔ Character should be 380lvl to make Reset!'
+            return tip
+        }
+        else if(res == 2 && lvl < 390) {
+            let tip = '⛔ Character should be 3900lvl to make Reset!'
+            return tip
+        }
+        else if(res >= 3 && lvl < 400) {
+            let tip = '⛔ Character should be 400lvl to make Reset!'
+            return tip
+        }
+        else {
+            return false
+        }
+    }
+    else if(grRes > 0) {
+        if(lvl < 400) {
+            let tip = '⛔ Character should be 400lvl to make Reset!'
+            return tip
+        } else {
+            return false
+        }
+    } else {
+        return false
+    }
+}
+
+export function checkZenRes(zen, res, gRes) {
+    const easyResZen = 5000000
+    const regularResZen = 10000000
+    const nextRes = res + 1
+    if(gRes == 0) {
+        if(res == 0 && zen >= easyResZen * nextRes) {
+            return true
+        }
+        else if(res == 1 && zen >= easyResZen * nextRes) {
+            return true
+        }
+        else if(res == 2 && zen >= easyResZen * nextRes) {
+            return true
+        }
+        else if(res == 3 && zen >= regularResZen * nextRes) {
+            return true
+        }
+        else {
+            return false
+        }
+
+    }
+    else if(gRes > 0) {
+        if(zen >= regularResZen * nextRes) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    else {
+        return false
+    }
+}
+
+export function tipZenRes(zen, res, gRes) {
+    const easyResZen = 5000000
+    const regularResZen = 10000000
+    const nextRes = res + 1
+    let needZen
+    if(gRes == 0) {
+        if(res == 0 && zen < easyResZen * nextRes) {
+            needZen = (easyResZen * nextRes) - zen
+            return needZen
+        }
+        else if(res == 1 && zen < easyResZen * nextRes) {
+            needZen = (easyResZen * nextRes) - zen
+            return needZen
+        }
+        else if(res == 2 && zen < easyResZen * nextRes) {
+            needZen = (easyResZen * nextRes) - zen
+            return needZen
+        }
+        else if(res == 3 && zen < regularResZen * nextRes) {
+            needZen = (regularResZen * nextRes) - zen
+            return needZen
+        }
+        else {
+            return false
+        }
+
+    }
+    else if(gRes > 0) {
+        if(zen < regularResZen * nextRes) {
+            needZen = (regularResZen * nextRes) - zen
+            return needZen
+        }
+        else {
+            return false
+        }
+    }
+}

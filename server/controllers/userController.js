@@ -38,19 +38,78 @@ async function findUserAnswer(answer) {
     .query('SELECT memb.memb___id AS user_login FROM dbo.MEMB_INFO memb WHERE memb.fpas_answ = @fpas_answ')
     return acc
 }
-
-class UserController {
-    async  userVoteTOPG(req, res) {
-        const {p_resp} = req.query
+async function findVoteUser(login, site) {
+    const pool = await poolPromise
+    const request = pool.request()
+    const voteUserDate = await request
+    .input('accName', sql.VarChar(10), login)
+    .input('voteSite', sql.VarChar(20), site)
+    .query('SELECT v.voteDate FROM dbo.Vote_Acc_Info v WHERE v.accName = @accName AND v.voteSite = @voteSite')
+    console.log(voteUserDate.recordset)
+    return voteUserDate 
+}
+async function addVoteUser(login, site, date, ip) {
         const pool = await poolPromise
         const request = pool.request()
-        const vote = await request
-        .input('AccountID', sql.VarChar(10), p_resp)
-        .input('Type', sql.Int(), 0)
-        .input('Coin', sql.Float(), 10)
-        .execute('dbo.WZ_IBS_AddCoin')
-        console.log(vote.recordset[0]);
-        return res.json(vote.recordset[0].RESULT)
+            const addVoteUser = await request
+            .input('accName', sql.VarChar(10), login)
+            .input('voteSite', sql.VarChar(20), site)
+            .input('voteIp', sql.VarChar(15), ip)
+            .input('voteDate', sql.SmallDateTime(), date)
+            .query('INSERT INTO dbo.Vote_Acc_Info (accName, voteSite, voteDate, voteIp) VALUES (@accName, @voteSite, @voteDate, @voteIp)')
+            console.log("Voted from addVoteUser")
+            return addVoteUser
+}
+async function updateVoteUser(login, site, date, ip) {
+            const pool = await poolPromise
+            const request = pool.request()
+                const updateVoteUser = await request
+                .input('accName', sql.VarChar(10), login)
+                .input('voteSite', sql.VarChar(20), site)
+                .input('voteDate', sql.SmallDateTime(), date)
+                .input('voteIp', sql.VarChar(15), ip)
+                .query('UPDATE dbo.Vote_Acc_Info SET voteDate = @voteDate WHERE accName = @accName AND voteSite = @voteSite')
+                console.log("Voted from updateVoteUser")
+                return updateVoteUser
+}
+
+class UserController {
+    async  userVoteTOPG(req, res, next) {
+        const {p_resp, ip} = req.query
+        const pool = await poolPromise
+        const request = pool.request()
+        const voteDate = await findVoteUser(p_resp, "TOPG")
+        const d = new Date()
+        if(voteDate.recordset.length == 0) {
+            await addVoteUser(p_resp, "TOPG", d, ip)
+            const vote = await request
+            .input('AccountID', sql.VarChar(10), p_resp)
+            .input('Type', sql.Int(), 0)
+            .input('Coin', sql.Float(), 10)
+            .execute('dbo.WZ_IBS_AddCoin')
+            console.log("vote 1st if");
+            return res.json(vote.recordset[0].RESULT)
+        }
+        else if(voteDate.recordset.length != 0) {
+            const dateNowInMS = Date.now()
+            const voteDateInMS = Date.parse(voteDate.recordset[0].voteDate)
+            const dateDifference = dateNowInMS - voteDateInMS
+            if(dateDifference > 43200000) {
+                await updateVoteUser(p_resp, "TOPG", d, ip)
+                const vote = await request
+                .input('AccountID', sql.VarChar(10), p_resp)
+                .input('Type', sql.Int(), 0)
+                .input('Coin', sql.Float(), 10)
+                .execute('dbo.WZ_IBS_AddCoin')
+                console.log("vote 2nd if");
+                return res.json(vote.recordset[0].RESULT)
+            } else{
+            return next(ApiError.internal("you have already voted!"))
+        }
+        }
+        else{
+            return next(ApiError.internal("ooops... something went wrong"))
+        }
     }
     async  userVoteExtremetop100(req, res) {
         const {custom} = req.query

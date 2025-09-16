@@ -1,6 +1,6 @@
 import Images from '../../../assets/Images';
 import { useFetchAccountCharResetMutation } from '../../../services/userApi';
-import { validateCharReset, checkLocation, checkCharClass } from '../../../utils/functions'
+import { validateCharReset, checkLocation, checkCharClass, checkResLvl, tipResLvl, checkZenRes, tipZenRes } from '../../../utils/functions'
 import SpinnerSmall from '../../../components/SpinnerSmall'
 
 
@@ -35,9 +35,9 @@ const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cA
     }
     let image = setImg();
 
-    function pretyZen() {
+    function pretyZen(zen) {
         const arr = []
-        const arrZen = cZen.toString().split('')
+        const arrZen = zen.toString().split('')
         for (let a =[], i = arrZen.length; i > 0; i--) {
             a.push(arrZen[i - 1])
             console.log(a);
@@ -128,12 +128,20 @@ const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cA
                     <div className='user_char_res_warning'>
                         {cReset >= 15 ?
                             <p className='res_warn_p_max_res'><em>🔹</em> You have reached maximum Reset <em>🎉🎉</em></p>
-                            :
-                            <p>⛔Check reset requirements!</p>
+                        :
+                        <>
+                            {!checkResLvl(cLevel, cReset, cGrandReset) &&
+                                <div className='user_char_res_warning'>{tipResLvl(cLevel, cReset, cGrandReset)}</div>
+                            }
+                            {!checkZenRes(cZen, cReset, cGrandReset) &&
+                                <div className='user_char_res_warning'>⛔ Required <em className='em_zen'>{pretyZen(tipZenRes(cZen, cReset, cGrandReset))} Zen</em> more!</div>
+                            }
+                            {cStatus === 1 &&
+                            <div className='user_char_res_warning'>⚠️Character should be offline!</div>
+                            }
+                        </>
                         }
-                        {cStatus === 1 &&
-                        <div className='user_char_res_warning'>⚠️Character should be offline!</div>
-                        }
+                        
                     </div>
                     
                 }

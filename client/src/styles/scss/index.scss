@@ -1704,10 +1704,13 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        min-height: 1.5em;
+        min-height: 2.7em;
         .user_char_res_warning{
             color: red;
-            font-size: 0.8em;
+            font-size: 0.85em;
+            .em_zen{
+                color: $em_gold;
+            }
             .res_warn_p_max_res{
                 color: #00dc88;
                 font-weight: 500;

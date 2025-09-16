@@ -2210,12 +2210,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 1.5em;
+  min-height: 2.7em;
   position: relative;
 }
 .user_char_card_container .user_char_btn_wrapper .user_char_res_warning {
   color: red;
-  font-size: 0.8em;
+  font-size: 0.85em;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .em_zen {
+  color: rgba(239, 180, 29, 0.9333333333);
 }
 .user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_warn_p_max_res {
   color: #00dc88;
