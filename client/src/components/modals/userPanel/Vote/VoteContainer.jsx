@@ -18,14 +18,19 @@ const VoteContainer = () => {
                 img={Images.topg_banner}
             />
             <VoteItem
-                title="Vote on extremetop100!"
+                title="Vote on ExtremeTop100!"
                 link={`https://www.xtremetop100.com/in.php?site=1132377759&postback=${userInfo.accName}`}
                 img={Images.xtremetop100_banner}
             />
             <VoteItem
-                title="Vote on top100arena!"
+                title="Vote on Top100Arena!"
                 link={`https://www.top100arena.com/listing/101647/vote?incentive=${userInfo.accName}`}
                 img={Images.top100arena_banner}
+            />
+            <VoteItem
+                title="Vote on ArenaTop100!"
+                link={`https://www.arena-top100.com/index.php?a=in&u=nick132&id=${userInfo.accName}`}
+                img={Images.arena_top100_banner}
             />
             
             </>
