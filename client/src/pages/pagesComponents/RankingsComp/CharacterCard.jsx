@@ -9,25 +9,25 @@ const CharacterCard = () => {
     console.log(data);
     function setImg(){
         let img = ''
-        if(!isLoading && (data[0].cClass === 16 || data[0].cClass === 17 || data[0].cClass === 18)) {
+        if(!isLoading && (data.cClass === 16 || data.cClass === 17 || data.cClass === 18)) {
             img = Images.dk
         }
-        else if(!isLoading && (data[0].cClass === 0 || data[0].cClass === 1 || data[0].cClass === 2)) {
+        else if(!isLoading && (data.cClass === 0 || data.cClass === 1 || data.cClass === 2)) {
             img = Images.wiz
         }
-        else if(!isLoading && (data[0].cClass === 32 || data[0].cClass === 33 || data[0].cClass === 34)) {
+        else if(!isLoading && (data.cClass === 32 || data.cClass === 33 || data.cClass === 34)) {
             img = Images.elf
         } 
-        else if(!isLoading && (data[0].cClass === 80 || data[0].cClass === 81 || data[0].cClass === 82)) {
+        else if(!isLoading && (data.cClass === 80 || data.cClass === 81 || data.cClass === 82)) {
             img = Images.summ
         } 
-        else if (!isLoading && (data[0].cClass === 48 || data[0].cClass === 50)){
+        else if (!isLoading && (data.cClass === 48 || data.cClass === 50)){
             img = Images.mg
         }
-        else if (!isLoading && (data[0].cClass === 64 || data[0].cClass === 66)){
+        else if (!isLoading && (data.cClass === 64 || data.cClass === 66)){
             img = Images.dl
         }
-        else if (!isLoading && (data[0].cClass === 96 || data[0].cClass === 98)){
+        else if (!isLoading && (data.cClass === 96 || data.cClass === 98)){
             img = Images.rf
         }
         return img
