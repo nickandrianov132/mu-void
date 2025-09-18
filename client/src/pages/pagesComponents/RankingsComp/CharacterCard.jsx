@@ -63,51 +63,63 @@ const CharacterCard = () => {
                         <table className='char_table'>
                             <thead>
                                 <tr>
-                                    <th className='th'>{data[0].cName}</th>
+                                    <th className='th'>{data.cName}</th>
                                 </tr>
                             </thead>
                             <tbody className='tbody'>
                                 <tr>
                                     <td>Class</td>
-                                    <td>{checkCharClass(data[0].cClass)}</td>
+                                    <td>{checkCharClass(data.cClass)}</td>
+                                </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    {data.online == 1 ?
+                                        <td className='user_char_card_table_td_online'>Online</td>
+                                        :
+                                        <td className='user_char_card_table_td_offline'>Offline</td>
+                                    }
                                 </tr>
                                 <tr>
                                     <td>Reset</td>
-                                    <td>{data[0].cReset}</td>
+                                    <td>{data.cReset}</td>
+                                </tr>
+                                <tr>
+                                    <td>Grand Reset</td>
+                                    <td>{data.cGrandReset}</td>
                                 </tr>
                                 <tr>
                                     <td>Level</td>
-                                    <td>{data[0].cLevel}</td>
+                                    <td>{data.cLevel}</td>
                                 </tr>
                                 <tr>
                                     <td>Strength</td>
-                                    <td>{data[0].cStr}</td>
+                                    <td>{data.cStr}</td>
                                 </tr>
                                 <tr>
                                     <td>Agility</td>
-                                    <td>{data[0].cAgi}</td>
+                                    <td>{data.cAgi}</td>
                                 </tr>
                                 <tr>
                                     <td>Vitality</td>
-                                    <td>{data[0].cVit}</td>
+                                    <td>{data.cVit}</td>
                                 </tr>
                                 <tr>
                                     <td>Energy</td>
-                                    <td>{data[0].cEne}</td>
+                                    <td>{data.cEne}</td>
                                 </tr>
-                                {data[0].cCmd !== 0 &&
+                                {data.cCmd !== 0 &&
                                 <tr>
                                     <td>Command</td>
-                                    <td>{data[0].cCmd}</td>
+                                    <td>{data.cCmd}</td>
                                 </tr>  
                                 }
                                 <tr>
                                     <td>Map</td>
-                                    <td>{checkLocation(data[0].mapNumber)}</td>
+                                    <td>{checkLocation(data.mapNumber)}</td>
                                 </tr>
                                 <tr>
                                     <td>Coord</td>
-                                    <td>{`${data[0].mapPosX}x${data[0].mapPosY}`} </td>
+                                    <td>{`${data.mapX}x${data.mapY}`} </td>
                                 </tr>
                             </tbody>
                         </table>

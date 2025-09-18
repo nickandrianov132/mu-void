@@ -351,7 +351,7 @@ export function checkZenRes(zen, res, gRes) {
         else if(res == 2 && zen >= easyResZen * nextRes) {
             return true
         }
-        else if(res == 3 && zen >= regularResZen * nextRes) {
+        else if(res >= 3 && zen >= regularResZen * nextRes) {
             return true
         }
         else {
@@ -390,7 +390,7 @@ export function tipZenRes(zen, res, gRes) {
             needZen = (easyResZen * nextRes) - zen
             return needZen
         }
-        else if(res == 3 && zen < regularResZen * nextRes) {
+        else if(res >= 3 && zen < regularResZen * nextRes) {
             needZen = (regularResZen * nextRes) - zen
             return needZen
         }

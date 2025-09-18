@@ -1356,6 +1356,17 @@ body {
   font-weight: 400;
   font-size: 0.8em;
 }
+.char_card_container table .tbody tr .user_char_card_table_td_online {
+  color: #00dc88;
+  -webkit-animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+          animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+}
+.char_card_container table .tbody tr .user_char_card_table_td_offline {
+  color: #fc0547;
+  font-style: oblique;
+  -webkit-animation: userCharStatusBlinkRed 2s ease-in-out infinite;
+          animation: userCharStatusBlinkRed 2s ease-in-out infinite;
+}
 .char_card_container table .tbody tr > td {
   width: 5em;
 }
@@ -2130,7 +2141,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 26em;
+  width: 28em;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -2195,6 +2206,17 @@ body {
 .user_char_card_container .user_char_wrapper_div .user_char_card_table_div table .user_tbody {
   font-weight: 400;
   font-size: 0.85em;
+}
+.user_char_card_container .user_char_wrapper_div .user_char_card_table_div table .user_tbody tr .user_char_card_table_td_online {
+  color: #00dc88;
+  -webkit-animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+          animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+}
+.user_char_card_container .user_char_wrapper_div .user_char_card_table_div table .user_tbody tr .user_char_card_table_td_offline {
+  color: #fc0547;
+  font-style: oblique;
+  -webkit-animation: userCharStatusBlinkRed 2s ease-in-out infinite;
+          animation: userCharStatusBlinkRed 2s ease-in-out infinite;
 }
 .user_char_card_container .user_char_btn_wrapper {
   display: -webkit-box;
@@ -4173,6 +4195,50 @@ body {
   }
   .left_sidebar_container {
     display: none;
+  }
+}
+@-webkit-keyframes userCharStatusBlinkGreen {
+  0% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(4, 160, 61), -0.005em -0.005em 0.4em rgb(4, 160, 61), 0.005em -0.005em 0.4em rgb(4, 160, 61), -0.005em 0.005em 0.4em rgb(4, 160, 61);
+  }
+  50% {
+    text-shadow: 0.01em 0.01em 0.7em rgb(49, 252, 49), -0.01em -0.01em 0.7em rgb(49, 252, 49), 0.01em -0.01em 0.7em rgb(49, 252, 49), -0.01em 0.01em 0.7em rgb(49, 252, 49);
+  }
+  100% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(0, 172, 0), -0.005em -0.005em 0.4em rgb(0, 172, 0), 0.005em -0.005em 0.4em rgb(0, 172, 0), -0.005em 0.005em 0.4em rgb(0, 172, 0);
+  }
+}
+@keyframes userCharStatusBlinkGreen {
+  0% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(4, 160, 61), -0.005em -0.005em 0.4em rgb(4, 160, 61), 0.005em -0.005em 0.4em rgb(4, 160, 61), -0.005em 0.005em 0.4em rgb(4, 160, 61);
+  }
+  50% {
+    text-shadow: 0.01em 0.01em 0.7em rgb(49, 252, 49), -0.01em -0.01em 0.7em rgb(49, 252, 49), 0.01em -0.01em 0.7em rgb(49, 252, 49), -0.01em 0.01em 0.7em rgb(49, 252, 49);
+  }
+  100% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(0, 172, 0), -0.005em -0.005em 0.4em rgb(0, 172, 0), 0.005em -0.005em 0.4em rgb(0, 172, 0), -0.005em 0.005em 0.4em rgb(0, 172, 0);
+  }
+}
+@-webkit-keyframes userCharStatusBlinkRed {
+  0% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(168, 19, 19), -0.005em -0.005em 0.4em rgb(168, 19, 19), 0.005em -0.005em 0.4em rgb(168, 19, 19), -0.005em 0.005em 0.4em rgb(168, 19, 19);
+  }
+  50% {
+    text-shadow: 0.01em 0.01em 0.7em rgb(116, 12, 12), -0.01em -0.01em 0.7em rgb(116, 12, 12), 0.01em -0.01em 0.7em rgb(116, 12, 12), -0.01em 0.01em 0.7em rgb(116, 12, 12);
+  }
+  100% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(168, 19, 19), -0.005em -0.005em 0.4em rgb(168, 19, 19), 0.005em -0.005em 0.4em rgb(168, 19, 19), -0.005em 0.005em 0.4em rgb(168, 19, 19);
+  }
+}
+@keyframes userCharStatusBlinkRed {
+  0% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(168, 19, 19), -0.005em -0.005em 0.4em rgb(168, 19, 19), 0.005em -0.005em 0.4em rgb(168, 19, 19), -0.005em 0.005em 0.4em rgb(168, 19, 19);
+  }
+  50% {
+    text-shadow: 0.01em 0.01em 0.7em rgb(116, 12, 12), -0.01em -0.01em 0.7em rgb(116, 12, 12), 0.01em -0.01em 0.7em rgb(116, 12, 12), -0.01em 0.01em 0.7em rgb(116, 12, 12);
+  }
+  100% {
+    text-shadow: 0.005em 0.005em 0.4em rgb(168, 19, 19), -0.005em -0.005em 0.4em rgb(168, 19, 19), 0.005em -0.005em 0.4em rgb(168, 19, 19), -0.005em 0.005em 0.4em rgb(168, 19, 19);
   }
 }
 @-webkit-keyframes onlineStatus {

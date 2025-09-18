@@ -6,8 +6,8 @@ import SpinnerSmall from '../../../components/SpinnerSmall'
 
 const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cAgi, cVit, cEne, cCmd, cGrandReset, mapNumber, cZen}) => {
     const [fetchAccountCharReset, { isLoading, isSuccess, isError}] = useFetchAccountCharResetMutation()
-    console.log(isSuccess)
-    console.log(cStatus);
+    // console.log(isSuccess)
+    // console.log(cStatus);
     function setImg(){
         let img = ''
         if(cClass === 16 || cClass === 17 || cClass === 18 ) {
@@ -78,6 +78,14 @@ const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cA
                             <td>{checkCharClass(cClass)}</td>
                         </tr>
                         <tr>
+                            <td>Status</td>
+                            {cStatus == 1 ?
+                                <td className='user_char_card_table_td_online'>Online</td>
+                                :
+                                <td className='user_char_card_table_td_offline'>Offline</td>
+                            }
+                        </tr>
+                        <tr>
                             <td>Grand Reset</td>
                             <td>{cGrandReset}</td>
                         </tr>
@@ -134,7 +142,13 @@ const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cA
                                 <div className='user_char_res_warning'>{tipResLvl(cLevel, cReset, cGrandReset)}</div>
                             }
                             {!checkZenRes(cZen, cReset, cGrandReset) &&
-                                <div className='user_char_res_warning'>⛔ Required <em className='em_zen'>{pretyZen(tipZenRes(cZen, cReset, cGrandReset))} Zen</em> more!</div>
+                                <div className='user_char_res_warning'>
+                                    {tipZenRes(cZen, cReset, cGrandReset) &&
+                                        <>
+                                            ⛔ Required <em className='em_zen'>{pretyZen(tipZenRes(cZen, cReset, cGrandReset))} Zen</em> more!
+                                        </>
+                                    }
+                                </div>
                             }
                             {cStatus === 1 &&
                             <div className='user_char_res_warning'>⚠️Character should be offline!</div>

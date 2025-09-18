@@ -1109,6 +1109,19 @@ body {
     table .tbody{
         font-weight: 400;
         font-size: 0.8em;
+                tr {
+                .user_char_card_table_td_online{
+                    color:#00dc88;
+                    animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+                    // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.8em, rgb(49, 252, 49));
+                }
+                .user_char_card_table_td_offline{
+                    color:#fc0547;
+                    font-style: oblique;
+                    animation: userCharStatusBlinkRed 2s ease-in-out infinite;
+                    // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, rgb(249, 1, 1));
+                }
+            }
     }
     table .tbody tr > td{
         width: 5em;
@@ -1650,7 +1663,7 @@ body {
 .user_char_card_container{
     display: flex;
     flex-direction: column;
-    width: 26em;
+    width: 28em;
     max-height: fit-content;
     background: $nav-bg;
     border: 0.1em solid rgb(104, 94, 131);
@@ -1696,7 +1709,20 @@ body {
                 font-weight: 400;
                 font-size: 0.85em;
             }
-
+            table .user_tbody tr {
+                .user_char_card_table_td_online{
+                    color:#00dc88;
+                    animation: userCharStatusBlinkGreen 2s ease-in-out infinite;
+                    // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.8em, rgb(49, 252, 49));
+                }
+                .user_char_card_table_td_offline{
+                    color:#fc0547;
+                    font-style: oblique;
+                    animation: userCharStatusBlinkRed 2s ease-in-out infinite;
+                    // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, rgb(249, 1, 1));
+                }
+            }
+            
         }
     }
     .user_char_btn_wrapper{
@@ -3196,7 +3222,28 @@ body {
 }
 
 
-
+@keyframes userCharStatusBlinkGreen {
+    0% {
+        @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.4em, rgb(4, 160, 61));
+    }
+    50%{
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.7em, rgb(49, 252, 49));
+    }
+    100%{
+        @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.4em, rgb(0, 172, 0));
+    }
+}
+@keyframes userCharStatusBlinkRed {
+    0% {
+        @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.4em, rgb(168, 19, 19));
+    }
+    50%{
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.7em, rgb(116, 12, 12));
+    }
+    100%{
+        @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.4em, rgb(168, 19, 19));
+    }
+}
 
 @keyframes onlineStatus {
     0% {box-shadow: -0.4 -0.4px 1.8px rgb(45, 250, 45), 0.4px 0.4px 1.8px rgb(45, 250, 45), -0.4px 0.4px 1.8px rgb(45, 250, 45), 0.4px -0.4px 1.8px rgb(45, 250, 45)}
