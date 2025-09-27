@@ -40,13 +40,13 @@ const AccountTable = () => {
                     {userInfo.vipStart &&
                         <tr className="user_tr">
                             <td className="user_td_title">Vip Start:</td>
-                            <td>{userInfo.vipStart}</td>
+                            <td>{new Date(userInfo.vipStart).toUTCString()}</td>
                         </tr>
                     }
                     {userInfo.vipDays &&
                     <tr className="user_tr">
-                        <td className="user_td_title">Vip Days:</td>
-                        <td>{userInfo.vipDays}</td>
+                        <td className="user_td_title">Vip End:</td>
+                        <td>{new Date(userInfo.vipDays).toUTCString()}</td>
                     </tr>
                     }
                     <tr className="user_tr">

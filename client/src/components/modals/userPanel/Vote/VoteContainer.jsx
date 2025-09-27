@@ -1,10 +1,22 @@
+import { useSelector } from "react-redux";
 import Images from "../../../../assets/Images";
 import { useFetchAccountInfoQuery } from "../../../../services/userApi";
 import VoteItem from "./VoteItem";
+import { useNavigate } from "react-router";
+import { useEffect } from "react";
+import { HOME_ROUTE } from "../../../../utils/constants";
 
 const VoteContainer = () => {
     const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
     console.log(userInfo);
+    const {accessToken} = useSelector(state => state.user)
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if(!accessToken) {
+            navigate(HOME_ROUTE)
+        }
+    }, [accessToken])
     return (
         <div className="vote_container">
             <div className="vote_header_wrapper">

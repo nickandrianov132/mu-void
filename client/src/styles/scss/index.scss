@@ -91,6 +91,8 @@ $aside-wd: 110px;
 %formBtn{
     border: 0.2em solid #fa3737;
     border-radius: 0.4em;
+    width: 4em;
+    height: 2em;
     color: white;
     cursor: pointer;
     background: #fa3737;
@@ -2727,6 +2729,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
+    min-height: 14em;
     background: $footer-bg;
     border-radius: 0.4em;
     color: whitesmoke;
@@ -2797,6 +2800,21 @@ body {
                     }
                     &:active{
                         transform: translate(1px,1px);
+                    }
+                }
+                .td_btn_vipBuy{
+                    position: relative;
+                    .spinner_small{
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translate(2em, 0);
+                    }
+                }
+                td{
+                    .vip_td_em_tip{
+                        color: #d2fb02;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.3em, rgb(219, 0, 37));
                     }
                 }
             }

@@ -2,6 +2,8 @@
 .buyVip_container .vip_table tbody tr .vip_table_btn, .registration_container .reg_form .reg_btn_div .reg_btn, .form_btn {
   border: 0.2em solid #fa3737;
   border-radius: 0.4em;
+  width: 4em;
+  height: 2em;
   color: white;
   cursor: pointer;
   background: #fa3737;
@@ -3545,6 +3547,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
+  min-height: 14em;
   background: #070326;
   border-radius: 0.4em;
   color: whitesmoke;
@@ -3618,6 +3621,20 @@ body {
 .buyVip_container .vip_table tbody tr .vip_table_btn:active {
   -webkit-transform: translate(1px, 1px);
           transform: translate(1px, 1px);
+}
+.buyVip_container .vip_table tbody tr .td_btn_vipBuy {
+  position: relative;
+}
+.buyVip_container .vip_table tbody tr .td_btn_vipBuy .spinner_small {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(2em, 0);
+          transform: translate(2em, 0);
+}
+.buyVip_container .vip_table tbody tr td .vip_td_em_tip {
+  color: #d2fb02;
+  text-shadow: 0.01em 0.01em 0.3em rgb(219, 0, 37), -0.01em -0.01em 0.3em rgb(219, 0, 37), 0.01em -0.01em 0.3em rgb(219, 0, 37), -0.01em 0.01em 0.3em rgb(219, 0, 37);
 }
 
 .vote_container {

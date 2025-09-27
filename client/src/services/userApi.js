@@ -48,7 +48,14 @@ export const userApi = api.injectEndpoints({
                 url: `/user/auth/accountinfo`
             })
         }),
+        userBuyVip: build.mutation({
+            query: (vipData) => ({
+                url: `/user/buyVip`,
+                method: 'POST',
+                body: vipData
+            })
+        })
     }),
 })
 
-export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery } = userApi
+export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation } = userApi

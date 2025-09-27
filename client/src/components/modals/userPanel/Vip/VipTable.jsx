@@ -1,26 +1,66 @@
-import { useReducer, useState } from "react";
+import { useState } from "react";
 import useVipCost from "../../../../customHooks/useVipCost";
+import { useFetchAccountInfoQuery, useUserBuyVipMutation } from "../../../../services/userApi";
+import { useEffect } from "react";
+import SpinnerSmall from "../../../SpinnerSmall";
 
 const VipTable = () => {
-    const [dur, setDur] = useState('')
-    const [costBronze, setCostBronze] = useVipCost(300)
-    const [costSilver, setCostSilver] = useVipCost(400)
-    const [costGold, setCostGold] = useVipCost(500)
-    // console.log(cost);
+    // const [dur, setDur] = useState(false)
+    const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
+    const [userBuyVip, {data: vipData, error: vipErr, isSuccess: vipIsSuccess, isError: vipIsError, isLoading: vipIsLoading}] = useUserBuyVipMutation()
+    const [vipBronze, setVipBronze] = useVipCost({type: 1, days: 7, price: 300})
+    const [vipSilver, setVipSilver] = useVipCost({type: 2, days: 7, price: 500})
+    const [vipGold, setVipGold] = useVipCost({type: 3, days: 7, price: 700})
+    console.log(userInfo);
+    // useEffect(() => {
+    //     setDur(true)
+    //     setTimeout(() => {
+    //         setDur(false)
+    //     },2000)
+    // }, [vipData])
 
+    console.log(vipData);
+    console.log(isSuccess);
+    console.log(new Date().toString());
     function selectHandler(e) {
         console.log(e.target.name);
         console.log(e.target.value);
         if(e.target.name == 'bronze') {
-            setCostBronze(e.target.name, e.target.value)
+            setVipBronze(e.target.name, e.target.value)
         }
         if(e.target.name == 'silver') {
-            setCostSilver(e.target.name, e.target.value)
+            setVipSilver(e.target.name, e.target.value)
         }
         if(e.target.name == 'gold') {
-            setCostGold(e.target.name, e.target.value)
+            setVipGold(e.target.name, e.target.value)
         }
     }
+
+    function vipBuyHandler(e) {
+        if(e.target.id === "bronze") {
+            userBuyVip({
+                name: userInfo.accName,
+                days: vipBronze.days,
+                type: vipBronze.type
+            })
+        }
+        if(e.target.id === "silver") {
+            userBuyVip({
+                name: userInfo.accName,
+                days: vipSilver.days,
+                type: vipSilver.type
+            })
+        }
+        if(e.target.id === "gold") {
+            userBuyVip({
+                name: userInfo.accName,
+                days: vipGold.days,
+                type: vipGold.type
+            })
+        }
+        
+    }
+
     return (
         <table className="vip_table">
             <thead>
@@ -32,14 +72,14 @@ const VipTable = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td>Exp: +5x</td>
-                    <td>Exp: +7.5x</td>
-                    <td>Exp: +10x</td>
+                    <td>Exp: +10%</td>
+                    <td>Exp: +20%</td>
+                    <td>Exp: +35%</td>
                 </tr>
                 <tr>
                     <td>Drop: +10%</td>
                     <td>Drop: +20%</td>
-                    <td>Drop: +30%</td>
+                    <td>Drop: +35%</td>
                 </tr>
                 <tr>
                     <td>
@@ -77,28 +117,36 @@ const VipTable = () => {
                     </td>
                 </tr>
                 <tr>
-                    <td>{costBronze} WCoins</td>
-                    <td>{costSilver} WCoins</td>
-                    <td>{costGold} WCoins</td>
+                    <td>{vipBronze.price} WCoins</td>
+                    <td>{vipSilver.price} WCoins</td>
+                    <td>{vipGold.price} WCoins</td>
                 </tr>
                 <tr>
-                    <td>
-                        <button 
+                    <td className="td_btn_vipBuy">
+                        <button
+                        id="bronze" 
                         className="vip_table_btn"
-                        onClick={() => alert("Not available yet!")}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
                     </td>
                     <td>
-                        <button 
+                        <button
+                        id="silver" 
                         className="vip_table_btn"
-                        onClick={() => alert("Not available yet!")}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
                     </td>
-                    <td>
-                        <button 
+                    <td className="td_btn_vipBuy">
+                        <button
+                        id="gold" 
                         className="vip_table_btn"
-                        onClick={() => alert("Not available yet!")}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colSpan={3}>
+                        {vipIsSuccess && <span className="vip_td_em_tip">{vipData[0].RESULT}</span>}
                     </td>
                 </tr>
             </tbody>

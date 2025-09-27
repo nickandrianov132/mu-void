@@ -2,66 +2,66 @@ import { useState } from "react"
 
 
 const useVipCost = (value) => {
-    const [price, setPrice] = useState(value)
+    const [vip, setVip] = useState(value)
 
 function setCalcPrice(type, days){
     switch (type) {
         case "bronze":
             switch (days) {
                 case "7":
-                    setPrice(300)
+                    setVip((state) => ({type: 1, days: 7, price: 300}))
                     break;
                 case "14":
-                    setPrice(600)
+                    setVip((state) => ({type: 1, days: 14, price: 600}))
                     break;
                 case "30":
-                    setPrice(1100)
+                    setVip((state) => ({type: 1, days: 30, price: 1200}))
                     break;
                 default:
-                    setPrice(0)
+                    setVip({type: 1, days: 7, price: 300})
                     break;
             }
             break;
         case "silver":
             switch (days) {
                 case "7":
-                    setPrice(400)
+                    setVip((state) => ({type: 2, days: 7, price: 500}))
                     break;
                 case "14":
-                    setPrice(800)
+                    setVip((state) => ({type: 2, days: 14, price: 1000}))
                     break;
                 case "30":
-                    setPrice(1400)
+                    setVip((state) => ({type: 2, days: 30, price: 2000}))
                     break;
                 default:
-                    setPrice(0)
+                    setVip({type: 2, days: 7, price: 500})
                     break;
             }
             break;
         case "gold":
             switch (days) {
                 case "7":
-                    setPrice(500)
+                    setVip((state) => ({type: 3, days: 7, price: 700}))
                     break;
                 case "14":
-                    setPrice(1000)
+                    setVip((state) => ({type: 3, days: 14, price: 1400}))
                     break;
                 case "30":
-                    setPrice(1800)
+                    setVip((state) => ({type: 3, days: 30, price: 2800}))
                     break;
                 default:
-                    setPrice(0)
+                    setVip({type: 3, days: 7, price: 700})
                     break;
             }
             break;
     
         default:
-            setPrice(0)
+            setVip({})
             break;
     }
 }
 
-    return [price, setCalcPrice]
+    return [vip, setCalcPrice]
 
 }
 

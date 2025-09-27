@@ -247,16 +247,16 @@ export function grCheckReset(reset) {
 
 export function accountCheckVip(vip) {
     let vipType = ''
-    if(vip == 0) {
+    if(vip == 1) {
         return vipType = "Bronze VIP"
     }
-    else if(vip == 1) {
+    else if(vip == 2) {
         return vipType = "Silver VIP"
     }
-    else if(vip == 2) {
+    else if(vip == 3) {
         return vipType = "Gold VIP"
     }
-    else if(vip == 3) {
+    else if(vip == 4) {
         return vipType = "Platinum VIP"
     } else {
         return "No VIP"

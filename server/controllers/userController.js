@@ -310,6 +310,18 @@ class UserController {
         .execute('dbo.GrandReset_system1')
         return res.json(data.recordset[0].Result)
     }
+    async buyVip(req, res) {
+        const {name, days, type} = req.body
+        const pool = await poolPromise
+        const request = pool.request()
+        const data = await request
+        .input('accName', sql.VarChar(10), name)
+        .input('vipDays', sql.Int(), days)
+        .input('vipType', sql.SmallInt(), type)
+        .execute('dbo.Buy_vip')
+        return res.json(data.recordset)
+
+    }
 }
 
 
