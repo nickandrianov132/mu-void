@@ -51,6 +51,7 @@ const UserPanel = () => {
                     >Logout</a>
             </div>
             <SectionLinks />
+            
         </div>
     );
 }

@@ -9,7 +9,7 @@ export const userApi = api.injectEndpoints({
                 method: 'POST',
                 body: user,
             }),
-            invalidatesTags: [{type: 'authToken'}]
+            invalidatesTags: [{type: 'authToken'}, {type: 'userInfo'}]
         }),
         getUserDetails: build.query({
             query: () => ({
@@ -46,7 +46,8 @@ export const userApi = api.injectEndpoints({
         fetchAccountInfo: build.query({
             query: () => ({
                 url: `/user/auth/accountinfo`
-            })
+            }),
+            providesTags: ["userInfo"]
         }),
         userBuyVip: build.mutation({
             query: (vipData) => ({

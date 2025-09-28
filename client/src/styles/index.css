@@ -3547,7 +3547,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  min-height: 14em;
+  min-height: 15em;
   background: #070326;
   border-radius: 0.4em;
   color: whitesmoke;

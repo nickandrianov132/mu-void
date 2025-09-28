@@ -11,7 +11,7 @@ const VipTable = () => {
     const [vipBronze, setVipBronze] = useVipCost({type: 1, days: 7, price: 300})
     const [vipSilver, setVipSilver] = useVipCost({type: 2, days: 7, price: 500})
     const [vipGold, setVipGold] = useVipCost({type: 3, days: 7, price: 700})
-    console.log(userInfo);
+    // console.log(userInfo);
     // useEffect(() => {
     //     setDur(true)
     //     setTimeout(() => {
@@ -19,9 +19,9 @@ const VipTable = () => {
     //     },2000)
     // }, [vipData])
 
-    console.log(vipData);
-    console.log(isSuccess);
-    console.log(new Date().toString());
+    // console.log(vipData);
+    // console.log(isSuccess);
+    // console.log(new Date().toString());
     function selectHandler(e) {
         console.log(e.target.name);
         console.log(e.target.value);
@@ -36,23 +36,23 @@ const VipTable = () => {
         }
     }
 
-    function vipBuyHandler(e) {
+    async function vipBuyHandler(e) {
         if(e.target.id === "bronze") {
-            userBuyVip({
+            await userBuyVip({
                 name: userInfo.accName,
                 days: vipBronze.days,
                 type: vipBronze.type
             })
         }
         if(e.target.id === "silver") {
-            userBuyVip({
+            await userBuyVip({
                 name: userInfo.accName,
                 days: vipSilver.days,
                 type: vipSilver.type
             })
         }
         if(e.target.id === "gold") {
-            userBuyVip({
+            await userBuyVip({
                 name: userInfo.accName,
                 days: vipGold.days,
                 type: vipGold.type
