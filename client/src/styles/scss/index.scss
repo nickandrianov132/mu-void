@@ -1223,7 +1223,7 @@ body {
         color: whitesmoke;
         background: transparent;
         @include app_padding(0.3em);
-        margin-bottom: 20px;
+        margin-bottom: 0.4em;
         .link-vote{
             display: flex;
             flex-basis: 100%;
@@ -1283,6 +1283,100 @@ body {
             justify-content: center;
             background: #ee4429;
             border-radius: 0.3em;   
+        }
+    }
+    .vip_statuBar{
+        display: flex;
+        width: 100%;
+        position: relative;
+        .vip_statuBar_container{
+            display: flex;
+            width: 95%;
+            height: 1.6em;
+            .vip_emblem_wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                .vip_gold_emblem{
+                    color: #ffc800;
+                    font-size: 2.2em;
+                }
+                .vip_silver_emblem{
+                    color: #c8c3ba;
+                    font-size: 2.2em;
+                }
+                .vip_bronze_emblem{
+                    color: #cf7446;
+                    font-size: 2.2em;
+                }
+            }
+            .vip_description_wrapper{
+                display: flex;
+                width: 70%;
+                align-items: center;
+                justify-content: flex-start;
+                .vip_description_gold{
+                    font-size: 0.9em;
+                    color: #ffc800;
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(255, 111, 0));
+                }
+                .vip_description_silver{
+                    font-size: 0.9em;
+                    color: #c8c3ba;
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, #c9d0e2);
+                }
+                .vip_description_bronze{
+                    font-size: 0.9em;
+                    color: #de8152;
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(244, 116, 142));
+                }
+            }
+            .no_vip_div{
+                width: 100%;
+                color: whitesmoke;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-align: center;
+                justify-self: center;
+
+            }
+        }
+        .spinner_small{
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            width: 5em;
+            height: 2em;
+            transform: translate(50%, 50%);
+        }
+    }
+    .wcoinsc_bar_container{
+        display: flex;
+        width: 100%;
+        height: 2em;
+        @include app_padding(0 0 0 0.9em);
+        .wcoins_title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            color: #47f285;
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+            letter-spacing: 0.02em;
+            font-size: 0.9em;
+            
+        }
+        .wcoins_amount{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 60%;
+            color: #32f3a9;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(92, 88, 209));
+            font-size: 0.9em;
         }
     }
 }

@@ -54,7 +54,8 @@ export const userApi = api.injectEndpoints({
                 url: `/user/buyVip`,
                 method: 'POST',
                 body: vipData
-            })
+            }),
+            invalidatesTags: ["userInfo"]
         })
     }),
 })

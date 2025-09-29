@@ -409,3 +409,60 @@ export function tipZenRes(zen, res, gRes) {
         }
     }
 }
+
+export function vipEmblemClassName(vipNum) {
+    if(vipNum == 1) {
+        return "vip_bronze_emblem"
+    }
+    if(vipNum == 2) {
+        return "vip_silver_emblem"
+    }
+    if(vipNum == 3) {
+        return "vip_gold_emblem"
+    }
+    else{
+        return "vip_none_emblem"
+    }
+}
+export function vipDescClassName(vipNum) {
+    if(vipNum == 1) {
+        return "vip_description_bronze"
+    }
+    if(vipNum == 2) {
+        return "vip_description_silver"
+    }
+    if(vipNum == 3) {
+        return "vip_description_gold"
+    }
+    else{
+        return "vip_description_none"
+    }
+}
+export function vipType(vipNum) {
+    if(vipNum == 1) {
+        return "Bronze VIP is Active"
+    }
+    if(vipNum == 2) {
+        return "Silver VIP is Active"
+    }
+    if(vipNum == 3) {
+        return "Gold VIP is Active"
+    }
+    else{
+        return " "
+    }
+}
+
+export function vipExpireCheck(vipDate) {
+    const date = new Date();
+    const currentDateInMS = Date.parse(date)
+    const vipDateInMS = Date.parse(vipDate)
+    if(vipDateInMS < currentDateInMS) {
+        return false
+    } 
+    else if(vipDateInMS > currentDateInMS){
+        return true
+    } else {
+        return false
+    }
+}
