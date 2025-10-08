@@ -397,27 +397,15 @@ body {
     display: flex;
     flex-direction: column;
     @include app_padding(0 0.5em);
-    // background: $home_content_container-bg;
-    // backdrop-filter: blur(8px) brightness(120%);
+    backdrop-filter: blur(1.4em) opacity(.9) brightness(120%);
+    background-position: center;
+    background-size:auto;
     @include app_margin(1.4em 2.8em);
     @include app_padding(0.6em);
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, $footer-bg);
-    border: 1px solid #563e72;
-    border-radius: 5px;
+    border: 0.1em solid #563e72;
+    border-radius: 0.4em;
     position: relative;
-        ::after{
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-image: url('../assets/rankings-bg5.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-
-        mask-image: url('../assets/ink_video-ezgif.com-loop-count.gif');
-        mask-size: cover;
-        mask-position: center;
-    }
     .home_content_header{
         display: flex;
         flex-direction: row;
@@ -425,7 +413,9 @@ body {
         justify-content: space-between;
         @include app_margin(0.5em 1em 0.5em 0.5em);
         .home_content_header_title{
+            color: #070040;
             font-size: 1em;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #2b1b66);
         }
         .home_content_header_date{
             display: flex;
@@ -440,13 +430,14 @@ body {
                 @include app_margin(0 0.3em 0 0);
             }
             .home_header_title_date{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-weight: 500;
             }
         }
     }
     .home_header_underline{
         @include app_margin(0 0 1rem 0);
-        border-bottom: 1px solid black;
+        border-bottom: 0.1em solid black;
             @include box-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
     }
     .home_content_body_introduction{
@@ -581,7 +572,7 @@ body {
 .about_content_container{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     position: relative;
     @include app_padding(0 0.5em);
     @include app_margin(1.4em 2.8em);
@@ -972,18 +963,21 @@ body {
     }
     .th_name{
         text-align: left;
-        width: 9em;
+        width: 7em;
         padding-left: 1em;
     }
     .th_class{
         width: 9em;
     }
     .th_reset{
-        width: 6em;
+        width: 4.5em;
         border: 0px;
         border-top-right-radius: 0.25em;
     }
     .th_lvl{
+        width: 4.5em;
+    }
+    .th_guild{
         width: 6em;
     }
     thead{
@@ -1008,6 +1002,12 @@ body {
         cursor: pointer;
         text-align: left;
         padding-left: 1em;
+    }
+    .td_guild{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: #fa7923;
+        font-size: 1em;
+        @include text-shadow(0.02em, 0.02em, -0.02em, -0.02em, 0.1em, rgb(73, 18, 122));
     }
     tbody > tr:not(:last-child) {
         border-bottom: 0.08em solid $rank_border;
@@ -1055,9 +1055,9 @@ body {
 }
 .rankings_tbody tr:hover{
     color: whitesmoke;
-    text-shadow: 0.3px 0.3px 1.8px  rgb(230, 54, 83);
+    text-shadow: 0.3px 0.3px 1.8px  rgb(234, 65, 65);
     
-    background-color: #241e4e7b;
+    background-color: #241e4e55;
     // background-image: linear-gradient( $rank_bg 0%, #241e4e 20%, #0e0a29 60%, #200d3f 100%);
 }
 
@@ -1181,6 +1181,78 @@ body {
         font-size: 1.3em;
     }
 }
+.castle_info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    background: #070326;
+    color: whitesmoke;
+    border-radius: 0.45em;
+    @include app_padding(0.4em); 
+    // @include app_margin(0.5em);
+    .castle_header_wrapper{
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        .castle_emblem{
+            font-size: 1.4em;
+            color: rgb(255, 41, 41);
+            animation: turnEmblem 2s cubic-bezier(0.19, 0.6, 0.22, 1.2) infinite;
+        }
+        h4{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #e4e4e4;
+            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.02em, #280a95);
+            @include text-shadow(0.025em, 0.025em, -0.025em, -0.025em, 0.02em, #f21b1f);
+        }
+    }
+    .cs_info_wrapper{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.7em;
+        .cs_title{
+            width: 30%;
+            font-weight: 600;
+            align-items: flex-start;
+        }
+        .cs_title_owner{
+            width: 40%;
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #e4e4e4;
+            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.02em, #280a95);
+            @include text-shadow(0.025em, 0.025em, -0.025em, -0.025em, 0.05em, #f21b1f);
+            
+        }
+        .cs_info{
+            display: flex;
+            justify-content: flex-end;
+            align-content: center;
+            width: 70%;
+        }
+        .cs_info_owner{
+            display: flex;
+            justify-content: center;
+            align-content: cs_info_owner;
+            width: 60%;
+            font-size: 1.15em;
+            color: #f6d82e;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(213, 225, 48));
+            @include text-shadow(0.02em, 0.02em, -0.02em, -0.02em, 0.1em, rgb(22, 16, 26));
+            @include text-shadow(0.03em, 0.03em, -0.03em, -0.03em, 0.2em, rgb(255, 8, 82));
+            .owner_guild_emblem{
+                font-size: 1.7em;
+                color: #f9cd4a;
+                margin-left: 0.3em;
+                animation: crownBright 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite;
+                
+            }
+        }
+    }
+}
 .user_panel{
     display: flex;
     flex-direction: column;
@@ -1231,11 +1303,16 @@ body {
             background: $vote-bg;
             border: 0.1em solid transparent;
             border-radius: 0.3em;
+            .coins_icon{
+                font-size: 1.4em;
+                color: #f9cb16;
+                margin-left: 0.2em;
+            }
             &:hover{
-                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
-                color: whitesmoke;
-                background-color: rgb(5, 147, 255); 
-                border: 0.1em solid rgb(191, 208, 250);
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, rgb(28, 30, 26));
+                color:whitesmoke;
+                background-color: #03d5ff; 
+                border: 0.1em solid #f6a738;
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1309,6 +1386,9 @@ body {
                 .vip_bronze_emblem{
                     color: #cf7446;
                     font-size: 2.2em;
+                }
+                .vip_none_emblem{
+                    display: none;
                 }
             }
             .vip_description_wrapper{
@@ -1868,6 +1948,12 @@ body {
         }
 
     }
+}
+.em_char_guild{
+    color: #f6d82e;
+    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(213, 225, 48));
+    @include text-shadow(0.02em, 0.02em, -0.02em, -0.02em, 0.1em, rgb(22, 16, 26));
+    @include text-shadow(0.03em, 0.03em, -0.03em, -0.03em, 0.2em, rgb(255, 8, 82));
 }
 .guide_container{
     display: flex;
@@ -3609,5 +3695,17 @@ section .loader_2{
     }
     to{
         --angle: 360deg;
+    }
+}
+
+@keyframes turnEmblem {
+    0% {
+        transform: rotate(0deg);
+    }
+    // 50% {
+    //     transform: rotate(180deg);
+    // }
+    100% {
+        transform: rotate(360deg);
     }
 }

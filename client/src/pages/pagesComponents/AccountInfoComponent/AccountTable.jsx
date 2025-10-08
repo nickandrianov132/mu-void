@@ -1,10 +1,19 @@
 import { useFetchAccountInfoQuery } from "../../../services/userApi";
 import Spinner from "../../../components/Spinner";
 import { accountCheckVip } from "../../../utils/functions";
+import { useEffect } from "react";
+import { HOME_ROUTE } from "../../../utils/constants";
+import { useSelector } from "react-redux";
 
 const AccountTable = () => {
     const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
+    const {accessToken} = useSelector(state => state.user)
     console.log(userInfo);
+     useEffect(() => {
+        if(!accessToken) {
+            navigate(HOME_ROUTE)
+        }
+    }, [accessToken])
     return (
         <>
         {isLoading ?

@@ -4,7 +4,7 @@ import { validateCharReset, checkLocation, checkCharClass, checkResLvl, tipResLv
 import SpinnerSmall from '../../../components/SpinnerSmall'
 
 
-const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cAgi, cVit, cEne, cCmd, cGrandReset, mapNumber, cZen}) => {
+const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, cStr, cAgi, cVit, cEne, cCmd, cGrandReset, mapNumber, cZen}) => {
     const [fetchAccountCharReset, { isLoading, isSuccess, isError}] = useFetchAccountCharResetMutation()
 
     
@@ -84,6 +84,10 @@ const UserCharCard = ({ cStatus, cName, cClass, cLevel, mLevel, cReset, cStr, cA
                                 :
                                 <td className='user_char_card_table_td_offline'>Offline</td>
                             }
+                        </tr>
+                        <tr>
+                            <td>Guild</td>
+                            <td>{cGuild ? <em className='em_char_guild'>{cGuild}</em> : " — "}</td>
                         </tr>
                         <tr>
                             <td>Grand Reset</td>

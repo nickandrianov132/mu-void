@@ -28,6 +28,7 @@ const AccountCharacters = () => {
                 <UserCharCard 
                     key={char.cName}
                     cStatus={char.online} 
+                    cGuild={char.charGuild}
                     cName={char.cName}
                     cClass={char.cClass}
                     cLevel={char.cLevel}

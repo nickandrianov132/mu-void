@@ -47,6 +47,7 @@ const Rankings = () => {
                             <th className="th_status"></th>
                             <th className="th_name">Name</th>
                             <th className="th_class">Class</th>
+                            <th className="th_guild">Guild</th>
                             <th className="th_lvl">Level<sup className="sup_mLevel">ML</sup></th>
                             <th className="th_reset">Reset<sup className="sup_mLevel">GR</sup></th>
                         </tr>
@@ -66,6 +67,10 @@ const Rankings = () => {
                                 <td><OnlineIndicator online={char.online} /></td>
                                 <td className="td_name">{char.name}</td>
                                 <td className="td_class">{checkCharClass(char.class)}</td>
+                                {char.charGuild 
+                                    ? <td className="td_guild">{char.charGuild}</td>
+                                    : <td>{" — "}</td>
+                                }
                                 <td>{char.cLevel}<sup className="sup_mLevel">{grToMlConvert(char.gReset)}</sup></td>
                                 <td>{char.reset}<sup className="sup_mLevel">{char.gReset}</sup></td>
 
@@ -74,7 +79,7 @@ const Rankings = () => {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td className="table_footer_td" colSpan={6}>Top 100 Players</td>
+                            <td className="table_footer_td" colSpan={7}>Top 100 Players</td>
                         </tr>
                     </tfoot>
                 </table>

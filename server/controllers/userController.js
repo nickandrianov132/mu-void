@@ -280,7 +280,7 @@ class UserController {
         const request = pool.request()   
         const data = await request
         .input('id', sql.VarChar(10), req.user.login)
-        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online FROM dbo.vwCharacters c WHERE c.id = @id')
+        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.id = @id')
         return res.json(data.recordset)
     }
         async getAccountInfo(req, res, next) {

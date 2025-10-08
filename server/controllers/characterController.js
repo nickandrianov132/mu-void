@@ -20,7 +20,7 @@ class CharacterController {
         const request = pool.request()
         const data = await request
         .input('name', sql.VarChar(10), id)
-        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online FROM dbo.vwCharacters c WHERE c.name = @name')
+        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.name = @name')
         // .query('SELECT Name as cName, Class as cClass, cLevel, mLevel, RESETS as cReset, GRANDRESET as cGrandreset, Strength as cStr, Dexterity as cAgi, Vitality as cVit, Energy as cEne, Leadership as cCmd, MapNumber as mapNumber, MapPosX as mapPosX, MapPosY as mapPosY FROM dbo.Character WHERE Name = @name')
         console.log(data.recordset[0]);
         return res.json(data.recordset[0])

@@ -80,6 +80,10 @@ const CharacterCard = () => {
                                     }
                                 </tr>
                                 <tr>
+                                    <td>Guild</td>
+                                    <td>{data.charGuild ? <em className='em_char_guild'>{data.charGuild}</em> : " — "}</td>
+                                </tr>
+                                <tr>
                                     <td>Reset</td>
                                     <td>{data.cReset}</td>
                                 </tr>
