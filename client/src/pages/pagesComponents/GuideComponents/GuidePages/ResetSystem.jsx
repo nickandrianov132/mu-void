@@ -11,11 +11,15 @@ const ResetSystem = () => {
                         <span>1<sup>st</sup> Reset</span>
                         <span>2<sup>nd</sup> Reset</span>
                         <span>3<sup>rd</sup> Reset</span>
+                        <span>4<sup>th</sup> Reset</span>
+                        <span>5<sup>th</sup> Reset</span>
                     </div>
                     <div className="reset_req_container">
-                        <span> - 370lvl + <em className="reset_em_zen">5,000,000 zen</em></span>
-                        <span> - 380lvl + <em className="reset_em_zen">10,000,000 zen</em></span>
-                        <span> - 390lvl + <em className="reset_em_zen">15,000,000 zen</em></span>
+                        <span> - 350lvl + <em className="reset_em_zen">5,000,000 zen</em></span>
+                        <span> - 360lvl + <em className="reset_em_zen">10,000,000 zen</em></span>
+                        <span> - 370lvl + <em className="reset_em_zen">15,000,000 zen</em></span>
+                        <span> - 380lvl + <em className="reset_em_zen">20,000,000 zen</em></span>
+                        <span> - 390lvl + <em className="reset_em_zen">25,000,000 zen</em></span>
                     </div>
                 </div>
                 <span>4<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">10,000,000 zen</em> </span>

@@ -26,26 +26,29 @@ const serverInfo = [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
             {content: '= 2400 free stats', className: 'description_content_p_res_stats'},
-            {content: '+ 50 Master skill points + 400 WCoins', className: 'description_content_p_res_stats_gr'},
+            {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ], 
         [
             {content: 'MG, DL, RF', className: 'description_content_p_res_class'},
             {content: '= 3000 free stats', className: 'description_content_p_res_stats'},
-            {content: '+ 50 Master skill points + 400 WCoins', className: 'description_content_p_res_stats_gr'},
+            {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ] 
     ]
 },
 {title: 'Easy Reset:', content: [
         [
-            {content: '1st - 370lvl,', className: 'description_content_p_res_stats_gr'},
-            {content: '2nd - 380lvl,', className: 'description_content_p_res_stats_gr'},
-            {content: '3rd - 390lvl', className: 'description_content_p_res_stats_gr'},
+            {content: '1st - 350lvl,', className: 'description_content_p_res_stats_gr'},
+            {content: '2nd - 360lvl,', className: 'description_content_p_res_stats_gr'},
+            {content: '3rd - 370lvl', className: 'description_content_p_res_stats_gr'},
+            {content: '4th - 380lvl', className: 'description_content_p_res_stats_gr'},
+            {content: '5th - 390lvl', className: 'description_content_p_res_stats_gr'},
         ], 
     ]
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
 {title: 'BC, DS:', content: {content: '150% Exp🔥', className: 'description_content_p'}},
-{title: 'Happy Hour:', content: {content: 'Exp + 30% Drop + 20% twice a day', className: 'description_content_p'}},
+{title: 'Happy Hour:', content: {content: 'Exp + 100% Drop + 20% twice a day', className: 'description_content_p'}},
+{title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% on Saturdays & Sundays', className: 'description_content_p'}},
 ]
 
 const serverInfoSlice = createSlice({

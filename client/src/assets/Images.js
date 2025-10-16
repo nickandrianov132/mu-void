@@ -94,6 +94,7 @@ const Images = {
     cc_ticket: new URL('./cc_ticket.png', import.meta.url).href,  
     arrow_right: new URL('./arrow_right.png', import.meta.url).href,  
     arrow_left: new URL('./arrow_left.png', import.meta.url).href,  
+    img_opening_news: new URL('./img_opening_news.jpg', import.meta.url).href,  
 }
 
 export default Images;

@@ -50,7 +50,8 @@ const navigate = useNavigate()
                     name='Login' 
                     regExp={loginRegexp} 
                     placeholder='login...'
-                    regTip={`- only (a-zA-Z0-9)`} 
+                    regTip={`- only (a-zA-Z0-9)`}
+                    regTipErr={`*incorrect login!`} 
                     userAction={setLogin}
                     inputAction={setInputLogin}
                 />
@@ -59,6 +60,7 @@ const navigate = useNavigate()
                     regExp={passRegexp} 
                     placeholder='password...'
                     regTip={`- only (a-zA-Z0-9)`}
+                    regTipErr={`*incorrect password!`}
                     userAction={setPassword}
                     inputAction={setInputPassword}
                 />
@@ -67,6 +69,7 @@ const navigate = useNavigate()
                     regExp={emailRegexp} 
                     placeholder='e-mail...'
                     regTip={`- standart type e-mail`}
+                    regTipErr={`*incorrect e-mail!`}
                     userAction={setEmail}
                     inputAction={setInputEmail} 
                 />
@@ -75,6 +78,7 @@ const navigate = useNavigate()
                     regExp={nameRegexp} 
                     placeholder='Name...'
                     regTip={`- only (a-zA-Z0-9)`}
+                    regTipErr={`*incorrect name!`}
                     userAction={setName}
                     inputAction={setInputName} 
                 />
@@ -83,6 +87,7 @@ const navigate = useNavigate()
                     regExp={questionAnswerRegexp} 
                     placeholder='your question...'
                     regTip={`- only (a-zA-Z)`}
+                    regTipErr={`*incorrect question!`}
                     userAction={setRegQuestion}
                     inputAction={setInputRegQuestion} 
                 />
@@ -91,6 +96,7 @@ const navigate = useNavigate()
                     regExp={questionAnswerRegexp} 
                     placeholder='your answer...'
                     regTip={`- only (a-zA-Z)`}
+                    regTipErr={`*incorrect answer!`}
                     userAction={setRegAnswer}
                     inputAction={setInputRegAnwer} 
                 />

@@ -20,11 +20,11 @@ const CastleInfo = () => {
                 </div>
                 <div className="cs_info_wrapper">
                     <div className="cs_title">CS Start: </div>
-                    <div className="cs_info">📅{new Date(castleInfo.startDate).toUTCString().slice(5, 25)}</div>
+                    <div className="cs_info">{new Date(castleInfo.startDate).toUTCString().slice(5, 17)}</div>
                 </div>
                 <div className="cs_info_wrapper">
                     <div className="cs_title">CS End: </div>
-                    <div className="cs_info">📅{new Date(castleInfo.endDate).toUTCString().slice(5, 25)}</div>
+                    <div className="cs_info">{new Date(castleInfo.endDate).toUTCString().slice(5, 17)}</div>
                 </div>
                 <div className="cs_info_wrapper">
                     <div className="cs_title_owner">CS Owner: </div>

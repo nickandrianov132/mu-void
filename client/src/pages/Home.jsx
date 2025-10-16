@@ -8,11 +8,28 @@ const Home = () => {
     return (
         <div className='home_container'>
             <HomeContent
+                title="🎉📢Grand Opening🔥"
+                date="16.10.2025"
+                sideImage={Images.img_opening_news}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>Opening is scheduled for October 24th!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'><b>Welcome to our classic Mu Online server!</b><br/> - The great journey will begin on 24th of October.<br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WC to use for getting VIP or buying things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen in 2 weeks after the journey begun.<br/> - We hope you will enjoy your adventure!</p>
+                    </div>
+                </div>
+            </HomeContent>
+            <HomeContent
                 title="📌Easy OBT for players💎"
                 date="30.08.2025"
                 sideImagesArr={imgArray}
             >
                 <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>OBT features:</h4>
+                    </div>
                     <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
                     <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
                     <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
@@ -25,6 +42,9 @@ const Home = () => {
                 sideImage={Images.opening_img}
             > 
                 <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>Open beta-test is approaching!</h4>
+                    </div>
                     <p className="first-p home-content-p">Welcome on our <b>MU Online</b> server. Open-Beta test will be started on <b>August 28<sup>th</sup></b>, we'll be appreciated to everyone who will participate in Open-Beta test of our server.<br/>
                     </p>
                     <div className='discord_container'>

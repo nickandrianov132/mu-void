@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 
-const RegInput = ({name, regExp, placeholder, userAction, inputAction, regTip}) => {
+const RegInput = ({name, regExp, placeholder, userAction, inputAction, regTip, regTipErr}) => {
     const [inputValue, setInputValue] = useState('')
     const [check, setCheck] = useState(true)
     const [valid, setValid] = useState('')
@@ -49,7 +49,7 @@ const RegInput = ({name, regExp, placeholder, userAction, inputAction, regTip}) 
                     onFocus={() => setCheck(true)}
                 ></input>
                 {!check &&
-                    <p className="p_warn">*incorrect symbol!</p> 
+                    <p className="p_warn">{regTipErr}</p> 
                 }
             </div>
             <div className="reg_tip_div">

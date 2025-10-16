@@ -9,7 +9,7 @@ console.log(userInfo);
     return (
         <div className="vip_statuBar">
                 {isSuccess &&
-                    <div className="vip_statuBar_container">
+                    <div className="vip_statusBar_container">
                         {vipExpireCheck(userInfo.vipDays) ?
                         <>
                             <div className="vip_emblem_wrapper">

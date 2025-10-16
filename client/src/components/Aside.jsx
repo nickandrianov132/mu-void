@@ -3,8 +3,8 @@ import DiscordWidget from './modals/discordWidget/DiscordWidget';
 import Online from './modals/Online';
 import BannersBoard from './modals/topBanners/BannersBoard';
 import TopPlayers from './modals/TopPlayers';
-// import BannerMMOTOP from './modals/topBanners/BannerMMOTOP';
-// import BannerTopG from './modals/topBanners/BannerTopG';
+import Player from './Player';
+
 const Aside = () => {
     return (
         <aside className='right_sidebar_container'>
@@ -13,8 +13,7 @@ const Aside = () => {
             <CastleInfo />
             <DiscordWidget />
             <BannersBoard />
-            {/* <BannerMMOTOP />
-            <BannerTopG /> */}
+            <Player />
         </aside>
     );
 }

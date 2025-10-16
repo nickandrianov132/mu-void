@@ -3,7 +3,7 @@ const sql = require('mssql')
 const ApiError = require('../error/ApiError')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
-
+var md5 = require('md5');
 
 
 const generateJwt = (login, password, email) => {
@@ -12,7 +12,32 @@ const generateJwt = (login, password, email) => {
               process.env.SECRET_KEY,
               {expiresIn: '1h'}
             )
-  }
+}
+
+const md5Pass = (pass, login) => {
+    const passHash = md5(pass + login)
+    console.log(`passHash: ${passHash}`)
+    const shortPassHash = passHash.slice(0,20)
+    console.log(`shortPassHassh: ${shortPassHash}`)
+    return shortPassHash
+} 
+
+const passMD5Check = async (pass, login) => {
+    const hashPass = md5(pass + login)
+    const shortHash =  hashPass.slice(0,20)
+    const pool = await poolPromise
+    const request = pool.request()
+    const acc = await request
+    .input('memb___id', sql.VarChar(10), login)
+    .query('SELECT memb.memb__pwd AS userPass FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @memb___id')
+    if(acc.recordset.length != 0) {
+            console.log(`shortHash from check: ${shortHash}`);
+            console.log(acc.recordset);
+            const checkPwd = shortHash === acc.recordset[0].userPass
+            console.log(`checkPwd:${checkPwd}`)
+            return checkPwd
+    }
+}
 
 async function findOneUserEmail(email) {
     const pool = await poolPromise
@@ -165,24 +190,33 @@ class UserController {
         if(candidateLogin.recordset.length != 0) {
             return next(ApiError.internal("User with this Login already exist!"))
         }
+        // const encryptedPwd = md5Pass(password, login)
         const pool = await poolPromise
         const request = pool.request()
         const acc = await request
             // .input('memb_guid', sql.Int, 2)
-            .input('memb___id', sql.VarChar(10), login)
-            .input('memb__pwd', sql.VarChar(20), password)
-            .input('memb_name', sql.VarChar(10), name)
-            .input('mail_addr', sql.VarChar(50), email)
-            .input('fpas_ques', sql.VarChar(50), regQuestion)
-            .input('fpas_answ', sql.VarChar(50), regAnswer)
-            .input('sno__numb', sql.Char(13), "1234567890")
-            .input('mail_chek', sql.Char(1), "0")
-            .input('bloc_code', sql.Char(1), "0")
-            .input('ctl1_code', sql.Char(1), "0")
-            .input('JoinDate', sql.VarChar(25), date)
-            .query(`INSERT INTO dbo.MEMB_INFO ( memb___id, memb__pwd, memb_name, mail_addr, fpas_ques, fpas_answ, sno__numb, mail_chek, bloc_code, ctl1_code, JoinDate) VALUES ( @memb___id, @memb__pwd, @memb_name, @mail_addr, @fpas_ques, @fpas_answ, @sno__numb, @mail_chek, @bloc_code, @ctl1_code, @JoinDate)`)
+            // .input('memb___id', sql.VarChar(10), login)
+            // .input('memb__pwd', sql.VarChar(20), encryptedPwd)
+            // .input('memb_name', sql.VarChar(10), name)
+            // .input('mail_addr', sql.VarChar(50), email)
+            // .input('fpas_ques', sql.VarChar(50), regQuestion)
+            // .input('fpas_answ', sql.VarChar(50), regAnswer)
+            // .input('sno__numb', sql.Char(13), "1234567890")
+            // .input('mail_chek', sql.Char(1), "0")
+            // .input('bloc_code', sql.Char(1), "0")
+            // .input('ctl1_code', sql.Char(1), "0")
+            // .input('JoinDate', sql.VarChar(25), date)
+            // .query(`INSERT INTO dbo.MEMB_INFO ( memb___id, memb__pwd, memb_name, mail_addr, fpas_ques, fpas_answ, sno__numb, mail_chek, bloc_code, ctl1_code, JoinDate) VALUES ( @memb___id, @memb__pwd, @memb_name, @mail_addr, @fpas_ques, @fpas_answ, @sno__numb, @mail_chek, @bloc_code, @ctl1_code, @JoinDate)`)
+            .input('accLogin', sql.VarChar(10), login)
+            .input('pass', sql.VarChar(20), password)
+            .input('accName', sql.VarChar(10), name)
+            .input('accMail', sql.VarChar(50), email)
+            .input('regQuestion', sql.VarChar(50), regQuestion)
+            .input('regAnswer', sql.VarChar(50), regAnswer)
+            .input('accJoinDate', sql.VarChar(25), date)
+            .execute(`dbo.RegAccount`)
             const userResponse = await request
-            .query('SELECT memb.memb___id AS login, memb.memb__pwd AS password, memb.mail_addr AS email FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @memb___id')
+            .query('SELECT memb.memb___id AS login, memb.memb__pwd AS password, memb.mail_addr AS email FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @accLogin')
         const userData = userResponse.recordset[0]
         console.log(userData)
         const token = generateJwt(userData.login, userData.password, userData.email)
@@ -191,7 +225,6 @@ class UserController {
     }
 
     async regainAccountQuestion(req, res, next) {
-        // console.log(req.body);
         const {login, email} = req.body
         if(!email || !login) {
             return next(ApiError.badRequest("Wrong password or email!"))
@@ -210,7 +243,7 @@ class UserController {
         const accQuestion = await request
             .input('memb___id', sql.VarChar(10), login)
             .input('mail_addr', sql.VarChar(50), email)
-            .query(`SELECT fpas_ques as question FROM dbo.MEMB_INFO mi WHERE mi.memb___id = @memb___id AND mi.mail_addr =@mail_addr`)
+            .query(`SELECT fpas_ques as question FROM dbo.MEMB_INFO mi WHERE mi.memb___id = @memb___id AND mi.mail_addr = @mail_addr`)
         const question = accQuestion.recordset[0]
         console.log(question)
         return res.json(question)
@@ -256,14 +289,15 @@ class UserController {
         .input('memb___id', sql.VarChar(10), login)
         .query('SELECT memb.memb___id AS login, memb.memb__pwd AS password, memb.mail_addr AS email FROM dbo.MEMB_INFO memb WHERE memb.memb___id COLLATE Latin1_General_CS_AS = @memb___id')
         const userData = data.recordset[0]
+        console.log(userData)
         if (!userData) {
             return next(ApiError.internal('User with this login not found!'))
         }
-        let comparePassword = password == userData.password
+        // let comparePassword = await passMD5Check(password, login) 
+        let comparePassword = userData.password === password 
         if (!comparePassword) {
             return next(ApiError.forbidden('Wrong password!'))
         }
-        // console.log(userData)
         const token = generateJwt(userData.login, userData.password, userData.email)
         // const decoded = jwt.verify(token, process.env.SECRET_KEY)
         // console.log(decoded)
@@ -320,7 +354,6 @@ class UserController {
         .input('vipType', sql.SmallInt(), type)
         .execute('dbo.Buy_vip')
         return res.json(data.recordset)
-
     }
 }
 

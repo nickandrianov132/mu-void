@@ -20,7 +20,7 @@ const VoteContainer = () => {
     return (
         <div className="vote_container">
             <div className="vote_header_wrapper">
-                <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em">10 WCoins</em>!</h4>
+                <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em">5 WCoins</em>!</h4>
             </div>
             {isSuccess &&
             <>

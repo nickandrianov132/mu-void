@@ -89,13 +89,11 @@ $aside-wd: 110px;
     ;
 }
 %formBtn{
-    border: 0.2em solid #fa3737;
+    border: 0.2em solid #fc483b;
     border-radius: 0.4em;
-    width: 4em;
-    height: 2em;
     color: white;
     cursor: pointer;
-    background: #fa3737;
+    background-image: linear-gradient(180deg,rgba(253, 88, 42, 1) 0%, rgba(227, 39, 92, 1) 49%, rgba(255, 23, 89, 1) 100%);
     transition: .1s linear;
 }
 %formBtnDisable{
@@ -217,8 +215,8 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 700px;
-        flex: 1 1 auto;
-    @include app_margin(5em 3em 3em 3em);
+    flex: 1 1 auto;
+    @include app_margin(11.5em 3em 3em 3em);
 }
 .nav_container{
     display: flex;
@@ -444,7 +442,7 @@ body {
         display: flex;
         flex-direction: column;
         min-height: 9em;
-        @include app_margin(0 0 1.3em 0);
+        @include app_margin(0 0 .5em 0);
         .introduction_content_wrapper{
             display: flex;
             flex-direction: row;
@@ -452,7 +450,7 @@ body {
                 display: flex;
                 width: fit-content;
                 height: fit-content;
-                width: 50%;
+                width: 40%;
                 border-radius: 0.2em;
                 margin-right: 0.4em;
                 position: relative;
@@ -466,7 +464,7 @@ body {
             .news_imagesCarousel_wrapper{
                 display: flex;
                 height: fit-content;
-                width: 50%;
+                width: 45%;
                 border-radius: 0.2em;
                 margin-right: 0.4em;
                 position: relative;
@@ -475,20 +473,68 @@ body {
                     width: 100%;
                 }
             }
+            .description_list::before{
+                content: "";
+                position: absolute;
+                width: calc(100% + 0.4em);
+                height: calc(100% + 0.4em);
+                background: #000;
+                left: 0;
+                top: 0;
+                border-radius: 0.4em;
+                background: linear-gradient(146deg,rgba(89, 54, 186, 1) 0%, rgba(58, 62, 176, 1) 26%, rgba(26, 72, 199, 1) 51%, rgba(63, 62, 148, 1) 73%, rgba(64, 37, 115, 1) 99%);
+                background: linear-gradient(146deg,rgba(184, 50, 124, 1) 0%, rgba(230, 28, 72, 1) 33%, rgba(230, 46, 25, 1) 67%, rgba(255, 171, 125, 1) 100%);
+                transform: translate(-0.2em, -0.2em);
+                z-index: -1;
+            }
             .description_list{
                 display: flex;
                 flex-direction: column;
-                width: 50%;
-                padding-left: 0.3em;
+                width: 60%;
+                border: 0.06em solid rgb(87, 47, 47);
+                border-radius: 0.3em;
+                position: relative;
+                background: linear-gradient(316deg,rgba(237, 204, 204, 1) 0%, rgba(232, 223, 213, 1) 40%, rgba(240, 227, 213, 1) 75%, rgba(237, 204, 204, 1) 100%);
                 .description_item_p{
-                    font-size: 0.8em;
+                    @include app_margin(0.3em 0.3em 0 0.4em);
+                    font-size: 0.7em;
                     margin-bottom: 1em;
                     font-weight: 500;
+                    &::first-letter{
+                        margin-left: 1em;
+                    }
+                }
+                .opening_wrapper_h4{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    border-top-left-radius: 0.2em;
+                    border-top-right-radius: 0.2em;
+                    box-sizing: border-box;
+                    background: linear-gradient(91deg,rgba(168, 168, 168, 1) 0%, rgba(196, 186, 175, 1) 30%, rgba(196, 186, 175, 1) 70%, rgba(168, 168, 168, 1) 100%);
+                    @include app_padding(0.2em 0 0.1em 0.2em);
+                    .description_item_h4_opening{
+                        color: #21135e;
+                        font-size: 0.9em;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(77, 33, 135));
+                        &::first-letter{
+                            margin-left: 1em;
+                        }
+                    }
                 }
                 .description_item_h4{
-                    font-size: 0.9em;
+                    @include app_margin(0.3em 0.3em 0 0.4em);
+                    font-size: 0.75em;
                     font-weight: 600;
                 }
+            }
+            .description_wrapper_p{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                margin-top: 0.5em;
             }
             .news_image_wrapper::after, .news_image_wrapper::before{
                 content: '';
@@ -555,7 +601,8 @@ body {
                 padding-left: 1.1em;
         }
         .first-p{
-            font-size: 0.8em;
+            font-size: 0.75em;
+            @include app_margin(0.3em 0.3em 0 0.4em);
             letter-spacing: 0.03em;
             word-spacing: 0.15em;
             
@@ -645,8 +692,10 @@ body {
             }
             .description_title_wrapper{
                 width: 23%;
-                font-size: 0.9em;
                 @include app_margin( 0 0 0 0.4em);
+                .description_title_p{
+                    font-size: 0.9em;;
+                }
             }
             .description_content_wrapper{
                 display: flex;
@@ -744,25 +793,35 @@ body {
     }
 }
 
+.player_container{
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    background: #000000;
+    border: 0.2em solid #070040;
+    left: -20%;
+    top: -11.2em;
+    width: 20em;
+    height: 10em;
+}
+
 .right_sidebar_container{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 14em;
+    position: relative;
     border-left: 0.1em solid transparent;
     border-bottom-right-radius: 0.4em;
     border-top-right-radius: 0.4em;
     @include bd-filter(8px, 65%);
-    // div{
-    //     @include app_margin(0.6em)
-    // }
     .discord_widget_container{
         display: flex;
         flex-direction: column;
         width: 90%;
         height: 17em;
-        // border: 0.1em transparent;
-        border-radius: 0.5em;
+        border: 0.1em solid #600feb;
+        border-radius: 0.6em;
         @include app_margin(1em 0.6em 1em 0.6em);
         padding: 0;
         .discord_header{
@@ -854,17 +913,19 @@ body {
                 align-content: center;
                 color: rgb(32, 23, 94);
                 font-weight: 600;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.04em, rgb(51, 15, 87));
             }
             .discord_join_btn{
-                background: #38ccf1;
+                background-image: linear-gradient(180deg,rgba(106, 76, 217, 1) 0%, rgba(74, 158, 232, 1) 21%, rgba(56, 204, 241, 1) 37%, rgba(81, 212, 214, 1) 57%, rgba(114, 174, 219, 1) 80%, rgba(127, 124, 230, 1) 99%);
                 border: 0.15em solid #461fb2;
                 border-radius: 0.4em;
                 color: #351199;
                 font-size: 0.9em;
                 @include app_padding(0.2em 0.4em);
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(77, 51, 116));
             }  
             .discord_join_btn:hover{
-                background: #3c7cf2;
+                background-image: linear-gradient(180deg,rgba(63, 182, 191, 1) 0%, rgba(100, 126, 222, 1) 36%, rgba(106, 76, 217, 1) 62%, rgba(63, 182, 191, 1) 100%);
                 color: whitesmoke;
                 border: 0.15em solid whitesmoke;
             }
@@ -1195,7 +1256,6 @@ body {
     // @include app_margin(0.5em);
     .castle_header_wrapper{
         display: flex;
-        // justify-content: space-around;
         align-items: center;
         .castle_emblem{
             font-size: 1.4em;
@@ -1203,6 +1263,7 @@ body {
             animation: turnEmblem 2s cubic-bezier(0.19, 0.6, 0.22, 1.2) infinite;
         }
         h4{
+            padding-left: 0.5em;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: #e4e4e4;
             @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.02em, #280a95);
@@ -1213,6 +1274,7 @@ body {
         display: flex;
         flex-direction: row;
         font-size: 0.7em;
+        min-height: 1.5em;
         .cs_title{
             width: 30%;
             font-weight: 600;
@@ -1236,7 +1298,7 @@ body {
         .cs_info_owner{
             display: flex;
             justify-content: center;
-            align-content: cs_info_owner;
+            align-content: baseline;
             width: 60%;
             font-size: 1.15em;
             color: #f6d82e;
@@ -1259,10 +1321,28 @@ body {
     align-items: center;
     width: 95%;
     margin-top: 1em;
-    @include app_padding(.7em 0 .7em 0);
+    @include app_padding(.4em 0 .7em 0);
     background-color: $nav-bg;
     border: 0.1em solid transparent;
     border-radius: 0.4em;
+    .welcome_div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 12%;
+        color: whitesmoke;
+        span{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(214, 212, 78);
+            font-size: 1.15em;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em, rgb(218, 0, 47));
+            em{
+                font-weight: 600;
+                color: #00dc88;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(48, 187, 225));
+            }
+        }
+    }
     .user_panel_item_container{
         display: flex;
         align-items: center;
@@ -1300,9 +1380,10 @@ body {
             display: flex;
             flex-basis: 100%;
             justify-content: center;
-            background: $vote-bg;
+            background-image: linear-gradient(0deg,rgba(51, 242, 201, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(165, 237, 83, 1) 100%);
             border: 0.1em solid transparent;
             border-radius: 0.3em;
+            transition: transform 0.1s;
             .coins_icon{
                 font-size: 1.4em;
                 color: #f9cb16;
@@ -1311,10 +1392,13 @@ body {
             &:hover{
                 @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, rgb(28, 30, 26));
                 color:whitesmoke;
-                background-color: #03d5ff; 
-                border: 0.1em solid #f6a738;
+                background-image: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
+                // animation: voteBtnGradient 0.5s ease-in-out forwards;
+                border: 0.1em solid #b4f638;
             }
             &:active{
+                background-image: linear-gradient(180deg,rgba(50, 240, 233, 1) 0%, rgba(61, 227, 180, 1) 50%, rgba(181, 237, 83, 1) 100%);
+                border: 0.1em solid #b7f44e;
                 transform: translate(0.07em, 0.07em);
             }
         }
@@ -1323,14 +1407,15 @@ body {
             align-self: flex-start;
             justify-content: center;
             flex-basis: 45%;
-            background: $donate-bg;
-            border: 0.1em solid transparent;
+            background: linear-gradient(180deg,rgba(250, 20, 81, 1) 0%, rgba(227, 78, 36, 1) 45%, rgba(235, 92, 21, 1) 69%, rgba(224, 178, 49, 1) 100%);
+            border: 0.1em solid rgba(227, 78, 36, 1);
             border-radius: 0.3em;
+            transition: transform 0.1s;
             &:hover{
                 @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
                 color: whitesmoke;
-                background-color: rgb(57, 207, 57); 
-                border: 0.1em solid rgb(0, 195, 130);
+                background-image: linear-gradient(0deg,rgba(250, 20, 81, 1) 0%, rgba(227, 78, 36, 1) 45%, rgba(235, 92, 21, 1) 69%, rgba(224, 178, 49, 1) 100%);
+                border: 0.1em solid rgb(243, 155, 32);
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1341,14 +1426,15 @@ body {
             align-self: flex-end;
             justify-content: center;
             flex-basis: 49%;
-            background: $discord-bg;
-            border: 0.1em solid transparent;
+            background: linear-gradient(0deg,rgba(104, 125, 227, 1) 0%, rgba(123, 53, 181, 1) 51%, rgba(183, 20, 186, 1) 100%);
+            border: 0.1em solid rgba(123, 53, 181, 1);
             border-radius: 0.3em;
+            transition: transform 0.1s;
             &:hover{
                 @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
                 color: whitesmoke;
-                background-color: rgb(151, 88, 240); 
-                border: 0.1em solid rgb(54, 223, 235);
+                background: linear-gradient(180deg,rgba(104, 125, 227, 1) 0%, rgba(123, 53, 181, 1) 51%, rgba(183, 20, 186, 1) 100%);
+                border: 0.1em solid rgba(104, 125, 227, 1);
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1366,7 +1452,7 @@ body {
         display: flex;
         width: 100%;
         position: relative;
-        .vip_statuBar_container{
+        .vip_statusBar_container{
             display: flex;
             width: 95%;
             height: 1.6em;
@@ -1384,7 +1470,7 @@ body {
                     font-size: 2.2em;
                 }
                 .vip_bronze_emblem{
-                    color: #cf7446;
+                    color: rgb(203, 113, 113);
                     font-size: 2.2em;
                 }
                 .vip_none_emblem{
@@ -1408,7 +1494,7 @@ body {
                 }
                 .vip_description_bronze{
                     font-size: 0.9em;
-                    color: #de8152;
+                    color: rgb(203, 113, 113);
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, rgb(244, 116, 142));
                 }
             }
@@ -1464,22 +1550,19 @@ body {
     @extend %formBtn;
     @include app_padding(0.3em);
     @include app_margin(0.6em 0 0 0);
+    transition: 0.1s;
     &:hover{
-        background-color: $nav-list-item-bg;
         color: whitesmoke;
-        border: 0.2em solid whitesmoke;
-        text-shadow: 
-                0.5px 0.5px 1px rgb(6, 6, 6),
-                0.5px -0.5px 1px rgb(6, 6, 6),
-                -0.5px -0.5px 1px rgb(6, 6, 6),
-                -0.5px 0.5px 1px rgb(6, 6, 6);       
-                // 0.1px 0.1px 0.3px rgb(241, 30, 58),
-                // .1px -0.1px 0.3px rgb(241, 30, 58),
-                // -0.1px -0.1px 0.3px rgb(241, 30, 58),
-                // -0.1px 0.1px 0.3px rgb(241, 30, 58);       
+        background-image: linear-gradient(180deg,rgba(42, 155, 132, 1) 0%, rgba(63, 196, 118, 1) 50%, rgba(42, 155, 132, 1) 100%);
+        border: 0.2em solid rgb(16, 189, 88);  
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(28, 27, 53));         
+        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(0, 213, 117));         
     }
     &:active{
         transform: translate(1.5px, 1.5px);
+        border: 0.2em solid rgb(33, 248, 122); 
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(197, 245, 237));
+        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(97, 209, 159));
     }
 }
 .online_container{
@@ -1734,7 +1817,7 @@ body {
                 min-width: 6em;
                 @include app_padding(0.3em);
                 &:hover{
-                    background-color: whitesmoke;
+                    background: linear-gradient(180deg,rgba(78, 252, 157, 1) 0%, rgba(57, 196, 143, 1) 40%, rgba(34, 212, 108, 1) 60%, rgba(78, 252, 157, 1) 100%);;
                     color: $reg-btn-fc;
                     border: 0.17em solid $reg-btn-bg;
                     @include box-shadow(0.05em, 0.05em, -0.05em, -0.05em, 0.2em, $reg-btn-bg);
@@ -2726,6 +2809,7 @@ body {
         color: #fce08e;
         width: 60%;
         margin-right: 5px;
+        @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.07em, rgb(240, 54, 29));
     }
     .event_time{
         font-size: 0.9em;
@@ -2922,27 +3006,27 @@ body {
             text-align: center;
             tr{
                 .th_bronze{
-                    color: rgb(163, 67, 67);
-                    border: 2px solid rgb(163, 67, 67);
-                    border-radius: 0.3em;
+                    color: rgb(223, 108, 108);
+                    border: 0.24em solid rgb(199, 89, 89);
+                    border-radius: 0.4em;
                     background: #c8a594;
-                    width: 30%;
+                    width: 28%;
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, rgb(38, 38, 38));
                 }
                 .th_silver{
                     color: rgb(128, 135, 135);
-                    border: 2px solid rgb(95, 99, 100);
-                    border-radius: 0.3em;
+                    border: 0.24em solid rgb(95, 99, 100);
+                    border-radius: 0.4em;
                     background: #96a8bb;
-                    width: 30%;
+                    width: 28%;
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, rgb(38, 38, 38));
                 }
                 .th_gold{
                     color: rgb(220, 169, 29);
-                    border: 2px solid rgb(198, 142, 11);
-                    border-radius: 0.3em;
-                    background: #d7ce7b;
-                    width: 30%;
+                    border: 0.24em solid rgb(229, 164, 11);
+                    border-radius: 0.4em;
+                    background: #ece06d;
+                    width: 28%;
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, rgb(38, 38, 38));
                 }
             }
@@ -3043,6 +3127,7 @@ body {
             align-items: center;
             justify-content: flex-start;
             width: 80%;
+            padding-left: 1em;
             .vote_link::after{
             content: '';
             position: absolute;
@@ -3243,9 +3328,7 @@ body {
             left: 0;
         }
     }
-    // .buttonsDiv button{
-    //     height: 0.4em;
-    // }
+
     .buttonsDiv{
             width: 100%;
             display: flex;
@@ -3253,11 +3336,11 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 0.3em;
-            button{
+            .button, .button--active{
                 cursor:pointer;
                 width: 10%;
                 min-width: 0.5em;
-                height: 0.4em;
+                height: 0.35em;
                 color:rgb(231, 243, 249);
                 margin: 0.1em;
                 background-color: $footer-bg;
@@ -3326,11 +3409,12 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 0.3em;
-            button{
+            .button, .button--active{
                 cursor:pointer;
                 width: 10%;
                 min-width: 0.5em;
-                height: 0.4em;
+                height: 0.45vw;
+                max-height: 0.45em;
                 color:rgb(231, 243, 249);
                 margin: 0.1em;
                 background-color: $footer-bg
@@ -3359,6 +3443,16 @@ body {
     body{
         font-size: 14px;
     }
+}
+@media screen and (max-width: 1160px) {
+    .player_container{
+        display: none;
+    }
+}
+@media print {
+    .player_container{
+        display: none;
+    } 
 }
 @media screen and (min-width: 980px) and (max-width: 1199) {
     body{
@@ -3401,6 +3495,9 @@ body {
     body{
         font-size: 5px;
     }
+    // .button, .button--active{
+    //     height: 0.1em;
+    // }
 }
 @media screen and (max-width: 380px) {
     .right_sidebar_container{
@@ -3409,6 +3506,10 @@ body {
     body{
         font-size: 4px;
     }
+    .button{
+        height: 3px;
+    }
+    
 }
 @media print and (max-width: 360px) {
     body{
@@ -3707,5 +3808,13 @@ section .loader_2{
     // }
     100% {
         transform: rotate(360deg);
+    }
+}
+@keyframes voteBtnGradient {
+    0% {
+        background: linear-gradient(0deg,rgba(51, 242, 201, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(165, 237, 83, 1) 100%);
+    }
+    100% {
+        background: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
     }
 }
