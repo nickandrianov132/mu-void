@@ -1,5 +1,5 @@
 
-const VoteItem = ({title, link, img}) => {
+const VoteItem = ({title, link, img, coins}) => {
     return (
         <div className="vote_item_container">
             <div className="vote_img_wrapper">
@@ -12,6 +12,11 @@ const VoteItem = ({title, link, img}) => {
                 {title}👈
                 </a>
             </div>
+            {coins &&
+                <div className="vote_coins_wrapper">
+                    <p className="vote_coins_p">{coins}</p>
+                </div>
+            }
         </div>
     );
 }

@@ -8,7 +8,7 @@ const WCoinsCBar = () => {
         <>
             {isSuccess &&
                 <div className='wcoinsc_bar_container'>
-                    <span className='wcoins_title'>WCoins C:</span>
+                    <span className='wcoins_title'>WCoins:</span>
                     <span className='wcoins_amount'>{userInfo.wCoinsC}</span>
                 </div>
             }

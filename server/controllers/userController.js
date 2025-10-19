@@ -110,7 +110,7 @@ class UserController {
             const vote = await request
             .input('AccountID', sql.VarChar(10), p_resp)
             .input('Type', sql.Int(), 0)
-            .input('Coin', sql.Float(), 10)
+            .input('Coin', sql.Float(), 5)
             .execute('dbo.WZ_IBS_AddCoin')
             console.log("vote 1st if");
             return res.json(vote.recordset[0].RESULT)
@@ -124,7 +124,7 @@ class UserController {
                 const vote = await request
                 .input('AccountID', sql.VarChar(10), p_resp)
                 .input('Type', sql.Int(), 0)
-                .input('Coin', sql.Float(), 10)
+                .input('Coin', sql.Float(), 5)
                 .execute('dbo.WZ_IBS_AddCoin')
                 console.log("vote 2nd if");
                 return res.json(vote.recordset[0].RESULT)
@@ -143,7 +143,7 @@ class UserController {
         const vote = await request
         .input('AccountID', sql.VarChar(10), custom)
         .input('Type', sql.Int(), 0)
-        .input('Coin', sql.Float(), 10)
+        .input('Coin', sql.Float(), 5)
         .execute('dbo.WZ_IBS_AddCoin')
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
@@ -155,7 +155,7 @@ class UserController {
         const vote = await request
         .input('AccountID', sql.VarChar(10), postback)
         .input('Type', sql.Int(), 0)
-        .input('Coin', sql.Float(), 10)
+        .input('Coin', sql.Float(), 5)
         .execute('dbo.WZ_IBS_AddCoin')
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
@@ -168,7 +168,7 @@ class UserController {
             const vote = await request
             .input('AccountID', sql.VarChar(10), userid)
             .input('Type', sql.Int(), 0)
-            .input('Coin', sql.Float(), 10)
+            .input('Coin', sql.Float(), 5)
             .execute('dbo.WZ_IBS_AddCoin')
             console.log(vote.recordset[0].RESULT);
             return res.json(vote.recordset[0].RESULT)

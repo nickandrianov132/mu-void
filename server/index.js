@@ -3,8 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const router = require('./routes/index')
 const errorHandlerMiddleware = require('./middleware/ErrorHandlingMiddleware')
-// const jwt =  require('jsonwebtoken')
-// const { poolPromise } = require('./db')
+const mmotopVoteController = require('./controllers/mmotopVoteController')
 
 
 const PORT = process.env.PORT || 7000
@@ -18,9 +17,10 @@ app.use('/api', router)
 /// Обработка ошибок, последний Middleware:
 app.use(errorHandlerMiddleware)
 
-// const decoded = jwt.verify("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Im5hcnV0byIsInBhc3N3b3JkIjoiMTIzbmluamEiLCJlbWFpbCI6Ik5hcnV0b1V6dW1ha2lAZ21haWwuY29tIiwiaWF0IjoxNzQ1NDk2NDQ3LCJleHAiOjE3NDU1ODI4NDd9.Qk7rQ6Y19LP7vMOkG-gbYOJjuEAAROwH-Zxg99dzSKo", process.env.SECRET_KEY)
-// console.log(decoded)
-
+// mmotopVoteController.mmotopFetch()
+setInterval( () => {
+    mmotopVoteController.mmotopFetch()
+}, 1200000)
 const start = async () => {
     try {
         app.listen(PORT, () => {

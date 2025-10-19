@@ -58,14 +58,14 @@ const DropBoxes = () => {
                 />
                 <GuideSealBoxItem 
                     image={Images.silver_box_open}
-                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King"
+                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King, Red Dragon"
                     dk="Garuda Brass, Mist Bronze, Rave Plate"
                     dw="Heras Sphinx, Evis Bone, Sylion Bone"
                     elf="Drake Vine, Karis Spirit"
                 />
                 <GuideSealBoxItem 
                     image={Images.gold_box_open}
-                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King"
+                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King, Red Dragon"
                     dk="Hyon Dragon, Vicious Dragon"
                     dw="Anubis Legendary, Enis Legendary"
                     elf="Aruans Guardian"

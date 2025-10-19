@@ -1939,7 +1939,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40%;
-  color: #47f285;
+  font-weight: 600;
+  color: #35cb62;
+  text-shadow: 0.01em 0.01em 0.07em rgb(8, 96, 227), -0.01em -0.01em 0.07em rgb(8, 96, 227), 0.01em -0.01em 0.07em rgb(8, 96, 227), -0.01em 0.01em 0.07em rgb(8, 96, 227);
   text-decoration: underline;
   text-underline-offset: 0.2em;
   letter-spacing: 0.02em;
@@ -1955,9 +1957,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0.4em;
   width: 60%;
-  color: #32f3a9;
-  text-shadow: 0.01em 0.01em 0.06em rgb(92, 88, 209), -0.01em -0.01em 0.06em rgb(92, 88, 209), 0.01em -0.01em 0.06em rgb(92, 88, 209), -0.01em 0.01em 0.06em rgb(92, 88, 209);
+  color: #35cb62;
+  text-shadow: 0.01em 0.01em 0.07em rgb(52, 248, 34), -0.01em -0.01em 0.07em rgb(52, 248, 34), 0.01em -0.01em 0.07em rgb(52, 248, 34), -0.01em 0.01em 0.07em rgb(52, 248, 34);
   font-size: 0.9em;
 }
 
@@ -4073,7 +4078,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20%;
+  width: 25%;
 }
 .vote_container .vote_item_container .vote_img_wrapper .vote_img {
   height: 2em;
@@ -4088,8 +4093,10 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 80%;
-  padding-left: 1em;
+  width: 40%;
+  padding-left: 1.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .vote_container .vote_item_container .vote_link_wrapper .vote_link::after {
   content: "";
@@ -4119,6 +4126,42 @@ body {
   width: 90%;
   border: 0.05em solid transparent;
   border-radius: 0.3em;
+}
+.vote_container .vote_item_container .vote_coins_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 25%;
+}
+.vote_container .vote_item_container .vote_coins_wrapper .vote_coins_p {
+  font-style: italic;
+  color: #35cb62;
+  text-shadow: 0.01em 0.01em 0.07em rgb(8, 96, 227), -0.01em -0.01em 0.07em rgb(8, 96, 227), 0.01em -0.01em 0.07em rgb(8, 96, 227), -0.01em 0.01em 0.07em rgb(8, 96, 227);
+}
+.vote_container .vote_tip_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1em;
+}
+.vote_container .vote_tip_container .vote_tip {
+  color: rgb(248, 60, 60);
+  text-shadow: 0.005em 0.005em 0.03em rgb(169, 6, 0), -0.005em -0.005em 0.03em rgb(169, 6, 0), 0.005em -0.005em 0.03em rgb(169, 6, 0), -0.005em 0.005em 0.03em rgb(169, 6, 0);
+  font-size: 0.65em;
+}
+.vote_container .vote_tip_container .vote_tip b {
+  text-decoration: underline;
 }
 
 .serverTime_container::after, .serverTime_container::before {

@@ -20,14 +20,26 @@ const MiniBosses = () => {
             </div>
             <div className="maya_content_container">
                 <MayaContentItem 
-                    title="Death King:"
-                    remark="Every Red Dragon Invasion apears 3 Red Dragons"
-                    respInfo="Respawn every 1 hour"
+                    title="Red Dragon:"
+                    remark="Every Dragon Invasion apears 3 Red Dragons in Lorencia"
+                    respInfo="Respawn every 3 hours"
                     img={Images.red_dragon}
                     dropImg1={Images.gold_silver_box}
                     ExtraDropImg1={Images.luck_assembly}
                     drop="Gold Box, Silver Box, Gold Key, Silver Key"
                     extraDrop="Talisman of Chaos Assembly, Talisman of Luck +1 ... +5"
+                />
+            </div>
+            <div className="maya_content_container">
+                <MayaContentItem 
+                    title="Death Bone:"
+                    remark="Apears 10 Death Bones in random places in Lorencia"
+                    respInfo="Respawn every 1 hour"
+                    img={Images.death_bone}
+                    dropImg1={Images.death_bone_drop1}
+                    ExtraDropImg1={Images.death_bone_drop2}
+                    drop="Jewel of Bless, Jewel of Soul, Jewel of Life"
+                    extraDrop="Demon, Spirit of Guardian"
                 />
             </div>
         </div>
