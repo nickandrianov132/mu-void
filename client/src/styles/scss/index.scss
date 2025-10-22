@@ -1840,13 +1840,13 @@ body {
             .reg_btn{
                 @extend %formBtn;
                 background-color: $reg-btn-bg;
-                border: 0.17em solid whitesmoke;
+                border: 0.17em solid rgb(252, 128, 128);
                 font-size: 0.9em;
                 height: fit-content;
                 min-width: 6em;
                 @include app_padding(0.3em);
                 &:hover{
-                    background: linear-gradient(180deg,rgba(78, 252, 157, 1) 0%, rgba(57, 196, 143, 1) 40%, rgba(34, 212, 108, 1) 60%, rgba(78, 252, 157, 1) 100%);;
+                    background: linear-gradient(180deg,rgba(78, 252, 157, 1) 0%, rgba(57, 196, 143, 1) 40%, rgba(34, 212, 108, 1) 60%, rgba(78, 252, 157, 1) 100%);
                     color: $reg-btn-fc;
                     border: 0.17em solid $reg-btn-bg;
                     @include box-shadow(0.05em, 0.05em, -0.05em, -0.05em, 0.2em, $reg-btn-bg);
@@ -3218,7 +3218,7 @@ body {
         @include app_margin(1em 0 0 0);
         font-size: 1.4em;
         font-weight: 500;
-        color: #fb6a54; 
+        color: #e65039; 
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.04em, rgb(219, 46, 89));
     }
     .vote_header_wrapper{

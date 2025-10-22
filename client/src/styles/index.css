@@ -2384,7 +2384,7 @@ body {
 }
 .registration_container .reg_form .reg_btn_div .reg_btn {
   background-color: #0aa46e;
-  border: 0.17em solid whitesmoke;
+  border: 0.17em solid rgb(252, 128, 128);
   font-size: 0.9em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -4180,7 +4180,7 @@ body {
   margin: 1em 0 0 0;
   font-size: 1.4em;
   font-weight: 500;
-  color: #fb6a54;
+  color: #e65039;
   text-shadow: 0.01em 0.01em 0.04em rgb(219, 46, 89), -0.01em -0.01em 0.04em rgb(219, 46, 89), 0.01em -0.01em 0.04em rgb(219, 46, 89), -0.01em 0.01em 0.04em rgb(219, 46, 89);
 }
 .vote_container .vote_header_wrapper {
