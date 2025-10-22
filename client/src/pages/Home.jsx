@@ -17,7 +17,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Waiting for you on the server Opening October 24th at 17:00 Server Time "UTC"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<a className='a_download' href="https://www.mu-void.com/registration"> 👉 Download</a> <br/> - All accounts and characters were deleted. <a className='a_registration' href="https://www.mu-void.com/registration"> 👉 Registration</a></p>
+                        <p className='description_item_p'><b>Waiting for you on the server Opening October 24th at 17:00 Server Time "UTC"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All accounts and characters were deleted. <a className='a_registration' href="https://www.mu-void.com/registration"> 👉 Registration</a></p>
                     </div>
                 </div>
             </HomeContent>
