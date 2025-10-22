@@ -81,6 +81,7 @@ const Images = {
     mega_cloud1: new URL('./Mega_cloud1.png', import.meta.url).href,    
     google_drive: new URL('./google_drive.png', import.meta.url).href,    
     opening_img: new URL('./opening.jpg', import.meta.url).href,  
+    bg_obt_close: new URL('./bg_obt_close.jpg', import.meta.url).href,  
     mmotop_banner: new URL('./mmotop.png', import.meta.url).href,  
     mmotop_small: new URL('./mmotop_small.png', import.meta.url).href,  
     topg_banner: new URL('./topg.gif', import.meta.url).href,  
@@ -99,6 +100,17 @@ const Images = {
     arrow_right: new URL('./arrow_right.png', import.meta.url).href,  
     arrow_left: new URL('./arrow_left.png', import.meta.url).href,  
     img_opening_news: new URL('./img_opening_news.jpg', import.meta.url).href,  
+    dg_mirror: new URL('./dg_mirror.png', import.meta.url).href,  
+    dg_sign: new URL('./dg_sign.png', import.meta.url).href,  
+    dg_ticket: new URL('./dg_ticket.jpg', import.meta.url).href,  
+    dg_npc: new URL('./dg_npc.png', import.meta.url).href,  
+    dg_passage1: new URL('./dg_passage1.png', import.meta.url).href,  
+    dg_passage2: new URL('./dg_passage2.png', import.meta.url).href,  
+    dg_slaughterer: new URL('./dg_slaughterer.png', import.meta.url).href,  
+    dg_slaughterer_reward: new URL('./dg_slaughterer_reward.png', import.meta.url).href,   
+    dg_reward_gremory1: new URL('./dg_reward_gremory1.png', import.meta.url).href,  
+    dg_reward_final: new URL('./dg_reward_final.png', import.meta.url).href,  
+ 
 }
 
 export default Images;

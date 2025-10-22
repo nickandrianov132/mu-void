@@ -4,23 +4,28 @@ const sql = require('mssql')
 async function mmotopAddCoin(arr){
     console.log(`arr: ${arr}`);
     const d = new Date()
-    arr.forEach(async (e) => {
-            if(e.voteCount == 1) {
-            const pool = await poolPromise
-            const request = pool.request()
-            const voteMMOTOP = await request
-            .input('id', sql.VarChar(30), e.id)
-            .input('accLogin', sql.VarChar(10), e.login)
-            .input('ip', sql.VarChar(30), e.ip)
-            .input('voteDate', sql.SmallDateTime(), d)
-            .input('voteCount', sql.SmallInt(), e.voteCount)
-            .execute('dbo.add_mmotop_vote')
-            console.log(voteMMOTOP.recordset[0].RESULT);
-            // return res.json(voteMMOTOP.recordset[0].RESULT)
-        } else {
-            return next(ApiError.internal("Something went wrong..."))
-        }
-    })
+    if(arr.length > 0) {
+        arr.forEach(async (e) => {
+                if(e.voteCount == 1) {
+                const pool = await poolPromise
+                const request = pool.request()
+                const voteMMOTOP = await request
+                .input('id', sql.VarChar(30), e.id)
+                .input('accLogin', sql.VarChar(10), e.login)
+                .input('ip', sql.VarChar(30), e.ip)
+                .input('voteDate', sql.SmallDateTime(), d)
+                .input('voteCount', sql.SmallInt(), e.voteCount)
+                .execute('dbo.add_mmotop_vote')
+                console.log(voteMMOTOP.recordset[0].RESULT);
+                // return res.json(voteMMOTOP.recordset[0].RESULT)
+            } else {
+                return next(ApiError.internal("Something went wrong..."))
+            }
+        })
+    }
+    else {
+        return 
+    }
 }
 class mmotopVoteController {
 async mmotopFetch() {

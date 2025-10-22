@@ -6,7 +6,7 @@ const Download = () => {
         <div className='download_container'>
             <DownloadLink
                 image={Images.mega_cloud1}
-                url="https://mega.nz/file/XMdR3Qgb#iZQ7imHuxss3QCRhYEtT0GqC-A-yHD86dSXsxqGzeYw"
+                url="https://mega.nz/file/vV8RAYBI#MAfjXFMZiovDujge9VU9YMp8985jMS2s4S_jsV3jT78"
                 text="Download Client from MEGA👈"
             />
             <DownloadLink
@@ -16,7 +16,7 @@ const Download = () => {
             />
             <DownloadLink
                 image={Images.google_drive}
-                url="https://drive.google.com/file/d/1w0aDdtMDk67EnEOEg06S_UH8SLHLwNb0/view?usp=drive_link"
+                url="https://drive.google.com/file/d/1qhVjLvkf2RT5r4tG0YYM63sHxFyw9tHN/view?usp=drive_link"
                 text="Download Client from Google Drive👈"
             />
             <DownloadLink

@@ -1,5 +1,5 @@
 
-const VoteItem = ({title, link, img, coins}) => {
+const VoteItem = ({title, link, img, coins, coinsDesc}) => {
     return (
         <div className="vote_item_container">
             <div className="vote_img_wrapper">
@@ -14,7 +14,14 @@ const VoteItem = ({title, link, img, coins}) => {
             </div>
             {coins &&
                 <div className="vote_coins_wrapper">
-                    <p className="vote_coins_p">{coins}</p>
+                    <div className="vote_coins_p_wrapper">
+                        <p className="vote_coins_p">{coins}</p>
+                    </div>
+                    {coinsDesc &&
+                        <div className="vote_coins_desc_wrapper">
+                            <em className="vote_coins_desc">{coinsDesc}</em>
+                        </div>
+                    }
                 </div>
             }
         </div>

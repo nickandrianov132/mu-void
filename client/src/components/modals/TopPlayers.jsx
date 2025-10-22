@@ -2,11 +2,11 @@ import { GiStarsStack, GiAxeSword } from "react-icons/gi";
 import { useFetchTop3CharQuery } from "../../services/charApi";
 import { filterChars, grToMlConvert } from "../../utils/functions";
 const emptyTop5Players = [
-    {cLevel: '', gReset: '', mLevel: '', id: "0", name: '', reset: ''},
-    {cLevel: '', gReset: '', mLevel: '', id: "1", name: '', reset: ''},
-    {cLevel: '', gReset: '', mLevel: '', id: "2", name: '', reset: ''},
-    {cLevel: '', gReset: '', mLevel: '', id: "3", name: '', reset: ''},
-    {cLevel: '', gReset: '', mLevel: '', id: "4", name: '', reset: ''},
+    {cLevel: '-', gReset: '-', mLevel: '-', id: "0", name: '—', reset: '-'},
+    {cLevel: '-', gReset: '-', mLevel: '-', id: "1", name: '—', reset: '-'},
+    {cLevel: '-', gReset: '-', mLevel: '-', id: "2", name: '—', reset: '-'},
+    {cLevel: '-', gReset: '-', mLevel: '-', id: "3", name: '—', reset: '-'},
+    {cLevel: '-', gReset: '-', mLevel: '-', id: "4", name: '—', reset: '-'},
 ];
 const TopPlayers = () => {
     const {data: top3Players, isSuccess} = useFetchTop3CharQuery(undefined, {
@@ -17,7 +17,7 @@ const TopPlayers = () => {
                 isError: isError,
             })
         })
-    // console.log(top3Players);
+    console.log(top3Players);
     return (
         <div className="top5_container">
             <table className="top5_table">
@@ -30,7 +30,7 @@ const TopPlayers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                {isSuccess ?
+                {isSuccess & top3Players?.length > 0 ?
                     top3Players?.map((char, i) => 
                     <tr key={char.name}>
                         <td>{i === 0 ?

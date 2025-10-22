@@ -436,7 +436,7 @@ body {
     .home_header_underline{
         @include app_margin(0 0 1rem 0);
         border-bottom: 0.1em solid black;
-            @include box-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
+        @include box-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
     }
     .home_content_body_introduction{
         display: flex;
@@ -502,6 +502,30 @@ body {
                     font-weight: 500;
                     &::first-letter{
                         margin-left: 1em;
+                    }
+                    .a_registration{
+                        font-size: 1.1em;
+                        color:#00cba2;
+                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
+                        transition: 0.1s;
+                        &:hover{
+                        color:#50fedc;
+                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
+                        }
+                    }
+                    .a_download{
+                        font-size: 1.1em;
+                        color:#0244dd;
+                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(62, 0, 143, 0.933));
+                        &:hover{
+                        color:#3eaeff;
+                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(26, 26, 47, 0.933));
+                        }
+                    }
+                    .a_registration{
+                        font-size: 1.1em;
+                        color:#00cba2;
+                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
                     }
                 }
                 .opening_wrapper_h4{
@@ -868,6 +892,7 @@ body {
                 width: fit-content;
                 height: fit-content;
                 position: relative;
+                box-sizing: border-box;
                 @include app_margin(0.2em 0.4em);
                 width: 2em;
                 .discord_user_img{
@@ -2726,6 +2751,93 @@ body {
         }
 }
 }
+.guide_main_container{
+    display: flex;
+    flex-direction: column;
+    .dg_desc1_wrapper{
+        display: flex;
+        flex-direction: column;
+        @include app_margin(0.5em 0.6em);
+        p{
+            font-size: 0.75em;
+            .dim_item_em{
+                color: #dfcd05;
+            }
+            .dg_npc_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#00b4eb;
+            }
+            .dg_boss_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#f7003e;
+            }
+            .gd_reward_jewel_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#f7a100;
+            }
+            .gd_reward_luck_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#02cdbf;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, #362ba1);
+            }
+            .dim_final_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#f1f518;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, #2ba18b);
+            }
+            .dg_gremory_em{
+                font-size: 1.1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#fa9c31;   
+            }
+            .dg_boxOfLuck_em{
+                font-size: 1.2em;
+                font-weight: 500;
+                font-style: normal;
+                color:#02cdbf;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.02em, #362ba1); 
+            }
+            .gd_reward_boxKundun_em{
+                font-size: 1em;
+                font-weight: 500;
+                font-style: normal;
+                color:#fac131; 
+            }
+        }
+        .desc_img_wrapper{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 0.5em;
+            img{
+                height: 5em;
+                transition: 0.1s;
+                border: 0.1em solid rgb(45, 42, 42);
+                border-radius: 0.3em;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+            .dg_img_npc{
+                height: 10em;
+            }
+            .dg_img_reward{
+                height: 16em;
+            }
+        }
+    }
+}
 
 .download_container{
     display: flex;
@@ -3098,6 +3210,17 @@ body {
     border-radius: 0.4em;
     @include app_padding(.5em 1.2em 1em 1.2em);
     @include app_margin(1em 1em 1em 1em);
+    .vote_announce{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        @include app_margin(1em 0 0 0);
+        font-size: 1.4em;
+        font-weight: 500;
+        color: #fb6a54; 
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.04em, rgb(219, 46, 89));
+    }
     .vote_header_wrapper{
         display: flex;
         align-items: center;
@@ -3121,7 +3244,7 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 25%;
+            width: 20%;
             .vote_img{
                 height: 2em;
             }
@@ -3130,7 +3253,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 40%;
+            width: 50%;
             padding-left: 1.5em;
             box-sizing: border-box;
             .vote_link::after{
@@ -3166,21 +3289,45 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            width: 25%;
-            .vote_coins_p{
-                font-style: italic;
-                color: #35cb62; 
-                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, rgb(8, 96, 227));
+            width: 30%;
+            .vote_coins_p_wrapper, .vote_coins_desc_wrapper {
+                display: flex;
+                align-items: baseline;
+                box-sizing: border-box;
+                // background: green;
+                .vote_coins_p{
+                    font-size: 0.85em;
+                    font-style: italic;
+                    color: #35cb62; 
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, rgb(8, 96, 227));
+                }
+                .vote_coins_desc{
+                    align-content: center;
+                    padding-left: 1.5em;
+                    font-size: 0.7em;
+                    color: #f89c40;
+                    text-decoration: underline; 
+                    @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.1em, rgb(230, 98, 111)); 
+                }
             }
         }
     }
     .vote_tip_container{
         display: flex;
+        flex-direction: column;
         width: 100%;
         margin-top: 1em;
-        .vote_tip{
+        .vote_tip_1{
             color: rgb(248, 60, 60);
             @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.03em, rgb(169, 6, 0));
+            font-size: 0.65em;
+            b{
+                text-decoration: underline;
+            }
+        }
+        .vote_tip_2{
+            color: rgb(63, 200, 21);
+            @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.06em, rgb(67, 151, 220));
             font-size: 0.65em;
             b{
                 text-decoration: underline;
