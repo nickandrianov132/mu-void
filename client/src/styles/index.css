@@ -1,11 +1,10 @@
 @charset "UTF-8";
-.buyVip_container .vip_table tbody tr .vip_table_btn, .registration_container .reg_form .reg_btn_div .reg_btn, .form_btn {
-  border: 0.2em solid #fc483b;
+.buyVip_container .vip_table tbody tr .vip_table_btn, .form_btn {
+  border: 0.2em solid #01bc74;
   border-radius: 0.4em;
   color: white;
   cursor: pointer;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(253, 88, 42)), color-stop(49%, rgb(227, 39, 92)), to(rgb(255, 23, 89)));
-  background-image: linear-gradient(180deg, rgb(253, 88, 42) 0%, rgb(227, 39, 92) 49%, rgb(255, 23, 89) 100%);
+  background: #3bdd81;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
@@ -967,10 +966,28 @@ body {
   bottom: 0.6em;
 }
 
+.player_container_wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  background: #000000;
+  border: 0.2em solid #070040;
+  left: -100%;
+  top: -11em;
+  width: 30em;
+  height: 20em;
+}
+
 .player_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   overflow: hidden;
   background: #000000;
@@ -2383,7 +2400,12 @@ body {
   text-shadow: 0.01em 0.01em 0.05em rgb(252, 0, 0), -0.01em -0.01em 0.05em rgb(252, 0, 0), 0.01em -0.01em 0.05em rgb(252, 0, 0), -0.01em 0.01em 0.05em rgb(252, 0, 0);
 }
 .registration_container .reg_form .reg_btn_div .reg_btn {
-  background-color: #0aa46e;
+  border: 0.2em solid #01bc74;
+  border-radius: 0.4em;
+  color: white;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(253, 88, 42)), color-stop(49%, rgb(227, 39, 92)), to(rgb(255, 23, 89)));
+  background-image: linear-gradient(180deg, rgb(253, 88, 42) 0%, rgb(227, 39, 92) 49%, rgb(255, 23, 89) 100%);
   border: 0.17em solid rgb(252, 128, 128);
   font-size: 0.9em;
   height: -webkit-fit-content;
@@ -4068,6 +4090,22 @@ body {
   color: whitesmoke;
   padding: 1em 0.3em 0.5em 1em;
 }
+.buyVip_container .vip_header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0 0 1em 0;
+}
+.buyVip_container .vip_header_wrapper h3 {
+  color: #f85f47;
+  text-shadow: 0.015em 0.015em 0.1em rgb(174, 2, 85), -0.015em -0.015em 0.1em rgb(174, 2, 85), 0.015em -0.015em 0.1em rgb(174, 2, 85), -0.015em 0.015em 0.1em rgb(174, 2, 85);
+  word-spacing: 0.1em;
+  text-decoration: underline;
+}
 .buyVip_container .vip_table {
   width: 80%;
   -ms-flex-item-align: center;
@@ -4128,7 +4166,9 @@ body {
 }
 .buyVip_container .vip_table tbody tr .vip_table_btn:hover {
   color: whitesmoke;
-  background-color: rgb(57, 207, 57);
+  border: 0.2em solid #01bc74;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(78, 252, 157)), color-stop(40%, rgb(57, 196, 143)), color-stop(60%, rgb(34, 212, 108)), to(rgb(78, 252, 157)));
+  background-image: linear-gradient(180deg, rgb(78, 252, 157) 0%, rgb(57, 196, 143) 40%, rgb(34, 212, 108) 60%, rgb(78, 252, 157) 100%);
   border: 0.2em solid rgb(0, 195, 130);
   -webkit-box-shadow: 0.01em 0.01em 0.2em rgb(89, 255, 227), -0.01em -0.01em 0.2em rgb(89, 255, 227), 0.01em -0.01em 0.2em rgb(89, 255, 227), -0.01em 0.01em 0.2em rgb(89, 255, 227);
           box-shadow: 0.01em 0.01em 0.2em rgb(89, 255, 227), -0.01em -0.01em 0.2em rgb(89, 255, 227), 0.01em -0.01em 0.2em rgb(89, 255, 227), -0.01em 0.01em 0.2em rgb(89, 255, 227);

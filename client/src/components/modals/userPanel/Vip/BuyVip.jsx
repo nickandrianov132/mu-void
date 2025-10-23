@@ -16,6 +16,9 @@ const BuyVip = () => {
        
     return (
         <div className="buyVip_container">
+            <div className="vip_header_wrapper">
+                <h3>VIP will be available after the 1<sup>st</sup> Castle Siege</h3>
+            </div>
             <VipTable />
         </div>
     );
