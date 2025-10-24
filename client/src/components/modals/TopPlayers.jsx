@@ -17,7 +17,7 @@ const TopPlayers = () => {
                 isError: isError,
             })
         })
-    console.log(top3Players);
+    // console.log(top3Players);
     return (
         <div className="top5_container">
             <table className="top5_table">

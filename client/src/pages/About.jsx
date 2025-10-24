@@ -11,7 +11,7 @@ import PComponent from "./pagesComponents/HomeComp/ServerInfo/PComponent";
 
 const About = () => {
     const serverInfo = useSelector(state => state.serverInfo);
-    console.log(serverInfo);
+    // console.log(serverInfo);
 
     return (
     <div className="about_content_container">

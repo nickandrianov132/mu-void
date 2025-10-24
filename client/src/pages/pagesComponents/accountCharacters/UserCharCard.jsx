@@ -40,7 +40,7 @@ const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, 
         const arrZen = zen.toString().split('')
         for (let a =[], i = arrZen.length; i > 0; i--) {
             a.push(arrZen[i - 1])
-            console.log(a);
+            // console.log(a);
             if(a.length == 3) {
                 arr.push(a.reverse().join(''))
                 a = []

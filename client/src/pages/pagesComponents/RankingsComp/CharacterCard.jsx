@@ -6,7 +6,7 @@ import { checkCharClass, checkLocation } from '../../../utils/functions';
 const CharacterCard = () => {
     const {id} = useParams()
     const {data, isLoading} = useFetchOneCharQuery(id)
-    console.log(data);
+    // console.log(data);
     function setImg(){
         let img = ''
         if(!isLoading && (data.cClass === 16 || data.cClass === 17 || data.cClass === 18)) {

@@ -8,7 +8,7 @@ import { HOME_ROUTE } from "../../../../utils/constants";
 
 const VoteContainer = () => {
     const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
-    console.log(userInfo);
+    // console.log(userInfo);
     const {accessToken} = useSelector(state => state.user)
     const navigate = useNavigate()
 

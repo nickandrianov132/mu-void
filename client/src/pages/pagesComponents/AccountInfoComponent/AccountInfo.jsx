@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const AccountInfo = () => {
     const {accessToken} = useSelector(state => state.user)
     const navigate = useNavigate()
-    console.log(accessToken);
+    // console.log(accessToken);
     useEffect(() => {
         if(!accessToken) {
             navigate(HOME_ROUTE)

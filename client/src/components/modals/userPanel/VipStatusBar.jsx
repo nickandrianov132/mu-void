@@ -5,7 +5,7 @@ import { vipDescClassName, vipEmblemClassName, vipExpireCheck, vipType } from ".
 
 const VipStatusBar = () => {
 const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
-console.log(userInfo);
+// console.log(userInfo);
     return (
         <div className="vip_statuBar">
                 {isSuccess &&

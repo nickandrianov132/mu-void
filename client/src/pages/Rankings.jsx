@@ -24,16 +24,16 @@ const Rankings = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    console.log(isError);
-    console.log(isSuccess);
-    console.log(chars);
+    // console.log(isError);
+    // console.log(isSuccess);
+    // console.log(chars);
     useEffect(()=> {
         if(isSuccess == true) {
-        console.log(chars)
+        // console.log(chars)
         dispatch(addCharacters(chars))
     }
     }, [isSuccess])
-    console.log(characters);
+    // console.log(characters);
     return (
         <>{isLoading ? 
             <Spinner/> 

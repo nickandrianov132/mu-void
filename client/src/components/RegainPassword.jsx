@@ -17,11 +17,11 @@ const RegainPassword = () => {
     const { regainInputLogin, regainInputEmail, regainInputAnswer } = useSelector((state) => state.regainPasswordInput)
     const [fetchAccountQuestion, {data: question, isSuccess: isSuccessQ, isError: isErrorQ, isLoading: isLoadingQ, error: errorQ}] = useFetchAccountQuestionMutation()
     const [fetchAccountAnswer, {data: password, isSuccess: isSuccessA, isError: isErrorA, isLoading: isLoadingA, error: errorA}] = useFetchAccountAnswerMutation()
-    console.log(regainUserData);
-    console.log(regainInputLogin, regainInputEmail, regainInputAnswer);
-    console.log(question);
-    console.log(password);
-    console.log(`isSuccessA: ${isSuccessA}`);
+    // console.log(regainUserData);
+    // console.log(regainInputLogin, regainInputEmail, regainInputAnswer);
+    // console.log(question);
+    // console.log(password);
+    // console.log(`isSuccessA: ${isSuccessA}`);
 
     function checkRegBtn(){
         if(regainInputLogin & regainInputEmail){
@@ -42,9 +42,9 @@ const RegainPassword = () => {
     }
     const regainUserAnswerHandler = async (e) => {
         e.preventDefault()
-        console.log(regainInputLogin & regainInputEmail & regainInputAnswer);
+        // console.log(regainInputLogin & regainInputEmail & regainInputAnswer);
         if(regainInputAnswer){
-            console.log(regainUserData);
+            // console.log(regainUserData);
             await fetchAccountAnswer(regainUserData)
             
         }else{

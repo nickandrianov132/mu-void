@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const AccountTable = () => {
     const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
     const {accessToken} = useSelector(state => state.user)
-    console.log(userInfo);
+    // console.log(userInfo);
      useEffect(() => {
         if(!accessToken) {
             navigate(HOME_ROUTE)

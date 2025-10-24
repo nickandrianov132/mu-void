@@ -16,7 +16,7 @@ const ServerTime = () => {
 
     function timeDifference(servTime) {
         const serverTime = Date.parse(servTime)
-        console.log(new Date(serverTime));
+        // console.log(new Date(serverTime));
         const timeOffset = Date.parse(localTime) - serverTime
         return timeOffset
     }

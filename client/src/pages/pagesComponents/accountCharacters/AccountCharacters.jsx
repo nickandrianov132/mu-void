@@ -11,9 +11,9 @@ const AccountCharacters = () => {
     const {accessToken} = useSelector(state => state.user)
     const navigate = useNavigate()
     useEffect(() => {
-        if(isSuccess){
-            console.log(characters);
-        }
+        // if(isSuccess){
+        //     console.log(characters);
+        // }
         if(!accessToken) {
             navigate(HOME_ROUTE)
         }

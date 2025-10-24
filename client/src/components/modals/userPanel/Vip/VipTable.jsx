@@ -11,8 +11,8 @@ const VipTable = () => {
     const [vipBronze, setVipBronze] = useVipCost({type: 1, days: 7, price: 300})
     const [vipSilver, setVipSilver] = useVipCost({type: 2, days: 7, price: 500})
     const [vipGold, setVipGold] = useVipCost({type: 3, days: 7, price: 700})
-    console.log(userInfo);
-    console.log(vipData);
+    // console.log(userInfo);
+    // console.log(vipData);
     // useEffect(() => {
     //     setDur(true)
     //     setTimeout(() => {
@@ -24,8 +24,8 @@ const VipTable = () => {
     // console.log(isSuccess);
     // console.log(new Date().toString());
     function selectHandler(e) {
-        console.log(e.target.name);
-        console.log(e.target.value);
+        // console.log(e.target.name);
+        // console.log(e.target.value);
         if(e.target.name == 'bronze') {
             setVipBronze(e.target.name, e.target.value)
         }

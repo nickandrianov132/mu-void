@@ -22,7 +22,7 @@ const ResetSystem = () => {
                         <span> - 390lvl + <em className="reset_em_zen">25,000,000 zen</em></span>
                     </div>
                 </div>
-                <span>4<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">10,000,000 zen</em> </span>
+                <span>6<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">10,000,000 zen</em> </span>
                 <p className="reset_remark_p">*<i className="reset_remark_i">After <b>Grand Reset</b> all resets level requirement is 400lvl❗</i></p>
                 <p className="reset_p2">
                     🔹🔸 To make <em className="reset_em_res">Reset</em> you have to log-in on website ➯ <b>User Panel</b> ➯ <b>click on</b> 👉 <em className="reset_em_btn">Reset</em>

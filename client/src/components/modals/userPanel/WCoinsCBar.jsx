@@ -2,7 +2,7 @@ import { useFetchAccountInfoQuery } from '../../../services/userApi';
 
 const WCoinsCBar = () => {
     const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
-    console.log(userInfo)
+    // console.log(userInfo)
 
     return (
         <>

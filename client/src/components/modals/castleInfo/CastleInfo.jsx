@@ -4,11 +4,11 @@ import { GiCastle, GiCrown, GiLaurelCrown, GiMazeSaw } from "react-icons/gi";
 
 const CastleInfo = () => {
     const {data: castleInfo, isSuccess, isError, isLoading, error } = useFetchCastleInfoQuery()
-    useEffect(() => {
-        if(isSuccess) {
-            console.log(castleInfo) 
-        }
-    }, [isSuccess])
+    // useEffect(() => {
+    //     if(isSuccess) {
+    //         console.log(castleInfo) 
+    //     }
+    // }, [isSuccess])
 
     return (
         <>

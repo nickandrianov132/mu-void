@@ -21,7 +21,7 @@ const navigate = useNavigate()
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion, inputRegAnswer){
             let dateStamp = new Date().toLocaleString()
             let user = {...userData, date: dateStamp}
-            console.log(user);
+            // console.log(user);
             await registration({...user})
             
         }else{
@@ -41,8 +41,8 @@ const navigate = useNavigate()
             return false
         }
     }
-    console.log(isSuccess);
-    console.log(error);
+    // console.log(isSuccess);
+    // console.log(error);
     return (
         <div className='registration_container'>
             <RegForm>
