@@ -8,21 +8,6 @@ const Home = () => {
     return (
         <div className='home_container'>
             <HomeContent
-                title="🔖Open Beta-Test is Closed 🔒"
-                date="22.10.2025"
-                sideImage={Images.bg_obt_close}
-            >
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
-                    </div>
-                    <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Waiting for you on the server Opening October 24th at 17:00 Server Time "UTC"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All accounts and characters were deleted deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a></p>
-                    </div>
-                </div>
-            </HomeContent>
-
-            <HomeContent
                 title="🎉📢Grand Opening🔥"
                 date="16.10.2025"
                 sideImage={Images.img_opening_news}
@@ -36,7 +21,20 @@ const Home = () => {
                     </div>
                 </div>
             </HomeContent>
-
+            <HomeContent
+                title="🔖Open Beta-Test is Closed 🔒"
+                date="16.10.2025"
+                sideImage={Images.bg_obt_close}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'><b>Waiting for you on the server Opening October 24th at 17:00 Server Time "UTC"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All accounts and characters were deleted deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a></p>
+                    </div>
+                </div>
+            </HomeContent>
             <HomeContent
                 title="📌Easy OBT for players💎"
                 date="30.08.2025"
