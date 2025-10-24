@@ -305,19 +305,27 @@ export function checkResLvl(lvl, res, grRes) {
 }
 export function tipResLvl(lvl, res, grRes) {
     if(grRes == 0) {
-        if(res == 0 && lvl < 370) {
+        if(res == 0 && lvl < 350) {
+            let tip = '⛔ Character should be 350lvl to make Reset!'
+            return tip
+        }
+        else if(res == 1 && lvl < 360) {
+            let tip = '⛔ Character should be 360lvl to make Reset!'
+            return tip
+        }
+        else if(res == 2 && lvl < 370) {
             let tip = '⛔ Character should be 370lvl to make Reset!'
             return tip
         }
-        else if(res == 1 && lvl < 380) {
+        else if(res == 3 && lvl < 380) {
             let tip = '⛔ Character should be 380lvl to make Reset!'
             return tip
         }
-        else if(res == 2 && lvl < 390) {
+        else if(res == 4 && lvl < 390) {
             let tip = '⛔ Character should be 3900lvl to make Reset!'
             return tip
         }
-        else if(res >= 3 && lvl < 400) {
+        else if(res >= 5 && lvl < 400) {
             let tip = '⛔ Character should be 400lvl to make Reset!'
             return tip
         }
@@ -351,7 +359,13 @@ export function checkZenRes(zen, res, gRes) {
         else if(res == 2 && zen >= easyResZen * nextRes) {
             return true
         }
-        else if(res >= 3 && zen >= regularResZen * nextRes) {
+        else if(res == 3 && zen >= easyResZen * nextRes) {
+            return true
+        }
+        else if(res == 4 && zen >= easyResZen * nextRes) {
+            return true
+        }
+        else if(res >= 5 && zen >= regularResZen * nextRes) {
             return true
         }
         else {
@@ -390,7 +404,15 @@ export function tipZenRes(zen, res, gRes) {
             needZen = (easyResZen * nextRes) - zen
             return needZen
         }
-        else if(res >= 3 && zen < regularResZen * nextRes) {
+        else if(res == 3 && zen < easyResZen * nextRes) {
+            needZen = (easyResZen * nextRes) - zen
+            return needZen
+        }
+        else if(res == 4 && zen < easyResZen * nextRes) {
+            needZen = (easyResZen * nextRes) - zen
+            return needZen
+        }
+        else if(res >= 5 && zen < regularResZen * nextRes) {
             needZen = (regularResZen * nextRes) - zen
             return needZen
         }
