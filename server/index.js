@@ -17,10 +17,10 @@ app.use('/api', router)
 /// Обработка ошибок, последний Middleware:
 app.use(errorHandlerMiddleware)
 
-// mmotopVoteController.mmotopFetch()
-// setInterval( () => {
-//     mmotopVoteController.mmotopFetch()
-// }, 1200000)
+mmotopVoteController.mmotopFetch()
+setInterval( () => {
+    mmotopVoteController.mmotopFetch()
+}, 1200000)
 const start = async () => {
     try {
         app.listen(PORT, () => {

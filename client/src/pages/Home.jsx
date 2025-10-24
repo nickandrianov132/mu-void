@@ -17,7 +17,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>Opening is scheduled for October 24th 17:00 Server Time!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Welcome to our classic Mu Online server!</b><br/> - The great journey will begin on 24th of October.<br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WC to use for getting VIP or buying things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen in 2 weeks after the journey begun.<br/> - We hope you will enjoy your adventure!</p>
+                        <p className='description_item_p'><b>Welcome to our classic Mu Online server!</b><br/> - The great journey will begin on 24th of October 17:00 Server Time.<br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WC to use for getting VIP or buying things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen in 2 weeks after the journey begun.<br/> - We hope you will enjoy your adventure!</p>
                     </div>
                 </div>
             </HomeContent>
