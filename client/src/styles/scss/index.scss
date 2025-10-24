@@ -1595,7 +1595,7 @@ body {
     transition: 0.1s;
     &:hover{
         color: whitesmoke;
-        background-image: linear-gradient(180deg,rgba(42, 155, 132, 1) 0%, rgba(63, 196, 118, 1) 50%, rgba(42, 155, 132, 1) 100%);
+        background-image: linear-gradient(180deg,rgba(102, 245, 73, 1) 0%, rgba(75, 209, 104, 1) 30%, rgba(105, 209, 127, 1) 70%, rgba(77, 232, 46, 1) 100%);
         border: 0.2em solid rgb(16, 189, 88);  
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(28, 27, 53));         
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(0, 213, 117));         
@@ -1855,9 +1855,11 @@ body {
                 border-radius: 0.4em;
                 color: white;
                 cursor: pointer;
-                background-image: linear-gradient(180deg,rgba(253, 88, 42, 1) 0%, rgba(227, 39, 92, 1) 49%, rgba(255, 23, 89, 1) 100%);
-                border: 0.17em solid rgb(252, 128, 128);
+                background-image: linear-gradient(180deg,rgba(150, 237, 83, 1) 0%, rgba(105, 210, 119, 1) 30%, rgba(105, 210, 119, 1) 70%, rgba(150, 237, 83, 1) 100%);
+                border: 0.17em solid rgb(80, 214, 116);
                 font-size: 0.9em;
+                color: #070040;
+                @include text-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.03em, #005226);
                 height: fit-content;
                 min-width: 6em;
                 @include app_padding(0.3em);
