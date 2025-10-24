@@ -3436,6 +3436,15 @@ body {
     width: 100%;
     bottom: 0;
     margin: 0;
+    .banner_mmoanons{
+        justify-self: end;
+        align-self: end;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        img{
+            width: 4em;
+        }
+    }
     .banner_extremeTop{
         justify-self: end;
         align-self: end;

@@ -4515,6 +4515,21 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
 }
+.banners_board .banner_mmoanons {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+.banners_board .banner_mmoanons img {
+  width: 4em;
+}
 .banners_board .banner_extremeTop {
   -ms-grid-column-align: end;
       justify-self: end;

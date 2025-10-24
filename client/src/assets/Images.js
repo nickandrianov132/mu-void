@@ -88,6 +88,8 @@ const Images = {
     top100arena_banner: new URL('./top100arena.png', import.meta.url).href,  
     xtremetop100_banner: new URL('./xtremetop100.jpg', import.meta.url).href,  
     arena_top100_banner: new URL('./arena_top100.jpg', import.meta.url).href,  
+    mmoanons: new URL('./mmoanons.png', import.meta.url).href,  
+    mmoanons_2: new URL('./mmoanons_2.png', import.meta.url).href,  
     easy_obt1: new URL('./easy_obt1.jpg', import.meta.url).href,  
     easy_obt2: new URL('./easy_obt2.jpg', import.meta.url).href,  
     easy_obt3: new URL('./easy_obt3.jpg', import.meta.url).href,
