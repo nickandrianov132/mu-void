@@ -498,11 +498,14 @@ body {
                 background: linear-gradient(316deg,rgba(237, 204, 204, 1) 0%, rgba(232, 223, 213, 1) 40%, rgba(240, 227, 213, 1) 75%, rgba(237, 204, 204, 1) 100%);
                 .description_item_p{
                     @include app_margin(0.3em 0.3em 0 0.4em);
-                    font-size: 0.7em;
+                    font-size: 0.75em;
                     margin-bottom: 1em;
                     font-weight: 500;
                     &::first-letter{
                         margin-left: 1em;
+                    }
+                    b{
+                        font-size: 1.1em;
                     }
                     .a_registration{
                         font-size: 1.1em;
@@ -2876,9 +2879,13 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
-            img{
+            .img_logo{
                 @include app_padding(0.5em);
                 width: 2em;
+            }
+            .pcloud_logo{
+                @include app_padding(0.2em);
+                width: 2.5em;  
             }
         }
         .download_link_a::after{
@@ -2886,7 +2893,7 @@ body {
             position: absolute;
             bottom: -15%;
             width: 0px;
-            height: 0.1em;
+            height: 0.05em;
             background: $char-th-bg;
             transition: width 0.2s;
         }

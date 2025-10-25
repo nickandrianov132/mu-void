@@ -575,12 +575,15 @@ body {
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
   margin: 0.3em 0.3em 0 0.4em;
-  font-size: 0.7em;
+  font-size: 0.75em;
   margin-bottom: 1em;
   font-weight: 500;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p::first-letter {
   margin-left: 1em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p b {
+  font-size: 1.1em;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .a_registration {
   font-size: 1.1em;
@@ -3767,16 +3770,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.download_container .download_link_wrapper .download_links_logo_wrapper img {
+.download_container .download_link_wrapper .download_links_logo_wrapper .img_logo {
   padding: 0.5em;
   width: 2em;
+}
+.download_container .download_link_wrapper .download_links_logo_wrapper .pcloud_logo {
+  padding: 0.2em;
+  width: 2.5em;
 }
 .download_container .download_link_wrapper .download_link_a::after {
   content: "";
   position: absolute;
   bottom: -15%;
   width: 0px;
-  height: 0.1em;
+  height: 0.05em;
   background: #00dc88;
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
