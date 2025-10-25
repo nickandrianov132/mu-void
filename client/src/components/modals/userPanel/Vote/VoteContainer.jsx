@@ -66,6 +66,18 @@ const VoteContainer = () => {
                 img={Images.mmoanons}
                 coinsDesc="every 24 hours"
             />
+            <VoteItem
+                title="Vote on SupremeTop100"
+                link={`https://supremetop100.com/en/vote/in/mu-void-classic-server-x35-open-24th-october`}
+                img={`https://supremetop100.com/img/SupremeTop100_Vote_5.png`}
+                coinsDesc="every 24 hours"
+            />
+            <VoteItem
+                title="Vote on GTop100"
+                link={`https://gtop100.com/mu-online-private-servers/server-105282?vote=1`}
+                img={Images.votegtop100}
+                coinsDesc="every 24 hours"
+            />
             <div className="vote_tip_container">
                 <em className="vote_tip_1">* Due to <b>MMOTOP</b> does not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
                 <em className="vote_tip_2">* On <b>MMOTOP</b> you should indicate your account <b>Login</b> to get WCoins.</em>

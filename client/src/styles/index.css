@@ -2158,6 +2158,9 @@ body {
   margin: 0;
 }
 .online_count_status_coutainer .total_online_div {
+  font-weight: 500;
+  color: #1cc74d;
+  text-shadow: 0.015em 0.015em 0.15em rgb(16, 57, 27), -0.015em -0.015em 0.15em rgb(16, 57, 27), 0.015em -0.015em 0.15em rgb(16, 57, 27), -0.015em 0.015em 0.15em rgb(16, 57, 27);
   margin-left: 0.2em;
 }
 
@@ -4485,8 +4488,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (3em)[3];
-  grid-template-rows: repeat(3, 3em);
+  -ms-grid-rows: (3em)[4];
+  grid-template-rows: repeat(4, 3em);
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -4521,6 +4524,46 @@ body {
 .banners_board > *:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
+}
+
+.banners_board > *:nth-child(7) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
+.banners_board > *:nth-child(8) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+.banners_board .banner_suptemetop100 {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+.banners_board .banner_suptemetop100 img {
+  width: 4em;
+}
+.banners_board .banner_Gtop100 {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+.banners_board .banner_Gtop100 img {
+  width: 4em;
 }
 .banners_board .banner_mmoanons {
   -ms-grid-column-align: end;
@@ -4560,9 +4603,9 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
-  grid-row: 2/4;
+  grid-row: 3/5;
 }
 .banners_board .banner_mmotop img {
   width: 6em;
@@ -4575,9 +4618,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  grid-row: 3/4;
+  grid-row: 4/5;
 }
 .banners_board .banner_topg img {
   width: 6em;
@@ -4590,9 +4633,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }
 .banners_board .banner_top100arena img {
   width: 6em;

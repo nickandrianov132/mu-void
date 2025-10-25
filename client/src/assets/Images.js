@@ -105,6 +105,7 @@ const Images = {
     arrow_left: new URL('./arrow_left.png', import.meta.url).href,  
     img_opening_news: new URL('./img_opening_news.jpg', import.meta.url).href,  
     open_bg_edit: new URL('./open_bg_edit.jpg', import.meta.url).href,  
+    votegtop100: new URL('./votegtop100.jpg', import.meta.url).href,  
     dg_mirror: new URL('./dg_mirror.jpg', import.meta.url).href,  
     dg_sign: new URL('./dg_sign.jpg', import.meta.url).href,  
     dg_ticket: new URL('./dg_ticket.jpg', import.meta.url).href,  
