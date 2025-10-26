@@ -17,7 +17,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>Server is Open!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50%🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
+                        <p className='description_item_p'><b>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+100% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
             </HomeContent>

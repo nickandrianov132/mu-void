@@ -321,6 +321,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 56%;
+    min-height: 60em;
     // flex: 1 1 auto;
     background-color: #bcc2bc5b;
 
@@ -343,15 +344,17 @@ body {
         @include app_margin(0 0 0.5em 0);
         .login_form{
             display: flex;
-            width: 90%;
+            width: 87%;
             background: $nav-bg;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // flex: 0 0 auto;
-            border-radius: 0.3em;
+            border: 0.15em solid rgb(69, 69, 75);
+            border-radius: 0.5em;
+            @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
+            // border-radius: 0.3em;
             @include app_padding(0.5em);
-            @include app_margin(1em);
+            @include app_margin(0.5em 0 0.5em 0);
             .input{
                 @extend %inputBasic;
             }
@@ -1036,14 +1039,14 @@ body {
     height:fit-content;
     display: block;
     border-collapse: collapse;
-    border: 1px rgb(31, 31, 31);
-    border-radius: 0.3em;
+    border: 0.2em solid rgb(62, 59, 73);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     background: $rank_bg;
     @include box-shadow(0.005em, 0.005em, -0.005em, -0.005em, 0.3em, black);
     @include app_margin(0 0 1em 0);
     .th_num{
         width: 5em;
-        border: 0px;
         border-top-left-radius: 0.25em;
     }
     .top_star_gold{
@@ -1061,7 +1064,6 @@ body {
     }
     .top_sword_axe{
         font-size: 1.3em;
-        // color: hsl(249, 35%, 8%);
     }
     .th_name{
         text-align: left;
@@ -1242,7 +1244,9 @@ body {
     background: #070326;
     color: whitesmoke;
     font-size: 0.7em;
-    border-radius: 0.45em;
+    border: 0.15em solid rgb(69, 69, 75);
+    border-radius: 0.6em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_padding(0.4em); 
     @include app_margin(0.5em);
     tbody  td{
@@ -1293,6 +1297,9 @@ body {
     background: #070326;
     color: whitesmoke;
     border-radius: 0.45em;
+    border: 0.15em solid rgb(69, 69, 75);
+    border-radius: 0.6em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_padding(0.4em); 
     // @include app_margin(0.5em);
     .castle_header_wrapper{
@@ -1364,8 +1371,11 @@ body {
     margin-top: 1em;
     @include app_padding(.4em 0 .7em 0);
     background-color: $nav-bg;
-    border: 0.1em solid transparent;
-    border-radius: 0.4em;
+    border: 0.15em solid rgb(62, 59, 73);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
+    // border: 0.1em solid transparent;
+    // border-radius: 0.4em;
     .welcome_div{
         display: flex;
         justify-content: center;
@@ -1725,8 +1735,9 @@ body {
     justify-content: center;
     width: 28em;
     background-color: $reg-container-bg;
-    border: 0.1em transparent;
-    border-radius: 0.4em;
+    border: 0.15em solid rgb(69, 69, 75);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_margin(1.5em 2em);
     .reg_form{
         display: flex;
@@ -2869,7 +2880,7 @@ body {
     flex-direction: column;
     width: 32em;
     background: #190e43;
-    border: 2px solid rgb(69, 69, 75);
+    border: 0.15em solid rgb(69, 69, 75);
     border-radius: 0.6em;
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_margin(2em 1em 1em 1em);
@@ -2920,6 +2931,17 @@ body {
             }
         }
     }
+    .download_remark_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;
+        .download_remark_p{
+            font-size: 0.75em;
+            color: #fa4e4e;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #2a0c65);
+        }
+    }
 }
 .eventTimersDashboard_container{
     display: flex;
@@ -2927,8 +2949,12 @@ body {
     width: 95%;
     color: whitesmoke;
     background: $footer-bg;
-    border: 1px solid transparent;
-    border-radius: 0.35em;
+    margin-bottom: 0.4em;
+    border: 0.15em solid rgb(69, 69, 75);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
+    // border: 1px solid transparent;
+    // border-radius: 0.35em;
     .event_header_wrapper{
         display: flex;
         flex-direction: column;
@@ -2948,7 +2974,6 @@ body {
     position: relative;
     color: whitesmoke;
     font-size: 0.75em;
-    margin-bottom: 0.4em;
     @include app_padding(1em);
     .event_name{
         color: #fce08e;

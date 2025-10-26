@@ -326,6 +326,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 56%;
+  min-height: 60em;
   background-color: rgba(188, 194, 188, 0.3568627451);
 }
 
@@ -365,7 +366,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 87%;
   background: #070326;
   display: flex;
   -webkit-box-orient: vertical;
@@ -375,9 +376,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0.3em;
+  border: 0.15em solid rgb(69, 69, 75);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   padding: 0.5em;
-  margin: 1em;
+  margin: 0.5em 0 0.5em 0;
 }
 .left_sidebar_container .login_container .login_form .input_error {
   border: 1.5px solid rgb(234, 86, 86);
@@ -1285,8 +1289,10 @@ body {
   height: fit-content;
   display: block;
   border-collapse: collapse;
-  border: 1px rgb(31, 31, 31);
-  border-radius: 0.3em;
+  border: 0.2em solid rgb(62, 59, 73);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   background: #d1bbbb;
   -webkit-box-shadow: 0.005em 0.005em 0.3em black, -0.005em -0.005em 0.3em black, 0.005em -0.005em 0.3em black, -0.005em 0.005em 0.3em black;
           box-shadow: 0.005em 0.005em 0.3em black, -0.005em -0.005em 0.3em black, 0.005em -0.005em 0.3em black, -0.005em 0.005em 0.3em black;
@@ -1294,7 +1300,6 @@ body {
 }
 .rankings_table .th_num {
   width: 5em;
-  border: 0px;
   border-top-left-radius: 0.25em;
 }
 .rankings_table .top_star_gold {
@@ -1525,7 +1530,10 @@ body {
   background: #070326;
   color: whitesmoke;
   font-size: 0.7em;
-  border-radius: 0.45em;
+  border: 0.15em solid rgb(69, 69, 75);
+  border-radius: 0.6em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   padding: 0.4em;
   margin: 0.5em;
 }
@@ -1596,6 +1604,10 @@ body {
   background: #070326;
   color: whitesmoke;
   border-radius: 0.45em;
+  border: 0.15em solid rgb(69, 69, 75);
+  border-radius: 0.6em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   padding: 0.4em;
 }
 .castle_info_container .castle_header_wrapper {
@@ -1695,8 +1707,10 @@ body {
   margin-top: 1em;
   padding: 0.4em 0 0.7em 0;
   background-color: #070326;
-  border: 0.1em solid transparent;
-  border-radius: 0.4em;
+  border: 0.15em solid rgb(62, 59, 73);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
 }
 .user_panel .welcome_div {
   display: -webkit-box;
@@ -2213,8 +2227,10 @@ body {
           justify-content: center;
   width: 28em;
   background-color: #070326;
-  border: 0.1em transparent;
-  border-radius: 0.4em;
+  border: 0.15em solid rgb(69, 69, 75);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   margin: 1.5em 2em;
 }
 .registration_container .reg_form {
@@ -3742,7 +3758,7 @@ body {
           flex-direction: column;
   width: 32em;
   background: #190e43;
-  border: 2px solid rgb(69, 69, 75);
+  border: 0.15em solid rgb(69, 69, 75);
   border-radius: 0.6em;
   -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
           box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
@@ -3816,6 +3832,22 @@ body {
   border: 0.1em solid transparent;
   border-radius: 0.3em;
 }
+.download_container .download_remark_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 1em;
+}
+.download_container .download_remark_wrapper .download_remark_p {
+  font-size: 0.75em;
+  color: #fa4e4e;
+  text-shadow: 0.01em 0.01em 0.1em #2a0c65, -0.01em -0.01em 0.1em #2a0c65, 0.01em -0.01em 0.1em #2a0c65, -0.01em 0.01em 0.1em #2a0c65;
+}
 
 .eventTimersDashboard_container {
   display: -webkit-box;
@@ -3828,8 +3860,11 @@ body {
   width: 95%;
   color: whitesmoke;
   background: #070326;
-  border: 1px solid transparent;
-  border-radius: 0.35em;
+  margin-bottom: 0.4em;
+  border: 0.15em solid rgb(69, 69, 75);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
 }
 .eventTimersDashboard_container .event_header_wrapper {
   display: -webkit-box;
@@ -3864,7 +3899,6 @@ body {
   position: relative;
   color: whitesmoke;
   font-size: 0.75em;
-  margin-bottom: 0.4em;
   padding: 1em;
 }
 .eventTimerItem_container .event_name {
