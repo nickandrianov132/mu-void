@@ -1242,6 +1242,7 @@ body {
     align-self: center;
     justify-self: center;
     background: #070326;
+    width: 92%;
     color: whitesmoke;
     font-size: 0.7em;
     border: 0.15em solid rgb(69, 69, 75);
@@ -1249,6 +1250,9 @@ body {
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_padding(0.4em); 
     @include app_margin(0.5em);
+    .top5_table{
+        width: 100%;
+    }
     tbody  td{
         font-size: 1em;
         text-align: center;
@@ -3281,7 +3285,7 @@ body {
         width: 100%;
         justify-content: center;
         align-content: center;
-        @include app_margin(1em 0 0 0);
+        @include app_margin(0 0 1em 0);
         font-size: 1.4em;
         font-weight: 500;
         color: #e65039; 
