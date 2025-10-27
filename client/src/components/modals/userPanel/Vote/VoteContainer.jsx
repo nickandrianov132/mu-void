@@ -22,7 +22,7 @@ const VoteContainer = () => {
             <div className="vote_header_wrapper">
                 <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em"> WCoins</em>!</h4>
             </div>
-            <div className="vote_announce">Will be available few hours before the opening, now free!</div>
+            <div className="vote_announce">No rewards before server opens, voting on your good will.</div>
             {isSuccess &&
             <>
             <VoteItem
@@ -68,7 +68,7 @@ const VoteContainer = () => {
             />
             <VoteItem
                 title="Vote on SupremeTop100"
-                link={`https://supremetop100.com/en/vote/in/mu-void-classic-server-x35-open-24th-october`}
+                link={`https://supremetop100.com/en/vote/in/mu-void-classic-server-x35-open-08-november`}
                 img={`https://supremetop100.com/img/SupremeTop100_Vote_5.png`}
                 coinsDesc="every 24 hours"
             />
