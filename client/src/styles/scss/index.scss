@@ -1708,6 +1708,12 @@ body {
         @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.15em, rgb(16, 57, 27));
         margin-left: 0.2em;
     }
+    .total_online_div_zero{
+        font-weight: 500;
+        color: #ff353fff;
+        @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.1em, rgba(122, 1, 1, 1));
+        margin-left: 0.2em;
+    }
 
 }
 .online_status_div{
@@ -3480,19 +3486,20 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%, -110%);
-    background-color: $nav-bg;
-    border: 0.15em solid rgba(68, 62, 89, 1);
+    background-image: linear-gradient(180deg,rgba(17, 17, 61, 1) 0%, rgba(10, 10, 56, 1) 32%, rgba(8, 11, 61, 1) 53%, rgba(10, 10, 77, 1) 77%, rgba(29, 48, 102, 1) 100%);
+    // background-color: $nav-bg;
+    border: 0.15em solid rgba(21, 4, 74, 1);
     border-radius: 0.5em;
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     .countdown_header{
         display: flex;
         justify-content: center;
         width: 100%;
-        color: #dbdfddff;
+        color: #100b32ff;
         font-weight: 600;
         font-size: 1.1em;
-        // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #23e136ee);
-        border-bottom: 0.05em solid white;
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #4ecdffff);
+        border-bottom: 0.05em solid #9eb7c2c5;
     }
     .countdown_items_wrapper{
         display: flex;
@@ -3517,8 +3524,10 @@ body {
                 justify-content: center;
                 width: 3em;
                 font-size: 1.1em;
-                color: #f48038ff;
-                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #fe3c6cee);
+                // color: #f48038ff;
+                // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #fe3c6cee);
+                color: #ccc5c1ff;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #ffffffee);
             }
         }
     }

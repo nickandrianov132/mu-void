@@ -29,7 +29,7 @@ const CountdownOpening = () => {
 
     return (
         <div className="countdown_container">
-            <div className="countdown_header">Server Opening:</div>
+            <div className="countdown_header">Server Opening :</div>
             {isSuccess && 
             <div className="countdown_items_wrapper">
                 <div className="countdown_item_wrapper">
