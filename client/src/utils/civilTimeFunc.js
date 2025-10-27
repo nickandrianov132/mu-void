@@ -113,4 +113,35 @@ export const finalHours = (d) => compose(time, toTwelveHours, appendZeroToHours,
 
 
 export const startTicking = () => setInterval(compose(logClear, finalHours, loging), 1000)
-// startTicking();
+
+
+/// Opening Countdown:
+export function openingCountdown(diff, dateOpening) {
+    const realUTCTime = currentDate(diff)
+    const dateDiff = Date.parse(dateOpening) - realUTCTime
+    const timeRemainObj = {
+        days: daysRemain(dateDiff),
+        hours: hoursRemain(dateDiff),
+        minutes: minutesRemain(dateDiff),
+        seconds: secondsRemain(dateDiff)
+    }
+    return timeRemainObj
+}
+
+function daysRemain(ms) {
+    const days = Math.floor(ms / 1000 / 60 / 60 / 24)
+    return prependZero(days).toString()
+}
+function hoursRemain(ms) {
+    const hours = Math.floor((ms / 1000 / 60 / 60 )% 24)
+    
+    return prependZero(hours).toString()
+}
+function minutesRemain(ms) {
+    const minutes = Math.floor((ms / 1000 / 60)% 60)
+    return prependZero(minutes).toString()
+}
+function secondsRemain(ms) {
+    const seconds = Math.floor((ms / 1000) % 60)
+    return prependZero(seconds).toString()
+}

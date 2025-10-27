@@ -1,13 +1,13 @@
-import React from 'react';
 import SideBar from './SideBar';
 import AppRouter from './AppRouter';
 import Aside from './Aside';
-import ServerTime from './ServerTime';
+import CountdownOpening from './CountdownOpening';
+
 
 const Body = () => {
     return (
         <div className='body_container'>
-            {/* <ServerTime /> */}
+            <CountdownOpening />
            <SideBar />
            <AppRouter /> 
            <Aside/>

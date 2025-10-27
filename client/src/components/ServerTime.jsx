@@ -6,10 +6,11 @@ const ServerTime = () => {
     const {data, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState('')
     let localTime;
+    let offset;
+    // console.log(data);
     useEffect(() => {
         localTime = new Date()
     }, [isSuccess])
-    let offset;
     useEffect(() => {
         offset = timeDifference(data)
     }, [isSuccess])
