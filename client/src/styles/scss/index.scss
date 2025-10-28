@@ -256,6 +256,21 @@ body {
     border-radius: 0.3em;
     @include navListItem(#fcfcfc, 0.3em, 1.5em, 0.5em, 0.5em);
     transition: 0.1s ease-in-out;
+    // .register_logo, .rankings_logo, .guide_logo, .about_logo, .download_logo, .home_logo{
+    //     @include app_margin(0 0.05em 0 0);
+    // }
+    .register_logo{
+        width: 1.1em;
+    }
+    .rankings_logo, .guide_logo {
+        width: 1.2em;
+    }
+    .home_logo{
+        width: 1.4em;
+    }
+    .download_logo, .about_logo{
+        width: 1.5em;
+    }
     .giSwordEmblem, .giSecretBook{
         width: 1em;
         height: 1em;
@@ -270,6 +285,24 @@ body {
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em,  $nav-list-item-color);
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.16em, rgba(52, 190, 130, 1));
 
+    }
+    &:hover > .rankings_logo{
+        animation: animationNavGi 0.6s ease-out;
+    }
+    &:hover > .guide_logo{
+        animation: animationNavGi 0.6s ease-out;
+    }
+    &:hover > .register_logo{
+        animation: animationNavGi 0.6s ease-out;
+    }
+    &:hover > .about_logo{
+        animation: animationNavGi 0.6s ease-out;
+    }
+    &:hover > .download_logo{
+        animation: animationNavGi 0.6s ease-out;
+    }
+    &:hover > .home_logo{
+        animation: animationNavGi 0.6s ease-out;
     }
     &:hover > .giSwordEmblem{
         animation: animationNavGi 0.6s ease-out;
@@ -1313,6 +1346,9 @@ body {
     .castle_header_wrapper{
         display: flex;
         align-items: center;
+        img{
+            height: 2.2em;
+        }
         .castle_emblem{
             font-size: 1.4em;
             color: rgb(255, 41, 41);
@@ -1320,10 +1356,10 @@ body {
         }
         h4{
             padding-left: 0.5em;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family:'Times New Roman', Times, serif;
             color: #e4e4e4;
-            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.02em, #280a95);
-            @include text-shadow(0.025em, 0.025em, -0.025em, -0.025em, 0.02em, #f21b1f);
+            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.02em, #281f48ff);
+            // @include text-shadow(0.025em, 0.025em, -0.025em, -0.025em, 0.02em, #f21b1f);
         }
     }
     .cs_info_wrapper{

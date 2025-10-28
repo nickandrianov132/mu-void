@@ -116,6 +116,17 @@ const Images = {
     dg_slaughterer_reward: new URL('./dg_slaughterer_reward.jpg', import.meta.url).href,   
     dg_reward_gremory1: new URL('./dg_reward_gremory1.jpg', import.meta.url).href,  
     dg_reward_final: new URL('./dg_reward_final.jpg', import.meta.url).href,  
+    shield: new URL('./shield.png', import.meta.url).href,  
+    swords_cross_shield: new URL('./swords_cross_shield.png', import.meta.url).href,  
+    cross_sword_shield2: new URL('./cross_sword_shield2.png', import.meta.url).href,  
+    book1: new URL('./book1.png', import.meta.url).href,  
+    register2: new URL('./register2.png', import.meta.url).href,  
+    register3: new URL('./register3.png', import.meta.url).href,  
+    register4: new URL('./register4.png', import.meta.url).href,  
+    download1: new URL('./download1.png', import.meta.url).href,  
+    book_open1: new URL('./book_open1.png', import.meta.url).href,  
+    book_open2: new URL('./book_open2.png', import.meta.url).href,  
+    home1: new URL('./home1.png', import.meta.url).href,  
  
 }
 

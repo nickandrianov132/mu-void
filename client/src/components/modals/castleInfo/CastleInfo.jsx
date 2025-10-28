@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useFetchCastleInfoQuery } from "../../../services/castleApi";
 import { GiCastle, GiCrown, GiLaurelCrown, GiMazeSaw } from "react-icons/gi";
+import Images from "../../../assets/Images";
 
 const CastleInfo = () => {
     const {data: castleInfo, isSuccess, isError, isLoading, error } = useFetchCastleInfoQuery()
@@ -15,7 +16,8 @@ const CastleInfo = () => {
         {isSuccess &&
             <div className="castle_info_container">
                 <div className="castle_header_wrapper">
-                    <GiMazeSaw className="castle_emblem"/>
+                    <img className="shield_logo" src={Images.shield} />
+                    {/* <GiMazeSaw className="castle_emblem"/> */}
                     <h4>Castle Siege:</h4>
                 </div>
                 <div className="cs_info_wrapper">
