@@ -249,8 +249,10 @@ body {
 .nav_list_item_wraper:hover {
   color: whitesmoke;
   background-color: #3fce97;
-  border-radius: 0.3em;
+  border: 0.1em solid rgb(29, 238, 147);
   text-shadow: 0.01em 0.01em 0.1em #070326, -0.01em -0.01em 0.1em #070326, 0.01em -0.01em 0.1em #070326, -0.01em 0.01em 0.1em #070326;
+  -webkit-box-shadow: 0.01em 0.01em 0.16em rgb(52, 190, 130), -0.01em -0.01em 0.16em rgb(52, 190, 130), 0.01em -0.01em 0.16em rgb(52, 190, 130), -0.01em 0.01em 0.16em rgb(52, 190, 130);
+          box-shadow: 0.01em 0.01em 0.16em rgb(52, 190, 130), -0.01em -0.01em 0.16em rgb(52, 190, 130), 0.01em -0.01em 0.16em rgb(52, 190, 130), -0.01em 0.01em 0.16em rgb(52, 190, 130);
 }
 .nav_list_item_wraper:hover > .giSwordEmblem {
   -webkit-animation: animationNavGi 0.6s ease-out;
@@ -1194,6 +1196,9 @@ body {
   background-image: linear-gradient(180deg, rgb(63, 182, 191) 0%, rgb(100, 126, 222) 36%, rgb(106, 76, 217) 62%, rgb(63, 182, 191) 100%);
   color: whitesmoke;
   border: 0.15em solid whitesmoke;
+  text-shadow: 0.01em 0.01em 0.05em rgb(48, 25, 83), -0.01em -0.01em 0.05em rgb(48, 25, 83), 0.01em -0.01em 0.05em rgb(48, 25, 83), -0.01em 0.01em 0.05em rgb(48, 25, 83);
+  -webkit-box-shadow: 0.1em 0.1em 0.2em rgb(59, 30, 127), -0.1em -0.1em 0.2em rgb(59, 30, 127), 0.1em -0.1em 0.2em rgb(59, 30, 127), -0.1em 0.1em 0.2em rgb(59, 30, 127);
+          box-shadow: 0.1em 0.1em 0.2em rgb(59, 30, 127), -0.1em -0.1em 0.2em rgb(59, 30, 127), 0.1em -0.1em 0.2em rgb(59, 30, 127), -0.1em 0.1em 0.2em rgb(59, 30, 127);
 }
 .right_sidebar_container .discord_widget_container .discord_footer .discord_join_btn:active {
   -webkit-transform: translate(0.1em, 0.1em);
@@ -1817,6 +1822,8 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(48, 209, 204)), color-stop(50%, rgb(87, 199, 133)), to(rgb(121, 237, 83)));
   background-image: linear-gradient(180deg, rgb(48, 209, 204) 0%, rgb(87, 199, 133) 50%, rgb(121, 237, 83) 100%);
   border: 0.1em solid #b4f638;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
+          box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
 }
 .user_panel .user_panel_links .link-vote:active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(50, 240, 233)), color-stop(50%, rgb(61, 227, 180)), to(rgb(181, 237, 83)));
@@ -1851,6 +1858,8 @@ body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(250, 20, 81)), color-stop(45%, rgb(227, 78, 36)), color-stop(69%, rgb(235, 92, 21)), to(rgb(224, 178, 49)));
   background-image: linear-gradient(0deg, rgb(250, 20, 81) 0%, rgb(227, 78, 36) 45%, rgb(235, 92, 21) 69%, rgb(224, 178, 49) 100%);
   border: 0.1em solid rgb(243, 155, 32);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(249, 182, 58), -0.1em -0.1em 0.16em rgb(249, 182, 58), 0.1em -0.1em 0.16em rgb(249, 182, 58), -0.1em 0.1em 0.16em rgb(249, 182, 58);
+          box-shadow: 0.1em 0.1em 0.16em rgb(249, 182, 58), -0.1em -0.1em 0.16em rgb(249, 182, 58), 0.1em -0.1em 0.16em rgb(249, 182, 58), -0.1em 0.1em 0.16em rgb(249, 182, 58);
 }
 .user_panel .user_panel_links .link-vip:active {
   -webkit-transform: translate(0.07em, 0.07em);
@@ -1882,6 +1891,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(104, 125, 227)), color-stop(51%, rgb(123, 53, 181)), to(rgb(183, 20, 186)));
   background: linear-gradient(180deg, rgb(104, 125, 227) 0%, rgb(123, 53, 181) 51%, rgb(183, 20, 186) 100%);
   border: 0.1em solid rgb(104, 125, 227);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(104, 125, 227), -0.1em -0.1em 0.16em rgb(104, 125, 227), 0.1em -0.1em 0.16em rgb(104, 125, 227), -0.1em 0.1em 0.16em rgb(104, 125, 227);
+          box-shadow: 0.1em 0.1em 0.16em rgb(104, 125, 227), -0.1em -0.1em 0.16em rgb(104, 125, 227), 0.1em -0.1em 0.16em rgb(104, 125, 227), -0.1em 0.1em 0.16em rgb(104, 125, 227);
 }
 .user_panel .user_panel_links .link-discord:active {
   -webkit-transform: translate(0.07em, 0.07em);
@@ -2588,6 +2599,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: #070326;
+  border: 0.15em solid rgb(62, 59, 73);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   color: whitesmoke;
   width: 60%;
   height: 5em;
@@ -3813,7 +3828,7 @@ body {
   position: absolute;
   bottom: -15%;
   width: 0px;
-  height: 0.05em;
+  height: 0.02em;
   background: #00dc88;
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
@@ -4145,9 +4160,13 @@ body {
   width: 80%;
   min-height: 15em;
   background: #070326;
-  border-radius: 0.4em;
+  border: 0.15em solid rgb(62, 59, 73);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   color: whitesmoke;
   padding: 1em 0.3em 0.5em 1em;
+  margin: 0.5em 0 0 0;
 }
 .buyVip_container .vip_header_wrapper {
   display: -webkit-box;
@@ -4262,7 +4281,10 @@ body {
   width: 80%;
   min-height: 30%;
   background: #070326;
-  border-radius: 0.4em;
+  border: 0.15em solid rgb(62, 59, 73);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
   padding: 0.5em 1.2em 1em 1.2em;
   margin: 1em 1em 1em 1em;
 }
@@ -4279,8 +4301,8 @@ body {
   margin: 0 0 1em 0;
   font-size: 1.4em;
   font-weight: 500;
-  color: #e65039;
-  text-shadow: 0.01em 0.01em 0.04em rgb(219, 46, 89), -0.01em -0.01em 0.04em rgb(219, 46, 89), 0.01em -0.01em 0.04em rgb(219, 46, 89), -0.01em 0.01em 0.04em rgb(219, 46, 89);
+  color: #5effaf;
+  text-shadow: 0.01em 0.01em 0.04em rgb(90, 100, 100), -0.01em -0.01em 0.04em rgb(90, 100, 100), 0.01em -0.01em 0.04em rgb(90, 100, 100), -0.01em 0.01em 0.04em rgb(90, 100, 100);
 }
 .vote_container .vote_header_wrapper {
   display: -webkit-box;

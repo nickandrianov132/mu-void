@@ -266,8 +266,9 @@ body {
     &:hover{
         color: whitesmoke;
         background-color: $nav-list-item-bg;
-        border-radius: 0.3em;
+        border: 0.1em solid rgba(29, 238, 147, 1);
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em,  $nav-list-item-color);
+        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.16em, rgba(52, 190, 130, 1));
 
     }
     &:hover > .giSwordEmblem{
@@ -973,6 +974,8 @@ body {
                 background-image: linear-gradient(180deg,rgba(63, 182, 191, 1) 0%, rgba(100, 126, 222, 1) 36%, rgba(106, 76, 217, 1) 62%, rgba(63, 182, 191, 1) 100%);
                 color: whitesmoke;
                 border: 0.15em solid whitesmoke;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(48, 25, 83, 1));
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, rgba(59, 30, 127, 1));
             }
             .discord_join_btn:active{
                 transform: translate(0.1em, 0.1em);
@@ -1451,6 +1454,7 @@ body {
                 background-image: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
                 // animation: voteBtnGradient 0.5s ease-in-out forwards;
                 border: 0.1em solid #b4f638;
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(0, 162, 38, 1));
             }
             &:active{
                 background-image: linear-gradient(180deg,rgba(50, 240, 233, 1) 0%, rgba(61, 227, 180, 1) 50%, rgba(181, 237, 83, 1) 100%);
@@ -1472,6 +1476,7 @@ body {
                 color: whitesmoke;
                 background-image: linear-gradient(0deg,rgba(250, 20, 81, 1) 0%, rgba(227, 78, 36, 1) 45%, rgba(235, 92, 21, 1) 69%, rgba(224, 178, 49, 1) 100%);
                 border: 0.1em solid rgb(243, 155, 32);
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(249, 182, 58, 1));
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1491,6 +1496,7 @@ body {
                 color: whitesmoke;
                 background: linear-gradient(180deg,rgba(104, 125, 227, 1) 0%, rgba(123, 53, 181, 1) 51%, rgba(183, 20, 186, 1) 100%);
                 border: 0.1em solid rgba(104, 125, 227, 1);
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(104, 125, 227, 1));
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1989,6 +1995,9 @@ body {
         align-items: center;
         justify-content: center;
         background: $footer-bg;
+            border: 0.15em solid rgb(62, 59, 73);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
         color: whitesmoke;
         width: 60%;
         height: 5em;
@@ -2918,7 +2927,7 @@ body {
             position: absolute;
             bottom: -15%;
             width: 0px;
-            height: 0.05em;
+            height: 0.02em;
             background: $char-th-bg;
             transition: width 0.2s;
         }
@@ -3176,9 +3185,12 @@ body {
     width: 80%;
     min-height: 15em;
     background: $footer-bg;
-    border-radius: 0.4em;
+    border: 0.15em solid rgb(62, 59, 73);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     color: whitesmoke;
     @include app_padding(1em 0.3em 0.5em 1em);
+    @include app_margin(0.5em 0 0 0);
     .vip_header_wrapper{
         display: flex;
         justify-content: center;
@@ -3284,7 +3296,9 @@ body {
     width: 80%;
     min-height: 30%;
     background: $nav-bg;
-    border-radius: 0.4em;
+    border: 0.15em solid rgb(62, 59, 73);
+    border-radius: 0.5em;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
     @include app_padding(.5em 1.2em 1em 1.2em);
     @include app_margin(1em 1em 1em 1em);
     .vote_announce{
@@ -3295,8 +3309,8 @@ body {
         @include app_margin(0 0 1em 0);
         font-size: 1.4em;
         font-weight: 500;
-        color: #e65039; 
-        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.04em, rgb(219, 46, 89));
+        color: #5effafff; 
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.04em, rgba(90, 100, 100, 1));
     }
     .vote_header_wrapper{
         display: flex;
