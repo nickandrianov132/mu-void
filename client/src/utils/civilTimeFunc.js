@@ -126,28 +126,51 @@ export function openingCountdown(diff, dateOpening) {
     // console.log(Date.parse(realUTCTime));
     // console.log(dateDiff);
     const timeRemainObj = {
-        days: Number(daysRemain(dateDiff)),
-        hours: Number(hoursRemain(dateDiff)),
-        minutes: Number(minutesRemain(dateDiff)),
-        seconds: Number(secondsRemain(dateDiff))
+        days: daysRemain(dateDiff),
+        hours: hoursRemain(dateDiff),
+        minutes: minutesRemain(dateDiff),
+        seconds: secondsRemain(dateDiff)
     }
-    // console.log(timeRemainObj)
+    // const timeRemainObj = {
+    //     days: Number(daysRemain(dateDiff)),
+    //     hours: Number(hoursRemain(dateDiff)),
+    //     minutes: Number(minutesRemain(dateDiff)),
+    //     seconds: Number(secondsRemain(dateDiff))
+    // }
+    console.log(timeRemainObj)
     return timeRemainObj
 }
 
+// function daysRemain(ms) {
+//     const days = Math.floor(ms / 1000 / 60 / 60 / 24)
+//     return prependZero(days)
+// }
+// function hoursRemain(ms) {
+//     const hours = Math.floor((ms / 1000 / 60 / 60 ) % 24)
+//     return prependZero(hours)
+// }
+// function minutesRemain(ms) {
+//     const minutes = Math.floor((ms / 1000 / 60)% 60)
+//     return prependZero(minutes)
+// }
+// function secondsRemain(ms) {
+//     const seconds = Math.floor((ms / 1000) % 60)
+//     return prependZero(seconds)
+// }
+/////
 function daysRemain(ms) {
     const days = Math.floor(ms / 1000 / 60 / 60 / 24)
-    return prependZero(days).toString()
+    return days
 }
 function hoursRemain(ms) {
-    const hours = Math.floor((ms / 1000 / 60 / 60 )% 24)
-    return prependZero(hours).toString()
+    const hours = Math.floor((ms / 1000 / 60 / 60 ) % 24)
+    return hours
 }
 function minutesRemain(ms) {
     const minutes = Math.floor((ms / 1000 / 60)% 60)
-    return prependZero(minutes).toString()
+    return minutes
 }
 function secondsRemain(ms) {
     const seconds = Math.floor((ms / 1000) % 60)
-    return prependZero(seconds).toString()
+    return seconds
 }
