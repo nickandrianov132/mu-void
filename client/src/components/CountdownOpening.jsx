@@ -7,7 +7,9 @@ const CountdownOpening = () => {
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
     const [newTime, setNewTime] = useState('')
     const dateOpening = "2025-11-08 12:00:00:00.000Z"
-    const dateOpeningNew = Date.parse("2025-11-08 12:00:00:00.000Z")
+    // const dateOpeningNew = Date.parse("2025-11-08 12:00:00:00.000Z")
+    const dateOpeningNew = new Date("2025-11-08T12:00")
+    // console.log(dateOpeningNew);
     let localTime;
     
     useEffect(() => {
