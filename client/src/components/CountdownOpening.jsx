@@ -5,11 +5,11 @@ import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTim
 const CountdownOpening = () => {
     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
-    const [newTime, setNewTime] = useState('')
-    const dateOpening = "2025-11-08 12:00:00:00.000Z"
+    // const [newTime, setNewTime] = useState('')
+    const dateOpening = new Date("2025-11-08T12:00")
     // const dateOpeningNew = Date.parse("2025-11-08 12:00:00:00.000Z")
-    const dateOpeningNew = new Date("2025-11-08T12:00")
-    // console.log(dateOpeningNew);
+    // const dateOpeningNew = new Date("2025-11-08T12:00")
+    // console.log(dateOpening);
     let localTime;
     
     useEffect(() => {
@@ -33,7 +33,7 @@ const CountdownOpening = () => {
     setInterval(() => {
         if(offset){
             setTime(openingCountdown(offset, dateOpening))
-            setNewTime(getTimeOpening(dateOpeningNew, currentDate(offset)))
+            // setNewTime(getTimeOpening(dateOpeningNew, currentDate(offset)))
         }
     }, 1000)
     // console.log(dateOpening);
@@ -60,7 +60,7 @@ const CountdownOpening = () => {
                 </div>
             </div>
             }
-            <div className="serv_opening_string">{newTime}</div>
+            {/* <div className="serv_opening_string">{newTime}</div> */}
         </div>
     );
 }
