@@ -117,8 +117,14 @@ export const startTicking = () => setInterval(compose(logClear, finalHours, logi
 
 /// Opening Countdown:
 export function openingCountdown(diff, dateOpening) {
+  // console.log(diff);
+  // console.log(dateOpening);
     const realUTCTime = currentDate(diff)
-    const dateDiff = Date.parse(dateOpening) - realUTCTime
+    const dateDiff = Date.parse(dateOpening) - Date.parse(realUTCTime)
+    // console.log(realUTCTime);
+    // console.log(Date.parse(dateOpening));
+    // console.log(Date.parse(realUTCTime));
+    // console.log(dateDiff);
     const timeRemainObj = {
         days: Number(daysRemain(dateDiff)),
         hours: Number(hoursRemain(dateDiff)),
@@ -135,7 +141,6 @@ function daysRemain(ms) {
 }
 function hoursRemain(ms) {
     const hours = Math.floor((ms / 1000 / 60 / 60 )% 24)
-    
     return prependZero(hours).toString()
 }
 function minutesRemain(ms) {
