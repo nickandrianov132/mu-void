@@ -120,11 +120,12 @@ export function openingCountdown(diff, dateOpening) {
     const realUTCTime = currentDate(diff)
     const dateDiff = Date.parse(dateOpening) - realUTCTime
     const timeRemainObj = {
-        days: daysRemain(dateDiff),
-        hours: hoursRemain(dateDiff),
-        minutes: minutesRemain(dateDiff),
-        seconds: secondsRemain(dateDiff)
+        days: Number(daysRemain(dateDiff)),
+        hours: Number(hoursRemain(dateDiff)),
+        minutes: Number(minutesRemain(dateDiff)),
+        seconds: Number(secondsRemain(dateDiff))
     }
+    // console.log(timeRemainObj)
     return timeRemainObj
 }
 
