@@ -127,7 +127,9 @@ const Images = {
     book_open1: new URL('./book_open1.png', import.meta.url).href,  
     book_open2: new URL('./book_open2.png', import.meta.url).href,  
     home1: new URL('./home1.png', import.meta.url).href,  
- 
+    vertical_sep1: new URL('./vertical_sep1.png', import.meta.url).href,  
+    vertical_sep2: new URL('./vertical_sep2.png', import.meta.url).href,  
+    
 }
 
 export default Images;

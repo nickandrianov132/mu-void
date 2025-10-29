@@ -143,7 +143,7 @@ body {
 }
 .app_container .logo_svg path {
   fill: transparent;
-  stroke: #1c0a50;
+  stroke: rgba(29, 20, 31, 0.93);
   stroke-width: 1;
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
@@ -180,7 +180,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 3.5em;
-  background-color: #070326;
+  border-bottom: 0.05em solid #6c5959;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(112, 60, 44)), color-stop(28%, rgb(168, 40, 85)), color-stop(50%, rgb(189, 81, 81)), color-stop(76%, rgb(217, 130, 95)), to(rgb(245, 110, 121)));
+  background-image: linear-gradient(180deg, rgb(112, 60, 44) 0%, rgb(168, 40, 85) 28%, rgb(189, 81, 81) 50%, rgb(217, 130, 95) 76%, rgb(245, 110, 121) 100%);
   padding: 0.5em 0 0.5em 0;
 }
 
@@ -199,17 +201,8 @@ body {
           flex: 1 1 auto;
 }
 
-.nav_list_span::after {
-  content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1px;
-  height: 1.7em;
-  border-radius: 60%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #070326), color-stop(50%, white), color-stop(90%, #070326));
-  background-image: linear-gradient(#070326 10%, white 50%, #070326 90%);
-  opacity: 0.6;
+.line_separator {
+  height: 1.4em;
 }
 
 .nav_list_item_wraper {
@@ -267,28 +260,28 @@ body {
           box-shadow: 0.01em 0.01em 0.16em rgb(52, 190, 130), -0.01em -0.01em 0.16em rgb(52, 190, 130), 0.01em -0.01em 0.16em rgb(52, 190, 130), -0.01em 0.01em 0.16em rgb(52, 190, 130);
 }
 .nav_list_item_wraper:hover > .rankings_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .guide_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .register_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .about_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .download_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .home_logo {
-  -webkit-animation: animationNavGi 0.6s ease-out;
-          animation: animationNavGi 0.6s ease-out;
+  -webkit-animation: animationNavLogo 0.4s ease-out forwards;
+          animation: animationNavLogo 0.4s ease-out forwards;
 }
 .nav_list_item_wraper:hover > .giSwordEmblem {
   -webkit-animation: animationNavGi 0.6s ease-out;
@@ -347,10 +340,12 @@ body {
           align-items: center;
   max-width: 100%;
   padding: 1em 0 1em 0;
-  background-color: #070326;
+  border-top: 0.05em solid #a79494;
+  background-image: linear-gradient(177deg, rgb(89, 22, 37) 0%, rgb(102, 42, 52) 28%, rgb(163, 78, 72) 56%, rgb(156, 62, 92) 84%, rgb(148, 61, 71) 100%);
 }
 .footer_container .footer_content_p {
   color: whitesmoke;
+  text-shadow: 0.01em 0.01em 0.1em #070326, -0.01em -0.01em 0.1em #070326, 0.01em -0.01em 0.1em #070326, -0.01em 0.01em 0.1em #070326;
 }
 
 .router_container {
@@ -4611,10 +4606,10 @@ body {
           transform: translate(-50%, -110%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(17, 17, 61)), color-stop(32%, rgb(10, 10, 56)), color-stop(53%, rgb(8, 11, 61)), color-stop(77%, rgb(10, 10, 77)), to(rgb(29, 48, 102)));
   background-image: linear-gradient(180deg, rgb(17, 17, 61) 0%, rgb(10, 10, 56) 32%, rgb(8, 11, 61) 53%, rgb(10, 10, 77) 77%, rgb(29, 48, 102) 100%);
-  border: 0.15em solid rgb(21, 4, 74);
+  border: 0.11em solid rgb(58, 78, 114);
   border-radius: 0.5em;
-  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
-          box-shadow: 0.1em 0.1em 0.16em rgb(47, 21, 72), -0.1em -0.1em 0.16em rgb(47, 21, 72), 0.1em -0.1em 0.16em rgb(47, 21, 72), -0.1em 0.1em 0.16em rgb(47, 21, 72);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(35, 23, 65), -0.1em -0.1em 0.16em rgb(35, 23, 65), 0.1em -0.1em 0.16em rgb(35, 23, 65), -0.1em 0.1em 0.16em rgb(35, 23, 65);
+          box-shadow: 0.1em 0.1em 0.16em rgb(35, 23, 65), -0.1em -0.1em 0.16em rgb(35, 23, 65), 0.1em -0.1em 0.16em rgb(35, 23, 65), -0.1em 0.1em 0.16em rgb(35, 23, 65);
 }
 .countdown_container .countdown_header {
   display: -webkit-box;
@@ -4624,11 +4619,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  color: #100b32;
+  color: #fff;
   font-weight: 600;
   font-size: 1.1em;
-  text-shadow: 0.01em 0.01em 0.1em #4ecdff, -0.01em -0.01em 0.1em #4ecdff, 0.01em -0.01em 0.1em #4ecdff, -0.01em 0.01em 0.1em #4ecdff;
-  border-bottom: 0.05em solid rgba(158, 183, 194, 0.7725490196);
+  text-shadow: 0.01em 0.01em 0.1em #2a2528, -0.01em -0.01em 0.1em #2a2528, 0.01em -0.01em 0.1em #2a2528, -0.01em 0.01em 0.1em #2a2528;
+  border-bottom: 0.05em solid rgba(220, 211, 203, 0.8901960784);
 }
 .countdown_container .countdown_items_wrapper {
   display: -webkit-box;
@@ -4670,7 +4665,8 @@ body {
   width: 3em;
   font-size: 0.8em;
   font-weight: 500;
-  color: #9e9dac;
+  color: #a5b0ba;
+  text-shadow: 0.01em 0.01em 0.05em #2a2528, -0.01em -0.01em 0.05em #2a2528, 0.01em -0.01em 0.05em #2a2528, -0.01em 0.01em 0.05em #2a2528;
 }
 .countdown_container .countdown_items_wrapper .countdown_item_wrapper .countdown_content {
   display: -webkit-box;
@@ -4681,8 +4677,8 @@ body {
           justify-content: center;
   width: 3em;
   font-size: 1.1em;
-  color: #ccc5c1;
-  text-shadow: 0.01em 0.01em 0.05em rgba(255, 255, 255, 0.9333333333), -0.01em -0.01em 0.05em rgba(255, 255, 255, 0.9333333333), 0.01em -0.01em 0.05em rgba(255, 255, 255, 0.9333333333), -0.01em 0.01em 0.05em rgba(255, 255, 255, 0.9333333333);
+  color: #ffffeb;
+  text-shadow: 0.01em 0.01em 0.1em #2a2528, -0.01em -0.01em 0.1em #2a2528, 0.01em -0.01em 0.1em #2a2528, -0.01em 0.01em 0.1em #2a2528;
 }
 
 .banners_board {
@@ -5516,6 +5512,42 @@ section .loader_2 {
             transform: rotate(0deg);
   }
 }
+@-webkit-keyframes animationNavLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes animationNavLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 @-webkit-keyframes animationUserPanelItem {
   0% {
     -webkit-transform: translateX(0);
@@ -5565,7 +5597,7 @@ section .loader_2 {
   }
   80% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   86% {
     stroke-dashoffset: 0;
@@ -5573,7 +5605,7 @@ section .loader_2 {
   }
   88% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   90% {
     stroke-dashoffset: 0;
@@ -5581,7 +5613,7 @@ section .loader_2 {
   }
   92% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   94% {
     stroke-dashoffset: 0;
@@ -5589,14 +5621,14 @@ section .loader_2 {
   }
   96% {
     stroke-dashoffset: 0;
-    fill: #070040;
+    fill: #373440;
   }
   98% {
     stroke-dashoffset: 0;
     fill: transparent;
   }
   100% {
-    fill: #09052e;
+    fill: #373440;
     stroke-dashoffset: 0;
   }
 }
@@ -5609,7 +5641,7 @@ section .loader_2 {
   }
   80% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   86% {
     stroke-dashoffset: 0;
@@ -5617,7 +5649,7 @@ section .loader_2 {
   }
   88% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   90% {
     stroke-dashoffset: 0;
@@ -5625,7 +5657,7 @@ section .loader_2 {
   }
   92% {
     stroke-dashoffset: 0;
-    fill: #09052e;
+    fill: #373440;
   }
   94% {
     stroke-dashoffset: 0;
@@ -5633,14 +5665,14 @@ section .loader_2 {
   }
   96% {
     stroke-dashoffset: 0;
-    fill: #070040;
+    fill: #373440;
   }
   98% {
     stroke-dashoffset: 0;
     fill: transparent;
   }
   100% {
-    fill: #09052e;
+    fill: #373440;
     stroke-dashoffset: 0;
   }
 }

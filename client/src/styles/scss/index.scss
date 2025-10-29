@@ -4,6 +4,8 @@ $side-bg: #0135833d;
 $nav-bg: #070326;
 $footer-bg: #070326;
 $svg_logo_bg: #09052e;
+$svg_logo_bg1: #373440ff;
+$logo_stroke: rgba(29, 20, 31, 0.93);
 $nav-list-item-bg: #3fce97;
 $user-container-bg: #070326;
 $rank_bg: #d1bbbb;
@@ -202,7 +204,8 @@ body {
         top: 0;
         path{
             fill: transparent;
-            stroke: #1c0a50;
+            // stroke: #1c0a50;
+            stroke: $logo_stroke;
             stroke-width: 1;
             stroke-dasharray: 200;
             stroke-dashoffset: 200;
@@ -225,7 +228,9 @@ body {
     max-width: 100%;
     justify-content: center;
     height: $nav-ht;
-    background-color: $nav-bg;
+    border-bottom: 0.05em solid #6c5959ff;
+    // background: $nav-bg;
+    background-image: linear-gradient(180deg,rgba(112, 60, 44, 1) 0%, rgba(168, 40, 85, 1) 28%, rgba(189, 81, 81, 1) 50%, rgba(217, 130, 95, 1) 76%, rgba(245, 110, 121, 1) 100%);
     @include app_padding(0.5em 0 0.5em 0);
 }
 .nav_list{
@@ -234,14 +239,8 @@ body {
     justify-content: center;
     flex: 1 1 auto;
 }
-.nav_list_span::after{
-    content: "";
-    display: flex;
-    width: 1px;
-    height: 1.7em;
-    border-radius: 60%;
-    background-image: linear-gradient( #070326 10%, white 50%,  #070326 90% );
-    opacity: .6;
+.line_separator{
+    height: 1.4em;
 }
 .nav_list_item_wraper{
     cursor: pointer;
@@ -287,22 +286,22 @@ body {
 
     }
     &:hover > .rankings_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .guide_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .register_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .about_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .download_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .home_logo{
-        animation: animationNavGi 0.6s ease-out;
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .giSwordEmblem{
         animation: animationNavGi 0.6s ease-out;
@@ -346,9 +345,13 @@ body {
     max-width: 100%;
     @include app_padding(1em 0 1em 0);
     // height: 3em;
-    background-color: $footer-bg;
+    // background-color: $footer-bg;
+    border-top: 0.05em solid #a79494ff;
+    background-image: linear-gradient(177deg,rgba(89, 22, 37, 1) 0%, rgba(102, 42, 52, 1) 28%, rgba(163, 78, 72, 1) 56%, rgba(156, 62, 92, 1) 84%, rgba(148, 61, 71, 1) 100%);
+    // background-image: linear-gradient(157deg,rgba(74, 33, 26, 1) 0%, rgba(105, 45, 44, 1) 23%, rgba(117, 50, 49, 1) 37%, rgba(145, 60, 60, 1) 51%, rgba(163, 86, 71, 1) 60%, rgba(189, 105, 79, 1) 72%, rgba(179, 108, 80, 1) 79%, rgba(161, 48, 59, 1) 100%);
     .footer_content_p{
         color: whitesmoke;
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em,  $nav-list-item-color);
     }
 }
 .router_container{
@@ -3537,19 +3540,20 @@ body {
     left: 50%;
     transform: translate(-50%, -110%);
     background-image: linear-gradient(180deg,rgba(17, 17, 61, 1) 0%, rgba(10, 10, 56, 1) 32%, rgba(8, 11, 61, 1) 53%, rgba(10, 10, 77, 1) 77%, rgba(29, 48, 102, 1) 100%);
+    // background-image: linear-gradient(0deg,rgba(184, 108, 142, 1) 0%, rgba(242, 104, 104, 1) 35%, rgba(240, 113, 81, 1) 70%, rgba(222, 78, 87, 1) 100%);
     // background-color: $nav-bg;
-    border: 0.15em solid rgba(21, 4, 74, 1);
+    border: 0.11em solid rgba(58, 78, 114, 1);
     border-radius: 0.5em;
-    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgb(47, 21, 72));
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(35, 23, 65, 1));
     .countdown_header{
         display: flex;
         justify-content: center;
         width: 100%;
-        color: #100b32ff;
+        color: #fff;
         font-weight: 600;
         font-size: 1.1em;
-        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #4ecdffff);
-        border-bottom: 0.05em solid #9eb7c2c5;
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #2a2528ff);
+        border-bottom: 0.05em solid #dcd3cbe3;
     }
     .countdown_items_wrapper{
         display: flex;
@@ -3567,7 +3571,8 @@ body {
                 width: 3em;
                 font-size: 0.8em;
                 font-weight: 500;
-                color: #9e9dacff;
+                color: #a5b0ba;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #2a2528ff);
             }
             .countdown_content{
                 display: flex;
@@ -3576,8 +3581,8 @@ body {
                 font-size: 1.1em;
                 // color: #f48038ff;
                 // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #fe3c6cee);
-                color: #ccc5c1ff;
-                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #ffffffee);
+                color: #ffffebff;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #2a2528ff);
             }
         }
     }
@@ -4112,6 +4117,20 @@ section .loader_2{
         transform: rotate(0deg);
     }
 }
+@keyframes animationNavLogo{
+    0%{
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 @keyframes animationUserPanelItem{
     0%{
         transform: translateX(0);
@@ -4138,7 +4157,7 @@ section .loader_2{
     }
     80%{
         stroke-dashoffset: 0;
-        fill: $svg_logo_bg;
+        fill: $svg_logo_bg1;
     }
     86%{
         stroke-dashoffset: 0;
@@ -4146,7 +4165,7 @@ section .loader_2{
     }
     88%{
         stroke-dashoffset: 0;
-        fill:  $svg_logo_bg;
+        fill:  $svg_logo_bg1;
     }
     90%{
         stroke-dashoffset: 0;
@@ -4154,7 +4173,7 @@ section .loader_2{
     }
     92%{
         stroke-dashoffset: 0;
-        fill:  $svg_logo_bg;
+        fill:  $svg_logo_bg1;
     }
     94%{
         stroke-dashoffset: 0;
@@ -4162,14 +4181,14 @@ section .loader_2{
     }
     96%{
         stroke-dashoffset: 0;
-        fill: #070040;
+        fill: $svg_logo_bg1;
     }
     98%{
         stroke-dashoffset: 0;
         fill: transparent;
     }
     100% {
-        fill: $svg_logo_bg;
+        fill: $svg_logo_bg1;
         stroke-dashoffset: 0;
     }
 }

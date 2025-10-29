@@ -13,35 +13,40 @@ const NavBar = () => {
                     <img className='home_logo' src={Images.home1} />
                     <span>Home</span>
                 </NavLink>
-                <span className='nav_list_span'></span>
+                <img className='line_separator' src={Images.vertical_sep2}/>
+                {/* <span className='nav_list_span'></span> */}
 
                 <NavLink className="nav_list_item_wraper" to={ABOUT_ROUTE}>
                     {/* <GiSpellBook className='giSpellBook'/> */}
                     <img className='about_logo' src={Images.book_open2} />
                     <span>About</span>
                 </NavLink>
-                <span className='nav_list_span'></span>
+                {/* <span className='nav_list_span'></span> */}
+                <img className='line_separator' src={Images.vertical_sep2}/>
 
                 <NavLink className="nav_list_item_wraper" to={DOWNLOAD_ROUTE}>
                     {/* <GiCloudDownload className='giDownload' />*/}
                     <img className='download_logo' src={Images.download1} />
                     <span>Download</span>
                 </NavLink>
-                <span className='nav_list_span'></span>
+                <img className='line_separator' src={Images.vertical_sep2}/>
+                {/* <span className='nav_list_span'></span> */}
 
                 <NavLink className="nav_list_item_wraper" to={REGISTRATION_ROUTE}>
                     {/* <GiCharacter className='giCharacter'/> */}
                     <img className='register_logo' src={Images.register4} />
                     <span>Registration</span>
                 </NavLink>
-                <span className='nav_list_span'></span>
+                <img className='line_separator' src={Images.vertical_sep2}/>
+                {/* <span className='nav_list_span'></span> */}
 
                 <NavLink className="nav_list_item_wraper" to={GUIDE_ROUTE}>
                     {/* <GiSecretBook className='giSecretBook'/> */}
                     <img className='guide_logo' src={Images.book1} />
                     <span>Guide</span>
                 </NavLink>
-                <span className='nav_list_span'></span>
+                <img className='line_separator' src={Images.vertical_sep2}/>
+                {/* <span className='nav_list_span'></span> */}
 
                 <NavLink className="nav_list_item_wraper" to={RANKINGS_ROUTE}>
                     {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
