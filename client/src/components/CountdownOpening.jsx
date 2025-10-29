@@ -7,7 +7,7 @@ const CountdownOpening = () => {
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
     const [newTime, setNewTime] = useState('')
     const dateOpening = "2025-11-08 12:00:00:00.000Z"
-    // const dateOpening = Date.parse("2025-11-08 12:00:00:00.000Z")
+    const dateOpeningNew = Date.parse("2025-11-08 12:00:00:00.000Z")
     let localTime;
     
     useEffect(() => {
@@ -24,14 +24,14 @@ const CountdownOpening = () => {
     function timeDifference(servTime) {
         const sTime = Date.parse(servTime)
         const timeOffset = Date.parse(localTime) - sTime
-        console.log(timeOffset)
+        // console.log(timeOffset)
         return timeOffset
     }
 
     setInterval(() => {
         if(offset){
             setTime(openingCountdown(offset, dateOpening))
-            // setNewTime(getTimeOpening(Date.parse(dateOpening, currentDate(offset))))
+            setNewTime(getTimeOpening(dateOpeningNew, currentDate(offset)))
         }
     }, 1000)
     // console.log(dateOpening);
@@ -56,9 +56,9 @@ const CountdownOpening = () => {
                     <div className="countdown_content">{time.seconds}</div>
                     <div className="countdown_title">Sec</div>
                 </div>
-                {/* <div>{newTime}</div> */}
             </div>
             }
+            <div className="serv_opening_string">{newTime}</div>
         </div>
     );
 }

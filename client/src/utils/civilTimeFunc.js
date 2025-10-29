@@ -23,23 +23,25 @@
     export  function getTime(eventOffset, eventDelay, d){
             // const d = new Date()
             let bcStartIn;
-        const currTime = {
-            total: (((d.getUTCHours()*60*60) + ((d.getUTCMinutes())*60) + d.getUTCSeconds()) + eventDelay) % eventOffset 
-        }
-        bcStartIn = Math.abs(eventOffset - currTime.total)
+            const currTime = {
+              total: (((d.getUTCHours()*60*60) + ((d.getUTCMinutes())*60) + d.getUTCSeconds()) + eventDelay) % eventOffset 
+            }
+            bcStartIn = Math.abs(eventOffset - currTime.total)
+            
+            // console.log(d);
+            // console.log(d.getUTCHours());
+            // console.log(currTime.total);        
+            // console.log(bcStartIn);
+            // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
+            return `${normalHours(bcStartIn)}h ${normalMinutes(bcStartIn)}m ${normalSeconds(bcStartIn)}s`
+          }
 
-        // console.log(d);
-        // console.log(d.getUTCHours());
-        // console.log(currTime.total);        
-        // console.log(bcStartIn);
-        // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
-        return `${normalHours(bcStartIn)}h ${normalMinutes(bcStartIn)}m ${normalSeconds(bcStartIn)}s`
-    }
     export  function getTimeOpening(openDate, d){
             // const d = new Date()
+            // console.log(Date.parse(d));
             let ServStartIn;
         const currTime = {
-            total: (((d.getUTCHours()*60*60) + ((d.getUTCMinutes())*60) + d.getUTCSeconds()))
+            total: Date.parse(d)
         }
         ServStartIn = Math.abs(openDate - currTime.total)
 
@@ -48,7 +50,7 @@
         // console.log(currTime.total);        
         // console.log(bcStartIn);
         // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
-        return `${normalHours(ServStartIn)}h ${normalMinutes(ServStartIn)}m ${normalSeconds(ServStartIn)}s`
+        return `${Math.floor(ServStartIn / 1000 / 60 / 60 / 24)}d ${Math.floor((ServStartIn / 1000 / 60 / 60 ) % 24)}h ${Math.floor((ServStartIn / 1000 / 60  ) % 60)}m ${Math.floor((ServStartIn / 1000) % 60)}s`
     }
 
 

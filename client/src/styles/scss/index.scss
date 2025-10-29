@@ -3546,6 +3546,9 @@ body {
     border: 0.11em solid rgba(58, 78, 114, 1);
     border-radius: 0.5em;
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(35, 23, 65, 1));
+    .serv_opening_string{
+        color: #fff;
+    }
     .countdown_header{
         display: flex;
         justify-content: center;

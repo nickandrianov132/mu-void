@@ -4613,6 +4613,9 @@ body {
   -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(35, 23, 65), -0.1em -0.1em 0.16em rgb(35, 23, 65), 0.1em -0.1em 0.16em rgb(35, 23, 65), -0.1em 0.1em 0.16em rgb(35, 23, 65);
           box-shadow: 0.1em 0.1em 0.16em rgb(35, 23, 65), -0.1em -0.1em 0.16em rgb(35, 23, 65), 0.1em -0.1em 0.16em rgb(35, 23, 65), -0.1em 0.1em 0.16em rgb(35, 23, 65);
 }
+.countdown_container .serv_opening_string {
+  color: #fff;
+}
 .countdown_container .countdown_header {
   display: -webkit-box;
   display: -ms-flexbox;
