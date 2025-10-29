@@ -35,6 +35,21 @@
         // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
         return `${normalHours(bcStartIn)}h ${normalMinutes(bcStartIn)}m ${normalSeconds(bcStartIn)}s`
     }
+    export  function getTimeOpening(openDate, d){
+            // const d = new Date()
+            let ServStartIn;
+        const currTime = {
+            total: (((d.getUTCHours()*60*60) + ((d.getUTCMinutes())*60) + d.getUTCSeconds()))
+        }
+        ServStartIn = Math.abs(openDate - currTime.total)
+
+        // console.log(d);
+        // console.log(d.getUTCHours());
+        // console.log(currTime.total);        
+        // console.log(bcStartIn);
+        // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
+        return `${normalHours(ServStartIn)}h ${normalMinutes(ServStartIn)}m ${normalSeconds(ServStartIn)}s`
+    }
 
 
     export function utcDateTime() {

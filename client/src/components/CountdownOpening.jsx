@@ -1,34 +1,40 @@
 import { useEffect, useState } from "react";
 import { useFetchServerTimeQuery } from "../services/serverTimeApi";
-import { openingCountdown } from "../utils/civilTimeFunc";
+import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTimeFunc";
 
 const CountdownOpening = () => {
     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
+    const [newTime, setNewTime] = useState('')
     const dateOpening = "2025-11-08 12:00:00:00.000Z"
+    // const dateOpening = Date.parse("2025-11-08 12:00:00:00.000Z")
     let localTime;
     
     useEffect(() => {
         localTime = new Date()
     }, [isSuccess])
-    
+
     let offset;
     useEffect(() => {
-        offset = timeDifference(serverTime)
+        if(isSuccess){
+            offset = timeDifference(serverTime)
+        }
     }, [isSuccess])
     
     function timeDifference(servTime) {
         const sTime = Date.parse(servTime)
         const timeOffset = Date.parse(localTime) - sTime
+        console.log(timeOffset)
         return timeOffset
     }
 
     setInterval(() => {
         if(offset){
             setTime(openingCountdown(offset, dateOpening))
+            // setNewTime(getTimeOpening(Date.parse(dateOpening, currentDate(offset))))
         }
     }, 1000)
-
+    // console.log(dateOpening);
     return (
         <div className="countdown_container">
             <div className="countdown_header">Server Opening :</div>
@@ -50,6 +56,7 @@ const CountdownOpening = () => {
                     <div className="countdown_content">{time.seconds}</div>
                     <div className="countdown_title">Sec</div>
                 </div>
+                {/* <div>{newTime}</div> */}
             </div>
             }
         </div>
