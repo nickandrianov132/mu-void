@@ -68,7 +68,7 @@
 /// Server Clock Time:
 export const currentDate = (timeOffset) => {
   const localTime = new Date()
-  // console.log(timeOffset);
+  // console.log(localTime);
   const realUTCTime = new Date(Date.parse(localTime) - timeOffset)
   // console.log(realUTCTime)
   return realUTCTime
@@ -135,21 +135,14 @@ export const startTicking = () => setInterval(compose(logClear, finalHours, logi
 
 /// Opening Countdown:
 export function openingCountdown(diff, dateOpening) {
-  // console.log(diff);
-  // console.log(dateOpening);
-    const realUTCTime = currentDate(diff)
-    const dateDiff = Date.parse(dateOpening) - Date.parse(realUTCTime)
-    // console.log(realUTCTime);
-    // console.log(Date.parse(dateOpening));
-    // console.log(Date.parse(realUTCTime));
-    // console.log(dateDiff);
+    const localTime = Date.parse(new Date()) - diff
+    const dateDiff = dateOpening - localTime
     const timeRemainObj = {
         days: daysRemain(dateDiff),
         hours: hoursRemain(dateDiff),
         minutes: minutesRemain(dateDiff),
         seconds: secondsRemain(dateDiff)
     }
-    // console.log(timeRemainObj)
     return timeRemainObj
 }
 

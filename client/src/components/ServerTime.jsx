@@ -7,7 +7,7 @@ const ServerTime = () => {
     const [time, setTime] = useState('')
     let localTime;
     let offset;
-    // console.log(data);
+    
     useEffect(() => {
         localTime = new Date()
     }, [isSuccess])
@@ -17,7 +17,6 @@ const ServerTime = () => {
 
     function timeDifference(servTime) {
         const serverTime = Date.parse(servTime)
-        // console.log(new Date(serverTime));
         const timeOffset = Date.parse(localTime) - serverTime
         return timeOffset
     }

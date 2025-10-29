@@ -5,11 +5,7 @@ import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTim
 const CountdownOpening = () => {
     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
-    // const [newTime, setNewTime] = useState('')
-    const dateOpening = new Date("2025-11-08T12:00")
-    // const dateOpeningNew = Date.parse("2025-11-08 12:00:00:00.000Z")
-    // const dateOpeningNew = new Date("2025-11-08T12:00")
-    // console.log(dateOpening);
+    const dateOpeningUTC = Date.UTC(2025, 10, 8, 12, 0, 0);
     let localTime;
     
     useEffect(() => {
@@ -18,25 +14,20 @@ const CountdownOpening = () => {
 
     let offset;
     useEffect(() => {
-        if(isSuccess){
-            offset = timeDifference(serverTime)
-        }
+        offset = timeDifference(serverTime)
     }, [isSuccess])
     
     function timeDifference(servTime) {
         const sTime = Date.parse(servTime)
         const timeOffset = Date.parse(localTime) - sTime
-        // console.log(timeOffset)
         return timeOffset
     }
 
     setInterval(() => {
         if(offset){
-            setTime(openingCountdown(offset, dateOpening))
-            // setNewTime(getTimeOpening(dateOpeningNew, currentDate(offset)))
+            setTime(openingCountdown(offset, dateOpeningUTC))
         }
     }, 1000)
-    // console.log(dateOpening);
     return (
         <div className="countdown_container">
             <div className="countdown_header">Server Opening :</div>
@@ -60,7 +51,6 @@ const CountdownOpening = () => {
                 </div>
             </div>
             }
-            {/* <div className="serv_opening_string">{newTime}</div> */}
         </div>
     );
 }
