@@ -50,7 +50,8 @@
         // console.log(currTime.total);        
         // console.log(bcStartIn);
         // logTime(`${normalHours(bcStartIn)}:${normalMinutes(bcStartIn)}:${normalSeconds(bcStartIn)}`)
-        return `${Math.floor(ServStartIn / 1000 / 60 / 60 / 24)}d ${Math.floor((ServStartIn / 1000 / 60 / 60 ) % 24)}h ${Math.floor((ServStartIn / 1000 / 60  ) % 60)}m ${Math.floor((ServStartIn / 1000) % 60)}s`
+        // return `${Math.floor(ServStartIn / 1000 / 60 / 60 / 24)}d ${Math.floor((ServStartIn / 1000 / 60 / 60 ) % 24)}h ${Math.floor((ServStartIn / 1000 / 60  ) % 60)}m ${Math.floor((ServStartIn / 1000) % 60)}s`
+        return `${ServStartIn}`
     }
 
 
