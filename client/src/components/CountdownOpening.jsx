@@ -4,20 +4,22 @@ import { openingCountdown } from "../utils/civilTimeFunc";
 
 const CountdownOpening = () => {
     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
-    const [time, setTime] = useState({days: "00", hours: "00", minutes: "00", seconds: "00"})
+    const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
     const dateOpening = "2025-11-08 12:00:00:00.000Z"
     let localTime;
-    let offset;
     
     useEffect(() => {
         localTime = new Date()
     }, [isSuccess])
+    
+    let offset;
     useEffect(() => {
         offset = timeDifference(serverTime)
     }, [isSuccess])
     
     function timeDifference(servTime) {
-        const timeOffset = Date.parse(localTime) - Date.parse(servTime)
+        const sTime = Date.parse(servTime)
+        const timeOffset = Date.parse(localTime) - sTime
         return timeOffset
     }
 

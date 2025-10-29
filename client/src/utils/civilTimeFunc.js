@@ -131,13 +131,7 @@ export function openingCountdown(diff, dateOpening) {
         minutes: minutesRemain(dateDiff),
         seconds: secondsRemain(dateDiff)
     }
-    // const timeRemainObj = {
-    //     days: Number(daysRemain(dateDiff)),
-    //     hours: Number(hoursRemain(dateDiff)),
-    //     minutes: Number(minutesRemain(dateDiff)),
-    //     seconds: Number(secondsRemain(dateDiff))
-    // }
-    console.log(timeRemainObj)
+    // console.log(timeRemainObj)
     return timeRemainObj
 }
 
@@ -167,7 +161,7 @@ function hoursRemain(ms) {
     return hours
 }
 function minutesRemain(ms) {
-    const minutes = Math.floor((ms / 1000 / 60)% 60)
+    const minutes = Math.floor((ms / 1000 / 60) % 60)
     return minutes
 }
 function secondsRemain(ms) {
