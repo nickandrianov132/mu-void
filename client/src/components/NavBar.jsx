@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router';
-import { ABOUT_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, HOME_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE } from '../utils/constants';
+import { ABOUT_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, HOME_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, RULES_ROUTE } from '../utils/constants';
 import {GiHouse, GiSecretBook, GiSwordsEmblem, GiCharacter, GiSpellBook, GiCloudDownload} from 'react-icons/gi';
 import Images from '../assets/Images';
 
@@ -52,6 +52,11 @@ const NavBar = () => {
                     {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
                     <img className='rankings_logo' src={Images.cross_sword_shield2} />
                     <span>Rankings</span>
+                </NavLink>
+                <NavLink className="nav_list_item_wraper" to={RULES_ROUTE}>
+                    {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
+                    <img className='rankings_logo' src={Images.rules1} />
+                    <span>Rules</span>
                 </NavLink>
             </div>
         </div>

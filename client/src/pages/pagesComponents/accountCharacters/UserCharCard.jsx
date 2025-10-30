@@ -7,7 +7,6 @@ import SpinnerSmall from '../../../components/SpinnerSmall'
 const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, cStr, cAgi, cVit, cEne, cCmd, cGrandReset, mapNumber, cZen}) => {
     const [fetchAccountCharReset, { isLoading, isSuccess, isError}] = useFetchAccountCharResetMutation()
 
-    
     function setImg(){
         let img = ''
         if(cClass === 16 || cClass === 17 || cClass === 18 ) {

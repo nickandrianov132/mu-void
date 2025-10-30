@@ -8,6 +8,7 @@ const initialState = {
     name: '',
     regQuestion: '',
     regAnswer: '',
+    regRules: false,
     date:null
 }
 

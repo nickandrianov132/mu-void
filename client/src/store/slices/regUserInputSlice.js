@@ -34,5 +34,5 @@ const regUserInputSlice = createSlice({
     }
 })
 
-export const { setInputLogin, setInputPassword, setInputEmail, setInputName, setInputRegQuestion, setInputRegAnwer } = regUserInputSlice.actions
+export const { setInputLogin, setInputPassword, setInputEmail, setInputName, setInputRegQuestion, setInputRegAnwer} = regUserInputSlice.actions
 export default regUserInputSlice.reducer

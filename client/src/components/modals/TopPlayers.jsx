@@ -30,7 +30,7 @@ const TopPlayers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                {isSuccess & top3Players?.length > 0 ?
+                {isSuccess & !top3Players?.length > 0 ?
                     top3Players?.map((char, i) => 
                     <tr key={char.name}>
                         <td>{i === 0 ?
