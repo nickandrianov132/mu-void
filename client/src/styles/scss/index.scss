@@ -7,9 +7,9 @@ $svg_logo_bg: #09052e;
 $svg_logo_bg1: #373440ff;
 // $containers_bg: linear-gradient(0deg,rgba(22, 36, 64, 1) 0%, rgba(20, 37, 64, 1) 26%, rgba(29, 38, 61, 1) 50%, rgba(31, 40, 61, 1) 74%, rgba(34, 34, 64, 1) 100%);
 $containers_bg: linear-gradient(0deg,rgba(35, 37, 48, 1) 0%, rgba(32, 34, 41, 1) 18%, rgba(31, 33, 41, 1) 44%, rgba(38, 40, 48, 1) 63%, rgba(43, 43, 56, 1) 80%, rgba(46, 46, 54, 1) 100%);
-// $containers_bg1: linear-gradient(180deg,rgba(224, 99, 99, 1) 0%, rgba(173, 85, 85, 1) 38%, rgba(189, 66, 72, 1) 65%, rgba(145, 45, 73, 1) 100%);
+$containers_bg3: linear-gradient(180deg,rgba(224, 99, 99, 1) 0%, rgba(173, 85, 85, 1) 38%, rgba(189, 66, 72, 1) 65%, rgba(145, 45, 73, 1) 100%);
 $containers_bg1: linear-gradient(0deg,rgba(46, 32, 74, 1) 0%, rgba(55, 28, 61, 1) 30%, rgba(49, 20, 64, 1) 59%, rgba(35, 23, 51, 1) 80%, rgba(71, 34, 87, 1) 100%);
-// $containers_border_col: rgba(142, 64, 78, 1);
+$containers_border_col3: rgba(142, 64, 78, 1);
 $containers_border_col: rgba(63, 60, 72, 1);
 $containers_box_shadow_col: rgba(28, 17, 22, 1);
 $logo_stroke: rgba(29, 20, 31, 0.93);
@@ -731,19 +731,19 @@ body {
     border-radius: 0.4em;
     @include app_margin(0.4em 0 0 0);
     background: linear-gradient(0deg,rgba(189, 113, 113, 1) 0%, rgba(181, 154, 154, 1) 32%, rgba(209, 182, 178, 1) 70%, rgba(240, 195, 185, 1) 100%);
-    color: #4e525eff;
     // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #211f29ff);
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, #a3a3);
     .rules_header_wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 30%;
         height: fit-content;
         @include app_padding(0.2em 0 0 0);
         .rules_header{
-            font-size: 1.4em;
-            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #2c2929ff);
+            color: #3b3a3fff;
+            font-size: 1.8em;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #242222ff);
         }
     }
     .rules_body_wrapper{
@@ -1888,6 +1888,62 @@ body {
         flex-direction: column;
         align-items: center;
         @include app_margin(1.5em 1em);
+        .rules_wrapper{
+            display: flex;
+            width: 95%;
+            .custom_rules_checkbox{
+                margin-right: 1em;
+                input{
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                }
+                input:checked ~ .checkmark_rules::after{
+                    display: block;
+                }
+                .checkmark_rules{
+                    position: relative;
+                    display: inline-block;
+                    left: 0;
+                    height: 1em;
+                    width: 1em;
+                    background-color: #222225ff;
+                    border: 0.15em solid #42d569ff;
+                    border-radius: 0.3em;
+                }
+                .checkmark_rules::after{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 0.4em;
+                    top: -0.4em;
+                    width: 0.4em;
+                    height: 1em;
+                    border: solid #00dc88;
+                    border-width: 0 0.2em 0.2em 0;
+                    transform: rotate(45deg);
+                }
+            }
+            // .input_rules{
+            //     width: 1.2em;
+            // }
+            .rules_label{
+                font-size: 0.9em;
+                color: whitesmoke;
+                @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.15em, rgba(15, 22, 42, 1));
+                .rules_a{
+                    color: #12a1d1ff;
+                    &:hover{
+                        color: #4ec6edff;
+                    }
+                    &:active{
+                        color: #03ffa7ff;
+                        @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.1em, #03c0ffff);
+                    }
+                }
+            }
+        }
         .regain_question_container{
             display: flex;
             flex-direction: column;
@@ -2628,7 +2684,7 @@ body {
             flex-wrap: wrap;
             justify-content: flex-start;
             width: 100%;
-            @include app_padding(0.2em 0.5em 0.2em 1.2em);
+            @include app_margin(0 0.2em 0.5em 0.2em);
             .sealed_box_img_item{
                 width: 10em;
                 height: fit-content;

@@ -107,20 +107,6 @@ const Rules = () => {
                     </p>
                 </div>
                 <div className="rules_body_item_wrapper">
-                    <h4>1.14 Global chatting</h4>
-                    <p className="rules_item_p">Long communication (more than 10 messages from the participant of the dialogue) in the global chat, in a language other than the main server (Russian, Ukrainian, English). For long communication in any other language, use.</p>
-                    <p>
-                        <em className="rules_item_punishment">Punishment: chat blocking from 1 to 24 hours.</em>
-                    </p>
-                </div>
-                <div className="rules_body_item_wrapper">
-                    <h4>1.15 Voting on ratings</h4>
-                    <p className="rules_item_p">It is forbidden to cheat votes using third-party applications, regardless of the number of your accounts.</p>
-                    <p>
-                        <em className="rules_item_punishment">Punishment: from the confiscation of gaming property to complete blocking of the account.</em>
-                    </p>
-                </div>
-                <div className="rules_body_item_wrapper">
                     <h4>1.15 Voting on ratings</h4>
                     <p className="rules_item_p">It is forbidden to cheat votes using third-party applications, regardless of the number of your accounts.</p>
                     <p>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import RegForm from "./pagesComponents/RegistrationComp/RegForm";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useRegistrationMutation } from "../services/registrationApi";
 import { REGISTRATION_SUCCESS } from "../utils/constants";
 import { setInputEmail, setInputLogin, setInputName, setInputPassword, setInputRegAnwer, setInputRegQuestion} from "../store/slices/regUserInputSlice";
@@ -16,15 +16,14 @@ const navigate = useNavigate()
     const {inputLogin, inputPassword, inputEmail, inputName, inputRegQuestion, inputRegAnswer} = useSelector(state => state.regInputsData)
     const [registration,{ error, isError, isSuccess}] = useRegistrationMutation()
     const [isRules, setIsRules] = useState(false)
-    const dispatch = useDispatch()
     // console.log(`inputLogin: ${inputLogin}; inputEmail: ${inputEmail}; inputRules: ${inputRules}`);
-    console.log(isRules);
+    // console.log(isRules);
     const regUserHandler = async (e) => {
         e.preventDefault()
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString()
             let user = {...userData, date: dateStamp}
-            console.log(user);
+            // console.log(user);
             await registration({...user})
             
         }else{
@@ -110,22 +109,36 @@ const navigate = useNavigate()
                     userAction={setRegAnswer}
                     inputAction={setInputRegAnwer} 
                 />
-                <input 
-                    type="checkbox"
-                    onChange ={() => {
-                        setIsRules(state => !state)
-                        // setInputRules(state => !state)
-                    }}  
-                />
+                <div className="rules_wrapper">
+                    <label className="custom_rules_checkbox">
+                        <input 
+                            className="input_rules"
+                            type="checkbox"
+                            onChange ={() => {
+                                setIsRules(state => !state)
+                                // setInputRules(state => !state)
+                            }}  
+                        />
+                        <span className="checkmark_rules"></span>
+                    </label>
+                    <label className="rules_label">I have read and agree to the server <a href="https://www.mu-void.com/rules" target="_blank" className="rules_a">rules</a></label>
+                </div>
                 <div className="reg_btn_div">
                     <div className="reg_error_div">
                     {isError && <p>{error.data.message}</p>}
                     </div>
-                    <button 
-                        disabled={checkRegBtn()}
-                        className={checkRegBtn() ? "reg_btn" : "reg_btn_disable"}
-                        onClick={e => regUserHandler(e)}
-                    >Registration</button>
+                    {checkRegBtn() ?
+                        <button 
+                            className={checkRegBtn() ? "reg_btn" : "reg_btn_disable"}
+                            onClick={e => regUserHandler(e)}
+                        >Registration</button>
+                        :
+                        <button 
+                            disabled={true}
+                            className={checkRegBtn() ? "reg_btn" : "reg_btn_disable"}
+                            onClick={e => regUserHandler(e)}
+                        >Registration</button>
+                    }
                 </div>
             </RegForm>
         </div>

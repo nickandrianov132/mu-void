@@ -831,7 +831,6 @@ body {
   margin: 0.4em 0 0 0;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(189, 113, 113)), color-stop(32%, rgb(181, 154, 154)), color-stop(70%, rgb(209, 182, 178)), to(rgb(240, 195, 185)));
   background: linear-gradient(0deg, rgb(189, 113, 113) 0%, rgb(181, 154, 154) 32%, rgb(209, 182, 178) 70%, rgb(240, 195, 185) 100%);
-  color: #4e525e;
   -webkit-box-shadow: 0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), 0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2);
           box-shadow: 0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), 0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2);
 }
@@ -845,15 +844,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 30%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 0.2em 0 0 0;
 }
 .rules_container .rules_header_wrapper .rules_header {
-  font-size: 1.4em;
-  text-shadow: 0.01em 0.01em 0.06em #2c2929, -0.01em -0.01em 0.06em #2c2929, 0.01em -0.01em 0.06em #2c2929, -0.01em 0.01em 0.06em #2c2929;
+  color: #3b3a3f;
+  font-size: 1.8em;
+  text-shadow: 0.01em 0.01em 0.05em #242222, -0.01em -0.01em 0.05em #242222, 0.01em -0.01em 0.05em #242222, -0.01em 0.01em 0.05em #242222;
 }
 .rules_container .rules_body_wrapper {
   display: -webkit-box;
@@ -2404,6 +2404,62 @@ body {
           align-items: center;
   margin: 1.5em 1em;
 }
+.registration_container .reg_form .rules_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+}
+.registration_container .reg_form .rules_wrapper .custom_rules_checkbox {
+  margin-right: 1em;
+}
+.registration_container .reg_form .rules_wrapper .custom_rules_checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.registration_container .reg_form .rules_wrapper .custom_rules_checkbox input:checked ~ .checkmark_rules::after {
+  display: block;
+}
+.registration_container .reg_form .rules_wrapper .custom_rules_checkbox .checkmark_rules {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #222225;
+  border: 0.15em solid #42d569;
+  border-radius: 0.3em;
+}
+.registration_container .reg_form .rules_wrapper .custom_rules_checkbox .checkmark_rules::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.4em;
+  top: -0.4em;
+  width: 0.4em;
+  height: 1em;
+  border: solid #00dc88;
+  border-width: 0 0.2em 0.2em 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration_container .reg_form .rules_wrapper .rules_label {
+  font-size: 0.9em;
+  color: whitesmoke;
+  text-shadow: 0.015em 0.015em 0.15em rgb(15, 22, 42), -0.015em -0.015em 0.15em rgb(15, 22, 42), 0.015em -0.015em 0.15em rgb(15, 22, 42), -0.015em 0.015em 0.15em rgb(15, 22, 42);
+}
+.registration_container .reg_form .rules_wrapper .rules_label .rules_a {
+  color: #12a1d1;
+}
+.registration_container .reg_form .rules_wrapper .rules_label .rules_a:hover {
+  color: #4ec6ed;
+}
+.registration_container .reg_form .rules_wrapper .rules_label .rules_a:active {
+  color: #03ffa7;
+  text-shadow: 0.015em 0.015em 0.1em #03c0ff, -0.015em -0.015em 0.1em #03c0ff, 0.015em -0.015em 0.1em #03c0ff, -0.015em 0.015em 0.1em #03c0ff;
+}
 .registration_container .reg_form .regain_question_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3389,7 +3445,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  padding: 0.2em 0.5em 0.2em 1.2em;
+  margin: 0 0.2em 0.5em 0.2em;
 }
 .dungeon_event_info_container .sealed_box_guide_container .sealed_box_img_wrapper .sealed_box_img_item {
   width: 10em;
