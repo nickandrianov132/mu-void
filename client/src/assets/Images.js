@@ -132,6 +132,7 @@ const Images = {
     vertical_sep2: new URL('./vertical_sep2.png', import.meta.url).href,   
     crown3: new URL('./crown3.png', import.meta.url).href,  
     rules1: new URL('./rules1.png', import.meta.url).href,  
+    vote_bg1: new URL('./vote_bg1.jpg', import.meta.url).href,  
     
 }
 

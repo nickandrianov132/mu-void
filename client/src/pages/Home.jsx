@@ -22,6 +22,20 @@ const Home = () => {
                 </div>
             </HomeContent> */}
             <HomeContent
+                title="⭐ Vote for us and earn Wcoins💰"
+                date="04.11.2025"
+                sideImage={Images.vote_bg1}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>Vote for WCoins now available in account panel!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'> - In account pannel were added few links of MMO Top100 rankings with WCoins reward.<br/>- Earn WCoins and buy useful goods in X-Shop.<b><br/> Thanks to everyone who helps promote our server. </b></p>
+                    </div>
+                </div>
+            </HomeContent>
+            <HomeContent
                 title="📢Grand Opening November 08 at 12:00 Server Time🔥"
                 date="16.10.2025"
                 sideImage={Images.img_opening_news}

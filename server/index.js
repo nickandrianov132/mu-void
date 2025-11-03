@@ -18,9 +18,10 @@ app.use('/api', router)
 app.use(errorHandlerMiddleware)
 
 // mmotopVoteController.mmotopFetch()
-// setInterval( () => {
-//     mmotopVoteController.mmotopFetch()
-// }, 1200000)
+
+setInterval( () => {
+    mmotopVoteController.mmotopFetch()
+}, 1200000)
 const start = async () => {
     try {
         app.listen(PORT, () => {

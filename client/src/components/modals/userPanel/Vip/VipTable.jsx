@@ -73,14 +73,14 @@ const VipTable = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td>Exp: +10%</td>
-                    <td>Exp: +20%</td>
-                    <td>Exp: +35%</td>
+                    <td>Exp: +5x</td>
+                    <td>Exp: +10x</td>
+                    <td>Exp: +15x</td>
                 </tr>
                 <tr>
-                    <td>Drop: +10%</td>
-                    <td>Drop: +20%</td>
-                    <td>Drop: +35%</td>
+                    <td>Drop: +15%</td>
+                    <td>Drop: +25%</td>
+                    <td>Drop: +40%</td>
                 </tr>
                 <tr>
                     <td>
