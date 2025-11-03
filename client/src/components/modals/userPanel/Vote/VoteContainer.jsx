@@ -22,7 +22,6 @@ const VoteContainer = () => {
             <div className="vote_header_wrapper">
                 <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em"> WCoins</em>!</h4>
             </div>
-            <div className="vote_announce">No rewards before server opens, voting on your good will.</div>
             {isSuccess &&
             <>
             <VoteItem
