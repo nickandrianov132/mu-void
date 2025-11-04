@@ -68,8 +68,8 @@ async mmotopFetch() {
 //             return next(ApiError.internal("Something went wrong..."))
 //         }
 //     }))
-    console.log(mmotopData);
-    console.log(mmotopData.length);
+    // console.log(mmotopData);
+    // console.log(mmotopData.length);
     await mmotopAddCoin(mmotopData)
     // mmotopData.forEach( async (e) => {
     //         if(e.voteCount == 1) {

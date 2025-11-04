@@ -1558,9 +1558,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 28em;
-  background: #070326;
-  border: 1px solid rgb(104, 94, 131);
   border-radius: 0.4em;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.1em solid rgb(63, 60, 72);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
   margin: 1.5em;
   padding: 1em;
 }

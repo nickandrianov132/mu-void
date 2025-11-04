@@ -1280,9 +1280,12 @@ body {
     // max-height: fit-content;
     justify-content: space-between;
     width: 28em;
-    background: $nav-bg;
-    border: 1px solid rgb(104, 94, 131);
+    // background: $nav-bg;
+    // border: 1px solid rgb(104, 94, 131);
     border-radius: 0.4em;
+    background: $containers_bg;
+    border: 0.1em solid $containers_border_col;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, $containers_box_shadow_col);
     @include app_margin(1.5em);
     @include app_padding(1em);
     .char_card_table_div{

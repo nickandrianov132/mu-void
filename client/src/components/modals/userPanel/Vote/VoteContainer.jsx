@@ -63,6 +63,7 @@ const VoteContainer = () => {
                 title="Vote on MMOANONS"
                 link={`https://www.mmoanons.com/mu-online/rating/mu-voidcom`}
                 img={Images.mmoanons}
+                coins="10 WCoins!"
                 coinsDesc="every 24 hours"
             />
             <VoteItem
@@ -72,14 +73,14 @@ const VoteContainer = () => {
                 coinsDesc="every 24 hours"
             />
             <VoteItem
-                title="Vote on GTop100"
-                link={`https://gtop100.com/mu-online-private-servers/server-105282?vote=1`}
+                title="Vote on GamesTop100"
+                link={`https://gtop100.com/mu-online-private-servers/server-105282?vote=1&pingUsername=${userInfo.accName}`}
                 img={Images.votegtop100}
                 coinsDesc="every 24 hours"
             />
             <div className="vote_tip_container">
-                <em className="vote_tip_1">* Due to <b>MMOTOP</b> does not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
-                <em className="vote_tip_2">* On <b>MMOTOP</b> you should indicate your account <b>Login</b> to get WCoins.</em>
+                <em className="vote_tip_1">* Due to <b>MMOTOP</b> and <b>MMOANONS</b> do not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
+                <em className="vote_tip_2">* On <b>MMOTOP</b> and <b>MMOANONS</b> - you should indicate your account <b>Login</b> to get WCoins.</em>
             </div>
             </>
             
