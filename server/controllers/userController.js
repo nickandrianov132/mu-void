@@ -119,7 +119,7 @@ class UserController {
             const dateNowInMS = Date.now()
             const voteDateInMS = Date.parse(voteDate.recordset[0].voteDate)
             const dateDifference = dateNowInMS - voteDateInMS
-            if(dateDifference > 43200000) {
+            if(dateDifference > 21600000) {
                 await updateVoteUser(p_resp, "TOPG", d, ip)
                 const vote = await request
                 .input('AccountID', sql.VarChar(10), p_resp)
