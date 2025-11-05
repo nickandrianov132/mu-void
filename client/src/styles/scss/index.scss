@@ -715,7 +715,7 @@ body {
         background-position: center;
         z-index: -1;
 
-        mask-image: url('../assets/ink_video-ezgif.com-loop-count.gif');
+        mask-image: url('../assets/ink_video-ezgif.com-loop-count-light.gif');
         mask-size: cover;
         mask-position: center;
     }
@@ -1015,36 +1015,60 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 width: fit-content;
                 height: fit-content;
                 position: relative;
                 box-sizing: border-box;
-                @include app_margin(0.2em 0.4em);
+                @include app_margin(0.3em 0.4em);
+
                 width: 2em;
+                height: 2em;
                 .discord_user_img{
-                    width: 2em;
-                    border: 0.2em solid rgb(99, 90, 202);
+                    width: 100%;
+                    height: 100%;
+                    // border: 0.2em solid rgb(99, 90, 202);
                     border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,  0%);
+                    z-index: 1;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 112%;
+                    height: 112%;
+                    box-sizing: border-box;
+                    transform: translate(-50%,  -50%);
+                    border-radius: 50%;
+                    background: rgb(99, 90, 202);
+                    z-index: 0;
                 }
                 .online{
                     position: absolute;
-                    top: 1.5em;
-                    right: 70%;
+                    top: 1.3em;
+                    right: 65%;
                     background-color: #30ef46;
                     border: 0.15em solid rgb(99, 90, 202);
                     border-radius: 50%;
                     width: 0.6em;
                     height: 0.6em;
+                    z-index: 2;
                 }
                 .idle{
                     position: absolute;
-                    top: 1.5em;
-                    right: 70%;
+                    top: 1.3em;
+                    right: 65%;
                     background-color: #f9cb16;
                     border-radius: 50%;
                     border: 0.15em solid rgb(99, 90, 202);
                     width: 0.6em;
                     height: 0.6em;
+                    z-index: 2;
                 }
             }
             

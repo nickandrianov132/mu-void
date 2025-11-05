@@ -53,6 +53,7 @@ const NavBar = () => {
                     <img className='rankings_logo' src={Images.cross_sword_shield2} />
                     <span>Rankings</span>
                 </NavLink>
+                <img className='line_separator' src={Images.vertical_sep2}/>
                 <NavLink className="nav_list_item_wraper" to={RULES_ROUTE}>
                     {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
                     <img className='rankings_logo' src={Images.rules1} />

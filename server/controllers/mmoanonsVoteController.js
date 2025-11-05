@@ -26,7 +26,8 @@ async function mmoanonsAddCoin(arr){
 
 class mmoanonsVoteController {
 async mmoanonsFetch() {
-    let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01k8c4hsjxc9s0d5pc5sdjakjp.json')
+    // let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01k8c4hsjxc9s0d5pc5sdjakjp.json')
+    let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01k99m098y53amgmewxn38rbma.json')
     .then(res => res.json())
     .then(resJSON => {
         for(let objKey in resJSON) {
