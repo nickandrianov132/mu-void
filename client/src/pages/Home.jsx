@@ -31,7 +31,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>Vote for WCoins now available in account panel!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><br/> - Registration is available now. Login and Vote!<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a> <br/> - In account pannel were added few links of MMO Top100 rankings with WCoins reward.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> <p><b>Thanks to everyone who helps promote our server.</b></p></p>
+                        <p className='description_item_p'><br/> - Registration is available now. Login and Vote!<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a> <br/> - In account pannel were added few links of MMO Top100 rankings with WCoins reward.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> <b>Thanks to everyone who helps promote our server.</b></p>
                     </div>
                 </div>
             </HomeContent>

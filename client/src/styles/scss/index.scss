@@ -188,6 +188,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 #root{
     display: flex;
@@ -4422,5 +4423,16 @@ section .loader_2{
     }
     100% {
         background: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
+    }
+}
+
+
+.liveInternetCounter{
+    // display: block;
+    position: absolute;
+    top: 0;
+    img{
+        height: 1em;
+        width: 4em;
     }
 }
