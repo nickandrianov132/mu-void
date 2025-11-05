@@ -188,15 +188,15 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 #root{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     min-width: 380px;
     max-width: 2400px;
+    // position: relative;
 }
 .app_container{
     background-image: url('../assets/bg_img5.jpg');
@@ -4428,11 +4428,13 @@ section .loader_2{
 
 
 .liveInternetCounter{
-    // display: block;
-    position: absolute;
-    top: 0;
+    display: flex;
+    justify-self: flex-start;
+    width: 100vw;
+    height: 0;
     img{
         height: 1em;
         width: 4em;
+        transform: translate(5%, -120%);
     }
 }
