@@ -30,9 +30,9 @@ const ResetSystem = () => {
                 <div className="reset_stats_div">
                     <span className="reset_stats_span">🔸Reset stats:</span>
                     <div className="reset_stats_description_div">
-                            <span>➤ Dark Wizard <mark>♦</mark> Dark Knight <mark>♦</mark> Fairy Elf <mark>♦</mark> Summoner <em> - 400 free points</em> ✨</span>
-                            <span>➤ Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 500 free points</em> ✨</span>
-                            <span>➤ Dark Lord <mark>♦</mark> Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 400 free points <em>+ 100 command</em></em> ✨</span>
+                            <span>➤ <mark>♦</mark> Dark Wizard <mark>♦</mark> Dark Knight <mark>♦</mark> Fairy Elf <mark>♦</mark> Summoner <em> - 400 free points</em> ✨</span>
+                            <span>➤ <mark>♦</mark> Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 500 free points</em> ✨</span>
+                            <span>➤ <mark>♦</mark>  Dark Lord <em> - 400 free points <em>+ 100 command</em></em> ✨</span>
                     </div>
                 </div>               
             </div>

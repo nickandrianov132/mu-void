@@ -142,7 +142,7 @@ $aside-wd: 110px;
 %rankingsBtn{
     width: 8em;
     height: 3.6em;
-    border: 1px solid transparent;
+    border: 0.1em solid transparent;
     border-radius: 0.5em;
     color: #eeee;
     cursor: pointer;
@@ -151,13 +151,15 @@ $aside-wd: 110px;
     transition: .1s linear;
 }
 %inputBasic{
-    font-size: 0.8em;
+    font-size: 0.75em;
+    color: #070040;
     width: 80%;
     padding: 0.3em;
     @include app_margin(4px 0 5px 0);
     outline: none;
-    border: 1px solid transparent;
+    border: 0.1em solid transparent;
     border-radius: 0.4em;
+    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(61, 25, 76, 1));
 }
 %user_char_th{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -170,6 +172,9 @@ p,h1,h2,h3,h4,h5{
     margin: 0;
 }
 li, a{
+    &:focus{
+        outline: none;
+    }
     text-decoration: none;
     list-style: none;
     cursor: pointer;
@@ -241,6 +246,7 @@ body {
     // background: $nav-bg;
     background-image: linear-gradient(180deg,rgba(112, 60, 44, 1) 0%, rgba(168, 40, 85, 1) 28%, rgba(189, 81, 81, 1) 50%, rgba(217, 130, 95, 1) 76%, rgba(245, 110, 121, 1) 100%);
     @include app_padding(0.5em 0 0.5em 0);
+    @include box-shadow(0.5em, 0.5em, -0.5em, -0.5em, 1em, rgba(255, 24, 139, 1));
 }
 .nav_list{
     display: flex;
@@ -409,12 +415,12 @@ body {
             }
             .input_error{
                 @extend %inputBasic;
-                border: 1.5px solid rgb(234, 86, 86);
+                border: 0.13em solid rgb(234, 86, 86);
                 background-color: $input-error-bg;
                 @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.3em, red);
             }
             .input:focus{
-                border: 1.5px solid rgb(7, 216, 160);
+                border: 0.13em solid rgb(7, 216, 160);
                 @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.3em, $nav-list-item-bg);
             }
             .p_tip_none{
@@ -565,8 +571,12 @@ body {
                         @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
                         transition: 0.1s;
                         &:hover{
-                        color:#50fedc;
-                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
+                            color:#50fedc;
+                            @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933));
+                        }
+                        &:focus{
+                           color:#50fedc;
+                            @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(16, 16, 19, 0.933)); 
                         }
                     }
                     .a_download{
@@ -574,8 +584,12 @@ body {
                         color:#0244dd;
                         @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(62, 0, 143, 0.933));
                         &:hover{
-                        color:#3eaeff;
-                        @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(26, 26, 47, 0.933));
+                            color:#3eaeff;
+                            @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(26, 26, 47, 0.933));
+                        }
+                        &:focus{
+                            color:#3eaeff;
+                            @include text-shadow(0em, 0em, 0em, 0em, 0.1em, rgba(26, 26, 47, 0.933));
                         }
                     }
                     .a_registration{
@@ -1107,6 +1121,14 @@ body {
                 @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(48, 25, 83, 1));
                 @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, rgba(59, 30, 127, 1));
             }
+            .discord_join_btn:focus{
+                outline: none;
+                background-image: linear-gradient(180deg,rgba(63, 182, 191, 1) 0%, rgba(100, 126, 222, 1) 36%, rgba(106, 76, 217, 1) 62%, rgba(63, 182, 191, 1) 100%);
+                color: whitesmoke;
+                border: 0.15em solid whitesmoke;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(48, 25, 83, 1));
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, rgba(59, 30, 127, 1));
+            }
             .discord_join_btn:active{
                 transform: translate(0.1em, 0.1em);
                 border: 0.15em solid rgb(94, 241, 172);
@@ -1608,6 +1630,15 @@ body {
                 border: 0.1em solid #b4f638;
                 @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(0, 162, 38, 1));
             }
+            &:focus{
+                outline: none;
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, rgb(28, 30, 26));
+                color:whitesmoke;
+                background-image: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
+                // animation: voteBtnGradient 0.5s ease-in-out forwards;
+                border: 0.1em solid #b4f638;
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(0, 162, 38, 1));
+            }
             &:active{
                 background-image: linear-gradient(180deg,rgba(50, 240, 233, 1) 0%, rgba(61, 227, 180, 1) 50%, rgba(181, 237, 83, 1) 100%);
                 border: 0.1em solid #b7f44e;
@@ -1624,6 +1655,14 @@ body {
             border-radius: 0.3em;
             transition: transform 0.1s;
             &:hover{
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
+                color: whitesmoke;
+                background-image: linear-gradient(0deg,rgba(250, 20, 81, 1) 0%, rgba(227, 78, 36, 1) 45%, rgba(235, 92, 21, 1) 69%, rgba(224, 178, 49, 1) 100%);
+                border: 0.1em solid rgb(243, 155, 32);
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(249, 182, 58, 1));
+            }
+            &:focus{
+                outline: none;
                 @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
                 color: whitesmoke;
                 background-image: linear-gradient(0deg,rgba(250, 20, 81, 1) 0%, rgba(227, 78, 36, 1) 45%, rgba(235, 92, 21, 1) 69%, rgba(224, 178, 49, 1) 100%);
@@ -1649,6 +1688,14 @@ body {
                 background: linear-gradient(180deg,rgba(104, 125, 227, 1) 0%, rgba(123, 53, 181, 1) 51%, rgba(183, 20, 186, 1) 100%);
                 border: 0.1em solid rgba(104, 125, 227, 1);
                 @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(104, 125, 227, 1));
+            }
+            &:focus{
+                outline: none;
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, black);
+                color: whitesmoke;
+                background: linear-gradient(180deg,rgba(104, 125, 227, 1) 0%, rgba(123, 53, 181, 1) 51%, rgba(183, 20, 186, 1) 100%);
+                border: 0.1em solid rgba(104, 125, 227, 1);
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(104, 125, 227, 1)); 
             }
             &:active{
                 transform: translate(0.07em, 0.07em);
@@ -1781,6 +1828,14 @@ body {
         border: 0.2em solid rgb(33, 248, 122); 
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(197, 245, 237));
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(97, 209, 159));
+    }
+    &:focus{
+        outline: none;
+        color: whitesmoke;
+        background-image: linear-gradient(180deg,rgba(102, 245, 73, 1) 0%, rgba(75, 209, 104, 1) 30%, rgba(105, 209, 127, 1) 70%, rgba(77, 232, 46, 1) 100%);
+        border: 0.2em solid rgb(16, 189, 88);  
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(28, 27, 53));         
+        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(0, 213, 117)); 
     }
 }
 .online_container{
@@ -2587,6 +2642,9 @@ body {
                 mark{
                     background: transparent;
                     color: #485bb1;
+                }
+                b{
+                    color: #4968f3ff;
                 }
             }
         }

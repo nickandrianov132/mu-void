@@ -11,6 +11,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.heart_of_love}
                     enchance="+7 ...+10"
+                    options="4-16"
                     locations=" Noria, Lorencia, Elveland, Devias, Dungeon"
                     armors="Leather, Bronze, Pad, Vine, Silk"
                     weapons="Kris, Katana, Gladius, Tomahawk, Larkan Axe Elven Bow, Skull Staff, Thunder Staff, Mystery Stick"
@@ -19,6 +20,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.firecracker}
                     enchance="+7 ...+10"
+                    options="4-16"
                     locations=" Noria, Lorencia, Elveland, Devias, Dungeon"
                     armors="Brass, Bone, Wind"
                     weapons="Double Blade, Blade, Crescent Axe, Bill of Balrog, Battle Scepter, Battle Bow, Gorgon Staff, Violent Wind Stick, Book of Shamut"
@@ -27,6 +29,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.silver_medal}
                     enchance="+7 ...+10"
+                    options="4"
                     locations=" Atlans 1-2, LostTower 1-7"
                     armors="Scale, Plate, Sphinx, Spirit, Violent Wind"
                     weapons="Lightning Sword, Master Scepter, Tiger Bow, Legendary Staff, Red Wing Stick, Book of Neil"
@@ -35,6 +38,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.gold_medal}
                     enchance="+7 ...+10"
+                    options="4"
                     locations=" Tarkan, Icarus, Aida, Arena"
                     armors="Dragon, Legendary, Guardian, Red Wing, Adamantine, Storm Crow, Sacred Fire"
                     weapons="Crystal Sword, Sword of Destruction, Staff of Resurection, Staff of Destruction, Bluewing Crossbow, Silver Bow, Sacred gloves, Great Scepter, Ancient Stick, Book of Lagle"
@@ -43,6 +47,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.green_box}
                     enchance=" +7 ...+11"
+                    options="4-16"
                     locations=" Dungeon 1-3 Event Mobs"
                     armors="Black Dragon, Ashcrow, Grand Soul, Eclipse, Divine, Iris, Dark Steel, Glorius, Thunder Hawk, Valiant, Ancient, Storm Jahad"
                     weapons="Dark Breaker, Rune Blade, Holy Storm Glove, Dragon Soul Staff, Demonic Stick, Dragon Spear, Great Lord Scepter, Saint Crossbow, Celestial Bow, Staff of Kundun"
@@ -51,6 +56,7 @@ const DropBoxes = () => {
                 <GuideBoxesItem 
                     image={Images.red_box}
                     enchance=" +7 ...+11"
+                    options="4-16"
                     locations=" Dungeon 1-3 Event Mobs"
                     armors="Dark Phoenix, Great Dragon, Dark Soul, Hurricane, Red Spirit, Dark Master, Demonic, Piercing"
                     weapons="Knight Blade, Dark Reign Blade, Daybreak, Sword Dancer, Piercing Blade Glove, Shining Scepter, Great Reign Crossbow, Arrow Viper Bow, Albatross Bow, Platina Staff, Raven Stick"

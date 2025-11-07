@@ -29,8 +29,13 @@ const serverInfo = [
             {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ], 
         [
-            {content: 'MG, DL, RF', className: 'description_content_p_res_class'},
+            {content: 'MG, RF', className: 'description_content_p_res_class'},
             {content: '= 3000 free stats', className: 'description_content_p_res_stats'},
+            {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
+        ], 
+        [
+            {content: 'DL', className: 'description_content_p_res_class'},
+            {content: '= 2400 free stats + 600 Command', className: 'description_content_p_res_stats'},
             {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ] 
     ]
@@ -47,7 +52,7 @@ const serverInfo = [
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
 {title: 'BC, DS:', content: {content: '150% Exp🔥', className: 'description_content_p'}},
-{title: 'Happy Hour:', content: {content: 'Exp + 100% Drop + 10% twice a day', className: 'description_content_p'}},
+{title: 'Evening Hot-Exp:', content: {content: 'Exp + 100% Drop + 10% from 18:00 to 22:00', className: 'description_content_p'}},
 {title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% Drop +10% from Friday 18:00 to Sunday 24:00', className: 'description_content_p'}},
 {title: 'Offexp:', content: {content: '/offlevel  with pick up jewels🔥', className: 'description_content_p'}},
 {title: 'Setparty:', content: {content: '/setparty  and your party password', className: 'description_content_p'}},
