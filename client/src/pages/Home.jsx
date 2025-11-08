@@ -7,9 +7,9 @@ const Home = () => {
 
     return (
         <div className='home_container'>
-            {/* <HomeContent
+            <HomeContent
                 title="🎉Server is Open!🔓"
-                date="24.10.2025"
+                date="08.11.2025"
                 sideImage={Images.open_bg_edit}
             >
                 <div className='description_list'>
@@ -20,7 +20,7 @@ const Home = () => {
                         <p className='description_item_p'><b>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+100% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
-            </HomeContent> */}
+            </HomeContent>
             <HomeContent
                 title="⭐ Vote for us and earn Wcoins💰"
                 date="04.11.2025"

@@ -1026,6 +1026,8 @@ body {
             background: #fffcfc;
             margin: 0;
             height: 70%;
+            max-height: 70%;
+            overflow: hidden;
             .discord_user_container{
                 display: flex;
                 flex-direction: column;
@@ -1037,8 +1039,8 @@ body {
                 box-sizing: border-box;
                 @include app_margin(0.3em 0.4em);
 
-                width: 2em;
-                height: 2em;
+                width: 2.25em;
+                height: 2.25em;
                 .discord_user_img{
                     width: 100%;
                     height: 100%;
@@ -1050,22 +1052,22 @@ body {
                     transform: translate(-50%,  0%);
                     z-index: 1;
                 }
-                &::after{
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: 112%;
-                    height: 112%;
-                    box-sizing: border-box;
-                    transform: translate(-50%,  -50%);
-                    border-radius: 50%;
-                    background: rgb(99, 90, 202);
-                    z-index: 0;
-                }
+                // &::after{
+                //     content: '';
+                //     position: absolute;
+                //     top: 50%;
+                //     left: 50%;
+                //     width: 112%;
+                //     height: 112%;
+                //     box-sizing: border-box;
+                //     transform: translate(-50%,  -50%);
+                //     border-radius: 50%;
+                //     background: rgb(99, 90, 202);
+                //     z-index: 0;
+                // }
                 .online{
                     position: absolute;
-                    top: 1.3em;
+                    top: 1.5em;
                     right: 65%;
                     background-color: #30ef46;
                     border: 0.15em solid rgb(99, 90, 202);
@@ -1076,7 +1078,7 @@ body {
                 }
                 .idle{
                     position: absolute;
-                    top: 1.3em;
+                    top: 1.5em;
                     right: 65%;
                     background-color: #f9cb16;
                     border-radius: 50%;
@@ -3304,19 +3306,22 @@ body {
     height: auto;
     margin-top: 1em;
     color: whitesmoke;
-    border: 1px solid transparent;
+    border: 0.1em solid $containers_border_col;
     border-radius: 0.6em;
-    background: $gr-container-bg;
+    background: $containers_bg;
     @include app_padding(0.5em);
-    @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.15em, #9d3864);
+    @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.15em, $containers_box_shadow_col);
     .no_characters_div{
         display: flex;
         align-self: center;
+        border: 0.1em solid $containers_border_col;
+        border-radius: 0.6em;
+        background: $containers_bg;
     }
     .grand_reset_item_container{
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid rgb(95, 82, 82);
+        border-bottom: 0.1em solid rgb(95, 82, 82);
         @include app_padding(0.3em);
         @include app_margin(0.1em 0 0.2em 0);
         .grand_reset_item_head{

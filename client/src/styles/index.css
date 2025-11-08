@@ -1234,6 +1234,8 @@ body {
   background: #fffcfc;
   margin: 0;
   height: 70%;
+  max-height: 70%;
+  overflow: hidden;
 }
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container {
   display: -webkit-box;
@@ -1259,8 +1261,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0.3em 0.4em;
-  width: 2em;
-  height: 2em;
+  width: 2.25em;
+  height: 2.25em;
 }
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container .discord_user_img {
   width: 100%;
@@ -1273,24 +1275,9 @@ body {
           transform: translate(-50%, 0%);
   z-index: 1;
 }
-.right_sidebar_container .discord_widget_container .discord_body .discord_user_container::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 112%;
-  height: 112%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: rgb(99, 90, 202);
-  z-index: 0;
-}
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container .online {
   position: absolute;
-  top: 1.3em;
+  top: 1.5em;
   right: 65%;
   background-color: #30ef46;
   border: 0.15em solid rgb(99, 90, 202);
@@ -1301,7 +1288,7 @@ body {
 }
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container .idle {
   position: absolute;
-  top: 1.3em;
+  top: 1.5em;
   right: 65%;
   background-color: #f9cb16;
   border-radius: 50%;
@@ -4260,12 +4247,13 @@ body {
   height: auto;
   margin-top: 1em;
   color: whitesmoke;
-  border: 1px solid transparent;
+  border: 0.1em solid rgb(63, 60, 72);
   border-radius: 0.6em;
-  background: #341d3f;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
   padding: 0.5em;
-  -webkit-box-shadow: 0.01em 0.01em 0.15em #9d3864, -0.01em -0.01em 0.15em #9d3864, 0.01em -0.01em 0.15em #9d3864, -0.01em 0.01em 0.15em #9d3864;
-          box-shadow: 0.01em 0.01em 0.15em #9d3864, -0.01em -0.01em 0.15em #9d3864, 0.01em -0.01em 0.15em #9d3864, -0.01em 0.01em 0.15em #9d3864;
+  -webkit-box-shadow: 0.01em 0.01em 0.15em rgb(28, 17, 22), -0.01em -0.01em 0.15em rgb(28, 17, 22), 0.01em -0.01em 0.15em rgb(28, 17, 22), -0.01em 0.01em 0.15em rgb(28, 17, 22);
+          box-shadow: 0.01em 0.01em 0.15em rgb(28, 17, 22), -0.01em -0.01em 0.15em rgb(28, 17, 22), 0.01em -0.01em 0.15em rgb(28, 17, 22), -0.01em 0.01em 0.15em rgb(28, 17, 22);
 }
 .grand_reset_container .no_characters_div {
   display: -webkit-box;
@@ -4274,6 +4262,10 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: 0.1em solid rgb(63, 60, 72);
+  border-radius: 0.6em;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
 }
 .grand_reset_container .grand_reset_item_container {
   display: -webkit-box;
@@ -4283,7 +4275,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 1px solid rgb(95, 82, 82);
+  border-bottom: 0.1em solid rgb(95, 82, 82);
   padding: 0.3em;
   margin: 0.1em 0 0.2em 0;
 }
