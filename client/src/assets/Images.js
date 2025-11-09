@@ -133,6 +133,7 @@ const Images = {
     crown3: new URL('./crown3.png', import.meta.url).href,  
     rules1: new URL('./rules1.png', import.meta.url).href,  
     vote_bg1: new URL('./vote_bg1.jpg', import.meta.url).href,  
+    jewels_drop_add: new URL('./jewels_drop_add.jpg', import.meta.url).href,  
     
 }
 

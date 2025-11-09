@@ -8,6 +8,20 @@ const Home = () => {
     return (
         <div className='home_container'>
             <HomeContent
+                title="🎁Added Jewels cheance drop!💎"
+                date="08.11.2025"
+                sideImage={Images.jewels_drop_add}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>Server is Open!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'><b>Following our players requests we added chance of getting jewels(Bless, Soul, Life, Chaos) from:</b><br/>❤️ Heart of love - 2% chance .<br/>🧨 Firecracker - 3% chance.<br/>🥈 Silver medal - 4% chance.<br/>🥇 Gold medal - 5% chance <br/><b></b></p>
+                    </div>
+                </div>
+            </HomeContent>
+            <HomeContent
                 title="🎉Server is Open!🔓"
                 date="08.11.2025"
                 sideImage={Images.open_bg_edit}
@@ -77,25 +91,7 @@ const Home = () => {
                     <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
                     <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
                 </div>
-            </HomeContent>
-            <HomeContent 
-                title="💥Welcome! Join Open Beta-test!🚀"
-                date="24.08.2025"
-                sideImage={Images.opening_img}
-            > 
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>Open beta-test is approaching!</h4>
-                    </div>
-                    <p className="first-p home-content-p">Welcome on our <b>MU Online</b> server. Open-Beta test will be started on <b>August 28<sup>th</sup></b>, we'll be appreciated to everyone who will participate in Open-Beta test of our server.<br/>
-                    </p>
-                    <div className='discord_container'>
-                    <img className='discord_img' src={Images.discord2}></img>
-                    <a className="a_discord" href="https://discord.gg/ANTqvCrQCk" target="_blank">Discord here!</a>
-                    </div>
-                </div>
-            </HomeContent>
-                                                    
+            </HomeContent>                                         
         </div>
     );
 }
