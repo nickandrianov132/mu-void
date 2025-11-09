@@ -134,6 +134,17 @@ const Images = {
     rules1: new URL('./rules1.png', import.meta.url).href,  
     vote_bg1: new URL('./vote_bg1.jpg', import.meta.url).href,  
     jewels_drop_add: new URL('./jewels_drop_add.jpg', import.meta.url).href,  
+    crest_feather: new URL('./crest_feather.jpg', import.meta.url).href,  
+    crest_feather1: new URL('./crest_feather1.jpg', import.meta.url).href,  
+    loren1: new URL('./loren1.jpg', import.meta.url).href,  
+    loren2: new URL('./loren2.jpg', import.meta.url).href,  
+    gambler1: new URL('./gambler1.jpg', import.meta.url).href,  
+    gambler2: new URL('./gambler2.jpg', import.meta.url).href,  
+    brova: new URL('./brova.jpg', import.meta.url).href,  
+    chromatic: new URL('./chromatic.jpg', import.meta.url).href,  
+    rave_stick: new URL('./rave_stick.jpg', import.meta.url).href,  
+    aileen_bow: new URL('./aileen_bow.jpg', import.meta.url).href,  
+    striker_scepter: new URL('./striker_scepter.jpg', import.meta.url).href,  
     
 }
 

@@ -77,7 +77,7 @@ const Home = () => {
                     </div>
                 </div>
             </HomeContent>
-            <HomeContent
+            {/* <HomeContent
                 title="📌Easy OBT for players💎"
                 date="30.08.2025"
                 sideImagesArr={imgArray}
@@ -91,7 +91,7 @@ const Home = () => {
                     <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
                     <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
                 </div>
-            </HomeContent>                                         
+            </HomeContent>                                          */}
         </div>
     );
 }

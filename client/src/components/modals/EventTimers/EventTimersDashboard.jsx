@@ -16,7 +16,7 @@ const EventTimersDashboard = () => {
             <EventTimerItem event="White Wizard" eventOffset={7200} eventDelay={-5670} />
             <EventTimerItem event="Cursed Santa" eventOffset={10800} eventDelay={-2070} />
             <EventTimerItem event="CryWolf Event" eventOffset={86400} eventDelay={-65670} />
-            <EventTimerItem event="Loren Event" eventOffset={86400} eventDelay={-68400} />
+            <EventTimerItem event="Loren Event" eventOffset={86400} eventDelay={-64800} />
         </div>
     );
 }
