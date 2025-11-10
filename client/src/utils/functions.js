@@ -3,13 +3,19 @@ export function validateCharReset(status, lvl, res, gRes, zen) {
     const zenRes = 10000000;
     const zenEasyRes = 5000000;
     if(gRes === 0 && res < 15) {
-        if(status === 0 && res === 0 && lvl >= 370 && zen >= zenEasyRes) {
+        if(status === 0 && res === 0 && lvl >= 350 && zen >= zenEasyRes) {
             return valid = true;
         }
-        if(status === 0 && res === 1 && lvl >= 380 && zen >= zenEasyRes*2) {
+        if(status === 0 && res === 1 && lvl >= 360 && zen >= zenEasyRes*2) {
             return valid = true;
         }
-        if(status === 0 && res === 2 && lvl >= 390 && zen >= zenEasyRes*3) {
+        if(status === 0 && res === 2 && lvl >= 370 && zen >= zenEasyRes*3) {
+            return valid = true;
+        }
+        if(status === 0 && res === 2 && lvl >= 380 && zen >= zenEasyRes*4) {
+            return valid = true;
+        }
+        if(status === 0 && res === 2 && lvl >= 390 && zen >= zenEasyRes*5) {
             return valid = true;
         }
         if(status === 0 && res >= 3 && lvl === 400) {
