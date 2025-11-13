@@ -12,10 +12,10 @@ export function validateCharReset(status, lvl, res, gRes, zen) {
         if(status === 0 && res === 2 && lvl >= 370 && zen >= zenEasyRes*3) {
             return valid = true;
         }
-        if(status === 0 && res === 2 && lvl >= 380 && zen >= zenEasyRes*4) {
+        if(status === 0 && res === 3 && lvl >= 380 && zen >= zenEasyRes*4) {
             return valid = true;
         }
-        if(status === 0 && res === 2 && lvl >= 390 && zen >= zenEasyRes*5) {
+        if(status === 0 && res === 4 && lvl >= 390 && zen >= zenEasyRes*5) {
             return valid = true;
         }
         if(status === 0 && res >= 3 && lvl === 400) {
