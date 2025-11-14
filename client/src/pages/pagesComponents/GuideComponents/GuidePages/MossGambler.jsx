@@ -16,7 +16,9 @@ const MossGambler = () => {
                         <img src={Images.rave_stick} className="small_event_img_small1"/>
                         <img src={Images.aileen_bow} className="small_event_img_small1"/>
                         <img src={Images.striker_scepter} className="small_event_img_small1"/>
+                        <img src={Images.phoenix_soul_star} className="small_event_img_small1"/>
                     </div>
+                    <p className="small_event_p"><em>Rage Fighter Weapons are in Dark Lord Option!</em></p>
                     <p className="small_event_p">You can find Moss Gambler NPC in Elveland coord 20x225:</p>
                     <div className="small_event_imgs_wrapper">
                         <img src={Images.gambler1} className="small_event_img_big"/>

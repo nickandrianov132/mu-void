@@ -8,6 +8,20 @@ const Home = () => {
     return (
         <div className='home_container'>
             <HomeContent
+                title="💥Saturday Events Coming!💝"
+                date="14.11.2025"
+                sideImage={Images.saturday_events}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>🎉Saturday Events!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/><br/><em className='ps_em'>Time of the Events beginning will be announced in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
+                    </div>
+                </div>
+            </HomeContent>
+            {/* <HomeContent
                 title="🎁Added Jewels cheance drop!💎"
                 date="08.11.2025"
                 sideImage={Images.jewels_drop_add}
@@ -20,7 +34,7 @@ const Home = () => {
                         <p className='description_item_p'><b>Following our players requests we added chance of getting jewels(Bless, Soul, Life, Chaos) from:</b><br/>❤️ Heart of love - 2% chance .<br/>🧨 Firecracker - 3% chance.<br/>🥈 Silver medal - 4% chance.<br/>🥇 Gold medal - 5% chance <br/><b></b></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             <HomeContent
                 title="🎉Server is Open!🔓"
                 date="08.11.2025"
@@ -31,7 +45,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>Server is Open!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+100% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
+                        <p className='description_item_p'><b className='intro_b'>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+100% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
             </HomeContent>

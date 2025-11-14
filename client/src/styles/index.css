@@ -630,6 +630,24 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p b {
   font-size: 1.1em;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .intro_b {
+  font-size: 1.3em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .ps_em {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .ps_em .b_game {
+  color: #fc7f31;
+  text-shadow: 0.01em 0.01em 0.06em #2b1b66, -0.01em -0.01em 0.06em #2b1b66, 0.01em -0.01em 0.06em #2b1b66, -0.01em 0.01em 0.06em #2b1b66;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .ps_em .b_discord {
+  color: #6d47bb;
+  font-weight: 800;
+  font-size: 1.1em;
+  letter-spacing: 0.2px;
+  text-shadow: 0.01em 0.01em 0.06em #251e41, -0.01em -0.01em 0.06em #251e41, 0.01em -0.01em 0.06em #251e41, -0.01em 0.01em 0.06em #251e41;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .a_registration {
   font-size: 1.1em;
   color: #00cba2;
@@ -683,7 +701,7 @@ body {
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .opening_wrapper_h4 .description_item_h4_opening {
   color: #21135e;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-shadow: 0.01em 0.01em 0.05em rgb(77, 33, 135), -0.01em -0.01em 0.05em rgb(77, 33, 135), 0.01em -0.01em 0.05em rgb(77, 33, 135), -0.01em 0.01em 0.05em rgb(77, 33, 135);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .opening_wrapper_h4 .description_item_h4_opening::first-letter {
@@ -3900,9 +3918,10 @@ body {
           align-items: center;
   width: 100%;
   margin-bottom: 2em;
+  overflow: hidden;
 }
 .events_container .small_event_body .small_event_imgs_wrapper .small_event_img_big {
-  height: 24em;
+  height: 22em;
 }
 .events_container .events_body_container {
   display: -webkit-box;

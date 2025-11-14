@@ -565,6 +565,24 @@ body {
                     b{
                         font-size: 1.1em;
                     }
+                    .intro_b{
+                        font-size: 1.3em;
+                    }
+                    .ps_em{
+                        font-size: 1.05em;
+                        font-weight: 600;
+                        .b_game{
+                            color: #fc7f31ff;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #2b1b66);
+                        }
+                        .b_discord{
+                            color: #6d47bbff;
+                            font-weight: 800;
+                            font-size: 1.1em;
+                            letter-spacing: 0.2px;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #251e41ff);
+                        }
+                    }
                     .a_registration{
                         font-size: 1.1em;
                         color:#00cba2;
@@ -610,7 +628,7 @@ body {
                     @include app_padding(0.2em 0 0.1em 0.2em);
                     .description_item_h4_opening{
                         color: #21135e;
-                        font-size: 0.9em;
+                        font-size: 1.1em;
                         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(77, 33, 135));
                         &::first-letter{
                             margin-left: 1em;
@@ -3038,8 +3056,9 @@ body {
             align-items: center;
             width: 100%;
             margin-bottom: 2em;
+            overflow: hidden;
             .small_event_img_big{
-                height: 24em;
+                height: 22em;
             }
         }
     }

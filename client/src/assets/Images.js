@@ -145,6 +145,8 @@ const Images = {
     rave_stick: new URL('./rave_stick.jpg', import.meta.url).href,  
     aileen_bow: new URL('./aileen_bow.jpg', import.meta.url).href,  
     striker_scepter: new URL('./striker_scepter.jpg', import.meta.url).href,  
+    phoenix_soul_star: new URL('./phoenix_soul_star.jpg', import.meta.url).href,  
+    saturday_events: new URL('./saturday_events.jpg', import.meta.url).href,  
     
 }
 
