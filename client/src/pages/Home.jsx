@@ -17,7 +17,7 @@ const Home = () => {
                         <h4 className='description_item_h4_opening'>🎉Saturday Events!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/><br/><em className='ps_em'>Time of the Events beginning will be announced in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
+                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/><br/><em className='ps_em'>Today at 16:00 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
                     </div>
                 </div>
             </HomeContent>
