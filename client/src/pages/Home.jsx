@@ -8,16 +8,30 @@ const Home = () => {
     return (
         <div className='home_container'>
             <HomeContent
-                title="💥Saturday Events Coming!💝"
-                date="14.11.2025"
-                sideImage={Images.saturday_events}
+                title="🔖VIP is now available!🔥💣"
+                date="18.11.2025"
+                sideImage={Images.vip_news}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🎉Saturday Events!</h4>
+                        <h4 className='description_item_h4_opening'> Buy VIP for WCoins! </h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +1 ...+3.🎁<br/><br/><em className='ps_em'>Today at 16:00 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
+                        <p className='description_item_p'><b className='intro_b'>For New Players 3 Days of Gold VIP free!🔰</b><br/><br/>🔸- For new accounts 3 days of <b className='b_gold'>Gold VIP</b> will be activated automatically to grow and make resets faster!<b className='b_symbol'>💪</b><br/>🔸- All other players can purchase VIP in the account panel using WCoins.<b className='b_symbol'>🪙</b><br/><br/><em className='ps_em'> </em></p>
+                    </div>
+                </div>
+            </HomeContent>
+            <HomeContent
+                title="💥Weekend Events Coming!💝"
+                date="18.11.2025"
+                sideImage={Images.sunday_events}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>🎉Take part in events on Sunday!</h4>
+                    </div>
+                    <div className='description_wrapper_p'>
+                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/><br/><em className='ps_em'>On Sunday 23.11.2025 at 18:30 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
                     </div>
                 </div>
             </HomeContent>

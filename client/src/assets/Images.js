@@ -147,6 +147,8 @@ const Images = {
     striker_scepter: new URL('./striker_scepter.jpg', import.meta.url).href,  
     phoenix_soul_star: new URL('./phoenix_soul_star.jpg', import.meta.url).href,  
     saturday_events: new URL('./saturday_events.jpg', import.meta.url).href,  
+    sunday_events: new URL('./sunday_events.jpg', import.meta.url).href,  
+    vip_news: new URL('./vip_news.jpg', import.meta.url).href,  
     
 }
 

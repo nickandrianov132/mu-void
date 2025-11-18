@@ -9,7 +9,8 @@ const initialState = {
     regQuestion: '',
     regAnswer: '',
     regRules: false,
-    date:null
+    date:null,
+    ip: null
 }
 
 const regUserSlice = createSlice({
@@ -36,9 +37,12 @@ const regUserSlice = createSlice({
         },
         setDate: (state, action) => {
             state.date = action.payload
+        },
+        setIp: (state, action) => {
+            state.date = action.payload
         }
     }
 })
 
-export const {setLogin, setPassword, setEmail, setName, setRegQuestion, setRegAnswer, setDate} = regUserSlice.actions
+export const {setLogin, setPassword, setEmail, setName, setRegQuestion, setRegAnswer, setDate, setIp} = regUserSlice.actions
 export default regUserSlice.reducer

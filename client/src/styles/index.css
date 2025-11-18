@@ -633,6 +633,14 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .intro_b {
   font-size: 1.3em;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .b_gold {
+  font-size: 1.2em;
+  color: #fc7f31;
+  text-shadow: 0.01em 0.01em 0.06em #2b1b66, -0.01em -0.01em 0.06em #2b1b66, 0.01em -0.01em 0.06em #2b1b66, -0.01em 0.01em 0.06em #2b1b66;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .b_symbol {
+  font-size: 1.4em;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .ps_em {
   font-size: 1.05em;
   font-weight: 600;
@@ -4544,8 +4552,9 @@ body {
   padding: 0 0 1em 0;
 }
 .buyVip_container .vip_header_wrapper h3 {
-  color: #f85f47;
-  text-shadow: 0.015em 0.015em 0.1em rgb(174, 2, 85), -0.015em -0.015em 0.1em rgb(174, 2, 85), 0.015em -0.015em 0.1em rgb(174, 2, 85), -0.015em 0.015em 0.1em rgb(174, 2, 85);
+  font-size: 1.2em;
+  color: #3bdd81;
+  text-shadow: 0.015em 0.015em 0.1em #5c947e, -0.015em -0.015em 0.1em #5c947e, 0.015em -0.015em 0.1em #5c947e, -0.015em 0.015em 0.1em #5c947e;
   word-spacing: 0.1em;
   text-decoration: underline;
 }

@@ -18,11 +18,24 @@ const navigate = useNavigate()
     const [isRules, setIsRules] = useState(false)
     // console.log(`inputLogin: ${inputLogin}; inputEmail: ${inputEmail}; inputRules: ${inputRules}`);
     // console.log(isRules);
+    console.log(userData)
+    let userIp 
+    async function getIpAddress() {
+        const ip = await fetch('https://api.ipify.org?format=json')
+        .then(res => res.json())
+        .then(data => data)
+        return ip
+    }
+
+    
+
+
     const regUserHandler = async (e) => {
         e.preventDefault()
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString()
-            let user = {...userData, date: dateStamp}
+            let userIp = await getIpAddress() 
+            let user = {...userData, date: dateStamp, ip: userIp.ip}
             // console.log(user);
             await registration({...user})
             

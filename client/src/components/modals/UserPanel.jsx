@@ -16,7 +16,7 @@ const UserPanel = () => {
         dispatch(logout())
         navigate(HOME_ROUTE)
     }
-
+    // dispatch(logout())
     return (
         <div className='user_panel'>
             {isSuccess && <div className="welcome_div"><span>Welcome <em>{userInfo.accName}</em> !</span></div>}

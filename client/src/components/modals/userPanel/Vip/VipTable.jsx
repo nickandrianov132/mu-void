@@ -73,9 +73,9 @@ const VipTable = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td>Exp: +5x</td>
                     <td>Exp: +10x</td>
-                    <td>Exp: +15x</td>
+                    <td>Exp: +18x</td>
+                    <td>Exp: +25x</td>
                 </tr>
                 <tr>
                     <td>Drop: +15%</td>
@@ -127,21 +127,21 @@ const VipTable = () => {
                         <button
                         id="bronze" 
                         className="vip_table_btn"
-                        // onClick={(e) => vipBuyHandler(e)}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
                     </td>
                     <td>
                         <button
                         id="silver" 
                         className="vip_table_btn"
-                        // onClick={(e) => vipBuyHandler(e)}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
                     </td>
                     <td className="td_btn_vipBuy">
                         <button
                         id="gold" 
                         className="vip_table_btn"
-                        // onClick={(e) => vipBuyHandler(e)}
+                        onClick={(e) => vipBuyHandler(e)}
                         >Buy</button>
                     </td>
                 </tr>

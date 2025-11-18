@@ -568,6 +568,14 @@ body {
                     .intro_b{
                         font-size: 1.3em;
                     }
+                    .b_gold{
+                        font-size: 1.2em;
+                        color: #fc7f31ff;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #2b1b66);
+                    }
+                    .b_symbol{
+                        font-size: 1.4em;
+                    }
                     .ps_em{
                         font-size: 1.05em;
                         font-weight: 600;
@@ -3544,8 +3552,9 @@ body {
         width: 100%;
         @include app_padding(0 0 1em 0);
         h3{
-            color: #f85f47;
-            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.1em, rgb(174, 2, 85));
+            font-size: 1.2em;
+            color: #3bdd81;
+            @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.1em, #5c947eff);
             word-spacing: 0.1em;
             text-decoration: underline;
         }
