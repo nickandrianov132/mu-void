@@ -62,15 +62,75 @@ export function checkLocation(id) {
     if(id === 8) {
         return location = 'Tarkan'
     } 
-    if(id === 11 || id === 12 || id === 13 || id === 14 || id === 15 || id === 16 || id === 17 || id === 52) {
-        return location = 'Blood Castle'
-    }
-    if(id === 18 || id === 19 || id === 20 || id === 21 || id === 22 || id === 23 || id === 53) {
-        return location = 'Chaos Castle'
-    }
-    if(id === 24 || id === 25 || id === 26 || id === 27 || id === 28 || id === 29 || id === 36) {
-        return location = 'Kalima'
-    }
+    if(id === 10) {
+        return location = 'Icarus'
+    } 
+    if(id === 11) {
+        return location = 'Blood Castle 1'
+    } 
+    if(id === 12) {
+        return location = 'Blood Castle 2'
+    } 
+    if(id === 13) {
+        return location = 'Blood Castle 3'
+    } 
+    if(id === 14) {
+        return location = 'Blood Castle 4'
+    } 
+    if(id === 15) {
+        return location = 'Blood Castle 5'
+    } 
+    if(id === 16) {
+        return location = 'Blood Castle 6'
+    } 
+    if(id === 17) {
+        return location = 'Blood Castle 7'
+    } 
+    if(id === 52) {
+        return location = 'Blood Castle 8'
+    } 
+    if(id === 18) {
+        return location = 'Chaos Castle 1'
+    } 
+    if(id === 19) {
+        return location = 'Chaos Castle 2'
+    } 
+    if(id === 20) {
+        return location = 'Chaos Castle 3'
+    } 
+    if(id === 21) {
+        return location = 'Chaos Castle 4'
+    } 
+    if(id === 22) {
+        return location = 'Chaos Castle 5'
+    } 
+    if(id === 23) {
+        return location = 'Chaos Castle 6'
+    } 
+    if(id === 53) {
+        return location = 'Chaos Castle 7'
+    } 
+    if(id === 24) {
+        return location = 'Kalima 1'
+    } 
+    if(id === 25) {
+        return location = 'Kalima 2'
+    } 
+    if(id === 26) {
+        return location = 'Kalima 3'
+    } 
+    if(id === 27) {
+        return location = 'Kalima 4'
+    } 
+    if(id === 28) {
+        return location = 'Kalima 5'
+    } 
+    if(id === 29) {
+        return location = 'Kalima 6'
+    } 
+    if(id === 36) {
+        return location = 'Kalima 7'
+    } 
     if(id === 30) {
         return location = 'Valley of Loren'
     }
@@ -97,6 +157,9 @@ export function checkLocation(id) {
     }
     if(id === 42) {
         return location = 'Barracks Refuge'
+    }
+    if(id === 51) {
+        return location = 'Elveland'
     }
     if(id === 56) {
         return location = 'Swamp of Calmness'
@@ -128,7 +191,7 @@ export function checkLocation(id) {
     if(id === 81) {
         return location = 'Karutan 2'
     }
-    return location = 'Hidden'
+    return location = 'N/A'
 }
 
 export function checkCharClass(id) {
