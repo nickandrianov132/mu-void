@@ -1,6 +1,6 @@
 import {Routes, Route, Navigate} from "react-router-dom";
 import { authRoutes, publicRoutes } from '../routes';
-import { GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, HOME_ROUTE } from '../utils/constants';
+import { GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GOLDENMOBS_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, HOME_ROUTE } from '../utils/constants';
 import ResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/ResetSystem";
 import GrandResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/GrandResetSystem";
 import Guide from "../pages/Guide";
@@ -19,6 +19,7 @@ import ChaosCastle from "../pages/pagesComponents/GuideComponents/GuidePages/Cha
 import DoppelGanger from "../pages/pagesComponents/GuideComponents/GuidePages/DoppelGanger";
 import MossGambler from "../pages/pagesComponents/GuideComponents/GuidePages/MossGambler";
 import LorenDeep from "../pages/pagesComponents/GuideComponents/LorenDeep";
+import GoldenMobs from "../pages/pagesComponents/GuideComponents/GuidePages/GoldenMobs";
 
 
 const AppRouter = () => {
@@ -51,6 +52,7 @@ const AppRouter = () => {
                     <Route path={GUIDE_DROP_BOSS_MAYA_INFO} element={<MayaEvent/>} />
                     <Route path={GUIDE_MOSS_INFO} element={<MossGambler />} />
                     <Route path={GUIDE_LORENDEEP_INFO} element={<LorenDeep />} />
+                    <Route path={GUIDE_GOLDENMOBS_INFO} element={<GoldenMobs />} />
                     <Route path={GUIDE_ROUTE + '/*'} element={<Navigate to={GUIDE_ROUTE}/> }/>
                 </Route>
                 <Route path="*" element={<Navigate to={HOME_ROUTE}/>} />

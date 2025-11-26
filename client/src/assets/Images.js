@@ -149,6 +149,23 @@ const Images = {
     saturday_events: new URL('./saturday_events.jpg', import.meta.url).href,  
     sunday_events: new URL('./sunday_events.jpg', import.meta.url).href,  
     vip_news: new URL('./vip_news.jpg', import.meta.url).href,  
+    goblin_280x280: new URL('./goblin_280x280.jpg', import.meta.url).href,  
+    rabbit_280x280: new URL('./rabbit_280x280.jpg', import.meta.url).href,  
+    soldier_280x280: new URL('./soldier_280x280.jpg', import.meta.url).href,  
+    darkKnight_280x280: new URL('./darkKnight_280x280.jpg', import.meta.url).href,  
+    titan_340x340: new URL('./titan_340x340.jpg', import.meta.url).href,   
+    devil_280x280: new URL('./devil_280x280.jpg', import.meta.url).href,   
+    vepar_280x280: new URL('./vepar_280x280.jpg', import.meta.url).href,   
+    lizard_340x340: new URL('./lizard_340x340.jpg', import.meta.url).href,   
+    wheel_280x280: new URL('./wheel_280x280.jpg', import.meta.url).href,   
+    tantalos_280x280: new URL('./tantalos_280x280.jpg', import.meta.url).href,   
+    golem_280x280: new URL('./golem_280x280.jpg', import.meta.url).href,   
+    dragon: new URL('./dragon.jpg', import.meta.url).href,   
+    satyr_280x280: new URL('./satyr_280x280.jpg', import.meta.url).href,   
+    twinTale_280x280: new URL('./twinTale_280x280.jpg', import.meta.url).href,   
+    ironKnight_280x280: new URL('./ironKnight_280x280.jpg', import.meta.url).href,   
+    napin_280x280: new URL('./napin_280x280.jpg', import.meta.url).href,   
+    greatDragon: new URL('./greatDragon.jpg', import.meta.url).href,   
     
 }
 

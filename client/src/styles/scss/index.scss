@@ -152,14 +152,14 @@ $aside-wd: 110px;
 }
 %inputBasic{
     font-size: 0.75em;
-    color: #070040;
+    color: #070039ff;
     width: 80%;
     padding: 0.3em;
     @include app_margin(4px 0 5px 0);
     outline: none;
     border: 0.1em solid transparent;
     border-radius: 0.4em;
-    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(61, 25, 76, 1));
+    // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgba(26, 25, 76, 1));
 }
 %user_char_th{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -1729,6 +1729,42 @@ body {
                 transform: translate(0.07em, 0.07em);
             }
         }
+        .link-buyWcoins{
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            background-image: linear-gradient(0deg,rgba(51, 242, 201, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(165, 237, 83, 1) 100%);
+            border: 0.1em solid transparent;
+            border-radius: 0.3em;
+            transition: transform 0.1s;
+            .coins_icon{
+                font-size: 1.4em;
+                color: #f9cb16;
+                margin-left: 0.2em;
+            }
+            &:hover{
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, rgb(28, 30, 26));
+                color:whitesmoke;
+                background-image: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
+                // animation: voteBtnGradient 0.5s ease-in-out forwards;
+                border: 0.1em solid #b4f638;
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(0, 162, 38, 1));
+            }
+            &:focus{
+                outline: none;
+                @include text-shadow(0.01em, 0.01em, -0.01em,-0.01em, 0.06em, rgb(28, 30, 26));
+                color:whitesmoke;
+                background-image: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
+                // animation: voteBtnGradient 0.5s ease-in-out forwards;
+                border: 0.1em solid #b4f638;
+                @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, rgba(0, 162, 38, 1));
+            }
+            &:active{
+                background-image: linear-gradient(180deg,rgba(50, 240, 233, 1) 0%, rgba(61, 227, 180, 1) 50%, rgba(181, 237, 83, 1) 100%);
+                border: 0.1em solid #b7f44e;
+                transform: translate(0.07em, 0.07em);
+            }
+        }
         .link-report{
             display: flex;
             flex-basis: 100%;
@@ -2662,7 +2698,7 @@ body {
                 color: #c7d1d0;
                 letter-spacing: 0.5px;
                 em{
-                    color: #b95b8b;
+                    color: #ed4359ff;
                     em{
                         color: rgb(88, 88, 240);
                     }
@@ -3149,6 +3185,34 @@ body {
 .guide_main_container{
     display: flex;
     flex-direction: column;
+        .golden_mobs_item_container{
+            display: flex;
+            flex-direction: row;
+            @include app_margin(0.5em 0.4em 0.5em 0.5em);
+            .golden_mobs_image_wrapper{
+                margin-right: 1em;
+                img{
+                    border: 0.1em solid rgb(60, 54, 71);
+                    border-radius: 0.4em;
+                    height: 10em;
+                }
+            }
+            .golden_mobs_desc_wrapper{
+                display: flex;
+                flex-direction: column;
+                width: 65%;
+                .golden_desc_title{
+                    color: $em_gold;
+                }
+                .golden_info_p{
+                    em{
+                        font-weight: 600;
+                        color: #ed750cff;
+                    }
+                    font-size: 0.75em;
+                }
+            }
+        }
     .dg_desc1_wrapper{
         display: flex;
         flex-direction: column;
@@ -3530,7 +3594,45 @@ body {
         }
     }
 }
-
+.buyWcoins_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 15em;
+    background-image: $containers_bg;
+    border: 0.15em solid $containers_border_col;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, $containers_box_shadow_col);
+    border-radius: 0.5em;
+    color: whitesmoke;
+    @include app_padding(1em 0.3em 0.5em 1em);
+    @include app_margin(0.5em 0 0 0);
+}
+.buyWcoins_fail_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 15em;
+    background-image: $containers_bg;
+    border: 0.15em solid $containers_border_col;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, $containers_box_shadow_col);
+    border-radius: 0.5em;
+    color: whitesmoke;
+    @include app_padding(1em 0.3em 0.5em 1em);
+    @include app_margin(0.5em 0 0 0);
+}
+.buyWcoins_success_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 15em;
+    background-image: $containers_bg;
+    border: 0.15em solid $containers_border_col;
+    @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, $containers_box_shadow_col);
+    border-radius: 0.5em;
+    color: whitesmoke;
+    @include app_padding(1em 0.3em 0.5em 1em);
+    @include app_margin(0.5em 0 0 0);
+}
 .buyVip_container{
     display: flex;
     flex-direction: column;

@@ -8,6 +8,8 @@ const emptyTop5Players = [
     {cLevel: '-', gReset: '-', mLevel: '-', id: "3", name: '—', reset: '-'},
     {cLevel: '-', gReset: '-', mLevel: '-', id: "4", name: '—', reset: '-'},
 ];
+// to change when opening !isSuccess on isSuccess in row 35 condition!
+
 const TopPlayers = () => {
     const {data: top3Players, isSuccess} = useFetchTop3CharQuery(undefined, {
             selectFromResult: ({ data, isSuccess, isError, isLoading }) => ({
@@ -30,7 +32,7 @@ const TopPlayers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                {isSuccess & top3Players?.length > 0 ?
+                {!isSuccess & top3Players?.length > 0 ?
                     top3Players?.map((char, i) => 
                     <tr key={char.name}>
                         <td>{i === 0 ?

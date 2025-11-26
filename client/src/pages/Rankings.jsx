@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { checkCharClass, filterChars, grToMlConvert } from "../utils/functions";
 import Spinner from "../components/Spinner";
 
+const fakeChars = []  // this to be remove and use charactesr!
 
 const Rankings = () => {
     const {data: chars, isSuccess, isLoading, isError} = useFetchAllCharQuery(undefined, {
@@ -53,7 +54,7 @@ const Rankings = () => {
                         </tr>
                     </thead>
                     <tbody className="rankings_tbody">
-                        {characters?.map((char, i) => 
+                        {fakeChars?.map((char, i) => 
                             <tr key={char.name} onClick={() => navigate(CHARACTER_CARD_ROUTE + '/' + char.name)}>
                                 <td>{i === 0 ?
                                     <div className="rank_star"><GiStarsStack className="top_star_gold" /> {i + 1}</div>

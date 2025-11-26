@@ -13,7 +13,7 @@ const Aside = () => {
             <CastleInfo />
             <DiscordWidget />
             <BannersBoard />
-            <Player />
+            {/* <Player /> */}
         </aside>
     );
 }

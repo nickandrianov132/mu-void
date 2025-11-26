@@ -59,14 +59,13 @@
 
 .regain_password_container .regain_pass_form .regain_pass_input_wrapper .input, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input_error, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input, .left_sidebar_container .login_container .login_form .input_error, .left_sidebar_container .login_container .login_form .input {
   font-size: 0.75em;
-  color: #070040;
+  color: #070039;
   width: 80%;
   padding: 0.3em;
   margin: 4px 0 5px 0;
   outline: none;
   border: 0.1em solid transparent;
   border-radius: 0.4em;
-  text-shadow: 0.01em 0.01em 0.05em rgb(61, 25, 76), -0.01em -0.01em 0.05em rgb(61, 25, 76), 0.01em -0.01em 0.05em rgb(61, 25, 76), -0.01em 0.01em 0.05em rgb(61, 25, 76);
 }
 
 .grand_reset_container .grand_reset_item_container .grand_reset_item_head h5, .user_char_card_container .user_char_wrapper_div .user_char_card_table_div table .user_th {
@@ -2131,6 +2130,55 @@ body {
   -webkit-transform: translate(0.07em, 0.07em);
           transform: translate(0.07em, 0.07em);
 }
+.user_panel .user_panel_links .link-buyWcoins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(51, 242, 201)), color-stop(50%, rgb(87, 199, 133)), to(rgb(165, 237, 83)));
+  background-image: linear-gradient(0deg, rgb(51, 242, 201) 0%, rgb(87, 199, 133) 50%, rgb(165, 237, 83) 100%);
+  border: 0.1em solid transparent;
+  border-radius: 0.3em;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+.user_panel .user_panel_links .link-buyWcoins .coins_icon {
+  font-size: 1.4em;
+  color: #f9cb16;
+  margin-left: 0.2em;
+}
+.user_panel .user_panel_links .link-buyWcoins:hover {
+  text-shadow: 0.01em 0.01em 0.06em rgb(28, 30, 26), -0.01em -0.01em 0.06em rgb(28, 30, 26), 0.01em -0.01em 0.06em rgb(28, 30, 26), -0.01em 0.01em 0.06em rgb(28, 30, 26);
+  color: whitesmoke;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(48, 209, 204)), color-stop(50%, rgb(87, 199, 133)), to(rgb(121, 237, 83)));
+  background-image: linear-gradient(180deg, rgb(48, 209, 204) 0%, rgb(87, 199, 133) 50%, rgb(121, 237, 83) 100%);
+  border: 0.1em solid #b4f638;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
+          box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
+}
+.user_panel .user_panel_links .link-buyWcoins:focus {
+  outline: none;
+  text-shadow: 0.01em 0.01em 0.06em rgb(28, 30, 26), -0.01em -0.01em 0.06em rgb(28, 30, 26), 0.01em -0.01em 0.06em rgb(28, 30, 26), -0.01em 0.01em 0.06em rgb(28, 30, 26);
+  color: whitesmoke;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(48, 209, 204)), color-stop(50%, rgb(87, 199, 133)), to(rgb(121, 237, 83)));
+  background-image: linear-gradient(180deg, rgb(48, 209, 204) 0%, rgb(87, 199, 133) 50%, rgb(121, 237, 83) 100%);
+  border: 0.1em solid #b4f638;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
+          box-shadow: 0.1em 0.1em 0.16em rgb(0, 162, 38), -0.1em -0.1em 0.16em rgb(0, 162, 38), 0.1em -0.1em 0.16em rgb(0, 162, 38), -0.1em 0.1em 0.16em rgb(0, 162, 38);
+}
+.user_panel .user_panel_links .link-buyWcoins:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(50, 240, 233)), color-stop(50%, rgb(61, 227, 180)), to(rgb(181, 237, 83)));
+  background-image: linear-gradient(180deg, rgb(50, 240, 233) 0%, rgb(61, 227, 180) 50%, rgb(181, 237, 83) 100%);
+  border: 0.1em solid #b7f44e;
+  -webkit-transform: translate(0.07em, 0.07em);
+          transform: translate(0.07em, 0.07em);
+}
 .user_panel .user_panel_links .link-report {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3359,7 +3407,7 @@ body {
   letter-spacing: 0.5px;
 }
 .reset_info_div .reset_stats_div .reset_stats_description_div span em {
-  color: #b95b8b;
+  color: #ed4359;
 }
 .reset_info_div .reset_stats_div .reset_stats_description_div span em em {
   color: rgb(88, 88, 240);
@@ -4041,6 +4089,44 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.guide_main_container .golden_mobs_item_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5em 0.4em 0.5em 0.5em;
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_image_wrapper {
+  margin-right: 1em;
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_image_wrapper img {
+  border: 0.1em solid rgb(60, 54, 71);
+  border-radius: 0.4em;
+  height: 10em;
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_desc_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_desc_wrapper .golden_desc_title {
+  color: rgba(239, 180, 29, 0.9333333333);
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_desc_wrapper .golden_info_p {
+  font-size: 0.75em;
+}
+.guide_main_container .golden_mobs_item_container .golden_mobs_desc_wrapper .golden_info_p em {
+  font-weight: 600;
+  color: #ed750c;
+}
 .guide_main_container .dg_desc1_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4519,6 +4605,69 @@ body {
 }
 .user_info_container .account_info_table tbody tr .user_td_credits {
   color: rgb(168, 255, 226);
+}
+
+.buyWcoins_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  min-height: 15em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.15em solid rgb(63, 60, 72);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+  border-radius: 0.5em;
+  color: whitesmoke;
+  padding: 1em 0.3em 0.5em 1em;
+  margin: 0.5em 0 0 0;
+}
+
+.buyWcoins_fail_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  min-height: 15em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.15em solid rgb(63, 60, 72);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+  border-radius: 0.5em;
+  color: whitesmoke;
+  padding: 1em 0.3em 0.5em 1em;
+  margin: 0.5em 0 0 0;
+}
+
+.buyWcoins_success_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  min-height: 15em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.15em solid rgb(63, 60, 72);
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+  border-radius: 0.5em;
+  color: whitesmoke;
+  padding: 1em 0.3em 0.5em 1em;
+  margin: 0.5em 0 0 0;
 }
 
 .buyVip_container {
