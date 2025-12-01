@@ -5,11 +5,14 @@ const jwt = require('jsonwebtoken')
 // const fs = require('fs')
 
 // const buf = new Buffer.from(jsonBuffer.data, 'base64')
-// console.log(buf);
+// // console.log(buf);
 // fs.writeFile("pic3.gif", buf, (err) => {
 //     if (err) console.log(err);
 //     console.log(' The file was created! ')
 // })
+// let base64String = btoa(String.fromCharCode(...new Uint8Array(byteArray)));
+// document.getElementById('yourImg').src = `data:image/jpeg;base64,${base64String}`;
+
 
 class CharacterController {
     async getOneCharacter(req, res) {

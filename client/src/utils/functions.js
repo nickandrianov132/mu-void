@@ -557,3 +557,26 @@ export function vipExpireCheck(vipDate) {
         return false
     }
 }
+
+export function wcoinsToCurrency(wc) {
+    let currency
+    if(wc == 300) {
+        currency = 5
+    }
+    else if(wc == 600) {
+        currency = 10
+    }
+    else if(wc == 900) {
+        currency = 15
+    }
+    else if(wc == 1200) {
+        currency = 20
+    }
+    else if(wc == 2100) {
+        currency = 35
+    }
+    else{
+        currency = null
+    }
+    return currency
+}

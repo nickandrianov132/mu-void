@@ -19,6 +19,8 @@ router.get('/voteTop100arena', userController.userVoteTop100arena)
 router.get('/voteArenaTop100', userController.userVoteArenaTop100)
 // router.get('/voteGamesTop100', userController.userVoteGamesTop100)
 router.post('/buyVip', userController.buyVip)
+router.post('/cryptocloud-insert-invoice', userController.insertCryptoInvoice)
+router.post('/cryptocloud-callback', userController.cryptoCloudPayment)
 
 
 

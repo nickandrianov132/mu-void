@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <div className='home_container'>
-            <HomeContent
+            {/* <HomeContent
                 title="🔖VIP is now available!🔥💣"
                 date="18.11.2025"
                 sideImage={Images.vip_news}
@@ -20,8 +20,8 @@ const Home = () => {
                         <p className='description_item_p'><b className='intro_b'>For New Players 3 Days of Gold VIP free!🔰</b><br/><br/>🔸- For new accounts 3 days of <b className='b_gold'>Gold VIP</b> will be activated automatically to grow and make resets faster!<b className='b_symbol'>💪</b><br/>🔸- All other players can purchase VIP in the account panel using WCoins.<b className='b_symbol'>🪙</b><br/><br/><em className='ps_em'> </em></p>
                     </div>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="💥Weekend Events Coming!💝"
                 date="18.11.2025"
                 sideImage={Images.sunday_events}
@@ -34,7 +34,7 @@ const Home = () => {
                         <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/><br/><em className='ps_em'>On Sunday 23.11.2025 at 18:30 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
                 title="🎁Added Jewels cheance drop!💎"
                 date="08.11.2025"
@@ -49,7 +49,7 @@ const Home = () => {
                     </div>
                 </div>
             </HomeContent> */}
-            <HomeContent
+            {/* <HomeContent
                 title="🎉Server is Open!🔓"
                 date="08.11.2025"
                 sideImage={Images.open_bg_edit}
@@ -62,8 +62,8 @@ const Home = () => {
                         <p className='description_item_p'><b className='intro_b'>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+100% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="⭐ Vote for us and earn Wcoins💰"
                 date="04.11.2025"
                 sideImage={Images.vote_bg1}
@@ -76,8 +76,8 @@ const Home = () => {
                         <p className='description_item_p'><br/> - Registration is available now. Login and Vote!<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a> <br/> - In account pannel were added few links of MMO Top100 rankings with WCoins reward.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> <b>Thanks to everyone who helps promote our server.</b></p>
                     </div>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="📢Grand Opening November 08 at 12:00 Server Time🔥"
                 date="16.10.2025"
                 sideImage={Images.img_opening_news}
@@ -90,8 +90,8 @@ const Home = () => {
                         <p className='description_item_p'><b>- The great journey will begin on November 08 at 12:00 Server Time / 14:00 Kyiv / 15:00 Moscow / 13:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WC to use for getting VIP or buying things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen in 2 weeks after the journey begun.<br/> - We hope you will enjoy your adventure!</p>
                     </div>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="🔖Open Beta-Test is Closed 🔒"
                 date="16.10.2025"
                 sideImage={Images.bg_obt_close}
@@ -104,15 +104,31 @@ const Home = () => {
                         <p className='description_item_p'><b>Waiting for you on the server Opening November 08 at 12:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All accounts and characters were deleted deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
-                title="📌Easy OBT for players💎"
-                date="30.08.2025"
+                title="💥Open Beta Test features📢"
+                date="29.11.2025"
+                // sideImage={Images.obt_new}
                 sideImagesArr={imgArray}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>OBT features:</h4>
+                        <h4 className='description_item_h4_opening'>🎯Features for easy testing:</h4>
+                    </div>
+                    <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
+                    <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
+                    <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
+                    <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
+                </div>
+            </HomeContent> */}
+            {/* <HomeContent
+                title="🚀Open Beta Test💢"
+                date="29.11.2025"
+                sideImage={Images.obt_new}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>🚀OBT started!</h4>
                     </div>
                     <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
                     <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
@@ -120,6 +136,20 @@ const Home = () => {
                     <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
                 </div>
             </HomeContent>                                          */}
+            <HomeContent
+                title="📌OBT Launching 🔔"
+                date="01.12.2025"
+                sideImage={Images.obt_coming}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>🚀OBT start december 5<sup>th</sup></h4>
+                    </div>
+                    <p className='description_item_p'>🔶 <b className='p_title'>Due to the extensive rework and content update of the game server, we are pleased to announce that we are launching open beta testing on December 5th.</b></p>
+                    <p className='description_item_p'><b>🔨🔧</b> List of all updates and reworks will be posted upon the launching of OBT.<b>📜</b> </p>
+                    <h4 className='description_item_h5'>We've decided to rework our server settings and content to make gameplay easier so you can develop and equip your characters faster and more enjoyably.</h4>
+                </div>
+            </HomeContent>                                         
         </div>
     );
 }

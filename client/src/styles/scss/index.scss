@@ -556,9 +556,15 @@ body {
                 background: linear-gradient(316deg,rgba(237, 204, 204, 1) 0%, rgba(232, 223, 213, 1) 40%, rgba(240, 227, 213, 1) 75%, rgba(237, 204, 204, 1) 100%);
                 .description_item_p{
                     @include app_margin(0.3em 0.3em 0 0.4em);
-                    font-size: 0.75em;
+                    font-size: 0.7em;
                     margin-bottom: 1em;
                     font-weight: 500;
+                    .p_title{
+                        @include app_margin(0.3em 0.3em 0 0.4em);
+                        font-size: 1.05em;
+                        font-weight: 700;
+                        color: #172c5cff;
+                    }
                     &::first-letter{
                         margin-left: 1em;
                     }
@@ -644,6 +650,12 @@ body {
                     }
                 }
                 .description_item_h4{
+                    @include app_margin(0.3em 0.3em 0 0.4em);
+                    font-size: 0.75em;
+                    font-weight: 600;
+                }
+                .description_item_h5{
+                    color: rgba(104, 112, 110, 1);
                     @include app_margin(0.3em 0.3em 0 0.4em);
                     font-size: 0.75em;
                     font-weight: 600;
@@ -3598,7 +3610,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    min-height: 15em;
+    min-height: 24em;
     background-image: $containers_bg;
     border: 0.15em solid $containers_border_col;
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.16em, $containers_box_shadow_col);
@@ -3606,6 +3618,95 @@ body {
     color: whitesmoke;
     @include app_padding(1em 0.3em 0.5em 1em);
     @include app_margin(0.5em 0 0 0);
+    .buy_wcoins_select_wrapper{
+        display: flex;
+        align-items: baseline;
+        .buy_wcoins_select{
+            display: inline-block;
+            cursor: pointer;
+            border: 0.1em solid transparent;
+            border-radius: 0.3em;
+            font-size: 0.8em;
+            background: rgba(14, 255, 163, 1);
+            @include app_padding(0.1em);
+            outline: none;  
+            outline-color:orangered;
+            outline-offset: 0.1em;
+            option{
+                background: rgba(0, 228, 141, 1);
+            }
+
+        }
+        .buy_coins_currency_amount_p{
+            font-size: 0.8em;
+            color: #5da7f2ff;
+            margin-left: 0.6em;
+            em{
+                color: #fd5050ff;
+            }
+        }
+    }
+    .buy_wcoins_cryptocloud_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        max-width: 10em;
+        position: relative;
+        @include app_margin(0.4em 0.5em 0.4em 0.2em);
+        .spinner_wrapper{
+            height: 1.5em;
+        }
+        .spinner_small{
+            width: 100%;
+            .spinner_small_wrapper{
+                position: absolute;
+                top: -0.8em;
+                left: 65%;
+            }
+        }
+        img{
+            // border: 0.1em solid #1d1c1cff;
+            border-radius: 0.3em;
+            margin-bottom: 0.3em;
+        }
+        .buy_wcoins_btn{
+            @extend %formBtn;
+            font-size: 0.8em;
+            padding: 0.2em 0.8em;
+            border: 0.1em solid #009f67ff;
+            transition: 0.1s;
+            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, rgb(38, 38, 38));
+            &:hover{
+                color: whitesmoke;
+                border: 0.2em solid #01bc84ff;
+                background-image: linear-gradient(180deg,rgba(78, 252, 157, 1) 0%, rgba(57, 196, 143, 1) 40%, rgba(34, 212, 108, 1) 60%, rgba(78, 252, 157, 1) 100%);
+                border: 0.1em solid rgb(0, 195, 130);
+                @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(89, 255, 227));
+            }
+            &:active{
+                transform: translate(1px,1px);
+            }
+        }
+        .buy_wcoins_a{
+            @extend %formBtn;
+            font-size: 0.8em;
+            padding: 0.2em 0.8em;
+            text-align: center;
+            border: 0.1em solid #0244dd;
+            transition: 0.1s;
+            background-image: linear-gradient(0deg,rgba(43, 68, 189, 1) 0%, rgba(40, 50, 178, 1) 26%, rgba(39, 39, 171, 1) 45%, rgba(36, 62, 177, 1) 59%, rgba(30, 107, 189, 1) 74%, rgba(12, 168, 228, 1) 90%, rgba(0, 180, 240, 1) 100%);
+            &:hover{
+                color: whitesmoke;
+                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #1b1a1aff);
+                border: 0.1em solid #307bf4ff;
+                background-image: linear-gradient(180deg,rgba(43, 116, 189, 1) 0%, rgba(48, 58, 199, 1) 26%, rgba(54, 54, 194, 1) 45%, rgba(43, 70, 189, 1) 59%, rgba(30, 107, 189, 1) 74%, rgba(12, 168, 228, 1) 90%, rgba(0, 180, 240, 1) 100%);
+                @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgba(89, 197, 255, 1));
+            }
+            &:active{
+                transform: translate(1px,1px);
+            }
+        }
+    }
 }
 .buyWcoins_fail_container{
     display: flex;
@@ -3632,6 +3733,9 @@ body {
     color: whitesmoke;
     @include app_padding(1em 0.3em 0.5em 1em);
     @include app_margin(0.5em 0 0 0);
+    .buyWcoins_reply_wrapper{
+        
+    }
 }
 .buyVip_container{
     display: flex;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.buyVip_container .vip_table tbody tr .vip_table_btn, .form_btn {
+.buyVip_container .vip_table tbody tr .vip_table_btn, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn, .form_btn {
   border: 0.2em solid #01bc74;
   border-radius: 0.4em;
   color: white;
@@ -619,9 +619,15 @@ body {
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
   margin: 0.3em 0.3em 0 0.4em;
-  font-size: 0.75em;
+  font-size: 0.7em;
   margin-bottom: 1em;
   font-weight: 500;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .p_title {
+  margin: 0.3em 0.3em 0 0.4em;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #172c5c;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p::first-letter {
   margin-left: 1em;
@@ -715,6 +721,12 @@ body {
   margin-left: 1em;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_h4 {
+  margin: 0.3em 0.3em 0 0.4em;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_h5 {
+  color: rgb(104, 112, 110);
   margin: 0.3em 0.3em 0 0.4em;
   font-size: 0.75em;
   font-weight: 600;
@@ -4616,7 +4628,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  min-height: 15em;
+  min-height: 24em;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
   background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
   border: 0.15em solid rgb(63, 60, 72);
@@ -4626,6 +4638,109 @@ body {
   color: whitesmoke;
   padding: 1em 0.3em 0.5em 1em;
   margin: 0.5em 0 0 0;
+}
+.buyWcoins_container .buy_wcoins_select_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.buyWcoins_container .buy_wcoins_select_wrapper .buy_wcoins_select {
+  display: inline-block;
+  cursor: pointer;
+  border: 0.1em solid transparent;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  background: rgb(14, 255, 163);
+  padding: 0.1em;
+  outline: none;
+  outline-color: orangered;
+  outline-offset: 0.1em;
+}
+.buyWcoins_container .buy_wcoins_select_wrapper .buy_wcoins_select option {
+  background: rgb(0, 228, 141);
+}
+.buyWcoins_container .buy_wcoins_select_wrapper .buy_coins_currency_amount_p {
+  font-size: 0.8em;
+  color: #5da7f2;
+  margin-left: 0.6em;
+}
+.buyWcoins_container .buy_wcoins_select_wrapper .buy_coins_currency_amount_p em {
+  color: #fd5050;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  max-width: 10em;
+  position: relative;
+  margin: 0.4em 0.5em 0.4em 0.2em;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .spinner_wrapper {
+  height: 1.5em;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .spinner_small {
+  width: 100%;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .spinner_small .spinner_small_wrapper {
+  position: absolute;
+  top: -0.8em;
+  left: 65%;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper img {
+  border-radius: 0.3em;
+  margin-bottom: 0.3em;
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn {
+  font-size: 0.8em;
+  padding: 0.2em 0.8em;
+  border: 0.1em solid #009f67;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  text-shadow: 0.01em 0.01em 0.12em rgb(38, 38, 38), -0.01em -0.01em 0.12em rgb(38, 38, 38), 0.01em -0.01em 0.12em rgb(38, 38, 38), -0.01em 0.01em 0.12em rgb(38, 38, 38);
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn:hover {
+  color: whitesmoke;
+  border: 0.2em solid #01bc84;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(78, 252, 157)), color-stop(40%, rgb(57, 196, 143)), color-stop(60%, rgb(34, 212, 108)), to(rgb(78, 252, 157)));
+  background-image: linear-gradient(180deg, rgb(78, 252, 157) 0%, rgb(57, 196, 143) 40%, rgb(34, 212, 108) 60%, rgb(78, 252, 157) 100%);
+  border: 0.1em solid rgb(0, 195, 130);
+  -webkit-box-shadow: 0.01em 0.01em 0.2em rgb(89, 255, 227), -0.01em -0.01em 0.2em rgb(89, 255, 227), 0.01em -0.01em 0.2em rgb(89, 255, 227), -0.01em 0.01em 0.2em rgb(89, 255, 227);
+          box-shadow: 0.01em 0.01em 0.2em rgb(89, 255, 227), -0.01em -0.01em 0.2em rgb(89, 255, 227), 0.01em -0.01em 0.2em rgb(89, 255, 227), -0.01em 0.01em 0.2em rgb(89, 255, 227);
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a {
+  font-size: 0.8em;
+  padding: 0.2em 0.8em;
+  text-align: center;
+  border: 0.1em solid #0244dd;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(43, 68, 189)), color-stop(26%, rgb(40, 50, 178)), color-stop(45%, rgb(39, 39, 171)), color-stop(59%, rgb(36, 62, 177)), color-stop(74%, rgb(30, 107, 189)), color-stop(90%, rgb(12, 168, 228)), to(rgb(0, 180, 240)));
+  background-image: linear-gradient(0deg, rgb(43, 68, 189) 0%, rgb(40, 50, 178) 26%, rgb(39, 39, 171) 45%, rgb(36, 62, 177) 59%, rgb(30, 107, 189) 74%, rgb(12, 168, 228) 90%, rgb(0, 180, 240) 100%);
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a:hover {
+  color: whitesmoke;
+  text-shadow: 0.01em 0.01em 0.1em #1b1a1a, -0.01em -0.01em 0.1em #1b1a1a, 0.01em -0.01em 0.1em #1b1a1a, -0.01em 0.01em 0.1em #1b1a1a;
+  border: 0.1em solid #307bf4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(43, 116, 189)), color-stop(26%, rgb(48, 58, 199)), color-stop(45%, rgb(54, 54, 194)), color-stop(59%, rgb(43, 70, 189)), color-stop(74%, rgb(30, 107, 189)), color-stop(90%, rgb(12, 168, 228)), to(rgb(0, 180, 240)));
+  background-image: linear-gradient(180deg, rgb(43, 116, 189) 0%, rgb(48, 58, 199) 26%, rgb(54, 54, 194) 45%, rgb(43, 70, 189) 59%, rgb(30, 107, 189) 74%, rgb(12, 168, 228) 90%, rgb(0, 180, 240) 100%);
+  -webkit-box-shadow: 0.01em 0.01em 0.2em rgb(89, 197, 255), -0.01em -0.01em 0.2em rgb(89, 197, 255), 0.01em -0.01em 0.2em rgb(89, 197, 255), -0.01em 0.01em 0.2em rgb(89, 197, 255);
+          box-shadow: 0.01em 0.01em 0.2em rgb(89, 197, 255), -0.01em -0.01em 0.2em rgb(89, 197, 255), 0.01em -0.01em 0.2em rgb(89, 197, 255), -0.01em 0.01em 0.2em rgb(89, 197, 255);
+}
+.buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
 }
 
 .buyWcoins_fail_container {
@@ -4669,7 +4784,6 @@ body {
   padding: 1em 0.3em 0.5em 1em;
   margin: 0.5em 0 0 0;
 }
-
 .buyVip_container {
   display: -webkit-box;
   display: -ms-flexbox;

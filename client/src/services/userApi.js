@@ -56,8 +56,15 @@ export const userApi = api.injectEndpoints({
                 body: vipData
             }),
             invalidatesTags: ["userInfo"]
+        }),
+        userCryptoInvoice: build.mutation({
+            query: (invoiceData) => ({
+                url: `/user/cryptocloud-insert-invoice`,
+                method: 'POST',
+                body: invoiceData
+            }),
         })
     }),
 })
 
-export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation } = userApi
+export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation, useUserCryptoInvoiceMutation } = userApi

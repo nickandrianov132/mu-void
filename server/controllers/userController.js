@@ -55,6 +55,14 @@ async function findOneUserLogin(login) {
     .query('SELECT memb.memb___id AS user_login FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @memb___id')
     return acc
 }
+async function findUserInvoice(uuid) {
+    const pool = await poolPromise
+    const request = pool.request()
+    const invoice = await request
+    .input('uuid', sql.VarChar(50), uuid)
+    .query('SELECT cp.accLogin FROM dbo.cryptocloud_payment cp  WHERE cp.uuid = @uuid')
+    return invoice
+}
 async function findUserAnswer(answer) {
     const pool = await poolPromise
     const request = pool.request()
@@ -99,6 +107,45 @@ async function updateVoteUser(login, site, date, ip) {
 }
 
 class UserController {
+    async insertCryptoInvoice(req, res, next) {
+        const {accLogin, uuid, wcoins} = req.body
+        const pool = await poolPromise
+        const request = pool.request()
+        const insertCyptoCloudPayment = await request
+        .input('accLogin', sql.VarChar(10), accLogin)
+        .input('uuid', sql.VarChar(50), uuid)
+        .input('wcoins', sql.Int(), wcoins)
+        .execute('dbo.add_cryptocloud_payment')
+        return res.json(insertCyptoCloudPayment.recordset[0])
+    }
+
+    async cryptoCloudPayment(req, res, next) {
+        const {status, amount_crypto, invoice_info} = req.body
+        // console.log(req.body);
+        const pool = await poolPromise
+        const request = pool.request()
+        const isInvoiceExist = await findUserInvoice(invoice_info.uuid)
+        if(isInvoiceExist.recordset.length == 0) {
+            return next(ApiError.internal("Invoice not exist!"))
+        }
+        console.log(isInvoiceExist.recordset[0].accLogin);
+        if(status == "success") {
+            console.log("success");
+            // if(amount_crypto == 10) {
+            //     const buyWcoins = await request
+            //     .input('AccoundID', sql.VarChar(10), invoice_info.name)
+            //     .input('Type', sql.Int(), 0)
+            //     .input('Coin', sql.Float(), amount_crypto * 20)
+            //     .execute('dbo.WZ_IBS_AddCoin')
+            //     return res.json(buyWcoins.recordset[0].RESULT)
+            // }
+            return res.json(1)
+        } else {
+            // console.log(req.body);
+            console.log("error");
+            return res.json(0)
+        }
+    }
     async  userVoteTOPG(req, res, next) {
         const {p_resp, ip} = req.query
         const pool = await poolPromise
@@ -228,10 +275,10 @@ class UserController {
             .input('regQuestion', sql.VarChar(50), regQuestion)
             .input('regAnswer', sql.VarChar(50), regAnswer)
             .input('accJoinDate', sql.VarChar(25), date)
-            .input('userIp', sql.VarChar(15), ip)
-            .input('dayAdd', sql.Int(), 3)
-            .input('vipType', sql.SmallInt(), 3)
-            .execute(`dbo.RegAccWithVip`)
+            // .input('userIp', sql.VarChar(15), ip)
+            // .input('dayAdd', sql.Int(), 3)
+            // .input('vipType', sql.SmallInt(), 3)
+            .execute(`dbo.RegAccount`)
             const userResponse = await request
             .query('SELECT memb.memb___id AS login, memb.memb__pwd AS password, memb.mail_addr AS email FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @accLogin')
         const userData = userResponse.recordset[0]
