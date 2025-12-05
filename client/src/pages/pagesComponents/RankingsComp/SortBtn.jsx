@@ -18,7 +18,7 @@ const SortBtn = ({title, sortType}) => {
             dispatch(addCharacters(sortedChars))
         }
     }
-
+    console.log(sortedChars);
     return (
         <div className="rankings_sort_btn_div">
             <button 

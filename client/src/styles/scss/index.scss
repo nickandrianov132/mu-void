@@ -44,9 +44,9 @@ $p-tip-font-col: rgb(232, 231, 196);
 $em-col: #f85a5a;
 $em-gr-ml-col: rgb(251, 173, 27);
 $em-res-zen-col: rgb(244, 156, 69);
-$info_em-col1: rgb(80, 155, 165);
-$info_em-col2: rgb(248, 150, 52);
-$info_em-col3: rgb(78, 174, 91);
+$info_em-col1: rgba(33, 214, 255, 1);
+$info_em-col2: rgba(248, 91, 52, 1);
+$info_em-col3: rgba(75, 232, 96, 1);
 $h5-dungeon-mob-col: rgb(222, 201, 201);
 $h6-remark-col: #15efb5;
 $h6-quantity-col: #15efb5;
@@ -559,6 +559,18 @@ body {
                     font-size: 0.7em;
                     margin-bottom: 1em;
                     font-weight: 500;
+                    b{
+                        font-size: 1.1em;
+                    }
+                    a{
+                        font-size: 1.1em;
+                        color:#06f97f;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#2b1b66);
+                        &:hover{
+                            color:#1eff00;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em,#1d1735);
+                        }
+                    }
                     .p_title{
                         @include app_margin(0.3em 0.3em 0 0.4em);
                         font-size: 1.05em;
@@ -653,12 +665,40 @@ body {
                     @include app_margin(0.3em 0.3em 0 0.4em);
                     font-size: 0.75em;
                     font-weight: 600;
+                    margin-bottom: 1em;
+                    &::first-letter{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: 600;
+                        font-size: 1.4em;
+                    }
                 }
                 .description_item_h5{
                     color: rgba(104, 112, 110, 1);
                     @include app_margin(0.3em 0.3em 0 0.4em);
                     font-size: 0.75em;
                     font-weight: 600;
+                }
+                h5{
+                    margin-left: 0.5em;
+                }
+                ul{
+                    li{
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
+                        margin-left: 1em;
+                        cursor:default;
+                        font-size: 0.8em;
+                        font-weight: 500;
+                        color:#1d1d1d;
+                        a{
+                            font-family: "Poppins", sans-serif;;
+                            font-weight: 600;
+                            color:#1c72fb;
+                            &:hover{
+                                color:#24def3;
+                                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em, rgba(61, 37, 93, 1));
+                            }
+                        }
+                    }
                 }
             }
             .description_wrapper_p{
@@ -2767,10 +2807,21 @@ body {
                     color: rgb(54, 220, 181);
                 }
                 .dropList_class_items{
-                    color: #dddd1c;
+                    color: #ffff27ff;
                     margin-bottom: 0.6em;
                     b{
-                        color: rgb(218, 93, 48);
+                        color: rgba(252, 73, 53, 1);
+                    }
+                }
+                .dropList_jewels_items{
+                    color: #ffffffff;
+                    margin-bottom: 0.6em;
+                    b{
+                        color: rgba(15, 255, 91, 1);
+                    }
+                    em{
+                        color: #ffb453ff;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, #ff1616ee);
                     }
                 }
                 .dropList_class_items_anc{
@@ -3305,6 +3356,171 @@ body {
             }
             .dg_img_reward{
                 height: 16em;
+            }
+        }
+    }
+    .santa_wizard_container{
+        display: flex;
+        flex-direction: column;
+        .event_description_wrapper{
+            display: flex;
+            flex-direction: column;
+            .desc_div{
+                display: flex;
+                flex-direction: column;
+                font-size: 0.85em;
+                .timing_div{
+                    color: $h6-remark-col;
+                    em{
+                        color: #ff774eff;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.06em, #fb3f3fff); 
+                    }
+                }
+                .location_div{
+                    color: $h6-remark-col;
+                    em{
+                        color: whitesmoke;
+                    }
+                }
+            }
+            .event_info{
+                font-size: 0.8em;
+            }
+            .img_wrapper{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                @include app_margin(0.5em 0 0.5em 0);
+                img{
+                    // height: 10em;
+                    width: 60%;
+                    border: 0.1em solid #505050ff;
+                    border-radius: 0.3em;
+                    margin-right: 0.1em;
+                }
+            }
+        }
+        .santa_wizard_item_container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.4em;
+            .santa_wizard_item_header{
+                margin-left: 1em;
+            }
+            .santa_wizard_item_body{
+                display: flex;
+                .desc_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    .desc_title{
+                        color: #00bcebff;
+                    }
+                    .desc_item_wrapper{
+                        display: flex;
+                        font-size: 0.8em;
+                        .item_span{
+                            em{
+                                color: #ff334bff;
+                                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, #f9542fff); 
+                            }
+                        }
+                        .desc_span{
+                            margin-left: 0.2em;
+                            .em_zem{
+                                color: #ffe524ff;
+                            }
+                            .em_jewels{
+                                color: #fff01fff;
+                                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, #ff20b1ff); 
+                            }
+                            .em_invitation{
+                                color: #971efaff;
+                                // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, #c1ed00ff); 
+                            }
+                        }
+                    }
+            }
+            }
+            .img_wrapper{
+                display: flex;
+                width: 20%;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+                img{
+                    width: 100%;
+                    border: 0.1em solid #505050ff;
+                    border-radius: 0.3em;
+                }
+            }
+        }
+    }
+    .classes_item_container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 0.1em solid #868585ff;
+        margin-bottom: 0.5em;
+        .class_item_title{
+            font-size: 0.9em;
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 0.15em;
+            color: #10afb7ff;
+            margin-bottom: 0.2em;
+        }
+        .class_item_body{
+            display: flex;
+            justify-content: center;
+            width: 98%;
+            margin-bottom: 0.5em;
+            .class_img_wrapper{
+                display: flex;
+                width: 25%;
+                max-height: 15em;
+                border-radius: 0.3em;
+                border: 0.1em solid #393939ff;
+                @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #000000);
+                background-image: linear-gradient(140deg,rgba(41, 41, 41, 1) 0%, rgba(54, 54, 69, 1) 35%, rgba(12, 51, 59, 1) 100%);
+                .class_img{
+                    width: 100%;
+                    
+                }
+            }
+            .class_info_wrapper{
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                font-size: 0.7em;
+                @include app_margin(0 0 0 0.5em);
+                p{
+                    b{
+                        .pvm_em{
+                            font-style: normal;
+                            color: #2bd330ff;
+                        }
+                        .pvp_em{
+                            font-style: normal;
+                            color: #cf2751ff;
+                        }
+                    }
+                }
+                .skill_wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    width: 100%;
+                    img{
+                        width: 5%;
+                        margin-right: 0.4em;
+                    }
+                    p{
+                        color: #ffdf86ff;
+                    }
+
+                }
             }
         }
     }

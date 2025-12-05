@@ -8,7 +8,7 @@ const MossGambler = () => {
             <EventsContainer>
                 <EventsHeader title="Moss Gambler Info:" />
                 <div className="small_event_body">
-                    <p className="small_event_p">Moss Gambler is NPC in the Elblend from whom you might get valuable weapons up to powerful super prize weapon. Weapons vary from non excellent plane weapon to excellent weapon up to 3 excellent options. The price of each try to gamble is <em className="em_zen">5 000 000 zen</em>.</p>
+                    <p className="small_event_p">Moss Gambler is NPC in the Elblend from whom you might get valuable weapons up to powerful super prize weapon. Weapons vary from non excellent plane weapon to excellent weapon up to 3 excellent options. The price of each try to gamble is <em className="em_zen">10 000 000 zen</em>.</p>
                     <h4>Super Prize Weapons:</h4>
                     <div className="small_event_imgs_wrapper_small">
                         <img src={Images.brova} className="small_event_img_small1"/>

@@ -1,5 +1,5 @@
 
-const GuideBoxesItem = ({locations, enchance, options, armors, weapons, shields, helmes, pants, boots, gloves, image}) => {
+const GuideBoxesItem = ({locations, enchance, options, armors, weapons, shields, helmes, pants, boots, gloves, image, jewels}) => {
     return (
         <div className="dropBoxes_item_div">
             <div className="dropBoxes_image_wrapper">
@@ -14,6 +14,7 @@ const GuideBoxesItem = ({locations, enchance, options, armors, weapons, shields,
                     <div className="dropList_class_items"><b>Armors:</b> {armors}</div>
                     <div className="dropList_class_items"><b>Weapons:</b> {weapons}</div>
                     {shields && <div className="dropList_class_items"><b>Shields:</b> {shields}</div>}
+                    {jewels && <div className="dropList_jewels_items"><b>💎 {jewels}</b> - <em>Jewel of Bless, Soul, Life, Chaos</em></div>}
                 </div>
             </div>
         </div>

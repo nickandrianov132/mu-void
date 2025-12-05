@@ -44,13 +44,13 @@ const DevilSquare = () => {
                             {className: "th_base", title: "4th Place:"}
                             ]}
                     tbody3={[
-                            {className: "td_zen", num: "1", first: "4,000,000", second: "3,000,000", third: "2,000,000", fourth: "1,000,000"},
+                            {className: "td_zen", num: "1", first: "3,000,000", second: "2,000,000", third: "1,000,000", fourth: "500,000"},
                             {className: "td_zen", num: "2", first: "5,000,000", second: "4,000,000", third: "3,000,000", fourth: "2,000,000"},
                             {className: "td_zen", num: "3", first: "6,000,000", second: "5,000,000", third: "4,000,000", fourth: "3,000,000"},
                             {className: "td_zen", num: "4", first: "7,000,000", second: "6,000,000", third: "5,000,000", fourth: "4,000,000"},
-                            {className: "td_zen", num: "5", first: "8,000,000", second: "7,000,000", third: "6,000,000", fourth: "5,000,000"},
-                            {className: "td_zen", num: "6", first: "10,000,000", second: "9,000,000", third: "8,000,000", fourth: "7,000,000"},
-                            {className: "td_zen", num: "7", first: "15,000,000", second: "13,000,000", third: "12,000,000", fourth: "11,000,000"},
+                            {className: "td_zen", num: "5", first: "10,000,000", second: "9,000,000", third: "8,000,000", fourth: "7,000,000"},
+                            {className: "td_zen", num: "6", first: "15,000,000", second: "13,000,000", third: "12,000,000", fourth: "11,000,000"},
+                            {className: "td_zen", num: "7", first: "20,000,000", second: "18,000,000", third: "16,000,000", fourth: "14,000,000"},
                             ]}
 
                 />

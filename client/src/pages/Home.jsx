@@ -1,10 +1,13 @@
 import HomeContent from './pagesComponents/HomeComp/HomeContent';
 import Images from '../assets/Images';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
+import { GUIDE_SANTA_INFO } from '../utils/constants';
 
 const imgArray = [Images.easy_obt1, Images.easy_obt2, Images.easy_obt3]
-const Home = () => {
 
+const Home = () => {
+const navigate = useNavigate()
     return (
         <div className='home_container'>
             {/* <HomeContent
@@ -121,21 +124,48 @@ const Home = () => {
                     <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
                 </div>
             </HomeContent> */}
-            {/* <HomeContent
+            <HomeContent
                 title="🚀Open Beta Test💢"
-                date="29.11.2025"
+                date="05.12.2025"
                 sideImage={Images.obt_new}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
                         <h4 className='description_item_h4_opening'>🚀OBT started!</h4>
                     </div>
-                    <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
+                    <p className='description_item_p'> <b>Registration for OBT is open.</b> <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
                     <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
-                    <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
-                    <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
+                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
+                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
                 </div>
-            </HomeContent>                                          */}
+            </HomeContent>
+            <HomeContent
+                title="📢Updates 📝"
+                date="05.12.2025"
+                sideImage={Images.updates1}
+            >
+                <div className='description_list'>
+                    <div className='opening_wrapper_h4'>
+                        <h4 className='description_item_h4_opening'>🔨Updates 05 december 2025🔧</h4>
+                    </div>
+                    <h5>Changes:</h5>
+                    <ul>
+                        <li>- reworked White Wizard Event.<a href='https://mu-void.com/guide/white_wizard_info'>White Wizard!</a></li>
+                        <li>- reworked Santa Event. <a href='https://mu-void.com/guide/santa_info'>Santa!</a></li>
+                        <li>- minor Classes rework. <a href='https://mu-void.com/guide/classes_info'>Classes!</a></li>
+                        <li>- Gold Rabbits drop reworked. <a href='https://mu-void.com/guide/drop_dungeon_event_info'>Rabbits!</a></li>
+                        <li>- Drop items rework. <a href='https://mu-void.com/guide/drop_box_info'>Drop!</a></li>
+                        <li>- Castle Lord Mix was reworked.</li>
+                        <li>- Reduced damage, defense, HP of monsters up ot Atlans3.</li>
+                        <li>- Reduced damage, defense, HP of White Wizard & Orcs, Santa & Cursed Goblins, Gold Rabbits.</li>
+                        <li>- Added New Socket items into drop from Selupan.</li>
+                    </ul>
+                    {/* <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
+                    <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
+                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
+                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4> */}
+                </div>
+            </HomeContent>
             <HomeContent
                 title="📌OBT Launching 🔔"
                 date="01.12.2025"

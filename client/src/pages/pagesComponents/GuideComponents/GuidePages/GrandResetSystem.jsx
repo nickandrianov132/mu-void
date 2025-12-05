@@ -19,7 +19,7 @@ const GrandResetSystem = () => {
                         <span>♦️ All Grand Resets</span>
                     </div>
                     <div className="reset_req_container">
-                        <span> - 15 Resets + 400lvl + <em className="reset_em_zen">1,000,000,000 zen</em></span>
+                        <span> - 20 Resets + 400lvl + <em className="reset_em_zen">2,000,000,000 zen</em></span>
                     </div>
                 </div>
                 {/* {/* <span>4<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">15,000,000 zen</em> </span> */}
@@ -30,9 +30,9 @@ const GrandResetSystem = () => {
                 <div className="reset_stats_div">
                     <span className="reset_stats_span">🔸Grand Reset stats:</span>
                     <div className="reset_stats_description_div">
-                            <span>➤ Dark Wizard <mark>♦</mark> Dark Knight <mark>♦</mark> Fairy Elf <mark>♦</mark> Summoner <em> - 2400 free points</em> ✨</span>
-                            <span>➤ Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 3000 free points</em> ✨</span>
-                            <span>➤ Dark Lord <em> - 2400 free points</em> + <b>600 Command</b> ✨</span>
+                            <span>➤ Dark Wizard <mark>♦</mark> Dark Knight <mark>♦</mark> Fairy Elf <mark>♦</mark> Summoner <em> - 3200 free points</em> ✨</span>
+                            <span>➤ Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 4000 free points</em> ✨</span>
+                            <span>➤ Dark Lord <em> - 3200 free points</em> + <b>800 Command</b> ✨</span>
                             <span className="grand_reset_ml_span">➤ <mark>♦</mark> All Classes Master Skill Points Reward <em> - 50 Master Skill points</em> ✨</span>
                             <span className="grand_reset_ml_span">➤ <mark>♦</mark> All Classes WCoins Reward <em> - 300 WCoins</em> 🪙</span>
                     </div>
