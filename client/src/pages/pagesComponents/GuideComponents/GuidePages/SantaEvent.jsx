@@ -10,6 +10,7 @@ const SantaEvent = () => {
             <SantaWizardEvent 
                 timing="2"
                 locationInfo="Lorencia, Noria, Devias"
+                image={Images.santa3}
                 descInfo="When event started, Cursed Santa🎅 and his Goblins appears in appropriate locations, find and defeat them to get good prizes and save The Cristmas Willage!"
                 utf_symbols="🎄⛄"
             >

@@ -10,10 +10,11 @@ const WhiteWizard = () => {
                 <SantaWizardEvent 
                 timing="2"
                 locationInfo="Lorencia, Noria, Devias"
+                image={Images.white_wizard_event}
                 descInfo="White Wizard and his Orcs invite three locations Lorencia, Noria, Devias apears in random position and towards to City. Slave them to get good rewards!"
             >
                             <SantaWizardItem 
-                title="Cursed Goblin"
+                title="Destructive Orc"
                 item1cheance="65%"
                 desc1="Zen"
                 img1={Images.white_wizard_orc}
@@ -23,7 +24,7 @@ const WhiteWizard = () => {
                 em2DescClass="em_jewels"
             />
             <SantaWizardItem 
-                title="Cursed Santa"
+                title="White Wizard"
                 img1={Images.white_wizard}
                 em1DescClass="em_zem"
                 item2cheance="40%"
