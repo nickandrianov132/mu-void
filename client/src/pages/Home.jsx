@@ -136,7 +136,8 @@ const navigate = useNavigate()
                     <p className='description_item_p'> <b>Registration for OBT is open.</b> <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
                     <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
                     <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
-                    <p className='description_item_p'><b>💣💥</b> During OBT Reset & Grand Reset coast = <b>1kk zen</b>.</p>
+                    <p className='description_item_p'><b>💣💥</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
+                    <p className='description_item_p'><b>💣💥</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
                     <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
                 </div>
             </HomeContent>

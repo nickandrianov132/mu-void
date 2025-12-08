@@ -22,7 +22,7 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
                 :
                     <button 
                         className={grCheckValid(cLevel, cReset, cZen, cClass, cOnline) ? 'grand_reset_btn_active' : 'grand_reset_btn_disable'}
-                        disabled = {!grCheckValid(cLevel, cReset, cZen, cClass, cOnline)}
+                        disabled = {grCheckValid(cLevel, cReset, cZen, cClass, cOnline)}
                         onClick={(e) => handlerGrandReset(e)}    
                     >Grand Reset</button>
                 }</>

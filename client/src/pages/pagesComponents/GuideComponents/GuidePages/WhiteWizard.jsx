@@ -16,7 +16,7 @@ const WhiteWizard = () => {
                             <SantaWizardItem 
                 title="Destructive Orc"
                 item1cheance="65%"
-                desc1="Zen"
+                desc1="500,000 Zen"
                 img1={Images.white_wizard_orc}
                 em1DescClass="em_zem"
                 item2cheance="35%"
