@@ -2,7 +2,7 @@ export function validateCharReset(status, lvl, res, gRes, zen) {
     let valid;
     const zenRes = 1000000;
     const zenEasyRes = 1000000;
-    if(gRes === 0 && res < 15) {
+    if(gRes === 0 && res < 20) {
         if(status === 0 && res === 0 && lvl >= 350 && zen >= zenEasyRes) {
             return valid = true;
         }
@@ -25,7 +25,7 @@ export function validateCharReset(status, lvl, res, gRes, zen) {
             }
         }
     }
-    if(gRes > 0 && res < 15) {
+    if(gRes > 0 && res < 20) {
         if(status === 0 && lvl === 400) {
             let resZenCheck = (zen / (res+1)) >= zenRes;
             if(resZenCheck) {
@@ -306,7 +306,7 @@ export function grCheckLevel(level) {
     }
 }
 export function grCheckReset(reset) {
-    if(reset >= 15) {
+    if(reset >= 20) {
         return true;
     } else {
         return false;

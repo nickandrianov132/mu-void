@@ -137,7 +137,7 @@ const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, 
             <div className='user_char_btn_wrapper'>
                 {!validateCharReset(cStatus, cLevel, cReset, cGrandReset, cZen) && 
                     <div className='user_char_res_warning'>
-                        {cReset >= 15 ?
+                        {cReset >= 20 ?
                             <p className='res_warn_p_max_res'><em>🔹</em> You have reached maximum Reset <em>🎉🎉</em></p>
                         :
                         <>

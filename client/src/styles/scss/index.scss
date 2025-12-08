@@ -3756,6 +3756,16 @@ body {
                 }
             }
         }
+        .grand_reset_item_footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .grand_reset_tip{
+                font-size: 0.8em;
+                color: #dc0000ff;
+                @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.14em, rgba(83, 1, 47, 1));
+            }
+        }
     }
 
 }

@@ -4822,6 +4822,21 @@ body {
           box-shadow: 0.01em 0.01em 0.12em white, -0.01em -0.01em 0.12em white, 0.01em -0.01em 0.12em white, -0.01em 0.01em 0.12em white;
   background: rgb(221, 4, 22);
 }
+.grand_reset_container .grand_reset_item_container .grand_reset_item_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.grand_reset_container .grand_reset_item_container .grand_reset_item_footer .grand_reset_tip {
+  font-size: 0.8em;
+  color: #dc0000;
+  text-shadow: 0.015em 0.015em 0.14em rgb(83, 1, 47), -0.015em -0.015em 0.14em rgb(83, 1, 47), 0.015em -0.015em 0.14em rgb(83, 1, 47), -0.015em 0.015em 0.14em rgb(83, 1, 47);
+}
 
 .user_info_container {
   display: -webkit-box;

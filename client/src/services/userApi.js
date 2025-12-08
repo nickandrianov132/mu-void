@@ -41,7 +41,7 @@ export const userApi = api.injectEndpoints({
                 method: 'POST',
                 body: name
             }),
-            invalidatesTags: ["userCharacters"]
+            invalidatesTags: ["userCharacters", "userInfo"]
         }),
         fetchAccountInfo: build.query({
             query: () => ({

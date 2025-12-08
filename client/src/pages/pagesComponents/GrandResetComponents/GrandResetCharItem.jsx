@@ -22,7 +22,7 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
                 :
                     <button 
                         className={grCheckValid(cLevel, cReset, cZen, cClass, cOnline) ? 'grand_reset_btn_active' : 'grand_reset_btn_disable'}
-                        disabled = {grCheckValid(cLevel, cReset, cZen, cClass, cOnline)}
+                        disabled = {!grCheckValid(cLevel, cReset, cZen, cClass, cOnline)}
                         onClick={(e) => handlerGrandReset(e)}    
                     >Grand Reset</button>
                 }</>
@@ -34,6 +34,23 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
                 <GrandResetCheck title="Reset" check={grCheckReset(cReset)} />
                 <GrandResetCheck title="Zen" check={grCheckZen(cZen)} />
                 <GrandResetCheck title="Offline" check={grCheckOnline(cOnline)} />
+            </div>
+            <div className="grand_reset_item_footer">
+                {!grCheck3rdProff(cClass) &&
+                    <span className="grand_reset_tip">🔸 You need to proceed final class change Quest!</span>
+                }
+                {!grCheckLevel(cLevel) &&
+                    <span className="grand_reset_tip">🔸 You character should be 400lvl!</span>
+                }
+                {!grCheckReset(cReset) &&
+                    <span className="grand_reset_tip">🔸 You character should have 20 Resets!</span>
+                }
+                {!grCheckZen(cZen) &&
+                    <span className="grand_reset_tip">🔸 You should have 2kkk zen in your inventory!</span>
+                }
+                {!grCheckOnline(cOnline) &&
+                    <span className="grand_reset_tip">🔸 Your character should be offline!</span>
+                }
             </div>
         </div>
     );
