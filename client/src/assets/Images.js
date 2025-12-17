@@ -70,6 +70,7 @@ const Images = {
     selupan_kill_3: new URL('./selupan_kill_3.jpg', import.meta.url).href, 
     selupan_kill_4: new URL('./selupan_kill_4.jpg', import.meta.url).href, 
     selupan_kill_5: new URL('./selupan_kill_5.jpg', import.meta.url).href, 
+    selupan_kill_6: new URL('./selupan_kill_6.jpg', import.meta.url).href, 
     red_dragon: new URL('./red_dragon.jpg', import.meta.url).href, 
     death_king: new URL('./death_king.jpg', import.meta.url).href, 
     death_bone: new URL('./death_bone.png', import.meta.url).href, 
@@ -196,6 +197,10 @@ const Images = {
     dragon_roar_icon: new URL('./dragon_roar_icon.png', import.meta.url).href,     
     updates3: new URL('./updates3.jpg', import.meta.url).href,     
     updates1: new URL('./updates1.jpg', import.meta.url).href,     
+    medusa1: new URL('./medusa1.jpg', import.meta.url).href,     
+    swamp_zones: new URL('./swamp_zones.jpg', import.meta.url).href,     
+    opening_january: new URL('./opening_january.jpg', import.meta.url).href,     
+    wcoins_crypto_info: new URL('./wcoins_crypto_info.png', import.meta.url).href,     
     
 }
 

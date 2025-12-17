@@ -9,15 +9,15 @@ const BossSelupan = () => {
             <div className="maya_content_container">
                 <MayaContentItem 
                     title="Selupan Boss Drop info:"
-                    remark="All items with 2-4 sockets + Luck & Skill"
+                    remark="All items with 4 sockets + Luck & Skill"
                     quantity="5 items"
                     respInfo="Respawn every 24 hours"
-                    images={[Images.selupan_kill_1, Images.selupan_kill_2, Images.selupan_kill_3, Images.selupan_kill_4, Images.selupan_kill_5]}
+                    images={[Images.selupan_kill_1, Images.selupan_kill_2, Images.selupan_kill_3, Images.selupan_kill_4]}
                     img={Images.selupan1}
                     img2={Images.selupan2}
-                    armors="Brave, Titan, Hades, Eternal Wing, Seraphim, Divine, Royal, Phantom, Destroy"
-                    weapons="Sword Breaker, Flameberge, Inberial Staff, Deadly Staff, Eternal Wing Stick, Absolute Scepter, Dark Stinger, Frost Mace, Rune Bastard Sword"
-                    shields="Crimson Glory, Guardian Shield, Salamander Shield, Frost Barrier"
+                    armors="Hell Night Set, Succubus Set, Lazy Wind Set, Dark Devil Set, Sticky Set, Ambition Set, Stormwing Set, Light Lord Set"
+                    weapons="Sonic Blade, Asura, Cyclone Sword, Blast Break, Thunderbolt, Horn of Steel, Magma Spear, Angelic Bow, Devil Crossbow, Summon Spirit Stick, Miracle Staff, Spite Staff"
+                    shields="Lazy Wind Shield, Light Lord Shield, Dark Devil Shield, Magic Knight Shield, Ambition Shield"
                 />
             </div>
         </div>

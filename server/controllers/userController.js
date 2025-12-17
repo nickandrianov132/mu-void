@@ -121,24 +121,30 @@ class UserController {
 
     async cryptoCloudPayment(req, res, next) {
         const {status, amount_crypto, invoice_info} = req.body
-        // console.log(req.body);
+        console.log(invoice_info.uuid);
         const pool = await poolPromise
         const request = pool.request()
         const isInvoiceExist = await findUserInvoice(invoice_info.uuid)
+        let accName;
         if(isInvoiceExist.recordset.length == 0) {
             return next(ApiError.internal("Invoice not exist!"))
+        } else {
+            accName = isInvoiceExist.recordset[0].accLogin
+            console.log(`Account: ${accName}`);
+            console.log(accName);
         }
         console.log(isInvoiceExist.recordset[0].accLogin);
         if(status == "success") {
             console.log("success");
-            // if(amount_crypto == 10) {
-            //     const buyWcoins = await request
-            //     .input('AccoundID', sql.VarChar(10), invoice_info.name)
-            //     .input('Type', sql.Int(), 0)
-            //     .input('Coin', sql.Float(), amount_crypto * 20)
-            //     .execute('dbo.WZ_IBS_AddCoin')
-            //     return res.json(buyWcoins.recordset[0].RESULT)
-            // }
+            console.log(invoice_info.amount_usd);
+            if(amount_crypto == 10) {
+                const buyWcoins = await request
+                .input('AccountID', sql.VarChar(10), accName)
+                .input('Type', sql.Int(), 0)
+                .input('Coin', sql.Float(), amount_crypto * 20)
+                .execute('dbo.WZ_IBS_AddCoin')
+                return res.json(buyWcoins.recordset[0].RESULT)
+            }
             return res.json(1)
         } else {
             // console.log(req.body);

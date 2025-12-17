@@ -12,6 +12,8 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
         const character = {name: cName}
         await fetchAccountCharGrandReset(character)
     }
+    const name = 'alex'
+    const greeting = `Hello - ${name}`
 
     return (
         <div className='grand_reset_item_container'>

@@ -619,12 +619,21 @@ body {
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
   margin: 0.3em 0.3em 0 0.4em;
-  font-size: 0.7em;
+  font-size: 0.75em;
   margin-bottom: 1em;
   font-weight: 500;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p b {
   font-size: 1.1em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .discord_a {
+  font-size: 1.2em;
+  color: #987eff;
+  text-shadow: 0.01em 0.01em 0.08em #2b1b66, -0.01em -0.01em 0.08em #2b1b66, 0.01em -0.01em 0.08em #2b1b66, -0.01em 0.01em 0.08em #2b1b66;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .discord_a:hover {
+  color: #b161fb;
+  text-shadow: 0.01em 0.01em 0.12em #1d1735, -0.01em -0.01em 0.12em #1d1735, 0.01em -0.01em 0.12em #1d1735, -0.01em 0.01em 0.12em #1d1735;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p a {
   font-size: 1.1em;
@@ -3833,6 +3842,30 @@ body {
           flex-direction: column;
   padding: 0.3em;
 }
+.maya_content_container .content_title_img_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+.maya_content_container .content_title_img_wrapper h4 {
+  width: 100%;
+  color: rgba(239, 180, 29, 0.9333333333);
+  font-size: 0.9em;
+  text-align: center;
+}
+.maya_content_container .content_title_img_wrapper .content_title_img {
+  width: 80%;
+  border-radius: 0.3em;
+}
 .maya_content_container .maya_content_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3855,9 +3888,10 @@ body {
 .maya_content_container .maya_content_item .maya_content_item_title h5 {
   color: rgba(239, 180, 29, 0.9333333333);
   font-size: 1.1em;
-  border-bottom: 1px solid rgba(239, 180, 29, 0.9333333333);
+  border-bottom: 0.1em solid rgba(239, 180, 29, 0.9333333333);
   width: 50%;
   text-align: center;
+  margin-bottom: 0.4em;
 }
 .maya_content_container .maya_content_item .maya_content_item_container {
   display: -webkit-box;
@@ -4921,6 +4955,17 @@ body {
   padding: 1em 0.3em 0.5em 1em;
   margin: 0.5em 0 0 0;
 }
+.buyWcoins_container .buyWcoins_header_h4 {
+  font-size: 1.25em;
+  color: whitesmoke;
+  margin-bottom: 0.3em;
+}
+.buyWcoins_container .buyWcoins_header_h5 {
+  font-size: 1.1em;
+  color: #fd7272;
+  margin-bottom: 0.3em;
+  text-shadow: 0.015em 0.015em 0.14em rgb(83, 1, 47), -0.015em -0.015em 0.14em rgb(83, 1, 47), 0.015em -0.015em 0.14em rgb(83, 1, 47), -0.015em 0.015em 0.14em rgb(83, 1, 47);
+}
 .buyWcoins_container .buy_wcoins_select_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5023,6 +5068,25 @@ body {
 .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a:active {
   -webkit-transform: translate(1px, 1px);
           transform: translate(1px, 1px);
+}
+.buyWcoins_container .buyWcoins_crypto_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5em 0 0.5em 0;
+  width: 100%;
+}
+.buyWcoins_container .buyWcoins_crypto_info .crypto_info_img {
+  width: 98%;
+  border-radius: 0.35em;
+}
+.buyWcoins_container .buyWcoins_crypto_info .crypto_info_img:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .buyWcoins_fail_container {

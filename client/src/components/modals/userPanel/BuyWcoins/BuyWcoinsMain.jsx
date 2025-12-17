@@ -64,7 +64,8 @@ const BuyWcoinsMain = () => {
 
     return (
         <div className="buyWcoins_container">
-            <h4>Buy Wcoins!</h4>
+            <h4 className="buyWcoins_header_h4">You can help our project buing Wcoins!</h4>
+            <h5 className="buyWcoins_header_h5">☝ Wcoins purchase will be available after first Castle Siege🔒</h5>
             <div className="buy_wcoins_select_wrapper">
                 <select 
                     name="wcoins"
@@ -107,14 +108,17 @@ const BuyWcoinsMain = () => {
                             :
                     <button 
                         className="buy_wcoins_btn"
-                        onClick={() => {
-                            setIsInvoiceLoading(true)
-                            buyHandler()
-                        }}
+                        // onClick={() => {
+                        //     setIsInvoiceLoading(true)
+                        //     buyHandler()
+                        // }}
                     >Pay with CryptoCloud</button>
                     }
                 </div>
             }
+            <div className="buyWcoins_crypto_info">
+                <img className="crypto_info_img" src={Images.wcoins_crypto_info}></img>
+            </div>
         </div>
     );
 }

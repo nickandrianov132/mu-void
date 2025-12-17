@@ -16,14 +16,14 @@ const SantaEvent = () => {
             >
                             <SantaWizardItem 
                 title="Cursed Goblin"
-                item1cheance="65%"
+                item1cheance="80%"
                 desc1="2,000,000 zen"
                 img1={Images.cursed_goblin}
                 em1DescClass="em_zem"
-                item2cheance="30%"
+                item2cheance="10%"
                 desc2="Jewel of Bless, Soul, Life"
                 em2DescClass="em_jewels"
-                item3cheance="5%"
+                item3cheance="10%"
                 desc3="Invitation to Santa Willage"
                 em3DescClass="em_invitation"
             />

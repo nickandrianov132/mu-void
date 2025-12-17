@@ -21,9 +21,9 @@ app.use(errorHandlerMiddleware)
 // mmotopVoteController.mmotopFetch()
 // mmoanonsVoteController.mmoanonsFetch()
 
-setInterval( () => {
-    mmoanonsVoteController.mmoanonsFetch()
-}, 1200000)
+// setInterval( () => {
+//     mmoanonsVoteController.mmoanonsFetch()
+// }, 1200000)
 setInterval( () => {
     mmotopVoteController.mmotopFetch()
 }, 1200000)

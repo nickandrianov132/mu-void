@@ -556,11 +556,20 @@ body {
                 background: linear-gradient(316deg,rgba(237, 204, 204, 1) 0%, rgba(232, 223, 213, 1) 40%, rgba(240, 227, 213, 1) 75%, rgba(237, 204, 204, 1) 100%);
                 .description_item_p{
                     @include app_margin(0.3em 0.3em 0 0.4em);
-                    font-size: 0.7em;
+                    font-size: 0.75em;
                     margin-bottom: 1em;
                     font-weight: 500;
                     b{
                         font-size: 1.1em;
+                    }
+                    .discord_a{
+                        font-size: 1.2em;
+                        color:#987eff;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#2b1b66);
+                        &:hover{
+                            color:#b161fb;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em,#1d1735);
+                        }
                     }
                     a{
                         font-size: 1.1em;
@@ -3022,6 +3031,24 @@ body {
     display: flex;
     flex-direction: column;
     @include app_padding(0.3em);
+    .content_title_img_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        @include app_margin(1em 0 1em 0);
+        h4{
+            width: 100%;
+            color: $em_gold;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .content_title_img{
+            width: 80%;
+            border-radius: 0.3em;
+
+        }
+    }
     .maya_content_item{
         display: flex;
         flex-direction: column;
@@ -3033,9 +3060,10 @@ body {
             h5{
                 color: $em_gold;
                 font-size: 1.1em;
-                border-bottom: 1px solid $em_gold;
+                border-bottom: 0.1em solid $em_gold;
                 width: 50%;
                 text-align: center;
+                margin-bottom: 0.4em;
             }
         }
         .maya_content_item_container{
@@ -3844,6 +3872,17 @@ body {
     color: whitesmoke;
     @include app_padding(1em 0.3em 0.5em 1em);
     @include app_margin(0.5em 0 0 0);
+    .buyWcoins_header_h4{
+        font-size: 1.25em;
+        color: whitesmoke;
+        margin-bottom: 0.3em;
+    }
+    .buyWcoins_header_h5{
+        font-size: 1.1em;
+        color: #fd7272ff;
+        margin-bottom: 0.3em;
+        @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.14em, rgba(83, 1, 47, 1));
+    }
     .buy_wcoins_select_wrapper{
         display: flex;
         align-items: baseline;
@@ -3930,6 +3969,19 @@ body {
             }
             &:active{
                 transform: translate(1px,1px);
+            }
+        }
+    }
+    .buyWcoins_crypto_info{
+        display: flex;
+        flex-direction: column;
+        @include app_margin(0.5em 0 0.5em 0);
+        width: 100%;
+        .crypto_info_img{
+            width: 98%;
+            border-radius: 0.35em;
+            &:active{
+                transform: scale(1.2);
             }
         }
     }

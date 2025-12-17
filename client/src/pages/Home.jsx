@@ -108,22 +108,21 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
-            {/* <HomeContent
-                title="💥Open Beta Test features📢"
-                date="29.11.2025"
-                // sideImage={Images.obt_new}
-                sideImagesArr={imgArray}
+            <HomeContent
+                title="💥Opening is approaching📢"
+                date="17.12.2025"
+                sideImage={Images.opening_january}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🎯Features for easy testing:</h4>
+                        <h4 className='description_item_h4_opening'>⛄The Winter season opening</h4>
                     </div>
-                    <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
-                    <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
-                    <p className='description_item_p'>✅ All base skills you need for smooth start are available in Lorencia bar shop.</p>
-                    <h4 className='description_item_h4'>We hope You will get a realy good experience playing on our server!</h4>
+                    <p className='description_item_p'> 🔹 During Open Beta Test we had reworked many aspects of game settings, events, bosses, Classes PVE/PVP, and finally we are pleased to announce that server is going to be opened with x50 rates in the beginning of <b>January 2026</b>.</p>
+                    <p className='description_item_p'> 🔹 Stay tuned for updates on our website and <a className='discord_a' href='https://discord.gg/ANTqvCrQCk' target='_blank'>Discord</a>.</p>
+                    <p className='description_item_p'></p>
+                    <h4 className='description_item_h4'></h4>
                 </div>
-            </HomeContent> */}
+            </HomeContent>
             <HomeContent
                 title="🚀Open Beta Test💢"
                 date="05.12.2025"

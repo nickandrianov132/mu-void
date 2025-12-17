@@ -25,7 +25,7 @@ const DevilSquare = () => {
                             {num: "7", regularLvL: "15-400", mgdlrfLvl: "10-400"},
                            ]}
                     sec3desc1="There are Golden Monsters in each Devil Square appears at the 10 and 15 minutes after Devil Square start:"
-                    thead2={[{className: "th_gold" ,title:"#Devil Square:"}, {className: "th_gold", title:"1st Golden Monster 1:"}, {className: "th_gold", title: "2nd Golden Monster:"}]}
+                    thead2={[{className: "th_gold" ,title:"#Devil Square:"}, {className: "th_gold", title:"1st Golden Monster:"}, {className: "th_gold", title: "2nd Golden Monster:"}]}
                     tbody2={[
                             {className: "td_gold", num: "1", monster1:"Golden Goblin", monster2: "Golden Rabbit"},
                             {className: "td_gold", num: "2", monster1:"Golden Soldier", monster2: "Golden Titan"},
