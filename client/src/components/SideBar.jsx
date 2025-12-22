@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 import Login from './modals/Login';
 import EventTimersDashboard from './modals/EventTimers/EventTimersDashboard';
 import ServerTime from './ServerTime';
+import Images from '../assets/Images';
 
 const SideBar = () => {
     const navigate = useNavigate()
@@ -14,6 +15,7 @@ const SideBar = () => {
             <ServerTime />
             <div className="left_sidebar_content">
             </div>
+            <img className='winter_decor2_img' src={Images.winter_decor2}/>
         </div>
     );
 }

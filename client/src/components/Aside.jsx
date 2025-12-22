@@ -1,3 +1,4 @@
+import Images from '../assets/Images';
 import CastleInfo from './modals/castleInfo/CastleInfo';
 import DiscordWidget from './modals/discordWidget/DiscordWidget';
 import Online from './modals/Online';
@@ -13,6 +14,8 @@ const Aside = () => {
             <CastleInfo />
             <DiscordWidget />
             <BannersBoard />
+            {/* <img className='winter_decor1_img' src={Images.winter_decor1}/> */}
+            <img className='winter_decor3_img' src={Images.winter_decor3}/>
             {/* <Player /> */}
         </aside>
     );

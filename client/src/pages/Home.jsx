@@ -10,6 +10,7 @@ const Home = () => {
 const navigate = useNavigate()
     return (
         <div className='home_container'>
+            
             {/* <HomeContent
                 title="🔖VIP is now available!🔥💣"
                 date="18.11.2025"

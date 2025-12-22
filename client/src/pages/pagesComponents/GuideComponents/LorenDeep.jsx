@@ -11,7 +11,7 @@ const LorenDeep = () => {
                 <div className="small_event_body">
                     <p className="small_event_p">Loren Deep attack is the event happening every day at 18:00 server time in the LorenDeep map. There is an assault of monsters where players could get increased exp and valuables such as  <em className="em_zen">Crest of Monarch</em> and <em className="em_zen">Loch’s Feather</em>🪶.</p>
                     <img src={Images.crest_feather1} className="small_event_img_small"/>
-                    <p className="small_event_p">When event begins on Loren Deep location apears a lot of monsters for 60 minutes from 18:00 to 19:00 server time:</p>
+                    <p className="small_event_p">When event begins on Loren Deep location apears a lot of monsters for 60 minutes from 18:00 to 19:00 and from 23:00 to 00:00 server time:</p>
                     <div className="small_event_imgs_wrapper">
                         <img src={Images.loren1} className="small_event_img_big"/>
                         <img src={Images.loren2} className="small_event_img_big"/>

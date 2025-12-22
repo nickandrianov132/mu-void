@@ -201,6 +201,17 @@ const Images = {
     swamp_zones: new URL('./swamp_zones.jpg', import.meta.url).href,     
     opening_january: new URL('./opening_january.jpg', import.meta.url).href,     
     wcoins_crypto_info: new URL('./wcoins_crypto_info.png', import.meta.url).href,     
+    snow1: new URL('./snow1.png', import.meta.url).href,     
+    snow2: new URL('./snow2.png', import.meta.url).href,     
+    snow3: new URL('./snow3.png', import.meta.url).href,     
+    snow4: new URL('./snow4.png', import.meta.url).href,     
+    snowman: new URL('./snowman.png', import.meta.url).href,     
+    christmastree1: new URL('./christmastree1.png', import.meta.url).href,    
+    snowflake1: new URL('./snowflake1.png', import.meta.url).href,     
+    winter_decor1: new URL('./winter_decor1.png', import.meta.url).href,     
+    winter_decor2: new URL('./winter_decor2.png', import.meta.url).href,     
+    winter_decor3: new URL('./winter_decor3.png', import.meta.url).href,     
+     
     
 }
 

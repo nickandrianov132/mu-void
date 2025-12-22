@@ -28,7 +28,9 @@ const ChaosCastle = () => {
                     sec3desc1="Upon completion last one who survive in Chaos Castle will get:"
                     thead2={[{className: "th_gold" ,title:"#Chaos Castle:"}, {className: "th_gold", title:"Final Reward:"}, {className: "th_gold", title: "Cheance of rewards:"}]}
                     tbody2={[
-                            {className: "td_cc", num: "1-7", monster1:"Ancient Item / Talisman of Chaos Assembly", monster2: "80% / 20%"},
+                            {className: "td_cc", num: "1-2", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "40%/20%/40%"},
+                            {className: "td_cc", num: "3-4", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "60%/20%/20%"},
+                            {className: "td_cc", num: "5-7", monster1:"Ancient Item / Talisman of Chaos Assembly ", monster2: "80% / 20%"},
                            ]}
                 />
             </EventsContainer>

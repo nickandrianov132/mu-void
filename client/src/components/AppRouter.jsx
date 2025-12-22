@@ -24,6 +24,7 @@ import SantaEvent from "../pages/pagesComponents/GuideComponents/GuidePages/Sant
 import ClassesInfo from "../pages/pagesComponents/GuideComponents/GuidePages/ClassesInfo";
 import WhiteWizard from "../pages/pagesComponents/GuideComponents/GuidePages/WhiteWizard";
 import Medusa from "../pages/pagesComponents/GuideComponents/GuidePages/Medusa";
+import Images from "../assets/Images";
 
 
 const AppRouter = () => {
@@ -31,6 +32,13 @@ const AppRouter = () => {
 
     return (
         <div className='router_container'>
+            <img className='christmastree_img' src={Images.christmastree1}/>
+            <img className='snow1_img' src={Images.snow1}/>
+            <img className='snow4_img' src={Images.snow4}/>
+            <img className='snow2_img' src={Images.snow2}/>
+            <img className='snowman_img' src={Images.snowman}/>
+            <img className='snow3_img' src={Images.snow3}/>
+            {/* <img className='snowflake1_img' src={Images.snowflake1}/> */}
             <Routes>
                 {isAuth && authRoutes.map(({path, Component}) => 
                     <Route key={path} path={path} element={<Component/>} />

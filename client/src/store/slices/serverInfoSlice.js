@@ -6,7 +6,7 @@ const serverInfo = [
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
     {title: 'Windows per PC:', content: {content: '5', className: 'description_content_p'}},
-    {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Fairy Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
+    {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
     {title: 'Reset:', content: [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
@@ -51,7 +51,7 @@ const serverInfo = [
     ]
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
-{title: 'BC, DS:', content: {content: '150% Exp🔥', className: 'description_content_p'}},
+{title: 'BC, DS:', content: {content: '200% Exp🔥', className: 'description_content_p'}},
 {title: 'Hot-Exp:', content: {content: 'Exp + 50% Drop + 10% Monday to Friday from 18:00 to 22:00', className: 'description_content_p'}},
 {title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% Drop +10% from Saturday 24:00 to Sunday 24:00', className: 'description_content_p'}},
 {title: 'Offexp:', content: {content: '/offlevel  with pick up jewels🔥', className: 'description_content_p'}},

@@ -18,6 +18,7 @@ const ServerTime = () => {
     function timeDifference(servTime) {
         const serverTime = Date.parse(servTime)
         const timeOffset = Date.parse(localTime) - serverTime
+        // console.log(`servTimerOffset: ${timeOffset}`);
         return timeOffset
     }
 
@@ -26,6 +27,7 @@ const ServerTime = () => {
             setTime(finalHours(offset))
         }
     }, 1000)
+    // console.log(`servTimerOffset: ${offset}`);
     return (
         <div className='serverTime_container'>
             <span>Server Time</span>

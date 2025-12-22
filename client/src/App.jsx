@@ -7,6 +7,7 @@ import { useGetUserDetailsQuery } from './services/userApi';
 import { useEffect } from 'react';
 import Spinner from './components/Spinner';
 import CountdownOpening from './components/CountdownOpening';
+import Images from './assets/Images';
 
 function App() {
 const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
@@ -28,6 +29,43 @@ const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
           <svg className='logo_svg' width="24em" height="6.5em" viewBox="0 0 146 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.56 25.08H13.52L0.2 2.2H10.12L15.72 14.24L21.32 2.2H29.12L17.56 25.08ZM21.08 22.36L28.68 7.24V31H21.08V22.36ZM2.8 10.36L10.4 23.8V31H2.8V10.36ZM42.9322 31.36V24.88C43.5722 24.4267 43.8922 23.2 43.8922 21.2V2.2H51.6922V20.84C51.6922 24.3333 50.9722 26.92 49.5322 28.6C48.0922 30.28 45.8922 31.2 42.9322 31.36ZM40.9322 24.96V31.36C37.9455 31.2267 35.7189 30.32 34.2522 28.64C32.8122 26.96 32.0922 24.36 32.0922 20.84V2.2H39.8922V21.2C39.8922 23.2533 40.2389 24.5067 40.9322 24.96ZM64.1047 14.68V20.24H54.5047V14.68H64.1047ZM79.1956 31H71.2756L64.7156 2.2H73.0356L79.1956 31ZM80.9156 29.52L77.5156 13.64L79.2356 2.2H87.1156L80.9156 29.52ZM97.0159 31.36V25.48C97.9759 24.84 98.4559 22.8667 98.4559 19.56C98.4559 16.1733 97.9759 14.1867 97.0159 13.6V7.72C100.216 7.85333 102.496 8.85333 103.856 10.72C105.216 12.56 105.896 15.4933 105.896 19.52C105.896 23.5467 105.216 26.4933 103.856 28.36C102.496 30.2 100.216 31.2 97.0159 31.36ZM95.0159 25.52V31.36C91.8159 31.2 89.5359 30.2 88.1759 28.36C86.8159 26.4933 86.1359 23.5467 86.1359 19.52C86.1359 15.4933 86.8159 12.56 88.1759 10.72C89.5359 8.88 91.8159 7.88 95.0159 7.72V13.56C94.5093 13.88 94.1359 14.52 93.8959 15.48C93.6826 16.44 93.5759 17.8 93.5759 19.56C93.5759 22.9467 94.0559 24.9333 95.0159 25.52ZM108.303 8H115.503V31H108.303V8ZM108.103 0.799998H115.703V6.24H108.103V0.799998ZM129.814 1.88L137.014 0.799998V31H130.894L129.814 27.84V1.88ZM127.774 7.88V13.32C126.734 13.4267 126.067 14.04 125.774 15.16C125.48 16.28 125.334 17.9067 125.334 20.04C125.334 22.1467 125.494 23.64 125.814 24.52C126.134 25.3733 126.734 25.8 127.614 25.8H127.774V30.96C126.974 31.2533 126.134 31.4 125.254 31.4C123.787 31.4 122.574 31.0933 121.614 30.48C120.68 29.84 119.934 28.9733 119.374 27.88C118.84 26.7867 118.454 25.56 118.214 24.2C118 22.8133 117.894 21.36 117.894 19.84C117.894 15.4667 118.574 12.3467 119.934 10.48C121.32 8.61333 123.307 7.68 125.894 7.68C126.187 7.68 126.494 7.70667 126.814 7.76C127.134 7.78667 127.454 7.82667 127.774 7.88Z" fill="white"/>
           </svg>
+          <img className='snowflake1_img' src={Images.snowflake1}/>
+          <img className='snowflake2_img' src={Images.snowflake1}/>
+          <img className='snowflake3_img' src={Images.snowflake1}/>
+          <img className='snowflake4_img' src={Images.snowflake1}/>
+          <img className='snowflake5_img' src={Images.snowflake1}/>
+          <img className='snowflake6_img' src={Images.snowflake1}/>
+          <img className='snowflake7_img' src={Images.snowflake1}/>
+          <img className='snowflake8_img' src={Images.snowflake1}/>
+          <img className='snowflake9_img' src={Images.snowflake1}/>
+          <img className='snowflake10_img' src={Images.snowflake1}/>
+          <img className='snowflake11_img' src={Images.snowflake1}/>
+          <img className='snowflake12_img' src={Images.snowflake1}/>
+          <img className='snowflake13_img' src={Images.snowflake1}/>
+          <img className='snowflake14_img' src={Images.snowflake1}/>
+          <img className='snowflake15_img' src={Images.snowflake1}/>
+          <img className='snowflake16_img' src={Images.snowflake1}/>
+          <img className='snowflake17_img' src={Images.snowflake1}/>
+          <img className='snowflake18_img' src={Images.snowflake1}/>
+          <img className='snowflake19_img' src={Images.snowflake1}/>
+          <img className='snowflake20_img' src={Images.snowflake1}/>
+          <img className='snowflake21_img' src={Images.snowflake1}/>
+          <img className='snowflake22_img' src={Images.snowflake1}/>
+          <img className='snowflake23_img' src={Images.snowflake1}/>
+          <img className='snowflake24_img' src={Images.snowflake1}/>
+          <img className='snowflake25_img' src={Images.snowflake1}/>
+          <img className='snowflake26_img' src={Images.snowflake1}/>
+          <img className='snowflake27_img' src={Images.snowflake1}/>
+          <img className='snowflake28_img' src={Images.snowflake1}/>
+          <img className='snowflake29_img' src={Images.snowflake1}/>
+          <img className='snowflake30_img' src={Images.snowflake1}/>
+          <img className='snowflake31_img' src={Images.snowflake1}/>
+          <img className='snowflake32_img' src={Images.snowflake1}/>
+          <img className='snowflake33_img' src={Images.snowflake1}/>
+          <img className='snowflake34_img' src={Images.snowflake1}/>
+          <img className='snowflake35_img' src={Images.snowflake1}/>
+          <img className='snowflake36_img' src={Images.snowflake1}/>
+          <img className='snowflake37_img' src={Images.snowflake1}/>
           {/* <CountdownOpening /> */}
           <Body />
       </div>

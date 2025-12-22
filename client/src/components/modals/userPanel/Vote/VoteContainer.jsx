@@ -68,7 +68,7 @@ const VoteContainer = () => {
             />
             <VoteItem
                 title="Vote on SupremeTop100"
-                link={`https://supremetop100.com/en/vote/in/mu-void-s9-classic-server-x35-open-08-november`}
+                link={`https://supremetop100.com/en/vote/in/mu-void-s9-classic-server-x50-open-beta-test`}
                 img={`https://supremetop100.com/img/SupremeTop100_Vote_5.png`}
                 coinsDesc="every 24 hours"
             />
