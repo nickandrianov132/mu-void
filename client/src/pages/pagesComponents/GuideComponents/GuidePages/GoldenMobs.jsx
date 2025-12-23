@@ -36,7 +36,7 @@ const GoldenMobs = () => {
                 img1={Images.titan_340x340}
                 desc1="Devias"
                 desc2="3 Golden Titans"
-                drop1="Box of Kundun +1"
+                drop1="Box of Kundun +2"
                 qtty1="1"
             />
             <GoldenMobsContetn 
@@ -68,7 +68,7 @@ const GoldenMobs = () => {
                 img1={Images.lizard_340x340}
                 desc1="Atlans"
                 desc2="3 Golden Lizards"
-                drop1="Box of Kundun +2"
+                drop1="Box of Kundun +3"
                 qtty1="1"
             />
             <GoldenMobsContetn 
@@ -84,7 +84,7 @@ const GoldenMobs = () => {
                 img1={Images.tantalos_280x280}
                 desc1="Tarkan"
                 desc2="3 Golden Tantalos"
-                drop1="Box of Kundun +3"
+                drop1="Box of Kundun +4"
                 qtty1="1"
             />
             <GoldenMobsContetn 

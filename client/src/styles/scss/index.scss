@@ -200,7 +200,7 @@ body {
     height: 100%;
     width: 100vw;
     min-width: 380px;
-    max-width: 2400px;
+    max-width: 2048px;
     // position: relative;
 }
 .app_container{
@@ -226,8 +226,39 @@ body {
             animation: svgLogoAnimation 3s cubic-bezier(0.6, 0.15, 0.15, 0.1) 1 forwards;
         }
     }
+    .snowflake35_img{
+        position: absolute;
+        --right: 3em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 1s infinite;
+    }
+    .snowflake36_img{
+        position: absolute;
+        --right: 3em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 11s infinite;
+    }
+    .snowflake37_img{
+        position: absolute;
+        --right: 3em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 21s infinite;
+    }
     .snowflake1_img{
         position: absolute;
+        --right: 9em;
         width: 0.55em;
         top: 0;
         right: 100px;
@@ -237,6 +268,7 @@ body {
     }
     .snowflake12_img{
         position: absolute;
+        --right: 9em;
         width: 0.55em;
         top: -100px;
         right: 250px;
@@ -246,6 +278,7 @@ body {
     }
     .snowflake22_img{
         position: absolute;
+        --right: 9em;
         width: 0.55em;
         top: -100px;
         right: 250px;
@@ -256,318 +289,479 @@ body {
 
     .snowflake2_img{
         position: absolute;
+        --right: 16em;
         width: 0.55em;
         top: -100px;
         right: 150px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall2 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
     }
     .snowflake17_img{
         position: absolute;
+        --right: 16em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall2 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
     }
     .snowflake23_img{
         position: absolute;
+        --right: 16em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall2 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18s infinite;
     }
 
     .snowflake3_img{
         position: absolute;
+        --right: 23em;
         width: 0.55em;
         top: -100px;
         right: 180px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall3 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 4s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 4s infinite;
     }
     .snowflake24_img{
         position: absolute;
+        --right: 23em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall3 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 12s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 12s infinite;
     }
     .snowflake33_img{
         position: absolute;
+        --right: 23em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall3 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
     }
 
     .snowflake4_img{
         position: absolute;
+        --right: 30em;
         width: 0.55em;
         top: -100px;
         right: 210px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall4 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 6s infinite;
+        animation: snowfall2 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 6s infinite;
     }
     .snowflake16_img{
         position: absolute;
+        --right: 30em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall4 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 14s infinite;
+        animation: snowfall2 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 14s infinite;
     }
     .snowflake26_img{
         position: absolute;
+        --right: 30em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall4 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 22s infinite;
+        animation: snowfall2 30s cubic-bezier(0.4, 0.2, 0.5, 0.6) 22s infinite;
     }
 
     .snowflake5_img{
         position: absolute;
+        --right: 37em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall5 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) infinite;
     }
     .snowflake13_img{
         position: absolute;
+        --right: 37em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall5 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 7s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 7s infinite;
     }
     .snowflake25_img{
         position: absolute;
+        --right: 37em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall5 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 14s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 14s infinite;
     }
     .snowflake34_img{
         position: absolute;
+        --right: 37em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfal5 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 21s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 21s infinite;
     }
 
     .snowflake6_img{
         position: absolute;
+        --right:45em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall6 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
     }
     .snowflake18_img{
         position: absolute;
+        --right:45em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall6 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
     }
     .snowflake27_img{
         position: absolute;
+        --right:45em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall6 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18s infinite;
     }
+
     .snowflake7_img{
         position: absolute;
+        --right: 52em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall7 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) infinite;
     }
     .snowflake14_img{
         position: absolute;
+        --right: 52em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall7 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 8s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 8s infinite;
     }
     .snowflake32_img{
         position: absolute;
+        --right: 52em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall7 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 16s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 16s infinite;
     }
+
     .snowflake8_img{
         position: absolute;
+        --right: 60em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall8 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
     }
     .snowflake21_img{
         position: absolute;
+        --right: 60em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall8 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 11s infinite;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 11s infinite;
     }
     .snowflake28_img{
         position: absolute;
+        --right: 60em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall8 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
     }
+
     .snowflake9_img{
         position: absolute;
+        --right: 68em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall9 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 0.5s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 0.5s infinite;
     }
     .snowflake15_img{
         position: absolute;
+        --right: 68em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall9 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 9.5s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 9.5s infinite;
     }
     .snowflake29_img{
         position: absolute;
+        --right: 68em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall9 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18.5s infinite;
+        animation: snowfall1 26s cubic-bezier(0.4, 0.2, 0.5, 0.6) 18.5s infinite;
     }
+
     .snowflake10_img{
         position: absolute;
+        --right: 77em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall10 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 3s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 3s infinite;
     }
     .snowflake19_img{
         position: absolute;
+        --right: 77em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall10 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
     }
     .snowflake30_img{
         position: absolute;
+        --right: 77em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall10 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 17s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 17s infinite;
     }
+
     .snowflake11_img{
         position: absolute;
+        --right: 86em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall11 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 4s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 4s infinite;
     }
     .snowflake20_img{
         position: absolute;
+        --right: 86em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall11 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 12s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 12s infinite;
     }
     .snowflake31_img{
         position: absolute;
+        --right: 86em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfal11 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
     }
 
-
-
-
-    .snowflake35_img{
+    .snowflake38_img{
         position: absolute;
+        --right: 94em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall0 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 1s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6)  infinite;
     }
-    .snowflake36_img{
+    .snowflake39_img{
         position: absolute;
+        --right: 94em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall0 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 11s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 8s infinite;
     }
-    .snowflake37_img{
+    .snowflake40_img{
         position: absolute;
+        --right: 94em;
         width: 0.55em;
         top: -100px;
         right: 250px;
         transform: translate(-50%, 0%);
         z-index: 2;
-        animation: snowfall0 31s cubic-bezier(0.4, 0.2, 0.5, 0.6) 21s infinite;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 16s infinite;
     }
+
+    .snowflake41_img{
+        position: absolute;
+        --right: 102em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 2s infinite;
+    }
+    .snowflake42_img{
+        position: absolute;
+        --right: 102em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 11s infinite;
+    }
+    .snowflake43_img{
+        position: absolute;
+        --right: 102em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 29s cubic-bezier(0.4, 0.2, 0.5, 0.6) 20s infinite;
+    }
+
+    .snowflake44_img{
+        position: absolute;
+        --right: 110em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 3s infinite;
+    }
+    .snowflake45_img{
+        position: absolute;
+        --right: 110em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
+    }
+    .snowflake46_img{
+        position: absolute;
+        --right: 110em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 17s infinite;
+    }
+
+    .snowflake47_img{
+        position: absolute;
+        --right: 118em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 1s infinite;
+    }
+    .snowflake48_img{
+        position: absolute;
+        --right: 118em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 10s infinite;
+    }
+    .snowflake49_img{
+        position: absolute;
+        --right: 118em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall1 28s cubic-bezier(0.4, 0.2, 0.5, 0.6) 19s infinite;
+    }
+
+    .snowflake50_img{
+        position: absolute;
+        --right: 125em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 0s infinite;
+    }
+    .snowflake51_img{
+        position: absolute;
+        --right: 125em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 8s infinite;
+    }
+    .snowflake52_img{
+        position: absolute;
+        --right: 125em;
+        width: 0.55em;
+        top: -100px;
+        right: 250px;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        animation: snowfall2 24s cubic-bezier(0.4, 0.2, 0.5, 0.6) 16s infinite;
+    }
+
 
 }
 .body_container{
@@ -2954,6 +3148,7 @@ body {
         .guide_ul{
             height: 95%;
             padding-top: 1.5em;
+            margin-top: 3em;
             .guide_li{
                 display: block;
                 position: relative;
@@ -5148,6 +5343,24 @@ body {
         display: none;
     }
 }
+// @media (max-width: 1960px) {
+//     .snowflake47_img, .snowflake48_img, .snowflake49_img, .snowflake50_img, .snowflake51_img, .snowflake52_img {
+//         display: none;
+//         animation: none;
+//     }
+// }
+// @media (max-width: 1640px) {
+//     .snowflake41_img, .snowflake42_img, .snowflake43_img, .snowflake44_img, .snowflake45_img, .snowflake46_img {
+//         display: none;
+//         animation: none;
+//     }
+// }
+// @media (max-width: 1470px) {
+//     .snowflake38_img, .snowflake39_img, .snowflake40_img {
+//         display: none;
+//         animation: none;
+//     }
+// }
 
 
 @keyframes userCharStatusBlinkGreen {
@@ -5461,1386 +5674,222 @@ section .loader_2{
         background: linear-gradient(180deg,rgba(48, 209, 204, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(121, 237, 83, 1) 100%);
     }
 }
-
-@keyframes snowfall0 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 4em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 3em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 4em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 3.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 5em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 3.5em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 4.5em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 3em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 4em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 5.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 4em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 3.5em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 4.5em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 3em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 4em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 3em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 4.5em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 3.5em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 4em;
-        transform: rotate(360deg);
-    }
-}
 @keyframes snowfall1 {
     0%{
         top: 0em;
-        // right: 40%;
-        right: 10em;
+        right: var(--right);
         transform: rotate(0deg);
     }
     5%{
         top: 2em;
-        // right: 41%;
-        right: 11em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(36deg);
     }
     10%{
         top: 4em;
-        // right: 40%;
-        right: 10em;
+        right: var(--right);
         transform: rotate(72deg);
     }
     15%{
         top: 6em;
-        // right: 41%;
-        right: 10.5em;
+        right: calc(var(--right ) + 1.5em);
         transform: rotate(108deg);
     }
     20%{
         top: 8em;
-        // right: 40%;
-        right: 10em;
+        right: var(--right);
         transform: rotate(144deg);
     }
     25%{
         top: 10em;
-        // right: 41%;
-        right: 11em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(180deg);
     }
     30%{
         top: 12em;
-        // right: 40%;
-        right: 10em;
+        right: var(--right);
         transform: rotate(216deg);
     }
     35%{
         top: 14em;
-        right: 10.5em;
+        right: calc(var(--right) + 1em);
         transform: rotate(252deg);
     }
     40%{
         top: 16em;
-        right: 10em;
+        right: var(--right);
         transform: rotate(288deg);
     }
     45%{
         top: 18em;
-        right: 11em;
+        right: calc(var(--right) + 1em);
         transform: rotate(324deg);
     }
     50%{
         top: 20em;
-        right: 10em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     55%{
         top: 22em;
-        right: 10.5em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(360deg);
     }
     60%{
         top: 24em;
-        right: 10em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     65%{
         top: 26em;
-        right: 11em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(360deg);
     }
     70%{
         top: 28em;
-        right: 10em;
+        right: calc(var(--right) + 0.5em);
         transform: rotate(360deg);
     }
     75%{
         top: 30em;
-        right: 10.5em;
+        right: calc(var(--right) + 2em);
         transform: rotate(360deg);
     }
     80%{
         top: 32em;
-        right: 10em;
+        right: calc(var(--right) + 0.5em);
         transform: rotate(360deg);
     }
     85%{
         top: 34em;
-        right: 11em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(360deg);
     }
     90%{
         top: 36em;
-        right: 10em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     95%{
         top: 38em;
-        right: 10.5em;
+        right: calc(var(--right) + 1.5em);
         transform: rotate(360deg);
     }
     100%{
         top: 40em;
-        right: 10em;
+        right: var(--right);
         transform: rotate(360deg);
     }
 }
-
 @keyframes snowfall2 {
     0%{
         top: 0em;
-        // right: 40%;
-        right: 20em;
+        right: var(--right);
         transform: rotate(0deg);
     }
     5%{
         top: 2em;
         // right: 41%;
-        right: 21.5em;
+        right: calc(var(--right) - 1em);
         transform: rotate(36deg);
     }
     10%{
         top: 4em;
-        // right: 40%;
-        right: 20.5em;
+        right: var(--right);
         transform: rotate(72deg);
     }
     15%{
         top: 6em;
-        // right: 41%;
-        right: 22em;
+        right: calc(var(--right) - 1.5em);
         transform: rotate(108deg);
     }
     20%{
         top: 8em;
-        // right: 40%;
-        right: 20em;
+        right: var(--right);
         transform: rotate(144deg);
     }
     25%{
         top: 10em;
-        // right: 41%;
-        right: 21.5em;
+        right: calc(var(--right) - 1em);
         transform: rotate(180deg);
     }
     30%{
         top: 12em;
-        // right: 40%;
-        right: 20.5em;
+        right: var(--right);
         transform: rotate(216deg);
     }
     35%{
         top: 14em;
-        right: 22.5em;
+        right: calc(var(--right) - 1.5em);
         transform: rotate(252deg);
     }
     40%{
         top: 16em;
-        right: 21.5em;
+        right: calc(var(--right) - 0.5em);
         transform: rotate(288deg);
     }
     45%{
         top: 18em;
-        right: 20.5em;
+        right: calc(var(--right) - 1.5em);
         transform: rotate(324deg);
     }
     50%{
         top: 20em;
-        right: 21.5em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     55%{
         top: 22em;
-        right: 20em;
+        right: calc(var(--right) - 1em);
         transform: rotate(360deg);
     }
     60%{
         top: 24em;
-        right: 21em;
+        right: calc(var(--right) + 0.5em);
         transform: rotate(360deg);
     }
     65%{
         top: 26em;
-        right: 20em;
+        right: calc(var(--right) - 1em);
         transform: rotate(360deg);
     }
     70%{
         top: 28em;
-        right: 21.5em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     75%{
         top: 30em;
-        right: 20.5em;
+        right: calc(var(--right) - 1.5em);
         transform: rotate(360deg);
     }
     80%{
         top: 32em;
-        right: 22em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     85%{
         top: 34em;
-        right: 20.5em;
+        right: calc(var(--right) - 1em);
         transform: rotate(360deg);
     }
     90%{
         top: 36em;
-        right: 21.5em;
+        right: var(--right);
         transform: rotate(360deg);
     }
     95%{
         top: 38em;
-        right: 20em;
+        right: calc(var(--right) - 1.5em);
         transform: rotate(360deg);
     }
     100%{
         top: 40em;
-        right: 21.5em;
+        right: var(--right);
         transform: rotate(360deg);
     }
 }
 
-
-@keyframes snowfall3 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 30em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 31em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 30em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 30.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 30em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 31em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 30em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 30.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 30em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 31em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 30.5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 31em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 30.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 31em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 30.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 30em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall4 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 40em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 41.5em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 40.5em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 41.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 40em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 41em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 40em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 41.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 40em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 40.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 41.5em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 40em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 41em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 40em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 41.5em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 40.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 42em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 40.5em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 41.5em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 40em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 41.5em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall5 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 45em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 46em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 45em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 46.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 45em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 46em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 45em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 46.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 45em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 46em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 46.5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 46em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 46.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 46em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 46.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 45em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall6 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 52em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 53.5em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 52.5em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 53.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 52em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 53em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 52em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 53.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 52em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 53.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 53em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 53em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 53em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 53.5em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 53.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 52em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall7 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 61em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 62em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 61em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 62.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 61em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 62em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 61em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 62.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 61em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 62.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 61em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 62.5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 61.5em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 63em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 61.5em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 62.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 61em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 62em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right:61em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 62.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 61em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall8 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 68em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 69.5em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 68.5em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 69.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 68em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 69em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 68em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 69.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 68em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 69.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 68em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 69em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 68em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 69.5em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 68em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 69em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 67.5em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 68.5em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 69.5em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 68em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 69em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall9 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        right: 74em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        right: 75em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        right: 74em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        right: 75.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        right: 74em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        right: 75em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        right: 74em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        right: 75.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        right: 74em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        right: 75em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        right: 75.5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        right: 75em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        right: 75.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        right: 75em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        right: 75.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        right: 74em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall10 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        left: 10em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        left: 11em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        left: 10em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        left: 10.5em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        left: 10em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        left: 11em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        left: 10em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        left: 10.5em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        left: 10em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        left: 11em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        left: 10.5em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        left: 11em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        left: 10.5em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        left: 11em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        left: 10.5em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        left: 10em;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes snowfall11 {
-    0%{
-        top: 0em;
-        // right: 40%;
-        left: 5em;
-        transform: rotate(0deg);
-    }
-    5%{
-        top: 2em;
-        // right: 41%;
-        left: 6.5em;
-        transform: rotate(36deg);
-    }
-    10%{
-        top: 4em;
-        // right: 40%;
-        left: 5em;
-        transform: rotate(72deg);
-    }
-    15%{
-        top: 6em;
-        // right: 41%;
-        left: 6em;
-        transform: rotate(108deg);
-    }
-    20%{
-        top: 8em;
-        // right: 40%;
-        left: 5em;
-        transform: rotate(144deg);
-    }
-    25%{
-        top: 10em;
-        // right: 41%;
-        left: 6.5em;
-        transform: rotate(180deg);
-    }
-    30%{
-        top: 12em;
-        // right: 40%;
-        left: 5em;
-        transform: rotate(216deg);
-    }
-    35%{
-        top: 14em;
-        left: 6em;
-        transform: rotate(252deg);
-    }
-    40%{
-        top: 16em;
-        left: 5em;
-        transform: rotate(288deg);
-    }
-    45%{
-        top: 18em;
-        left: 6.5em;
-        transform: rotate(324deg);
-    }
-    50%{
-        top: 20em;
-        left: 5em;
-        transform: rotate(360deg);
-    }
-    55%{
-        top: 22em;
-        left: 6em;
-        transform: rotate(360deg);
-    }
-    60%{
-        top: 24em;
-        left: 5em;
-        transform: rotate(360deg);
-    }
-    65%{
-        top: 26em;
-        left: 6.5em;
-        transform: rotate(360deg);
-    }
-    70%{
-        top: 28em;
-        left: 5em;
-        transform: rotate(360deg);
-    }
-    75%{
-        top: 30em;
-        left: 6em;
-        transform: rotate(360deg);
-    }
-    80%{
-        top: 32em;
-        left: 5em;
-        transform: rotate(360deg);
-    }
-    85%{
-        top: 34em;
-        left: 6.5em;
-        transform: rotate(360deg);
-    }
-    90%{
-        top: 36em;
-        left: 5em;
-        transform: rotate(360deg);
-    }
-    95%{
-        top: 38em;
-        left: 6em;
-        transform: rotate(360deg);
-    }
-    100%{
-        top: 40em;
-        left: 6.5em;
-        transform: rotate(360deg);
-    }
-}
 
 .liveInternetCounter{
     display: flex;

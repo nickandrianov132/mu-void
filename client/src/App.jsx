@@ -66,6 +66,21 @@ const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
           <img className='snowflake35_img' src={Images.snowflake1}/>
           <img className='snowflake36_img' src={Images.snowflake1}/>
           <img className='snowflake37_img' src={Images.snowflake1}/>
+          <img className='snowflake38_img' src={Images.snowflake1}/>
+          <img className='snowflake39_img' src={Images.snowflake1}/>
+          <img className='snowflake40_img' src={Images.snowflake1}/>
+          <img className='snowflake41_img' src={Images.snowflake1}/>
+          <img className='snowflake42_img' src={Images.snowflake1}/>
+          <img className='snowflake43_img' src={Images.snowflake1}/>
+          <img className='snowflake44_img' src={Images.snowflake1}/>
+          <img className='snowflake45_img' src={Images.snowflake1}/>
+          <img className='snowflake46_img' src={Images.snowflake1}/>
+          <img className='snowflake47_img' src={Images.snowflake1}/>
+          <img className='snowflake48_img' src={Images.snowflake1}/>
+          <img className='snowflake49_img' src={Images.snowflake1}/>
+          <img className='snowflake50_img' src={Images.snowflake1}/>
+          <img className='snowflake51_img' src={Images.snowflake1}/>
+          <img className='snowflake52_img' src={Images.snowflake1}/>
           {/* <CountdownOpening /> */}
           <Body />
       </div>
