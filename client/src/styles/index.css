@@ -7955,6 +7955,11 @@ section .loader_2 {
   }
 }
 .liveInternetCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 10;
   height: 0;
 }

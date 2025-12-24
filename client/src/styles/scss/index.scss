@@ -912,7 +912,6 @@ body {
     align-items: center;
     width: 100%;
     @include app_padding(1em 0 1em 0);
-    // height: 3em;
     // background-color: $footer-bg;
     border-top: 0.05em solid #a79494ff;
     background-image: linear-gradient(177deg,rgba(89, 22, 37, 1) 0%, rgba(102, 42, 52, 1) 28%, rgba(163, 78, 72, 1) 56%, rgba(156, 62, 92, 1) 84%, rgba(148, 61, 71, 1) 100%);
@@ -5910,10 +5909,8 @@ section .loader_2{
 
 
 .liveInternetCounter{
-    // position: absolute;
-    // display: flex;
-    // justify-self: flex-start;
-    // width: 100vw;
+    display: flex;
+    box-sizing: border-box;
     z-index: 10;
     height: 0;
     img{
