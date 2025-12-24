@@ -155,7 +155,7 @@ $aside-wd: 110px;
     color: #070039ff;
     width: 80%;
     padding: 0.3em;
-    @include app_margin(4px 0 5px 0);
+    @include app_margin(0.4em 0 0.4em 0);
     outline: none;
     border: 0.1em solid transparent;
     border-radius: 0.4em;
@@ -198,23 +198,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.body{
+#body{
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // width: 100vw;
+    height: fit-content;
+    position: relative;
+    flex: 1 1 auto;
 }
 #root{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: fit-content;
     width: 100vw;
-    // min-width: 400px;
+    min-height: 100vh;
+    // flex: 1 1 auto;
     max-width: 2048px;
     @include box-shadow(0.5em, 0.5em, -0.5em, -0.5em, 1em, rgba(118, 60, 89, 1));
-    // position: relative;
 }
 .app_container{
     background-image: url('../assets/bg_img5.jpg');
@@ -900,6 +900,7 @@ body {
     }
     a, span{
         font-size: 0.7em;
+        padding-right: .4em;
     }
 }
 .footer_container{
