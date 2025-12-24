@@ -7948,6 +7948,7 @@ section .loader_2 {
 .liveInternetCounter img {
   height: 1em;
   width: 4em;
+  margin-left: 1em;
   -webkit-transform: translate(5%, -120%);
           transform: translate(5%, -120%);
 }
