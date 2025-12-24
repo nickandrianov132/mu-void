@@ -118,6 +118,16 @@ body {
           align-items: center;
 }
 
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +141,6 @@ body {
           align-items: center;
   height: 100%;
   width: 100vw;
-  min-width: 380px;
   max-width: 2048px;
   -webkit-box-shadow: 0.5em 0.5em 1em rgb(118, 60, 89), -0.5em -0.5em 1em rgb(118, 60, 89), 0.5em -0.5em 1em rgb(118, 60, 89), -0.5em 0.5em 1em rgb(118, 60, 89);
           box-shadow: 0.5em 0.5em 1em rgb(118, 60, 89), -0.5em -0.5em 1em rgb(118, 60, 89), 0.5em -0.5em 1em rgb(118, 60, 89), -0.5em 0.5em 1em rgb(118, 60, 89);
@@ -2364,7 +2373,7 @@ body {
 .sup_mLevel {
   color: rgb(211, 47, 47);
   font-size: 0.7em;
-  margin-left: 1px;
+  margin-left: 0.15em;
 }
 
 .online_indicator {
@@ -6796,7 +6805,6 @@ body {
   }
   .body_container {
     max-width: 100vw;
-    min-width: 338px;
   }
   body {
     font-size: 5px;
@@ -6807,7 +6815,7 @@ body {
     width: 16.6em;
   }
   body {
-    font-size: 4px;
+    font-size: 3px;
   }
   .button {
     height: 3px;
@@ -7934,11 +7942,7 @@ section .loader_2 {
   }
 }
 .liveInternetCounter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: flex-start;
-  width: 100vw;
+  z-index: 10;
   height: 0;
 }
 .liveInternetCounter img {
