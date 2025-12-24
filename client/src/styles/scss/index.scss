@@ -191,7 +191,9 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    background: #483f3fff;
+    background-image: url('../assets/bg_img5.jpg');
+    background-size: cover;
+    // background: #483f3fff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -928,11 +930,12 @@ body {
     min-height: 60em;
     // flex: 1 1 auto;
     background-color: #6b6b7472;
+    position: relative;
     .christmastree_img{
         position: absolute;
         width: 8em;
         top: 0;
-        left: 20%;
+        left: 0;
         transform: translate(0%,-85%);
         z-index: 3;
     }
@@ -940,7 +943,7 @@ body {
         position: absolute;
         width: 10em;
         top: 0;
-        left: 20%;
+        left: 0;
         transform: translate(-50%, -40%);
         z-index: 2;
     }
@@ -948,7 +951,7 @@ body {
         position: absolute;
         width: 10em;
         top: 0;
-        left: 20%;
+        left: 0;
         transform: translate(0%, -30%);
         z-index: 2; 
     }
@@ -956,8 +959,8 @@ body {
         position: absolute;
         width: 5em;
         top: 0;
-        right: 20%;
-        transform: translate(-50%,-94%);
+        right: 0;
+        transform: translate(40%,-93%);
         z-index: 3;
         // transform: translateY(-98%);
     }
@@ -965,16 +968,16 @@ body {
         position: absolute;
         width: 10em;
         top: 0;
-        right: 18%;
-        transform: translate(-50%, -57%);
+        right: 0;
+        transform: translate(0%, -60%);
         z-index: 2; 
     }
     .snow3_img{
         position: absolute;
         width: 12em;
         top: 0;
-        right: 10%;
-        transform: translate(-50%, -100%);
+        right: 0;
+        transform: translate(70%, -100%);
         z-index: 2;
     }
 

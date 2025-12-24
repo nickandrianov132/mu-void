@@ -103,7 +103,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background: #483f3f;
+  background-image: url("../assets/bg_img5.jpg");
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -1026,12 +1027,13 @@ body {
   width: 56%;
   min-height: 60em;
   background-color: rgba(107, 107, 116, 0.4470588235);
+  position: relative;
 }
 .router_container .christmastree_img {
   position: absolute;
   width: 8em;
   top: 0;
-  left: 20%;
+  left: 0;
   -webkit-transform: translate(0%, -85%);
           transform: translate(0%, -85%);
   z-index: 3;
@@ -1040,7 +1042,7 @@ body {
   position: absolute;
   width: 10em;
   top: 0;
-  left: 20%;
+  left: 0;
   -webkit-transform: translate(-50%, -40%);
           transform: translate(-50%, -40%);
   z-index: 2;
@@ -1049,7 +1051,7 @@ body {
   position: absolute;
   width: 10em;
   top: 0;
-  left: 20%;
+  left: 0;
   -webkit-transform: translate(0%, -30%);
           transform: translate(0%, -30%);
   z-index: 2;
@@ -1058,27 +1060,27 @@ body {
   position: absolute;
   width: 5em;
   top: 0;
-  right: 20%;
-  -webkit-transform: translate(-50%, -94%);
-          transform: translate(-50%, -94%);
+  right: 0;
+  -webkit-transform: translate(40%, -93%);
+          transform: translate(40%, -93%);
   z-index: 3;
 }
 .router_container .snow2_img {
   position: absolute;
   width: 10em;
   top: 0;
-  right: 18%;
-  -webkit-transform: translate(-50%, -57%);
-          transform: translate(-50%, -57%);
+  right: 0;
+  -webkit-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
   z-index: 2;
 }
 .router_container .snow3_img {
   position: absolute;
   width: 12em;
   top: 0;
-  right: 10%;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
+  right: 0;
+  -webkit-transform: translate(70%, -100%);
+          transform: translate(70%, -100%);
   z-index: 2;
 }
 
