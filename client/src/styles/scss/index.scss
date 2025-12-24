@@ -191,16 +191,22 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    background: #483f3fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #root{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 100vw;
     min-width: 380px;
     max-width: 2048px;
+    @include box-shadow(0.5em, 0.5em, -0.5em, -0.5em, 1em, rgba(118, 60, 89, 1));
     // position: relative;
 }
 .app_container{
@@ -776,14 +782,14 @@ body {
 }
 .nav_container{
     display: flex;
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
     height: $nav-ht;
     border-bottom: 0.05em solid #6c5959ff;
     // background: $nav-bg;
     background-image: linear-gradient(180deg,rgba(112, 60, 44, 1) 0%, rgba(168, 40, 85, 1) 28%, rgba(189, 81, 81, 1) 50%, rgba(217, 130, 95, 1) 76%, rgba(245, 110, 121, 1) 100%);
     @include app_padding(0.5em 0 0.5em 0);
-    @include box-shadow(0.5em, 0.5em, -0.5em, -0.5em, 1em, rgba(255, 24, 139, 1));
+    // @include box-shadow(0.5em, 0.5em, -0.5em, -0.5em, 1em, rgba(255, 24, 139, 1));
 }
 .nav_list{
     display: flex;
@@ -894,7 +900,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     @include app_padding(1em 0 1em 0);
     // height: 3em;
     // background-color: $footer-bg;
@@ -935,12 +941,12 @@ body {
         width: 10em;
         top: 0;
         left: 20%;
-        transform: translate(0%, -42%);
+        transform: translate(0%, -30%);
         z-index: 2; 
     }
     .snowman_img{
         position: absolute;
-        width: 5%;
+        width: 5em;
         top: 0;
         right: 20%;
         transform: translate(-50%,-94%);
@@ -949,7 +955,7 @@ body {
     }
     .snow2_img{
         position: absolute;
-        width: 10%;
+        width: 10em;
         top: 0;
         right: 18%;
         transform: translate(-50%, -57%);
@@ -957,7 +963,7 @@ body {
     }
     .snow3_img{
         position: absolute;
-        width: 10%;
+        width: 12em;
         top: 0;
         right: 10%;
         transform: translate(-50%, -100%);
@@ -1872,12 +1878,13 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     cursor: pointer;
-    @include app_margin(0.6em 0em 0.4em 0);
+    @include app_margin(2.3em 0em 0.4em 0);
     .ranking_sort_btn{
         @extend %rankingsBtn;
         @include app_padding(0.2em);
         @include app_margin(0.2em);
         font-size: 0.7em;
+        // z-index: 5;
         position: relative;
         // transition: 0.2s ease;
         &:hover{
@@ -3148,7 +3155,7 @@ body {
         .guide_ul{
             height: 95%;
             padding-top: 1.5em;
-            margin-top: 3em;
+            margin-top: 1em;
             .guide_li{
                 display: block;
                 position: relative;

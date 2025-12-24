@@ -103,8 +103,19 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: #483f3f;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #root {
@@ -115,10 +126,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: 100vw;
   min-width: 380px;
   max-width: 2048px;
+  -webkit-box-shadow: 0.5em 0.5em 1em rgb(118, 60, 89), -0.5em -0.5em 1em rgb(118, 60, 89), 0.5em -0.5em 1em rgb(118, 60, 89), -0.5em 0.5em 1em rgb(118, 60, 89);
+          box-shadow: 0.5em 0.5em 1em rgb(118, 60, 89), -0.5em -0.5em 1em rgb(118, 60, 89), 0.5em -0.5em 1em rgb(118, 60, 89), -0.5em 0.5em 1em rgb(118, 60, 89);
 }
 
 .app_container {
@@ -803,7 +819,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -812,8 +828,6 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(112, 60, 44)), color-stop(28%, rgb(168, 40, 85)), color-stop(50%, rgb(189, 81, 81)), color-stop(76%, rgb(217, 130, 95)), to(rgb(245, 110, 121)));
   background-image: linear-gradient(180deg, rgb(112, 60, 44) 0%, rgb(168, 40, 85) 28%, rgb(189, 81, 81) 50%, rgb(217, 130, 95) 76%, rgb(245, 110, 121) 100%);
   padding: 0.5em 0 0.5em 0;
-  -webkit-box-shadow: 0.5em 0.5em 1em rgb(255, 24, 139), -0.5em -0.5em 1em rgb(255, 24, 139), 0.5em -0.5em 1em rgb(255, 24, 139), -0.5em 0.5em 1em rgb(255, 24, 139);
-          box-shadow: 0.5em 0.5em 1em rgb(255, 24, 139), -0.5em -0.5em 1em rgb(255, 24, 139), 0.5em -0.5em 1em rgb(255, 24, 139), -0.5em 0.5em 1em rgb(255, 24, 139);
 }
 
 .nav_list {
@@ -968,7 +982,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  width: 100%;
   padding: 1em 0 1em 0;
   border-top: 0.05em solid #a79494;
   background-image: linear-gradient(177deg, rgb(89, 22, 37) 0%, rgb(102, 42, 52) 28%, rgb(163, 78, 72) 56%, rgb(156, 62, 92) 84%, rgb(148, 61, 71) 100%);
@@ -1016,13 +1030,13 @@ body {
   width: 10em;
   top: 0;
   left: 20%;
-  -webkit-transform: translate(0%, -42%);
-          transform: translate(0%, -42%);
+  -webkit-transform: translate(0%, -30%);
+          transform: translate(0%, -30%);
   z-index: 2;
 }
 .router_container .snowman_img {
   position: absolute;
-  width: 5%;
+  width: 5em;
   top: 0;
   right: 20%;
   -webkit-transform: translate(-50%, -94%);
@@ -1031,7 +1045,7 @@ body {
 }
 .router_container .snow2_img {
   position: absolute;
-  width: 10%;
+  width: 10em;
   top: 0;
   right: 18%;
   -webkit-transform: translate(-50%, -57%);
@@ -1040,7 +1054,7 @@ body {
 }
 .router_container .snow3_img {
   position: absolute;
-  width: 10%;
+  width: 12em;
   top: 0;
   right: 10%;
   -webkit-transform: translate(-50%, -100%);
@@ -2205,7 +2219,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   cursor: pointer;
-  margin: 0.6em 0em 0.4em 0;
+  margin: 2.3em 0em 0.4em 0;
 }
 .rankings_sort_btns_container .ranking_sort_btn {
   padding: 0.2em;
@@ -3900,7 +3914,7 @@ body {
 .guide_container .guide_sidebar_container .guide_ul {
   height: 95%;
   padding-top: 1.5em;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .guide_container .guide_sidebar_container .guide_ul .guide_li {
   display: block;
