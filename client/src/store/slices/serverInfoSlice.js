@@ -25,17 +25,17 @@ const serverInfo = [
     {title: 'Grand Reset:', content: [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
-            {content: '= 3200 free stats', className: 'description_content_p_res_stats'},
+            {content: '= 5000 free stats', className: 'description_content_p_res_stats'},
             {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ], 
         [
             {content: 'MG, RF', className: 'description_content_p_res_class'},
-            {content: '= 4000 free stats', className: 'description_content_p_res_stats'},
+            {content: '= 6500 free stats', className: 'description_content_p_res_stats'},
             {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ], 
         [
             {content: 'DL', className: 'description_content_p_res_class'},
-            {content: '= 3200 free stats + 800 Command', className: 'description_content_p_res_stats'},
+            {content: '= 5000 free stats + 1500 Command', className: 'description_content_p_res_stats'},
             {content: '+ 50 Master skill points + 300 WCoins', className: 'description_content_p_res_stats_gr'},
         ] 
     ]

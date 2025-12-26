@@ -1623,21 +1623,9 @@ body {
           box-shadow: 0.1em 0.1em 0.2em #070326, -0.1em -0.1em 0.2em #070326, 0.1em -0.1em 0.2em #070326, -0.1em 0.1em 0.2em #070326;
   border: 1px solid #563e72;
   border-radius: 5px;
-}
-.about_content_container ::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/rankings-bg5.jpg");
-  background-size: cover;
+  backdrop-filter: blur(2.5em) opacity(1) brightness(150%);
   background-position: center;
-  z-index: -1;
-  -webkit-mask-image: url("../assets/ink_video-ezgif.com-loop-count-light.gif");
-          mask-image: url("../assets/ink_video-ezgif.com-loop-count-light.gif");
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+  background-size: auto;
 }
 
 .rules_container {

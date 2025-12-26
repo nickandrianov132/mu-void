@@ -1424,19 +1424,22 @@ body {
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, $footer-bg);
     border: 1px solid #563e72;
     border-radius: 5px;
-    ::before{
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-image: url('../assets/rankings-bg5.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
+    backdrop-filter: blur(2.5em) opacity(1) brightness(150%);
+    background-position: center;
+    background-size:auto;
+    // ::before{
+    //     content: '';
+    //     position: absolute;
+    //     inset: 0;
+    //     background-image: url('../assets/rankings-bg5.jpg');
+    //     background-size: cover;
+    //     background-position: center;
+    //     z-index: -1;
 
-        mask-image: url('../assets/ink_video-ezgif.com-loop-count-light.gif');
-        mask-size: cover;
-        mask-position: center;
-    }
+    //     mask-image: url('../assets/ink_video-ezgif.com-loop-count-light.gif');
+    //     mask-size: cover;
+    //     mask-position: center;
+    // }
 }
 
 .rules_container{
