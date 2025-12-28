@@ -1372,6 +1372,15 @@ body {
   color: #1eff00;
   text-shadow: 0.01em 0.01em 0.12em #1d1735, -0.01em -0.01em 0.12em #1d1735, 0.01em -0.01em 0.12em #1d1735, -0.01em 0.01em 0.12em #1d1735;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .a_bonus_exp {
+  font-size: 1.1em;
+  color: #ff6b21;
+  text-shadow: 0.01em 0.01em 0.08em #7b1717, -0.01em -0.01em 0.08em #7b1717, 0.01em -0.01em 0.08em #7b1717, -0.01em 0.01em 0.08em #7b1717;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .a_bonus_exp:hover {
+  color: #ff6464;
+  text-shadow: 0.01em 0.01em 0.12em #b20505, -0.01em -0.01em 0.12em #b20505, 0.01em -0.01em 0.12em #b20505, -0.01em 0.01em 0.12em #b20505;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .p_title {
   margin: 0.3em 0.3em 0 0.4em;
   font-size: 1.05em;
@@ -4143,7 +4152,7 @@ body {
 .reset_info_div .reset_em_btn {
   font-style: normal;
   color: #d9e0f1;
-  border: 1px solid rgb(177, 199, 198);
+  border: 0.1em solid rgb(177, 199, 198);
   border-radius: 0.35em;
   background-color: #1f1f86;
   padding: 0.1em 0.6em;
@@ -4214,6 +4223,54 @@ body {
 }
 .reset_info_div .reset_stats_div .reset_stats_description_div span b {
   color: #4968f3;
+}
+.reset_info_div .dynamic_exp_table {
+  width: 40%;
+  border-collapse: collapse;
+  margin: 1em 0 1em 0;
+}
+.reset_info_div .dynamic_exp_table thead tr th {
+  border: 0.1em solid #acb5b7;
+  width: 50%;
+}
+.reset_info_div .dynamic_exp_table thead tr .th_title {
+  border: none;
+  font-size: 1.1em;
+  color: #00cba2;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.reset_info_div .dynamic_exp_table thead tr .th_1 {
+  border-top-left-radius: 0.3em;
+}
+.reset_info_div .dynamic_exp_table tbody tr td {
+  font-size: 0.8em;
+  text-align: center;
+  border: 0.1em solid #acb5b7;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_1st {
+  color: #38fe34;
+  text-shadow: none;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_2nd {
+  color: #9af559;
+  text-shadow: none;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_3rd {
+  color: #ddff6d;
+  text-shadow: none;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_4th {
+  color: #f9e957;
+  text-shadow: none;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_5th {
+  color: #f9c857;
+  text-shadow: none;
+}
+.reset_info_div .dynamic_exp_table tbody .tr_6th {
+  color: #f99d57;
+  text-shadow: none;
 }
 
 .guide_dropBoxes_container {

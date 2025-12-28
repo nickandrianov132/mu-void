@@ -5,7 +5,7 @@ import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTim
 const CountdownOpening = () => {
     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
-    const dateOpeningUTC = Date.UTC(2025, 10, 8, 12, 0, 0);
+    const dateOpeningUTC = Date.UTC(2026, 0, 9, 17, 0, 0);
     let localTime;
     
     useEffect(() => {

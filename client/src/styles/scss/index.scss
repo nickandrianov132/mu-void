@@ -1196,6 +1196,15 @@ body {
                             @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em,#1d1735);
                         }
                     }
+                    .a_bonus_exp{
+                        font-size: 1.1em;
+                        color:#ff6b21;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#7b1717);
+                        &:hover{
+                            color:#ff6464;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em,#b20505);
+                        }
+                    }
                     .p_title{
                         @include app_margin(0.3em 0.3em 0 0.4em);
                         font-size: 1.05em;
@@ -3349,7 +3358,7 @@ body {
     .reset_em_btn{
         font-style: normal;
         color: #d9e0f1;
-        border: 1px solid rgb(177, 199, 198);
+        border: 0.1em solid rgb(177, 199, 198);
         border-radius: 0.35em;
         background-color: #1f1f86;
         @include app_padding(0.1em 0.6em)
@@ -3413,6 +3422,63 @@ body {
             }
         }
 
+    }
+    .dynamic_exp_table{
+        width: 40%;
+        border-collapse: collapse;
+        @include app_margin(1em 0 1em 0 );
+        thead{
+            tr{
+                th{
+                    border: 0.1em solid #acb5b7ff;
+                    // border: 0.1em solid whitesmoke;
+                    width: 50%;
+                }
+                .th_title{
+                    border: none;
+                    font-size: 1.1em;
+                    color: #00cba2;
+                    text-decoration: underline;
+                    text-underline-offset: 0.2em;
+                }
+                .th_1{
+                    border-top-left-radius: 0.3em;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 0.8em;
+                    text-align: center;
+                    border: 0.1em solid #acb5b7ff;
+                }
+            }
+            .tr_1st{
+                color: #38fe34ff ;
+                text-shadow: none;
+            }
+            .tr_2nd{
+                color: #9af559ff ;
+                text-shadow: none;
+            }
+            .tr_3rd{
+                color: #ddff6dff ;
+                text-shadow: none;
+            }
+            .tr_4th{
+                color: #f9e957ff ;
+                text-shadow: none;
+            }
+            .tr_5th{
+                color: #f9c857ff ;
+                text-shadow: none;
+            }
+            .tr_6th{
+                color: #f99d57ff ;
+                text-shadow: none;
+            }
+        }
     }
 }
 .guide_dropBoxes_container{

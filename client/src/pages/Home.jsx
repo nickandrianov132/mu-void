@@ -91,7 +91,7 @@ const navigate = useNavigate()
                         <h4 className='description_item_h4_opening'>Opening is scheduled for January 9<sup>th</sup> at 17:00 Server Time!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>- The winter season journey will begin on January 9<sup>th</sup> at 17:00 Server Time / 19:00 Kyiv / 20:00 Moscow / 18:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WCoins, to use for getting VIP or buying useful things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen next weekends from server launching.<br/> - We hope you will enjoy your adventure!</p>
+                        <p className='description_item_p'><b>- The winter season journey will begin on January 9<sup>th</sup> at 17:00 Server Time / 19:00 Kyiv / 20:00 Moscow / 18:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - We have <a className='a_bonus_exp' href='https://mu-void.com/guide/resets_info' target='_blank'> Bonus Dynamic Exp & Easy Reset system</a> on our server.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WCoins, to use for getting VIP or buying useful things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen next weekends from server launching.<br/> - We hope you will enjoy your adventure!</p>
                     </div>
                 </div>
             </HomeContent>

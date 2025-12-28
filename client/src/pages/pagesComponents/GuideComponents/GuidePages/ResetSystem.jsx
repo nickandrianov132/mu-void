@@ -1,3 +1,4 @@
+import DynamicExp from "./GuidePagesComponents/DynamicExp";
 import GuideTitle from "./GuidePagesComponents/GuideTitle";
 
 const ResetSystem = () => {
@@ -6,6 +7,7 @@ const ResetSystem = () => {
             <GuideTitle title='Reset system:'/>
             <div className="reset_info_div">
                 <p className="reset_p1">💠 On our server working <em>Easy Reset System</em></p>
+                <DynamicExp/>
                 <h4>Requirements:</h4>
                 <div className="reset_description_div">
                     <div className="reset_container">

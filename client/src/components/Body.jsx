@@ -7,7 +7,7 @@ import CountdownOpening from './CountdownOpening';
 const Body = () => {
     return (
         <div className='body_container'>
-            {/* <CountdownOpening /> */}
+            <CountdownOpening />
            <SideBar />
            <AppRouter /> 
            <Aside/>
