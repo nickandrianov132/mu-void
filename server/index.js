@@ -14,16 +14,15 @@ app.use(cors())
 app.use(express.json())
 app.use('/api', router)
 
-
 /// Обработка ошибок, последний Middleware:
 app.use(errorHandlerMiddleware)
 
 // mmotopVoteController.mmotopFetch()
 // mmoanonsVoteController.mmoanonsFetch()
 
-// setInterval( () => {
-//     mmoanonsVoteController.mmoanonsFetch()
-// }, 1200000)
+setInterval( () => {
+    mmoanonsVoteController.mmoanonsFetch()
+}, 1200000)
 setInterval( () => {
     mmotopVoteController.mmotopFetch()
 }, 1200000)

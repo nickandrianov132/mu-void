@@ -78,6 +78,18 @@ const VoteContainer = () => {
                 img={Images.votegtop100}
                 coinsDesc="every 24 hours"
             />
+            <VoteItem
+                title="Vote on MMOHUB"
+                link={`https://mmohub.com/site/1131/vote`}
+                img={Images.mmohub}
+                coinsDesc="every 24 hours"
+            />
+            <VoteItem
+                title="Vote on MMTop200"
+                link={`https://mmtop200.com/vote/4908`}
+                img={Images.mmtop200}
+                coinsDesc="every 24 hours"
+            />
             <div className="vote_tip_container">
                 <em className="vote_tip_1">* Due to <b>MMOTOP</b> and <b>MMOANONS</b> do not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
                 <em className="vote_tip_2">* On <b>MMOTOP</b> and <b>MMOANONS</b> - you should indicate your account <b>Login</b> to get WCoins.</em>
