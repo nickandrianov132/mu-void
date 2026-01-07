@@ -67,6 +67,20 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
+                <HomeContent
+                    title="🔖The opening is approaching!📆"
+                    date="7.01.2026"
+                    sideImage={Images.vote_bg1}
+                >
+                    <div className='description_list'>
+                        <div className='opening_wrapper_h4'>
+                            <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
+                        </div>
+                        <div className='description_wrapper_p'>
+                            <p className='description_item_p'><b>Waiting for you on the server Opening January 9th at 17:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel is <b>available</b>.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> - Download the updated version of game Client.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All OBT accounts and characters were deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a><br/> <b>Thanks to everyone who helps promote our server!</b></p>
+                        </div>
+                    </div>
+                </HomeContent>
             {/* <HomeContent
                 title="⭐ Vote for us and earn Wcoins💰"
                 date="04.11.2025"
@@ -75,12 +89,12 @@ const navigate = useNavigate()
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
                         <h4 className='description_item_h4_opening'>Vote for WCoins now available in account panel!</h4>
-                    </div>
-                    <div className='description_wrapper_p'>
+                        </div>
+                        <div className='description_wrapper_p'>
                         <p className='description_item_p'><br/> - Registration is available now. Login and Vote!<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a> <br/> - In account pannel were added few links of MMO Top100 rankings with WCoins reward.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> <b>Thanks to everyone who helps promote our server.</b></p>
-                    </div>
-                </div>
-            </HomeContent> */}
+                        </div>
+                        </div>
+                        </HomeContent> */}
             <HomeContent
                 title="🚀Grand Opening January 09 at 17:00 Server Time🔥"
                 date="26.12.2025"
@@ -95,20 +109,6 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent>
-            {/* <HomeContent
-                title="🔖Open Beta-Test is Closed 🔒"
-                date="16.10.2025"
-                sideImage={Images.bg_obt_close}
-            >
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
-                    </div>
-                    <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>Waiting for you on the server Opening November 08 at 12:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel will be available on the opening day.<br/> - Everyone who has already downloaded the game client must download the updated version again.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All accounts and characters were deleted deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a></p>
-                    </div>
-                </div>
-            </HomeContent> */}
             <HomeContent
                 title="💥Opening is approaching📢"
                 date="17.12.2025"

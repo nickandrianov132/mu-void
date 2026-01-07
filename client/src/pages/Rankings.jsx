@@ -54,7 +54,7 @@ const Rankings = () => {
                         </tr>
                     </thead>
                     <tbody className="rankings_tbody">
-                        {characters?.map((char, i) => 
+                        {fakeChars?.map((char, i) => 
                             <tr key={char.name} onClick={() => navigate(CHARACTER_CARD_ROUTE + '/' + char.name)}>
                                 <td>{i === 0 ?
                                     <div className="rank_star"><GiStarsStack className="top_star_gold" /> {i + 1}</div>
