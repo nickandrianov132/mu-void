@@ -69,7 +69,7 @@ const navigate = useNavigate()
             </HomeContent> */}
                 <HomeContent
                     title="🔖The opening is approaching!📆"
-                    date="7.01.2026"
+                    date="07.01.2026"
                     sideImage={Images.vote_bg1}
                 >
                     <div className='description_list'>
@@ -77,7 +77,7 @@ const navigate = useNavigate()
                             <h4 className='description_item_h4_opening'>Due to upcoming opening OBT is closed!</h4>
                         </div>
                         <div className='description_wrapper_p'>
-                            <p className='description_item_p'><b>Waiting for you on the server Opening January 9th at 17:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - The voting system in the account panel is <b>available</b>.<br/>- Earn WCoins and buy useful goods in X-Shop.<br/> - Download the updated version of game Client.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All OBT accounts and characters were deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a><br/> <b>Thanks to everyone who helps promote our server!</b></p>
+                            <p className='description_item_p'><b>Waiting for you on the server Opening January 9th at 17:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - Vote for our server!<br/> - Download the updated version of game Client.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All OBT accounts and characters were deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a><br/> <b>Thanks to everyone who helps promote our server!</b></p>
                         </div>
                     </div>
                 </HomeContent>
