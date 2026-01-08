@@ -42,6 +42,16 @@ const MiniBosses = () => {
                     extraDrop="Demon, Spirit of Guardian"
                 />
             </div>
+            <div className="maya_content_container">
+                <MayaContentItem 
+                    title="Great Dragon:"
+                    remark="Apears 1 Great Dragon in random places on Kanturu"
+                    respInfo="Respawn every 6 hour"
+                    img={Images.great_dragon}
+                    dropImg1={Images.flame_of_condor1}
+                    drop="Flame of Condor"
+                />
+            </div>
         </div>
     );
 }

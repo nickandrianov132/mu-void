@@ -64,7 +64,7 @@ const BuyWcoinsMain = () => {
 
     return (
         <div className="buyWcoins_container">
-            <h4 className="buyWcoins_header_h4">You can help our project buing Wcoins!</h4>
+            <h4 className="buyWcoins_header_h4">You can help our server by buying WCoins!</h4>
             <h5 className="buyWcoins_header_h5">☝ Wcoins purchase will be available after first Castle Siege🔒</h5>
             <div className="buy_wcoins_select_wrapper">
                 <select 

@@ -25,7 +25,7 @@ const BossKundun = () => {
                         </div>
                     </div>
                     <div className="info_description_item">
-                        <p>🔸<b>Extra drop:</b> <em className="ancient_em">Ancient Items</em> + <em className="exelent_em">Exelent Opt</em> :</p>
+                        <p>🔸<b>Extra drop:</b> <em className="ancient_em">Ancient Items</em> + <em className="exelent_em">Excellent Opt</em> :</p>
                         <div className="info_img_wrapper">
                             <img src={Images.anubis_anc_exe}/>
                             <img src={Images.broy_pend_exe}/>

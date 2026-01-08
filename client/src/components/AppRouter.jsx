@@ -1,6 +1,6 @@
 import {Routes, Route, Navigate} from "react-router-dom";
 import { authRoutes, publicRoutes } from '../routes';
-import { GUIDE_CLASSES_INFO, GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUSA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GOLDENMOBS_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, GUIDE_SANTA_INFO, GUIDE_WHITE_WIZARD_INFO, HOME_ROUTE } from '../utils/constants';
+import { GUIDE_CASTLE_SIEGE_INFO, GUIDE_CLASSES_INFO, GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUSA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GOLDENMOBS_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_ROUTE, GUIDE_SANTA_INFO, GUIDE_WHITE_WIZARD_INFO, HOME_ROUTE } from '../utils/constants';
 import ResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/ResetSystem";
 import GrandResetSystem from "../pages/pagesComponents/GuideComponents/GuidePages/GrandResetSystem";
 import Guide from "../pages/Guide";
@@ -25,6 +25,7 @@ import ClassesInfo from "../pages/pagesComponents/GuideComponents/GuidePages/Cla
 import WhiteWizard from "../pages/pagesComponents/GuideComponents/GuidePages/WhiteWizard";
 import Medusa from "../pages/pagesComponents/GuideComponents/GuidePages/Medusa";
 import Images from "../assets/Images";
+import CastleSiege from "../pages/pagesComponents/GuideComponents/GuidePages/CastleSiege";
 
 
 const AppRouter = () => {
@@ -69,6 +70,7 @@ const AppRouter = () => {
                     <Route path={GUIDE_WHITE_WIZARD_INFO} element={<WhiteWizard />} />
                     <Route path={GUIDE_CLASSES_INFO} element={<ClassesInfo />} />
                     <Route path={GUIDE_DROP_BOSS_MEDUSA_INFO} element={<Medusa />} />
+                    <Route path={GUIDE_CASTLE_SIEGE_INFO} element={<CastleSiege />} />
                     <Route path={GUIDE_ROUTE + '/*'} element={<Navigate to={GUIDE_ROUTE}/> }/>
                 </Route>
                 <Route path="*" element={<Navigate to={HOME_ROUTE}/>} />

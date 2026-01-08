@@ -3976,7 +3976,146 @@ body {
                 }
             }
         }
-}
+    }
+    .cs_info_body{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        width: 98%;
+        .cs_body_h4{
+            font-size: 0.85em;
+            @include app_margin(0.6em 0 0 0);
+            @include app_padding(0 0 0 0.8em);
+        }
+        .cs_image_wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            .cs_body_img{
+                width: 90%;
+                border-radius: 0.3em;
+                @include app_margin(0.4em 0 1em 0);
+            }
+        }
+        .cs_schedule_wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            @include app_margin(0 0 0.5em 0);
+            .cs_body_p{
+                font-size: 0.8em;
+            }
+        }
+        .cs_desc_wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1em;
+            .lord_mix_wrapper{
+                .lord_mix_img_wrapper{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    @include app_margin(0.5em 0 0.5em 0);
+                    img{
+                        width: 60%;
+                        border: 0.1em solid #4a4c55ff;
+                        border-radius: 0.3em;
+                    }
+                }
+                .reward_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    @include app_margin(0.5em 0 0.5em 0.5em);
+                    .reward_h4{
+                        font-size: 0.85em;
+                        color: #ff4b1fff;
+                    }
+                    .reward_h5{
+                        font-size: 0.8em;
+                        color: #35e0beff;
+                    }
+                    .reward_h6{
+                        font-size: 0.85em;
+                        color: #35e0beff;
+                    }
+                    .reward_item{
+                        display: flex;
+                        .reward_item_title{
+                            display: flex;
+                            width: 15%;
+                            font-style: normal;
+                            font-size: 0.75em;
+                            color: #ff8146ff;
+                        }
+                        .reward_item_content{
+                            display: flex;
+                            width: 85%;
+                            font-size: 0.75em;
+                            padding-left: 0.5em;
+                            .excellent{
+                                font-style: normal;
+                                color: #1eec4bff;
+                            }
+                            .divine{
+                                font-style: normal;
+                                color: #ec07ddff;
+                                @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, #e4125bff);
+                            }
+                            .socket{
+                                font-style: normal;
+                                color: #b674bbff;
+                            }
+                            .ancient{
+                                font-style: normal;
+                                color: #24f5afff;
+                                @include text-shadow(0.015em, 0.015em, -0.015em, -0.015em, 0.1em, #261b86ff);
+                            }
+                        }
+                    }
+                }
+                h4{
+                    @include app_padding(0 0 0 0.4em);
+                    color: #00b4eb;
+                    font-size: 0.85em;
+                }
+                ul{
+                    @include app_padding(0 0 0 1em);
+                    li{
+                        font-size: 0.8em;
+                        em{
+                            color: #00cba2;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .gd_img_wrapper{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    @include app_margin(0.5em 0 0.6em 0);
+                    img{
+                        width: 45%;
+                        border: 0.1em solid #4a4c55ff;
+                        border-radius: 0.3em;
+                    }
+                }
+                .gd_description_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .cs_body_p{
+                        font-size: 0.8em;
+                        em{
+                            font-style: normal;
+                            color: #f7cc30ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .guide_main_container{
     display: flex;

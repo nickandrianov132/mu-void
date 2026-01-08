@@ -573,7 +573,7 @@ export function wcoinsToCurrency(wc) {
         currency = 20
     }
     else if(wc == 2100) {
-        currency = 35
+        currency = 25
     }
     else{
         currency = null
