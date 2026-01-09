@@ -25,20 +25,20 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
-            {/* <HomeContent
+            <HomeContent
                 title="💥Weekend Events Coming!💝"
-                date="18.11.2025"
-                sideImage={Images.sunday_events}
+                date="09.01.2026"
+                sideImage={Images.saturday_events}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🎉Take part in events on Sunday!</h4>
+                        <h4 className='description_item_h4_opening'>🎉Take part in events on Saturday!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - random Boxes of Kundun +3,+4,+5.🎁<br/><br/><em className='ps_em'>On Sunday 23.11.2025 at 18:30 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
+                        <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - Boxes of Kundun +1,+2,+3 x 2!🎁🧨<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - Boxes of Kundun +4 x 2, +5 x 1!🎁🧨<br/><br/><em className='ps_em'>On Saturday 10.01.2026 at 18:00 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
                     </div>
                 </div>
-            </HomeContent> */}
+            </HomeContent>
             {/* <HomeContent
                 title="🎁Added Jewels cheance drop!💎"
                 date="08.11.2025"
