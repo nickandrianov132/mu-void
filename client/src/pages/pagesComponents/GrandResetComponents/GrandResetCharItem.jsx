@@ -42,13 +42,13 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
                     <span className="grand_reset_tip">🔸 You need to proceed final class change Quest!</span>
                 }
                 {!grCheckLevel(cLevel) &&
-                    <span className="grand_reset_tip">🔸 You character should be 400lvl!</span>
+                    <span className="grand_reset_tip">🔸 Your character should be 400lvl!</span>
                 }
                 {!grCheckReset(cReset) &&
-                    <span className="grand_reset_tip">🔸 You character should have 20 Resets!</span>
+                    <span className="grand_reset_tip">🔸 Your character should have 20 Resets!</span>
                 }
                 {!grCheckZen(cZen) &&
-                    <span className="grand_reset_tip">🔸 You should have 2kkk zen in your inventory!</span>
+                    <span className="grand_reset_tip">🔸 Your should have 2kkk zen in your inventory!</span>
                 }
                 {!grCheckOnline(cOnline) &&
                     <span className="grand_reset_tip">🔸 Your character should be offline!</span>

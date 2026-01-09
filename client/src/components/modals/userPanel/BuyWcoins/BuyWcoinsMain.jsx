@@ -29,8 +29,8 @@ const BuyWcoinsMain = () => {
     const [currency, setCurrency] = useState(5)
     const [invoiceInfo, setInvoiceInfo] = useState(null)
     const [isInvoiceLoading, setIsInvoiceLoading] = useState(false)
-    console.log(wcoins);
-    console.log(userInfo)
+    // console.log(wcoins);
+    // console.log(userInfo)
     useEffect(() => {
         if(!accessToken) {
             navigate(HOME_ROUTE)
