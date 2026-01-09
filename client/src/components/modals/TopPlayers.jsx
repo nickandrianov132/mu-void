@@ -32,9 +32,9 @@ const TopPlayers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                {isSuccess & top3Players?.length > 0 ?
+                {!isSuccess & top3Players?.length > 0 ?
                     emptyTop5Players?.map((char, i) => 
-                    <tr key={char.name}>
+                    <tr key={char.id}>
                         <td>{i === 0 ?
                                 <div className="rank_star_top5"><GiStarsStack className="top5_star_gold" /> <p>{i + 1}</p></div>
                                 : i === 1 ? 
