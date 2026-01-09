@@ -245,7 +245,7 @@ class UserController {
     // }
 
     async createAccount(req, res, next) {
-        const {login, password, name, email, date, regQuestion, regAnswer, ip} = req.body
+        const {login, password, name, email, date, regQuestion, regAnswer} = req.body
         if(!email || !password) {
             return next(ApiError.badRequest("Wrong password or email!"))
         }

@@ -20,13 +20,13 @@ const navigate = useNavigate()
     // console.log(`inputLogin: ${inputLogin}; inputEmail: ${inputEmail}; inputRules: ${inputRules}`);
     console.log(isRules);
     console.log(userData)
-    let userIp 
-    async function getIpAddress() {
-        const ip = await fetch('https://api.ipify.org?format=json')
-        .then(res => res.json())
-        .then(data => data)
-        return ip
-    }
+    // let userIp 
+    // async function getIpAddress() {
+    //     const ip = await fetch('https://api.ipify.org?format=json')
+    //     .then(res => res.json())
+    //     .then(data => data)
+    //     return ip
+    // }
 
     
 
@@ -35,8 +35,9 @@ const navigate = useNavigate()
         e.preventDefault()
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString()
-            let userIp = await getIpAddress() 
-            let user = {...userData, date: dateStamp, ip: userIp.ip}
+            // let userIp = await getIpAddress() 
+            // let user = {...userData, date: dateStamp, ip: userIp.ip}
+            let user = {...userData, date: dateStamp}
             // console.log(user);
             await registration({...user})
             
@@ -133,6 +134,7 @@ const navigate = useNavigate()
                         <input 
                             className="input_rules"
                             type="checkbox"
+                            checked={isRules}
                             onChange ={() => {
                                 setIsRules(state => !state)
                                 // setInputRules(state => !state)
