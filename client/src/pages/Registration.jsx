@@ -8,16 +8,17 @@ import { emailRegexp, loginRegexp, nameRegexp, passRegexp, questionAnswerRegexp 
 import { useEffect, useState } from "react";
 import RegInput from "./pagesComponents/RegistrationComp/RegInput";
 import { setEmail, setLogin, setName, setPassword, setRegAnswer, setRegQuestion} from "../store/slices/regUserSlice";
+import Spinner from "../components/Spinner"
 
 
 const Registration = () => {
 const navigate = useNavigate()
     const userData = useSelector(state => state.regUserData)
     const {inputLogin, inputPassword, inputEmail, inputName, inputRegQuestion, inputRegAnswer} = useSelector(state => state.regInputsData)
-    const [registration,{ error, isError, isSuccess}] = useRegistrationMutation()
+    const [registration,{ error, isError, isSuccess, isLoading}] = useRegistrationMutation()
     const [isRules, setIsRules] = useState(false)
     // console.log(`inputLogin: ${inputLogin}; inputEmail: ${inputEmail}; inputRules: ${inputRules}`);
-    // console.log(isRules);
+    console.log(isRules);
     console.log(userData)
     let userIp 
     async function getIpAddress() {
@@ -66,6 +67,11 @@ const navigate = useNavigate()
     // console.log(isSuccess);
     // console.log(error);
     return (
+        <>
+        {isLoading ? 
+        <Spinner/>
+            :
+    
         <div className='registration_container'>
             <RegForm>
                 <RegInput 
@@ -155,6 +161,8 @@ const navigate = useNavigate()
                 </div>
             </RegForm>
         </div>
+        }
+        </>
     );
 }
 
