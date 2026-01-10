@@ -209,7 +209,7 @@ class UserController {
         const vote = await request
         .input('AccountID', sql.VarChar(10), postback)
         .input('Type', sql.Int(), 0)
-        .input('Coin', sql.Float(), 10)
+        .input('Coin', sql.Float(), 0)
         .execute('dbo.WZ_IBS_AddCoin')
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
