@@ -5,6 +5,7 @@ const router = require('./routes/index')
 const errorHandlerMiddleware = require('./middleware/ErrorHandlingMiddleware')
 const mmotopVoteController = require('./controllers/mmotopVoteController')
 const mmoanonsVoteController = require('./controllers/mmoanonsVoteController')
+const fakeCharLvlController = require('./controllers/fakeCharLvlController')
 
 
 const PORT = process.env.PORT || 7000
@@ -20,9 +21,17 @@ app.use(errorHandlerMiddleware)
 // mmotopVoteController.mmotopFetch()
 // mmoanonsVoteController.mmoanonsFetch()
 
+
+
 // setInterval( () => {
-//     mmoanonsVoteController.mmoanonsFetch()
-// }, 1200000)
+//     fakeCharLvlController.charLevelUp(["DendiDW", "kakashiMG"])
+// }, 60000)
+setInterval( () => {
+    fakeCharLvlController.charLevelUp(["SelyakK", "NightElfa", "PINXULON", "Inmut", "WWWWW", "WoWoW", "What", "Nami", "buff", "garen", "Arhi", "Leona"])
+}, 600000)
+setInterval( () => {
+    mmoanonsVoteController.mmoanonsFetch()
+}, 1200000)
 setInterval( () => {
     mmotopVoteController.mmotopFetch()
 }, 1200000)
