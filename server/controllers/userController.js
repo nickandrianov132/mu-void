@@ -261,6 +261,7 @@ class UserController {
         // const encryptedPwd = md5Pass(password, login)
         const pool = await poolPromise
         const request = pool.request()
+        // let dateStamp = new Date().toLocaleString()
         const acc = await request
             // .input('memb_guid', sql.Int, 2)
             // .input('memb___id', sql.VarChar(10), login)

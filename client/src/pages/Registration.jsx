@@ -33,8 +33,9 @@ const navigate = useNavigate()
 
     const regUserHandler = async (e) => {
         e.preventDefault()
+        console.log(`Registretion sended for: ${userData.login}`);
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
-            let dateStamp = new Date().toLocaleString()
+            let dateStamp = new Date().toLocaleString("en-GB", { timeZone: "UTC" })
             // let userIp = await getIpAddress() 
             // let user = {...userData, date: dateStamp, ip: userIp.ip}
             let user = {...userData, date: dateStamp}
@@ -48,6 +49,7 @@ const navigate = useNavigate()
     useEffect(() => {
         if(isSuccess){
             navigate(REGISTRATION_SUCCESS)
+            setIsRules(false)
         }
     },[isSuccess])
 
