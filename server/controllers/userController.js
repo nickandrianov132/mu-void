@@ -261,7 +261,6 @@ class UserController {
         // const encryptedPwd = md5Pass(password, login)
         const pool = await poolPromise
         const request = pool.request()
-        // let dateStamp = new Date().toLocaleString()
         const acc = await request
             // .input('memb_guid', sql.Int, 2)
             // .input('memb___id', sql.VarChar(10), login)
@@ -282,7 +281,7 @@ class UserController {
             .input('accMail', sql.VarChar(50), email)
             .input('regQuestion', sql.VarChar(50), regQuestion)
             .input('regAnswer', sql.VarChar(50), regAnswer)
-            .input('accJoinDate', sql.VarChar(25), date)
+            .input('accJoinDate', sql.VarChar(23), date)
             // .input('userIp', sql.VarChar(15), ip)
             // .input('dayAdd', sql.Int(), 3)
             // .input('vipType', sql.SmallInt(), 3)

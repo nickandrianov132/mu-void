@@ -40,7 +40,11 @@ const navigate = useNavigate()
             // let user = {...userData, date: dateStamp, ip: userIp.ip}
             let user = {...userData, date: dateStamp}
             // console.log(user);
-            await registration({...user})
+            try {
+                registration({...user})
+            } catch (error) {
+                console.log(error);
+            }
             
         }else{
             console.log('some registration field incorrect!');
@@ -148,7 +152,7 @@ const navigate = useNavigate()
                 </div>
                 <div className="reg_btn_div">
                     <div className="reg_error_div">
-                    {isError && <p>{error.data.message}</p>}
+                    {isError && <p>{error?.data?.message}</p>}
                     </div>
                     {checkRegBtn() ?
                         <button 
