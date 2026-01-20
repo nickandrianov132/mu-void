@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { GUIDE_SANTA_INFO } from '../utils/constants';
 
-const imgArray = [Images.easy_obt1, Images.easy_obt2, Images.easy_obt3]
+// const imgArray = [Images.easy_obt1, Images.easy_obt2, Images.easy_obt3]
 
 const Home = () => {
 const navigate = useNavigate()
@@ -25,7 +25,7 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
-            <HomeContent
+            {/* <HomeContent
                 title="💥Weekend Events Coming!💝"
                 date="09.01.2026"
                 sideImage={Images.saturday_events}
@@ -38,7 +38,7 @@ const navigate = useNavigate()
                         <p className='description_item_p'><b className='intro_b'>Meet the events from Game Master:</b><br/>🔸<b>Find GM Event</b> - Boxes of Kundun +1,+2,+3 x 2!🎁🧨<br/>🔸<b>Jewel Drop Event</b> - location Lorencia near the Bar.💎<br/>🔸<b>Bring Item Event</b> - Boxes of Kundun +4 x 2, +5 x 1!🎁🧨<br/><br/><em className='ps_em'>On Saturday 10.01.2026 at 18:00 Server Time GM will commence events, additional info check in <b className='b_game'>Game</b> and in our <a href='https://discord.gg/ANTqvCrQCk' className='b_discord'>Discord</a>!</em></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
                 title="🎁Added Jewels cheance drop!💎"
                 date="08.11.2025"
@@ -53,7 +53,7 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
-            <HomeContent
+            {/* <HomeContent
                 title="🎉Server is Open!🔓"
                 date="09.01.2026"
                 sideImage={Images.opening_bg2}
@@ -66,8 +66,8 @@ const navigate = useNavigate()
                         <p className='description_item_p'><b className='intro_b'>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10%🔥.<br/>🔹 Bonus Evening Exp+50% Drop +10% from 18:00 to 22:00🔥.<br/>🔹 All classes available from 1 lvl.<br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
-            </HomeContent>
-                <HomeContent
+            </HomeContent> */}
+                {/* <HomeContent
                     title="🔖The opening is approaching!📆"
                     date="07.01.2026"
                     sideImage={Images.vote_bg1}
@@ -80,7 +80,7 @@ const navigate = useNavigate()
                             <p className='description_item_p'><b>Waiting for you on the server Opening January 9th at 17:00 Server Time "GMT+0"!</b><br/> - A lot of things was fixed and configured for smooth and comfortable gameplay.<br/> - Vote for our server!<br/> - Download the updated version of game Client.<br/><a className='a_download' href="https://www.mu-void.com/download"> 👉 Download</a> <br/> - All OBT accounts and characters were deleted.<br/><a className='a_registration' href="https://www.mu-void.com/registration">👉 Registration</a><br/> <b>Thanks to everyone who helps promote our server!</b></p>
                         </div>
                     </div>
-                </HomeContent>
+                </HomeContent> */}
             {/* <HomeContent
                 title="⭐ Vote for us and earn Wcoins💰"
                 date="04.11.2025"
@@ -96,20 +96,20 @@ const navigate = useNavigate()
                         </div>
                         </HomeContent> */}
             <HomeContent
-                title="🚀Grand Opening January 09 at 17:00 Server Time🔥"
-                date="26.12.2025"
-                sideImage={Images.winter_opening1}
+                title="🚀Opening February 06 at 17:00 Server Time🔥"
+                date="20.01.2026"
+                sideImage={Images.opening_feb}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>Opening is scheduled for January 9<sup>th</sup> at 17:00 Server Time!</h4>
+                        <h4 className='description_item_h4_opening'>Opening is scheduled for February 6<sup>th</sup> at 17:00 Server Time!</h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b>- The winter season journey will begin on January 9<sup>th</sup> at 17:00 Server Time / 19:00 Kyiv / 20:00 Moscow / 18:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - We have <a className='a_bonus_exp' href='https://mu-void.com/guide/resets_info' target='_blank'> Bonus Dynamic Exp & Easy Reset system</a> on our server.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WCoins, to use for getting VIP or buying useful things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen next weekends from server launching.<br/> - We hope you will enjoy your adventure!</p>
+                        <p className='description_item_p'><b className='b_notice'> Dear players. We regret to inform you of our decision to reopen the server. The reason is extremely low online which is not good for all of us. All existed unique players reached 1 reset will get 50wc for each reset of main character as a compensation bonus on the date of opening. Watch for further announcements for more details of Opening 06.02.2026.</b><br/><b className='b_notice'> at 17:00 Server Time / 19:00 Kyiv / 20:00 Moscow / 18:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - We have <a className='a_bonus_exp' href='https://mu-void.com/guide/resets_info' target='_blank'> Bonus Dynamic Exp & Easy Reset system</a> on our server.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WCoins, to use for getting VIP or buying useful things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen next weekends from server launching.<br/> - We hope you will enjoy your adventure!</p>
                     </div>
                 </div>
             </HomeContent>
-            <HomeContent
+            {/* <HomeContent
                 title="💥Opening is approaching📢"
                 date="17.12.2025"
                 sideImage={Images.opening_january}
@@ -123,8 +123,8 @@ const navigate = useNavigate()
                     <p className='description_item_p'></p>
                     <h4 className='description_item_h4'></h4>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="🚀Open Beta Test💢"
                 date="05.12.2025"
                 sideImage={Images.obt_new}
@@ -140,8 +140,8 @@ const navigate = useNavigate()
                     <p className='description_item_p'><b>💣💥</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
                     <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="📢Updates 📝"
                 date="05.12.2025"
                 sideImage={Images.updates1}
@@ -162,13 +162,13 @@ const navigate = useNavigate()
                         <li>- Reduced damage, defense, HP of White Wizard & Orcs, Santa & Cursed Goblins, Gold Rabbits.</li>
                         <li>- Added New Socket items into drop from Selupan.</li>
                     </ul>
-                    {/* <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
+                    <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
                     <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
                     <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
-                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4> */}
+                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
                 </div>
-            </HomeContent>
-            <HomeContent
+            </HomeContent> */}
+            {/* <HomeContent
                 title="📌OBT Launching 🔔"
                 date="01.12.2025"
                 sideImage={Images.obt_coming}
@@ -181,7 +181,7 @@ const navigate = useNavigate()
                     <p className='description_item_p'><b>🔨🔧</b> List of all updates and reworks will be posted upon the launching of OBT.<b>📜</b> </p>
                     <h4 className='description_item_h5'>We've decided to rework our server settings and content to make gameplay easier so you can develop and equip your characters faster and more enjoyably.</h4>
                 </div>
-            </HomeContent>                                         
+            </HomeContent>                                          */}
         </div>
     );
 }

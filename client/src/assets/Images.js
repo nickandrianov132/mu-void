@@ -221,6 +221,7 @@ const Images = {
     winter_decor3: new URL('./winter_decor3.png', import.meta.url).href,     
     winter_opening1: new URL('./winter_opening1.jpg', import.meta.url).href,     
     opening_bg2: new URL('./opening_bg2.jpg', import.meta.url).href,     
+    opening_feb: new URL('./opening_feb.jpg', import.meta.url).href,     
      
 }
 

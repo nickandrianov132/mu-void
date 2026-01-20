@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const serverInfo = [
-    {title: 'Experience:', content: {content: 'Dynamic 100x -> 50x', className: 'description_content_p'}},
+    {title: 'Experience:', content: {content: 'Dynamic 150x -> 100x', className: 'description_content_p'}},
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},

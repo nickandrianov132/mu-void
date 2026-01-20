@@ -1354,6 +1354,10 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p b {
   font-size: 1.1em;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .b_notice {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25em;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .discord_a {
   font-size: 1.2em;
   color: #987eff;

@@ -12,7 +12,7 @@ const OnlineIndicator = ({online}) => {
 
     return (
         <div className='online_indicator_div'>
-            <p className='online_indicator_p'>Server x50</p>
+            <p className='online_indicator_p'>Server x100</p>
             <div className='online_indicator_bg'>
                 <div 
                     style={{width: `${pxOnline()}%`}}

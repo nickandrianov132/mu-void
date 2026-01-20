@@ -33,15 +33,13 @@ const navigate = useNavigate()
 
     const regUserHandler = async (e) => {
         e.preventDefault()
-        console.log(`Registretion sended for: ${userData.login}`);
+        // console.log(`Registretion sended for: ${userData.login}`);
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString("en-GB", { timeZone: "UTC" })
             // let userIp = await getIpAddress() 
-            // let user = {...userData, date: dateStamp, ip: userIp.ip}
             let user = {...userData, date: dateStamp}
-            // console.log(user);
             try {
-                registration({...user})
+                await registration({...user})
             } catch (error) {
                 console.log(error);
             }
