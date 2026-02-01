@@ -95,8 +95,8 @@ const VoteContainer = () => {
                 title="Vote on MUOGG.com"
                 link={`https://muogg.com/vote.php?server=65`}
                 img={Images.muogg}
-                coins="10 WCoins!"
-                coinsDesc="Use Login! every 24h"
+                coins="5 WCoins!"
+                coinsDesc="Use Login! every 12h"
             />
             <div className="vote_tip_container">
                 <em className="vote_tip_1">* Due to <b>MMOTOP</b> and <b>MMOANONS</b> do not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
