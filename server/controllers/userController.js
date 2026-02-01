@@ -360,6 +360,18 @@ class UserController {
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
     }
+    async  userVoteMMTOP200(req, res) {
+        const {custom} = req.query
+        const pool = await poolPromise
+        const request = pool.request()
+        const vote = await request
+        .input('AccountID', sql.VarChar(10), custom)
+        .input('Type', sql.Int(), 0)
+        .input('Coin', sql.Float(), 0)
+        .execute('dbo.WZ_IBS_AddCoin')
+        console.log(vote.recordset[0]);
+        return res.json(vote.recordset[0].RESULT)
+    }
     // async  userVoteTop100arena(req, res) {
     //     const {postback} = req.query
     //     const pool = await poolPromise

@@ -33,12 +33,12 @@ const AppRouter = () => {
 
     return (
         <div className='router_container'>
-            <img className='christmastree_img' src={Images.christmastree1}/>
+            {/* <img className='christmastree_img' src={Images.christmastree1}/>
             <img className='snow1_img' src={Images.snow1}/>
             <img className='snow4_img' src={Images.snow4}/>
             <img className='snow2_img' src={Images.snow2}/>
             <img className='snowman_img' src={Images.snowman}/>
-            <img className='snow3_img' src={Images.snow3}/>
+            <img className='snow3_img' src={Images.snow3}/> */}
             {/* <img className='snowflake1_img' src={Images.snowflake1}/> */}
             <Routes>
                 {isAuth && authRoutes.map(({path, Component}) => 

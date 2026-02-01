@@ -15,7 +15,7 @@ const Aside = () => {
             <DiscordWidget />
             <BannersBoard />
             {/* <img className='winter_decor1_img' src={Images.winter_decor1}/> */}
-            <img className='winter_decor3_img' src={Images.winter_decor3}/>
+            {/* <img className='winter_decor3_img' src={Images.winter_decor3}/> */}
             {/* <Player /> */}
         </aside>
     );

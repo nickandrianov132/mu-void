@@ -15,7 +15,7 @@ const SideBar = () => {
             <ServerTime />
             <div className="left_sidebar_content">
             </div>
-            <img className='winter_decor2_img' src={Images.winter_decor2}/>
+            {/* <img className='winter_decor2_img' src={Images.winter_decor2}/> */}
         </div>
     );
 }
