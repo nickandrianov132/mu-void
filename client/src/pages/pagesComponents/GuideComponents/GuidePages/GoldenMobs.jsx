@@ -97,7 +97,7 @@ const GoldenMobs = () => {
             />
             <GoldenMobsContetn 
                 title="Golden Crust"
-                img1={Images.tantalos_280x280}
+                img1={Images.crust_280x280}
                 desc1="Icarus"
                 desc2="3 Golden Crusts"
                 drop1="Box of Kundun +3"
