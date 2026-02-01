@@ -4860,7 +4860,7 @@ body {
     @include app_padding(1em 0.3em 0.5em 1em);
     @include app_margin(0.5em 0 0 0);
     .buyWcoins_reply_wrapper{
-        
+        font-size: 1em;
     }
 }
 .buyVip_container{
@@ -5035,7 +5035,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 50%;
+            width: 40%;
             padding-left: 1.5em;
             box-sizing: border-box;
             .vote_link::after{
@@ -5071,14 +5071,14 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            width: 30%;
+            width: 40%;
             .vote_coins_p_wrapper, .vote_coins_desc_wrapper {
                 display: flex;
                 align-items: baseline;
                 box-sizing: border-box;
                 // background: green;
                 .vote_coins_p{
-                    font-size: 0.85em;
+                    font-size: 0.8em;
                     font-style: italic;
                     color: #35cb62; 
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, rgb(8, 96, 227));

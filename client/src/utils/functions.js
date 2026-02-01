@@ -391,7 +391,7 @@ export function tipResLvl(lvl, res, grRes) {
             return tip
         }
         else if(res == 4 && lvl < 390) {
-            let tip = '⛔ Character should be 3900lvl to make Reset!'
+            let tip = '⛔ Character should be 390lvl to make Reset!'
             return tip
         }
         else if(res >= 5 && lvl < 400) {

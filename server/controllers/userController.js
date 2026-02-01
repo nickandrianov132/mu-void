@@ -71,6 +71,41 @@ async function findUserAnswer(answer) {
     .query('SELECT memb.memb___id AS user_login FROM dbo.MEMB_INFO memb WHERE memb.fpas_answ = @fpas_answ')
     return acc
 }
+
+async function findVoteUserMUOGG(login, site) {
+    const pool = await poolPromise
+    const request = pool.request()
+    const voteUserDate = await request
+    .input('accName', sql.VarChar(10), login)
+    .input('voteSite', sql.VarChar(20), site)
+    .query('SELECT v.voteDate FROM dbo.Vote_Acc_Info_muogg v WHERE v.accName = @accName AND v.voteSite = @voteSite')
+    console.log(voteUserDate.recordset)
+    return voteUserDate 
+}
+async function addVoteUserMUOGG(login, site, date, ip) {
+        const pool = await poolPromise
+        const request = pool.request()
+            const addVoteUser = await request
+            .input('accName', sql.VarChar(10), login)
+            .input('voteSite', sql.VarChar(20), site)
+            .input('voteIp', sql.VarChar(15), ip)
+            .input('voteDate', sql.SmallDateTime(), date)
+            .query('INSERT INTO dbo.Vote_Acc_Info_muogg (accName, voteSite, voteDate, voteIp) VALUES (@accName, @voteSite, @voteDate, @voteIp)')
+            console.log("Voted from addVoteUserMUOGG")
+            return addVoteUser
+}
+async function updateVoteUserMUOGG(login, site, date, ip) {
+            const pool = await poolPromise
+            const request = pool.request()
+                const updateVoteUser = await request
+                .input('accName', sql.VarChar(10), login)
+                .input('voteSite', sql.VarChar(20), site)
+                .input('voteDate', sql.SmallDateTime(), date)
+                .input('voteIp', sql.VarChar(15), ip)
+                .query('UPDATE dbo.Vote_Acc_Info SET voteDate = @voteDate WHERE accName = @accName AND voteSite = @voteSite')
+                console.log("Voted from updateVoteUser")
+                return updateVoteUser
+}
 async function findVoteUser(login, site) {
     const pool = await poolPromise
     const request = pool.request()
@@ -81,6 +116,17 @@ async function findVoteUser(login, site) {
     console.log(voteUserDate.recordset)
     return voteUserDate 
 }
+async function findVoteUser(login, site) {
+    const pool = await poolPromise
+    const request = pool.request()
+    const voteUserDate = await request
+    .input('accName', sql.VarChar(10), login)
+    .input('voteSite', sql.VarChar(20), site)
+    .query('SELECT v.voteDate FROM dbo.Vote_Acc_Info v WHERE v.accName = @accName AND v.voteSite = @voteSite')
+    console.log(voteUserDate.recordset)
+    return voteUserDate 
+}
+
 async function addVoteUser(login, site, date, ip) {
         const pool = await poolPromise
         const request = pool.request()
@@ -93,6 +139,7 @@ async function addVoteUser(login, site, date, ip) {
             console.log("Voted from addVoteUser")
             return addVoteUser
 }
+
 async function updateVoteUser(login, site, date, ip) {
             const pool = await poolPromise
             const request = pool.request()
@@ -103,6 +150,40 @@ async function updateVoteUser(login, site, date, ip) {
                 .input('voteIp', sql.VarChar(15), ip)
                 .query('UPDATE dbo.Vote_Acc_Info SET voteDate = @voteDate WHERE accName = @accName AND voteSite = @voteSite')
                 console.log("Voted from updateVoteUser")
+                return updateVoteUser
+}
+
+async function findVoteUserTop100Arena(login, site) {
+    const pool = await poolPromise
+    const request = pool.request()
+    const voteUserDate = await request
+    .input('accName', sql.VarChar(10), login)
+    .input('voteSite', sql.VarChar(20), site)
+    .query('SELECT v.voteDate FROM dbo.Vote_Acc_Info_Top100Arena v WHERE v.accName = @accName AND v.voteSite = @voteSite')
+    console.log(voteUserDate.recordset)
+    return voteUserDate 
+}
+async function addVoteUserTop100Arena(login, site, date, ip) {
+        const pool = await poolPromise
+        const request = pool.request()
+            const addVoteUser = await request
+            .input('accName', sql.VarChar(10), login)
+            .input('voteSite', sql.VarChar(20), site)
+            .input('voteDate', sql.SmallDateTime(), date)
+            .query('INSERT INTO dbo.Vote_Acc_Info_Top100Arena (accName, voteSite, voteDate) VALUES (@accName, @voteSite, @voteDate)')
+            console.log("Voted from addVoteUserTop100Arena")
+            return addVoteUser
+}
+
+async function updateVoteUserTop100Arena(login, site, date) {
+            const pool = await poolPromise
+            const request = pool.request()
+                const updateVoteUser = await request
+                .input('accName', sql.VarChar(10), login)
+                .input('voteSite', sql.VarChar(20), site)
+                .input('voteDate', sql.SmallDateTime(), date)
+                .query('UPDATE dbo.Vote_Acc_Info_Top100Arena SET voteDate = @voteDate WHERE accName = @accName AND voteSite = @voteSite')
+                console.log("Voted from updateVoteUserTop100Arena")
                 return updateVoteUser
 }
 
@@ -180,6 +261,83 @@ class UserController {
                 .input('Type', sql.Int(), 0)
                 .input('Coin', sql.Float(), 0)
                 .execute('dbo.WZ_IBS_AddCoin')
+                // console.log("vote 2nd if");
+                return res.json(vote.recordset[0].RESULT)
+            } else{
+            return next(ApiError.internal("you have already voted!"))
+        }
+        }
+        else{
+            return next(ApiError.internal("ooops... something went wrong"))
+        }
+    }
+    async  userVoteMUOGG(req, res, next) {
+        const {userId, ip} = req.body
+        const pool = await poolPromise
+        const request = pool.request()
+        const voteDate = await findVoteUserMUOGG(userId, "MUOGG")
+        const d = new Date()
+        if(voteDate.recordset.length == 0) {
+            await addVoteUserMUOGG(userId, "MUOGG", d, ip)
+            const vote = await request
+            .input('AccountID', sql.VarChar(10), userId)
+            .input('Type', sql.Int(), 0)
+            .input('Coin', sql.Float(), 10)
+            .execute('dbo.WZ_IBS_AddCoin')
+            // console.log("vote 1st if");
+            return res.json(vote.recordset[0].RESULT)
+        }
+        else if(voteDate.recordset.length != 0) {
+            const dateNowInMS = Date.now()
+            const voteDateInMS = Date.parse(voteDate.recordset[0].voteDate)
+            const dateDifference = dateNowInMS - voteDateInMS
+            if(dateDifference > 43200000) {
+                await updateVoteUserMUOGG(userId, "MUOGG", d, ip)
+                const vote = await request
+                .input('AccountID', sql.VarChar(10), userId)
+                .input('Type', sql.Int(), 0)
+                .input('Coin', sql.Float(), 10)
+                .execute('dbo.WZ_IBS_AddCoin')
+                // console.log("vote 2nd if");
+                return res.json(vote.recordset[0].RESULT)
+            } else{
+            return next(ApiError.internal("you have already voted!"))
+        }
+        }
+        else{
+            return next(ApiError.internal("ooops... something went wrong"))
+        }
+    }
+    async  userVoteTop100arena(req, res, next) {
+        const {postback} = req.query
+        const pool = await poolPromise
+        const request = pool.request()
+        const voteDate = await findVoteUserTop100Arena(postback, "Top100Arena")
+        const d = new Date()
+        if(voteDate.recordset.length == 0) {
+            await addVoteUserTop100Arena(postback, "Top100Arena", d)
+            const vote = await request
+            .input('AccountID', sql.VarChar(10), postback)
+            .input('Type', sql.Int(), 0)
+            .input('Coin', sql.Float(), 10)
+            .execute('dbo.WZ_IBS_AddCoin')
+            console.log("vote 1st if");
+            return res.json(vote.recordset[0].RESULT)
+        }
+        else if(voteDate.recordset.length != 0) {
+            const now = new Date();
+            const lastVoteDate = new Date(voteDate.recordset[0].voteDate);
+            const isSameDay = 
+                lastVoteDate.getFullYear() === now.getFullYear() &&
+                lastVoteDate.getMonth() === now.getMonth() &&
+                lastVoteDate.getDate() === now.getDate();
+            if(!isSameDay) {
+                await updateVoteUserTop100Arena(postback, "Top100Arena", d)
+                const vote = await request
+                .input('AccountID', sql.VarChar(10), postback)
+                .input('Type', sql.Int(), 0)
+                .input('Coin', sql.Float(), 10)
+                .execute('dbo.WZ_IBS_AddCoin')
                 console.log("vote 2nd if");
                 return res.json(vote.recordset[0].RESULT)
             } else{
@@ -202,18 +360,18 @@ class UserController {
         console.log(vote.recordset[0]);
         return res.json(vote.recordset[0].RESULT)
     }
-    async  userVoteTop100arena(req, res) {
-        const {postback} = req.query
-        const pool = await poolPromise
-        const request = pool.request()
-        const vote = await request
-        .input('AccountID', sql.VarChar(10), postback)
-        .input('Type', sql.Int(), 0)
-        .input('Coin', sql.Float(), 0)
-        .execute('dbo.WZ_IBS_AddCoin')
-        console.log(vote.recordset[0]);
-        return res.json(vote.recordset[0].RESULT)
-    }
+    // async  userVoteTop100arena(req, res) {
+    //     const {postback} = req.query
+    //     const pool = await poolPromise
+    //     const request = pool.request()
+    //     const vote = await request
+    //     .input('AccountID', sql.VarChar(10), postback)
+    //     .input('Type', sql.Int(), 0)
+    //     .input('Coin', sql.Float(), 0)
+    //     .execute('dbo.WZ_IBS_AddCoin')
+    //     console.log(vote.recordset[0]);
+    //     return res.json(vote.recordset[0].RESULT)
+    // }
     async  userVoteArenaTop100(req, res, next) {
         const {voted, userid, userip} = req.query
         if(voted == 1) {
@@ -230,6 +388,7 @@ class UserController {
             return next(ApiError.internal("Something went wrong..."))
         }
     }
+
     // async  userVoteGamesTop100(req, res) {
     //     console.log(req);
     //     const {pingUsername} = req.query

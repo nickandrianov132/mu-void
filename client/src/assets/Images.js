@@ -95,6 +95,7 @@ const Images = {
     mmoanons_2: new URL('./mmoanons_2.png', import.meta.url).href, 
     mmohub: new URL('./mmohub.jpg', import.meta.url).href,  
     mmtop200: new URL('./mmtop200.jpg', import.meta.url).href,  
+    muogg: new URL('./MUOGG.gif', import.meta.url).href,  
     easy_obt1: new URL('./easy_obt1.jpg', import.meta.url).href,  
     easy_obt2: new URL('./easy_obt2.jpg', import.meta.url).href,  
     easy_obt3: new URL('./easy_obt3.jpg', import.meta.url).href,
