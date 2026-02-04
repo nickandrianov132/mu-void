@@ -9,7 +9,7 @@ async function mmoanonsAddCoin(arr){
                 const pool = await poolPromise
                 const request = pool.request()
                 const voteMMOANONS = await request
-                .input('id', sql.VarChar(30), toString(e.id))
+                .input('id', sql.VarChar(30), toString(e.nickname))
                 .input('accLogin', sql.VarChar(10), e.nickname)
                 .input('ip', sql.VarChar(30), e.ip)
                 .input('voteDate', sql.SmallDateTime(), d)
@@ -27,7 +27,7 @@ async function mmoanonsAddCoin(arr){
 class mmoanonsVoteController {
 async mmoanonsFetch() {
     // let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01k8c4hsjxc9s0d5pc5sdjakjp.json')
-    let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01k99m098y53amgmewxn38rbma.json')
+    let mmoanonsData = await fetch('https://cdn.mmoanons.com/votes/01kgm1kytb8hc4gp0wswz32me0.json')
     .then(res => res.json())
     .then(resJSON => {
         for(let objKey in resJSON) {

@@ -51,6 +51,7 @@ $h5-dungeon-mob-col: rgb(222, 201, 201);
 $h6-remark-col: #15efb5;
 $h6-quantity-col: #15efb5;
 $h6-remark-resp-col: #fd8134;
+$archangel_weapon_color: #ce0a90;
 $em_silver: #a29999ee;
 $em_gold: #efb41dee;
 $em_jewel: #ff3381;
@@ -3826,6 +3827,9 @@ body {
                         color: $em-exelent-col;
                         font-size: 0.9em;
                         // @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.03em, rgb(4, 125, 10));
+                        .archangel_weapons{
+                            color: $archangel_weapon_color;
+                        }
                     }
                 }
                 .drop_img_wrapper{

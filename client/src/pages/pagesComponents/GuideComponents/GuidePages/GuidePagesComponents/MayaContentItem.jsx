@@ -1,6 +1,6 @@
 import PictureCarusel from "../../../PicturesCarousel/PictureCarusel";
 
-const MayaContentItem = ({title, remark, quantity, respInfo, images, img, img2, dropImg1, ExtraDropImg1, drop, extraDrop, armors, weapons, shields, pendants, rings}) => {
+const MayaContentItem = ({title, remark, quantity, respInfo, images, img, img2, dropImg1, ExtraDropImg1, drop, extraDrop, armors, weapons, extraWeapons, shields, pendants, rings}) => {
     return (
         <div className="maya_content_item">
             <div className="maya_content_item_title">
@@ -52,7 +52,7 @@ const MayaContentItem = ({title, remark, quantity, respInfo, images, img, img2, 
                     }
                     {weapons && <div className="maya_drop_item">
                                     <div className="drop_item_title"><b>Weapons:</b></div>
-                                    <div className="drop_item_content">{weapons}</div>
+                                    <div className="drop_item_content">{weapons}<em className="archangel_weapons"> {extraWeapons}</em> </div>
                                 </div>
                     }
                     {shields && <div className="maya_drop_item">

@@ -4765,6 +4765,9 @@ body {
   color: rgb(9, 202, 77);
   font-size: 0.9em;
 }
+.maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .maya_drop_item .drop_item_content .archangel_weapons {
+  color: #ce0a90;
+}
 .maya_content_container .maya_content_item .maya_content_item_container .maya_drop_wrapper .drop_img_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
