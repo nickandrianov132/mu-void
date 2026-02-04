@@ -83,6 +83,8 @@ const Images = {
     google_drive: new URL('./google_drive.png', import.meta.url).href,    
     pcloud: new URL('./pcloud.png', import.meta.url).href,    
     pcloud2: new URL('./pcloud2.png', import.meta.url).href,    
+    limeWire: new URL('./limeWire.png', import.meta.url).href,    
+    filebin2: new URL('./filebin2.png', import.meta.url).href,    
     opening_img: new URL('./opening.jpg', import.meta.url).href,  
     bg_obt_close: new URL('./bg_obt_close.jpg', import.meta.url).href,  
     mmotop_banner: new URL('./mmotop.png', import.meta.url).href,  

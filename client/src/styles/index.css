@@ -5565,6 +5565,14 @@ body {
   padding: 0.2em;
   width: 2.5em;
 }
+.download_container .download_link_wrapper .download_links_logo_wrapper .limeWire_logo {
+  width: 3.5em;
+  margin-right: 0.5em;
+}
+.download_container .download_link_wrapper .download_links_logo_wrapper .filebin_logo {
+  width: 2em;
+  margin-right: 0.5em;
+}
 .download_container .download_link_wrapper .download_link_a::after {
   content: "";
   position: absolute;

@@ -4434,6 +4434,14 @@ body {
                 @include app_padding(0.2em);
                 width: 2.5em;  
             }
+            .limeWire_logo{
+                width: 3.5em;
+                margin-right: 0.5em;
+            }
+            .filebin_logo{
+                width: 2em;
+                margin-right: 0.5em;
+            }
         }
         .download_link_a::after{
             content: '';
