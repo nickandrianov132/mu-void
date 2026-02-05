@@ -2,6 +2,7 @@ const Router = require('express')
 const router = new Router()
 const userController = require('../controllers/userController')
 const authMiddleware = require('../middleware/authMiddleware')
+// const { testGetOrder } = require('../controllers/paypalController')
 
 
 router.post('/registration', userController.createAccount)
@@ -22,6 +23,8 @@ router.post('/voteMUOGG', userController.userVoteMUOGG)
 router.post('/buyVip', userController.buyVip)
 router.post('/cryptocloud-insert-invoice', userController.insertCryptoInvoice)
 router.post('/cryptocloud-callback', userController.cryptoCloudPayment)
+// router.post('/paypal-orders', testGetOrder)
+// router.post('/paypal-orders/:orderID/capture')
 
 
 

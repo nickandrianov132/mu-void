@@ -7,6 +7,8 @@ const serverInfo = [
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
     {title: 'Windows per PC:', content: {content: '5', className: 'description_content_p'}},
     {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
+    {title: 'Lvl to create:', content: {content: 'All characters available from 1st level.', className: 'description_content_p'}},
+    {title: 'Start points:', content: {content: '200 free start points!', className: 'description_content_p'}},
     {title: 'Reset:', content: [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
@@ -54,8 +56,9 @@ const serverInfo = [
 {title: 'BC, DS:', content: {content: '200% Exp🔥', className: 'description_content_p'}},
 {title: 'Hot-Exp:', content: {content: 'Exp + 50% Drop + 10% Monday to Friday from 18:00 to 22:00', className: 'description_content_p'}},
 {title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% Drop +10% from Saturday 24:00 to Sunday 24:00', className: 'description_content_p'}},
+{title: 'Offexp:', content: {content: 'from 1st level, duration 12 hours, 24 hours for VIP.', className: 'description_content_p'}},
 {title: 'Offexp:', content: {content: '/offlevel  with pick up jewels🔥', className: 'description_content_p'}},
-{title: 'Setparty:', content: {content: '/setparty  and your party password', className: 'description_content_p'}},
+{title: 'Setparty:', content: {content: '/setparty  and your party password, or press "N" in the game.', className: 'description_content_p'}},
 ]
 
 const serverInfoSlice = createSlice({
