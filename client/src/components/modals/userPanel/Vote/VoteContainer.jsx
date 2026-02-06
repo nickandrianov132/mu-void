@@ -61,13 +61,6 @@ const VoteContainer = () => {
                 coinsDesc="every 24 hours"
             />
             <VoteItem
-                title="Vote on MMOANONS"
-                link={`https://www.mmoanons.com/mu-online/rating/mu-voidcom`}
-                img={Images.mmoanons}
-                coins="10 WCoins!"
-                coinsDesc="every 24 hours"
-            />
-            <VoteItem
                 title="Vote on MUOGG.com"
                 link={`https://muogg.com/vote.php?server=65`}
                 img={Images.muogg}
@@ -96,6 +89,13 @@ const VoteContainer = () => {
                 title="Vote on MMTop200"
                 link={`https://mmtop200.com/vote/4908`}
                 img={Images.mmtop200}
+                coinsDesc="every 24 hours"
+            />
+            <VoteItem
+                title="Vote on MMOANONS"
+                link={`https://www.mmoanons.com/mu-online/rating/mu-voidcom`}
+                img={Images.mmoanons}
+                coins="Free no Wcoins"
                 coinsDesc="every 24 hours"
             />
             <VoteItem

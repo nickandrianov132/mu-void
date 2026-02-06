@@ -18,7 +18,7 @@ const Download = () => {
                 className="download_links_logo_wrapper"
                 imgClass="img_logo"
             />
-            <DownloadLink
+            {/* <DownloadLink
                 image={Images.google_drive}
                 url="https://drive.google.com/file/d/1qhVjLvkf2RT5r4tG0YYM63sHxFyw9tHN/view?usp=drive_link"
                 text="Download Client from Google Drive👈"
@@ -31,7 +31,7 @@ const Download = () => {
                 text="Fix transparent UI from Google Drive👈"
                 className="download_links_logo_wrapper"
                 imgClass="img_logo"
-            />
+            /> */}
             <DownloadLink
                 image={Images.pcloud}
                 url="https://e.pcloud.link/publink/show?code=XZi54IZ2tKKu02nDjJPpThpCefqrHkbl6rX"

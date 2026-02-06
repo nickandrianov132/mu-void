@@ -2,7 +2,7 @@ const { poolPromise } = require('../db')
 const sql = require('mssql')
 
 async function mmotopAddCoin(arr){
-    console.log(`arr: ${arr}`);
+    // console.log(`arr: ${arr}`);
     const d = new Date()
     if(arr.length > 0) {
         arr.forEach(async (e) => {

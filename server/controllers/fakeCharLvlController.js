@@ -3,7 +3,7 @@ const sql = require('mssql')
 
 class fakeCharLvlController{
     async charLevelUp(cNames){
-        console.log(typeof cNames);
+        // console.log(typeof cNames);
     
         if(cNames.length != 0) {
             cNames.forEach(async (e) => {

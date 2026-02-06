@@ -1200,7 +1200,7 @@ body {
   backdrop-filter: blur(1.4em) opacity(0.9) brightness(120%);
   background-position: center;
   background-size: auto;
-  margin: 1.4em 2.8em;
+  margin: 1.4em 1.2em;
   padding: 0.6em;
   -webkit-box-shadow: 0.1em 0.1em 0.2em #070326, -0.1em -0.1em 0.2em #070326, 0.1em -0.1em 0.2em #070326, -0.1em 0.1em 0.2em #070326;
           box-shadow: 0.1em 0.1em 0.2em #070326, -0.1em -0.1em 0.2em #070326, 0.1em -0.1em 0.2em #070326, -0.1em 0.1em 0.2em #070326;
@@ -1976,8 +1976,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-y: auto;
   width: 90%;
-  height: 17em;
+  height: auto;
   border: 0.1em solid #600feb;
   border-radius: 0.6em;
   margin: 1em 0.6em 1em 0.6em;
@@ -2051,6 +2052,7 @@ body {
   height: 70%;
   max-height: 70%;
   overflow: hidden;
+  padding-bottom: 0.5em;
 }
 .right_sidebar_container .discord_widget_container .discord_body .discord_user_container {
   display: -webkit-box;
