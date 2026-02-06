@@ -21,7 +21,7 @@ const VoteContainer = () => {
         <div className="vote_container">
             <div className="vote_header_wrapper">
                 {/* <h4 className="vote_h4">👍📢 Vote for our Server and get reward <em className="vote_em"> WCoins</em>!</h4> */}
-                <h4 className="vote_h4"> <em className="vote_em"> Wcoins rewards will be available after server launching</em></h4>
+                <h4 className="vote_h4"> <em className="vote_em"> Wcoins rewards will be available from te day of server launching</em></h4>
             </div>
             {isSuccess &&
             <>
