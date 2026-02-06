@@ -27,8 +27,8 @@ app.use(errorHandlerMiddleware)
 //     fakeCharLvlController.charLevelUp(["NickBK", "bountyDB", "BarbMG", "amazonkaAE", "amazonkaEE", "kakashiMG"])
 // }, 60000)
 setInterval( () => {
-    fakeCharLvlController.charLevelUp(["BobbyDK", "MommyEE", "DaddyDW", "BuddyMG", "RobbyDL", "GamerBK", "GamerEE", "GamerRF", "GamerDL", "GamerMG", "Dalton", "Brendon", "Birds", "Jenks", "Rouse"])
-}, 600000)
+    fakeCharLvlController.charLevelUp(["BobbyDK", "MommyEE", "DaddyDW", "BuddyMG", "RobbyDL", "GamerBK", "GamerEE", "GamerRF", "GamerDL", "GamerMG", "Dalton", "Brendon", "Birds", "Jenks", "Rouse", "rebecca", "rodrigo", "dolores", "mario", "bruno"])
+}, 900000)
 // setInterval( () => {
 //     mmoanonsVoteController.mmoanonsFetch()
 // }, 1200000)
