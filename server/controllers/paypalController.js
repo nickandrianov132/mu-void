@@ -122,6 +122,7 @@
 //                     items: [
 //                         {
 //                             name: productFromDb.wcName,
+//                             wcAmount: productFromDb.wcAmount,
 //                             unitAmount: {
 //                                 currencyCode: "USD",
 //                                 value: itemPrice,
@@ -171,7 +172,14 @@
 
 //         // ВАЖНО: Если оплата прошла успешно, здесь делаем UPDATE в базе данных
 //         if (jsonResponse.status === 'COMPLETED') {
-//             // Например: await pool.request().query("UPDATE payments SET status = 'paid' WHERE...")
+//             // await pool.request().query("UPDATE payments SET status = 'paid' WHERE...")
+//             const pool = await poolPromise
+//             const request = pool.request()
+//             const addWcoins = await request
+//             .input('AccountID', sql.VarChar(10), p_resp)
+//             .input('Type', sql.Int(), 0)
+//             .input('Coin', sql.Float(), 3)
+//             .execute('dbo.WZ_IBS_AddCoin')
 //             console.log("Оплата успешно завершена для заказа:", orderID);
 //         }
 

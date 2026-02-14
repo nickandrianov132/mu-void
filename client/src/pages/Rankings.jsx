@@ -27,7 +27,7 @@ const Rankings = () => {
 
     // console.log(isError);
     // console.log(isSuccess);
-    // console.log(chars);
+    console.log(chars);
     useEffect(()=> {
         if(isSuccess == true) {
         // console.log(chars)
