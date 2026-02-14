@@ -44,7 +44,7 @@ class CharacterController {
         const pool = await poolPromise
         const request = pool.request()
         // const data = await request.query('SELECT * FROM dbo.vwCharacters')
-        const data = await request.query('SELECT TOP 100 FROM dbo.vwCharacters')
+        const data = await request.query('SELECT TOP 100 * FROM dbo.vwCharacters')
         return res.json(data.recordset)
     }
     async getTop5Character(req, res) {
