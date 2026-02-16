@@ -5964,6 +5964,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-bottom: 1em;
 }
 .buyWcoins_container .buy_wcoins_select_wrapper .buy_wcoins_select {
   display: inline-block;
@@ -6078,6 +6079,25 @@ body {
 .buyWcoins_container .buyWcoins_crypto_info .crypto_info_img:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+.buyWcoins_container .paypal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+.buyWcoins_container .paypal_container .paypal_buttons {
+  width: 30%;
+}
+.buyWcoins_container .paypal_container .paypal_message_success {
+  color: #2fe776;
+}
+.buyWcoins_container .paypal_container .paypal_message_error {
+  color: #ee4429;
 }
 
 .buyWcoins_fail_container {

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useFetchAccountInfoQuery, useUserCryptoInvoiceMutation } from "../../../../services/userApi";
-import { wcoinsToCurrency } from "../../../../utils/functions";
+import { wcoinsIdToAmount, wcoinsToCurrency } from "../../../../utils/functions";
 import Images from "../../../../assets/Images";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import { HOME_ROUTE } from "../../../../utils/constants";
 import SpinnerSmall from "../../../SpinnerSmall";
+import Paypal from "./Paypal";
 
     
 const data = {
@@ -25,12 +26,15 @@ const BuyWcoinsMain = () => {
     const [createInvoice, {isSuccess: invoiceSuccess, isError: invoiceError, isLoading: invoiceLoading}] = useUserCryptoInvoiceMutation()
     const {accessToken} = useSelector(state => state.user)
     const navigate = useNavigate()
+    const [wcoinsId, setWcoinsId] = useState("1")
     const [wcoins, setWcoins] = useState(300)
     const [currency, setCurrency] = useState(5)
     const [invoiceInfo, setInvoiceInfo] = useState(null)
     const [isInvoiceLoading, setIsInvoiceLoading] = useState(false)
+
     // console.log(wcoins);
     // console.log(userInfo)
+    // console.log(wcoins);
     useEffect(() => {
         if(!accessToken) {
             navigate(HOME_ROUTE)
@@ -65,27 +69,33 @@ const BuyWcoinsMain = () => {
     return (
         <div className="buyWcoins_container">
             <h4 className="buyWcoins_header_h4">You can help our server by buying WCoins!</h4>
-            <h5 className="buyWcoins_header_h5">☝ Wcoins purchase will be available after first Castle Siege🔒</h5>
+            {/* <h5 className="buyWcoins_header_h5">☝ Wcoins purchase will be available after first Castle Siege🔒</h5> */}
             <div className="buy_wcoins_select_wrapper">
                 <select 
                     name="wcoins"
                     className="buy_wcoins_select"
                     onChange={(e) => {
-                        setWcoins(Number(e.target.value))
+                        setWcoinsId(e.target.value)
+                        setWcoins(wcoinsIdToAmount(e.target.value))
                         setCurrency(wcoinsToCurrency(e.target.value))
                         setInvoiceInfo(null)
                         setInvoiceData((d) => ({...d, amount: wcoinsToCurrency(e.target.value)}))
                     }}
                 >
-                    <option value={300}>300 WCoins</option>
+                    {/* <option value={300}>300 WCoins</option>
                     <option value={600}>600 WCoins</option>
                     <option value={900}>900 WCoins</option>
                     <option value={1200}>1200 WCoins</option>
-                    <option value={2100}>2100 WCoins</option>
+                    <option value={2100}>2100 WCoins</option> */}
+                    <option value="1">300 WCoins</option>
+                    <option value="2">600 WCoins</option>
+                    <option value="3">900 WCoins</option>
+                    <option value="4">1200 WCoins</option>
+                    <option value="5">2100 WCoins</option>
                 </select>
                 <p className="buy_coins_currency_amount_p">= <b>{currency} USD</b> <em>+ payment fee</em></p>
             </div>
-            {invoiceInfo ?
+            {/* {invoiceInfo ?
                     <div className="buy_wcoins_cryptocloud_wrapper"> 
                         <img src={Images.cryptocloud2} alt="cryptocloud"/>
                         
@@ -108,17 +118,18 @@ const BuyWcoinsMain = () => {
                             :
                     <button 
                         className="buy_wcoins_btn"
-                        // onClick={() => {
-                        //     setIsInvoiceLoading(true)
-                        //     buyHandler()
-                        // }}
+                        onClick={() => {
+                            setIsInvoiceLoading(true)
+                            buyHandler()
+                        }}
                     >Pay with CryptoCloud</button>
                     }
                 </div>
             }
             <div className="buyWcoins_crypto_info">
                 <img className="crypto_info_img" src={Images.wcoins_crypto_info}></img>
-            </div>
+            </div> */}
+            <Paypal wcId={wcoinsId} wcAmount={wcoins} accId={userInfo?.accName}/>
         </div>
     );
 }

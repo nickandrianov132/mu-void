@@ -558,25 +558,47 @@ export function vipExpireCheck(vipDate) {
     }
 }
 
-export function wcoinsToCurrency(wc) {
+export function wcoinsToCurrency(wcId) {
     let currency
-    if(wc == 300) {
+    if(wcId == "1") {
         currency = 5
     }
-    else if(wc == 600) {
+    else if(wcId == "2") {
         currency = 10
     }
-    else if(wc == 900) {
+    else if(wcId == "3") {
         currency = 15
     }
-    else if(wc == 1200) {
+    else if(wcId == "4") {
         currency = 20
     }
-    else if(wc == 2100) {
+    else if(wcId == "5") {
         currency = 30
     }
     else{
         currency = null
     }
     return currency
+}
+export function wcoinsIdToAmount(wcId) {
+    let wcoinsAmount
+    if(wcId == "1") {
+        wcoinsAmount = 300
+    }
+    else if(wcId == "2") {
+        wcoinsAmount = 600
+    }
+    else if(wcId == "3") {
+        wcoinsAmount = 900
+    }
+    else if(wcId == "4") {
+        wcoinsAmount = 1200
+    }
+    else if(wcId == "5") {
+        wcoinsAmount = 2100
+    }
+    else{
+        wcoinsAmount = null
+    }
+    return wcoinsAmount
 }

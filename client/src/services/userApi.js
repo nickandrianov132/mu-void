@@ -63,8 +63,17 @@ export const userApi = api.injectEndpoints({
                 method: 'POST',
                 body: invoiceData
             }),
+        }),
+        capturePaypalOrder: build.mutation({
+        query: (orderID) => ({
+            url: '/user/paypal-orders/capture-order',
+            method: 'POST',
+            body: { orderID }
+        }),
+        invalidatesTags: ["userInfo"] // Как только оплата пройдет, RTK Query перезапросит баланс автоматически
         })
+        
     }),
 })
 
-export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation, useUserCryptoInvoiceMutation } = userApi
+export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation, useUserCryptoInvoiceMutation, useCapturePaypalOrderMutation } = userApi
