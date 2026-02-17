@@ -416,7 +416,7 @@ class UserController {
     // }
 
     async createAccount(req, res, next) {
-        const {login, password, name, email, date, regQuestion, regAnswer} = req.body
+        const {login, password, name, email, date, regQuestion, regAnswer, ip} = req.body
         if(!email || !password) {
             return next(ApiError.badRequest("Wrong password or email!"))
         }
@@ -453,10 +453,11 @@ class UserController {
             .input('regQuestion', sql.VarChar(50), regQuestion)
             .input('regAnswer', sql.VarChar(50), regAnswer)
             .input('accJoinDate', sql.VarChar(23), date)
-            // .input('userIp', sql.VarChar(15), ip)
-            // .input('dayAdd', sql.Int(), 3)
-            // .input('vipType', sql.SmallInt(), 3)
-            .execute(`dbo.RegAccount`)
+            .input('userIp', sql.VarChar(15), ip)
+            .input('dayAdd', sql.Int(), 5)
+            .input('vipType', sql.SmallInt(), 3)
+            .execute(`dbo.RegAccWithVip`)
+            // .execute(`dbo.RegAccount`)
             const userResponse = await request
             .query('SELECT memb.memb___id AS login, memb.memb__pwd AS password, memb.mail_addr AS email FROM dbo.MEMB_INFO memb WHERE memb.memb___id = @accLogin')
         const userData = userResponse.recordset[0]

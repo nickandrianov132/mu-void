@@ -1351,6 +1351,13 @@ body {
   margin-bottom: 1em;
   font-weight: 500;
 }
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .donate_em {
+  font-size: 1.15em;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  color: #ff5542;
+  text-shadow: 0.01em 0.01em 0.08em #551623, -0.01em -0.01em 0.08em #551623, 0.01em -0.01em 0.08em #551623, -0.01em 0.01em 0.08em #551623;
+}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p b {
   font-size: 1.1em;
 }

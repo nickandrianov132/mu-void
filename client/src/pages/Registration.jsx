@@ -18,16 +18,15 @@ const navigate = useNavigate()
     const [registration,{ error, isError, isSuccess, isLoading}] = useRegistrationMutation()
     const [isRules, setIsRules] = useState(false)
     // console.log(`inputLogin: ${inputLogin}; inputEmail: ${inputEmail}; inputRules: ${inputRules}`);
-    console.log(isRules);
-    console.log(userData)
-    // let userIp 
-    // async function getIpAddress() {
-    //     const ip = await fetch('https://api.ipify.org?format=json')
-    //     .then(res => res.json())
-    //     .then(data => data)
-    //     return ip
-    // }
-
+    // console.log(isRules);
+    // console.log(userData)
+    async function getIpAddress() {
+        const ip = await fetch('https://api.ipify.org?format=json')
+        .then(res => res.json())
+        .then(data => data)
+        return ip
+    }
+    
     
 
 
@@ -36,8 +35,10 @@ const navigate = useNavigate()
         // console.log(`Registretion sended for: ${userData.login}`);
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString("en-GB", { timeZone: "UTC" })
-            // let userIp = await getIpAddress() 
-            let user = {...userData, date: dateStamp}
+            let userIp = await getIpAddress() 
+            console.log(userIp);
+            let user = {...userData, date: dateStamp, userIp}
+            console.log(user);
             try {
                 await registration({...user})
             } catch (error) {

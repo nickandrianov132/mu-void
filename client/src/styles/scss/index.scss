@@ -1176,6 +1176,13 @@ body {
                     font-size: 0.75em;
                     margin-bottom: 1em;
                     font-weight: 500;
+                    .donate_em{
+                        font-size: 1.15em;
+                        font-weight: 600;
+                        letter-spacing: 0.015em;
+                        color: #ff5542;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#551623);
+                    }
                     b{
                         font-size: 1.1em;
                     }

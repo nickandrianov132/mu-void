@@ -11,9 +11,9 @@ const navigate = useNavigate()
     return (
         <div className='home_container'>
             
-            {/* <HomeContent
-                title="🔖VIP is now available!🔥💣"
-                date="18.11.2025"
+            <HomeContent
+                title="🔖VIP & Donate are available now!🔥💣"
+                date="17.02.2026"
                 sideImage={Images.vip_news}
             >
                 <div className='description_list'>
@@ -21,10 +21,10 @@ const navigate = useNavigate()
                         <h4 className='description_item_h4_opening'> Buy VIP for WCoins! </h4>
                     </div>
                     <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b className='intro_b'>For New Players 3 Days of Gold VIP free!🔰</b><br/><br/>🔸- For new accounts 3 days of <b className='b_gold'>Gold VIP</b> will be activated automatically to grow and make resets faster!<b className='b_symbol'>💪</b><br/>🔸- All other players can purchase VIP in the account panel using WCoins.<b className='b_symbol'>🪙</b><br/><br/><em className='ps_em'> </em></p>
+                        <p className='description_item_p'><b className='intro_b'>For New Players 5 Days of Gold VIP free!🔰</b><br/>🔸- For new accounts 5 days of <b className='b_gold'>Gold VIP</b> will be activated automatically to grow and make resets faster!<b className='b_symbol'>💪</b><br/>🔸- All other players can purchase VIP in the account panel using WCoins.<b className='b_symbol'>🪙</b><br/><em className='ps_em'> </em><br/><em className='donate_em'>💲💰Purchasing WCoins is now available in user panel!💥</em></p>
                     </div>
                 </div>
-            </HomeContent> */}
+            </HomeContent>
             {/* <HomeContent
                 title="💥Weekend Events Coming!💝"
                 date="09.01.2026"
