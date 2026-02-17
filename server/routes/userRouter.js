@@ -2,7 +2,7 @@ const Router = require('express')
 const router = new Router()
 const userController = require('../controllers/userController')
 const authMiddleware = require('../middleware/authMiddleware')
-const { handlePayment, handleCaptureOrder, generateClientToken } = require('../controllers/paypalController')
+// const { handlePayment, handleCaptureOrder, generateClientToken } = require('../controllers/paypalController')
 // const { testGetOrder } = require('../controllers/paypalController')
 
 
@@ -24,8 +24,8 @@ router.post('/voteMUOGG', userController.userVoteMUOGG)
 router.post('/buyVip', userController.buyVip)
 router.post('/cryptocloud-insert-invoice', userController.insertCryptoInvoice)
 router.post('/cryptocloud-callback', userController.cryptoCloudPayment)
-router.post('/paypal-orders', handlePayment)
-router.post('/paypal-orders/capture-order', handleCaptureOrder)
+// router.post('/paypal-orders', handlePayment)
+// router.post('/paypal-orders/capture-order', handleCaptureOrder)
 // router.post('/paypal-orders/generate-client-token', generateClientToken)
 
 
