@@ -6,7 +6,7 @@ import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import { HOME_ROUTE } from "../../../../utils/constants";
 import SpinnerSmall from "../../../SpinnerSmall";
-// import Paypal from "./Paypal";
+import Paypal from "./Paypal";
 
     
 const data = {
@@ -129,7 +129,7 @@ const BuyWcoinsMain = () => {
             <div className="buyWcoins_crypto_info">
                 <img className="crypto_info_img" src={Images.wcoins_crypto_info}></img>
             </div> */}
-            {/* <Paypal wcId={wcoinsId} wcAmount={wcoins} accId={userInfo?.accName}/> */}
+            <Paypal wcId={wcoinsId} wcAmount={wcoins} accId={userInfo?.accName}/>
         </div>
     );
 }
