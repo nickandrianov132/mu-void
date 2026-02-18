@@ -17,7 +17,7 @@ const SantaEvent = () => {
                             <SantaWizardItem 
                 title="Cursed Goblin"
                 item1cheance="80%"
-                desc1="2,000,000 zen"
+                desc1="3,000,000 zen"
                 img1={Images.cursed_goblin}
                 em1DescClass="em_zem"
                 item2cheance="10%"

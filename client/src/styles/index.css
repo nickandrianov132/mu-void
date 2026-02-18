@@ -1507,7 +1507,15 @@ body {
   font-weight: 600;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list h5 {
+  color: #070040;
   margin-left: 0.5em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list h4 {
+  color: #070040;
+  font-weight: 500;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list ul .changes_li {
+  color: #182346;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list ul li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, serif;

@@ -10,7 +10,24 @@ const Home = () => {
 const navigate = useNavigate()
     return (
         <div className='home_container'>
-            
+                <HomeContent
+                    title="📢Updates 📝"
+                    date="18.02.2026"
+                    sideImage={Images.updates1}
+                >
+                    <div className='description_list'>
+                        <div className='opening_wrapper_h4'>
+                            <h4 className='description_item_h4_opening'>🔨Updates 18 February 2026🔧</h4>
+                        </div>
+                        <h5>Due to lack of Zen for Resets and Grand Resets was increased Zen Reward in following events:</h5>
+                        <ul>
+                            <li className='changes_li'>- White Wizard Orcs.<a href='https://mu-void.com/guide/white_wizard_info'>check!👈</a></li>
+                            <li className='changes_li'>- Santa Event. <a href='https://mu-void.com/guide/santa_info'>check!👈</a></li>
+                            <li className='changes_li'>- Devil Square. <a href='https://www.mu-void.com/guide/drop_ds_info'>check!👈</a></li>
+                        </ul>
+                        <h4 className='description_item_h4'>We hope these changes will make it easier for players to earn Zen for a comfortable gameplay experience.</h4>
+                    </div>
+                </HomeContent>
             <HomeContent
                 title="🔖VIP & Donate are available now!🔥💣"
                 date="17.02.2026"

@@ -1325,9 +1325,17 @@ body {
                     font-weight: 600;
                 }
                 h5{
+                    color: $ranking_fc;
                     margin-left: 0.5em;
                 }
+                h4{
+                    color: $ranking_fc;
+                    font-weight: 500;
+                }
                 ul{
+                    .changes_li{
+                        color: #182346;
+                    }
                     li{
                         font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
                         margin-left: 1em;
