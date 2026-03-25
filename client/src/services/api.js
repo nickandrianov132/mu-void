@@ -24,7 +24,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
     }
     if (result.data) {
         // console.log(result.data);
-        if(result.data.token != undefined) {
+        if(result.data.token !== undefined) {
             api.dispatch(setToken(result.data.token))
             result = await baseQuery(args, api, extraOptions)
         }

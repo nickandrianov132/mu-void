@@ -120,7 +120,7 @@ const appendZeroToSeconds = (t) => {
 }
 
 const timetoString = (t) => {
-  return `${t.hours}:${t.minutes}:${t.seconds} ${t.ampm}`
+  return `${t.hours}:${t.minutes}:${t.seconds}${t.ampm}`
 }
 const loging = (message) => console.log(message);
 const logClear = () => console.clear();
