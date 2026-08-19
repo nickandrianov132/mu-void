@@ -7,7 +7,7 @@ const GuideSealBoxItem = ({image, mobs, dk, dw, elf, sum, mg, dl, rf}) => {
             </div>
             <div className="dropBoxes_description_wrapper">
                 <div className="description_location">
-                    <p className="locations_p">Drops from:<em>{mobs}</em></p>
+                    <p className="locations_p">Drops from: <em>{mobs}</em></p>
                 </div>
                 <div className="description_dropList">
                     {/* <h5>🔹All Citems below enhanced {enchance} Options 4-16add</h5> */}

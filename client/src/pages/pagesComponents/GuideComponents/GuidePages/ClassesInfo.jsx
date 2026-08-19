@@ -9,7 +9,8 @@ const ClassesInfo = () => {
             <ClassesInfoItem 
                 classTitle="Dark Wizard - Soul Master - Grand Master"
                 img={Images.class_dw}
-                as="30"
+                as="20"
+                maxAS="320"
                 asrPVM="lvl * 5 + Agility * 1.5 + Strength / 4"
                 asrPVP="Agility * 4 + 3 * lvl"
                 def="4"
@@ -24,7 +25,8 @@ const ClassesInfo = () => {
             <ClassesInfoItem 
                 classTitle="Dark Knight - Blade Knight - Blade Master"
                 img={Images.class_dk}
-                as="60"
+                as="40"
+                maxAS="230"
                 asrPVM="lvl * 5 + Agility * 1.5 + Strength / 4"
                 asrPVP="Agility * 4.5 + 3 * lvl"
                 def="3"
@@ -39,7 +41,8 @@ const ClassesInfo = () => {
             <ClassesInfoItem 
                 classTitle="Fairy Elf - Muse Elf - High Elf"
                 img={Images.class_elf}
-                as="100"
+                as="70"
+                maxAS="280"
                 asrPVM="lvl * 5 + Agility * 1.5 + Strength / 4"
                 asrPVP="Agility * 0.6 + 3 * lvl"
                 def="7"
@@ -52,6 +55,7 @@ const ClassesInfo = () => {
                 classTitle="Summoner - Bloody Summoner - Dimension Master"
                 img={Images.summ}
                 as="40"
+                maxAS="260"
                 asrPVM="lvl * 5 + Agility * 1.5 + Strength / 4"
                 asrPVP="Agility * 3.5 + 3 * lvl"
                 def="3"
@@ -77,7 +81,8 @@ const ClassesInfo = () => {
             <ClassesInfoItem 
                 classTitle="Magic Gladiator - Dual Master"
                 img={Images.class_mg}
-                as="40"
+                as="30"
+                maxAS="300"
                 asrPVM="lvl * 5 + Agility * 1.5 + Strength / 4"
                 asrPVP="Agility * 3.5 + 3 * lvl"
                 def="3.5"
@@ -92,6 +97,7 @@ const ClassesInfo = () => {
                 classTitle="Dark Lord - Lord Emperor"
                 img={Images.class_dl}
                 as="40"
+                maxAS="260"
                 asrPVM="lvl * 5 + Agility * 3 + Strength / 4 + Cmd / 10"
                 asrPVP="Agility * 4 + 3 * lvl"
                 def="7"
@@ -106,7 +112,8 @@ const ClassesInfo = () => {
             <ClassesInfoItem 
                 classTitle="Rage Fighter - Fist Master"
                 img={Images.rf}
-                as="30"
+                as="40"
+                maxAS="270"
                 asrPVM="lvl * 5 + Agilitylity * 1.25 + Strength / 4"
                 asrPVP="Agilitylity * 3.6 + 2.6 * lvl"
                 def="6"

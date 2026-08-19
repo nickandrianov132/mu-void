@@ -1,4 +1,4 @@
-import { HOME_ROUTE, ABOUT_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, LOGIN_ROUTE, USER_PANEL_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, CHARACTER_CARD_ROUTE, REGISTRATION_SUCCESS, ACCOUNT_CHARACTERS_ROUTE, GUIDE_ROUTER, ACCOUNT_CHARACTERS_GR_ROUTE, REGAIN_PASSWORD_ROUTE, REGAIN_PASSWORD_SUCCESS_ROUTE, ACCOUNT_INFO_ROUTE, ACCOUNT_VIP_ROUTE, ACCOUNT_VOTE_ROUTE, RULES_ROUTE, SUCCESSFUL_PAYMENT, FAILED_PAYMENT, BUY_WCOINS } from "./utils/constants";
+import { HOME_ROUTE, ABOUT_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, LOGIN_ROUTE, USER_PANEL_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, CHARACTER_CARD_ROUTE, REGISTRATION_SUCCESS, ACCOUNT_CHARACTERS_ROUTE, GUIDE_ROUTER, ACCOUNT_CHARACTERS_GR_ROUTE, REGAIN_PASSWORD_ROUTE, REGAIN_PASSWORD_SUCCESS_ROUTE, ACCOUNT_INFO_ROUTE, ACCOUNT_VIP_ROUTE, ACCOUNT_VOTE_ROUTE, RULES_ROUTE, SUCCESSFUL_PAYMENT, FAILED_PAYMENT, BUY_WCOINS, ACCOUNT_VAULT_ROUTE, MARKET_ROUTE } from "./utils/constants";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Registration from "./pages/Registration";
@@ -18,6 +18,8 @@ import Rules from "./pages/Rules";
 import BuyWcoinsSuccess from "./components/modals/userPanel/BuyWcoins/BuyWcoinsSuccess";
 import BuyWcoinsFail from "./components/modals/userPanel/BuyWcoins/BuyWcoinsFail";
 import BuyWcoinsMain from "./components/modals/userPanel/BuyWcoins/BuyWcoinsMain";
+import AccountVault from "./pages/pagesComponents/AccountVault/AccountVault";
+import Market from "./pages/Market";
 
 export const authRoutes = [
     {
@@ -31,6 +33,10 @@ export const authRoutes = [
     {
         path: ACCOUNT_INFO_ROUTE,
         Component: AccountInfo
+    },
+    {
+        path: ACCOUNT_VAULT_ROUTE,
+        Component: AccountVault
     },
     {
         path: ACCOUNT_VOTE_ROUTE,
@@ -52,6 +58,10 @@ export const authRoutes = [
         path: FAILED_PAYMENT,
         Component: BuyWcoinsFail
     },
+    {
+        path: MARKET_ROUTE,
+        Component: Market
+    }
 ]
 
 export const publicRoutes = [

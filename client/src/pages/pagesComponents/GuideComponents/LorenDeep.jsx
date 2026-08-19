@@ -17,25 +17,39 @@ const LorenDeep = () => {
                         <img src={Images.loren2} className="small_event_img_big"/>
                     </div>
                         <p className="small_event_p">During the event, strong Hero monsters appear <em className="em_zen">Hero Mutant, Axl Hero, Omega Wing, Golem</em></p>
-                    <div className="small_event_imgs_wrapper">
+                    {/* <div className="small_event_imgs_wrapper">
                         <img src={Images.lorendeep_hero_mobs1} className="small_event_img_big"/>
                         <img src={Images.lorendeep_hero_mobs2} className="small_event_img_big"/>
-                    </div>
-                    <div className="small_event_imgs_wrapper">
+                    </div> */}
+                    {/* <div className="small_event_imgs_wrapper">
                         <img src={Images.lorendeep_hero_mobs3} className="small_event_img_big"/>
                         <img src={Images.lorendeep_hero_mobs4} className="small_event_img_big"/>
-                    </div>
+                    </div> */}
                 </div>
                 <EventsBody 
                     sec3desc1="After killing hero mobs you will get Jewel of Bless and next items:"
-                    thead2={[{className: "th_gold" ,title:"#Hero Mob:"}, {className: "th_gold", title:"Reward items:"}, {className: "th_gold", title: "Cheance of rewards:"}]}
+                    thead2={[{className: "th_gold" ,title:"#Hero Mob:"}, {className: "th_gold", title:"Reward items:"}, {className: "th_gold", title: "Cheance of rewards:"}, {className: "th_gold", title: "Goblin Points:"}]}
                     tbody2={[
-                            {className: "td_cc", num: "Hero Mutant", monster1:"Silver Key / Silver Box / Zen ", monster2: "15%/15%/70%"},
-                            {className: "td_cc", num: "Axl Hero", monster1:"Silver Key / Silver Box / Zen ", monster2: "15%/15%/70%"},
-                            {className: "td_cc", num: "Omega Wing", monster1:"Silver Key / Silver Box / Zen ", monster2: "20%/20%/60%"},
-                            {className: "td_cc", num: "Golem", monster1:"Silver Key / Silver Box / Zen ", monster2: "20%/20%/60%"},
+                            {className: "td_cc", num: "Hero Mutant", monster1:"Silver Key & Box / Talisman / 15kk Zen ", monster2: "35%/30%/35%", monster3: "60"},
+                            {className: "td_cc", num: "Axl Hero", monster1:"Silver Key & Box /  Talisman / 15kk Zen ", monster2: "35%/30%/35%", monster3: "60"},
+                            {className: "td_cc", num: "Omega Wing", monster1:"Silver Key & Box / Talisman / 25kk Zen ", monster2: "50%/30%/20%", monster3: "80"},
+                            {className: "td_cc", num: "Golem", monster1:"Silver Key & Box / Talisman / 25kk Zen ", monster2: "50%/30%/20%", monster3: "80"},
                            ]}
                 />
+                <div className="talismans_div">
+                    <h5 className="talisman_title">Talismans for 2nd Wings:</h5>
+                    <div className="img_wrapper">
+                           <img className="talisman_img" src={Images["13_87"]} />
+                           <img className="talisman_img" src={Images["13_88"]} />
+                           <img className="talisman_img" src={Images["13_89"]} />
+                           <img className="talisman_img" src={Images["13_90"]} />
+                           <img className="talisman_img" src={Images["13_91"]} />
+                           <img className="talisman_img" src={Images["13_92"]} />
+                    </div>
+                    <div className="talismans_desc_div">
+                        <p className="talismans_desc_p">With this talisman you can create 2nd wings instantly on your Class. All you need is to add certain talisman in Chaos Machine when you creating wings.</p>
+                    </div>
+                </div>
             </EventsContainer>
         </div>
     );

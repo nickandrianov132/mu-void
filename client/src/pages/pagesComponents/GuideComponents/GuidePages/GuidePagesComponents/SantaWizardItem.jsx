@@ -1,5 +1,5 @@
 
-const SantaWizardItem = ({title, item1cheance, item2cheance, item3cheance, item4cheance, desc1, desc2, desc3, desc4, img1, em1DescClass, em2DescClass, em3DescClass, em4DescClass}) => {
+const SantaWizardItem = ({title, item1cheance, item2cheance, item3cheance, item4cheance, desc1, desc2, desc3, desc4, img1, em1DescClass, em2DescClass, em3DescClass, em4DescClass, gp}) => {
     return (
         <div className="santa_wizard_item_container">
             <h4 className="santa_wizard_item_header">{title}</h4>
@@ -33,6 +33,10 @@ const SantaWizardItem = ({title, item1cheance, item2cheance, item3cheance, item4
                             <span className="desc_span"><em className={em4DescClass}>{desc4}</em>.</span>
                         </div>
                     }
+                    {gp && 
+                        <p className="gp_p">GoblinPoints: <em className="gp_em">{gp}</em></p>
+                    }
+                    
                 </div>
             </div>
         </div>

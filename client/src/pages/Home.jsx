@@ -10,7 +10,7 @@ const Home = () => {
 const navigate = useNavigate()
     return (
         <div className='home_container'>
-                <HomeContent
+                {/* <HomeContent
                     title="📢Updates 📝"
                     date="18.02.2026"
                     sideImage={Images.updates1}
@@ -27,8 +27,8 @@ const navigate = useNavigate()
                         </ul>
                         <h4 className='description_item_h4'>We hope these changes will make it easier for players to earn Zen for a comfortable gameplay experience.</h4>
                     </div>
-                </HomeContent>
-            <HomeContent
+                </HomeContent> */}
+            {/* <HomeContent
                 title="🔖VIP & Donate are available now!🔥💣"
                 date="17.02.2026"
                 sideImage={Images.vip_news}
@@ -41,7 +41,7 @@ const navigate = useNavigate()
                         <p className='description_item_p'><b className='intro_b'>For New Players 5 Days of Gold VIP free!🔰</b><br/>🔸- For new accounts 5 days of <b className='b_gold'>Gold VIP</b> will be activated automatically to grow and make resets faster!<b className='b_symbol'>💪</b><br/>🔸- All other players can purchase VIP in the account panel using WCoins.<b className='b_symbol'>🪙</b><br/><em className='ps_em'> </em><br/><em className='donate_em'>💲💰Purchasing WCoins is now available in user panel!💥</em></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
                 title="💥Weekend Events Coming!💝"
                 date="09.01.2026"
@@ -70,7 +70,7 @@ const navigate = useNavigate()
                     </div>
                 </div>
             </HomeContent> */}
-            <HomeContent
+            {/* <HomeContent
                 title="🎉Server is Open!🔓"
                 date="06.02.2026"
                 sideImage={Images.opening_bg2}
@@ -83,7 +83,7 @@ const navigate = useNavigate()
                         <p className='description_item_p'><b className='intro_b'>Welcome everyone to our server Mu Online!</b><br/>🔹 Bonus Weekend Exp+50% Drop +10% from 24:00 Friday to 24:00 Sunday🔥.<br/>🔹 Bonus Evening Exp+50% Drop +10% from 18:00 to 22:00(Except Weekends)🔥.<br/>🔹 All classes available from 1 lvl.<br/> 🔹 200 free start points! <br/>🔹 Vote fot us and get WCoins! <br/><b>Join us and bring your friends to build a server with pleasant gaming atmosphere!</b></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
                 {/* <HomeContent
                     title="🔖The opening is approaching!📆"
                     date="07.01.2026"
@@ -112,20 +112,18 @@ const navigate = useNavigate()
                         </div>
                         </div>
                         </HomeContent> */}
-            <HomeContent
-                title="🚀Opening February 06 at 17:00 Server Time🔥"
+            {/* <HomeContent
+                title="Open Beta-test in August 24th"
                 date="20.01.2026"
                 sideImage={Images.opening_feb}
             >
                 <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>Opening is scheduled for February 6<sup>th</sup> at 17:00 Server Time!</h4>
-                    </div>
-                    <div className='description_wrapper_p'>
-                        <p className='description_item_p'><b className='b_notice'> Dear players. We regret to inform you of our decision to reopen the server. The reason is extremely low online which is not good for all of us. All existed unique players reached 1 reset will get 50wc for each reset of main character as a compensation bonus on the date of opening. Watch for further announcements for more details of Opening 06.02.2026.</b><br/><b className='b_notice'> at 17:00 Server Time / 19:00 Kyiv / 20:00 Moscow / 18:00 Madrid.</b> <br/> - Our server is equally opportunity server, everything depends on your activity in game.<br/> - We have <a className='a_bonus_exp' href='https://mu-void.com/guide/resets_info' target='_blank'> Bonus Dynamic Exp & Easy Reset system</a> on our server.<br/> - There is no any way to get equipment/weapons/e.t.c but in game way.<br/> - The only donate is WCoins, to use for getting VIP or buying useful things in X-Shop.<br/> - No any donate will be available until the first Castle Siege which gonna happen next weekends from server launching.<br/> - We hope you will enjoy your adventure!</p>
+                        <h2 className='description_header'>Opening is scheduled for February 6<sup>th</sup> at 17:00 Server Time!</h2>
+                    <div className='description_wrapper'>
+                        <p className='description_item'></p>
                     </div>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
                 title="💥Opening is approaching📢"
                 date="17.12.2025"

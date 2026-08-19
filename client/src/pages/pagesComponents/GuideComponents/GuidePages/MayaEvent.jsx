@@ -10,9 +10,11 @@ const MayaEvent = () => {
                 <MayaContentItem 
                     title="Maya Left & Right Hand"
                     img={Images.maya_hand_1}
-                    img2={Images.maya_hand_2}
+                    // img2={Images.maya_hand_2}
                     armors="Black Dragon, Ashcrow, Grand Soul, Eclipse, Divine, Iris, Dark Steel, Glorius, Thunder Hawk, Valiant, Ancient, Storm Jahad"
                     weapons="Sword of Destruction, Dark Breaker, Thunder Blade, Rune Blade, Holly Storm Glove, Lord Scepter, Great Lord Scepter, Elemental Mace, Dragon Spear, Saint Crossbow, Celestial Bow, Staff of Kundun, Staff of Destruction, Dragon Soul Staff, Demonic Stick, Ancient Stick"
+                    exc={true}
+                    gp="150"
                 />
                 <MayaContentItem 
                     title="Maya Event Boss - Nightmare"
@@ -22,6 +24,8 @@ const MayaEvent = () => {
                     img={Images.nightmare}
                     armors="Dragon Knight, Venom, Sylphid Rey, Storm Blitz, Volcano, Sunlight, Phoenix Soul"
                     weapons="Bone Blade, Grand Viper Staff, Sylph Wind Bow, Raven Stick, Soley Scepter, Phoenix Glove"
+                    exc={true}
+                    gp="1000"
                 />
             </div>
         </div>

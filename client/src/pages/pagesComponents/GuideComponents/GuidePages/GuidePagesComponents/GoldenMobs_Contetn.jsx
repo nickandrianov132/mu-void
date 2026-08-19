@@ -1,5 +1,5 @@
 
-const GoldenMobsContetn = ({img1, img2, title, desc1, desc2, drop1, qtty1}) => {
+const GoldenMobsContetn = ({img1, img2, title, desc1, desc2, drop1, qtty1, gp}) => {
     return (
         <div className="golden_mobs_item_container">
             <div className="golden_mobs_image_wrapper">
@@ -24,6 +24,9 @@ const GoldenMobsContetn = ({img1, img2, title, desc1, desc2, drop1, qtty1}) => {
                     <em>Drop Quantity: </em>
                     {qtty1}
                 </p>
+                {gp && 
+                    <p className="gp_p">GoblinPoints: <em className="gp_em">{gp}</em></p>
+                }
             </div>  
         </div>
     );

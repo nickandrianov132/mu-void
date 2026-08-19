@@ -1,0 +1,1874 @@
+{
+  "1_1": {
+    "typeId": 1,
+    "index": 1,
+    "name": "Minimum Attack Damage Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 2,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 3,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 4,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 5,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 6,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 7,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 9,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 11,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 12,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 14,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 15,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 16,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 17,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 20,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 23,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 26,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_2": {
+    "typeId": 1,
+    "index": 2,
+    "name": "Maximum Attack Damage Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 3,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 4,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 5,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 6,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 7,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 8,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 10,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 12,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 14,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 17,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 20,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 23,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 26,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 29,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 32,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 35,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_3": {
+    "typeId": 1,
+    "index": 3,
+    "name": "Required Strength Decrease +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 6,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 8,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 10,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 12,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 14,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 16,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 20,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 23,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 26,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 29,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 32,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 35,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 37,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 40,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 43,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 46,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_4": {
+    "typeId": 1,
+    "index": 4,
+    "name": "Required Agility Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 6,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 8,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 10,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 12,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 14,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 16,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 20,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 23,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 26,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 29,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 32,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 35,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 37,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 40,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 43,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 46,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_5": {
+    "typeId": 1,
+    "index": 5,
+    "name": "Attack Damage Increase (Min, Max) +%d",
+    "reqLevel": 6,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 7,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 8,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 9,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 11,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 12,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 14,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 16,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 19,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 22,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 25,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_6": {
+    "typeId": 1,
+    "index": 6,
+    "name": "Critical Damage Increase +%d",
+    "reqLevel": 6,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 12,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 14,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 16,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 18,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 20,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 22,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 24,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 30,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 33,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 36,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_7": {
+    "typeId": 1,
+    "index": 7,
+    "name": "Skills Attack Damage Increase +%d",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 12,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 14,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 16,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 18,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 22,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 24,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 26,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_8": {
+    "typeId": 1,
+    "index": 8,
+    "name": "Attack Success Rate Increase (PVP) +%d",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 5,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 7,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 9,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 11,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 14,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 16,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 18,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_9": {
+    "typeId": 1,
+    "index": 9,
+    "name": "SD Decrement Increase +%d%",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 3,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 5,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 7,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 9,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 10,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 11,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 12,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "1_10": {
+    "typeId": 1,
+    "index": 10,
+    "name": "SD Bypass Rate Increase +%d%",
+    "reqLevel": 13,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "10": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "11": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "12": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "13": {
+        "value": 10,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 12,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 14,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_1": {
+    "typeId": 2,
+    "index": 1,
+    "name": "Wizardy Damage Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 6,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 8,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 10,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 12,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 14,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 16,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 17,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 18,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 19,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 21,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 23,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 25,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 27,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 31,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 33,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 35,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_2": {
+    "typeId": 2,
+    "index": 2,
+    "name": "Required Strength Decrease +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 6,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 8,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 10,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 12,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 14,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 16,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 20,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 23,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 26,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 29,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 32,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 35,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 37,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 40,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 43,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 46,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_3": {
+    "typeId": 2,
+    "index": 3,
+    "name": "Required Agility Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 6,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 8,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 10,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 12,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 14,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 16,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 20,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 23,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 26,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 29,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 32,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 35,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 37,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 40,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 43,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 46,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_4": {
+    "typeId": 2,
+    "index": 4,
+    "name": "Skills Attack Damage Increase +%d",
+    "reqLevel": 6,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 7,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 10,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 13,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 16,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 19,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 22,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 25,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 30,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 33,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 36,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_5": {
+    "typeId": 2,
+    "index": 5,
+    "name": "Critical Damage Increase +%d",
+    "reqLevel": 6,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 10,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 12,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 14,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 16,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 18,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 20,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 22,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 28,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 30,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 32,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_6": {
+    "typeId": 2,
+    "index": 6,
+    "name": "SD Decrement Increase +%d%",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 4,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 6,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 8,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 10,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 13,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 15,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 17,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_7": {
+    "typeId": 2,
+    "index": 7,
+    "name": "Attack Success Rate Increase (PVP) +%d",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 5,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 7,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 9,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 11,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 14,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 15,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 16,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "2_8": {
+    "typeId": 2,
+    "index": 8,
+    "name": "SD Bypass Rate Increase +%d%",
+    "reqLevel": 13,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "10": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "11": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "12": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "13": {
+        "value": 15,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 17,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 19,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_1": {
+    "typeId": 3,
+    "index": 1,
+    "name": "Defense Increase +%d",
+    "reqLevel": 0,
+    "levels": {
+      "0": {
+        "value": 3,
+        "reqMoney": 100000
+      },
+      "1": {
+        "value": 4,
+        "reqMoney": 110000
+      },
+      "2": {
+        "value": 5,
+        "reqMoney": 120000
+      },
+      "3": {
+        "value": 6,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 7,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 8,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 10,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 12,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 14,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 16,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 18,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 20,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 22,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 25,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 28,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 31,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_2": {
+    "typeId": 3,
+    "index": 2,
+    "name": "Maximum AG Increase +%d",
+    "reqLevel": 3,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 4,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 6,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 8,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 10,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 12,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 14,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 16,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 18,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 20,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 22,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 25,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 28,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 31,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_3": {
+    "typeId": 3,
+    "index": 3,
+    "name": "Maximum HP Increase +%d",
+    "reqLevel": 3,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 7,
+        "reqMoney": 130000
+      },
+      "4": {
+        "value": 9,
+        "reqMoney": 140000
+      },
+      "5": {
+        "value": 11,
+        "reqMoney": 150000
+      },
+      "6": {
+        "value": 13,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 15,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 17,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 19,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 21,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 23,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 25,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 30,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 32,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 34,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_4": {
+    "typeId": 3,
+    "index": 4,
+    "name": "Life Auto Increments Increase +%d",
+    "reqLevel": 6,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 1,
+        "reqMoney": 200000
+      },
+      "7": {
+        "value": 2,
+        "reqMoney": 220000
+      },
+      "8": {
+        "value": 3,
+        "reqMoney": 240000
+      },
+      "9": {
+        "value": 4,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 5,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 6,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 7,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 8,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 9,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 10,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_5": {
+    "typeId": 3,
+    "index": 5,
+    "name": "Mana Auto Increments Increase +%d",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 1,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 2,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 3,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 4,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 5,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 6,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 7,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_6": {
+    "typeId": 3,
+    "index": 6,
+    "name": "Defense Success rate Increase (PVP) +%d",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 3,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 4,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 5,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 6,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 8,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 10,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 12,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_7": {
+    "typeId": 3,
+    "index": 7,
+    "name": "Damage Decrement Increase +%d%",
+    "reqLevel": 9,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 3,
+        "reqMoney": 280000
+      },
+      "10": {
+        "value": 4,
+        "reqMoney": 320000
+      },
+      "11": {
+        "value": 5,
+        "reqMoney": 360000
+      },
+      "12": {
+        "value": 6,
+        "reqMoney": 400000
+      },
+      "13": {
+        "value": 7,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 8,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 9,
+        "reqMoney": 600000
+      }
+    }
+  },
+  "3_8": {
+    "typeId": 3,
+    "index": 8,
+    "name": "SD Ratio Increase +%d",
+    "reqLevel": 13,
+    "levels": {
+      "0": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "1": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "2": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "3": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "4": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "5": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "6": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "7": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "8": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "9": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "10": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "11": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "12": {
+        "value": 0,
+        "reqMoney": 0
+      },
+      "13": {
+        "value": 5,
+        "reqMoney": 500000
+      },
+      "14": {
+        "value": 6,
+        "reqMoney": 540000
+      },
+      "15": {
+        "value": 7,
+        "reqMoney": 600000
+      }
+    }
+  }
+}

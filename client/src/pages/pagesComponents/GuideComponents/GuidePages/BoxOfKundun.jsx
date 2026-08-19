@@ -24,7 +24,7 @@ const BoxOfKundun = () => {
                 <GuideBOK
                     image={Images.bok3}
                     armors="Dragon, Legendary, Guardian, Adamantine, Red Winged, Storm Crow, Sacred Fire"
-                    weapons="Double Blade, Lighting Sword, Crystal Morning Star, Crystal Sword, Sacred Glove, Chaos Dragon Axe, Great Scepter, Great Scythe, Bill of Balrog, Silver Bow, Bluewing Crossbow, Aquagold Crossbow, Legendary Staff, Chaos Staff, Staff of Resurection, Red Winged Stick, Book of Lagle"
+                    weapons="Double Blade, Lighting Sword, Crystal Morning Star, Crystal Sword, Sacred Glove, Chaos Dragon Axe, Great Scepter, Great Scythe, Bill of Balrog, Silver Bow, Celestial Bow, Bluewing Crossbow, Aquagold Crossbow, Legendary Staff, Chaos Staff, Staff of Resurection, Staff of Destruction, Red Winged Stick, Book of Lagle"
                     shields="Plate Shield, Large Round Shield, Serpent Shield, Bronze Shield, Dragon Shield, Legendary Shield, Elemental Shield"
                     pendants="Pendant of Lighting, Pendant of Ice"
                     rings="Ring of Ice, Ring of Poison"
@@ -32,7 +32,7 @@ const BoxOfKundun = () => {
                 <GuideBOK
                     image={Images.bok4}
                     armors="Black Dragon, Ashcrow, Grand Soul, Eclipse, Divine, Iris, Dark Steel, Glorius, Thunder Hawk, Valiant, Ancient, Storm Jahad"
-                    weapons="Sword of Destruction, Dark Breaker, Thunder Blade, Rune Blade, Holly Storm Glove, Lord Scepter, Great Lord Scepter, Elemental Mace, Dragon Spear, Saint Crossbow, Celestial Bow, Staff of Kundun, Staff of Destruction, Dragon Soul Staff, Demonic Stick, Ancient Stick"
+                    weapons="Sword of Destruction, Dark Breaker, Thunder Blade, Rune Blade, Dark Reign Blade, Holly Storm Glove, Lord Scepter, Great Lord Scepter, Elemental Mace, Dragon Spear, Saint Crossbow, Great Reign Crossbow Staff of Kundun, Staff of Destruction, Dragon Soul Staff, Demonic Stick, Ancient Stick"
                     shields="Plate Shield, Large Round Shield, Serpent Shield, Bronze Shield, Dragon Shield, Legendary Shield, Elemental Shield"
                     pendants=""
                     rings=""
@@ -40,7 +40,7 @@ const BoxOfKundun = () => {
                 <GuideBOK
                     image={Images.bok5}
                     armors="Dark Phoenix, Great Dragon, Dark Soul, Hurricane, Red Spirit, Dark Master, Demonic, Piercing Grove"
-                    weapons="Knight Blade, Dark Reign Blade, Daybreak, Sword Dancer, Piercing Glove, Shining Scepter, Great Reign Crossbow, Arrow Wiper Bow, Albatross Bow, Platina Staff, Storm Blitz Stick, Archangel Stick, Archangel Staff, Archangel Sword, Archangel Scepter, Archangel Crossbow"
+                    weapons="Knight Blade, Daybreak, Sword Dancer, Piercing Glove, Shining Scepter, Arrow Wiper Bow, Albatross Bow, Platina Staff, Demonic Stick"
                     shields="Grand Soul Shield, Cross Shield"
                     pendants=""
                     rings=""

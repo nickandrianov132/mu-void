@@ -9,7 +9,7 @@ export const userApi = api.injectEndpoints({
                 method: 'POST',
                 body: user,
             }),
-            invalidatesTags: [{type: 'authToken'}, {type: 'userInfo'}]
+            invalidatesTags: [{type: 'authToken'}, {type: 'userInfo'}, {type: "userVault"}, {type: "userWebstore"}]
         }),
         getUserDetails: build.query({
             query: () => ({
@@ -49,6 +49,7 @@ export const userApi = api.injectEndpoints({
             }),
             providesTags: ["userInfo"]
         }),
+
         userBuyVip: build.mutation({
             query: (vipData) => ({
                 url: `/user/buyVip`,
@@ -65,15 +66,105 @@ export const userApi = api.injectEndpoints({
             }),
         }),
         capturePaypalOrder: build.mutation({
-        query: (orderID) => ({
-            url: '/user/paypal-orders/capture-order',
-            method: 'POST',
-            body: { orderID }
+            query: (orderID) => ({
+                url: '/user/paypal-orders/capture-order',
+                method: 'POST',
+                body: { orderID }
+            }),
+            invalidatesTags: ["userInfo"] // Как только оплата пройдет, RTK Query перезапросит баланс автоматически
         }),
-        invalidatesTags: ["userInfo"] // Как только оплата пройдет, RTK Query перезапросит баланс автоматически
-        })
+        fetchAccountVault: build.query({
+            query: () => ({
+                url: `/user/auth/accountvault`
+            }),
+            providesTags: [{type: "userVault"}, {type: 'authToken'}]
+        }),
+        fetchAccountWebstore: build.query({
+            query: () => ({
+                url: `/user/auth/accountwebstore`
+            }),
+            providesTags: ["userWebstore"]
+        }),
+        moveItemToWebstore: build.mutation({
+            query: (itemData) => ({
+                url: `/user/auth/accountvault/moveItemToWebstore`,
+                method: 'POST',
+                body: itemData
+            }),
+            invalidatesTags: ["userVault", "userWebstore"]
+        }),
+        moveItemToVault: build.mutation({
+            query: (itemData) => ({
+                url: `/user/auth/accountvault/moveItemToVault`,
+                method: 'POST',
+                body: itemData
+            }),
+            invalidatesTags: ["userVault", "userWebstore"]
+        }),
+        moveZen: build.mutation({
+            query: (zenData) => ({
+                url: `/user/auth/accountvault/moveZen`,
+                method: 'POST',
+                body: zenData
+            }),
+            invalidatesTags: ["userVault", "userWebstore"]
+        }),
+        moveItemToMarket: build.mutation({
+            query: (itemData) => ({
+                url: `/user/auth/accountvault/moveItemToMarket`,
+                method: 'POST',
+                body: itemData
+            }),
+            invalidatesTags: ["userWebstore", "itemMarket"]
+        }),
+        getBackMarketItem: build.mutation({
+            query: (marketId) => ({
+                url: `/user/auth/market/getBackItem`,
+                method: 'POST',
+                body: {marketId}
+            }),
+            invalidatesTags: ["itemMarket", "userWebstore"]
+        }),
+
+        fetchMarketItems: build.query({
+            query: (arg) => ({
+                url: `/user/auth/market`,
+                // params: {page: arg[0], cat: arg[1]},
+                params: arg,
+
+            }),
+            providesTags: ["itemMarket"]
+        }),
+
+        fetchBuyMarketItem: build.mutation({
+            query: (marketId) => ({
+                url: `/user/auth/market/buyMarketItem`,
+                method: 'POST',
+                body: {marketId}
+            }),
+            invalidatesTags: ["itemMarket", "userWebstore", "userInfo"] 
+        }),
+
         
     }),
 })
 
-export const { useUserLoginMutation, useGetUserDetailsQuery, useFetchAccountCharQuery, useFetchAccountCharResetMutation, useFetchAccountCharGrandresetMutation, useFetchAccountInfoQuery, useUserBuyVipMutation, useUserCryptoInvoiceMutation, useCapturePaypalOrderMutation } = userApi
+export const { useUserLoginMutation,
+     useGetUserDetailsQuery,
+     useFetchAccountCharQuery,
+     useFetchAccountCharResetMutation,
+     useFetchAccountCharGrandresetMutation,
+     useFetchAccountInfoQuery, 
+     useUserBuyVipMutation, 
+     useUserCryptoInvoiceMutation, 
+     useCapturePaypalOrderMutation, 
+     useFetchAccountVaultQuery,
+     useFetchAccountWebstoreQuery,
+     useMoveItemToWebstoreMutation,
+     useMoveItemToVaultMutation,
+     useMoveZenMutation,
+     useMoveItemToMarketMutation,
+     useFetchMarketItemsQuery,
+     useGetBackMarketItemMutation,
+     useFetchBuyMarketItemMutation   
+    } = userApi

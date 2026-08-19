@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const serverInfo = [
-    {title: 'Experience:', content: {content: 'Dynamic 150x -> 100x', className: 'description_content_p'}},
+    {title: 'Experience:', content: {content: '50x', className: 'description_content_p'}},
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
@@ -56,7 +56,7 @@ const serverInfo = [
 {title: 'BC, DS:', content: {content: '200% Exp🔥', className: 'description_content_p'}},
 {title: 'Hot-Exp:', content: {content: 'Exp + 50% Drop + 10% Monday to Friday from 18:00 to 22:00', className: 'description_content_p'}},
 {title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% Drop +10% from Saturday 24:00 to Sunday 24:00', className: 'description_content_p'}},
-{title: 'Offexp:', content: {content: 'from 1st level, duration 12 hours, 24 hours for VIP.', className: 'description_content_p'}},
+{title: 'Offexp Info:', content: {content: 'from 1st level, duration 12 hours, 24 hours for VIP.', className: 'description_content_p'}},
 {title: 'Offexp:', content: {content: '/offlevel  with pick up jewels🔥', className: 'description_content_p'}},
 {title: 'Setparty:', content: {content: '/setparty  and your party password, or press "N" in the game.', className: 'description_content_p'}},
 ]

@@ -13,6 +13,11 @@ export const charApi = publicApi.injectEndpoints({
                 url: `/character/${id}`
             })
         }),
+        fetchOneCharInventory: build.query({
+            query: (id) => ({
+                url: `/character/inventory/${id}`
+            })
+        }),
         fetchTop3Char: build.query({
             query: () => ({
                 url:`/character/top3`
@@ -32,4 +37,4 @@ export const charApi = publicApi.injectEndpoints({
     })
 })
 
-export const { useFetchAllCharQuery, useFetchOneCharQuery, useFetchTop3CharQuery, useFetchAccountCharQuery, useFetchSortedCharQuery } = charApi
+export const { useFetchAllCharQuery, useFetchOneCharQuery, useFetchTop3CharQuery, useFetchAccountCharQuery, useFetchSortedCharQuery, useFetchOneCharInventoryQuery } = charApi

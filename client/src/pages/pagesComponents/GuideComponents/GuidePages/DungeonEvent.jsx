@@ -12,30 +12,58 @@ const DungeonEvent = () => {
                     </div>
                     <DungeonMobItem 
                         header={'Drop from Gold Rabbit :'}
+                        gp="20"
                         img={Images.rabbit}
                         imgClass='sealed_box_img_mob'
-                        percent1='10%'
-                        percent2='90%'
-                        // percent3='15%'
-                        // percent4='5%'
+                        percent1='20%'
+                        percent2='80%'
+                        greenbox='Green Ribbon Box,'
+                        redbox='Red Ribbon Box'
+                        job='Jewel of Bless,'
+                        jos='Jewel of Soul,'
+                        jol='Jewel of Life,'
+                        joc='Jewel of Chaos'
                     />
                     <DungeonMobItem 
                         header={'Drop from Pouch of Blessing :'}
+                        gp="40"
                         img={Images.pounch}
                         imgClass='sealed_box_img_mob'
-                        percent1='25%'
-                        percent2='25%'
-                        percent3='35%'
-                        percent4='15%'
+                        percent1='30%'
+                        // percent2='50%'
+                        percent3='50%'
+                        job='Jewel of Bless,'
+                        jos='Jewel of Soul,'
+                        jol='Jewel of Life,'
+                        joc='Jewel of Chaos,'
+                        jocr='Jewel of Creation'
+                        bok1={true}
+                        bok2={true}
+                        bok3={true}
+                        bok4={true}
+                        percent4='20%'
+                        silver={true}
                     />
                     <DungeonMobItem 
                         header={'Drop from Fire Flame Ghost :'}
+                        gp="60"
                         img={Images.flame}
                         imgClass='sealed_box_img_mob'
-                        percent1='20%'
-                        percent2='20%'
-                        percent3='40%'
-                        percent4='20%'
+                        percent1='15%'
+                        harmony="Jewel of Harmony"
+                        job='Jewel of Bless bundle 10,'
+                        jos='Jewel of Soul bundle 10,'
+                        jol='Jewel of Life bundle 10'
+                        percent2='15%'
+                        joh='Jewel of Harmony'
+                        percent3='35%'
+                        bok3={true}
+                        bok4={true}
+                        bok5={true}
+                        percent4='35%'
+                        silver={true}
+                        gold={true}
+                        remark="(Gold box & key available after 1st CS)"
                     />
                 <div className="sealed_box_guide_container">
                     <div className="sealed_box_info">

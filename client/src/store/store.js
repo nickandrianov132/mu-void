@@ -7,8 +7,14 @@ import regUserInputReducer from './slices/regUserInputSlice';
 import charactersReducer from './slices/characterSlice';
 import serverInfoReducer from './slices/serverInfoSlice';
 import regainPasswordReducer from './slices/regainPassSlice';
-import regainPasswordInputReducer from './slices/regainPassInputSlice'
+import regainPasswordInputReducer from './slices/regainPassInputSlice';
+import itemSelectedReducer from './slices/itemSelectedSlice';
+import vaultErrorReducer from './slices/vaultErrorSlice';
+import vaultSuccessReducer from './slices/vaultSuccessSlice';
+import sellMenuStateReducer from './slices/sellMenuState';
+import userInfoReducer from './slices/userInfoSlice';
 import { discordApi } from '../services/discordApi';
+import marketQueryReducer from './slices/marketQuerySlice';
 
 
 export const store = configureStore({
@@ -20,6 +26,12 @@ export const store = configureStore({
         serverInfo: serverInfoReducer,
         regainPassword: regainPasswordReducer,
         regainPasswordInput: regainPasswordInputReducer,
+        itemSelected: itemSelectedReducer,
+        vaultError: vaultErrorReducer,
+        vaultSuccess: vaultSuccessReducer,
+        sellMenuState: sellMenuStateReducer,
+        userInfo: userInfoReducer,
+        marketQuery: marketQueryReducer,
         [api.reducerPath]: api.reducer,
         [publicApi.reducerPath]: publicApi.reducer,
         [discordApi.reducerPath]: discordApi.reducer,

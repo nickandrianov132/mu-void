@@ -1,0 +1,1242 @@
+{
+  "0_2": {
+    "tier1": 21,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_14": {
+    "tier1": 11,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_17": {
+    "tier1": 57,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_31": {
+    "tier1": 60,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_32": {
+    "tier1": 37,
+    "tier2": 38,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_33": {
+    "tier1": 56,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "0_34": {
+    "tier1": 63,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "2_1": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "2_11": {
+    "tier1": 61,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "4_9": {
+    "tier1": 23,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "4_5": {
+    "tier1": 29,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "4_17": {
+    "tier1": 59,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "5_0": {
+    "tier1": 13,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "5_8": {
+    "tier1": 51,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "5_9": {
+    "tier1": 58,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "5_18": {
+    "tier1": 62,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "6_0": {
+    "tier1": 0,
+    "tier2": 2,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "6_6": {
+    "tier1": 17,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "6_9": {
+    "tier1": 5,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "6_12": {
+    "tier1": 50,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_0": {
+    "tier1": 4,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_1": {
+    "tier1": 11,
+    "tier2": 12,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_2": {
+    "tier1": 13,
+    "tier2": 14,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_3": {
+    "tier1": 19,
+    "tier2": 20,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_4": {
+    "tier1": 16,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_5": {
+    "tier1": 1,
+    "tier2": 2,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_6": {
+    "tier1": 5,
+    "tier2": 6,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_7": {
+    "tier1": 17,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_8": {
+    "tier1": 8,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_9": {
+    "tier1": 10,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_10": {
+    "tier1": 21,
+    "tier2": 22,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_11": {
+    "tier1": 23,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_12": {
+    "tier1": 25,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_13": {
+    "tier1": 28,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_14": {
+    "tier1": 0,
+    "tier2": 30,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_17": {
+    "tier1": 57,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_26": {
+    "tier1": 33,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_36": {
+    "tier1": 52,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_38": {
+    "tier1": 61,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_40": {
+    "tier1": 35,
+    "tier2": 36,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_59": {
+    "tier1": 37,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "7_67": {
+    "tier1": 44,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_0": {
+    "tier1": 3,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_1": {
+    "tier1": 0,
+    "tier2": 12,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_2": {
+    "tier1": 13,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_3": {
+    "tier1": 19,
+    "tier2": 20,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_4": {
+    "tier1": 15,
+    "tier2": 16,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_5": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_6": {
+    "tier1": 5,
+    "tier2": 6,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_7": {
+    "tier1": 17,
+    "tier2": 18,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_8": {
+    "tier1": 7,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_9": {
+    "tier1": 9,
+    "tier2": 10,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_10": {
+    "tier1": 22,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_11": {
+    "tier1": 23,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_12": {
+    "tier1": 25,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_13": {
+    "tier1": 27,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_14": {
+    "tier1": 29,
+    "tier2": 30,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_15": {
+    "tier1": 31,
+    "tier2": 32,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_17": {
+    "tier1": 57,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_18": {
+    "tier1": 58,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_19": {
+    "tier1": 59,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_26": {
+    "tier1": 33,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_38": {
+    "tier1": 61,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_40": {
+    "tier1": 0,
+    "tier2": 36,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_41": {
+    "tier1": 55,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_42": {
+    "tier1":62,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "8_59": {
+    "tier1": 37,
+    "tier2": 38,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_0": {
+    "tier1": 3,
+    "tier2": 4,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_1": {
+    "tier1": 0,
+    "tier2": 12,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_2": {
+    "tier1": 13,
+    "tier2": 14,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_3": {
+    "tier1": 0,
+    "tier2": 20,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_4": {
+    "tier1": 15,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_5": {
+    "tier1": 1,
+    "tier2": 2,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_6": {
+    "tier1": 5,
+    "tier2": 6,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_7": {
+    "tier1": 17,
+    "tier2": 18,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_8": {
+    "tier1": 7,
+    "tier2": 8,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_9": {
+    "tier1": 10,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_10": {
+    "tier1": 21,
+    "tier2": 22,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_11": {
+    "tier1": 23,
+    "tier2": 24,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_12": {
+    "tier1": 25,
+    "tier2": 26,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_13": {
+    "tier1": 27,
+    "tier2": 28,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_14": {
+    "tier1": 0,
+    "tier2": 30,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_15": {
+    "tier1": 31,
+    "tier2": 32,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_16": {
+    "tier1": 50,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_17": {
+    "tier1": 57,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_19": {
+    "tier1": 59,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_20": {
+    "tier1": 60,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_26": {
+    "tier1": 33,
+    "tier2": 34,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_35": {
+    "tier1": 51,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_36": {
+    "tier1": 52,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_40": {
+    "tier1": 35,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_42": {
+    "tier1": 62,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "9_59": {
+    "tier1": 37,
+    "tier2": 38,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_0": {
+    "tier1": 4,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_1": {
+    "tier1": 11,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_2": {
+    "tier1": 13,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_3": {
+    "tier1": 19,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_4": {
+    "tier1": 16,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_5": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_6": {
+    "tier1": 6,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_7": {
+    "tier1": 17,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_8": {
+    "tier1": 7,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_9": {
+    "tier1": 9,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_10": {
+    "tier1": 21,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_11": {
+    "tier1": 23,
+    "tier2": 24,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_12": {
+    "tier1": 25,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_13": {
+    "tier1": 27,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_14": {
+    "tier1": 29,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_15": {
+    "tier1": 0,
+    "tier2": 32,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_18": {
+    "tier1": 58,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_20": {
+    "tier1": 60,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_26": {
+    "tier1": 0,
+    "tier2": 34,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_27": {
+    "tier1": 54,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_38": {
+    "tier1": 61,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_40": {
+    "tier1": 35,
+    "tier2": 36,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "10_42": {
+    "tier1": 62,
+    "tier2": 36,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_0": {
+    "tier1": 3,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_1": {
+    "tier1": 11,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_2": {
+    "tier1": 14,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_3": {
+    "tier1": 0,
+    "tier2": 20,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_4": {
+    "tier1": 15,
+    "tier2": 16,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_5": {
+    "tier1": 1,
+    "tier2": 2,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_6": {
+    "tier1": 6,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_7": {
+    "tier1": 17,
+    "tier2": 18,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_8": {
+    "tier1": 7,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_9": {
+    "tier1": 9,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_10": {
+    "tier1": 21,
+    "tier2": 22,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_11": {
+    "tier1": 24,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_12": {
+    "tier1": 25,
+    "tier2": 26,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_13": {
+    "tier1": 28,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_14": {
+    "tier1": 29,
+    "tier2": 30,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_15": {
+    "tier1": 31,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_17": {
+    "tier1": 57,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_18": {
+    "tier1": 58,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_19": {
+    "tier1": 59,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_20": {
+    "tier1": 60,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_26": {
+    "tier1": 0,
+    "tier2": 34,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_27": {
+    "tier1": 54,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_37": {
+    "tier1": 53,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_40": {
+    "tier1": 0,
+    "tier2": 36,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_41": {
+    "tier1": 55,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_38": {
+    "tier1": 61,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "11_59": {
+    "tier1": 38,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_8": {
+    "tier1": 1,
+    "tier2": 62,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_9": {
+    "tier1": 9,
+    "tier2": 33,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_12": {
+    "tier1": 5,
+    "tier2": 60,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_13": {
+    "tier1": 7,
+    "tier2": 53,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_21": {
+    "tier1": 19,
+    "tier2": 32,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_22": {
+    "tier1": 21,
+    "tier2": 12,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_23": {
+    "tier1": 9,
+    "tier2": 63,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_24": {
+    "tier1": 13,
+    "tier2": 35,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_25": {
+    "tier1": 13,
+    "tier2": 34,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_26": {
+    "tier1": 15,
+    "tier2": 59,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_27": {
+    "tier1": 31,
+    "tier2": 58,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  },
+  "13_28": {
+    "tier1": 29,
+    "tier2": 56,
+    "tier3": 0,
+    "tier4": 0,
+    "mixA": 0,
+    "mixB": 0
+  }
+}

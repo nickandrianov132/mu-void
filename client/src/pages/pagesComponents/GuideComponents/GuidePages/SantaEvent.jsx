@@ -14,7 +14,7 @@ const SantaEvent = () => {
                 descInfo="When event started, Cursed Santa🎅 and his Goblins appears in appropriate locations, find and defeat them to get good prizes and save The Cristmas Willage!"
                 utf_symbols="🎄⛄"
             >
-                            <SantaWizardItem 
+            <SantaWizardItem 
                 title="Cursed Goblin"
                 item1cheance="80%"
                 desc1="3,000,000 zen"
@@ -26,6 +26,7 @@ const SantaEvent = () => {
                 item3cheance="10%"
                 desc3="Invitation to Santa Willage"
                 em3DescClass="em_invitation"
+                gp="1"
             />
             <SantaWizardItem 
                 title="Cursed Santa"
@@ -42,6 +43,7 @@ const SantaEvent = () => {
                 item4cheance="20%"
                 desc4=" 3pcs Jewel of Bless, Soul, Life"
                 em4DescClass="em_jewels"
+                gp="35"
             />
             </SantaWizardEvent>
         </div>

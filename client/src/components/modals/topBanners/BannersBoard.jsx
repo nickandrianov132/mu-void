@@ -9,7 +9,7 @@ import BannerTopG from "./BannerTopG";
 const BannersBoard = () => {
     return (
         <div className="banners_board">
-            <BannerSupremeTop100 />
+            {/* <BannerSupremeTop100 /> */}
             <BannerGtop100 />
             <BannerMmoanons />
             <BannerExtremeTop />

@@ -1,5 +1,5 @@
 
-const ClassesInfoItem = ({classTitle, img, as, asrPVM, asrPVP, def, dsrPVP, dsrPVM, magDMGmin, magDMGmax, curDMGmin, curDMGmax, physDMGmin, physDMGmax, addInfo1, addInfo2, skillImg1, skillImg2, skillImg3, skillImg4, skillImg5, skillInfo1, skillInfo2, skillInfo3, skillInfo4, skillInfo5, altImg1, altImg2, altImg3, altImg4, altImg5}) => {
+const ClassesInfoItem = ({classTitle, img, as, maxAS, asrPVM, asrPVP, def, dsrPVP, dsrPVM, magDMGmin, magDMGmax, curDMGmin, curDMGmax, physDMGmin, physDMGmax, addInfo1, addInfo2, skillImg1, skillImg2, skillImg3, skillImg4, skillImg5, skillInfo1, skillInfo2, skillInfo3, skillInfo4, skillInfo5, altImg1, altImg2, altImg3, altImg4, altImg5}) => {
     return (
         <div className="classes_item_container">
             <h4 className="class_item_title">{classTitle}</h4>
@@ -8,9 +8,10 @@ const ClassesInfoItem = ({classTitle, img, as, asrPVM, asrPVP, def, dsrPVP, dsrP
                     <img className="class_img" src={img} />
                 </div>
                 <div className="class_info_wrapper">
-                    <p><b>Atack Speed</b> - Agility / {as}</p>
-                    <p><b>Atack Success Rate <em className="pvm_em">PVM</em></b> - {asrPVM}</p>
-                    <p><b>Atack Success Rate <em className="pvp_em">PVP</em></b> - {asrPVP}</p>
+                    <p><b>Attack Speed</b> - Agility / {as}</p>
+                    <p><b>Max. Attack Speed: <em>{maxAS}</em></b></p>
+                    <p><b>Attack Success Rate <em className="pvm_em">PVM</em></b> - {asrPVM}</p>
+                    <p><b>Attack Success Rate <em className="pvp_em">PVP</em></b> - {asrPVP}</p>
                     <p><b>Defence</b> - Agility / {def}</p>
                     <p><b>Defence Success Rate <em className="pvm_em">PVM</em></b> - {dsrPVM}</p>
                     <p><b>Defence Success Rate <em className="pvp_em">PVP</em></b> - {dsrPVP}</p>

@@ -1,15 +1,19 @@
-import { useNavigate } from "react-router";
-import { GUIDE_CASTLE_SIEGE_INFO, GUIDE_CLASSES_INFO, GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUSA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GOLDENMOBS_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_SANTA_INFO, GUIDE_WHITE_WIZARD_INFO } from "../../../utils/constants";
+import { Link, useNavigate } from "react-router";
+import { GUIDE_CASTLE_SIEGE_INFO, GUIDE_CLASSES_INFO, GUIDE_DROP_BC_INFO, GUIDE_DROP_BOSS_CRYWOLF_INFO, GUIDE_DROP_BOSS_KUNDUN_INFO, GUIDE_DROP_BOSS_MAYA_INFO, GUIDE_DROP_BOSS_MEDUSA_INFO, GUIDE_DROP_BOSS_SELUPAN_INFO, GUIDE_DROP_BOX_INFO, GUIDE_DROP_BOX_OF_KUNDUN_INFO, GUIDE_DROP_CC_INFO, GUIDE_DROP_DG_INFO, GUIDE_DROP_DS_INFO, GUIDE_DROP_DUNGEON_EVENT_INFO, GUIDE_DROP_IF_INFO, GUIDE_DROP_MINI_BOSSES_INFO, GUIDE_GOLDENMOBS_INFO, GUIDE_GRAND_RESETS_INFO, GUIDE_LORENDEEP_INFO, GUIDE_MOSS_INFO, GUIDE_RESETS_INFO, GUIDE_SANTA_INFO, GUIDE_SET_ITEMS_INFO, GUIDE_WHITE_WIZARD_INFO } from "../../../utils/constants";
 
 const GuideSideBar = () => {
     const navigate = useNavigate()
     return (
         <div className="guide_sidebar_container">
             <ul className="guide_ul">
-                <li 
+                <li className="guide_li">
+                    <Link to={GUIDE_CLASSES_INFO}>✧ Classes Info</Link>
+                </li>
+
+                {/* <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_CLASSES_INFO)}
-                >✧ Classes Info</li>
+                >✧ Classes Info</li> */}
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_RESETS_INFO)}
@@ -18,6 +22,9 @@ const GuideSideBar = () => {
                     className="guide_li"
                     onClick={() => navigate(GUIDE_GRAND_RESETS_INFO)}
                 >✧ Grand Reset System</li>
+                <li className="guide_li">
+                    <Link to={GUIDE_SET_ITEMS_INFO}>✧ Ancient Sets Info</Link>
+                </li>
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOX_INFO)}
@@ -53,11 +60,11 @@ const GuideSideBar = () => {
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_CRYWOLF_INFO)}
-                    >✧ CryWolf Event</li>
+                >✧ CryWolf Event</li>
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_BOSS_MAYA_INFO)}
-                    >✧ Kanturu Maya Event</li>
+                >✧ Kanturu Maya Event</li>
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_DS_INFO)}
@@ -74,6 +81,10 @@ const GuideSideBar = () => {
                     className="guide_li"
                     onClick={() => navigate(GUIDE_DROP_DG_INFO)}
                 >✧ Doppelganger</li>
+                <li 
+                    className="guide_li"
+                    onClick={() => navigate(GUIDE_DROP_IF_INFO)}
+                >✧ Imperial Fortress</li>
                 <li 
                     className="guide_li"
                     onClick={() => navigate(GUIDE_LORENDEEP_INFO)}

@@ -18,6 +18,8 @@ const BossSelupan = () => {
                     armors="Hell Night Set, Succubus Set, Lazy Wind Set, Dark Devil Set, Sticky Set, Ambition Set, Stormwing Set, Light Lord Set"
                     weapons="Sonic Blade, Asura, Cyclone Sword, Blast Break, Thunderbolt, Horn of Steel, Magma Spear, Angelic Bow, Devil Crossbow, Summon Spirit Stick, Miracle Staff, Spite Staff"
                     shields="Lazy Wind Shield, Light Lord Shield, Dark Devil Shield, Magic Knight Shield, Ambition Shield"
+                    exc={true}
+                    gp="1600"
                 />
             </div>
         </div>

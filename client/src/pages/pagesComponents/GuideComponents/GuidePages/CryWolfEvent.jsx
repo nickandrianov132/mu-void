@@ -15,6 +15,8 @@ const CryWolfEvent = () => {
                     armors="Dark Phoenix, Great Dragon, Dark Soul, Hurricane, Red Spirit, Dark Master, Demonic, Piercing Grove"
                     weapons="Knight Blade, Dark Reign Blade, Daybreak, Sword Dancer, Piercing Glove, Shining Scepter, Great Reign Crossbow, Arrow Wiper Bow, Albatross Bow, Platina Staff, Storm Blitz Stick."
                     shields="Grand Soul Shield, Cross Shield"
+                    exc={true}
+                    gp="150"
                 />
                 <MayaContentItem 
                     title="Boss Balgass Drop:"
@@ -25,6 +27,8 @@ const CryWolfEvent = () => {
                     armors="Dragon Knight, Venom, Sylphid Rey, Storm Blitz, Volcano, Sunlight, Phoenix Soul"
                     weapons="Bone Blade, Grand Viper Staff, Sylphid Wind Bow, Raven Stick, Soley Scepter, Phoenix Glove,"
                     extraWeapons="Archangel Stick, Archangel Staff, Archangel Sword, Archangel Scepter, Archangel Crossbow"
+                    exc={true}
+                    gp="600"
                 />
             </div>
         </div>

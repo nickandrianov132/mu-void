@@ -3,11 +3,13 @@ const characterController = require('../controllers/characterController')
 const router = new Router()
 
 // const dk = require('../utiles/defaultClass')
-
+// const invent = characterController.getCharInventory()
+// console.log(invent);
 router.get('/', characterController.getCharacter)
 router.get('/sorted', characterController.getSortedCharacter)
 router.get('/top3', characterController.getTop5Character)
 router.get('/:id', characterController.getOneCharacter)
+router.get('/inventory/:id', characterController.getCharInventory)
 router.post('/createCharacter', characterController.createCharacter)
 
 

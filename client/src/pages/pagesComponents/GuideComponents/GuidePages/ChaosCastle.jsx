@@ -26,11 +26,11 @@ const ChaosCastle = () => {
                             {num: "7", regularLvL: "15-400", mgdlrfLvl: "15-400"},
                            ]}
                     sec3desc1="Upon completion last one who survive in Chaos Castle will get:"
-                    thead2={[{className: "th_gold" ,title:"#Chaos Castle:"}, {className: "th_gold", title:"Final Reward:"}, {className: "th_gold", title: "Cheance of rewards:"}]}
+                    thead2={[{className: "th_gold" ,title:"#Chaos Castle:"}, {className: "th_gold", title:"Final Reward:"}, {className: "th_gold", title: "Chance:"}, {className: "th_gold", title: "Goblin Points:"}]}
                     tbody2={[
-                            {className: "td_cc", num: "1-2", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "40%/20%/40%"},
-                            {className: "td_cc", num: "3-4", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "60%/20%/20%"},
-                            {className: "td_cc", num: "5-7", monster1:"Ancient Item / Talisman of Chaos Assembly ", monster2: "80% / 20%"},
+                            {className: "td_cc", num: "1-2", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "40%/20%/40%", monster3: "100"},
+                            {className: "td_cc", num: "3-4", monster1:"Ancient Item / Talisman of Chaos Assembly / Jewel of Bless, Soul, Life", monster2: "60%/20%/20%", monster3: "200"},
+                            {className: "td_cc", num: "5-7", monster1:"Ancient Item / Talisman of Chaos Assembly ", monster2: "80% / 20%", monster3: "300"},
                            ]}
                 />
             </EventsContainer>

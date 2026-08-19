@@ -1,6 +1,6 @@
 import Images from '../../../assets/Images';
 import { useFetchAccountCharResetMutation } from '../../../services/userApi';
-import { validateCharReset, checkLocation, checkCharClass, checkResLvl, tipResLvl, checkZenRes, tipZenRes } from '../../../utils/functions'
+import { validateCharReset, checkLocation, checkCharClass, checkResLvl, tipResLvl, checkZenRes, tipZenRes, pretyZen } from '../../../utils/functions'
 import SpinnerSmall from '../../../components/SpinnerSmall'
 
 
@@ -34,23 +34,7 @@ const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, 
     }
     let image = setImg();
 
-    function pretyZen(zen) {
-        const arr = []
-        const arrZen = zen.toString().split('')
-        for (let a =[], i = arrZen.length; i > 0; i--) {
-            a.push(arrZen[i - 1])
-            // console.log(a);
-            if(a.length == 3) {
-                arr.push(a.reverse().join(''))
-                a = []
-            }
-            if(i < 2  && a.length !== 0) {
-                arr.push(a.reverse().join(''))
-            }
-        }
-        const pZen = arr.reverse().join(',')
-        return pZen
-    }
+
      async function handlerReset(e) {
         e.preventDefault()
         const character = {name: cName}
@@ -90,7 +74,7 @@ const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, 
                         </tr>
                         <tr>
                             <td>Grand Reset</td>
-                            <td>{cGrandReset}</td>
+                            <td>{cGrandReset ? cGrandReset : "0"}</td>
                         </tr>
                         <tr>
                             <td>Reset</td>

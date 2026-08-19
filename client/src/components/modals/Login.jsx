@@ -7,6 +7,7 @@ import { loginRegexp, passRegexp } from '../../utils/regExps';
 import SpinnerSmall from '../SpinnerSmall';
 import { useNavigate } from 'react-router';
 import { REGAIN_PASSWORD_ROUTE } from '../../utils/constants';
+import { updateUserInfo } from '../../store/slices/userInfoSlice';
 
 const Login = () => {
     const [loginValue, setLoginValue] = useState('')
@@ -20,7 +21,7 @@ const Login = () => {
     const [pTipPass, setPTipPass] = useState(false) 
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    // console.log(data);
+    console.log(data);
     const loginCheck = (e) => {
         if(e.length > 0){
             setCheckLogin(loginRegexp.test(loginValue))
@@ -63,6 +64,7 @@ const Login = () => {
             dispatch(setToken(data.token))
         }
     }, [data])
+
 
     return (
         <div className='login_container'>

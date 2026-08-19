@@ -54,7 +54,7 @@ const DropBoxes = () => {
                     options="4-16"
                     locations=" Dungeon 1-3 Event Mobs"
                     armors="Black Dragon, Ashcrow, Grand Soul, Eclipse, Divine, Iris, Dark Steel, Glorius, Thunder Hawk, Valiant, Ancient, Storm Jahad"
-                    weapons="Dark Breaker, Rune Blade, Holy Storm Glove, Dragon Soul Staff, Demonic Stick, Dragon Spear, Great Lord Scepter, Saint Crossbow, Celestial Bow, Staff of Kundun"
+                    weapons="Dark Breaker, Thunder Blade, Rune Blade, Holy Storm Glove, Dragon Soul Staff, Demonic Stick, Dragon Spear, Great Lord Scepter, Saint Crossbow, Celestial Bow, Staff of Kundun"
                     shields=""
                 />
                 <GuideBoxesItem 
@@ -63,25 +63,25 @@ const DropBoxes = () => {
                     options="4-16"
                     locations=" Dungeon 1-3 Event Mobs"
                     armors="Dark Phoenix, Great Dragon, Dark Soul, Hurricane, Red Spirit, Dark Master, Demonic, Piercing"
-                    weapons="Knight Blade, Dark Reign Blade, Daybreak, Sword Dancer, Piercing Blade Glove, Shining Scepter, Great Reign Crossbow, Arrow Viper Bow, Albatross Bow, Platina Staff, Raven Stick"
+                    weapons="Knight Blade, Dark Reign Blade, Great Lord Scepter, Daybreak, Sword Dancer, Piercing Blade Glove, Shining Scepter, Great Reign Crossbow, Arrow Viper Bow, Albatross Bow, Platina Staff, Storm Blitz Stick, Phoenix Soul Star"
                     shields="Grand Soul Shield, Cross Shield"
                 />
                 <GuideSealBoxItem 
                     image={Images.silver_box_open}
-                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King, Red Dragon"
-                    dk="Garuda Brass, Mist Bronze, Rave Plate"
-                    dw="Heras Sphinx, Evis Bone, Sylion Bone"
-                    elf="Drake Vine, Karis Spirit"
+                    mobs="Fire Flame Ghost, Pouch of Blessing, Red Dragon, Axl Hero, Hero Mutant, Omega Wing, Gigas Golem"
+                    dk="Anonymous Leather, Garuda Brass, Mist Bronze, Rave Plate, Cloud Brass, Hyperion Bronze, Eplete Scale, Berserker Scale"
+                    dw="Barnake Pad, Heras Sphinx, Minet Sphinx, Evis Bone, Sylion Bone"
+                    elf="Drake Vine, Gaia Silk, Fase Silk, Karis Spirit, Argo Spirit, Elvian Wind, Odin Wind"
                 />
                 <GuideSealBoxItem 
                     image={Images.gold_box_open}
-                    mobs=" Lunar Rabbit, Fire Flame Ghost, Pouch of Blessing, Death King, Red Dragon"
-                    dk="Hyon Dragon, Vicious Dragon"
-                    dw="Anubis Legendary, Enis Legendary"
-                    elf="Aruans Guardian"
-                    sum="Semeden Red Wing, Chrono Red Wing"
-                    mg="Gaion Storm Crow, Muren Storm Crow"
-                    dl="Agnis Adamantine, Broy Adamantine"
+                    mobs="Fire Flame Ghost, Red Dragon"
+                    dk="Hyon Dragon, Vicious Dragon, Mahes Black Dragon, Bragi Dark Phoenix"
+                    dw="Anubis Legendary, Enis Legendary, Bes Eclipse, Alvis Grand Soul"
+                    elf="Aruans Guardian, Gywen Guardian, Serket Iris, Figgs Divine"
+                    sum="Semeden Red Wing, Chrono Red Wing, Harpy Ancient, Elune Demonic"
+                    mg="Gaion Storm Crow, Muren Storm Crow, Apis Valiant, Tyr Thunder Hawk"
+                    dl="Agnis Adamantine, Broy Adamantine, Khon Dark Steel, Surt Glorius"
                     rf="Chamers Sacred Fire, Vega Sacred Fire"
                 />
                 {/* <GuideBoxesItem 

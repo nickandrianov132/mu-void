@@ -1,0 +1,55 @@
+{
+  "weapons": {
+    "firstOpt": "Increases the amount of Mana received for hunting monsters +Mana/8",
+    "secondOpt": "Increases the amount of Life received for hunting monsters +Life/8",
+    "thirdOpt": "Increase Attack (Wizardry) Speed +20",
+    "fourthOpt": "Increases Attack +5%",
+    "fifthOpt": "Increase Attack(Wizardy) Dmg +lvl/8",
+    "sixthOpt": "Chance of doing Excellent damage +10%"
+  },
+  "magicPend": {
+    "firstOpt": "Increases the amount of Mana received for hunting monsters +Mana/8",
+    "secondOpt": "Increases the amount of Life received for hunting monsters +Life/8",
+    "thirdOpt": "Increase Attack (Wizardry) Speed +20",
+    "fourthOpt": "Increases Wizardy +5%",
+    "fifthOpt": "Increase Wizardy Dmg +lvl/8",
+    "sixthOpt": "Chance of doing Excellent damage +10%"
+  },
+  "armors": {
+    "firstOpt": "Increases the amount of Zen received for hunting monsters +20%",
+    "secondOpt": "Defense Success Rate +12%",
+    "thirdOpt": "Reflect Damage +5%",
+    "fourthOpt": "Decreases Damage +4%",
+    "fifthOpt": "Increase Maximum Mana +7%",
+    "sixthOpt": "Increase Maximum Life +7%"
+  },
+  "wings2nd": {
+    "firstOpt": "Increase Life +200",
+    "secondOpt": "Increase Mana +500",
+    "thirdOpt": "Chance of Damage from Breaking Enemy's Defense +3%",
+    "fourthOpt": "Increase Maximum AG +50",
+    "fifthOpt": "Increase Attack (Wizardry) Speed +5"
+  },
+  "capeDl": {
+    "firstOpt": "Increase Life +200",
+    "secondOpt": "Increase Mana +500",
+    "thirdOpt": "Increase Command +250",
+    "fourthOpt": "Chance of Damage from Breaking Enemy's Defense +3%",
+    "fifthOpt": "Increase Attack (Wizardry) Speed +5"
+  },
+  "capeRf": {
+    "firstOpt": "Increase Life +200",
+    "secondOpt": "Increase Mana +500",
+    "thirdOpt": "Chance of Damage from Breaking Enemy's Defense +3%"
+  },
+  "wings2.5": {
+    "firstOpt": "Chance of Damage from Breaking Enemy's Defense +5%",
+    "secondOpt": "Chance of Fully Recovering Life +5%"
+  },
+  "wings3rd": {
+    "firstOpt": "Chance of Damage from Breaking Enemy's Defense +7%",
+    "secondOpt": "Chance of Returning the Enemy's Attack Power +5%",
+    "thirdOpt": "Chance of Fully Recovering Life +5%",
+    "fourthOpt": "Chance of Fully Recovering Mana +5%"
+  }
+}

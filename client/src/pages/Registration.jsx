@@ -35,7 +35,8 @@ const navigate = useNavigate()
         // console.log(`Registretion sended for: ${userData.login}`);
         if(inputLogin & inputPassword & inputEmail & inputName & inputRegQuestion & inputRegAnswer){
             let dateStamp = new Date().toLocaleString("en-GB", { timeZone: "UTC" })
-            let userIp = await getIpAddress() 
+            // let userIp = await getIpAddress() 
+            let userIp = "192.168.0.1"
             console.log(userIp);
             let user = {...userData, date: dateStamp, userIp}
             console.log(user);

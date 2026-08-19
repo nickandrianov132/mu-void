@@ -18,6 +18,8 @@ const Medusa = () => {
                     armors="Brave, Titan, Hades, Eternal Wing, Seraphim, Divine, Royal, Phantom, Destroy"
                     weapons="Sword Breaker, Flameberge, Inberial Staff, Deadly Staff, Eternal Wing Stick, Absolute Scepter, Dark Stinger, Frost Mace, Rune Bastard Sword"
                     shields="Crimson Glory, Guardian Shield, Salamander Shield, Frost Barrier"
+                    exc={true}
+                    gp="1600"
                 />
                 <div className="content_title_img_wrapper">
                     <h4>Boss Medusa randomly apears in next respawn zones</h4>

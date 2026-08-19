@@ -1,18 +1,13 @@
-import { useFetchAccountInfoQuery } from '../../../services/userApi';
+import { useSelector } from 'react-redux';
 
-const WCoinsCBar = () => {
-    const {data: userInfo, isSuccess, isError, isLoading} = useFetchAccountInfoQuery()
-    // console.log(userInfo)
+const WCoinsCBar = ({wCoins}) => {
+    // const {wCoins} = useSelector(state => state.userInfo);
 
     return (
-        <>
-            {isSuccess &&
-                <div className='wcoinsc_bar_container'>
-                    <span className='wcoins_title'>WCoins:</span>
-                    <span className='wcoins_amount'>{userInfo.wCoinsC}</span>
-                </div>
-            }
-        </>
+        <div className='wcoinsc_bar_container'>
+            <span className='title'>WCoins:</span>
+            <span className='amount'>{wCoins}</span>
+        </div>
     );
 }
 

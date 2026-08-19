@@ -1,6 +1,7 @@
 const { poolPromise } = require('../db')
 const sql = require('mssql')
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
+const allowed380Items = require('../utiles/allowed380Items');
 // const jsonBuffer = require('../utiles/bufferConstants')
 // const fs = require('fs')
 
@@ -12,6 +13,173 @@ const jwt = require('jsonwebtoken')
 // })
 // let base64String = btoa(String.fromCharCode(...new Uint8Array(byteArray)));
 // document.getElementById('yourImg').src = `data:image/jpeg;base64,${base64String}`;
+
+const ITEM_SIZE = 32;
+function getExcOptions(excByte) {
+    return {
+        firstOpt: !!(excByte & 1),
+        secondOpt: !!(excByte & 2),
+        thirdOpt: !!(excByte & 4),
+        fourthOpt: !!(excByte & 8),
+        fifthOpt: !!(excByte & 16),
+        sixthOpt: !!(excByte & 32),
+    }
+}
+function getIsExc(excOptObj) {
+    if ( excOptObj.firstOpt || excOptObj.secondOpt || excOptObj.thirdOpt || excOptObj.fourthOpt || excOptObj.fifthOpt || excOptObj.sixthOpt) {
+        return true
+    } else {
+        return false
+    }
+}
+function parseInventory(rawData) {
+    if (!rawData) return [];
+    const buffer = Buffer.isBuffer(rawData) ? rawData : Buffer.from(rawData.replace('0x', ''), 'hex');
+    const inventory = [];
+
+    for (let i = 0; i < buffer.length / ITEM_SIZE; i++) {
+        const item = buffer.subarray(i * ITEM_SIZE, (i + 1) * ITEM_SIZE);
+        // если первый байт 0xFF, значит слот пуст
+        // if (item[0] === 0xFF) continue;
+        if (item[0] === 0xFF && i < 12) {
+            inventory.push({
+            slot: i,
+            cat: null
+        })
+        }
+        else if (i < 12) {
+            inventory.push({
+                slot: i,
+                ...decodeIGCNItem(item)
+            })
+
+        }
+    }
+    return inventory;
+}
+function decodeIGCNItem(buf) {
+    // Базовый ID и Группа (Category)
+    // console.log([...buf.subarray(0,16)]);
+    // const itemIndex = buf[0];
+    // const itemCategory = buf[9] >> 4;
+    const itemCategory = (buf[9] >> 4) & 0x0F;
+    let itemIndex = buf[0];
+    let hotByte = buf;
+    console.log(hotByte);
+    if ((buf[7] & 0x80) !== 0) {
+        itemIndex += 256;
+    }
+    const fullId = (itemCategory * 512) + itemIndex;
+    // Уровень предмета (Level)
+    const levelByte = buf[1];
+    const level = (levelByte >> 3) & 15; // Биты 3,4,5,6
+    // Опции
+    const hasSkill = !!(levelByte & 128);
+    const hasLuck = !!(levelByte & 4);
+    // Excellent опции (Байт 7)
+    const excOption = buf[7];
+
+
+    // Серийный номер (Serial) - для удаления/перемещения/проверки итема важно для аукциона!
+    const serial = buf.readUInt32LE(16);
+    // Socket / Elementsl статы (начинаются с 11 байта в S9)
+    const sockets = [buf[11], buf[12], buf[13], buf[14], buf[15]];
+    // Ancient 
+    const categoryByte = buf[8];
+    const ancientValue = categoryByte & 0x0F; // Маска для младших 4 бит
+    const isAncient = ancientValue > 0;
+    const byte1 = buf[1];
+    const byte7 = buf[7];
+    // console.log(`Item Index: ${itemIndex}, Category: ${itemCategory}, FullID: ${fullId}, ancientValue: ${ancientValue}, serial: ${serialTest}`);
+    // console.log([...buf.subarray(0,16)]);
+    // 380lvl Options (Pink Opt)
+    // const is380pvpOpt = (buf[10] & 0x10) > 0; 
+    // const is380pvpOpt = ((buf[8] & 0x08) > 0) || ((buf[9] && 0x10) > 0) || ((buf[10] & 0x10) > 0); 
+    // let is380pvpOpt = false;
+    // if (((buf[9] & 0x10) > 0) || ((buf[9] && 0x10) > 0)) {
+    //     is380pvpOpt = true;
+    // }
+    // else if (((buf[8] & 0x08) > 0) && ((buf[9] & 0x20) > 0)) {
+    //     is380pvpOpt = true;
+    // }
+    let is380pvpOpt = false;
+    const canHave380 = allowed380Items.some(x => x.cat === itemCategory && x.index === itemIndex);
+    if (canHave380) {
+        const hasAnyPvpBit = (buf[8] > 0 && buf[8] !== 0xff) ||
+                             (buf[9] > 0 && buf[9] !== 0xff) ||
+                             (buf[10] > 0 && buf[10] !== 0xff);
+        if (hasAnyPvpBit) {
+            is380pvpOpt = true;
+        }
+        // if (buf[8] !== 0xff && buf[9] !== 0xff) {
+        //     const checkByte8 = (buf[8] & 0x10) > 0 || (buf[8] & 0x08) > 0 || (buf[8] & 0x04) > 0 || (buf[8] & 0x02) > 0;
+        //     const checkByte9 = (buf[9] & 0x10) > 0 || (buf[9] & 0x20) > 0;
+        //     const checkByte10 = (buf[10] & 0x10) > 0;
+        //     if (checkByte8 || checkByte9 || checkByte10) {
+        //         is380pvpOpt = true
+        //     }
+        // }
+        // if (((buf[9] & 0x10) > 0) || ((buf[10] & 0x10) > 0)) {
+        //     is380pvpOpt = true;
+        // }
+        // else if ((buf[8] & 0x08) > 0 && (buf[9] & 0x20) > 0) {
+        //     is380pvpOpt = true;
+        // }
+    }
+    
+    // harmony options (старшие 4 бита - ID опции, младшие 4 бита - Level опции )
+    const harmonyByte = buf[10]; // 11-й байт
+    const hasHarmony =  harmonyByte !== 0 && harmonyByte !== 255;
+    const harmonyType = hasHarmony ? (harmonyByte & 0xF0) >> 4 : 0;  // ID опции
+    const harmonyLevel = hasHarmony ? (harmonyByte & 0x0F) : 0;     // уровень опции
+    const harmonyTypeGroup = getHarmonyTypeGroup(itemCategory);
+    // console.log(`Testing Byte 16: ${harmonyByte}, Type: ${harmonyType}, Level: ${harmonyLevel}`);
+
+
+    // add Options
+    let addOption = (byte1 & 3); 
+    if (byte7 & 64) {
+        addOption += 4;
+    }
+    const addValue = addOption * 4;
+    let addName = "";
+    if (addValue > 0) {
+        if (itemCategory >= 0 && itemCategory <= 5) addName = `Additional Damage +${addValue}`;
+        else if (itemCategory === 6) addName = `Additional Defense Rate +${addValue}`;
+        else if (itemCategory > 6 && itemCategory <= 12) addName = `Additional Defense +${addValue}`;
+        else if (itemCategory === 13) addName = `Automatic Hp recovery +${addValue / 4}%`;
+        else addName = `Additional +${addValue}`;
+    }
+    function getHarmonyTypeGroup(category) {
+        if (category >= 0 && category <= 4) return 1;    // Physical
+        if (category === 5) return 2;                   // Magical
+        if (category >=6 && category <= 12) return 3;   // Defensive
+        else return null
+    }
+
+    return {
+        cat: itemCategory,
+        id: itemIndex,
+        is380Opt: is380pvpOpt,
+        fullId: fullId,
+        level: level,
+        addOpt: addName,
+        hasHarmony: hasHarmony,
+        harmonyTypeGroup: harmonyTypeGroup,
+        harmonyType: harmonyType,
+        harmonyLevel: harmonyLevel,
+        skill: hasSkill,
+        luck: hasLuck,
+        isExc: getIsExc(getExcOptions(excOption)),
+        exc: getExcOptions(excOption),
+        serial: serial.toString(16).toUpperCase(),
+        sockets: sockets,
+        isAncient: isAncient, 
+        ancGroup: isAncient ? ancientValue : null,
+        isPentagram: itemCategory === 12 && itemIndex >= 200, // Пример логики
+        hex: buf.toString('hex')
+    }
+}
 
 
 class CharacterController {
@@ -28,7 +196,23 @@ class CharacterController {
         console.log(data.recordset[0]);
         return res.json(data.recordset[0])
     }
+    async getCharInventory(req, res) {
+        const {id} = req.params
 
+        const pool = await poolPromise
+        const request = pool.request()
+        const data = await request
+        .input('name', sql.VarChar(10), id)
+        // .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.name = @name')
+        // .query('SELECT Name as cName, Class as cClass, cLevel, mLevel, RESETS as cReset, GRANDRESET as cGrandreset, Strength as cStr, Dexterity as cAgi, Vitality as cVit, Energy as cEne, Leadership as cCmd, MapNumber as mapNumber, MapPosX as mapPosX, MapPosY as mapPosY FROM dbo.Character WHERE Name = @name')
+        .query('SELECT Inventory as cInvent FROM dbo.Character WHERE Name = @name')
+        const itemBuf = data.recordset[0].cInvent;
+        const inv = parseInventory(itemBuf);
+        // console.log(inv);
+        return res.json(inv)
+        // console.log(itemBuf.toString('hex'));
+        // return res.json(data.recordset[0])
+    }
     // async getAccountCharacters(req, res) {
     //     const {token} = req.params
     //     const decoded = jwt.verify(token, process.env.SECRET_KEY)

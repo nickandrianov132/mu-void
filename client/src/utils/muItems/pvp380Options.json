@@ -1,0 +1,38 @@
+{
+    "0": {
+        "1stOpt": "Additional Damage +200 (PvP)",
+        "2ndOpt": "Attack Success Rate increase +10 (PvP)"
+    },
+    "2": {
+        "1stOpt": "Additional Damage +200 (PvP)",
+        "2ndOpt": "Attack Success Rate increase +10 (PvP)"
+    },
+    "4": {
+        "1stOpt": "Additional Damage +200 (PvP)",
+        "2ndOpt": "Attack Success Rate increase +10 (PvP)"
+    },
+    "5": {
+        "1stOpt": "Additional Damage +200 (PvP)",
+        "2ndOpt": "Attack Success Rate increase +10 (PvP)"
+    },
+    "7": {
+        "1stOpt": "SD Recovery Rate increase +20",
+        "2ndOpt": "Defense Success Rate increase +10 (PvP)"
+    },
+    "8": {
+        "1stOpt": "SD Auto Recovery",
+        "2ndOpt": "Defense Success Rate increase +10 (PvP)"
+    },
+    "9": {
+        "1stOpt": "Defensive Skill +200 (PvP)",
+        "2ndOpt": "Defense Success Rate increase +10 (PvP)"
+    },
+    "10": {
+        "1stOpt": "Max HP increase +200",
+        "2ndOpt": "Defense Success Rate increase +10 (PvP)"
+    },
+    "11": {
+        "1stOpt": "Max SD increase +1000",
+        "2ndOpt": "Defense Success Rate increase +10 (PvP)"
+    }
+}

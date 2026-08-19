@@ -64,6 +64,9 @@ const EventsBody = ({sec1desc1, sec1desc2, sec2desc1, sec2desc2, sec1img1, sec1i
                                 <td>{e.num}</td>
                                 <td className={e.className}>{e.monster1}</td>
                                 <td className={e.className}>{e.monster2}</td>
+                                {e.monster3 &&
+                                    <td className={e.className}>{e.monster3}</td>
+                                }
                             </tr>
                         )}
                     </tbody>

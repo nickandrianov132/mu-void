@@ -16,6 +16,7 @@ const BossKundun = () => {
                 <div className="bossKundun_info_description">
                     <div className="info_description_item">
                         <p>🕗<b>Timing:</b> Boss respawn every 24 hours.</p>
+                        <p className="gp_p">GoblinPoints: <em className="gp_em">1200</em></p>
                     </div>
                     <div className="info_description_item">
                         <p>🔸<b>Drop:</b> 3-5 <em className="ancient_em">Ancient Items</em> :</p>

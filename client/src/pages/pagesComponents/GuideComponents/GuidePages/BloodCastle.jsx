@@ -25,16 +25,16 @@ const BloodCastle = () => {
                             {num: "8", regularLvL: "15-400", mgdlrfLvl: "10-400"},
                            ]}
                     sec3desc1="When 1 minute remain you can bring Absolute Weapon of The Archangel to Archangel and get reward for you and all your party members:"
-                    thead2={[{className: "th_gold" ,title:"#Blood Castle:"}, {className: "th_gold", title:"Final Reward:"}, {className: "th_gold", title: "Cheance of rewards:"}]}
+                    thead2={[{className: "th_gold" ,title:"#Blood Castle:"}, {className: "th_gold", title:"Final Reward:"}, {className: "th_gold", title: "Chance:"}, {className: "th_gold", title: "Goblin Points:"}]}
                     tbody2={[
-                            {className: "td_bc", num: "1", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "80% / 10% / 10%"},
-                            {className: "td_bc", num: "2", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "80% / 10% / 10%"},
-                            {className: "td_bc", num: "3", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "75% / 15% / 10%"},
-                            {className: "td_bc", num: "4", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "70% / 20% / 10%"},
-                            {className: "td_bc", num: "5", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "60% / 30% / 10%"},
-                            {className: "td_bc", num: "6", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "50% / 40% / 10%"},
-                            {className: "td_bc", num: "7", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "70% / 30% / 10%"},
-                            {className: "td_bc", num: "8", monster1:"10 Bundle Jewels Bless, Soul, Life / Talisman of Luck", monster2: "70% / 30%"},
+                            {className: "td_bc", num: "1", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "80% / 10% / 10%", monster3: "40"},
+                            {className: "td_bc", num: "2", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "80% / 10% / 10%", monster3: "60"},
+                            {className: "td_bc", num: "3", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "75% / 15% / 10%", monster3: "80"},
+                            {className: "td_bc", num: "4", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "70% / 20% / 10%", monster3: "100"},
+                            {className: "td_bc", num: "5", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "60% / 30% / 10%", monster3: "120"},
+                            {className: "td_bc", num: "6", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "50% / 40% / 10%", monster3: "160"},
+                            {className: "td_bc", num: "7", monster1:"Jewel of Bless, Soul, Life / 10 Bundle Jewels / Talisman of Luck", monster2: "70% / 30% / 10%", monster3: "250"},
+                            {className: "td_bc", num: "8", monster1:"10 Bundle Jewels Bless, Soul, Life / Talisman of Luck", monster2: "70% / 30%", monster3: "350"},
                            ]}
                 />
             </EventsContainer>

@@ -1,7 +1,7 @@
 export function validateCharReset(status, lvl, res, gRes, zen) {
     let valid;
-    const zenRes = 15000000;
-    const zenEasyRes = 10000000;
+    const zenRes = 10000000;
+    const zenEasyRes = 5000000;
     if(gRes === 0 && res < 20) {
         if(status === 0 && res === 0 && lvl >= 350 && zen >= zenEasyRes) {
             return valid = true;
@@ -34,6 +34,25 @@ export function validateCharReset(status, lvl, res, gRes, zen) {
         }
     }
     return valid = false;
+}
+
+export function pretyZen(zen) {
+        const arr = []
+        const arrZen = zen.toString().split('')
+        for (let a =[], i = arrZen.length; i > 0; i--) {
+            a.push(arrZen[i - 1])
+            // console.log(a);
+            if(a.length == 3) {
+                arr.push(a.reverse().join(''))
+                a = []
+            }
+            if(i < 2  && a.length !== 0) {
+                arr.push(a.reverse().join(''))
+            }
+        }
+        const pZen = arr.reverse().join(',')
+        return pZen
+
 }
 
 export function checkLocation(id) {
@@ -346,7 +365,7 @@ export function filterChars(id) {
 }
 
 export function checkResLvl(lvl, res, grRes) {
-    if(grRes == 0) {
+    if(grRes == 0 || grRes == null) {
         if(res == 0 && lvl >= 370) {
             return true
         }
@@ -373,7 +392,7 @@ export function checkResLvl(lvl, res, grRes) {
     }
 }
 export function tipResLvl(lvl, res, grRes) {
-    if(grRes == 0) {
+    if(grRes == 0 || grRes == null) {
         if(res == 0 && lvl < 350) {
             let tip = '⛔ Character should be 350lvl to make Reset!'
             return tip
@@ -415,10 +434,10 @@ export function tipResLvl(lvl, res, grRes) {
 }
 
 export function checkZenRes(zen, res, gRes) {
-    const easyResZen = 10000000
-    const regularResZen = 15000000
+    const easyResZen = 5000000
+    const regularResZen = 10000000
     const nextRes = res + 1
-    if(gRes == 0) {
+    if(gRes == 0 || gRes == null) {
         if(res == 0 && zen >= easyResZen * nextRes) {
             return true
         }
@@ -456,11 +475,11 @@ export function checkZenRes(zen, res, gRes) {
 }
 
 export function tipZenRes(zen, res, gRes) {
-    const easyResZen = 10000000
-    const regularResZen = 15000000
+    const easyResZen = 5000000
+    const regularResZen = 10000000
     const nextRes = res + 1
     let needZen
-    if(gRes == 0) {
+    if(gRes == 0 || gRes == null) {
         if(res == 0 && zen < easyResZen * nextRes) {
             needZen = (easyResZen * nextRes) - zen
             return needZen

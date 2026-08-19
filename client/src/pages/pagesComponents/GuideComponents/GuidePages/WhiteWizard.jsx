@@ -36,6 +36,7 @@ const WhiteWizard = () => {
                 item4cheance="25%"
                 desc4=" 5pcs Jewel of Bless, Soul, Life"
                 em4DescClass="em_jewels"
+                gp="60"
             />
             </SantaWizardEvent>
         </div>
