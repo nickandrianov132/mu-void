@@ -2,3 +2,4 @@ node_modules
 nick
 nick.pub
 .env*
+**/.env*

@@ -11,9 +11,9 @@ const AccountCharacters = () => {
     const {accessToken} = useSelector(state => state.user)
     const navigate = useNavigate()
     useEffect(() => {
-        // if(isSuccess){
-        //     console.log(characters);
-        // }
+        if(isSuccess){
+            console.log(characters);
+        }
         if(!accessToken) {
             navigate(HOME_ROUTE)
         }
@@ -39,7 +39,7 @@ const AccountCharacters = () => {
                     cVit={char.cVit}
                     cEne={char.cEne}
                     cCmd={char.cCmd}
-                    cGrandReset={char.cGrandReset}
+                    cGrandReset={char.cGrandReset || 0}
                     mapNumber={char.mapNumber}
                     cZen={char.cZen}
                 />
