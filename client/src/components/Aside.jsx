@@ -12,7 +12,7 @@ const Aside = () => {
             <Online />
             <TopPlayers />
             <CastleInfo />
-            {/* <DiscordWidget /> */}
+            <DiscordWidget />
             <BannersBoard />
             {/* <img className='winter_decor1_img' src={Images.winter_decor1}/> */}
             {/* <img className='winter_decor3_img' src={Images.winter_decor3}/> */}

@@ -139,23 +139,24 @@ const navigate = useNavigate()
                     <h4 className='description_item_h4'></h4>
                 </div>
             </HomeContent> */}
-            {/* <HomeContent
-                title="🚀Open Beta Test💢"
-                date="05.12.2025"
+            <HomeContent
+                title="🚀Open Beta Test 23.08.2026💢"
+                date="21.08.2026"
                 sideImage={Images.obt_new}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🚀OBT started!</h4>
+                        <h4 className='description_item_h4_opening'>🚀OBT start 23.08.2026 17:00 MSK/Kyiv!</h4>
                     </div>
-                    <p className='description_item_p'> <b>Registration for OBT is open.</b> <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
-                    <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
-                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
+                    <p className='description_item_p'><b>Server Opening is August 28th 20:00 MSK/Kyiv (17:00 UTC)</b></p>
+                    <p className='description_item_p'>👉Registration is available. <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
+                    <p className='description_item_p'>✅ All Boxes and items added to Shops for easy test.</p>
+                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>5000x</b></p>
                     <p className='description_item_p'><b>💣💥</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
                     <p className='description_item_p'><b>💣💥</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
                     <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
                 </div>
-            </HomeContent> */}
+            </HomeContent>
             {/* <HomeContent
                 title="📢Updates 📝"
                 date="05.12.2025"

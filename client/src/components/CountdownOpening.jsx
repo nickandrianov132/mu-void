@@ -2,32 +2,68 @@ import { useEffect, useState } from "react";
 import { useFetchServerTimeQuery } from "../services/serverTimeApi";
 import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTimeFunc";
 
+// const CountdownOpening = () => {
+//     const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
+//     const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
+//     const dateOpeningUTC = Date.UTC(2026, 8, 28, 20, 0, 0);
+//     let localTime;
+    
+//     useEffect(() => {
+//         localTime = new Date()
+//     }, [isSuccess])
+
+//     let offset;
+//     useEffect(() => {
+//         offset = timeDifference(serverTime)
+//     }, [isSuccess])
+    
+//     function timeDifference(servTime) {
+//         const sTime = Date.parse(servTime)
+//         const timeOffset = Date.parse(localTime) - sTime
+//         return timeOffset
+//     }
+
+//     setInterval(() => {
+//         if(offset){
+//             setTime(openingCountdown(offset, dateOpeningUTC))
+//         }
+//     }, 1000)
 const CountdownOpening = () => {
-    const {data: serverTime, isSuccess} = useFetchServerTimeQuery()
-    const [time, setTime] = useState({days: 0, hours: 0, minutes: 0, seconds: 0})
-    const dateOpeningUTC = Date.UTC(2026, 1, 6, 17, 0, 0);
-    let localTime;
+    const { data: serverTime, isSuccess } = useFetchServerTimeQuery();
+    const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const dateOpeningUTC = Date.UTC(2026, 7, 28, 17, 0, 0);
+    const [localTime, setLocalTime] = useState(null);
+    const [offset, setOffset] = useState(null);
     
     useEffect(() => {
-        localTime = new Date()
-    }, [isSuccess])
+        if (isSuccess) {
+            setLocalTime(new Date());
+        }
+    }, [isSuccess]);
 
-    let offset;
     useEffect(() => {
-        offset = timeDifference(serverTime)
-    }, [isSuccess])
+        if (isSuccess && serverTime && localTime) {
+            const calculatedOffset = timeDifference(serverTime);
+            setOffset(calculatedOffset);
+        }
+    }, [isSuccess, localTime, serverTime]);
     
     function timeDifference(servTime) {
-        const sTime = Date.parse(servTime)
-        const timeOffset = Date.parse(localTime) - sTime
-        return timeOffset
+        const sTime = Date.parse(servTime);
+        const timeOffset = Date.parse(localTime) - sTime; 
+        return timeOffset;
     }
 
-    setInterval(() => {
-        if(offset){
-            setTime(openingCountdown(offset, dateOpeningUTC))
-        }
-    }, 1000)
+    useEffect(() => {
+        if (!offset) return;
+        const intervalId = setInterval(() => {
+            setTime(openingCountdown(offset, dateOpeningUTC));
+        }, 1000);
+
+        return () => clearInterval(intervalId); 
+    }, [offset]); 
+
+
     return (
         <div className="countdown_container">
             <div className="countdown_header">Server Opening :</div>

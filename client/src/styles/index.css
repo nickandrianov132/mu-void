@@ -1500,7 +1500,7 @@ body {
   margin: 0.5em 1em 0.5em 0.5em;
 }
 .home_content_container .home_content_header .home_content_header_title {
-  color: #070040;
+  color: whitesmoke;
   font-size: 1em;
   text-shadow: 0.01em 0.01em 0.06em #2b1b66, -0.01em -0.01em 0.06em #2b1b66, 0.01em -0.01em 0.06em #2b1b66, -0.01em 0.01em 0.06em #2b1b66;
 }
@@ -1517,12 +1517,13 @@ body {
           align-items: center;
   font-family: "Poppins", sans-serif;
   font-size: 0.75em;
-  color: #070040;
+  color: whitesmoke;
 }
 .home_content_container .home_content_header .home_content_header_date .home_content_header_date_icon {
   color: #070040;
   font-size: 1.5em;
   margin: 0 0.3em 0 0;
+  color: #a9e2fb;
 }
 .home_content_container .home_content_header .home_content_header_date .home_header_title_date {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1591,21 +1592,6 @@ body {
   border-radius: 0.2em;
   width: 100%;
 }
-.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 0.4em);
-  height: calc(100% + 0.4em);
-  background: #000;
-  left: 0;
-  top: 0;
-  border-radius: 0.4em;
-  background: linear-gradient(146deg, rgb(89, 54, 186) 0%, rgb(58, 62, 176) 26%, rgb(26, 72, 199) 51%, rgb(63, 62, 148) 73%, rgb(64, 37, 115) 99%);
-  background: linear-gradient(146deg, rgb(184, 50, 124) 0%, rgb(230, 28, 72) 33%, rgb(230, 46, 25) 67%, rgb(255, 171, 125) 100%);
-  -webkit-transform: translate(-0.2em, -0.2em);
-          transform: translate(-0.2em, -0.2em);
-  z-index: -1;
-}
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,10 +1601,15 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
-  border: 0.06em solid rgb(87, 47, 47);
+  color: #e2dede;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.1em solid rgb(63, 60, 72);
   border-radius: 0.3em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
   position: relative;
-  background: linear-gradient(316deg, rgb(237, 204, 204) 0%, rgb(232, 223, 213) 40%, rgb(240, 227, 213) 75%, rgb(237, 204, 204) 100%);
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
   margin: 0.3em 0.3em 0 0.4em;
@@ -1751,15 +1742,16 @@ body {
           justify-content: center;
   border-top-left-radius: 0.2em;
   border-top-right-radius: 0.2em;
+  border-bottom: 0.05em solid whitesmoke;
+  background: #28282c;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: linear-gradient(91deg, rgb(168, 168, 168) 0%, rgb(196, 186, 175) 30%, rgb(196, 186, 175) 70%, rgb(168, 168, 168) 100%);
   padding: 0.2em 0 0.1em 0.2em;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .opening_wrapper_h4 .description_item_h4_opening {
-  color: #21135e;
-  font-size: 1.1em;
-  text-shadow: 0.01em 0.01em 0.05em rgb(77, 33, 135), -0.01em -0.01em 0.05em rgb(77, 33, 135), 0.01em -0.01em 0.05em rgb(77, 33, 135), -0.01em 0.01em 0.05em rgb(77, 33, 135);
+  color: #e2dede;
+  font-size: 1em;
+  text-shadow: 0.01em 0.01em 0.05em rgb(29, 22, 39), -0.01em -0.01em 0.05em rgb(29, 22, 39), 0.01em -0.01em 0.05em rgb(29, 22, 39), -0.01em 0.01em 0.05em rgb(29, 22, 39);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .opening_wrapper_h4 .description_item_h4_opening::first-letter {
   margin-left: 1em;
@@ -1767,7 +1759,7 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_header {
   color: #21135e;
   font-size: 1.1em;
-  text-shadow: 0.01em 0.01em 0.05em rgb(77, 33, 135), -0.01em -0.01em 0.05em rgb(77, 33, 135), 0.01em -0.01em 0.05em rgb(77, 33, 135), -0.01em 0.01em 0.05em rgb(77, 33, 135);
+  text-shadow: 0.01em 0.01em 0.05em rgb(23, 18, 35), -0.01em -0.01em 0.05em rgb(23, 18, 35), 0.01em -0.01em 0.05em rgb(23, 18, 35), -0.01em 0.01em 0.05em rgb(23, 18, 35);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_header::first-letter {
   margin-left: 1em;
@@ -1794,7 +1786,7 @@ body {
   margin-left: 0.5em;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list h4 {
-  color: #070040;
+  color: whitesmoke;
   font-weight: 500;
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list ul .changes_li {
@@ -1815,7 +1807,7 @@ body {
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list ul li a:hover {
   color: #24def3;
-  text-shadow: 0.01em 0.01em 0.08em rgb(61, 37, 93), -0.01em -0.01em 0.08em rgb(61, 37, 93), 0.01em -0.01em 0.08em rgb(61, 37, 93), -0.01em 0.01em 0.08em rgb(61, 37, 93);
+  text-shadow: 0.01em 0.01em 0.08em rgb(33, 28, 41), -0.01em -0.01em 0.08em rgb(33, 28, 41), 0.01em -0.01em 0.08em rgb(33, 28, 41), -0.01em 0.01em 0.08em rgb(33, 28, 41);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_wrapper {
   display: -webkit-box;
@@ -1957,13 +1949,13 @@ body {
           align-items: center;
   width: 95%;
   min-height: 80%;
-  border: 0.1em solid #7b5a5a;
+  border: 0.15em solid rgb(63, 60, 72);
   border-radius: 0.4em;
   margin: 0.4em 0 0 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(189, 113, 113)), color-stop(32%, rgb(181, 154, 154)), color-stop(70%, rgb(209, 182, 178)), to(rgb(240, 195, 185)));
-  background: linear-gradient(0deg, rgb(189, 113, 113) 0%, rgb(181, 154, 154) 32%, rgb(209, 182, 178) 70%, rgb(240, 195, 185) 100%);
-  -webkit-box-shadow: 0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), 0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2);
-          box-shadow: 0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), 0.1em -0.1em 0.2em rgba(170, 51, 170, 0.2), -0.1em 0.1em 0.2em rgba(170, 51, 170, 0.2);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  -webkit-box-shadow: 0.1em 0.1em 0.2em #070326, -0.1em -0.1em 0.2em #070326, 0.1em -0.1em 0.2em #070326, -0.1em 0.1em 0.2em #070326;
+          box-shadow: 0.1em 0.1em 0.2em #070326, -0.1em -0.1em 0.2em #070326, 0.1em -0.1em 0.2em #070326, -0.1em 0.1em 0.2em #070326;
 }
 .rules_container .rules_header_wrapper {
   display: -webkit-box;
@@ -1982,9 +1974,9 @@ body {
   padding: 0.2em 0 0 0;
 }
 .rules_container .rules_header_wrapper .rules_header {
-  color: #3b3a3f;
+  color: rgb(203, 188, 181);
   font-size: 1.8em;
-  text-shadow: 0.01em 0.01em 0.05em #242222, -0.01em -0.01em 0.05em #242222, 0.01em -0.01em 0.05em #242222, -0.01em 0.01em 0.05em #242222;
+  text-shadow: 0.01em 0.01em 0.05em rgb(45, 5, 5), -0.01em -0.01em 0.05em rgb(45, 5, 5), 0.01em -0.01em 0.05em rgb(45, 5, 5), -0.01em 0.01em 0.05em rgb(45, 5, 5);
 }
 .rules_container .rules_body_wrapper {
   display: -webkit-box;
@@ -1998,7 +1990,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #111010;
+  color: #e4e2e2;
   font-size: 0.85em;
 }
 .rules_container .rules_body_wrapper .rules_body_item_wrapper {
@@ -2009,7 +2001,7 @@ body {
 }
 .rules_container .rules_body_wrapper .rules_body_item_wrapper .rules_item_p {
   font-weight: 500;
-  color: #090909;
+  color: #cccad4;
 }
 .rules_container .rules_body_wrapper .rules_body_item_wrapper .rules_item_p::first-letter {
   font-family: "Times New Roman", Times, serif;
@@ -2021,8 +2013,8 @@ body {
   margin-left: 0.6em;
   font-style: normal;
   letter-spacing: 0.06em;
-  color: #3b375f;
-  text-shadow: 0.01em 0.01em 0.05em #2517a5, -0.01em -0.01em 0.05em #2517a5, 0.01em -0.01em 0.05em #2517a5, -0.01em 0.01em 0.05em #2517a5;
+  color: rgb(255, 128, 69);
+  text-shadow: 0.01em 0.01em 0.05em rgb(56, 53, 79), -0.01em -0.01em 0.05em rgb(56, 53, 79), 0.01em -0.01em 0.05em rgb(56, 53, 79), -0.01em 0.01em 0.05em rgb(56, 53, 79);
 }
 
 .home_content_info_div {
@@ -2124,7 +2116,7 @@ body {
   color: #bc4ffc;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-style: italic;
   margin: 0 0.4em 0 0;
 }
@@ -2148,12 +2140,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #def1ba;
 }
 .home_content_info_description_wrapper .info_description_item_wrapper .description_content .description_content_wrapper_res_stat .description_content_p_res_class {
   color: #1fc5f8;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: center;
   margin: 0 0.4em 0 0;
 }
@@ -2161,7 +2153,7 @@ body {
   color: rgb(250, 75, 125);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-style: italic;
   margin: 0 0.4em 0 0;
 }
@@ -2178,9 +2170,9 @@ body {
   color: #00cba2;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-style: italic;
-  margin-right: 6px;
+  margin-right: 0.3em;
 }
 
 .form_btn_container {
@@ -7407,6 +7399,10 @@ body {
   margin: 2em 1em 1em 1em;
   padding: 1.5em;
 }
+.download_container .header {
+  font-size: 1.2em;
+  color: #00cba2;
+}
 .download_container .download_link_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9860,14 +9856,14 @@ body {
   padding: 0.3em 0.3em 0 0.3em;
   position: absolute;
   width: 14em;
-  top: 0;
+  top: 13em;
   left: 50%;
   -webkit-transform: translate(-50%, -110%);
           transform: translate(-50%, -110%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(59, 43, 66)), color-stop(27%, rgb(48, 32, 59)), color-stop(56%, rgb(48, 34, 56)), color-stop(80%, rgb(48, 41, 56)), to(rgb(50, 40, 69)));
-  background-image: linear-gradient(0deg, rgb(59, 43, 66) 0%, rgb(48, 32, 59) 27%, rgb(48, 34, 56) 56%, rgb(48, 41, 56) 80%, rgb(50, 40, 69) 100%);
-  border: 0.11em solid rgb(63, 60, 72);
-  border-radius: 0.5em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.1em solid rgb(63, 60, 72);
+  border-radius: 0.35em;
   -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
           box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
 }

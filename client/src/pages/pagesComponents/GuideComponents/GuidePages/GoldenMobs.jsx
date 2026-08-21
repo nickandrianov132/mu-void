@@ -10,7 +10,7 @@ const GoldenMobs = () => {
             <GoldenMobsContetn 
                 title="Golden Goblin"
                 img1={Images.goblin_280x280}
-                desc1="Noria"
+                desc1="Lorencia, Noria"
                 desc2="5 Golden Goblins"
                 drop1="Box of Kundun +1"
                 qtty1="1"

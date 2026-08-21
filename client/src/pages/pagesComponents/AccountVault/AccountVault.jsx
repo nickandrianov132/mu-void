@@ -6,8 +6,8 @@ import AccountWebstore from "./AccountVaultComponents/AccountWebstore";
 import Vault from "./AccountVaultComponents/Vault";
 import MoveButtons from "./AccountVaultComponents/MoveButtons";
 import MoveZen from "./AccountVaultComponents/MoveZen";
-import PopUp from "./AccountVaultComponents/Popup";
 import SellOnMaret from "./AccountVaultComponents/SellOnMaret";
+import PopUp from "./AccountVaultComponents/Popup";
 
 
 const AccountVault = () => {
@@ -16,7 +16,7 @@ const AccountVault = () => {
     console.log(accessToken);
     useEffect(() => {
         if(!accessToken) {
-            navigate(HOME_ROUTE)
+            navigate(HOME_ROUTE) 
         }
     }, [accessToken]);
     return (

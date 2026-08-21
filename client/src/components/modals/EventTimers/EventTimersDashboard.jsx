@@ -19,6 +19,7 @@ const EventTimersDashboard = () => {
     const {data, isSuccess, isError, isLoading} = useFetchServerTimeQuery()
     const [globalOffset, setGlobalOffset] = useState(null)
     console.log(`globalOffset: ${globalOffset}`);
+    console.log(data);
     useEffect(() => {
         if (isSuccess && data) {
             const localTime = new Date()

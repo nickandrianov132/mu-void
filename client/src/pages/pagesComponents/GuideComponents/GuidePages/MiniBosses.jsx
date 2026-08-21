@@ -24,9 +24,22 @@ const MiniBosses = () => {
                 <MayaContentItem 
                     title="Metal Balrog:"
                     remark="Apears 1 Metal Balrog in the end of LostTower 7"
-                    respInfo="Respawn every 30 minutes"
+                    respInfo="Respawn every 60 minutes"
                     exc={false}
                     img={Images.metal_balrog}
+                    dropImg1={Images.metal_balrog_drop}
+                    drop="Lochs Feather, Crest of Monarch, Spirit of Dark Raven, Spirit of Dark Horse, Jewel of Creation"
+                    skills="Ice Storm, Decay, Multi-shot, Lighting Shock, Gigantic Storm, Destruction, Flame Strike, Fire Scream, Chaotic Desire"
+                    gp="50"
+                />
+            </div>
+            <div className="maya_content_container">
+                <MayaContentItem 
+                    title="Hydra:"
+                    remark="Apears 1 Hydra in the end of Atlans 2"
+                    respInfo="Respawn every 60 minutes"
+                    exc={false}
+                    img={Images.hydra}
                     dropImg1={Images.metal_balrog_drop}
                     drop="Lochs Feather, Crest of Monarch, Spirit of Dark Raven, Spirit of Dark Horse, Jewel of Creation"
                     skills="Ice Storm, Decay, Multi-shot, Lighting Shock, Gigantic Storm, Destruction, Flame Strike, Fire Scream, Chaotic Desire"
@@ -62,7 +75,7 @@ const MiniBosses = () => {
                 <MayaContentItem 
                     title="Cursed King:"
                     remark="Apears 1 Cursed King on Devias 4"
-                    respInfo="Respawn every 3 hours"
+                    respInfo="Respawn every 4 hours"
                     img={Images.cursed_king}
                     drop="Excelletn Pendants and Rings 1-3 Options +0...+5"
                     dropImg1={Images.cursed_king_drop}
