@@ -18,7 +18,7 @@ const Vault = () => {
     const dispatch = useDispatch(); 
     const navigate = useNavigate();
 
-    console.log(itemSelectedData);
+    // console.log(itemSelectedData);
     console.log(vault);
 
     useEffect(() => {

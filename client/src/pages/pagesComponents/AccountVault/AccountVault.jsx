@@ -13,7 +13,7 @@ import PopUp from "./AccountVaultComponents/Popup";
 const AccountVault = () => {
     const {accessToken} = useSelector(state => state.user);
     const navigate = useNavigate();
-    console.log(accessToken);
+    // console.log(accessToken);
     useEffect(() => {
         if(!accessToken) {
             navigate(HOME_ROUTE) 

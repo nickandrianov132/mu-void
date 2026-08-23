@@ -20,7 +20,7 @@ const AccountWebstore = () => {
     const dispatch = useDispatch();
     
     // console.log(itemSelectedData);
-    console.log(accWebstore);
+    // console.log(accWebstore);
 
     useEffect(() => {
         if(!accessToken) {

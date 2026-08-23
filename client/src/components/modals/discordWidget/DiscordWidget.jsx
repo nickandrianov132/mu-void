@@ -5,7 +5,7 @@ import DiscordWidgetHeader from "./DiscordWidgetHeader";
 
 const DiscordWidget = () => {
     const {data, isSuccess, isError, error} = useFetchDiscordQuery()
-    // console.log(data);
+    console.log(data);
     return (
         <>
         {isSuccess &&
@@ -19,7 +19,7 @@ const DiscordWidget = () => {
             />
             <DiscordwidgetFooter 
                 discordName={data.name}
-                inviteLink={data.instant_invite}
+                inviteLink={"https://discord.gg/JFmYkaJqtR"}
             />
         </div>
         }
