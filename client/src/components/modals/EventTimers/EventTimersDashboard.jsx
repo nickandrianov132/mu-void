@@ -2,18 +2,18 @@ import { useEffect, useState } from "react";
 import { useFetchServerTimeQuery } from "../../../services/serverTimeApi";
 import EventTimerItem from "./EventTimerItem";
 const eventsList = [
-    {id: "bloodCastle", name: "Blood Castle", offset: 7200, delay: -1800},
-    {id: "devilSquare", name: "Devil Square", offset: 7200, delay: 0},
-    {id: "chaosCastle", name: "Chaos Castle", offset: 7200, delay: 3600},
-    {id: "illusionTemple", name: "Illusion Temple", offset: 3600, delay: 2700},
+    {id: "bloodCastle", name: "Blood Castle", offset: 14400, delay: -1800},
+    {id: "devilSquare", name: "Devil Square", offset: 14400, delay: 0},
+    {id: "chaosCastle", name: "Chaos Castle", offset: 10800, delay: 0},
+    {id: "illusionTemple", name: "Illusion Temple", offset: 10800, delay: 2700},
     {id: "goldenInvasion", name: "Golden Invasion", offset: 14400, delay: 0},
     {id: "redDragons", name: "Red Dragons", offset: 10800, delay: -4800},
-    {id: "skeletonKing", name: "Skeleton King", offset: 10800, delay: 0},
+    {id: "skeletonKing", name: "Death King", offset: 14400, delay: 0},
     {id: "whiteWizard", name: "White Wizrd", offset: 7200, delay: -5400},
     {id: "cursedSanta", name: "Cursed Santa", offset: 10800, delay: -1800},
     {id: "cryWolf", name: "Cry Wolf Event", offset: 86400, delay: -65400},
-    {id: "lorenDeep1st", name: "Loren Event 1st", offset: 86400, delay: -64800},
-    {id: "lorenDeep2nd", name: "Loren Event 2nd", offset: 86400, delay: -82800},
+    {id: "lorenDeep1st", name: "Loren Event", offset: 86400, delay: -63000},
+    {id: "bonusEvent", name: "Bonus Event", offset: 86400, delay: -61200},
 ]
 const EventTimersDashboard = () => {
     const {data, isSuccess, isError, isLoading} = useFetchServerTimeQuery()

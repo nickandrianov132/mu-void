@@ -5,10 +5,10 @@ const serverInfo = [
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
-    {title: 'Windows per PC:', content: {content: '5', className: 'description_content_p'}},
+    {title: 'Windows per PC:', content: {content: '3', className: 'description_content_p'}},
     {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
-    {title: 'Lvl to create:', content: {content: 'All characters available from 1st level.', className: 'description_content_p'}},
-    {title: 'Start points:', content: {content: '200 free start points!', className: 'description_content_p'}},
+    {title: 'Lvl to create:', content: {content: 'MG, DL, RF available from 1st level.', className: 'description_content_p'}},
+    // {title: 'Start points:', content: {content: '200 free start points!', className: 'description_content_p'}},
     {title: 'Reset:', content: [
         [
             {content: 'DK, DW, Elf, Summ', className: 'description_content_p_res_class'},
@@ -54,10 +54,13 @@ const serverInfo = [
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
 {title: 'BC, DS:', content: {content: '200% Exp🔥', className: 'description_content_p'}},
-{title: 'Hot-Exp:', content: {content: 'Exp + 50% Drop + 10% Monday to Friday from 18:00 to 22:00', className: 'description_content_p'}},
-{title: 'Weekend Hot-Exp:', content: {content: 'Exp + 50% Drop +10% from Saturday 24:00 to Sunday 24:00', className: 'description_content_p'}},
+{title: 'Chaos Castle:', content: {content: 'Ancient Set items', className: 'description_content_p'}},
+{title: 'Doppel Ganger:', content: {content: 'Exclellent items', className: 'description_content_p'}},
+{title: 'Imperial Fortress:', content: {content: 'Ancient Set items, Divine Weapons, Exc. items', className: 'description_content_p'}},
+{title: 'Happy Hours:', content: {content: 'Exp + 50% Drop + 10% Monday to Friday from 17:00 to 19:00', className: 'description_content_p'}},
+{title: 'Weekend Hot-Exp:', content: {content: 'Exp + 100% Drop +20% from Saturday 24:00 to Sunday 24:00', className: 'description_content_p'}},
 {title: 'Offexp Info:', content: {content: 'from 1st level, duration 12 hours, 24 hours for VIP.', className: 'description_content_p'}},
-{title: 'Offexp:', content: {content: '/offlevel  with pick up jewels🔥', className: 'description_content_p'}},
+{title: 'Offexp:', content: {content: '/offlevel  with pick up jewels 💎', className: 'description_content_p'}},
 {title: 'Setparty:', content: {content: '/setparty  and your party password, or press "N" in the game.', className: 'description_content_p'}},
 ]
 

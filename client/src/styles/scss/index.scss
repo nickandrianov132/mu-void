@@ -1326,7 +1326,7 @@ body {
     @include app_margin(1.4em 1.2em);
     @include app_padding(0.6em);
     @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.2em, $footer-bg);
-    border: 0.1em solid #563e72;
+    border: 0.1em solid $containers_border_col;
     border-radius: 0.4em;
     position: relative;
     .home_content_header{
@@ -1353,7 +1353,7 @@ body {
                 color:#070040;
                 font-size: 1.5em;
                 @include app_margin(0 0.3em 0 0);
-                color: #a9e2fb;
+                color: #fffbfa;
             }
             .home_header_title_date{
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1430,17 +1430,21 @@ body {
                 .description_item_p{
                     @include app_margin(0.3em 0.3em 0 0.4em);
                     font-size: 0.75em;
-                    margin-bottom: 1em;
+                    margin-bottom: 0.3em;
                     font-weight: 500;
+                    .item_bold{
+                        color: #ff8f7e;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em, #090810);
+                    }
                     .donate_em{
                         font-size: 1.15em;
                         font-weight: 600;
                         letter-spacing: 0.015em;
                         color: #ff5542;
-                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#551623);
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em, #551623);
                     }
                     b{
-                        font-size: 1.1em;
+                        font-size: 1em;
                     }
                     .b_notice{
                         font-family: 'Times New Roman', Times, serif;
@@ -1460,8 +1464,17 @@ body {
                         color:#06f97f;
                         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em,#2b1b66);
                         &:hover{
-                            color:#1eff00;
-                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em,#1d1735);
+                            color: #00ff73;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, #0f66a8);
+                        }
+                    }
+                    .desc_a_download{
+                        font-size: 1.1em;
+                        color: #06acf9;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.08em, #332174);
+                        &:hover{
+                            color: #43e7e7;
+                            @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, #2c3079);
                         }
                     }
                     .a_bonus_exp{
@@ -1481,9 +1494,6 @@ body {
                     }
                     &::first-letter{
                         margin-left: 1em;
-                    }
-                    b{
-                        font-size: 1.1em;
                     }
                     .intro_b{
                         font-size: 1.3em;
@@ -1551,16 +1561,17 @@ body {
                     justify-content: center;
                     border-top-left-radius: 0.2em;
                     border-top-right-radius: 0.2em;
-                    border-bottom: 0.05em solid whitesmoke;
-                    background: #28282c;
+                    border-bottom: 0.05em solid #46425a;
+                    background: #232327;
                     box-sizing: border-box;
                     // background: linear-gradient(91deg,rgba(168, 168, 168, 1) 0%, rgba(196, 186, 175, 1) 30%, rgba(196, 186, 175, 1) 70%, rgba(168, 168, 168, 1) 100%);
                     @include app_padding(0.2em 0 0.1em 0.2em);
                     .description_item_h4_opening{
                         // color: #21135e;
-                        color: #e2dede;
+                        color: #d0d7e8;
                         font-size: 1em;
-                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(29, 22, 39));
+                        font-weight: 600;
+                        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(58, 10, 13));
                         &::first-letter{
                             margin-left: 1em;
                         }
@@ -1818,17 +1829,18 @@ body {
     .about_content_h4{
         margin: 0;
         padding: 0;
-        font-size: 0.9em;
+        font-size: 1.05em;
         font-weight: 600;
-        color: #1600a9ff;
+        color: rgb(216, 214, 228);
         @include app_margin(0 1em 0 0);
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, rgb(9, 9, 9));
     }
     .about_content_info_header_p{
-        font-size: 0.8em;
+        font-size: 0.95em;
         font-style: italic;
         letter-spacing: 0.5px;
-        color: rgb(22, 27, 103);
-        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, blue);
+        color: rgb(117, 255, 211);
+        @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, #5a5a);
     }
 }
 .home_content_info_description_wrapper{
@@ -1853,10 +1865,10 @@ body {
                 width: 23%;
                 @include app_margin( 0 0 0 0.4em);
                 .description_title_p{
-                    color: #efb9b8;
+                    color: #e0e8fa;
                     font-weight: 500;
-                    font-size: 0.9em;
-                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.07em, rgb(182, 24, 77));
+                    font-size: 0.8em;
+                    @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.11em, rgb(0, 0, 0));
                 }
             }
             .description_content_wrapper{
@@ -1891,17 +1903,17 @@ body {
                 .description_content_p{
                         display: flex;
                         font-size: 0.8em;
-                        color: #def1ba;
+                        color: #d6e4f3;
                 }
                 .description_content_wrapper_res_stat {
                     .description_content_p_res_class{
-                        color: #1fc5f8;
+                        color: #fdab74;
                         font-size: 0.8em;
                         text-align: center;
                         @include app_margin( 0 0.4em 0 0);
                     }
                     .description_content_p_res_stats{
-                        color: rgb(250, 75, 125);
+                        color: rgb(255, 94, 79);
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                         font-weight: 500;
                         font-size: 0.8em;
@@ -1911,7 +1923,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     .description_content_p_res_stats_gr{
-                        color: #00cba2;
+                        color: #00c8cb;
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                         font-weight: 500;
                         font-size: 0.8em;
@@ -3103,6 +3115,11 @@ body {
         font-size: 0.9em;
         font-weight: 500;
         @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.05em, rgb(82, 47, 102));
+        .remark_b{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+            color: #00cba2;
+            @include text-shadow(0.01em, 0.01em, -0.015em, -0.015em, 0.05em, rgb(7, 39, 20));
+        }
         em{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;

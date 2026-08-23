@@ -4,10 +4,10 @@ import DownloadLink from "./pagesComponents/DownloadComponents/DownloadLink";
 const Download = () => {
     return (
         <div className='download_container'>
-            <h1 className="header"> Client will be available for download after OBT Start </h1>
+            <h1 className="header"> Latest client is available for download: </h1>
             <DownloadLink
                 image={Images.mega_cloud1}
-                // url="https://mega.nz/file/zd1TBR5A#F0yQI_aaC0L-NN8KACBu-UnwvulBecmpB5yDAqxL1Mg"
+                // url="https://mega.nz/file/2d0mjLBB#YmzbYZV4N-xjcO5SElFpq6CRQQVHvTooAJZCAb83vUY"
                 url="#"
                 text="Download Client from MEGA👈"
                 className="download_links_logo_wrapper"
@@ -24,7 +24,7 @@ const Download = () => {
 
             <DownloadLink
                 image={Images.pcloud}
-                // url="https://e.pcloud.link/publink/show?code=XZi54IZ2tKKu02nDjJPpThpCefqrHkbl6rX"
+                // url="https://e.pcloud.link/publink/show?code=XZUKOy7Z65G1R6nhQ8y54MvtxdrHhz3fh5bV"
                 url="#"
                 text="Download Client from pCloud👈"
                 className="download_links_logo_wrapper"
@@ -40,7 +40,7 @@ const Download = () => {
             />
             <DownloadLink
                 image={Images.limeWire}
-                // url="https://limewire.com/d/kVXHi#Hzqda32i1s"
+                // url="https://limewire.com/d/1mmjM#jDOT8BWW3Z"
                 url="#"
                 text="Download Client from LimeWire🍋"
                 className="download_links_logo_wrapper"
@@ -48,7 +48,7 @@ const Download = () => {
             />
             <DownloadLink
                 image={Images.limeWire}
-                // url="https://limewire.com/d/dBAMo#3YmGSPpI2I"
+                // url="https://limewire.com/d/1mmjM#jDOT8BWW3Z"
                 url="#"
                 text="Fix transparent UI from LimeWire🍋"
                 className="download_links_logo_wrapper"
@@ -56,7 +56,7 @@ const Download = () => {
             />
             <DownloadLink
                 image={Images.filebin2}
-                // url="https://filebin.net/bd7k5d9un118d8qo"
+                // url="https://filebin.net/0n7ebql6cfscz26w"
                 url="#"
                 text="Download Client from Filebin💾"
                 className="download_links_logo_wrapper"

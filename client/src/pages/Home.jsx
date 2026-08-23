@@ -140,21 +140,23 @@ const navigate = useNavigate()
                 </div>
             </HomeContent> */}
             <HomeContent
-                title="🚀Open Beta Test 23.08.2026💢"
-                date="21.08.2026"
+                title="🚀Open Beta Test Has Started!"
+                date="23.08.2026"
                 sideImage={Images.obt_new}
             >
                 <div className='description_list'>
                     <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🚀OBT start 23.08.2026 17:00 MSK/Kyiv!</h4>
+                        <h4 className='description_item_h4_opening'>⚔️ Open Beta Test: Prepare for Launch!</h4>
                     </div>
-                    <p className='description_item_p'><b>Server Opening is August 28th 20:00 MSK/Kyiv (17:00 UTC)</b></p>
+                    <p className='description_item_p'><b className='item_bold'>Server opens on August 28th at 20:00 MSK/Kyiv (17:00 UTC)</b></p>
                     <p className='description_item_p'>👉Registration is available. <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
-                    <p className='description_item_p'>✅ All Boxes and items added to Shops for easy test.</p>
-                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>5000x</b></p>
-                    <p className='description_item_p'><b>💣💥</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
-                    <p className='description_item_p'><b>💣💥</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
-                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
+                    <p className='description_item_p'>💾Client is available for download. <a className='desc_a_download' href='https://www.mu-void.com/download'>Download</a></p>
+                    <p className='description_item_p'>- All Boxes and items added to Shops for easy test.</p>
+                    <p className='description_item_p'>- Experience during the open beta test is <b>x5000</b></p>
+                    <p className='description_item_p'><b>🔹</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
+                    <p className='description_item_p'><b>🔹</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
+                    {/* <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4> */}
+                    <h4 className='description_item_h4'>We all want this server to be a place we can truly call home - a vibrant, balanced, and exciting world where we can play, build, and compete for months and years to come.  But to build the ultimate gaming experience, we need you. Every single player in this community has a unique perspective. Whether you are a casual builder, a hardcore PvPer, an economy tycoon, or just started your journey today - your ideas and opinion matter!</h4>
                 </div>
             </HomeContent>
             {/* <HomeContent

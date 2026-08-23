@@ -70,7 +70,7 @@ const VoteContainer = () => {
             <VoteItem
                 title="Vote on SupremeTop100"
                 link={`https://supremetop100.com/en/vote/in/mu-void-s9-classic-server-x50-open-beta-test`}
-                img={`https://supremetop100.com/img/SupremeTop100_Vote_5.png`}
+                img={`https://supremetop100.com/assets/images/SupremeTop100_Vote_11-lrkDtF1.png`}
                 coinsDesc="every 24 hours"
             />
             <VoteItem
