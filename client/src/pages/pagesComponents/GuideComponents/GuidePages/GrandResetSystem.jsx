@@ -34,7 +34,7 @@ const GrandResetSystem = () => {
                             <span>➤ Rage Fighter <mark>♦</mark> Magic Gladiator <em> - 6500 free points</em> ✨</span>
                             <span>➤ Dark Lord <em> - 5000 free points</em> + <b>1500 Command</b> ✨</span>
                             <span className="grand_reset_ml_span">➤ <mark>♦</mark> All Classes Master Skill Points Reward <em> - 50 Master Skill points</em> ✨</span>
-                            <span className="grand_reset_ml_span">➤ <mark>♦</mark> All Classes WCoins Reward <em> - 300 WCoins</em> 🪙</span>
+                            <span className="grand_reset_ml_span">➤ <mark>♦</mark> All Classes WCoins Reward <em> - 600 WCoins</em> 🪙</span>
                     </div>
                 </div>               
             </div>

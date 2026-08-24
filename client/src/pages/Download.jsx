@@ -8,7 +8,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.mega_cloud1}
                 url="https://mega.nz/file/2d0mjLBB#YmzbYZV4N-xjcO5SElFpq6CRQQVHvTooAJZCAb83vUY"
-                // url="#"
                 text="Download Client from MEGA👈"
                 className="download_links_logo_wrapper"
                 imgClass="img_logo"
@@ -16,7 +15,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.mega_cloud1}
                 url="https://mega.nz/file/fYFDGagJ#8hNMZ4HGDUWftmAJLjKn40tUAWmyPd_A5M_y3WDZzBw"
-                // url="#"
                 text="Fix transparent UI from MEGA👈"
                 className="download_links_logo_wrapper"
                 imgClass="img_logo"
@@ -25,7 +23,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.pcloud}
                 url="https://e.pcloud.link/publink/show?code=XZUKOy7Z65G1R6nhQ8y54MvtxdrHhz3fh5bV"
-                // url="#"
                 text="Download Client from pCloud👈"
                 className="download_links_logo_wrapper"
                 imgClass="pcloud_logo"
@@ -33,7 +30,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.pcloud}
                 url="https://e.pcloud.link/publink/show?code=XZqJ4IZeXC7soSWpgXY8a2AnmQIwkCIdXeV"
-                // url="#"
                 text="Fix transparent UI from pCloud👈"
                 className="download_links_logo_wrapper"
                 imgClass="pcloud_logo"
@@ -41,7 +37,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.limeWire}
                 url="https://limewire.com/d/1mmjM#jDOT8BWW3Z"
-                // url="#"
                 text="Download Client from LimeWire🍋"
                 className="download_links_logo_wrapper"
                 imgClass="limeWire_logo"
@@ -49,7 +44,7 @@ const Download = () => {
             <DownloadLink
                 image={Images.limeWire}
                 url="https://limewire.com/d/1mmjM#jDOT8BWW3Z"
-                // url="#"
+
                 text="Fix transparent UI from LimeWire🍋"
                 className="download_links_logo_wrapper"
                 imgClass="limeWire_logo"
@@ -57,7 +52,6 @@ const Download = () => {
             <DownloadLink
                 image={Images.filebin2}
                 url="https://filebin.net/0n7ebql6cfscz26w"
-                // url="#"
                 text="Download Client from Filebin💾"
                 className="download_links_logo_wrapper"
                 imgClass="filebin_logo"
