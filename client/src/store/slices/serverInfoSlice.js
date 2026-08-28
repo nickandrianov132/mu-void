@@ -62,6 +62,7 @@ const serverInfo = [
 {title: 'Offexp Info:', content: {content: 'from 1st level, duration 12 hours, 24 hours for VIP.', className: 'description_content_p'}},
 {title: 'Offexp:', content: {content: '/offlevel  with pick up jewels 💎', className: 'description_content_p'}},
 {title: 'Setparty:', content: {content: '/setparty  and your party password, or press "N" in the game.', className: 'description_content_p'}},
+{title: 'Party Exp:', content: {content: '3 (Any) classes Exp+10%, 5 (Any) classes Exp+15%.', className: 'description_content_p'}},
 ]
 
 const serverInfoSlice = createSlice({

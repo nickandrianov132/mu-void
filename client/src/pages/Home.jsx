@@ -139,6 +139,40 @@ const navigate = useNavigate()
                     <h4 className='description_item_h4'></h4>
                 </div>
             </HomeContent> */}
+        <HomeContent
+            title="🚀 Grand Opening: The Server is LIVE!🎉"
+            date="28.08.2026"
+            sideImage={Images.opening_bg2} 
+        >
+            <div className="description_list">
+                <div className="opening_wrapper_h4">
+                    <h4 className="description_item_h4">⚔️ The Gates of Continent are OPEN! Join the Adventure Now! ⚔️</h4>
+                </div>
+
+                <p className="description_item_p">
+                    <b className="item_bold">Download & Play:</b> The official client is fully ready. Download it from the website, register and jump into the game!
+                </p>
+
+                <p className="description_item_p">
+                    <b className="item_bold">Season 9 Custom:</b> Balanced gameplay, new ancient set options, unique item progression, and fine-tuned PvP/PvE mechanics right from the start.
+                </p>
+
+                <p className="description_item_p">
+                    <b className="item_bold">Easy Reset System:</b> Enjoy our simplified reset system. Spend less time on tedious grinding and focus more on end-game progression!
+                </p>
+
+                <p className="description_item_p">
+                    <b className="item_bold">Party EXP Bonuses:</b> Level up faster together! Leveling in a group grants extra experience — make sure to form a <span className="item_bold">Set Party</span> or <span className="item_bold">Gold Party</span> for maximum EXP efficiency.
+                </p>
+
+                <p className="description_item_p">
+                    <b className="item_bold">Support & Community:</b> Found a bug or need help? Our support team is online 24/7 in our <b>Discord</b> channel. Feel free to ask questions!
+                </p>
+
+                <h4 className="description_item_h4">Create your character, gather your guild, and claim the Throne of Castle Siege! 👑</h4>
+            </div>
+        /</HomeContent>
+
             <HomeContent
             title="📢Grand Opening 28 August 2026!"
             date="28.08.2026"
