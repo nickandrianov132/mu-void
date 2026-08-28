@@ -111,7 +111,7 @@ const AccountWebstore = () => {
                                     className="item_header" 
                                     style={{color: getItemTitleColor(info.cat, info.id, info.level, info.isExc, info.isAncient), backgroundColor: info.isAncient ? "#3240ff" : "transparent", fontSize: "1.12em"}}
                                 >
-                                    {info.isExc && info.cat !== 12 && !isCapeDL(info.cat, info.id)  ? "Excellent " : ""}{info.isAncient ? itemInfo.ancOptions.name : ""} {getItemName(info.cat, info.id, info.level)} {info.level > 0 && `+${info.level}`}
+                                    {info.isExc && info.cat !== 12 && !isCapeDL(info.cat, info.id)  ? "Excellent " : ""}{info.isAncient ? itemInfo.ancOptions.name : ""} {getItemName(info.cat, info.id, info.level)} {info.level > 0 && info.cat !== 14 &&`+${info.level}`}
                                 </h5>
                                 {isArmor(info.cat) &&
                                     <p>Armor: {itemInfo.defense}</p>

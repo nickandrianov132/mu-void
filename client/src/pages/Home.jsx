@@ -140,6 +140,33 @@ const navigate = useNavigate()
                 </div>
             </HomeContent> */}
             <HomeContent
+            title="📢Grand Opening 28 August 2026!"
+            date="28.08.2026"
+            sideImage={Images.opening1_img}
+            >
+            <div className='description_list'>
+                <div className='opening_wrapper_h4'>
+                <h4 className='description_item_h4'>🚨 The Battle Begins Today! Server opens at 20:00 MSK / Kyiv (17:00 UTC).</h4>
+                </div>
+                <p className='description_item_p'>
+                <b className='item_bold'>Registration and Client:</b> Registration is fully open, and the client is available for download. Get ready for a real, fair, and highly competitive MMORPG experience!
+                </p>
+                <p className='description_item_p'>
+                <b className='item_bold'>• Version & Exp:</b> Season 9 Custom with dynamic <b className='item_bold'>x50</b></p>
+                <p className='description_item_p'>
+                <b className='item_bold'>• Unique Grand Reset System:</b> GR significantly reduces top players' stats. This stops permanent castle monopoly and gives EVERYONE a fair chance to win Castle Siege and control World Bosses!
+                </p>
+                <p className='description_item_p'>
+                <b className='item_bold'>• Web Market & Trade:</b> Web Market. Trade items safely for WCoins, GoblinPoints and Zen right on our website.
+                </p>
+                <p className='description_item_p'>
+                <b className='item_bold'>• Guild Migration:</b> Bringing your clan? Contact administration in Discord for rewards🎁!
+                </p>
+                <h4 className='description_item_h4'>Assemble your guild, prepare your strategy, and let's see who will rule the Continent!</h4>
+            </div>
+            </HomeContent>
+
+            <HomeContent
                 title="🚀Open Beta Test Has Started!"
                 date="23.08.2026"
                 sideImage={Images.obt_new}
@@ -148,7 +175,7 @@ const navigate = useNavigate()
                     <div className='opening_wrapper_h4'>
                         <h4 className='description_item_h4_opening'>⚔️ Open Beta Test: Prepare for Launch!</h4>
                     </div>
-                    <p className='description_item_p'><b className='item_bold'>Server opens on August 28th at 20:00 MSK/Kyiv (17:00 UTC)</b></p>
+                    {/* <p className='description_item_p'><b className='item_bold'>Server opens on August 28th at 20:00 MSK/Kyiv (17:00 UTC)</b></p> */}
                     <p className='description_item_p'>👉Registration is available. <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
                     <p className='description_item_p'>💾Client is available for download. <a className='desc_a_download' href='https://www.mu-void.com/download'>Download</a></p>
                     <p className='description_item_p'>- All Boxes and items added to Shops for easy test.</p>

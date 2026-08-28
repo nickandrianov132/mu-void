@@ -56,6 +56,10 @@ export function getItemIconPath(cat, id, lvl) {
             let str = `${cat}_${id}_${lvl}`
             return Images[str]
         } 
+        if(cat === 14 && id === 11 && lvl >= 1) {
+            let str = `${cat}_${id}_${lvl}`
+            return Images[str]
+        }
         let str = `${cat}_${id}`
         return Images[str]
     } else {
@@ -114,6 +118,54 @@ export function getExcOptShort(cat, id, excObj) {
         if(excObj.sixthOpt) optArr.push("Rate") 
         return optArr;
     }
+    if (isWingsOptTier1(cat, id)) {
+        if(excObj.firstOpt) optArr.push("Life") 
+        if(excObj.secondOpt) optArr.push("Mana") 
+        if(excObj.thirdOpt) optArr.push("Ignore")  
+        return optArr;
+    }
+    if (isWingsOptTier2(cat, id)) {
+        if(excObj.firstOpt) optArr.push("Ignore") 
+        if(excObj.secondOpt) optArr.push("Life")   
+        return optArr;
+    }
+    if (isWingsOptTier3(cat, id)) {
+        if(excObj.firstOpt) optArr.push("Ignore") 
+        if(excObj.secondOpt) optArr.push("Return") 
+        if(excObj.thirdOpt) optArr.push("Life")  
+        if(excObj.fourthOpt) optArr.push("Mana")  
+        return optArr;
+    }
+}
+export function isWingsOptTier1(cat, id) {
+    if (cat === 12) {
+        if ( id === 3 || id === 4 || id === 5 || id === 6 || id === 42 || id === 49 ) {
+            return true
+        } else {
+            return false
+        }
+    } else if (cat === 13 && id === 30) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+export function isWingsOptTier2(cat, id) {
+    if (cat === 12 ) {
+        if ( id === 262 || id === 263 || id === 264 || id === 265 || id === 266 || id === 267 || id === 268) {
+            return true
+        }
+    }
+    else return false
+}
+export function isWingsOptTier3(cat, id) {
+    if (cat === 12 ) {
+        if ( id === 36 || id === 37 || id === 38 || id === 39 || id === 40 || id === 43 || id === 50) {
+            return true
+        }
+    }
+    else return false
 }
 
  export function getEnchItemGlowType(cat, id, lvl) {
@@ -136,6 +188,10 @@ export function getItemName(cat, index, lvl) {
     }
     if (cat === 13 && index === 31 && lvl === 1) {
         let item = itemsList[`${cat}_${index}_${lvl}`];
+        return item.Name
+    }
+    if(cat === 14 && index === 11 && lvl >= 1) {
+        let item = itemsList[`${cat}_${index}_${lvl}`]
         return item.Name
     }
     let item = itemsList[`${cat}_${index}`];
@@ -574,15 +630,15 @@ const pendants = [13, 26, 28];
 const magicPendants = [25, 12, 27];
 const rings = [8, 9, 21, 22, 23, 24];
 
-function isPendant(cat, id) {
+export function isPendant(cat, id) {
     if(cat === 13 && pendants.find(e => e === id)) return true 
     else return false
 }
-function isMagPendant(cat, id) {
+export function isMagPendant(cat, id) {
     if(cat === 13 && magicPendants.find(e => e === id)) return true 
     else return false
 }
-function isRing(cat, id) {
+export function isRing(cat, id) {
     if(cat === 13 && rings.find(e => e === id)) return true 
     else return false
 }

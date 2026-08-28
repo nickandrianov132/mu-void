@@ -107,11 +107,24 @@ $b-sealBoxMobs-col: rgb(233, 73, 73);
 $gr-container-bg: #341d3f;
 $user_td_title_col: rgb(255, 133, 133);
 $rules_border_col: #7b5a5aff;
+$col-edr: #45cf6a;
+$col-hp: #ff3467;
+$col-hpHunt: #ff3467;
+$col-mp: #4f61ff;
+$col-mpHunt: #4670fb;
+$col-ignore: #00d3ea;
+$col-return: #ff681c;
+$col-zen: #fbd455;
+$col-speed: #edea1a;
+$col-dmg: #f5783a;
+$col-dmgLvl: rgb(205, 70, 239);
+
 $app-wd: 100vw;
 $nav-ht: 3.5em;
 $foot-ht: 8vh;
 $left-sb-wd: 160px;
 $aside-wd: 110px;
+
 @mixin bd-filter($blur, $brightness) {
     backdrop-filter: blur($blur) brightness($brightness);
 }
@@ -141,6 +154,13 @@ $aside-wd: 110px;
                  $x $minusY $area $color,
                  $minusX $y $area $color,
     ;
+}
+%excOptIconBase{
+    color: #14db71;
+    font-size: 1em;
+    margin-right: 0.15em;
+    border: 0.02em solid transparetn;
+    border-radius: 0.2em;
 }
 %formBtn{
     border: 0.2em solid #01bc74;
@@ -215,13 +235,16 @@ $aside-wd: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     border-radius: 0.5em;
     width: 19em;
     height: 8em;
-    transform: translate(-50%, -50%) scale(0.7);
-    top: 30%;
+    // transform: translate(-50%, -50%) scale(0.7);
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    // top: 30%;
+    // left: 50%;
     opacity: 0;
     visibility: hidden;
     z-index: 9999;
@@ -238,7 +261,7 @@ $aside-wd: 110px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: absolute;
+            position: fixed;
             background-image: $popup-container-bg;
             border: 0.15em solid #3c1313;
             @include app_padding(0.3em 0.3em 1.5em 0.3em);
@@ -249,8 +272,10 @@ $aside-wd: 110px;
             width: 19em;
             height: 8em;
             transform: translate(-50%, -50%) scale(0.7);
-            top: 30%;
+            top: 50%;
             left: 50%;
+            // top: 30%;
+            // left: 50%;
             opacity: 0;
             visibility: hidden;
             z-index: 9999;
@@ -5577,10 +5602,11 @@ body {
         height: 60%;
         margin: 0 1em 0 1em;
         .popup_container_error{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
+            @extend %popup_container_base;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // position: fixed;
             background-image: $popup-container-bg;
             border: 0.15em solid #3c1313;
             @include app_padding(0.3em 0.3em 1.5em 0.3em);
@@ -5591,8 +5617,11 @@ body {
             width: 19em;
             height: 8em;
             transform: translate(-50%, -50%) scale(0.7);
-            top: 30%;
-            left: 50%;
+            // top: 30%;
+            // left: 50%;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%) scale(0.7);
             opacity: 0;
             visibility: hidden;
             z-index: 9999;
@@ -6117,16 +6146,17 @@ body {
 
     .market_items_grid_wrapper{
         display: grid;
-        height: 44em;
+        // height: 44em;
+        height: auto;
         max-width: 48em;
         grid-gap: 1.8em;
         align-items: start;
         justify-content: center;
         margin-top: 1.5em;
-        // grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        // @include app_padding(0.3em 0.5em);
+        grid-template-columns: repeat(4, minmax(7em, 1fr));
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        grid-auto-rows: max-content;
         position: relative;
         .popup_container_error{
             @extend %pop_up_container_error;
@@ -6167,12 +6197,14 @@ body {
                 display: flex;
                 flex-direction: column;
                 height: 20%;
+                width: 100%;                
                 .item_exc_opt_wrapper{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: flex-start;
+                    justify-content: flex-end;
+                    margin-right: 0.5em;
                     .exc_opt_span{
                         font-size: 0.55em;
                         font-weight: 400;
@@ -6183,6 +6215,87 @@ body {
                         @include app_margin(0.3em 0.3em 0.3em 0.3em);
                         @include app_padding(0 0.25em 0 0.25em);
                         @include box-shadow(0.05em, 0.05em, -0.05em, -0.05em, 0.1em, #206a30);
+                    }
+                    .exc_opt_icon_hp{
+                        @extend %excOptIconBase;
+                        color: $col-hp;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-hp);
+                    }
+                    .exc_opt_icon_mp{
+                        @extend %excOptIconBase;
+                        color: $col-mp;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-mp);
+                    }
+                    .exc_opt_icon_ignore{
+                        @extend %excOptIconBase;
+                        color: $col-ignore;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-ignore);
+                    }
+                    .exc_opt_icon_return{
+                        @extend %excOptIconBase;
+                        color: $col-return;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-return);
+                    }
+                    .exc_opt_icon_zen{
+                        @extend %excOptIconBase;
+                        color: $col-zen;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-zen);
+                    }
+                    .exc_opt_icon_rate{
+                        @extend %excOptIconBase;
+                        color: $col-edr;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-edr);
+                    }
+                    .exc_opt_icon_ref{
+                        @extend %excOptIconBase;
+                        color: $col-return;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-return);
+                    }
+                    .exc_opt_icon_dd{
+                        @extend %excOptIconBase;
+                        color: $col-ignore;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-ignore);
+                    }
+                    .exc_opt_icon_mana{
+                        @extend %excOptIconBase;
+                        color: $col-mp;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-mp);
+                    }
+                    .exc_opt_icon_life{
+                        @extend %excOptIconBase;
+                        color: $col-hp;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-hp);
+                    }
+                    .exc_opt_icon_manaHunt{
+                        @extend %excOptIconBase;
+                        color: $col-mpHunt;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-mpHunt);
+                    }
+                    .exc_opt_icon_lifeHunt{
+                        @extend %excOptIconBase;
+                        color: $col-hpHunt;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-hpHunt);
+                    }
+                    .exc_opt_icon_speed{
+                        @extend %excOptIconBase;
+                        color: $col-zen;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-zen);
+                    }
+                    .exc_opt_icon_dmg{
+                        @extend %excOptIconBase;
+                        color: $col-dmg;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-dmg);
+                    }
+                    .exc_opt_icon_dmglvl{
+                        @extend %excOptIconBase;
+                        color: $col-dmgLvl;
+                        border-color: $col-dmgLvl;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-dmgLvl);
+                    }
+                    .exc_opt_icon_edr{
+                        @extend %excOptIconBase;
+                        color: $col-edr;
+                        @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.1em, $col-edr);
                     }
                 }
             }
@@ -7130,14 +7243,16 @@ body {
     }
     
 }
-@media print and (max-width: 360px) {
+@media screen and (max-width: 350px) {
     body{
-        font-size:  10px;
+        font-size:  2px;
     }
-    .left_sidebar_container{
-        display: none;
-    }
+    // .left_sidebar_container{
+    //     display: none;
+    // }
 }
+
+
 // @media (max-width: 1960px) {
 //     .snowflake47_img, .snowflake48_img, .snowflake49_img, .snowflake50_img, .snowflake51_img, .snowflake52_img {
 //         display: none;

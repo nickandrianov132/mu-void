@@ -20,8 +20,9 @@ const MarketItemCard = ({ info, item }) => {
     const dispatch = useDispatch();
     // console.log(accInfo);
     // console.log(itemInfo);
+    console.log(info);
     
-    console.log(`vaultError: ${isError}`);
+    // console.log(`vaultError: ${isError}`);
     // console.log(`vaultSuccess: ${isSuccess}`);
     // console.log(errorState);
     // console.log(Number(item.PriceZen));

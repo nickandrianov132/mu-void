@@ -33,8 +33,8 @@ const Market = () => {
     let boundary = 1;
 
     console.log(marketData);
-    console.log(userInfo);
-    console.log(marketQueryInfo);
+    // console.log(userInfo);
+    // console.log(marketQueryInfo);
     useEffect(() => {
         if (isSuccess && userInfo) {
             dispatch(updateUserInfo({accName: userInfo.accName, wCoins: userInfo.wCoinsC, gPoints: userInfo.goblinPoints, zen: Number(userInfo.accZen)}))
@@ -62,33 +62,11 @@ const Market = () => {
                 }
             }
             setPages(range)
-            // if(currentPage <= 3) {
-            //     let pArr = []
-            //     for (let i = currentPage; i <= currentPage + 5; i++) {
-            //         pArr.push(i)
-            //         // setPages((pArr) => [...pArr, i])
-            //     }
-            //     setPages(() => [...pArr, totalPages])
-            // }
-            // if(currentPage > 3 && currentPage < totalPages) {
-            //     console.log(pages);
-            //     let pArr = [];
-            //     for (let i = currentPage - 1; i < totalPages; i++) {
-            //         pArr.push(i)
-            //     }
-
-            //     setPages(() => [...pArr, totalPages])
-
-            // }
             } catch (error) {
                 console.log(error);
             }
         }
     }, [isSuccess, marketData])
-
-    // useEffect(() => {
-    //     dispatch(updateMarketQuery({catId: categoryId}))
-    // }, [categoryId])
 
 
     return (
@@ -132,7 +110,7 @@ const Market = () => {
                                                 className="item_header" 
                                                 style={{color: getItemTitleColor(info.cat, info.id, info.level, info.isExc, info.isAncient), backgroundColor: info.isAncient ? "#3240ff" : "transparent", fontSize: "1.12em"}}
                                             >
-                                                {info.isExc && info.cat !== 12 && !isCapeDL(info.cat, info.id)  ? "Excellent " : ""}{info.isAncient ? itemInfo.ancOptions.name : ""} {getItemName(info.cat, info.id, info.level)} {info.level > 0 && `+${info.level}`}
+                                                {info.isExc && info.cat !== 12 && !isCapeDL(info.cat, info.id)  ? "Excellent " : ""}{info.isAncient ? itemInfo.ancOptions.name : ""} {getItemName(info.cat, info.id, info.level)} {info.level > 0 && info.cat !== 14 &&`+${info.level}`}
                                             </h5>
                                             {isArmor(info.cat) &&
                                                 <p>Armor: {itemInfo.defense}</p>

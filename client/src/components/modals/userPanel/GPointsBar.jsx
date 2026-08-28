@@ -10,7 +10,7 @@ const GPointsBar = ({gPoints}) => {
         {/* {gPoints && */}
             <div className='gpoints_bar_container'>
                 <span className='title'>GoblinPoints:</span>
-                <span className='amount'>{pretyZen(gPoints)}</span>
+                <span className='amount'>{pretyZen(gPoints ? gPoints.toString() : "0")}</span>
             </div>
         {/* } */}
         </>
