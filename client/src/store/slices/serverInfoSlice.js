@@ -5,7 +5,7 @@ const serverInfo = [
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
-    {title: 'Windows per PC:', content: {content: '3', className: 'description_content_p'}},
+    {title: 'Windows per PC:', content: {content: '5', className: 'description_content_p'}},
     {title: 'Classes:', content: {content: 'Dark Wizard | Dark Knight | Elf | Summoner | Magic Gladiator | Dark Lord | Rage Fighter', className: 'description_content_p'}},
     {title: 'Lvl to create:', content: {content: 'MG, DL, RF available from 1st level.', className: 'description_content_p'}},
     // {title: 'Start points:', content: {content: '200 free start points!', className: 'description_content_p'}},

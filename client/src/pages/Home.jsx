@@ -139,6 +139,48 @@ const navigate = useNavigate()
                     <h4 className='description_item_h4'></h4>
                 </div>
             </HomeContent> */}
+<HomeContent
+  title="Why MU-Void? A True Anti-Monopoly Experience! 🚀"
+  date="29.08.2026"
+  sideImage={Images.vip_news}
+>
+  <div className="description_list">
+    {/* БОНУС ПУНКТ */}
+    <p className="description_item_p" style={{ border: '1px dashed #ffb703', padding: '8px', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
+      <b className="item_bold" style={{ color: '#ffb703' }}>🎁 Special Launch Bonus:</b> All existing players and newcomers will automatically receive <span className="item_bold" style={{ color: '#ffb703' }}>Free Gold VIP for 3 Days!</span> Jump in and boost your progress right now!
+    </p>
+
+    <h4 className="description_wrapper_h4">
+      <h4 className="description_item_h4">⚔️ Tired of servers where 2 or 3 top guilds capture every boss? I am too. ⚔️</h4>
+    </h4>
+
+    <p className="description_item_p">
+      <b className="item_bold">Fair Power Rotation:</b> I designed a unique Grand Reset System that forces top players to roll back their progression. This stops permanent monopolies, keeps the economy alive, and constantly opens up Castle Siege and World Bosses for mid-tier guilds and new players.
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">True Weapon Value:</b> I completely rebalanced the combat system and capped broken attack speed scaling. Now, upgrading your weapon actually matters — better gear increases your raw power and unique combat stats, not just animation speed.
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Overhauled Ancient Sets:</b> No more useless items. I radically reworked Ancient options to create real build diversity. Every class now has multiple competitive paths to top-tier PvP and PvE.
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Gatekeep-Free Environment:</b> I configured all event timers, mini-bosses, and map drops so that a single dominant alliance cannot camp everything simultaneously.
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">A message from the developer:</b> You might see a low online count on the website right now. Many of those are active windows utilizing my customized Off-Exp system. I refuse to display fake, artificially inflated numbers. As the sole developer, admin, and GM of this project, I put my heart into fixing the flaws of modern MU. Give MU-Void a chance!
+    </p>
+
+    <h4 className="description_item_h4" style={{ marginTop: '15px', color: '#e63946', fontStyle: 'italic', textAlign: 'center' }}>
+      ✨ As a developer, I built the foundation. Now, the community holds the power. You can join, stay, and create the comfortable gaming environment you've always wanted. Or, you can close this tab, continue hopping from server to server, endlessly searching for that "perfect place" that simply doesn't exist. The choice is yours. ✨
+    </h4>
+  </div>
+</HomeContent>
+
+
         <HomeContent
             title="🚀 Grand Opening: The Server is LIVE!🎉"
             date="28.08.2026"
@@ -200,7 +242,7 @@ const navigate = useNavigate()
             </div>
             </HomeContent>
 
-            <HomeContent
+            {/* <HomeContent
                 title="🚀Open Beta Test Has Started!"
                 date="23.08.2026"
                 sideImage={Images.obt_new}
@@ -209,17 +251,16 @@ const navigate = useNavigate()
                     <div className='opening_wrapper_h4'>
                         <h4 className='description_item_h4_opening'>⚔️ Open Beta Test: Prepare for Launch!</h4>
                     </div>
-                    {/* <p className='description_item_p'><b className='item_bold'>Server opens on August 28th at 20:00 MSK/Kyiv (17:00 UTC)</b></p> */}
                     <p className='description_item_p'>👉Registration is available. <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
                     <p className='description_item_p'>💾Client is available for download. <a className='desc_a_download' href='https://www.mu-void.com/download'>Download</a></p>
                     <p className='description_item_p'>- All Boxes and items added to Shops for easy test.</p>
                     <p className='description_item_p'>- Experience during the open beta test is <b>x5000</b></p>
                     <p className='description_item_p'><b>🔹</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
                     <p className='description_item_p'><b>🔹</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
-                    {/* <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4> */}
+
                     <h4 className='description_item_h4'>We all want this server to be a place we can truly call home - a vibrant, balanced, and exciting world where we can play, build, and compete for months and years to come.  But to build the ultimate gaming experience, we need you. Every single player in this community has a unique perspective. Whether you are a casual builder, a hardcore PvPer, an economy tycoon, or just started your journey today - your ideas and opinion matter!</h4>
                 </div>
-            </HomeContent>
+            </HomeContent> */}
             {/* <HomeContent
                 title="📢Updates 📝"
                 date="05.12.2025"

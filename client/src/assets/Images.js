@@ -1037,6 +1037,7 @@ const Images = {
     "13_66": new URL('./items/13_66.png', import.meta.url).href,   
     "13_67": new URL('./items/13_67.gif', import.meta.url).href,   
     "13_68": new URL('./items/13_68.png', import.meta.url).href,   
+    "13_80": new URL('./items/13_80.png', import.meta.url).href,   
     "13_83": new URL('./items/13_83.png', import.meta.url).href,   
     "13_84": new URL('./items/13_84.png', import.meta.url).href,   
     "13_85": new URL('./items/13_85.png', import.meta.url).href,   
