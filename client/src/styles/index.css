@@ -7,7 +7,7 @@
   border-radius: 0.2em;
 }
 
-.buyVip_container .vip_table tbody tr .vip_table_btn, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn, .account_vault_container .menu_container .move_zen_container .send_zen_btn, .form_btn {
+.buyVip_container .vip_table tbody tr .vip_table_btn, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_a, .buyWcoins_container .buy_wcoins_cryptocloud_wrapper .buy_wcoins_btn, .account_vault_store .account_vault_container .menu_container .move_zen_container .send_zen_btn, .form_btn {
   border: 0.2em solid #01bc74;
   border-radius: 0.4em;
   color: white;
@@ -17,7 +17,7 @@
   transition: 0.1s linear;
 }
 
-.account_vault_container .menu_container .move_zen_container .send_zen_btn_disabled, .account_vault_container .menu_container .move_buttons_container .move_item_btn, .registration_container .reg_form .reg_btn_div .reg_btn_disable {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .send_zen_btn_disabled, .account_vault_store .account_vault_container .menu_container .move_buttons_container .move_item_btn, .registration_container .reg_form .reg_btn_div .reg_btn_disable {
   border: 0.2em solid #7a7070;
   border-radius: 0.4em;
   color: white;
@@ -65,7 +65,7 @@
   transition: 0.1s linear;
 }
 
-.account_vault_container .menu_container .move_zen_container .zen_input_error, .account_vault_container .menu_container .move_zen_container .zen_input, .account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input, .regain_password_container .regain_pass_form .regain_pass_input_wrapper .input, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input_error, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input, .left_sidebar_container .login_container .login_form .input_error, .left_sidebar_container .login_container .login_form .input {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .zen_input_error, .account_vault_store .account_vault_container .menu_container .move_zen_container .zen_input, .account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input, .regain_password_container .regain_pass_form .regain_pass_input_wrapper .input, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input_error, .registration_container .reg_form .reg_input_row_div .reg_input_div .reg_input, .left_sidebar_container .login_container .login_form .input_error, .left_sidebar_container .login_container .login_form .input {
   font-size: 0.75em;
   color: #070039;
   width: 80%;
@@ -83,7 +83,7 @@
   text-shadow: 0.01em 0.01em 0.1em rgb(94, 147, 253), -0.01em -0.01em 0.1em rgb(94, 147, 253), 0.01em -0.01em 0.1em rgb(94, 147, 253), -0.01em 0.01em 0.1em rgb(94, 147, 253);
 }
 
-.account_vault_container .menu_container .popup_container_success, .account_vault_container .menu_container .popup_container_error, .market_container .market_items_grid_wrapper .popup_container_success {
+.account_vault_store .account_vault_container .menu_container .popup_container_success, .account_vault_store .account_vault_container .menu_container .popup_container_error, .market_container .market_items_grid_wrapper .popup_container_success {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +110,7 @@
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease, visibility 0.25s ease;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease, visibility 0.25s ease, -webkit-transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.account_vault_container .menu_container .popup_container_success:not(.hidden), .account_vault_container .menu_container .popup_container_error:not(.hidden), .market_container .market_items_grid_wrapper .popup_container_success:not(.hidden) {
+.account_vault_store .account_vault_container .menu_container .popup_container_success:not(.hidden), .account_vault_store .account_vault_container .menu_container .popup_container_error:not(.hidden), .market_container .market_items_grid_wrapper .popup_container_success:not(.hidden) {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -7819,7 +7819,44 @@ body {
   color: rgb(168, 255, 226);
 }
 
-.account_vault_container {
+.account_vault_store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 0.3em;
+}
+.account_vault_store .vault_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  margin: 0 0.5em;
+  padding: 0.3em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
+  background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
+  border: 0.15em solid rgb(63, 60, 72);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+          box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+.account_vault_store .account_vault_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7836,7 +7873,7 @@ body {
   width: 95%;
   height: 52em;
   margin: 0.5em;
-  padding-top: 3em;
+  padding-top: 2em;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 37, 48)), color-stop(18%, rgb(32, 34, 41)), color-stop(44%, rgb(31, 33, 41)), color-stop(63%, rgb(38, 40, 48)), color-stop(80%, rgb(43, 43, 56)), to(rgb(46, 46, 54)));
   background: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
   border: 0.1em solid rgb(63, 60, 72);
@@ -7846,7 +7883,7 @@ body {
   color: whitesmoke;
   border-radius: 0.5em;
 }
-.account_vault_container .menu_container {
+.account_vault_store .account_vault_container .menu_container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7862,7 +7899,7 @@ body {
   height: 60%;
   margin: 0 1em 0 1em;
 }
-.account_vault_container .menu_container .popup_container_error {
+.account_vault_store .account_vault_container .menu_container .popup_container_error {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(48, 35, 39)), color-stop(28%, rgb(33, 28, 29)), color-stop(40%, rgb(37, 30, 30)), color-stop(63%, rgb(43, 36, 36)), color-stop(80%, rgb(48, 41, 41)), to(rgb(52, 46, 46)));
   background-image: linear-gradient(0deg, rgb(48, 35, 39) 0%, rgb(33, 28, 29) 28%, rgb(37, 30, 30) 40%, rgb(43, 36, 36) 63%, rgb(48, 41, 41) 80%, rgb(52, 46, 46) 100%);
   border: 0.15em solid #3c1313;
@@ -7882,18 +7919,18 @@ body {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease, visibility 0.25s ease;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease, visibility 0.25s ease, -webkit-transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.account_vault_container .menu_container .popup_container_error:not(.hidden) {
+.account_vault_store .account_vault_container .menu_container .popup_container_error:not(.hidden) {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
-.account_vault_container .menu_container .popup_container_error .error_h4 {
+.account_vault_store .account_vault_container .menu_container .popup_container_error .error_h4 {
   font-size: 1.1em;
   color: rgb(255, 71, 71);
   text-shadow: 0.01em 0.01em 0.1em #8d0404, -0.015em -0.015em 0.1em #8d0404, 0.01em -0.015em 0.1em #8d0404, -0.015em 0.01em 0.1em #8d0404;
 }
-.account_vault_container .menu_container .popup_container_error .error_span {
+.account_vault_store .account_vault_container .menu_container .popup_container_error .error_span {
   font-size: 0.9em;
   margin-top: 0.3em;
   text-align: center;
@@ -7901,7 +7938,7 @@ body {
   margin: 0.3em 0.3em 0.6em 0.3em;
   text-shadow: 0.01em 0.01em 0.05em #aa0e0e, -0.015em -0.015em 0.05em #aa0e0e, 0.01em -0.015em 0.05em #aa0e0e, -0.015em 0.01em 0.05em #aa0e0e;
 }
-.account_vault_container .menu_container .popup_container_error .error_ok_btn {
+.account_vault_store .account_vault_container .menu_container .popup_container_error .error_ok_btn {
   font-size: 1em;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
@@ -7921,7 +7958,7 @@ body {
   padding: 0.5em 1.3em;
   text-shadow: 0.01em 0.01em 0.1em #691919, -0.015em -0.015em 0.1em #691919, 0.01em -0.015em 0.1em #691919, -0.015em 0.01em 0.1em #691919;
 }
-.account_vault_container .menu_container .popup_container_error .error_ok_btn:hover {
+.account_vault_store .account_vault_container .menu_container .popup_container_error .error_ok_btn:hover {
   color: #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(135, 89, 89)), color-stop(22%, rgb(103, 60, 60)), color-stop(44%, rgb(68, 30, 38)), color-stop(63%, rgb(85, 49, 55)), color-stop(80%, rgb(115, 61, 61)), to(rgb(177, 119, 119)));
   background: linear-gradient(0deg, rgb(135, 89, 89) 0%, rgb(103, 60, 60) 22%, rgb(68, 30, 38) 44%, rgb(85, 49, 55) 63%, rgb(115, 61, 61) 80%, rgb(177, 119, 119) 100%);
@@ -7931,7 +7968,7 @@ body {
   text-shadow: 0.01em 0.01em 0.1em #000, -0.015em -0.015em 0.1em #000, 0.01em -0.015em 0.1em #000, -0.015em 0.01em 0.1em #000;
   cursor: pointer;
 }
-.account_vault_container .menu_container .popup_container_success {
+.account_vault_store .account_vault_container .menu_container .popup_container_success {
   color: whitesmoke;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(45, 45, 54)), color-stop(28%, rgb(37, 37, 46)), color-stop(40%, rgb(39, 38, 44)), color-stop(63%, rgb(37, 36, 43)), color-stop(80%, rgb(41, 41, 48)), to(rgb(46, 46, 52)));
   background-image: linear-gradient(0deg, rgb(45, 45, 54) 0%, rgb(37, 37, 46) 28%, rgb(39, 38, 44) 40%, rgb(37, 36, 43) 63%, rgb(41, 41, 48) 80%, rgb(46, 46, 52) 100%);
@@ -7940,12 +7977,12 @@ body {
   -webkit-box-shadow: 0em 0.2em 1.5em rgba(3, 229, 188, 0.7), 0em 0em 1em rgba(255, 77, 77, 0.35);
           box-shadow: 0em 0.2em 1.5em rgba(3, 229, 188, 0.7), 0em 0em 1em rgba(255, 77, 77, 0.35);
 }
-.account_vault_container .menu_container .popup_container_success .success_h4 {
+.account_vault_store .account_vault_container .menu_container .popup_container_success .success_h4 {
   font-size: 1.1em;
   color: #01bc74;
   text-shadow: 0.015em 0.015em 0.15em #0f3b22, -0.015em -0.015em 0.15em #0f3b22, 0.015em -0.015em 0.15em #0f3b22, -0.015em 0.015em 0.15em #0f3b22;
 }
-.account_vault_container .menu_container .popup_container_success .success_span {
+.account_vault_store .account_vault_container .menu_container .popup_container_success .success_span {
   font-size: 0.9em;
   margin-top: 0.3em;
   text-align: center;
@@ -7953,7 +7990,7 @@ body {
   margin: 0.3em 0.3em 0.6em 0.3em;
   text-shadow: 0.01em 0.01em 0.05em #141422, -0.015em -0.015em 0.05em #141422, 0.01em -0.015em 0.05em #141422, -0.015em 0.01em 0.05em #141422;
 }
-.account_vault_container .menu_container .popup_container_success .success_ok_btn {
+.account_vault_store .account_vault_container .menu_container .popup_container_success .success_ok_btn {
   font-size: 1em;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
@@ -7973,7 +8010,7 @@ body {
   padding: 0.5em 1.3em;
   text-shadow: 0.01em 0.01em 0.1em #474952, -0.01em -0.01em 0.1em #474952, 0.01em -0.01em 0.1em #474952, -0.01em 0.01em 0.1em #474952;
 }
-.account_vault_container .menu_container .popup_container_success .success_ok_btn:hover {
+.account_vault_store .account_vault_container .menu_container .popup_container_success .success_ok_btn:hover {
   color: #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(73, 208, 141)), color-stop(22%, rgb(8, 250, 117)), color-stop(44%, rgb(2, 185, 81)), color-stop(63%, rgb(48, 222, 106)), color-stop(80%, rgb(77, 196, 125)), to(rgb(57, 255, 140)));
   background: linear-gradient(0deg, rgb(73, 208, 141) 0%, rgb(8, 250, 117) 22%, rgb(2, 185, 81) 44%, rgb(48, 222, 106) 63%, rgb(77, 196, 125) 80%, rgb(57, 255, 140) 100%);
@@ -7983,7 +8020,7 @@ body {
   text-shadow: 0.01em 0.01em 0.1em #000, -0.015em -0.015em 0.1em #000, 0.01em -0.015em 0.1em #000, -0.015em 0.01em 0.1em #000;
   cursor: pointer;
 }
-.account_vault_container .menu_container .move_buttons_container {
+.account_vault_store .account_vault_container .menu_container .move_buttons_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7993,7 +8030,7 @@ body {
           flex-direction: column;
   padding: 0.5em 0.3em;
 }
-.account_vault_container .menu_container .move_buttons_container .move_item_btn {
+.account_vault_store .account_vault_container .menu_container .move_buttons_container .move_item_btn {
   color: #b9b5b5;
   max-width: 10em;
   margin: 0 0 0.5em 0;
@@ -8007,7 +8044,7 @@ body {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-.account_vault_container .menu_container .move_buttons_container .move_item_btn.selected {
+.account_vault_store .account_vault_container .menu_container .move_buttons_container .move_item_btn.selected {
   color: whitesmoke;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(73, 208, 152)), color-stop(22%, rgb(33, 239, 126)), color-stop(44%, rgb(0, 148, 64)), color-stop(63%, rgb(38, 201, 92)), color-stop(80%, rgb(62, 228, 128)), to(rgb(57, 255, 107)));
   background-image: linear-gradient(0deg, rgb(73, 208, 152) 0%, rgb(33, 239, 126) 22%, rgb(0, 148, 64) 44%, rgb(38, 201, 92) 63%, rgb(62, 228, 128) 80%, rgb(57, 255, 107) 100%);
@@ -8015,11 +8052,11 @@ body {
   text-shadow: 0.05em 0.05em 0.1em #161519, -0.05em -0.05em 0.1em #161519, 0.05em -0.05em 0.1em #161519, -0.05em 0.05em 0.1em #161519;
   cursor: pointer;
 }
-.account_vault_container .menu_container .move_buttons_container .move_item_btn.selected:hover {
+.account_vault_store .account_vault_container .menu_container .move_buttons_container .move_item_btn.selected:hover {
   -webkit-box-shadow: 0.01em 0.01em 0.22em rgb(52, 255, 130), -0.01em -0.01em 0.22em rgb(52, 255, 130), 0.01em -0.01em 0.22em rgb(52, 255, 130), -0.01em 0.01em 0.22em rgb(52, 255, 130);
           box-shadow: 0.01em 0.01em 0.22em rgb(52, 255, 130), -0.01em -0.01em 0.22em rgb(52, 255, 130), 0.01em -0.01em 0.22em rgb(52, 255, 130), -0.01em 0.01em 0.22em rgb(52, 255, 130);
 }
-.account_vault_container .menu_container .sell_market_btn {
+.account_vault_store .account_vault_container .menu_container .sell_market_btn {
   font-size: 1em;
   color: #e1e0e7;
   border: 0.1em solid rgb(255, 34, 34);
@@ -8030,17 +8067,17 @@ body {
   padding: 0.3em 0.4em;
   text-shadow: 0.05em 0.05em 0.1em #161519, -0.05em -0.05em 0.1em #161519, 0.05em -0.05em 0.1em #161519, -0.05em 0.05em 0.1em #161519;
 }
-.account_vault_container .menu_container .sell_market_btn:hover {
+.account_vault_store .account_vault_container .menu_container .sell_market_btn:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(229, 168, 156)), color-stop(18%, rgb(231, 126, 126)), color-stop(44%, rgb(214, 52, 55)), color-stop(63%, rgb(222, 58, 36)), color-stop(80%, rgb(233, 50, 81)), to(rgb(212, 22, 25)));
   background-image: linear-gradient(0deg, rgb(229, 168, 156) 0%, rgb(231, 126, 126) 18%, rgb(214, 52, 55) 44%, rgb(222, 58, 36) 63%, rgb(233, 50, 81) 80%, rgb(212, 22, 25) 100%);
   border-color: #ad1b1b;
   -webkit-box-shadow: 0.01em 0.01em 0.22em rgb(229, 13, 13), -0.01em -0.01em 0.22em rgb(229, 13, 13), 0.01em -0.01em 0.22em rgb(229, 13, 13), -0.01em 0.01em 0.22em rgb(229, 13, 13);
           box-shadow: 0.01em 0.01em 0.22em rgb(229, 13, 13), -0.01em -0.01em 0.22em rgb(229, 13, 13), 0.01em -0.01em 0.22em rgb(229, 13, 13), -0.01em 0.01em 0.22em rgb(229, 13, 13);
 }
-.account_vault_container .menu_container .sell_market_btn.hidden {
+.account_vault_store .account_vault_container .menu_container .sell_market_btn.hidden {
   visibility: hidden;
 }
-.account_vault_container .menu_container .sell_market_container {
+.account_vault_store .account_vault_container .menu_container .sell_market_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8064,42 +8101,42 @@ body {
           box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
   padding: 0.6em;
 }
-.account_vault_container .menu_container .sell_market_container.hidden {
+.account_vault_store .account_vault_container .menu_container .sell_market_container.hidden {
   visibility: hidden;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span {
   width: 100%;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input {
   height: 1em;
   width: 40%;
   margin-right: 1em;
   background: #bfc3c6;
   border: 0.1em solid #2b2b2c;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input:focus {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input:focus {
   -webkit-box-shadow: 0.1em 0.1em 0.2em #2e74ff, -0.1em -0.1em 0.2em #2e74ff, 0.1em -0.1em 0.2em #2e74ff, -0.1em 0.1em 0.2em #2e74ff;
           box-shadow: 0.1em 0.1em 0.2em #2e74ff, -0.1em -0.1em 0.2em #2e74ff, 0.1em -0.1em 0.2em #2e74ff, -0.1em 0.1em 0.2em #2e74ff;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input.error {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .sell_input.error {
   background: #fe9999;
   border-color: #ea1704;
   -webkit-box-shadow: 0.1em 0.1em 0.2em #ff2e2e, -0.1em -0.1em 0.2em #ff2e2e, 0.1em -0.1em 0.2em #ff2e2e, -0.1em 0.1em 0.2em #ff2e2e;
           box-shadow: 0.1em 0.1em 0.2em #ff2e2e, -0.1em -0.1em 0.2em #ff2e2e, 0.1em -0.1em 0.2em #ff2e2e, -0.1em 0.1em 0.2em #ff2e2e;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .wc_label {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .wc_label {
   font-size: 0.8em;
   color: #00dc88;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .gp_label {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .gp_label {
   font-size: 0.8em;
   color: #00b4dc;
 }
-.account_vault_container .menu_container .sell_market_container .sell_input_span .zen_label {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sell_input_span .zen_label {
   font-size: 0.8em;
   color: #e2bb2d;
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8108,7 +8145,7 @@ body {
       justify-content: space-around;
   margin: 0.8em 0.2em 0.4em 0.2em;
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -8124,18 +8161,18 @@ body {
   padding: 0.23em 0.6em;
   text-shadow: 0.01em 0.015em 0.1em #000, -0.015em -0.01em 0.1em #000, 0.01em -0.01em 0.1em #000, -0.015em 0.015em 0.1em #000;
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell:hover {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(138, 221, 152)), color-stop(18%, rgb(100, 233, 146)), color-stop(44%, rgb(24, 164, 75)), color-stop(63%, rgb(28, 179, 33)), color-stop(80%, rgb(73, 218, 104)), to(rgb(59, 222, 146)));
   background-image: linear-gradient(0deg, rgb(138, 221, 152) 0%, rgb(100, 233, 146) 18%, rgb(24, 164, 75) 44%, rgb(28, 179, 33) 63%, rgb(73, 218, 104) 80%, rgb(59, 222, 146) 100%);
   -webkit-box-shadow: 0.01em 0.01em 0.22em rgb(52, 255, 130), -0.01em -0.01em 0.22em rgb(52, 255, 130), 0.01em -0.01em 0.22em rgb(52, 255, 130), -0.01em 0.01em 0.22em rgb(52, 255, 130);
           box-shadow: 0.01em 0.01em 0.22em rgb(52, 255, 130), -0.01em -0.01em 0.22em rgb(52, 255, 130), 0.01em -0.01em 0.22em rgb(52, 255, 130), -0.01em 0.01em 0.22em rgb(52, 255, 130);
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell:active {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_sell:active {
   color: #ffffff;
   -webkit-transform: translate(0.05em, 0.05em);
           transform: translate(0.05em, 0.05em);
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -8151,18 +8188,18 @@ body {
   padding: 0.23em 0.6em;
   text-shadow: 0.01em 0.015em 0.1em #000, -0.015em -0.01em 0.1em #000, 0.01em -0.01em 0.1em #000, -0.015em 0.015em 0.1em #000;
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel:hover {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(224, 122, 102)), color-stop(18%, rgb(200, 77, 77)), color-stop(44%, rgb(205, 30, 33)), color-stop(63%, rgb(220, 44, 21)), color-stop(80%, rgb(224, 57, 57)), to(rgb(228, 111, 113)));
   background-image: linear-gradient(0deg, rgb(224, 122, 102) 0%, rgb(200, 77, 77) 18%, rgb(205, 30, 33) 44%, rgb(220, 44, 21) 63%, rgb(224, 57, 57) 80%, rgb(228, 111, 113) 100%);
   -webkit-box-shadow: 0.01em 0.01em 0.22em rgb(255, 52, 62), -0.01em -0.01em 0.22em rgb(255, 52, 62), 0.01em -0.01em 0.22em rgb(255, 52, 62), -0.01em 0.01em 0.22em rgb(255, 52, 62);
           box-shadow: 0.01em 0.01em 0.22em rgb(255, 52, 62), -0.01em -0.01em 0.22em rgb(255, 52, 62), 0.01em -0.01em 0.22em rgb(255, 52, 62), -0.01em 0.01em 0.22em rgb(255, 52, 62);
 }
-.account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel:active {
+.account_vault_store .account_vault_container .menu_container .sell_market_container .sellmarket_btns_wrapper .btn_cancel:active {
   color: #ffffff;
   -webkit-transform: translate(0.05em, 0.05em);
           transform: translate(0.05em, 0.05em);
 }
-.account_vault_container .menu_container .move_zen_container {
+.account_vault_store .account_vault_container .menu_container .move_zen_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8185,7 +8222,7 @@ body {
           box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
   padding: 0.6em;
 }
-.account_vault_container .menu_container .move_zen_container .zen_input {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .zen_input {
   font-size: 0.9em;
   background: #baa7a7;
   border: 0.1em solid #38383b;
@@ -8196,26 +8233,26 @@ body {
   margin-bottom: 0.4em;
   width: 95%;
 }
-.account_vault_container .menu_container .move_zen_container .zen_input:focus {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .zen_input:focus {
   background: #c9c7b6;
   border: 0.1em solid rgb(226, 187, 97);
   -webkit-box-shadow: 0.1em 0.1em 0.2em #efdf01, -0.1em -0.1em 0.2em #efdf01, 0.1em -0.1em 0.2em #efdf01, -0.1em 0.1em 0.2em #efdf01;
           box-shadow: 0.1em 0.1em 0.2em #efdf01, -0.1em -0.1em 0.2em #efdf01, 0.1em -0.1em 0.2em #efdf01, -0.1em 0.1em 0.2em #efdf01;
 }
-.account_vault_container .menu_container .move_zen_container .zen_input_error {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .zen_input_error {
   width: 100%;
   border: 0.1em solid rgb(234, 86, 86);
   background-color: #fcc8c8;
   -webkit-box-shadow: 0.1em 0.1em 0.3em red, -0.1em -0.1em 0.3em red, 0.1em -0.1em 0.3em red, -0.1em 0.1em 0.3em red;
           box-shadow: 0.1em 0.1em 0.3em red, -0.1em -0.1em 0.3em red, 0.1em -0.1em 0.3em red, -0.1em 0.1em 0.3em red;
 }
-.account_vault_container .menu_container .move_zen_container .error_span {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .error_span {
   min-height: 1.5em;
   font-size: 0.7em;
   margin-bottom: 0.3em;
   color: #f42607;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8225,7 +8262,7 @@ body {
           align-items: center;
   margin-bottom: 0.5em;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8234,19 +8271,19 @@ body {
           align-items: center;
   margin-right: 1em;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input {
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input:checked ~ .checkmark::after {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input:checked ~ .checkmark::after {
   display: block;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input:checked ~ .checkmark {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox input:checked ~ .checkmark {
   border: 0.15em solid #00dc88;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox .checkmark {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox .checkmark {
   position: relative;
   display: inline-block;
   margin-right: 0.6em;
@@ -8257,7 +8294,7 @@ body {
   border: 0.15em solid rgb(194, 205, 220);
   border-radius: 0.3em;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox .checkmark::after {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .custom_checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
@@ -8270,22 +8307,22 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .checkbox_label {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .checkbox_label {
   font-size: 0.9em;
   color: whitesmoke;
   font-weight: 400;
 }
-.account_vault_container .menu_container .move_zen_container .checkbox_span .checkbox_label_checked {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .checkbox_span .checkbox_label_checked {
   font-size: 0.92em;
   color: #00dc88;
   text-shadow: 0.01em 0.01em 0.1em #3d3d3d, -0.01em -0.01em 0.1em #3d3d3d, 0.01em -0.01em 0.1em #3d3d3d, -0.01em 0.01em 0.1em #3d3d3d;
 }
-.account_vault_container .menu_container .move_zen_container .send_zen_btn {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .send_zen_btn {
   padding: 0.3em 0.6em;
   font-size: 0.9em;
   text-shadow: 0.01em 0.01em 0.1em #3d3d3d, -0.01em -0.01em 0.1em #3d3d3d, 0.01em -0.01em 0.1em #3d3d3d, -0.01em 0.01em 0.1em #3d3d3d;
 }
-.account_vault_container .menu_container .move_zen_container .send_zen_btn_disabled {
+.account_vault_store .account_vault_container .menu_container .move_zen_container .send_zen_btn_disabled {
   padding: 0.3em 0.6em;
   font-size: 0.9em;
   color: #424447;
@@ -8293,7 +8330,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.account_vault_container .vault_error_container {
+.account_vault_store .account_vault_container .vault_error_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8316,14 +8353,14 @@ body {
   color: whitesmoke;
   border-radius: 0.5em;
 }
-.account_vault_container .vault_error_container .title {
+.account_vault_store .account_vault_container .vault_error_container .title {
   color: #e34f3f;
 }
-.account_vault_container .vault_error_container .vault_error_message {
+.account_vault_store .account_vault_container .vault_error_container .vault_error_message {
   font-size: 0.9em;
   color: #fdd1d1;
 }
-.account_vault_container .vault_container {
+.account_vault_store .account_vault_container .vault_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8335,7 +8372,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.account_vault_container .vault_container .title {
+.account_vault_store .account_vault_container .vault_container .title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #131212;
   color: #ea8935;
@@ -8349,7 +8386,7 @@ body {
   -webkit-box-shadow: 0.05em 0.05em 0.12em #433d3d, -0.05em -0.05em 0.12em #433d3d, 0.05em -0.05em 0.12em #433d3d, -0.05em 0.05em 0.12em #433d3d;
           box-shadow: 0.05em 0.05em 0.12em #433d3d, -0.05em -0.05em 0.12em #433d3d, 0.05em -0.05em 0.12em #433d3d, -0.05em 0.05em 0.12em #433d3d;
 }
-.account_vault_container .vault_container .vault_zen_container {
+.account_vault_store .account_vault_container .vault_container .vault_zen_container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #131212;
   color: #b6c4cc;
@@ -8364,14 +8401,14 @@ body {
           box-shadow: 0.05em 0.05em 0.12em #433d3d, -0.05em -0.05em 0.12em #433d3d, 0.05em -0.05em 0.12em #433d3d, -0.05em 0.05em 0.12em #433d3d;
   text-shadow: 0.01em 0.01em 0.1em #1a1818, -0.01em -0.01em 0.1em #1a1818, 0.01em -0.01em 0.1em #1a1818, -0.01em 0.01em 0.1em #1a1818;
 }
-.account_vault_container .vault_container .vault_zen_container .zen_title {
+.account_vault_store .account_vault_container .vault_container .vault_zen_container .zen_title {
   font-weight: 600;
   margin-right: 0.6em;
 }
-.account_vault_container .vault_container .vault_zen_container .zen_value {
+.account_vault_store .account_vault_container .vault_container .vault_zen_container .zen_value {
   color: #ee8529;
 }
-.account_vault_container .vault_container .vault_wrapper {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8391,7 +8428,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid {
   width: 100%;
   height: 90%;
   display: -ms-grid;
@@ -8407,487 +8444,487 @@ body {
   -ms-grid-rows: minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em) 0.1em minmax(0, 1.75em);
   grid-template-rows: repeat(15, minmax(0, 1.75em));
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(1) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(2) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(3) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(4) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(5) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(5) {
   -ms-grid-row: 1;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(6) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(6) {
   -ms-grid-row: 1;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(7) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(7) {
   -ms-grid-row: 1;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(8) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(8) {
   -ms-grid-row: 1;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(9) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(9) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(10) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(10) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(11) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(11) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(12) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(12) {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(13) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(13) {
   -ms-grid-row: 3;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(14) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(14) {
   -ms-grid-row: 3;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(15) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(15) {
   -ms-grid-row: 3;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(16) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(16) {
   -ms-grid-row: 3;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(17) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(17) {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(18) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(18) {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(19) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(19) {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(20) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(20) {
   -ms-grid-row: 5;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(21) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(21) {
   -ms-grid-row: 5;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(22) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(22) {
   -ms-grid-row: 5;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(23) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(23) {
   -ms-grid-row: 5;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(24) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(24) {
   -ms-grid-row: 5;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(25) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(25) {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(26) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(26) {
   -ms-grid-row: 7;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(27) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(27) {
   -ms-grid-row: 7;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(28) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(28) {
   -ms-grid-row: 7;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(29) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(29) {
   -ms-grid-row: 7;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(30) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(30) {
   -ms-grid-row: 7;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(31) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(31) {
   -ms-grid-row: 7;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(32) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(32) {
   -ms-grid-row: 7;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(33) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(33) {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(34) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(34) {
   -ms-grid-row: 9;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(35) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(35) {
   -ms-grid-row: 9;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(36) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(36) {
   -ms-grid-row: 9;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(37) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(37) {
   -ms-grid-row: 9;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(38) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(38) {
   -ms-grid-row: 9;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(39) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(39) {
   -ms-grid-row: 9;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(40) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(40) {
   -ms-grid-row: 9;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(41) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(41) {
   -ms-grid-row: 11;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(42) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(42) {
   -ms-grid-row: 11;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(43) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(43) {
   -ms-grid-row: 11;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(44) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(44) {
   -ms-grid-row: 11;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(45) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(45) {
   -ms-grid-row: 11;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(46) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(46) {
   -ms-grid-row: 11;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(47) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(47) {
   -ms-grid-row: 11;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(48) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(48) {
   -ms-grid-row: 11;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(49) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(49) {
   -ms-grid-row: 13;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(50) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(50) {
   -ms-grid-row: 13;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(51) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(51) {
   -ms-grid-row: 13;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(52) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(52) {
   -ms-grid-row: 13;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(53) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(53) {
   -ms-grid-row: 13;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(54) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(54) {
   -ms-grid-row: 13;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(55) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(55) {
   -ms-grid-row: 13;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(56) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(56) {
   -ms-grid-row: 13;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(57) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(57) {
   -ms-grid-row: 15;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(58) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(58) {
   -ms-grid-row: 15;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(59) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(59) {
   -ms-grid-row: 15;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(60) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(60) {
   -ms-grid-row: 15;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(61) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(61) {
   -ms-grid-row: 15;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(62) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(62) {
   -ms-grid-row: 15;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(63) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(63) {
   -ms-grid-row: 15;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(64) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(64) {
   -ms-grid-row: 15;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(65) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(65) {
   -ms-grid-row: 17;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(66) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(66) {
   -ms-grid-row: 17;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(67) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(67) {
   -ms-grid-row: 17;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(68) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(68) {
   -ms-grid-row: 17;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(69) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(69) {
   -ms-grid-row: 17;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(70) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(70) {
   -ms-grid-row: 17;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(71) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(71) {
   -ms-grid-row: 17;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(72) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(72) {
   -ms-grid-row: 17;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(73) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(73) {
   -ms-grid-row: 19;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(74) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(74) {
   -ms-grid-row: 19;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(75) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(75) {
   -ms-grid-row: 19;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(76) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(76) {
   -ms-grid-row: 19;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(77) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(77) {
   -ms-grid-row: 19;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(78) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(78) {
   -ms-grid-row: 19;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(79) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(79) {
   -ms-grid-row: 19;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(80) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(80) {
   -ms-grid-row: 19;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(81) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(81) {
   -ms-grid-row: 21;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(82) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(82) {
   -ms-grid-row: 21;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(83) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(83) {
   -ms-grid-row: 21;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(84) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(84) {
   -ms-grid-row: 21;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(85) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(85) {
   -ms-grid-row: 21;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(86) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(86) {
   -ms-grid-row: 21;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(87) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(87) {
   -ms-grid-row: 21;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(88) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(88) {
   -ms-grid-row: 21;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(89) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(89) {
   -ms-grid-row: 23;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(90) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(90) {
   -ms-grid-row: 23;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(91) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(91) {
   -ms-grid-row: 23;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(92) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(92) {
   -ms-grid-row: 23;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(93) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(93) {
   -ms-grid-row: 23;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(94) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(94) {
   -ms-grid-row: 23;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(95) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(95) {
   -ms-grid-row: 23;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(96) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(96) {
   -ms-grid-row: 23;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(97) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(97) {
   -ms-grid-row: 25;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(98) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(98) {
   -ms-grid-row: 25;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(99) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(99) {
   -ms-grid-row: 25;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(100) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(100) {
   -ms-grid-row: 25;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(101) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(101) {
   -ms-grid-row: 25;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(102) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(102) {
   -ms-grid-row: 25;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(103) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(103) {
   -ms-grid-row: 25;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(104) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(104) {
   -ms-grid-row: 25;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(105) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(105) {
   -ms-grid-row: 27;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(106) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(106) {
   -ms-grid-row: 27;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(107) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(107) {
   -ms-grid-row: 27;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(108) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(108) {
   -ms-grid-row: 27;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(109) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(109) {
   -ms-grid-row: 27;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(110) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(110) {
   -ms-grid-row: 27;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(111) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(111) {
   -ms-grid-row: 27;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(112) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(112) {
   -ms-grid-row: 27;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(113) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(113) {
   -ms-grid-row: 29;
   -ms-grid-column: 1;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(114) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(114) {
   -ms-grid-row: 29;
   -ms-grid-column: 3;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(115) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(115) {
   -ms-grid-row: 29;
   -ms-grid-column: 5;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(116) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(116) {
   -ms-grid-row: 29;
   -ms-grid-column: 7;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(117) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(117) {
   -ms-grid-row: 29;
   -ms-grid-column: 9;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(118) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(118) {
   -ms-grid-row: 29;
   -ms-grid-column: 11;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(119) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(119) {
   -ms-grid-row: 29;
   -ms-grid-column: 13;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(120) {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid > *:nth-child(120) {
   -ms-grid-row: 29;
   -ms-grid-column: 15;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8910,11 +8947,11 @@ body {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item.selected {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item.selected {
   -webkit-box-shadow: 0.05em 0.05em 0.17em #dc3c3c, -0.05em -0.05em 0.17em #dc3c3c, 0.05em -0.05em 0.17em #dc3c3c, -0.05em 0.05em 0.17em #dc3c3c;
           box-shadow: 0.05em 0.05em 0.17em #dc3c3c, -0.05em -0.05em 0.17em #dc3c3c, 0.05em -0.05em 0.17em #dc3c3c, -0.05em 0.05em 0.17em #dc3c3c;
 }
-.account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item .vault_item_image {
+.account_vault_store .account_vault_container .vault_container .vault_wrapper .vault_grid .vault_item .vault_item_image {
   max-width: 85%;
   max-height: 85%;
   -o-object-fit: contain;

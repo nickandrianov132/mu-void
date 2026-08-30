@@ -20,15 +20,20 @@ const AccountVault = () => {
         }
     }, [accessToken]);
     return (
-        <div className="account_vault_container">
-            <Vault />
-            <div className="menu_container">
-                <MoveButtons />
-                <SellOnMaret />
-                <MoveZen />
-                <PopUp />
+        <div className="account_vault_store">
+            <div className="vault_header">
+                <b>To sell an item on the market, transfer it to the Webstore first</b>
             </div>
-            <AccountWebstore/>
+            <div className="account_vault_container">
+                <Vault />
+                <div className="menu_container">
+                    <MoveButtons />
+                    <SellOnMaret />
+                    <MoveZen />
+                    <PopUp />
+                </div>
+                <AccountWebstore/>
+            </div>
         </div>
     );
 }
