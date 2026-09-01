@@ -30,12 +30,12 @@ app.use(errorHandlerMiddleware)
 // setInterval( () => {
 //     fakeCharLvlController.charLevelUp(["BobbyDK", "MommyEE", "DaddyDW", "BuddyMG", "RobbyDL", "GamerBK", "GamerEE", "GamerRF", "GamerDL", "GamerMG", "Dalton", "Brendon", "Birds", "Jenks", "Rouse", "rebecca", "rodrigo", "dolores", "mario", "bruno"])
 // }, 900000)
-// setInterval( () => {
-//     mmoanonsVoteController.mmoanonsFetch()
-// }, 1200000)
-// setInterval( () => {
-//     mmotopVoteController.mmotopFetch()
-// }, 1200000)
+setInterval( () => {
+    mmoanonsVoteController.mmoanonsFetch()
+}, 1200000)
+setInterval( () => {
+    mmotopVoteController.mmotopFetch()
+}, 1200000)
 const start = async () => {
     try {
         app.listen(PORT, () => {

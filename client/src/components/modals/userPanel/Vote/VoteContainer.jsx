@@ -57,7 +57,7 @@ const VoteContainer = () => {
                 title="Vote on MMOTOP"
                 link={`https://mu.mmotop.ru/en/servers/38919/votes/new`}
                 img={Images.mmotop_small}
-                coins="10 WCoins!"
+                coins="25 WCoins!"
                 coinsDesc="every 24 hours"
             />
             <VoteItem
@@ -98,13 +98,13 @@ const VoteContainer = () => {
                 coins="Free no Wcoins"
                 coinsDesc="every 24 hours"
             />
-            <VoteItem
+            {/* <VoteItem
                 title="Vote on muonlinetop.com"
                 link={`https://muonlinetop.com/vote.php?token=26854d8a27927b94`}
                 img={Images.muonlinetop}
                 coins="Free no Wcoins"
                 coinsDesc="every 24 hours"
-            />
+            /> */}
             
             <div className="vote_tip_container">
                 <em className="vote_tip_1">* Due to <b>MMOTOP</b> and <b>MMOANONS</b> do not provide postback system, we automatically fetch all vote every <b>20 minutes</b> and add WCoins on your account.</em>
