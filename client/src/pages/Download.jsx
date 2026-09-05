@@ -34,7 +34,7 @@ const Download = () => {
                 className="download_links_logo_wrapper"
                 imgClass="pcloud_logo"
             />
-            <DownloadLink
+            {/* <DownloadLink
                 image={Images.limeWire}
                 url="https://limewire.com/d/1mmjM#jDOT8BWW3Z"
                 text="Download Client from LimeWire🍋"
@@ -55,7 +55,7 @@ const Download = () => {
                 text="Download Client from Filebin💾"
                 className="download_links_logo_wrapper"
                 imgClass="filebin_logo"
-            />
+            /> */}
             <div className="download_remark_wrapper">
                 <p className="download_remark_p">* In case you have got any issues with downloading or using the game client arguing antivirus protection, stop your antivirus protection for the time you download the client and add client folder to the exclusions of your antivirus protection system. There’s no threats in game client for your system. Some antivirus systems may recognize client’s .dll files as potential threats.</p>
             </div>

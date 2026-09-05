@@ -163,7 +163,7 @@ $aside-wd: 110px;
     border-radius: 0.2em;
 }
 %formBtn{
-    border: 0.2em solid #01bc74;
+    border: 0.1em solid #01bc74;
     border-radius: 0.4em;
     color: white;
     cursor: pointer;
@@ -1403,7 +1403,7 @@ body {
                 display: flex;
                 width: fit-content;
                 height: fit-content;
-                width: 40%;
+                width: 30%;
                 border-radius: 0.2em;
                 margin-right: 0.4em;
                 position: relative;
@@ -1443,7 +1443,7 @@ body {
             .description_list{
                 display: flex;
                 flex-direction: column;
-                width: 60%;
+                width: 70%;
                 color: #e2dede;
                 background-image: $containers_bg;
                 border: 0.1em solid $containers_border_col;
@@ -6601,7 +6601,7 @@ body {
             tr{
                 .th_bronze{
                     color: rgb(223, 108, 108);
-                    border: 0.24em solid rgb(199, 89, 89);
+                    border: 0.1em solid rgb(199, 89, 89);
                     border-radius: 0.4em;
                     background: #c8a594;
                     width: 28%;
@@ -6609,7 +6609,7 @@ body {
                 }
                 .th_silver{
                     color: rgb(128, 135, 135);
-                    border: 0.24em solid rgb(95, 99, 100);
+                    border: 0.1em solid rgb(95, 99, 100);
                     border-radius: 0.4em;
                     background: #96a8bb;
                     width: 28%;
@@ -6617,7 +6617,7 @@ body {
                 }
                 .th_gold{
                     color: rgb(220, 169, 29);
-                    border: 0.24em solid rgb(229, 164, 11);
+                    border: 0.1em solid rgb(229, 164, 11);
                     border-radius: 0.4em;
                     background: #ece06d;
                     width: 28%;
@@ -6627,12 +6627,15 @@ body {
         }
         tbody{
             text-align: center;
+            .vip_btn_row {
+                height: 3em;
+            }
             tr{
                 .vip_select{
                     position: relative;
                     display: inline-block;
                     cursor: pointer;
-                    border: 1px solid transparent;
+                    border: 0.1em solid transparent;
                     border-radius: 0.3em;
                     font-size: 1em;
                     background: rgb(121, 246, 121);
@@ -6651,13 +6654,13 @@ body {
                     @include text-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.12em, rgb(38, 38, 38));
                     &:hover{
                         color: whitesmoke;
-                        border: 0.2em solid #01bc74;
+                        border: 0.1em solid #01bc74;
                         background-image: linear-gradient(180deg,rgba(78, 252, 157, 1) 0%, rgba(57, 196, 143, 1) 40%, rgba(34, 212, 108, 1) 60%, rgba(78, 252, 157, 1) 100%);
                         border: 0.2em solid rgb(0, 195, 130);
                         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(89, 255, 227));
                     }
                     &:active{
-                        transform: translate(1px,1px);
+                        transform: translate(0.1em, 0.1em);
                     }
                 }
                 .td_btn_vipBuy{

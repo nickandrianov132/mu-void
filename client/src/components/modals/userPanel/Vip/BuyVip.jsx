@@ -17,7 +17,7 @@ const BuyVip = () => {
     return (
         <div className="buyVip_container">
             <div className="vip_header_wrapper">
-                <h3>VIP will be available from 1<sup>st</sup> September!</h3>
+                {/* <h3>VIP will be available from 1<sup>st</sup> September!</h3> */}
             </div>
             {/* <div className="vip_header_wrapper">
                 <h3>VIP is available!</h3>

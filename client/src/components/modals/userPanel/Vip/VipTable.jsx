@@ -73,14 +73,14 @@ const VipTable = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td>Exp: +5x</td>
-                    <td>Exp: +8x</td>
-                    <td>Exp: +15x</td>
+                    <td>Exp: +50x</td>
+                    <td>Exp: +80x</td>
+                    <td>Exp: +150x</td>
                 </tr>
                 <tr>
-                    <td>Drop: +10%</td>
                     <td>Drop: +15%</td>
-                    <td>Drop: +30%</td>
+                    <td>Drop: +35%</td>
+                    <td>Drop: +50%</td>
                 </tr>
                 <tr>
                     <td>
@@ -122,7 +122,7 @@ const VipTable = () => {
                     <td>{vipSilver.price} WCoins</td>
                     <td>{vipGold.price} WCoins</td>
                 </tr>
-                <tr>
+                <tr className="vip_btn_row">
                     <td className="td_btn_vipBuy">
                         <button
                         id="bronze" 

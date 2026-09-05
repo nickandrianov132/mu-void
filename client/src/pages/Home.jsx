@@ -139,13 +139,54 @@ const navigate = useNavigate()
                     <h4 className='description_item_h4'></h4>
                 </div>
             </HomeContent> */}
-<HomeContent
+    <HomeContent
+    title="MU-Void: Open Beta Launch! 🛠️"
+    date="04.09.2026"
+    sideImage={Images.obt_1}
+    >
+    <div className="description_list">
+        {/* OBT TESTER BONUS */}
+        <p className="description_item_p" style={{ border: '1px dashed #ffb703', padding: '8px', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
+        <b className="item_bold" style={{ color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
+        </p>
+
+        <h4 className="description_item_h4">⚔️ Join the Open Beta and help us shape the ultimate anti-monopoly MU experience! ⚔️</h4>
+
+        <p className="description_item_p">
+        <b className="item_bold">Why Open Beta?</b> Before the live release, we want to ensure absolute stability and perfect balance under real player conditions. All core features are live, and your feedback during this phase will directly shape the final product.
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Fair Power Rotation:</b> The unique Grand Reset System is designed to break top-guild monopolies. During this OBT, you can see in real-time how capping the top players opens up bosses and Castle Siege for mid-tier guilds and newcomers.
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Combat System Tweaks:</b> The attack speed caps and raw weapon damage scaling are set, but they need heavy PvP testing. Join in, try out different builds, and share your feedback — class balance is now in your hands.
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Overhauled Ancient Sets:</b> All new competitive PvE and PvP paths for every class are ready for testing. Find the ultimate combinations before the official release!
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">A message from the developer:</b> MU-Void is a strictly non-commercial project built out of pure passion to fix the flaws of modern MU servers. As the sole developer, I provide the core infrastructure, but the actual life and growth of the server depend entirely on you. Activity is the main engine here. If you enjoy the concept, please invite your friends, bring your guilds, vote for us, and spread the word. Together, we can build a thriving, long-lasting community!
+        </p>
+
+        <h4 className="description_item_h4" style={{ marginTop: '15px', color: '#ffb703', fontStyle: 'italic', textAlign: 'center' }}>
+        ✨ I built the foundation. Now, the community holds the power. You can join, help us find bugs, and build the comfortable gaming environment you've always wanted. Or, you can pass by and continue hopping from server to server in search of a "perfect place" that doesn't exist. The choice is yours. ✨
+        </h4>
+    </div>
+    </HomeContent>
+
+
+
+{/* <HomeContent
   title="Why MU-Void? A True Anti-Monopoly Experience! 🚀"
   date="29.08.2026"
   sideImage={Images.vip_news}
 >
   <div className="description_list">
-    {/* БОНУС ПУНКТ */}
+
     <p className="description_item_p" style={{ border: '1px dashed #ffb703', padding: '8px', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
       <b className="item_bold" style={{ color: '#ffb703' }}>🎁 Special Launch Bonus:</b> All existing players and newcomers will automatically receive <span className="item_bold" style={{ color: '#ffb703' }}>Free Gold VIP for 3 Days!</span> Jump in and boost your progress right now!
     </p>
@@ -178,131 +219,9 @@ const navigate = useNavigate()
       ✨ As a developer, I built the foundation. Now, the community holds the power. You can join, stay, and create the comfortable gaming environment you've always wanted. Or, you can close this tab, continue hopping from server to server, endlessly searching for that "perfect place" that simply doesn't exist. The choice is yours. ✨
     </h4>
   </div>
-</HomeContent>
+</HomeContent> */}
 
-
-        <HomeContent
-            title="🚀 Grand Opening: The Server is LIVE!🎉"
-            date="28.08.2026"
-            sideImage={Images.opening_bg2} 
-        >
-            <div className="description_list">
-                <div className="opening_wrapper_h4">
-                    <h4 className="description_item_h4">⚔️ The Gates of Continent are OPEN! Join the Adventure Now! ⚔️</h4>
-                </div>
-
-                <p className="description_item_p">
-                    <b className="item_bold">Download & Play:</b> The official client is fully ready. Download it from the website, register and jump into the game!
-                </p>
-
-                <p className="description_item_p">
-                    <b className="item_bold">Season 9 Custom:</b> Balanced gameplay, new ancient set options, unique item progression, and fine-tuned PvP/PvE mechanics right from the start.
-                </p>
-
-                <p className="description_item_p">
-                    <b className="item_bold">Easy Reset System:</b> Enjoy our simplified reset system. Spend less time on tedious grinding and focus more on end-game progression!
-                </p>
-
-                <p className="description_item_p">
-                    <b className="item_bold">Party EXP Bonuses:</b> Level up faster together! Leveling in a group grants extra experience — make sure to form a <span className="item_bold">Set Party</span> or <span className="item_bold">Gold Party</span> for maximum EXP efficiency.
-                </p>
-
-                <p className="description_item_p">
-                    <b className="item_bold">Support & Community:</b> Found a bug or need help? Our support team is online 24/7 in our <b>Discord</b> channel. Feel free to ask questions!
-                </p>
-
-                <h4 className="description_item_h4">Create your character, gather your guild, and claim the Throne of Castle Siege! 👑</h4>
-            </div>
-        /</HomeContent>
-
-            <HomeContent
-            title="📢Grand Opening 28 August 2026!"
-            date="28.08.2026"
-            sideImage={Images.opening1_img}
-            >
-            <div className='description_list'>
-                <div className='opening_wrapper_h4'>
-                <h4 className='description_item_h4'>🚨 The Battle Begins Today! Server opens at 20:00 MSK / Kyiv (17:00 UTC).</h4>
-                </div>
-                <p className='description_item_p'>
-                <b className='item_bold'>Registration and Client:</b> Registration is fully open, and the client is available for download. Get ready for a real, fair, and highly competitive MMORPG experience!
-                </p>
-                <p className='description_item_p'>
-                <b className='item_bold'>• Version & Exp:</b> Season 9 Custom with dynamic <b className='item_bold'>x50</b></p>
-                <p className='description_item_p'>
-                <b className='item_bold'>• Unique Grand Reset System:</b> GR significantly reduces top players' stats. This stops permanent castle monopoly and gives EVERYONE a fair chance to win Castle Siege and control World Bosses!
-                </p>
-                <p className='description_item_p'>
-                <b className='item_bold'>• Web Market & Trade:</b> Web Market. Trade items safely for WCoins, GoblinPoints and Zen right on our website.
-                </p>
-                <p className='description_item_p'>
-                <b className='item_bold'>• Guild Migration:</b> Bringing your clan? Contact administration in Discord for rewards🎁!
-                </p>
-                <h4 className='description_item_h4'>Assemble your guild, prepare your strategy, and let's see who will rule the Continent!</h4>
-            </div>
-            </HomeContent>
-
-            {/* <HomeContent
-                title="🚀Open Beta Test Has Started!"
-                date="23.08.2026"
-                sideImage={Images.obt_new}
-            >
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>⚔️ Open Beta Test: Prepare for Launch!</h4>
-                    </div>
-                    <p className='description_item_p'>👉Registration is available. <a className='desc_a' href='https://mu-void.com/registration'>Registration</a></p>
-                    <p className='description_item_p'>💾Client is available for download. <a className='desc_a_download' href='https://www.mu-void.com/download'>Download</a></p>
-                    <p className='description_item_p'>- All Boxes and items added to Shops for easy test.</p>
-                    <p className='description_item_p'>- Experience during the open beta test is <b>x5000</b></p>
-                    <p className='description_item_p'><b>🔹</b> During OBT Reset = <b>1kk zen * Res</b>.</p>
-                    <p className='description_item_p'><b>🔹</b> During OBT Grand Reset coast = <b>1kk zen</b>.</p>
-
-                    <h4 className='description_item_h4'>We all want this server to be a place we can truly call home - a vibrant, balanced, and exciting world where we can play, build, and compete for months and years to come.  But to build the ultimate gaming experience, we need you. Every single player in this community has a unique perspective. Whether you are a casual builder, a hardcore PvPer, an economy tycoon, or just started your journey today - your ideas and opinion matter!</h4>
-                </div>
-            </HomeContent> */}
-            {/* <HomeContent
-                title="📢Updates 📝"
-                date="05.12.2025"
-                sideImage={Images.updates1}
-            >
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🔨Updates 05 december 2025🔧</h4>
-                    </div>
-                    <h5>Changes:</h5>
-                    <ul>
-                        <li>- reworked White Wizard Event.<a href='https://mu-void.com/guide/white_wizard_info'>White Wizard!</a></li>
-                        <li>- reworked Santa Event. <a href='https://mu-void.com/guide/santa_info'>Santa!</a></li>
-                        <li>- minor Classes rework. <a href='https://mu-void.com/guide/classes_info'>Classes!</a></li>
-                        <li>- Gold Rabbits drop reworked. <a href='https://mu-void.com/guide/drop_dungeon_event_info'>Rabbits!</a></li>
-                        <li>- Drop items rework. <a href='https://mu-void.com/guide/drop_box_info'>Drop!</a></li>
-                        <li>- Castle Lord Mix was reworked.</li>
-                        <li>- Reduced damage, defense, HP of monsters up ot Atlans3.</li>
-                        <li>- Reduced damage, defense, HP of White Wizard & Orcs, Santa & Cursed Goblins, Gold Rabbits.</li>
-                        <li>- Added New Socket items into drop from Selupan.</li>
-                    </ul>
-                    <p className='description_item_p'>✅ There is a very helpfull NPS called "BK_Helper" gives you a sort of usefull buffs lasting 60min for 100 000zen.</p>
-                    <p className='description_item_p'>✅ Shadow Phantom Soldier(Elf NPC) gives you increse damage/defence buff up to 400lvl.</p>
-                    <p className='description_item_p'>✅ Experience gained during the open beta test has been increased to <b>1500x</b> for testing available content and server settings easier.</p>
-                    <h4 className='description_item_h4'>We hope for the help of our players and welcome your suggestions for improving the game server!</h4>
-                </div>
-            </HomeContent> */}
-            {/* <HomeContent
-                title="📌OBT Launching 🔔"
-                date="01.12.2025"
-                sideImage={Images.obt_coming}
-            >
-                <div className='description_list'>
-                    <div className='opening_wrapper_h4'>
-                        <h4 className='description_item_h4_opening'>🚀OBT start december 5<sup>th</sup></h4>
-                    </div>
-                    <p className='description_item_p'>🔶 <b className='p_title'>Due to the extensive rework and content update of the game server, we are pleased to announce that we are launching open beta testing on December 5th.</b></p>
-                    <p className='description_item_p'><b>🔨🔧</b> List of all updates and reworks will be posted upon the launching of OBT.<b>📜</b> </p>
-                    <h4 className='description_item_h5'>We've decided to rework our server settings and content to make gameplay easier so you can develop and equip your characters faster and more enjoyably.</h4>
-                </div>
-            </HomeContent>                                          */}
-        </div>
+    </div>
     );
 }
 

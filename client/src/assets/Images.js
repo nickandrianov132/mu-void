@@ -185,6 +185,7 @@ const Images = {
     ironKnight_280x280: new URL('./ironKnight_280x280.jpg', import.meta.url).href,   
     napin_280x280: new URL('./napin_280x280.jpg', import.meta.url).href,   
     greatDragon: new URL('./greatDragon.jpg', import.meta.url).href,   
+    obt_1: new URL('./obt_1.jpg', import.meta.url).href,   
     obt_new: new URL('./obt_5000x.jpg', import.meta.url).href,   
     obt_coming: new URL('./obt_coming.jpg', import.meta.url).href,   
     cryptocloud2: new URL('./cryptocloud2.jpg', import.meta.url).href,   
