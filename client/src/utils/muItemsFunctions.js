@@ -439,7 +439,7 @@ function getActualDmg(cat, id, isExc, isAnc, minDmg, maxDmg, level) {
             return getDmglvl(minDmg, maxDmg, level, getExcScepterDmgRise(id).dmg) 
         }
         if (isStaff(cat)) {
-            console.log(getDmglvl(minDmg, maxDmg, level, getExcStaffDmgRise(id).dmg) );
+            // console.log(getDmglvl(minDmg, maxDmg, level, getExcStaffDmgRise(id).dmg) );
             return getDmglvl(minDmg, maxDmg, level, getExcStaffDmgRise(id).dmg) 
         }
         else {
@@ -742,7 +742,7 @@ function isScepter(cat, id) {
 function getHarmonyOpt(hType, hGroup, hLevel) {
     const itemKey = `${hGroup}_${hType}`;
     let option = itemHarmonyOpt[itemKey].name.replace("%d", itemHarmonyOpt[itemKey].levels[hLevel].value);
-    console.log(option);
+    // console.log(option);
     return option
 }
 

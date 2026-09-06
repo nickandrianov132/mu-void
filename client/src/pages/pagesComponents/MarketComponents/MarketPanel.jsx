@@ -5,7 +5,7 @@ import { updateMarketQuery } from "../../../store/slices/marketQuerySlice";
 const MarketPanel = () => {
     const { catId: searchCategory } = useSelector(state => state.marketQuery)
     const dispatch = useDispatch();
-    console.log(searchCategory);
+    // console.log(searchCategory);
     return (
             <div className="market_nav_panel">  
                 <GiBroadsword

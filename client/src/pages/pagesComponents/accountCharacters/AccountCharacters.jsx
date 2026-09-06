@@ -12,7 +12,7 @@ const AccountCharacters = () => {
     const navigate = useNavigate()
     useEffect(() => {
         if(isSuccess){
-            console.log(characters);
+            // console.log(characters);
         }
         if(!accessToken) {
             navigate(HOME_ROUTE)

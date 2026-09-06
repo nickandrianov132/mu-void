@@ -5,7 +5,7 @@ import DiscordWidgetHeader from "./DiscordWidgetHeader";
 
 const DiscordWidget = () => {
     const {data, isSuccess, isError, error} = useFetchDiscordQuery()
-    console.log(data);
+    // console.log(data);
     return (
         <>
         {isSuccess &&

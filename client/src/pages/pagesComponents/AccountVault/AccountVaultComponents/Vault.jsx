@@ -19,7 +19,7 @@ const Vault = () => {
     const navigate = useNavigate();
 
     // console.log(itemSelectedData);
-    console.log(vault);
+    // console.log(vault);
 
     useEffect(() => {
         if(!accessToken) {
@@ -40,7 +40,7 @@ const Vault = () => {
             height: i.height,
             categoryId: i.itemCategory
         }
-        console.log(itemObj);
+        // console.log(itemObj);
         dispatch(updateItem(itemObj));
     }
     return (

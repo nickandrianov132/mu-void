@@ -135,6 +135,15 @@ export const userApi = api.injectEndpoints({
             }),
             providesTags: ["itemMarket"]
         }),
+        fetchMarketItemsPublic: build.query({
+            query: (arg) => ({
+                url: `/user/market`,
+                // params: {page: arg[0], cat: arg[1]},
+                params: arg,
+
+            }),
+            providesTags: ["itemMarket"]
+        }),
 
         fetchBuyMarketItem: build.mutation({
             query: (marketId) => ({
@@ -165,6 +174,7 @@ export const { useUserLoginMutation,
      useMoveZenMutation,
      useMoveItemToMarketMutation,
      useFetchMarketItemsQuery,
+     useFetchMarketItemsPublicQuery,
      useGetBackMarketItemMutation,
      useFetchBuyMarketItemMutation   
     } = userApi

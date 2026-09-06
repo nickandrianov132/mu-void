@@ -1,31 +1,19 @@
 import { Tooltip } from "react-tooltip";
-import { useFetchAccountInfoQuery, useFetchMarketItemsQuery } from "../services/userApi";
+import { useFetchMarketItemsPublicQuery } from "../services/userApi";
 import MarketItemCard from "./pagesComponents/MarketComponents/MarketItemCard";
 import { getItemDetails, getItemName, getItemTitleColor, isArmor, isCapeDL, isMagicWeapon, isWeapon } from "../utils/muItemsFunctions";
 import { useEffect, useState } from "react";
 import PageButton from "./pagesComponents/MarketComponents/PageButton";
-import { useNavigate } from "react-router";
-import { useDispatch, useSelector } from "react-redux";
-import { HOME_ROUTE } from "../utils/constants";
-import MarketPopUp from "./pagesComponents/MarketComponents/MarketPopUp";
-import { updateUserInfo } from "../store/slices/userInfoSlice";
 import MarketPanel from "./pagesComponents/MarketComponents/MarketPanel";
+import { useSelector } from "react-redux";
+import MarketPopUp from "./pagesComponents/MarketComponents/MarketPopUp";
 
 
-const Market = () => {
-    const {data: userInfo, isSuccess: isUserSuccess, isError: isUserError, isLoading: isUserLoading} = useFetchAccountInfoQuery()
-    const {accessToken} = useSelector(state => state.user);
-    const accInfo = useSelector(state => state.userInfo);
+const PublicMarket = () => {
     const marketQueryInfo = useSelector(state => state.marketQuery)
-    const [page, setPage] = useState(1);
-    const [categoryId, setCategoryId] = useState(20);
-    const [searchCategory, setSearchCategory] = useState();
-    const [searchUser, setSearchUser] = useState();
     const [pages, setPages] = useState([])
 
-    const {data: marketData, isError, isSuccess} = useFetchMarketItemsQuery(marketQueryInfo,{refetchOnMountOrArgChange: true});
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
+    const {data: marketData, isError, isSuccess} = useFetchMarketItemsPublicQuery(marketQueryInfo);
     let range = [];
     let totalPages = 1;
     let currentPage = 1;
@@ -34,20 +22,9 @@ const Market = () => {
     // console.log(marketData);
     // console.log(userInfo);
     // console.log(marketQueryInfo);
-    useEffect(() => {
-        if (isSuccess && userInfo) {
-            dispatch(updateUserInfo({accName: userInfo.accName, wCoins: userInfo.wCoinsC, gPoints: userInfo.goblinPoints, zen: Number(userInfo.accZen)}))
-            // console.log(`userInfo was updated! ${userInfo.accName}`);
-        }
-    },[isSuccess])
-    useEffect(() => {
-        if(!accessToken) {
-            navigate(HOME_ROUTE)
-        }
-    }, [accessToken]);
 
     useEffect(() => {
-        if(isSuccess && accessToken) {
+        if(isSuccess ) {
             try {
                 
             currentPage = marketData.meta.currentPage;
@@ -185,4 +162,4 @@ const Market = () => {
     );
 }
 
-export default Market;
+export default PublicMarket;

@@ -31,7 +31,7 @@ const SellOnMaret = () => {
     const [sendGpValue, setSendGpValue] = useState(0)
     const [sendZenValue, setSendZenValue] = useState(0)
     const dispatch = useDispatch();
-    console.log(sendWcValue);
+    // console.log(sendWcValue);
     const formatter = new Intl.NumberFormat('ru-RU');
     useEffect(() => {
         if (isMarketError) {
@@ -157,7 +157,7 @@ const SellOnMaret = () => {
             dispatch(updateError({isError: true, message: zenError}))
             return
         }
-        console.log(itemObj);
+        // console.log(itemObj);
         moveItemToMarket(itemObj)
     }
 

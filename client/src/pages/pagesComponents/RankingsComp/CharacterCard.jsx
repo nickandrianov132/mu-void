@@ -10,7 +10,7 @@ const CharacterCard = () => {
     const {data, isLoading} = useFetchOneCharQuery(id)
     const {data: inventoryData} = useFetchOneCharInventoryQuery(id)
     // console.log(data);
-    console.log(inventoryData);
+    // console.log(inventoryData);
     function setImg(){
         let img = ''
         if(!isLoading && (data.cClass === 16 || data.cClass === 17 || data.cClass === 18)) {
@@ -43,7 +43,7 @@ const CharacterCard = () => {
         const arrZen = char.zen.split('')
         for (let a =[], i = arrZen.length; i > 0; i--) {
             a.push(arrZen[i - 1])
-            console.log(a);
+            // console.log(a);
             if(a.length == 3) {
                 arr.push(a.reverse().join(''))
                 a = []
@@ -180,7 +180,7 @@ const CharacterCard = () => {
                         if (!content) return null
                         const info = JSON.parse(content);
                         const itemInfo = getItemDetails(info.cat, info.id, info.level, info.isExc, info.exc, info.isAncient, info.ancGroup, info.hasHarmony, info.harmonyLevel, info.harmonyType, info.harmonyTypeGroup, info.is380Opt)
-                        console.log(itemInfo);
+                        // console.log(itemInfo);
                         return (
                             <div className="item_info_container" >
                                 

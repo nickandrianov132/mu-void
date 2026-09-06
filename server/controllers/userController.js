@@ -2001,4 +2001,5 @@ async makeAccountCharacterReset(req, res) {
 
 }
 
-module.exports = new UserController()
+
+module.exports = new UserController();

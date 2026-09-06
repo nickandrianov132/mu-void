@@ -14,18 +14,12 @@ const MarketItemCard = ({ info, item }) => {
     const accInfo = useSelector(state => state.userInfo);
     const {isError} = useSelector(state => state.vaultError);
     const {isSuccess} = useSelector(state => state.vaultSuccess);
+    const {accessToken} = useSelector(state => state.user);
     const [ fetchGetBackItem, {isError: isGetBackError, isSuccess: isGetBackSuccess, error, data} ] = useGetBackMarketItemMutation();
     const [ fetchBuyItem, {isError: isBuyItemError, isSuccess: isBuyItemSuccess, error: buyItemError, data: buyMarketData}] = useFetchBuyMarketItemMutation();
     const itemInfo = getItemDetails(info.cat, info.id, info.level, info.isExc, info.exc, info.isAncient, info.ancGroup, info.hasHarmony, info.harmonyLevel, info.harmonyType, info.harmonyTypeGroup, info.is380Opt);
     const dispatch = useDispatch();
-    // console.log(accInfo);
-    // console.log(itemInfo);
-    console.log(info);
-    
-    // console.log(`vaultError: ${isError}`);
-    // console.log(`vaultSuccess: ${isSuccess}`);
-    // console.log(errorState);
-    // console.log(Number(item.PriceZen));
+
     useEffect(() =>{
         if (isGetBackError) {
             dispatch(updateError({isError: true, message: error.data.message}))
@@ -103,7 +97,7 @@ const MarketItemCard = ({ info, item }) => {
             <MarketItemImage item={info} />
             <MarketItemDesc itemInfo={itemInfo} itemData={info}/>
             <MarketItemPrice priceWC={item.PriceWCoin} priceGP={item.PriceGP} priceZen={item.PriceZen}/>
-            {item.seller === accInfo.accName &&
+            {item.seller === accInfo.accName && accessToken &&
                 <div className="market_card_btn_wrapper">
                     <button 
                         className="market_card_btn"
@@ -112,7 +106,7 @@ const MarketItemCard = ({ info, item }) => {
                         >Take</button>
                 </div>
             }
-            {item.seller !== accInfo.accName &&
+            {item.seller !== accInfo.accName && accessToken &&
                 <div className="market_card_btn_wrapper">
                     <button 
                         disabled={isError || isSuccess}

@@ -7,7 +7,7 @@ const PopUp = () => {
     const {isError, message: errorMessage} = useSelector(state => state.vaultError);
     const {isSuccess, message: successMessage} = useSelector(state => state.vaultSuccess);
     const dispatch = useDispatch();
-    console.log(`isSuccess: ${isSuccess}`);
+    // console.log(`isSuccess: ${isSuccess}`);
     return (
         <>
         {isError &&

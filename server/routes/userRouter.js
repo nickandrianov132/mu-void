@@ -22,6 +22,7 @@ router.post('/auth/accountvault/moveItemToWebstore', authMiddleware, userControl
 router.post('/auth/accountvault/moveItemToVault', authMiddleware, userController.moveItemToVault)
 router.post('/auth/accountvault/moveItemToMarket', authMiddleware, userController.moveItemToMarket)
 router.get('/auth/market', authMiddleware, userController.getMarketItems)
+router.get('/market', userController.getMarketItems)
 router.post('/auth/market/getBackItem', authMiddleware, userController.getBackMarketItem)
 router.post('/auth/market/buyMarketItem', authMiddleware, userController.buyMarketItem)
 router.post('/auth/accountcharacters/reset', authMiddleware, userController.makeAccountCharacterReset)

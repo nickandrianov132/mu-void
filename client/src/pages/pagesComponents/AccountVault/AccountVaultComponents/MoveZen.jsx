@@ -29,7 +29,7 @@ const MoveZen = () => {
     }, [isSuccess, isError])
 
     useEffect(() => {
-        console.log(fetchZenError);
+        // console.log(fetchZenError);
         if(isError) {
             dispatch(updateError({isError: true, message: fetchZenError.data.message}))
         }

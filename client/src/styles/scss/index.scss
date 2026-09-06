@@ -1078,6 +1078,9 @@ body {
     .register_logo{
         width: 1.1em;
     }
+    .market_logo{
+        width: 1.5em;
+    }
     .rankings_logo, .guide_logo {
         width: 1.2em;
     }
@@ -1103,6 +1106,9 @@ body {
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.16em, rgb(69, 69, 69));
         // @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.16em, rgba(52, 190, 130, 1));
 
+    }
+    &:hover > .market_logo{
+        animation: animationNavLogo 0.4s ease-out forwards;
     }
     &:hover > .rankings_logo{
         animation: animationNavLogo 0.4s ease-out forwards;

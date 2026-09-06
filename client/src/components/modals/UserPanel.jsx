@@ -29,7 +29,7 @@ const UserPanel = () => {
         dispatch(logout())
         navigate(HOME_ROUTE)
     }
-    console.log(userInfo);
+    // console.log(userInfo);
 
     return (
         <div className='user_panel'>

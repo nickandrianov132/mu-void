@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router';
-import { ABOUT_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, HOME_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, RULES_ROUTE } from '../utils/constants';
+import { ABOUT_ROUTE, DOWNLOAD_ROUTE, GUIDE_ROUTE, HOME_ROUTE, PUBLIC_MARKET_ROUTE, RANKINGS_ROUTE, REGISTRATION_ROUTE, RULES_ROUTE } from '../utils/constants';
 import {GiHouse, GiSecretBook, GiSwordsEmblem, GiCharacter, GiSpellBook, GiCloudDownload} from 'react-icons/gi';
 import Images from '../assets/Images';
 
@@ -36,6 +36,12 @@ const NavBar = () => {
                     {/* <GiCharacter className='giCharacter'/> */}
                     <img className='register_logo' src={Images.register4} />
                     <span className='span'>Registration</span>
+                </NavLink>
+                <img className='line_separator' src={Images.vertical_sep2}/>
+                <NavLink className="nav_list_item_wraper" to={PUBLIC_MARKET_ROUTE}>
+                    {/* <GiCharacter className='giCharacter'/> */}
+                    <img className='market_logo' src={Images.map_market} alt='market'/>
+                    <span className='span'>Market</span>
                 </NavLink>
                 <img className='line_separator' src={Images.vertical_sep2}/>
                 {/* <span className='nav_list_span'></span> */}
