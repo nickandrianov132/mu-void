@@ -6,7 +6,21 @@ const GrandResetSystem = () => {
         <div className="guide_main_container">
             <GuideTitle title='Grand Reset system:'/>
             <div className="reset_info_div">
-                <p className="reset_p1">🔰 <em>Grand Reset Info</em> :</p>
+                <h1 className="reset_p1">🔰 <em>Grand Reset Info</em> :</h1>
+                <div className="res_reward_container">
+                    <h3 className="reward_header">1st Grand Reset Rewards:</h3>
+                    <div className="img_container">
+                    <img className="reward_img" src={Images.gr_reward} alt="reset reward image"/>
+
+                    </div>
+                    <div className="reward_opt_wrapper">
+                        <p className="reward_opt_span">All items enhanced to +11</p>
+                        <p className="reward_opt_span"> Additional Dmg +28</p>
+                        <p className="reward_opt_span">Skill</p>
+                        <p className="reward_opt_span_exc">Increases Attack/Wizardy +5%</p>
+                        <p className="reward_opt_span_exc">Chance of doing Excellent damage +10%</p>
+                </div>
+                </div>
                 <div className="gr_about_wrapper">
                     <p>On our Server only one way to get <em className="grandreset_em_ml">Master Tree Skill points</em> is to make <em className="grandreset_em_res"> Grand Reset</em>, after making grand reset you will be able to distribute all achieved free Master Skill Points in your Master Tree</p>
                 </div>

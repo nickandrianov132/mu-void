@@ -194,6 +194,8 @@ const Images = {
     cursed_goblin: new URL('./cursed_goblin.jpg', import.meta.url).href,   
     cursed_santa: new URL('./cursed_santa.jpg', import.meta.url).href,   
     zaikan: new URL('./zaikan.png', import.meta.url).href,   
+    gr_reward: new URL('./gr_reward.png', import.meta.url).href,   
+    res_reward: new URL('./res_reward.jpg', import.meta.url).href,   
     hydra: new URL('./hydra.jpg', import.meta.url).href,   
     metal_balrog: new URL('./metal_balrog.png', import.meta.url).href,   
     metal_balrog_drop: new URL('./metal_balrog_drop.png', import.meta.url).href,   

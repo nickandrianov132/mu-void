@@ -1617,6 +1617,7 @@ body {
   -webkit-box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
           box-shadow: 0.1em 0.1em 0.16em rgb(28, 17, 22), -0.1em -0.1em 0.16em rgb(28, 17, 22), 0.1em -0.1em 0.16em rgb(28, 17, 22), -0.1em 0.1em 0.16em rgb(28, 17, 22);
   position: relative;
+  font-size: 0.9em;
   background-image: linear-gradient(0deg, rgb(35, 37, 48) 0%, rgb(32, 34, 41) 18%, rgb(31, 33, 41) 44%, rgb(38, 40, 48) 63%, rgb(43, 43, 56) 80%, rgb(46, 46, 54) 100%);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p {
@@ -1745,6 +1746,18 @@ body {
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .a_registration {
   font-size: 1.1em;
   color: #00cba2;
+  text-shadow: 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933);
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .link_guide {
+  border: 0.1em solid #44c0d3;
+  border-radius: 0.3em;
+  background-color: rgba(0, 154, 220, 0.2705882353);
+  padding: 0 0.3em;
+  margin-left: 0.3em;
+}
+.home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .description_item_p .link_guide:hover {
+  color: #62f7ff;
+  background-color: rgba(79, 201, 254, 0.3490196078);
   text-shadow: 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933), 0em 0em 0.1em rgba(16, 16, 19, 0.933);
 }
 .home_content_container .home_content_body_introduction .introduction_content_wrapper .description_list .opening_wrapper_h4 {
@@ -5344,13 +5357,25 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 2.7em;
+  width: 100%;
 }
 .user_char_card_container .user_char_btn_wrapper .user_char_res_warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 75%;
   color: red;
-  font-size: 0.85em;
-}
-.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .em_zen {
-  color: rgba(241, 190, 51, 0.9333333333);
+  font-size: 0.8em;
 }
 .user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_warn_p_max_res {
   color: #00dc88;
@@ -5358,7 +5383,27 @@ body {
 }
 .user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_warn_p_max_res em {
   font-style: normal;
-  font-size: 1.3em;
+  font-size: 1.1em;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_tip_span_success {
+  color: #00dc88;
+  font-weight: 400;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_tip_span_success em {
+  font-style: normal;
+  font-size: 1.1em;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_tip_span_error {
+  color: #ee264b;
+  font-weight: 400;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_tip_span_error em {
+  font-style: normal;
+  font-size: 1.1em;
+}
+.user_char_card_container .user_char_btn_wrapper .user_char_res_warning .res_tip_span_error .em_zen {
+  color: rgba(241, 190, 51, 0.9333333333);
+  font-size: 1em;
 }
 .user_char_card_container .user_char_btn_wrapper {
   position: relative;
@@ -7406,6 +7451,82 @@ body {
   color: #ffdf86;
 }
 
+.res_reward_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9em;
+  margin: 0.5em 0 1.4em 0;
+  padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1em dashed #19879d;
+  border-radius: 0.3em;
+  background-color: rgba(20, 137, 169, 0.262745098);
+  background-color: #191c25; /* Плотный темный графит */
+  border: 0.1em solid #3f395c; /* Приглушенный чернильно-фиолетовый */
+  border-radius: 0.3em;
+  /* Дополнительно: можно пустить легкое внешнее свечение карточки */
+  -webkit-box-shadow: 0 0 15px rgba(108, 92, 231, 0.05);
+          box-shadow: 0 0 15px rgba(108, 92, 231, 0.05);
+  width: 80%;
+}
+.res_reward_container .reward_header {
+  color: rgb(255, 103, 89);
+  text-shadow: 0.01em 0.01em 0.16em #2f3257, -0.01em -0.01em 0.16em #2f3257, 0.01em -0.01em 0.16em #2f3257, -0.01em 0.01em 0.16em #2f3257;
+  margin-left: 1em;
+}
+.res_reward_container .img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.res_reward_container .img_container .reward_img {
+  display: block;
+  width: 100%;
+}
+.res_reward_container .img_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Увеличил прозрачность до 0.45, так как фон сайта темный */
+  -webkit-box-shadow: inset 5px 5px 18px 0 rgba(0, 0, 0, 0.45);
+          box-shadow: inset 5px 5px 18px 0 rgba(0, 0, 0, 0.45);
+  /* Пропускает клики сквозь себя на картинку, если это нужно */
+  pointer-events: none;
+}
+.res_reward_container .reward_opt_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #009adc;
+}
+.res_reward_container .reward_opt_wrapper .reward_opt_span_exc {
+  color: rgb(19, 234, 94);
+  text-shadow: 0.01em 0.01em 0.12em #141854, -0.01em -0.01em 0.12em #141854, 0.01em -0.01em 0.12em #141854, -0.01em 0.01em 0.12em #141854;
+}
+
 .download_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7754,6 +7875,11 @@ body {
   font-size: 0.8em;
   color: #dc0000;
   text-shadow: 0.015em 0.015em 0.14em rgb(83, 1, 47), -0.015em -0.015em 0.14em rgb(83, 1, 47), 0.015em -0.015em 0.14em rgb(83, 1, 47), -0.015em 0.015em 0.14em rgb(83, 1, 47);
+}
+.grand_reset_container .grand_reset_item_container .grand_reset_item_footer .grand_reset_tip_success {
+  font-size: 1em;
+  color: rgb(57, 233, 78);
+  text-shadow: 0.015em 0.015em 0.14em rgb(46, 6, 92), -0.015em -0.015em 0.14em rgb(46, 6, 92), 0.015em -0.015em 0.14em rgb(46, 6, 92), -0.015em 0.015em 0.14em rgb(46, 6, 92);
 }
 
 .user_info_container {

@@ -31,7 +31,7 @@ import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTim
 const CountdownOpening = () => {
     const { data: serverTime, isSuccess } = useFetchServerTimeQuery();
     const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-    const dateOpeningUTC = Date.UTC(2026, 7, 28, 17, 0, 0);
+    const dateOpeningUTC = Date.UTC(2026, 8, 11, 17, 0, 0);
     const [localTime, setLocalTime] = useState(null);
     const [offset, setOffset] = useState(null);
     

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Sword of Destruction",
+        "cat": 0,
+        "id": 16,
+        "fullId": 16,
+        "level": 11,
+        "hexTemplate": "10DC780000000063000000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Rune Blade",
+        "cat": 0,
+        "id": 31,
+        "fullId": 31,
+        "level": 11,
+        "hexTemplate": "1FDC810000000063000000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Dragon Soul Staff",
+        "cat": 5,
+        "id": 9,
+        "fullId": 2569,
+        "level": 11,
+        "hexTemplate": "095C240000000063005000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Ancient Stick",
+        "cat": 5,
+        "id": 17,
+        "fullId": 2577,
+        "level": 11,
+        "hexTemplate": "115C240000000063005000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Holy Storm Claw",
+        "cat": 0,
+        "id": 33,
+        "fullId": 33,
+        "level": 11,
+        "hexTemplate": "21DC710000000063000000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Lord Scepter",
+        "cat": 2,
+        "id": 11,
+        "fullId": 1035,
+        "level": 11,
+        "hexTemplate": "0B5C6C0000000063002000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    {
+        "name": "Great Reign Crossbow",
+        "cat": 4,
+        "id": 19,
+        "fullId": 2067,
+        "level": 11,
+        "hexTemplate": "13DC740000000063004000FFFFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFF"
+    }
+]

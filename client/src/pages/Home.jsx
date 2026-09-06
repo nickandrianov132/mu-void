@@ -139,21 +139,67 @@ const navigate = useNavigate()
                     <h4 className='description_item_h4'></h4>
                 </div>
             </HomeContent> */}
-    <HomeContent
+<HomeContent
+    title="Pre-Launching OBT! Launching 11.09.2026 🛠️"
+    date="06.09.2026"
+    sideImage={Images.obt_1}
+    >
+    <div className="description_list">
+        {/* OBT TESTER BONUS */}
+        <p className="description_item_p" style={{ border: '0.1em dashed #ffb703', padding: '0.7em', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
+        <b className="item_bold" style={{ fontSize: '1.15em', color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ fontSize: '1.05em', color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
+        </p>
+
+        <h4 className="description_item_h4">⚔️ Join the Open Beta and help us shape the ultimate anti-monopoly MU experience! ⚔️</h4>
+
+        <p className="description_item_p">
+        <b className="item_bold">Why Beta Relaunch?</b> We are testing everything on ultra-fast x5000 OBT rates so you can easily try all builds before the official x250 Live Launch! We took your feedback seriously!<br/> We have completely reworked the server into a unique <span className="item_bold" style={{ color: '#ff5444', fontWeight: '600' }}>**Dynamic x250 Classic-Style Concept**</span> built on the smooth Season 9 engine, but with critical gameplay re-engineering.
+        </p>
+
+        <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
+        <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>👑 Progressive Reset Rewards & Master Tree Revolution:</b> Regular Master Level grinding is **DISABLED**. <span className="item_bold" style={{ color: '#ff704d' }}>Grand Resets are now the **ONLY** way to get Master Points (+50 per GR)! </span> 
+        <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span> <a className='link_guide' href='https://www.mu-void.com/guide/resets_info' target='blank'>👉Reset reward</a>.<br/>  <b>Reach 20 Resets (Grand Reset)</b> to claim a <span className="item_bold" style={{ color: '#f674ff', fontWeight: '600' }}>Excellent TOP Tier-380 PvP Weapon +11.<a className='link_guide' href='https://www.mu-void.com/guide/grand_resets_info' target='blank'>👉GR reward</a> </span><br/> <span className="item_bold" style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Anti-Vanshot Combat Balance:</b> To eliminate classic speed bugs and frustrating one-click PvP, every class has a strict <span className="item_bold" style={{ color: '#ff704d' }}>**Attack Speed Cap**</span> from stats. To break the limit, you must progress through weapons — higher tier gear scales massively, boosting your attack speed from +40 up to +170!
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Phased Ancient Sets System:</b> We have completely overhauled all Ancient sets — there are NO useless sets anymore! To ensure a fair early game, the drop is split into phases: only <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 1 Ancient**</span> sets drop initially, while <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 2 Ancient**</span> sets unlock globally only after the first Grand Reset is made on the server!
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">No Elemental Mechanics:</b> To restore classic tactical PvP, we have completely removed Pentagrams, Errtels, elemental damage, and confusing late-season maps. Enjoy pure, fair character vs character mastery.
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">A message from the developer:</b> MU-Void is a strictly non-commercial project built out of pure passion to fix the flaws of modern MU servers. As the sole developer, I provide the core infrastructure, but the actual life and growth of the server depend entirely on you. Activity is the main engine here. If you enjoy the concept, please invite your friends, bring your guilds, vote for us, and spread the word. Together, we can build a thriving, long-lasting community!
+        </p>
+
+        <h4 className="description_item_h4" style={{ marginTop: '1em', color: '#ffb703', fontStyle: 'italic', textAlign: 'center' }}>
+        ✨ I built the foundation. Now, the community holds the power. You can join, help us find bugs, and build the comfortable gaming environment you've always wanted. Or, you can pass by and continue hopping from server to server in search of a "perfect place" that doesn't exist. The choice is yours. ✨
+        </h4>
+    </div>
+</HomeContent>
+
+    {/* <HomeContent
     title="MU-Void: Open Beta Launch! 🛠️"
     date="04.09.2026"
     sideImage={Images.obt_1}
     >
     <div className="description_list">
-        {/* OBT TESTER BONUS */}
-        <p className="description_item_p" style={{ border: '1px dashed #ffb703', padding: '8px', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
-        <b className="item_bold" style={{ color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
+        <p className="description_item_p" style={{ border: '0.1em dashed #ffb703', padding: '0.7em', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
+        <b className="item_bold" style={{ fontSize: '1.15em', color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ fontSize: '1.05em', color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
         </p>
 
         <h4 className="description_item_h4">⚔️ Join the Open Beta and help us shape the ultimate anti-monopoly MU experience! ⚔️</h4>
 
         <p className="description_item_p">
         <b className="item_bold">Why Open Beta?</b> Before the live release, we want to ensure absolute stability and perfect balance under real player conditions. All core features are live, and your feedback during this phase will directly shape the final product.
+        </p>
+        <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
+        <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>💎 Progressive Reset Rewards:</b> Resets and Grand Resets do more than just balance the top tier and give newcomers a fighting chance. They are now a vital part of your gear progression, rewarding your efforts with powerful <span className="item_bold" style={{ color: '#03ff4a' }}>Excellent weapons</span> featuring top-tier options to accelerate your journey.
         </p>
 
         <p className="description_item_p">
@@ -172,11 +218,11 @@ const navigate = useNavigate()
         <b className="item_bold">A message from the developer:</b> MU-Void is a strictly non-commercial project built out of pure passion to fix the flaws of modern MU servers. As the sole developer, I provide the core infrastructure, but the actual life and growth of the server depend entirely on you. Activity is the main engine here. If you enjoy the concept, please invite your friends, bring your guilds, vote for us, and spread the word. Together, we can build a thriving, long-lasting community!
         </p>
 
-        <h4 className="description_item_h4" style={{ marginTop: '15px', color: '#ffb703', fontStyle: 'italic', textAlign: 'center' }}>
+        <h4 className="description_item_h4" style={{ marginTop: '1em', color: '#ffb703', fontStyle: 'italic', textAlign: 'center' }}>
         ✨ I built the foundation. Now, the community holds the power. You can join, help us find bugs, and build the comfortable gaming environment you've always wanted. Or, you can pass by and continue hopping from server to server in search of a "perfect place" that doesn't exist. The choice is yours. ✨
         </h4>
     </div>
-    </HomeContent>
+    </HomeContent> */}
 
 
 

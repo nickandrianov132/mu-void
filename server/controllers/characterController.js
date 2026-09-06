@@ -2,6 +2,9 @@ const { poolPromise } = require('../db')
 const sql = require('mssql')
 const jwt = require('jsonwebtoken');
 const allowed380Items = require('../utiles/allowed380Items');
+const fs = require('fs');
+const path = require('path');
+const itemsList = require('../utiles/item_list.json');
 // const jsonBuffer = require('../utiles/bufferConstants')
 // const fs = require('fs')
 
@@ -25,6 +28,70 @@ function getExcOptions(excByte) {
         sixthOpt: !!(excByte & 32),
     }
 }
+// async function savePreparedItemsToJSON(charName) {
+//     try {
+//         const pool = await poolPromise
+//         const request = pool.request()
+//         const result = await request
+//             .input('name', sql.VarChar(10), charName)
+//             .query('SELECT Inventory FROM dbo.Character WHERE Name = @name');
+
+//         if (!result.recordset.length) {
+//             console.log("Персонаж не найден");
+//             return;
+//         }
+
+//         const itemBuf = result.recordset[0].Inventory; 
+//         const ITEM_SIZE = 32; // Размер предмета 32 байта для вашей сборки
+//         const rewardTemplates = [];
+
+//         // Начинаем с 384 байта, чтобы пропустить 12 слотов надетой экипировки
+//         for (let i = 384; i < itemBuf.length; i += ITEM_SIZE) {
+//             const singleItemBuf = itemBuf.slice(i, i + ITEM_SIZE);
+            
+//             // Защита от выхода за пределы буфера инвентаря
+//             if (singleItemBuf.length < ITEM_SIZE) {
+//                 continue; 
+//             }
+
+//             // ОГРАНИЧЕНИЕ: Если первые байты равны 0xFF, то слот пустой — пропускаем его
+//             if (singleItemBuf[0] === 0xFF && singleItemBuf[1] === 0xFF) {
+//                 continue; 
+//             }
+
+//             const fullHex = singleItemBuf.toString('hex').toUpperCase();
+//             const decoded = decodeIGCNItem(singleItemBuf); 
+
+//             // Считаем индекс слота относительно начала сумки
+//             const relativeSlotIndex = (i - 384) / ITEM_SIZE;
+
+//             // Обнуляем серийник (начиная с 16-го байта, то есть с 32-го hex-символа на длину 8 символов)
+//             const hexTemplate = fullHex.substring(0, 32) + "00000000" + fullHex.substring(40);
+
+//             rewardTemplates.push({
+//                 name: itemsList[`${decoded.cat}_${decoded.id}`].Name,
+//                 cat: decoded.cat,
+//                 id: decoded.id,
+//                 fullId: decoded.fullId,
+//                 level: decoded.level,
+//                 hexTemplate: hexTemplate
+//             });
+//         }
+
+//         const outputPath = path.join(__dirname, '../reward_templates_res.json');
+//         fs.writeFileSync(outputPath, JSON.stringify(rewardTemplates, null, 4), 'utf-8');
+        
+//         console.log(`\n🎉 Успех! Экспортировано РЕАЛЬНЫХ предметов из сумки: ${rewardTemplates.length}`);
+//         console.log(`💾 Файл сохранен в: ${outputPath}\n`);
+
+//     } catch (err) {
+//         console.error("Произошла ошибка при экспорте:", err);
+//     }
+// }
+
+// // Запустите функцию, передав имя персонажа, на которого вы надели/положили призовые шмотки
+// savePreparedItemsToJSON('Weapon');
+
 function getIsExc(excOptObj) {
     if ( excOptObj.firstOpt || excOptObj.secondOpt || excOptObj.thirdOpt || excOptObj.fourthOpt || excOptObj.fifthOpt || excOptObj.sixthOpt) {
         return true
@@ -57,11 +124,33 @@ function parseInventory(rawData) {
     }
     return inventory;
 }
+function parseInventoryItems(rawData) {
+    if (!rawData) return [];
+    const buffer = Buffer.isBuffer(rawData) ? rawData : Buffer.from(rawData.replace('0x', ''), 'hex');
+    const inventory = [];
+
+    for (let i = 0; i < buffer.length / ITEM_SIZE; i++) {
+        const item = buffer.subarray(i * ITEM_SIZE, (i + 1) * ITEM_SIZE);
+        // если первый байт 0xFF, значит слот пуст
+        // if (item[0] === 0xFF) continue;
+        if (item[0] === 0xFF && i < 12) {
+            inventory.push({
+            slot: i,
+            cat: null
+        })
+        }
+        else if (i > 12) {
+            inventory.push({
+                slot: i,
+                ...decodeIGCNItem(item)
+            })
+
+        }
+    }
+    return inventory;
+}
 function decodeIGCNItem(buf) {
     // Базовый ID и Группа (Category)
-    // console.log([...buf.subarray(0,16)]);
-    // const itemIndex = buf[0];
-    // const itemCategory = buf[9] >> 4;
     const itemCategory = (buf[9] >> 4) & 0x0F;
     let itemIndex = buf[0];
     let hotByte = buf;
@@ -78,10 +167,9 @@ function decodeIGCNItem(buf) {
     const hasLuck = !!(levelByte & 4);
     // Excellent опции (Байт 7)
     const excOption = buf[7];
-
-
     // Серийный номер (Serial) - для удаления/перемещения/проверки итема важно для аукциона!
-    const serial = buf.readUInt32LE(16);
+    const serial = buf.readUInt32LE(16)
+    // const serial = buf.readUInt32LE(16);
     // Socket / Elementsl статы (начинаются с 11 байта в S9)
     const sockets = [buf[11], buf[12], buf[13], buf[14], buf[15]];
     // Ancient 
@@ -90,18 +178,6 @@ function decodeIGCNItem(buf) {
     const isAncient = ancientValue > 0;
     const byte1 = buf[1];
     const byte7 = buf[7];
-    // console.log(`Item Index: ${itemIndex}, Category: ${itemCategory}, FullID: ${fullId}, ancientValue: ${ancientValue}, serial: ${serialTest}`);
-    // console.log([...buf.subarray(0,16)]);
-    // 380lvl Options (Pink Opt)
-    // const is380pvpOpt = (buf[10] & 0x10) > 0; 
-    // const is380pvpOpt = ((buf[8] & 0x08) > 0) || ((buf[9] && 0x10) > 0) || ((buf[10] & 0x10) > 0); 
-    // let is380pvpOpt = false;
-    // if (((buf[9] & 0x10) > 0) || ((buf[9] && 0x10) > 0)) {
-    //     is380pvpOpt = true;
-    // }
-    // else if (((buf[8] & 0x08) > 0) && ((buf[9] & 0x20) > 0)) {
-    //     is380pvpOpt = true;
-    // }
     let is380pvpOpt = false;
     const canHave380 = allowed380Items.some(x => x.cat === itemCategory && x.index === itemIndex);
     if (canHave380) {
@@ -111,31 +187,13 @@ function decodeIGCNItem(buf) {
         if (hasAnyPvpBit) {
             is380pvpOpt = true;
         }
-        // if (buf[8] !== 0xff && buf[9] !== 0xff) {
-        //     const checkByte8 = (buf[8] & 0x10) > 0 || (buf[8] & 0x08) > 0 || (buf[8] & 0x04) > 0 || (buf[8] & 0x02) > 0;
-        //     const checkByte9 = (buf[9] & 0x10) > 0 || (buf[9] & 0x20) > 0;
-        //     const checkByte10 = (buf[10] & 0x10) > 0;
-        //     if (checkByte8 || checkByte9 || checkByte10) {
-        //         is380pvpOpt = true
-        //     }
-        // }
-        // if (((buf[9] & 0x10) > 0) || ((buf[10] & 0x10) > 0)) {
-        //     is380pvpOpt = true;
-        // }
-        // else if ((buf[8] & 0x08) > 0 && (buf[9] & 0x20) > 0) {
-        //     is380pvpOpt = true;
-        // }
     }
-    
     // harmony options (старшие 4 бита - ID опции, младшие 4 бита - Level опции )
     const harmonyByte = buf[10]; // 11-й байт
     const hasHarmony =  harmonyByte !== 0 && harmonyByte !== 255;
     const harmonyType = hasHarmony ? (harmonyByte & 0xF0) >> 4 : 0;  // ID опции
     const harmonyLevel = hasHarmony ? (harmonyByte & 0x0F) : 0;     // уровень опции
     const harmonyTypeGroup = getHarmonyTypeGroup(itemCategory);
-    // console.log(`Testing Byte 16: ${harmonyByte}, Type: ${harmonyType}, Level: ${harmonyLevel}`);
-
-
     // add Options
     let addOption = (byte1 & 3); 
     if (byte7 & 64) {
@@ -182,6 +240,7 @@ function decodeIGCNItem(buf) {
 }
 
 
+
 class CharacterController {
     async getOneCharacter(req, res) {
         const {id} = req.params
@@ -198,7 +257,7 @@ class CharacterController {
     }
     async getCharInventory(req, res) {
         const {id} = req.params
-
+        // console.log(` params: ${req.params}`);
         const pool = await poolPromise
         const request = pool.request()
         const data = await request
@@ -206,6 +265,7 @@ class CharacterController {
         // .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.name = @name')
         // .query('SELECT Name as cName, Class as cClass, cLevel, mLevel, RESETS as cReset, GRANDRESET as cGrandreset, Strength as cStr, Dexterity as cAgi, Vitality as cVit, Energy as cEne, Leadership as cCmd, MapNumber as mapNumber, MapPosX as mapPosX, MapPosY as mapPosY FROM dbo.Character WHERE Name = @name')
         .query('SELECT Inventory as cInvent FROM dbo.Character WHERE Name = @name')
+        // console.log(data.recordset[0].cInvent);
         const itemBuf = data.recordset[0].cInvent;
         const inv = parseInventory(itemBuf);
         // console.log(inv);

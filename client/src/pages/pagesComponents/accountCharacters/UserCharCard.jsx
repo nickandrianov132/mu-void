@@ -5,7 +5,7 @@ import SpinnerSmall from '../../../components/SpinnerSmall'
 
 
 const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, cStr, cAgi, cVit, cEne, cCmd, cGrandReset, mapNumber, cZen}) => {
-    const [fetchAccountCharReset, { isLoading, isSuccess, isError}] = useFetchAccountCharResetMutation()
+    const [fetchAccountCharReset, {data, isLoading, isSuccess, isError, error}] = useFetchAccountCharResetMutation()
 
     function setImg(){
         let img = ''
@@ -119,33 +119,39 @@ const UserCharCard = ({ cStatus, cGuild, cName, cClass, cLevel, mLevel, cReset, 
             </div>
             </div> 
             <div className='user_char_btn_wrapper'>
+                <div className='user_char_res_warning'>
+                    {isSuccess && <span className='res_tip_span_success'>{data.message}</span>}
+                    {isError && <span className='res_tip_span_error'>{error.data.error}</span>}
                 {!validateCharReset(cStatus, cLevel, cReset, cGrandReset, cZen) && 
-                    <div className='user_char_res_warning'>
+                    // <div className='user_char_res_warning'>
+                    <>
                         {cReset >= 20 ?
                             <p className='res_warn_p_max_res'><em>🔹</em> You have reached maximum Reset <em>🎉🎉</em></p>
                         :
                         <>
                             {!checkResLvl(cLevel, cReset, cGrandReset) &&
-                                <div className='user_char_res_warning'>{tipResLvl(cLevel, cReset, cGrandReset)}</div>
+                                <span className='res_tip_span_error'>{tipResLvl(cLevel, cReset, cGrandReset)}</span>
                             }
                             {!checkZenRes(cZen, cReset, cGrandReset) &&
-                                <div className='user_char_res_warning'>
+                                <span className='res_tip_span_error'>
                                     {tipZenRes(cZen, cReset, cGrandReset) &&
                                         <>
                                             ⛔ Required <em className='em_zen'>{pretyZen(tipZenRes(cZen, cReset, cGrandReset))} Zen</em> more!
                                         </>
                                     }
-                                </div>
+                                </span>
                             }
                             {cStatus === 1 &&
                             <div className='user_char_res_warning'>⚠️Character should be offline!</div>
                             }
                         </>
                         }
-                        
-                    </div>
+                       </> 
+                    // </div>
                     
                 }
+                </div>
+
                     
                 <div className='user_char_btn_div'>
                     {!validateCharReset(cStatus, cLevel, cReset, cGrandReset, cZen) ?

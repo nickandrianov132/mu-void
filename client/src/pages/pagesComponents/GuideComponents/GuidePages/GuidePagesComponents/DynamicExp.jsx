@@ -20,27 +20,27 @@ const DynamicExp = () => {
                         </tr> */}
                         <tr className='tr_1st'>
                             <td>1st</td>
-                            <td>100x</td>
+                            <td>+100x</td>
                         </tr>
                         <tr className='tr_2nd'>
                             <td>2nd</td>
-                            <td>75x</td>
+                            <td>+80x</td>
                         </tr>
                         <tr className='tr_3rd'>
                             <td>3rd</td>
-                            <td>70x</td>
+                            <td>+60x</td>
                         </tr>
                         <tr className='tr_4th'>
                             <td>4th</td>
-                            <td>65x</td>
+                            <td>+40x</td>
                         </tr>
                         <tr className='tr_5th'>
                             <td>5th</td>
-                            <td>60x</td>
+                            <td>+20x</td>
                         </tr>
                         <tr className='tr_6th'>
                             <td>6th+</td>
-                            <td>50x</td>
+                            <td>No bonuses</td>
                         </tr>
                         {/* <tr className='tr_7th'>
                             <td>7th</td>

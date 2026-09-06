@@ -1,3 +1,4 @@
+import Images from "../../../../assets/Images";
 import DynamicExp from "./GuidePagesComponents/DynamicExp";
 import GuideTitle from "./GuidePagesComponents/GuideTitle";
 
@@ -26,6 +27,21 @@ const ResetSystem = () => {
                     </div>
                 </div>
                 <span>6<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">10,000,000 zen</em> </span>
+                <div className="res_reward_container">
+                    <h3 className="reward_header">10th Reset Rewards:</h3>
+                    <div className="img_container">
+                    <img className="reward_img" src={Images.res_reward} alt="reset reward image"/>
+
+                    </div>
+                    <div className="reward_opt_wrapper">
+                        <p className="reward_opt_span">All items enhanced to +11</p>
+                        <p className="reward_opt_span"> Additional Dmg +16</p>
+                        <p className="reward_opt_span">Skill</p>
+                        <p className="reward_opt_span_exc">Life received for hunting monsters +Life/8</p>
+                        <p className="reward_opt_span_exc">Mana received for hunting monsters +Mana/8</p>
+                        <p className="reward_opt_span_exc">Chance of doing Excellent damage +10%</p>
+                    </div>
+                </div>
                 <p className="reset_remark_p">*<i className="reset_remark_i">After <b>Grand Reset</b> all resets level requirements is 400lvl and <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">15,000,000 zen</em>❗</i></p>
                 <p className="reset_p2">
                     🔹🔸 To make <em className="reset_em_res">Reset</em> you have to log-in on website ➯ <b>User Panel</b> ➯ <b>click on</b> 👉 <em className="reset_em_btn">Reset</em>

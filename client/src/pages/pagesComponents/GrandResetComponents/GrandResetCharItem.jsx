@@ -5,7 +5,7 @@ import SpinnerSmall from '../../../components/SpinnerSmall'
 
 
 const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, cOnline}) => {
-    const [fetchAccountCharGrandReset, { isLoading, isSuccess, isError}] = useFetchAccountCharGrandresetMutation()
+    const [fetchAccountCharGrandReset, { data, isLoading, isSuccess, isError, error }] = useFetchAccountCharGrandresetMutation()
 
     async function handlerGrandReset(e) {
         e.preventDefault()
@@ -14,7 +14,14 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
     }
     const name = 'alex'
     const greeting = `Hello - ${name}`
+    // if(isError) {
+    //     console.log(error.data.error);
 
+    // }
+    if(isSuccess) {
+        console.log(data);
+
+    }
     return (
         <div className='grand_reset_item_container'>
             <div className='grand_reset_item_head'>
@@ -53,6 +60,8 @@ const GrandResetCharItem = ({cName, cClass, cLevel, cReset, cGrandReset, cZen, c
                 {!grCheckOnline(cOnline) &&
                     <span className="grand_reset_tip">🔸 Your character should be offline!</span>
                 }
+                {isError && <span className="grand_reset_tip">Error: {error.data.error}</span>}
+                {isSuccess && <span className="grand_reset_tip_success">🎉Success: {data.message}🎁</span>}
             </div>
         </div>
     );

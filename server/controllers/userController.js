@@ -4,6 +4,9 @@ const ApiError = require('../error/ApiError')
 const jwt = require('jsonwebtoken')
 const allowed380Items = require('../utiles/allowed380Items');
 const itemsList = require('../utiles/item_list.json');
+const getClassReward = require('../utiles/functions');
+const path = require('path');
+const fs = require('fs');
 // const bcrypt = require('bcrypt')
 // var md5 = require('md5');
 
@@ -198,6 +201,52 @@ function decodeIGCNItem(buf) {
         itemCategory: getCategoryId(itemCategory, itemIndex)
     }
 }
+
+async function createRewardItemByName(itemName) {
+    try {
+        // 1. Загружаем ваш откорректированный JSON-склад
+        const jsonPath = path.join(__dirname, '../reward_templates.json');
+        const fileData = fs.readFileSync(jsonPath, 'utf-8');
+        const templates = JSON.parse(fileData);
+
+        // 2. Ищем предмет по имени
+        const itemTemplate = templates.find(item => item.name === itemName);
+        if (!itemTemplate) {
+            console.error(`[Ошибка]: Предмет с именем "${itemName}" не найден в reward_templates.json`);
+            return null;
+        }
+
+        // 3. Вызываем процедуру WZ_GetItemSerial для получения уникального серийника
+        const pool = await poolPromise
+        const request = pool.request()
+        const serialResult = await request.query('EXEC dbo.WZ_GetItemSerial');
+        
+        if (!serialResult.recordset.length) {
+            throw new Error("Serial was not created on DB");
+        }
+
+        // Забираем числовое значение серийника (используя ваш проверенный метод Object.values)
+        const rawSerial = Object.values(serialResult.recordset[0])[0];
+        const newSerial = Number(rawSerial);
+
+        console.log(`[Успех]: Сгенерирован серийный номер ${newSerial} для предмета ${itemName}`);
+
+        // 4. Собираем финальный 32-байтный буфер предмета
+        // Убираем '0x', если вдруг он есть в начале строки шаблона
+        const cleanHex = itemTemplate.hexTemplate.replace(/^0x/i, '');
+        const itemBuffer = Buffer.from(cleanHex, 'hex');
+
+        // Вшиваем новый серийный номер (UInt32LE) строго на 16-й байт (как требует S9 сборка)
+        itemBuffer.writeUInt32LE(newSerial, 16);
+        // console.log(decodeIGCNItem(itemBuffer));
+        return itemBuffer;
+
+    } catch (err) {
+        console.error("Ошибка при генерации призового предмета:", err);
+        throw err;
+    }
+}
+// createRewardItemByName('Bone Blade')
 
 function moveItemToMarket(originalBuffer, slotId, expectedSerial) {
     // 1. Проверяем, что запрашиваемый слот входит в разрешенные первые 120 слотов
@@ -494,6 +543,22 @@ async function updateVoteUserTop100Arena(login, site, date) {
 }
 
 class UserController {
+async getNewItemSerial(req, res) {
+    try {
+        // Выполняем процедуру
+        const result = await sql.query`EXEC dbo.WZ_GetItemSerial`;
+        
+        // Процедура возвращает результат в виде селекта.
+        // Название колонки в MS SQL по умолчанию может быть пустым 
+        // или называться по имени переменной, поэтому забираем первое значение из первой строки:
+        const row = result.recordset[0];
+        const newSerial = Object.values(row)[0]; 
+        console.log(`New Serial: ${Number(newSerial)}`);
+        return res.json(Number(newSerial)); // Приводим bigint к обычному числу JS
+    } catch (err) {
+        return next(ApiError.badRequest(err.message));
+    }
+}
 async checkUserOnline(req, res, next) {
     try{
         const pool = await poolPromise
@@ -893,24 +958,276 @@ async checkUserOnline(req, res, next) {
         return res.json(data.recordset[0])
     }
 
-    async makeAccountCharacterReset(req, res) {
-        const {name} = req.body
-        const pool = await poolPromise
-        const request = pool.request()
-        const data = await request
-        .input('cName', sql.VarChar(10), name)
-        .execute('dbo.Reset_system7')
-        return res.json(data.recordset[0].Result)
+    // async makeAccountCharacterReset(req, res) {
+    //     const {name} = req.body
+    //     const pool = await poolPromise
+    //     const request = pool.request()
+    //     const data = await request
+    //     .input('cName', sql.VarChar(10), name)
+    //     .execute('dbo.Reset_system7')
+    //     return res.json(data.recordset[0].Result)
+    // }
+    // async makeAccountCharacterGrandReset(req, res) {
+    //     const {name} = req.body
+    //     const pool = await poolPromise
+    //     const request = pool.request()
+    //     const data = await request
+    //     .input('cName', sql.VarChar(10), name)
+    //     .execute('dbo.GrandReset_system1')
+    //     return res.json(data.recordset[0].Result)
+    // }
+async makeAccountCharacterReset(req, res) {
+    const { name } = req.body;
+    const pool = await poolPromise;
+    
+    // Initialize transaction for data safety
+    const transaction = new sql.Transaction(pool);
+
+    try {
+        await transaction.begin();
+        const request = new sql.Request(transaction);
+
+        // -----------------------------------------------------------------
+        // STEP 1: Fetch character basic data including gReset field
+        // -----------------------------------------------------------------
+        const statusResult = await request
+            .input('cName', sql.VarChar(10), name)
+            .query(`
+                SELECT c.online, ch.Inventory, c.class as cClass, c.reset as cReset, c.gReset
+                FROM dbo.vwCharacters c
+                JOIN dbo.Character ch ON c.name = ch.Name
+                WHERE c.name = @cName
+            `);
+
+        if (!statusResult.recordset.length) {
+            await transaction.rollback();
+            return res.status(400).json({ error: "Character or account not found." });
+        }
+
+        const { online, Inventory, cClass, cReset, gReset } = statusResult.recordset[0];
+        console.log(`gReset: ${gReset}`);
+        // Check if the player is eligible for the 10th reset reward
+        // Enforce strict condition: current resets must be 9 AND grand resets must be 0
+        const is10thReset = (cReset === 9 && gReset === 0);
+
+        // -----------------------------------------------------------------
+        // STEP 2: Online Status Check (Enforced for ALL resets)
+        // -----------------------------------------------------------------
+        if (online === 1) {
+            await transaction.rollback();
+            return res.status(400).json({ error: "Character is currently online! Please log out first." });
+        }
+
+        let prizeBuffer = null;
+        let prizeItemName = null;
+
+        // -----------------------------------------------------------------
+        // STEP 3: Handle specific logic for the 10th Reset Reward
+        // -----------------------------------------------------------------
+        if (is10thReset) {
+            // Check for fully empty main inventory (bag)
+            // Equipment is 384 bytes, main bag is the next 2048 bytes
+            const mainInventoryBuf = Inventory.slice(384, 384 + 2048);
+            const isInventoryEmpty = mainInventoryBuf.every(byte => byte === 0xFF);
+
+            if (!isInventoryEmpty) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Inventory must be empty to claim the 10th reset reward!" });
+            }
+
+            // Determine item name via your class reward mapper
+            prizeItemName = getClassReward(cReset, gReset, cClass);
+            console.log(`itemPrize: ${prizeItemName}`);
+            if (!prizeItemName) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Reward item not found for your character class at reset 10." });
+            }
+
+            console.log(`[Reward Reset]: Character "${name}" (Class ID: ${cClass}, gReset: ${gReset}) is eligible for: "${prizeItemName}"`);
+
+            // Generate the 32-byte item buffer with a fresh DB serial inside the active transaction
+            prizeBuffer = await createRewardItemByName(prizeItemName);
+
+            if (!prizeBuffer) {
+                await transaction.rollback();
+                return res.status(500).json({ error: "Failed to generate reward item buffer from templates." });
+            }
+        }
+
+        // -----------------------------------------------------------------
+        // STEP 4: Execute game procedure for standard reset system
+        // -----------------------------------------------------------------
+        const procResult = await request.execute('dbo.Reset_system7');
+        
+        if (!procResult.recordset.length) {
+            await transaction.rollback();
+            return res.status(400).json({ error: "Game reset procedure did not return a response." });
+        }
+
+        const systemResult = procResult.recordset.Result;
+
+        // Validate the core game procedure result status
+        if (systemResult === 0 || systemResult === "error") {
+            await transaction.rollback();
+            return res.status(400).json({ error: "Game requirements for resetting are not met (Zen, Level, etc.)." });
+        }
+
+        // -----------------------------------------------------------------
+        // STEP 5: Inject reward into inventory buffer (Only on 10th reset)
+        // -----------------------------------------------------------------
+        if (is10thReset && prizeBuffer) {
+            const updatedInventory = Buffer.from(Inventory);
+            
+            // Copy the 32-byte item to the very first slot of the bag (offset 384)
+            prizeBuffer.copy(updatedInventory, 384);
+
+            // Update the binary inventory array in the database
+            await request
+                .input('updatedInv', sql.VarBinary, updatedInventory)
+                .query('UPDATE dbo.Character SET Inventory = @updatedInv WHERE Name = @cName');
+        }
+
+        // Commit transaction if all validations passed successfully
+        await transaction.commit();
+
+        const successMessage = is10thReset 
+            ? `You received your reset reward: "${prizeItemName}"`
+            : `Reset completed successfully!`;
+
+        return res.json({ 
+            success: true, 
+            message: successMessage, 
+            result: systemResult 
+        });
+
+    } catch (err) {
+        // Safe rollback on any unhandled runtime exceptions
+        if (transaction.isOpen) {
+            await transaction.rollback();
+        }
+        console.error("Critical error in makeAccountCharacterReset method:", err);
+        return res.status(500).json({ error: "Internal server error." });
     }
+}
+
+
     async makeAccountCharacterGrandReset(req, res) {
-        const {name} = req.body
-        const pool = await poolPromise
-        const request = pool.request()
-        const data = await request
-        .input('cName', sql.VarChar(10), name)
-        .execute('dbo.GrandReset_system1')
-        return res.json(data.recordset[0].Result)
+        const { name } = req.body;
+        const pool = await poolPromise;
+        
+        // Инициализируем транзакцию для безопасности данных
+        const transaction = new sql.Transaction(pool);
+
+        try {
+            await transaction.begin();
+            const request = new sql.Request(transaction);
+
+            // -----------------------------------------------------------------
+            // ШАГ 1: Проверка статуса персонажа, инвентаря и его КЛАССА
+            // -----------------------------------------------------------------
+            // Добавляем выборку поля c.Class из таблицы dbo.Character
+            const statusResult = await request
+                .input('cName', sql.VarChar(10), name)
+                .query(`
+                    SELECT ms.ConnectStat, c.Inventory, c.Class 
+                    FROM dbo.Character c
+                    JOIN dbo.MEMB_STAT ms ON c.AccountID = ms.memb___id
+                    WHERE c.Name = @cName
+                `);
+
+            if (!statusResult.recordset.length) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Account or Character not found!" });
+            }
+
+            // Извлекаем Class персонажа из результата запроса
+            const { ConnectStat, Inventory, Class: characterClassId } = statusResult.recordset[0];
+
+            // Проверка: Если ConnectStat === 1, значит игрок в игре
+            if (ConnectStat === 1) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Please log-out from the game first!" });
+            }
+
+            // -----------------------------------------------------------------
+            // ШАГ 2: Проверка на полностью пустой инвентарь (сумку)
+            // -----------------------------------------------------------------
+            // Экипировка занимает первые 384 байта (12 слотов * 32 байта).
+            // Чистая сумка (64 слота * 32 байта = 2048 байт) идет следом.
+            const mainInventoryBuf = Inventory.slice(384, 384 + 2048);
+
+            // Проверяем, что в сумке нет ни одной вещи (все байты равны 0xFF)
+            const isInventoryEmpty = mainInventoryBuf.every(byte => byte === 0xFF);
+
+            if (!isInventoryEmpty) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Your inventory is not empty, please remove all items from your character inventory!" });
+            }
+
+            // -----------------------------------------------------------------
+            // ШАГ 3: Динамическое определение награды по классу персонажа
+            // -----------------------------------------------------------------
+            // Вызываем вашу функцию маппера, передавая туда ID класса из БД
+            const prizeItemName = getClassReward(characterClassId); 
+            
+            if (!prizeItemName) {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Reward was not found for your character class!" });
+            }
+
+            console.log(`[Класс персонажа]: ${characterClassId}. Назначена награда: ${prizeItemName}`);
+
+            // Генерация призовой вещи на основе имени из маппера
+            const prizeBuffer = await createRewardItemByName(prizeItemName);
+            
+            if (!prizeBuffer) {
+                await transaction.rollback();
+                return res.status(500).json({ error: "Reward generation error!" });
+            }
+
+            // -----------------------------------------------------------------
+            // ШАГ 4: Начисление Гранд Ресета через вашу Хранимую Процедуру
+            // -----------------------------------------------------------------
+            const procResult = await request.execute('dbo.GrandReset_system1');
+            const systemResult = procResult.recordset[0].Result;
+
+            // Если процедура игры вернула ошибку, делаем откат
+            if (systemResult === 0 || systemResult === "error") {
+                await transaction.rollback();
+                return res.status(400).json({ error: "Requirements for Grand Reset within the game have not been met!" });
+            }
+
+            // -----------------------------------------------------------------
+            // ШАГ 5: Вшивание награды в инвентарь персонажа
+            // -----------------------------------------------------------------
+            const updatedInventory = Buffer.from(Inventory);
+            
+            // Копируем сгенерированную вещь в самый первый слот сумки (смещение 384)
+            prizeBuffer.copy(updatedInventory, 384);
+
+            // Записываем обновленный бинарник инвентаря обратно в базу данных
+            await request
+                .input('updatedInv', sql.VarBinary, updatedInventory)
+                .query('UPDATE dbo.Character SET Inventory = @updatedInv WHERE Name = @cName');
+
+            // Все шаги успешны — фиксируем транзакцию
+            await transaction.commit();
+
+            return res.json({ 
+                success: true, 
+                message: `Grand Reset successful! "${prizeItemName}" added to inventory`, 
+                result: systemResult 
+            });
+
+        } catch (err) {
+            if (transaction.isOpen) {
+                await transaction.rollback();
+            }
+            console.error("Ошибка при выполнении Гранд Ресета персонажа:", err);
+            return res.status(500).json({ error: "Internal server error!." });
+        }
     }
+
     async buyVip(req, res) {
         const {name, days, type} = req.body
         const pool = await poolPromise
