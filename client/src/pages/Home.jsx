@@ -149,16 +149,16 @@ const navigate = useNavigate()
         <p className="description_item_p" style={{ border: '0.1em dashed #ffb703', padding: '0.7em', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
         <b className="item_bold" style={{ fontSize: '1.15em', color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ fontSize: '1.05em', color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
         </p>
+        <p className="description_item_p">❗<span className="item_bold" style={{fontSize: '1.1em', color: '#ffd744', fontWeight: '600' }}>During OBT price for Reset & Grand Reset is 1kk Zen!</span>❗</p>
 
         <h4 className="description_item_h4">⚔️ Join the Open Beta and help us shape the ultimate anti-monopoly MU experience! ⚔️</h4>
-
         <p className="description_item_p">
         <b className="item_bold">Why Beta Relaunch?</b> We are testing everything on ultra-fast x5000 OBT rates so you can easily try all builds before the official x250 Live Launch! We took your feedback seriously!<br/> We have completely reworked the server into a unique <span className="item_bold" style={{ color: '#ff5444', fontWeight: '600' }}>**Dynamic x250 Classic-Style Concept**</span> built on the smooth Season 9 engine, but with critical gameplay re-engineering.
         </p>
 
         <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
         <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>👑 Progressive Reset Rewards & Master Tree Revolution:</b> Regular Master Level grinding is **DISABLED**. <span className="item_bold" style={{ color: '#ff704d' }}>Grand Resets are now the **ONLY** way to get Master Points (+50 per GR)! </span> 
-        <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span> <a className='link_guide' href='https://www.mu-void.com/guide/resets_info' target='blank'>👉Reset reward</a>.<br/>  <b>Reach 20 Resets (Grand Reset)</b> to claim a <span className="item_bold" style={{ color: '#f674ff', fontWeight: '600' }}>Excellent TOP Tier-380 PvP Weapon +11.<a className='link_guide' href='https://www.mu-void.com/guide/grand_resets_info' target='blank'>👉GR reward</a> </span><br/> <span className="item_bold" style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
+        <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span> <br/><a className='link_guide' href='https://www.mu-void.com/guide/resets_info' target='blank'>👉Reset reward</a>.<br/>  <b>Reach 20 Resets (Grand Reset)</b> to claim a <span className="item_bold" style={{ color: '#f674ff', fontWeight: '600' }}>Excellent TOP Tier-380 PvP Weapon +11.<br/><a className='link_guide' href='https://www.mu-void.com/guide/grand_resets_info' target='blank'>👉GR reward</a> </span><br/> <span className="item_bold" style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
         </p>
 
         <p className="description_item_p">

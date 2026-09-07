@@ -10542,6 +10542,11 @@ body {
   border-color: #14ff1c;
 }
 
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 1200px) {
   body {
     font-size: 14px;
@@ -10551,15 +10556,13 @@ body {
   .player_container {
     display: none;
   }
+  body {
+    font-size: 12px;
+  }
 }
 @media print {
   .player_container {
     display: none;
-  }
-}
-@media screen and (min-width: 980px) and (max-width: 1199) {
-  body {
-    font-size: 12px;
   }
 }
 @media screen and (max-width: 979px) {
@@ -10582,6 +10585,16 @@ body {
     font-size: 8px;
   }
 }
+@media print and (max-width: 660px) {
+  body {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 660px) {
+  body {
+    font-size: 7px;
+  }
+}
 @media screen and (max-width: 590px) {
   .left_sidebar_container {
     width: 16.6em;
@@ -10594,6 +10607,14 @@ body {
   }
   body {
     font-size: 5px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .right_sidebar_container {
+    width: 16.6em;
+  }
+  body {
+    font-size: 4px;
   }
 }
 @media screen and (max-width: 380px) {
