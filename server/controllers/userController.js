@@ -1129,10 +1129,10 @@ async makeAccountCharacterReset(req, res) {
             const statusResult = await request
                 .input('cName', sql.VarChar(10), name)
                 .query(`
-                    SELECT ms.ConnectStat, c.Inventory, c.Class 
-                    FROM dbo.Character c
-                    JOIN dbo.MEMB_STAT ms ON c.AccountID = ms.memb___id
-                    WHERE c.Name = @cName
+                    SELECT c.online, ch.Inventory, c.class as cClass, c.reset as cReset, c.gReset
+                    FROM dbo.vwCharacters c
+                    JOIN dbo.Character ch ON c.name = ch.Name
+                    WHERE c.name = @cName
                 `);
 
             if (!statusResult.recordset.length) {
@@ -1141,10 +1141,10 @@ async makeAccountCharacterReset(req, res) {
             }
 
             // Извлекаем Class персонажа из результата запроса
-            const { ConnectStat, Inventory, Class: characterClassId } = statusResult.recordset[0];
+            const { online, Inventory, cClass, cReset, gReset } = statusResult.recordset[0];
 
             // Проверка: Если ConnectStat === 1, значит игрок в игре
-            if (ConnectStat === 1) {
+            if (online === 1) {
                 await transaction.rollback();
                 return res.status(400).json({ error: "Please log-out from the game first!" });
             }
@@ -1168,14 +1168,14 @@ async makeAccountCharacterReset(req, res) {
             // ШАГ 3: Динамическое определение награды по классу персонажа
             // -----------------------------------------------------------------
             // Вызываем вашу функцию маппера, передавая туда ID класса из БД
-            const prizeItemName = getClassReward(characterClassId); 
+            const prizeItemName = getClassReward(cReset, gReset, cClass); 
             
             if (!prizeItemName) {
                 await transaction.rollback();
                 return res.status(400).json({ error: "Reward was not found for your character class!" });
             }
 
-            console.log(`[Класс персонажа]: ${characterClassId}. Назначена награда: ${prizeItemName}`);
+            console.log(`[Character class]: ${cClass}. Reward is: ${prizeItemName}`);
 
             // Генерация призовой вещи на основе имени из маппера
             const prizeBuffer = await createRewardItemByName(prizeItemName);
@@ -1190,6 +1190,7 @@ async makeAccountCharacterReset(req, res) {
             // -----------------------------------------------------------------
             const procResult = await request.execute('dbo.GrandReset_system1');
             const systemResult = procResult.recordset[0].Result;
+            console.log(systemResult);
 
             // Если процедура игры вернула ошибку, делаем откат
             if (systemResult === 0 || systemResult === "error") {

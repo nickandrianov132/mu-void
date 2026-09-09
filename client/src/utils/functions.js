@@ -309,7 +309,7 @@ export function grCheck3rdProff(charClass) {
 }
 
 export function grCheckZen(zen) {
-    let grZenReq = 2000000;
+    let grZenReq = 1000000;
     if(zen >= grZenReq) {
         return true;
     } else {

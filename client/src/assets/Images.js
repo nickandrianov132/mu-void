@@ -956,6 +956,7 @@ const Images = {
     "12_46": new URL('./items/12_46.png', import.meta.url).href,   
     "12_47": new URL('./items/12_47.png', import.meta.url).href,   
     "12_49": new URL('./items/12_49.gif', import.meta.url).href,   
+    "12_50": new URL('./items/12_50.png', import.meta.url).href,   
     "12_48": new URL('./items/12_48.png', import.meta.url).href,   
     "12_60": new URL('./items/12_60.png', import.meta.url).href,   
     "12_61": new URL('./items/12_61.png', import.meta.url).href,   
