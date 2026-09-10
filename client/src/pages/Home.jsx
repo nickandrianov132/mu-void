@@ -184,13 +184,12 @@ const navigate = useNavigate()
         </p>
     </div>
 </HomeContent>
-<HomeContent
+{/* <HomeContent
     title="Pre-Launching OBT! Launching 11.09.2026 🛠️"
     date="06.09.2026"
     sideImage={Images.obt_1}
     >
     <div className="description_list">
-        {/* OBT TESTER BONUS */}
         <p className="description_item_p" style={{ border: '0.1em dashed #ffb703', padding: '0.7em', borderRadius: '4px', backgroundColor: 'rgba(255, 183, 3, 0.1)' }}>
         <b className="item_bold" style={{ fontSize: '1.15em', color: '#ffb703' }}>🎁 Tester Reward:</b> Help us polish the server! All active OBT participants will receive <span className="item_bold" style={{ fontSize: '1.05em', color: '#ffb703' }}>Free Gold VIP for 5 Days upon the official launch</span> as a thank you for your support.
         </p>
@@ -226,7 +225,7 @@ const navigate = useNavigate()
         ✨ I built the foundation. Now, the community holds the power. You can join, help us find bugs, and build the comfortable gaming environment you've always wanted. Or, you can pass by and continue hopping from server to server in search of a "perfect place" that doesn't exist. The choice is yours. ✨
         </h4>
     </div>
-</HomeContent>
+</HomeContent> */}
 
     {/* <HomeContent
     title="MU-Void: Open Beta Launch! 🛠️"
