@@ -1,9 +1,12 @@
 import DungeonImg from "./DungeonImg";
 
-const DungeonMobItem = ({header, img, imgClass, percent1, percent2, percent3, percent4, greenbox, redbox, harmony, silver, gold, bok1, bok2, bok3, bok4, bok5, job, jos, jol, joc, jocr, remark, gp}) => {
+const DungeonMobItem = ({header, timing, img, imgClass, percent1, percent2, percent3, percent4, greenbox, redbox, harmony, silver, gold, bok1, bok2, bok3, bok4, bok5, job, jos, jol, joc, jocr, remark, gp}) => {
     return (
             <div className="dungeon_mob_info">
                 <h5 className="dungeon_mob_title">🎁{header}</h5>
+                {timing && 
+                    <h5 className="dungeon_mob_title">⌚{timing}</h5>
+                }
                 <div className="drop_description_wrapper">
                     <p className="guide_p_description">
                         <b className="description_b">{percent1}</b> -

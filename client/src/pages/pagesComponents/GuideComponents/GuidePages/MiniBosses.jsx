@@ -10,7 +10,7 @@ const MiniBosses = () => {
             <div className="maya_content_container">
                 <MayaContentItem 
                     title="Death Bone:"
-                    remark="Apears 20 Death Bones in random places in Dungeon"
+                    remark="Apears 15 Death Bones in random places in Dungeon"
                     respInfo="Respawn every 1 hour"
                     img={Images.death_bone}
                     dropImg1={Images.death_bone_drop1}

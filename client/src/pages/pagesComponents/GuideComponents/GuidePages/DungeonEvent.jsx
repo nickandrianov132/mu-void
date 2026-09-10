@@ -12,6 +12,7 @@ const DungeonEvent = () => {
                     </div>
                     <DungeonMobItem 
                         header={'Drop from Gold Rabbit :'}
+                        timing={'Respawn 12 Gold Rabbits every 30 min'}
                         gp="20"
                         img={Images.rabbit}
                         imgClass='sealed_box_img_mob'
@@ -26,6 +27,7 @@ const DungeonEvent = () => {
                     />
                     <DungeonMobItem 
                         header={'Drop from Pouch of Blessing :'}
+                        timing={'Respawn 8 Pouch of Blessing every 45 min'}
                         gp="40"
                         img={Images.pounch}
                         imgClass='sealed_box_img_mob'
@@ -46,6 +48,7 @@ const DungeonEvent = () => {
                     />
                     <DungeonMobItem 
                         header={'Drop from Fire Flame Ghost :'}
+                        timing={'Respawn 5 Fire Flame Ghost every 60 min'}
                         gp="60"
                         img={Images.flame}
                         imgClass='sealed_box_img_mob'

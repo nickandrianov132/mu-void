@@ -140,6 +140,51 @@ const navigate = useNavigate()
                 </div>
             </HomeContent> */}
 <HomeContent
+    title="🔥 GRAND OPENING! Launching 11.09.2026 🛠️"
+    date="11.09.2026"
+    sideImage={Images.opening_sept} // Можете заменить на Images.launch_1, если есть картинка релиза
+    >
+    <div className="description_list">
+        {/* LAUNCH TIME & COUNTDOWN BANNER */}
+        <div className="description_item_p" style={{ border: '0.15em solid #ffb703', padding: '1em', borderRadius: '0.3em', backgroundColor: 'rgba(255, 183, 3, 0.05)', textAlign: 'center', margin: '0 0 1em 0' }}>
+            <h3 style={{ margin: '0 0 0.3em 0', color: '#ffb703', fontSize: '1.4em', fontWeight: '700' }}>⚔️ SERVER IS GOING LIVE! ⚔️</h3>
+            <p style={{ margin: '0.2em 0', fontSize: '1.15em' }}>
+                <b className="item_bold" style={{ color: '#fff' }}>Server Time:</b> <span style={{ color: '#43daee', fontWeight: 'bold' }}>17:00</span>
+            </p>
+            <p style={{ margin: '0.2em 0', fontSize: '1.15em' }}>
+                <b className="item_bold" style={{ color: '#fff' }}>Kyiv / Madrid Time:</b> <span style={{ color: '#43daee', fontWeight: 'bold' }}>19:00</span>
+            </p>
+        </div>
+
+        {/* STARTING INFO */}
+        <p className="description_item_p" style={{ textAlign: 'center', fontWeight: '600' }}>
+            ❗<span className="item_bold" style={{ fontSize: '1.1em', color: '#ff5444' }}>The Open Beta is officially closed. All accounts and characters will be wiped for a fair start!</span>❗
+        </p>
+
+        <h4 className="description_item_h4">⚔️ Welcome to the ultimate anti-monopoly MU experience! ⚔️</h4>
+        <p className="description_item_p">
+        <b className="item_bold">What is MU-Void?</b> We have completely engineered a unique <span className="item_bold" style={{ color: '#ff5444', fontWeight: '600' }}>**Dynamic x250 Classic-Style Concept**</span> built on the smooth Season 9 engine, but with critical gameplay re-engineering to prevent unfair monopolies and pay-to-win mechanics.
+        </p>
+
+        <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
+        <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>👑 Progressive Reset Rewards & Master Tree Revolution:</b> Regular Master Level grinding is **DISABLED**. <span className="item_bold" style={{ color: '#ff704d' }}>Grand Resets are now the **ONLY** way to get Master Points (+50 per GR)! </span> 
+        <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span> <br/><a className='link_guide' href='https://www.mu-void.com/guide/resets_info' target='blank'>👉Reset reward</a>.<br/>  <b>Reach 20 Resets (Grand Reset)</b> to claim a <span className="item_bold" style={{ color: '#f674ff', fontWeight: '600' }}>Excellent TOP Tier-380 PvP Weapon +11.<br/><a className='link_guide' href='https://www.mu-void.com/guide/grand_resets_info' target='blank'>👉GR reward</a> </span><br/> <span className="item_bold" style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Anti-Vanshot Combat Balance:</b> To eliminate classic speed bugs and frustrating one-click PvP, every class has a strict <span className="item_bold" style={{ color: '#ff704d' }}>**Attack Speed Cap**</span> from stats. To break the limit, you must progress through weapons — higher tier gear scales massively, boosting your attack speed from +40 up to +170!
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">Phased Ancient Sets System:</b> We have completely overhauled all Ancient sets — there are NO useless sets anymore! To ensure a fair early game, the drop is split into phases: only <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 1 Ancient**</span> sets drop initially, while <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 2 Ancient**</span> sets unlock globally only after the first Grand Reset is made on the server!
+        </p>
+
+        <p className="description_item_p">
+        <b className="item_bold">No Elemental Mechanics:</b> To restore classic tactical PvP, we have completely removed Pentagrams, Errtels, elemental damage, and confusing late-season maps. Enjoy pure, fair character vs character mastery.
+        </p>
+    </div>
+</HomeContent>
+<HomeContent
     title="Pre-Launching OBT! Launching 11.09.2026 🛠️"
     date="06.09.2026"
     sideImage={Images.obt_1}

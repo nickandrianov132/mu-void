@@ -86,6 +86,7 @@ const Images = {
     pcloud2: new URL('./pcloud2.png', import.meta.url).href,    
     limeWire: new URL('./limeWire.png', import.meta.url).href,    
     filebin2: new URL('./filebin2.png', import.meta.url).href,    
+    opening_sept: new URL('./opening_sept.jpg', import.meta.url).href,  
     opening_img: new URL('./opening.jpg', import.meta.url).href,  
     opening1_img: new URL('./opening1.jpg', import.meta.url).href,  
     bg_obt_close: new URL('./bg_obt_close.jpg', import.meta.url).href,  

@@ -1,7 +1,7 @@
 export function validateCharReset(status, lvl, res, gRes, zen) {
     let valid;
-    const zenRes = 1000000;
-    const zenEasyRes = 1000000;
+    const zenRes = 10000000;
+    const zenEasyRes = 5000000;
     if(gRes === 0 && res < 20) {
         if(status === 0 && res === 0 && lvl >= 350 && zen >= zenEasyRes) {
             return valid = true;
@@ -309,7 +309,7 @@ export function grCheck3rdProff(charClass) {
 }
 
 export function grCheckZen(zen) {
-    let grZenReq = 1000000;
+    let grZenReq = 2000000000;
     if(zen >= grZenReq) {
         return true;
     } else {
@@ -434,8 +434,8 @@ export function tipResLvl(lvl, res, grRes) {
 }
 
 export function checkZenRes(zen, res, gRes) {
-    const easyResZen = 1000000
-    const regularResZen = 1000000
+    const easyResZen = 5000000
+    const regularResZen = 10000000
     const nextRes = res + 1
     if(gRes == 0 || gRes == null) {
         if(res == 0 && zen >= easyResZen * nextRes) {
@@ -475,8 +475,8 @@ export function checkZenRes(zen, res, gRes) {
 }
 
 export function tipZenRes(zen, res, gRes) {
-    const easyResZen = 1000000
-    const regularResZen = 1000000
+    const easyResZen = 5000000
+    const regularResZen = 10000000
     const nextRes = res + 1
     let needZen
     if(gRes == 0 || gRes == null) {

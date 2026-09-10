@@ -53,8 +53,8 @@ const Rankings = () => {
                             <th className="th_reset">Reset<sup className="sup_mLevel">GR</sup></th>
                         </tr>
                     </thead>
-                    <tbody className="rankings_tbody">
-                        {characters?.map((char, i) => 
+                    <tbody className="rankings_tbody"> 
+                        {fakeChars?.map((char, i) => 
                             <tr key={char.name} onClick={() => navigate(CHARACTER_CARD_ROUTE + '/' + char.name)}>
                                 <td>{i === 0 ?
                                     <div className="rank_star"><GiStarsStack className="top_star_gold" /> {i + 1}</div>
