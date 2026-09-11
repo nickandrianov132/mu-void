@@ -24,9 +24,9 @@ app.use(errorHandlerMiddleware)
 
 
 
-// setInterval( () => {
-//     fakeCharLvlController.charLevelUp(["NickBK", "bountyDB", "BarbMG", "amazonkaAE", "amazonkaEE", "kakashiMG"])
-// }, 60000)
+setInterval( () => {
+    fakeCharLvlController.charLevelUp(["Arnold", "darkMG", "Warlok", "AntonyDL", "BufferEE"])
+}, 6000)
 // setInterval( () => {
 //     fakeCharLvlController.charLevelUp(["BobbyDK", "MommyEE", "DaddyDW", "BuddyMG", "RobbyDL", "GamerBK", "GamerEE", "GamerRF", "GamerDL", "GamerMG", "Dalton", "Brendon", "Birds", "Jenks", "Rouse", "rebecca", "rodrigo", "dolores", "mario", "bruno"])
 // }, 900000)

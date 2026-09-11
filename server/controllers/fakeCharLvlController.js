@@ -17,7 +17,7 @@ class fakeCharLvlController{
             })
         }
         else {
-            return "No Accounts Voted!"
+            return "No characters found!"
         }
     }
 

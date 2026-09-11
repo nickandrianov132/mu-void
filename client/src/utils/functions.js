@@ -246,7 +246,7 @@ export function checkCharClass(id) {
         charClass = 'Magic Gladiator'
     }
     if(id == 50) {
-        charClass = 'Dual Master'
+        charClass = 'Duel Master'
     }
     if(id == 80) {
         charClass = 'Summoner'
