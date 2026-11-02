@@ -13,14 +13,14 @@ import Spinner from "../components/Spinner";
 const fakeChars = []  // this to be remove and use charactesr!
 
 const Rankings = () => {
-    // const {data: chars, isSuccess, isLoading, isError} = useFetchAllCharQuery(undefined, {
-    //     selectFromResult: ({ data, isSuccess, isError, isLoading }) => ({
-    //         data: data?.filter((e) => filterChars(e.id)),
-    //         isLoading: isLoading,
-    //         isSuccess: isSuccess,
-    //         isError: isError,
-    //     })
-    // })
+    const {data: chars, isSuccess, isLoading, isError} = useFetchAllCharQuery(undefined, {
+        selectFromResult: ({ data, isSuccess, isError, isLoading }) => ({
+            data: data?.filter((e) => filterChars(e.id)),
+            isLoading: isLoading,
+            isSuccess: isSuccess,
+            isError: isError,
+        })
+    })
     const characters = useSelector(state => state.characters)
     const navigate = useNavigate()
     const dispatch = useDispatch()
