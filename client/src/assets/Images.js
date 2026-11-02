@@ -103,6 +103,7 @@ const Images = {
     mmtop200: new URL('./mmtop200.jpg', import.meta.url).href,  
     muonlinetop: new URL('./muonlinetop.png', import.meta.url).href,  
     muogg: new URL('./MUOGG.gif', import.meta.url).href,  
+    closed_beta_test: new URL('./closed_beta_test.jpg', import.meta.url).href,  
     easy_obt1: new URL('./easy_obt1.jpg', import.meta.url).href,  
     easy_obt2: new URL('./easy_obt2.jpg', import.meta.url).href,  
     easy_obt3: new URL('./easy_obt3.jpg', import.meta.url).href,

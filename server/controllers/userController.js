@@ -1830,7 +1830,7 @@ async makeAccountCharacterReset(req, res) {
         let transaction;
         try {
             const pool = await poolPromise;
-            // ОТКРЫВАЕМ ТРАНЗАКЦИЮ В САМОМ НАЧАЛЕ!
+            // ОТКРЫВАЕМ ТРАНЗАКЦИЮ 
             transaction = new sql.Transaction(pool);
             await transaction.begin();
             // 1. Достаем данные лота из таблицы dbo.market
@@ -1918,7 +1918,7 @@ async makeAccountCharacterReset(req, res) {
             if (deleteResult.rowsAffected === 0) {
                 throw new Error('Этот предмет только что перекупил другой игрок, или снят с продажи!')
             }
-            // ШАГ Б: Работа с экономикой (Веб-кошелек Zen + Электронная валюта через @@ROWCOUNT)
+            // ШАГ Б: Работа с экономикой (Веб-кошелек Zen + игровая валюта через @@ROWCOUNT)
                 const economyRequest = new sql.Request(transaction);
                 economyRequest.input('buyerId', sql.VarChar(10), buyerAccountId);
                 economyRequest.input('sellerId', sql.VarChar(10), lot.sellerAccountId);
@@ -1988,16 +1988,6 @@ async makeAccountCharacterReset(req, res) {
                 }
                 return next(ApiError.badRequest(error.message));
             }
-        //     } catch (txError) {
-        //         if (transaction && transaction._active) {
-        //             try { await transaction.rollback(); } catch (rbErr){ console.error(rbErr); }
-        //         }
-        //         return next(ApiError.badRequest(txError.message));
-        //     }
-        // } catch (error) {
-        //     console.error('Глобальный сбой в контроллере buyItem:', error);
-        //     return next(ApiError.internal('Внутренняя ошибка сервера при обработке покупки'));
-        // }
     }
 
 }

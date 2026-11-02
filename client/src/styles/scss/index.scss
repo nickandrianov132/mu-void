@@ -3419,7 +3419,7 @@ body {
                         @include box-shadow(0.1em, 0.1em, -0.1em, -0.1em, 0.3em, $nav-list-item-bg);
                     }
 
-                }
+                }-
                 .reg_input_error{
                     @extend %inputBasic;
                     width: 100%;

@@ -40,3 +40,27 @@ export const api = createApi({
 
 
 
+///  ++++  with refresh token ++++
+// const baseQueryWithReauth = async (args, api, extraOptions) => {
+//     // 1. Делаем обычный запрос
+//     let result = await baseQuery(args, api, extraOptions);
+
+//     // 2. Если упали с 401 (токен протух)
+//     if (result.error && result.error.status === 401) {
+//         // Делаем запрос на бэкенд для обновления токена (например, через Refresh Cookie или старый токен)
+//         const refreshResult = await baseQuery({ url: '/auth/refresh', method: 'POST' }, api, extraOptions);
+
+//         if (refreshResult.data) {
+//             // Если обновили успешно — сохраняем новый токен в Redux
+//             api.dispatch(setToken(refreshResult.data.token));
+            
+//             // Повторяем ИСХОДНЫЙ запрос уже с новым токеном!
+//             result = await baseQuery(args, api, extraOptions);
+//         } else {
+//             // Если даже рефреш не удался (сессия полностью истекла) — выходим
+//             api.dispatch(logout());
+//         }
+//     }
+    
+//     return result;
+// };

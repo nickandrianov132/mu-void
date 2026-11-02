@@ -17,17 +17,6 @@ const itemsList = require('../utiles/item_list.json');
 // let base64String = btoa(String.fromCharCode(...new Uint8Array(byteArray)));
 // document.getElementById('yourImg').src = `data:image/jpeg;base64,${base64String}`;
 
-const ITEM_SIZE = 32;
-function getExcOptions(excByte) {
-    return {
-        firstOpt: !!(excByte & 1),
-        secondOpt: !!(excByte & 2),
-        thirdOpt: !!(excByte & 4),
-        fourthOpt: !!(excByte & 8),
-        fifthOpt: !!(excByte & 16),
-        sixthOpt: !!(excByte & 32),
-    }
-}
 // async function savePreparedItemsToJSON(charName) {
 //     try {
 //         const pool = await poolPromise
@@ -91,6 +80,19 @@ function getExcOptions(excByte) {
 
 // // Запустите функцию, передав имя персонажа, на которого вы надели/положили призовые шмотки
 // savePreparedItemsToJSON('Weapon');
+
+const ITEM_SIZE = 32;
+function getExcOptions(excByte) {
+    return {
+        firstOpt: !!(excByte & 1),
+        secondOpt: !!(excByte & 2),
+        thirdOpt: !!(excByte & 4),
+        fourthOpt: !!(excByte & 8),
+        fifthOpt: !!(excByte & 16),
+        sixthOpt: !!(excByte & 32),
+    }
+}
+
 
 function getIsExc(excOptObj) {
     if ( excOptObj.firstOpt || excOptObj.secondOpt || excOptObj.thirdOpt || excOptObj.fourthOpt || excOptObj.fifthOpt || excOptObj.sixthOpt) {
@@ -250,7 +252,7 @@ class CharacterController {
         const request = pool.request()
         const data = await request
         .input('name', sql.VarChar(10), id)
-        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.name = @name')
+        .query('SELECT name as cName, cLevel, mLevel, class as cClass, str as cStr, agi as cAgi, vit as cVit, ene as cEne, cmd as cCmd, cZen, mapNumber, posX as mapX, posY as mapY, reset as cReset, gReset as cGrandReset, online, charGuild FROM dbo.vwCharacters c WHERE c.name = RTRIM(@name)')
         // .query('SELECT Name as cName, Class as cClass, cLevel, mLevel, RESETS as cReset, GRANDRESET as cGrandreset, Strength as cStr, Dexterity as cAgi, Vitality as cVit, Energy as cEne, Leadership as cCmd, MapNumber as mapNumber, MapPosX as mapPosX, MapPosY as mapPosY FROM dbo.Character WHERE Name = @name')
         console.log(data.recordset[0]);
         return res.json(data.recordset[0])
