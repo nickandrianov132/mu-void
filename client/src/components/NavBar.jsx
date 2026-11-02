@@ -54,7 +54,8 @@ const NavBar = () => {
                 <img className='line_separator' src={Images.vertical_sep2}/>
                 {/* <span className='nav_list_span'></span> */}
 
-                <NavLink className="nav_list_item_wraper" to={RANKINGS_ROUTE}>
+                {/* <NavLink className="nav_list_item_wraper" to={RANKINGS_ROUTE}> */}
+                <NavLink className="nav_list_item_wraper" to="#">
                     {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
                     <img className='rankings_logo' src={Images.cross_sword_shield2} />
                     <span className='span'>Rankings</span>
@@ -62,6 +63,7 @@ const NavBar = () => {
                 <img className='line_separator' src={Images.vertical_sep2}/>
                 <NavLink className="nav_list_item_wraper" to={RULES_ROUTE}>
                     {/* <GiSwordsEmblem className='giSwordEmblem' /> */}
+                    {/* <img className='rankings_logo' src={Images.rules1} /> */}
                     <img className='rankings_logo' src={Images.rules1} />
                     <span className='span'>Rules</span>
                 </NavLink>
