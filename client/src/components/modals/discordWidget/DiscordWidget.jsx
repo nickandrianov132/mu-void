@@ -19,7 +19,7 @@ const DiscordWidget = () => {
             />
             <DiscordwidgetFooter 
                 discordName={data.name}
-                inviteLink={"https://discord.gg/JFmYkaJqtR"}
+                inviteLink={"https://discord.gg/KsGcweAuCA"}
             />
         </div>
         }

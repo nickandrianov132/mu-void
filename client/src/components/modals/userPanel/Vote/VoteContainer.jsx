@@ -62,7 +62,7 @@ const VoteContainer = () => {
             />
             <VoteItem
                 title="Vote on MUOGG.com"
-                link={`https://muogg.com/vote.php?server=65`}
+                link={`https://muogg.com/vote.php?server=mu-void-x250-season-9`}
                 img={Images.muogg}
                 coins="5 WCoins!"
                 coinsDesc="Use Login! every 12h"
