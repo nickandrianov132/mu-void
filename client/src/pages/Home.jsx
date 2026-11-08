@@ -186,9 +186,9 @@ const navigate = useNavigate()
   </div>
 </HomeContent> */}
 
-<HomeContent title="🛠️ CLOSED BETA TEST! " date="02.11.2026" sideImage={Images.closed_beta_test} >
+{/* <HomeContent title="🛠️ CLOSED BETA TEST! " date="02.11.2026" sideImage={Images.closed_beta_test} >
   <div className="description_list">
-    {/* CURRENT CBT BANNER */}
+
     <div className="description_item_p" style={{ border: '0.15em solid #e2d161', padding: '1em', borderRadius: '0.3em', backgroundColor: 'rgba(226, 209, 97, 0.05)', textAlign: 'center', margin: '0 0 1em 0' }}>
       <h3 style={{ margin: '0 0 0.3em 0', color: '#e2d161', fontSize: '1.5em', fontWeight: '800' }}> Closed Beta Test!</h3>
       <p style={{ margin: '0.2em 0', fontSize: '1.2em', color: '#fff' }}>
@@ -203,7 +203,7 @@ const navigate = useNavigate()
       </p>
     </div>
 
-    <h4 className="description_item_h4">⚔️ Welcome to the ultimate anti-monopoly MU experience! ⚔️</h4>
+    <h3 className="description_item_h3">⚔️ Welcome to the ultimate anti-monopoly MU experience! ⚔️</h3>
 
     <p className="description_item_p">
       <b className="item_bold">What is MU-Void?</b> We have completely engineered a unique <span className="item_bold" style={{ color: '#ff5444', fontWeight: '600' }}>**Dynamic x250 Classic-Style Concept**</span>. It is built on a smooth, modern <span className="item_bold" style={{ color: '#43daee' }}>Season 9 Engine</span>, but heavily **downgraded to the iconic Season 6 Classic gameplay** to restore pure nostalgic PvP and fair, long-term competition.
@@ -231,6 +231,54 @@ const navigate = useNavigate()
 
     <p className="description_item_p">
       <b className="item_bold">Phased Ancient Sets System:</b> We have completely overhauled all Ancient sets — there are NO useless sets anymore! To ensure a fair early game, the drop is split into phases: only <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 1 Ancient**</span> sets drop initially, while <span className="item_bold" style={{ color: '#ff704d' }}>**Tier 2 Ancient**</span> sets unlock globally only after the first Grand Reset is made on the server!
+    </p>
+  </div>
+</HomeContent> */}
+<HomeContent title="🛠️ CLOSED BETA TEST! " date="02.11.2026" sideImage={Images.closed_beta_test} >
+  <div className="description_list">
+    {/* CURRENT CBT BANNER */}
+    <div className="description_item_p" style={{ border: '0.15em solid #e2d161', padding: '1em', borderRadius: '0.3em', backgroundColor: 'rgba(226, 209, 97, 0.05)', textAlign: 'center', margin: '0 0 1em 0' }}>
+      <h3 style={{ margin: '0 0 0.3em 0', color: '#e2d161', fontSize: '1.5em', fontWeight: '800' }}> Closed Beta Test!</h3>
+      <p style={{ margin: '0.2em 0', fontSize: '1.2em', color: '#fff' }}>
+        The server is currently in <span style={{ fontWeight: '700', color: '#e2d161' }}>Closed Beta stage</span>, preparing for the <span style={{ fontWeight: '700', color: '#33e766' }}>Grand Opening in early December</span>! Want to influence the gameplay? Join our <span className="item_bold">Discord</span> and share your balance or feature ideas for our custom setup!
+      </p>
+    </div>
+
+    <div className="description_item_p" style={{ border: '0.12em solid #5865F2', padding: '0.8em', borderRadius: '0.3em', backgroundColor: 'rgba(88, 101, 242, 0.08)', margin: '15px 0', textAlign: 'center' }}>
+      <span style={{ fontSize: '1.2em', color: '#7289da' }}>💬 <b>Have a Great Idea? Suggest it in Discord!</b></span>
+      <p style={{ margin: '0.3em 0 0 0', fontSize: '1em', color: '#ccc' }}>
+        We are building this server together with the community. Head over to our Discord channel, participate in discussions, and propose your custom settings for the upcoming launch.
+      </p>
+    </div>
+
+    <h3 className="description_item_h3">⚔️ Welcome to the ultimate anti-monopoly MU experience! ⚔️</h3>
+
+    <p className="description_item_p">
+      <b className="item_bold">What is MU-Void?</b> We have completely engineered a unique <span className="item_bold" style={{ color: '#ff5444', fontWeight: '700' }}>Dynamic x250 Classic-Style Concept</span>. It is built on a smooth, modern <span className="item_bold" style={{ color: '#43daee' }}>Season 9 Engine</span>, but fully optimized to deliver pure nostalgic PvP and fair, long-term competition without overcomplicated late-season customs.
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Pure Balanced Mechanics (No Elemental):</b> To bring back authentic tactical PvP, we have completely removed <span style={{ fontWeight: '700', color: '#ff704d' }}>Pentagrams, Errtels, elemental damage</span>, and confusing end-game systems. No bloated mechanics — just pure, fair character vs character mastery!
+    </p>
+
+    <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
+      <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>👑 Progressive Reset Rewards & Master Tree Revolution:</b> Regular Master Level grinding is <b>DISABLED</b>. <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>Grand Resets are now the ONLY way to get Master Points (+50 per GR)!</span>
+      <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span>
+      <br/><a className='link_guide' href='https://mu-void.com' target='blank'>👉 Reset reward guide</a>.<br/>
+      <b>Reach 30 Resets (Grand Reset)</b> to claim an <span className="item_bold" style={{ color: '#f674ff', fontWeight: '700' }}>Excellent TOP Tier-380 PvP Weapon +11.</span><br/><a className='link_guide' href='https://mu-void.com' target='blank'>👉 GR reward guide</a><br/>
+      <span style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Basic Skills in shop:</b> All basic skills for /offexp - Fire Burst, Dark Side, Dragon Roar, Twisting Slash, Evil Spirits, Flame are available <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>in Lorencia Shops</span>!
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Anti-Oneshot Combat Balance:</b> To eliminate classic speed bugs and frustrating one-click PvP, every class has a strict <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>Attack Speed Cap</span> from stats. To break the limit, you must progress through weapons — higher tier gear scales massively, boosting your attack speed from up to +250AS (Top Weapons)!
+    </p>
+
+    <p className="description_item_p">
+      <b className="item_bold">Phased Ancient Sets System:</b> We have completely overhauled all Ancient sets — there are NO useless sets anymore! To ensure a fair early game, the drop is split into phases: only <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>Tier 1 Ancient</span> sets drop initially, while <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>Tier 2 Ancient</span> sets unlock globally only after the first Grand Reset is made on the server!
     </p>
   </div>
 </HomeContent>
