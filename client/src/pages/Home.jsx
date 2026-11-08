@@ -264,8 +264,8 @@ const navigate = useNavigate()
     <p className="description_item_p" style={{ border: '0.1em dashed #43eeaa', padding: '0.6em', borderRadius: '0.3em', backgroundColor: 'rgba(61, 189, 221, 0.08)', margin: '15px 0' }}>
       <b className="item_bold" style={{ fontSize: '1.15em', color: '#43daee' }}>👑 Progressive Reset Rewards & Master Tree Revolution:</b> Regular Master Level grinding is <b>DISABLED</b>. <span className="item_bold" style={{ color: '#ff704d', fontWeight: '700' }}>Grand Resets are now the ONLY way to get Master Points (+50 per GR)!</span>
       <br/> <b>Reach 10 Resets to get a mid-tier</b> <span className="item_bold" style={{ color: '#33e766' }}>Excellent Weapon +11.</span>
-      <br/><a className='link_guide' href='https://mu-void.com' target='blank'>👉 Reset reward guide</a>.<br/>
-      <b>Reach 30 Resets (Grand Reset)</b> to claim an <span className="item_bold" style={{ color: '#f674ff', fontWeight: '700' }}>Excellent TOP Tier-380 PvP Weapon +11.</span><br/><a className='link_guide' href='https://mu-void.com' target='blank'>👉 GR reward guide</a><br/>
+      <br/><a className='link_guide' href='https://www.mu-void.com/guide/resets_info' target='blank'>👉 Reset reward guide</a>.<br/>
+      <b>Reach 30 Resets (Grand Reset)</b> to claim an <span className="item_bold" style={{ color: '#f674ff', fontWeight: '700' }}>Excellent TOP Tier-380 PvP Weapon +11.</span><br/><a className='link_guide' href='https://www.mu-void.com/guide/grand_resets_info' target='blank'>👉 GR reward guide</a><br/>
       <span style={{ color: '#e2d161' }}>Your gear is completely safe during GR.</span>
     </p>
 
