@@ -6,7 +6,7 @@ const PageButton = ({page, isActive, setPage }) => {
     return (
         <button 
             className={isActive ? "page_btn_active" : "page_btn"}
-            // onClick={() => setPage(page)}
+            disabled={page === '...'}
             onClick={() => dispatch(updateMarketQuery({page: page}))}
         >
             {page}

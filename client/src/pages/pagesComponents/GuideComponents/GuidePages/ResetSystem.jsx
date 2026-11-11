@@ -7,7 +7,7 @@ const ResetSystem = () => {
         <div className="guide_main_container">
             <GuideTitle title='Reset system:'/>
             <div className="reset_info_div">
-                <p className="reset_p1">💠 On our server working <em>Easy Reset System</em></p>
+        <p className="reset_p1">💠 Our server features an <em className="em_green">Easy Reset System</em> for a fast start.</p>
                 <DynamicExp/>
                 <h4>Requirements:</h4>
                 <div className="reset_description_div">
@@ -19,14 +19,14 @@ const ResetSystem = () => {
                         <span>5<sup>th</sup> Reset</span>
                     </div>
                     <div className="reset_req_container">
-                        <span> - 350lvl + <em className="reset_em_zen">5,000,000 zen</em></span>
-                        <span> - 360lvl + <em className="reset_em_zen">10,000,000 zen</em></span>
-                        <span> - 370lvl + <em className="reset_em_zen">15,000,000 zen</em></span>
-                        <span> - 380lvl + <em className="reset_em_zen">20,000,000 zen</em></span>
-                        <span> - 390lvl + <em className="reset_em_zen">25,000,000 zen</em></span>
+                        <span> - 350lvl + <em className="reset_em_zen">1,000,000 zen</em></span>
+                        <span> - 360lvl + <em className="reset_em_zen">2,000,000 zen</em></span>
+                        <span> - 370lvl + <em className="reset_em_zen">3,000,000 zen</em></span>
+                        <span> - 380lvl + <em className="reset_em_zen">4,000,000 zen</em></span>
+                        <span> - 390lvl + <em className="reset_em_zen">5,000,000 zen</em></span>
                     </div>
                 </div>
-                <span>6<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">10,000,000 zen</em> </span>
+                <span>6<sup>th</sup> Reset and above - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">5,000,000 zen</em> </span>
                 <div className="res_reward_container">
                     <h3 className="reward_header">10th Reset Rewards:</h3>
                     <div className="img_container">

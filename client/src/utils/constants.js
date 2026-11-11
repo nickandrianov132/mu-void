@@ -47,4 +47,5 @@ export const GUIDE_WHITE_WIZARD_INFO = 'white_wizard_info'
 export const GUIDE_CLASSES_INFO = 'classes_info'
 export const GUIDE_CASTLE_SIEGE_INFO = 'castle_siege_info'
 export const GUIDE_SET_ITEMS_INFO = 'set_items_info'
+export const GUIDE_MUUN_EVENT_INFO = 'muun_event_info'
 

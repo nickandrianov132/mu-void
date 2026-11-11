@@ -33,7 +33,7 @@ const GrandResetSystem = () => {
                         <span>♦️ All Grand Resets</span>
                     </div>
                     <div className="reset_req_container">
-                        <span> - 20 Resets + 400lvl + <em className="reset_em_zen">2,000,000,000 zen</em></span>
+                        <span> - 20 Resets + 400lvl + <em className="reset_em_zen">1,000,000,000 zen</em></span>
                     </div>
                 </div>
                 {/* {/* <span>4<sup>th</sup> Reset and more - <em className="reset_em_res">Resets</em> * <em className="reset_em_zen">15,000,000 zen</em> </span> */}
