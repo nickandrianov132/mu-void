@@ -1561,7 +1561,7 @@ async makeAccountCharacterReset(req, res) {
             // Передаем параметры для пагинации и поиска
             request.input('offset', sql.Int(), offset);
             request.input('limit', sql.Int(), limit);
-            request.input('search', sql.VarChar(10), `%${search}%`);
+            request.input('search', sql.VarChar(12), `%${search}%`);
             request.input('status', sql.Int(), 0);
             // Передаем categoryId в SQL, это будет либо число либо NULL
             request.input('categoryId', sql.Int(), categoryId);

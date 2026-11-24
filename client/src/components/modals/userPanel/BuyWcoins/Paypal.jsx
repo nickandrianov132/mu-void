@@ -89,7 +89,7 @@ const Paypal = ({wcId, wcAmount, accId}) => {
                                 throw new Error("Transaction status: " + orderData.status);
                             }
                         } catch (error) {
-                            // RTK Query упаковывает ошибки сервера в error.data
+                                // RTK Query упаковывает ошибки сервера в error.data
                             const errorMessage = error.data?.error || error.message || "Server Error";
                             
                             if (error.data?.details?.[0]?.issue === "INSTRUMENT_DECLINED") {
