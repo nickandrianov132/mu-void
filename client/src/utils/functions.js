@@ -1,7 +1,7 @@
 export function validateCharReset(status, lvl, res, gRes, zen) {
     let valid;
-    const zenRes = 10000000;
-    const zenEasyRes = 5000000;
+    const zenRes = 1000000;
+    const zenEasyRes = 1000000;
     if(gRes === 0 && res < 20) {
         if(status === 0 && res === 0 && lvl >= 350 && zen >= zenEasyRes) {
             return valid = true;
