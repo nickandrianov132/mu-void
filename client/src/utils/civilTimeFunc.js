@@ -135,8 +135,9 @@ export const startTicking = () => setInterval(compose(logClear, finalHours, logi
 
 /// Opening Countdown:
 export function openingCountdown(diff, dateOpening) {
-    const localTime = Date.parse(new Date()) - diff
-    const dateDiff = dateOpening - localTime
+    const localTime = Date.parse(new Date()) - diff;
+    const dateDiff = dateOpening > localTime ? (dateOpening - localTime) : (localTime - dateOpening);
+
     const timeRemainObj = {
         days: daysRemain(dateDiff),
         hours: hoursRemain(dateDiff),

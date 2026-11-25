@@ -3,7 +3,7 @@ import Images from "../../../assets/Images";
 
 const CastleInfo = () => {
     const {data: castleInfo, isSuccess, isError, isLoading, error } = useFetchCastleInfoQuery()
-
+    console.log(castleInfo);
     return (
         <>
         {isSuccess &&

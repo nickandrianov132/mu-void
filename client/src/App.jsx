@@ -81,7 +81,7 @@ const {data, error, isLoading, isSuccess, refetch} = useGetUserDetailsQuery()
           <img className='snowflake50_img' src={Images.snowflake1}/>
           <img className='snowflake51_img' src={Images.snowflake1}/>
           <img className='snowflake52_img' src={Images.snowflake1}/> */}
-          {/* <CountdownOpening /> */}
+          <CountdownOpening />
           <Body />
       </div>
           <Footer />

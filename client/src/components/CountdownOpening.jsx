@@ -31,10 +31,10 @@ import { currentDate, getTimeOpening, openingCountdown } from "../utils/civilTim
 const CountdownOpening = () => {
     const { data: serverTime, isSuccess } = useFetchServerTimeQuery();
     const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-    const dateOpeningUTC = Date.UTC(2026, 8, 11, 17, 0, 0);
+    const dateOpeningUTC = Date.UTC(2026, 11, 5, 16, 0, 0);
     const [localTime, setLocalTime] = useState(null);
     const [offset, setOffset] = useState(null);
-    
+
     useEffect(() => {
         if (isSuccess) {
             setLocalTime(new Date());
@@ -66,7 +66,7 @@ const CountdownOpening = () => {
 
     return (
         <div className="countdown_container">
-            <div className="countdown_header">Server Opening :</div>
+            <div className="countdown_header">{dateOpeningUTC < localTime ? 'Server is Open :' : 'To Server Opening :'}</div>
             {isSuccess && 
             <div className="countdown_items_wrapper">
                 <div className="countdown_item_wrapper">

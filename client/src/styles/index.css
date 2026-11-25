@@ -4646,6 +4646,16 @@ body {
           box-shadow: 0.01em 0.01em 0.2em rgb(0, 213, 117), -0.01em -0.01em 0.2em rgb(0, 213, 117), 0.01em -0.01em 0.2em rgb(0, 213, 117), -0.01em 0.01em 0.2em rgb(0, 213, 117);
 }
 
+.res_gr__img_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.res_gr__img_wrapper .home_res_gr_img {
+  width: 50%;
+}
+
 .online_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4682,11 +4692,16 @@ body {
   color: #00cba2;
   text-shadow: 0.01em 0.01em 0.05em rgb(7, 39, 20), -0.015em -0.015em 0.05em rgb(7, 39, 20), 0.01em -0.015em 0.05em rgb(7, 39, 20), -0.015em 0.01em 0.05em rgb(7, 39, 20);
 }
+.online_indicator_div .online_indicator_p .em_red {
+  color: #ff4444;
+}
+.online_indicator_div .online_indicator_p .em_green {
+  color: #11f87d;
+}
 .online_indicator_div .online_indicator_p em {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
-  color: #fe3a4e;
   text-shadow: 0.01em 0.01em 0.05em rgb(27, 7, 39), -0.015em -0.015em 0.05em rgb(27, 7, 39), 0.01em -0.015em 0.05em rgb(27, 7, 39), -0.015em 0.01em 0.05em rgb(27, 7, 39);
 }
 .online_indicator_div .online_indicator_bg::after, .online_indicator_div .online_indicator_bg::before {

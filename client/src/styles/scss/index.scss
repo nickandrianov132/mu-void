@@ -3142,6 +3142,13 @@ body {
         @include box-shadow(0.01em, 0.01em, -0.01em, -0.01em, 0.2em, rgb(0, 213, 117)); 
     }
 }
+.res_gr__img_wrapper{
+    display: flex;
+    width: 100%;
+    .home_res_gr_img{
+        width: 50%;
+    }
+}
 .online_container{
     display: flex;
     flex-direction: column;
@@ -3164,11 +3171,16 @@ body {
             color: #00cba2;
             @include text-shadow(0.01em, 0.01em, -0.015em, -0.015em, 0.05em, rgb(7, 39, 20));
         }
+        .em_red{
+            color: #ff4444;
+        }
+        .em_green{
+            color: #11f87d;
+        }
         em{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;
             font-weight: 600;
-            color: #fe3a4e;
             @include text-shadow(0.01em, 0.01em, -0.015em, -0.015em, 0.05em, rgb(27, 7, 39));
         }
     }

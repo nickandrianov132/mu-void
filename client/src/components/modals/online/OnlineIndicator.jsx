@@ -14,7 +14,7 @@ const OnlineIndicator = ({online}) => {
         <div className='online_indicator_div'>
             {/* <p className='online_indicator_p'>Server x50 <em>Medium</em> <b className="remark_b">OBT</b></p> */}
             {/* <p className='online_indicator_p'>Server x250 <em> Weekend +250x🔥</em></p> */}
-            <p className='online_indicator_p'>Server x250 <em> Closed Beta🔥</em></p>
+            <p className='online_indicator_p'>Server x250 <em className="em_red">Dynamic🔥</em></p>
             <div className='online_indicator_bg'>
                 <div 
                     style={{width: `${pxOnline()}%`}}

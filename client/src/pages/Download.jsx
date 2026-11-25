@@ -7,7 +7,7 @@ const Download = () => {
             <h1 className="header"> Latest client is available for download: </h1>
             <DownloadLink
                 image={Images.mega_cloud1}
-                url="https://mega.nz/file/2d0mjLBB#YmzbYZV4N-xjcO5SElFpq6CRQQVHvTooAJZCAb83vUY"
+                url="https://mega.nz/file/bEMkEZ7T#QDt6_gmlEiAEmcSoW0tuyU_dA98EYK5o46RKJCHVw40"
                 text="Download Client from MEGA👈"
                 className="download_links_logo_wrapper"
                 imgClass="img_logo"
@@ -22,7 +22,7 @@ const Download = () => {
 
             <DownloadLink
                 image={Images.pcloud}
-                url="https://e.pcloud.link/publink/show?code=XZUKOy7Z65G1R6nhQ8y54MvtxdrHhz3fh5bV"
+                url="https://e.pcloud.link/publink/show?code=XZWlaV7ZOazsE7vCERBcXYX57x81IVj7dXYX"
                 text="Download Client from pCloud👈"
                 className="download_links_logo_wrapper"
                 imgClass="pcloud_logo"

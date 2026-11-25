@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const serverInfo = [
-    {title: 'Experience:', content: {content: '250x', className: 'description_content_p'}},
+    {title: 'Experience:', content: {content: 'Dynamic 250x -> 100x', className: 'description_content_p'}},
     {title: 'Clear Stats:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Off-leveling:', content: {content: 'on', className: 'description_p_on'}},
     {title: 'Remove Items:', content: {content: 'off', className: 'description_p_off'}},
@@ -53,7 +53,7 @@ const serverInfo = [
     ]
 },
 {title: 'Max. Stats:', content: {content: '32000', className: 'description_content_p'}},
-{title: 'BC, DS:', content: {content: '200% Exp🔥', className: 'description_content_p'}},
+{title: 'BC, DS:', content: {content: '150% Exp🔥', className: 'description_content_p'}},
 {title: 'Chaos Castle:', content: {content: 'Ancient Set items', className: 'description_content_p'}},
 {title: 'Doppel Ganger:', content: {content: 'Excellent items', className: 'description_content_p'}},
 {title: 'Imperial Fortress:', content: {content: 'Ancient Set items, Divine Weapons, Exc. items', className: 'description_content_p'}},
